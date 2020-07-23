@@ -1,0 +1,499 @@
+/*
+Theme's main style.
+
+@author Vee W.
+*/
+@import 'flexvideo.css';
+img{
+    max-width: 100%!important;
+    height: auto!important;
+    width: auto!important;
+}
+
+.pagination {
+    margin: 0;
+}
+.pagination-center {
+    text-align: center;
+}
+.pagination-row {
+    margin-bottom: 20px;
+}
+
+
+.page-header {
+    padding-bottom: 20px;
+}
+
+
+.page-header-top-right {
+    margin-top: 10px;
+}
+
+
+.post-view-attachment .entry-attachment .attachment {
+    text-align: center;
+}
+.post-view-attachment .entry-attachment .attachment .card {
+    margin: 0 auto;
+    width: 400px;
+}
+.post-view-attachment .entry-attachment .attachment .wp-video {
+    margin: 0 auto;
+}
+
+
+.row-with-vspace {
+    margin-bottom: 20px;
+}
+
+
+.site-footer {
+    background-color: #f5f5f5;
+    border-top: 3px solid #ddd;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+.site-main .format-aside {
+    background: #f5f5f5;
+}
+.site-main .format-image {
+    background: url('../img/content-post-format-image.png') left top no-repeat;
+}
+.site-main .format-link {
+    background: url('../img/content-post-format-link.png') left top no-repeat;
+}
+.site-main .format-quote {
+    background: url('../img/content-post-format-quote.png') left top no-repeat;
+}
+.site-main .format-video {
+    background: url('../img/content-post-format-video.png') left top no-repeat;
+}
+
+
+.site-title {
+    margin-bottom: 0;
+    margin-top: 10px;
+    min-height: 65px;
+}
+.site-branding .col-md-6.ad-section{
+    padding-top: 10px;
+}
+.site-title > a {
+    text-decoration: none;
+}
+.site-title > div {
+    height: auto;
+    line-height: 18px;
+}
+.site-title .site-description {
+    color: #999;
+    font-size: 16px;
+}
+.site-title .site-title-heading {
+    margin: 0;
+}
+
+
+.widget_calendar .calendar_wrap table {
+    font-size: 14px;
+    margin: 0;
+}
+.widget_calendar .calendar_wrap table caption {
+    caption-side: top;
+}
+.widget_calendar .calendar_wrap .table td,
+.widget_calendar .calendar_wrap .table th {
+    padding: 8px;
+}
+.widget_calendar .calendar_wrap .table #next {
+    text-align: right;
+}
+
+
+#comments .comment-navigation,
+#comments .comment-navigation-below {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+#comments .comment-navigation {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+#comments .comment-respond {
+    margin-top: 20px;
+}
+#comments .media-list li .media {
+    margin-top: 15px;
+}
+#comments .media-list li .media .media-body {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+#comments .media-list li .media .media-body .comment-author {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#comments .media-list ul.children {
+    list-style: none;
+    margin-left: 4em;
+    padding-left: 0;
+}
+
+
+#main .wp-video-shortcode {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+#main .attachment .entry-content {
+    margin-bottom: 20px;
+}
+#main .attachment .entry-content .attachment {
+    text-align: center;
+}
+#main .attachment .entry-meta {
+    margin-bottom: 20px;
+}
+/* fix auto img responsive */
+#main .post .entry-content img {
+    height: auto;
+    max-width: 100%;
+}
+#main .post,
+#main .page {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+#main .post .entry-header .entry-meta {
+    color: #999;
+    font-size: 0.8rem;
+}
+#main .post .entry-header .entry-meta a {
+    color: inherit;
+}
+#main .post .entry-header .entry-meta .posted-on .updated {
+    display: none;
+}
+#main .post .entry-meta .categories-icon {
+    cursor: default;
+}
+#main .post .entry-meta .comments-link a {
+    color: #333;
+}
+#main .post .entry-meta .comments-link a .comment-total,
+#main .page .entry-meta .comments-link a .comment-total {
+    color: #555;
+}
+#main .attachment .edit-post-link a, 
+#main .attachment .entry-meta .edit-post-link a, 
+#main .post .entry-meta .edit-post-link a,
+#main .page .entry-meta .edit-post-link a {
+    color: #333;
+}
+#main .post .entry-meta .tags-icon {
+    cursor: default;
+}
+#main .attachment .entry-title, 
+#main .post .entry-title,
+#main .page .entry-title {
+    margin-top: 0;
+    word-wrap: break-word;
+}
+
+
+#sidebar-left .widget,
+#sidebar-right .widget {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+#sidebar-left .widget ul,
+#sidebar-right .widget ul {
+    padding-left: 20px;
+}
+#sidebar-left .widget .widget-title,
+#sidebar-right .widget .widget-title {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+/* Fix Bootstrap 4 */
+.navbar {
+    min-height: 54px;/* With this, we can use navbar without navbar-brand */
+}
+
+
+
+/*-----------------custom css start-----------------*/
+a{
+    color:#222;
+}
+
+/*home page*/
+.navbar{
+    padding: 0px;
+}
+.navbar-light .navbar-nav{
+    margin:0px auto;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #222 !important;
+    font-size: 15px;
+    border-right: 1px solid #ddd;
+    padding: 5px 9px;
+}
+.navbar-light .navbar-nav li:last-child a{
+   border:0px;
+}
+.navbar-light .navbar-nav li:hover a, .navbar-light .navbar-nav li:focus a{
+    color: #eb1e00 !important;
+}
+a:hover{
+    text-decoration: none;
+}
+/* home page slider*/
+ul.bxslider-2 a {
+    position: static !important;
+}
+.home-news-slider{
+    position: relative;
+}
+.home-news-slider .bx-wrapper {
+    box-shadow: 0px 0px 0px;
+    border: 0px;
+}
+.home-news-slider{
+    border:1px solid #e5e5e5;
+}
+.home-news-slider .bx-wrapper:nth-child(1) {
+    padding: 45px;
+}
+.home-news-slider .bx-wrapper:nth-child(2){
+    background: #f9fafb;
+    border-top: 1px solid #e5e5e5;
+}
+.home-news-slider .bx-wrapper:nth-child(2) h4{
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.home-news-slider .bxslider-2 li{
+    position:static !important;
+    width:100% !important;
+}
+.home-news-slider ul.bxslider-2 {
+    padding-left: 0px;
+    margin: 0px auto;
+    width: 80% !important;
+    height: 100%;
+}
+
+.nspPrev:before {
+    border: 10px solid #ccc;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    content: "";
+    display: block;
+    float: left;
+    margin: 3px 0 0 4px;
+}
+.nspNext:before {
+    border: 10px solid #ccc;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: none;
+    content: "";
+    display: block;
+    float: left;
+    margin: 3px 0 0 6px;
+}
+.slider-controller .nspPrev, .slider-controller .nspNext {
+    background: #fff;
+    left: 15px;
+    position: absolute;
+    bottom: 16px;
+}
+.nspNext, .nspPrev {
+    background: #fff;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    margin: 0 0 0 4px;
+    text-indent: -999px;
+    width: 24px;
+}
+.slider-controller a.nspNext {
+    left: auto;
+    right: 15px;
+}
+
+/*---- sidebar css ----*/
+#sidebar-left .widget ul, #sidebar-right .widget ul {
+    padding-left: 0px;
+    list-style: none;
+}
+#sidebar-left aside> ul> li {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0px;
+}
+#sidebar-left aside> ul> li:last-child {
+    border-bottom: 0px solid #ddd;
+}
+#sidebar-left .widget .widget-title, #sidebar-right .widget .widget-title {
+    color: #f17f05;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f17f05;
+    padding-bottom: 10px;
+}
+
+/* navbar css */
+header.main-menu {
+    position: relative;
+    width: 100%;
+    z-index:9;
+    background: #fff;
+}
+
+header.main-menu.stick{
+    position:fixed;
+    top:0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.6);
+     -webkit-animation-name: slide; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .8s; /* Safari 4.0 - 8.0 */
+    animation-name: slide;
+    animation-duration: .8s;
+}
+@-webkit-keyframes slide {
+    from {
+        transform: translateY(-100%);}
+    to {
+        transform: translateY(0);}
+}
+header.stick .row-with-vspace {
+    margin-bottom: 8px;
+}
+.search-bar {
+    float: right;
+}
+header.main-menu.stick .ad-section{
+    display: none;
+}
+ul#menu-mainmenu{
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ul#menu-mainmenu li{
+    display: table-cell;
+    text-align: center;
+}
+/* -------------- footer menu ---------*/
+ul#menu-footmenu li {
+    display: inline-block;
+    padding: 10px 0px;
+}
+ul#menu-footmenu {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+ul#menu-footmenu li a {
+    padding: 0px 20px;
+    border-right: 1px solid #ddd;
+}
+ul#menu-footmenu li:last-child a{
+    border-right: 0px;
+}
+.site-footer {
+    text-align: center;
+}
+.FooterAdArea {
+    border-top: 1px solid #ddd;
+    padding: 13px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.home p, .home h4 {
+    margin-left: 0px !important;
+}
+.all-padding {
+    padding: 20px;
+}
+/*------------- button style ------------*/
+a.form-control.btn {
+    background: #f17f05;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+a.form-control.btn:hover, a.form-control.btn:focus{
+    background: #000000;
+}
+
+/* ---- search bar css ----*/
+
+.top-search-bar button.btn.btn-outline-secondary:hover, 
+.top-search-bar button.btn.btn-outline-secondary:focus{
+    background-color: #f17f05;
+} 
+.home .one_fourth.all-padding h4 {
+    color: #6c757d;
+    font-weight: 600;
+}
+
+/* ----custom css new starts here----*/
+.main-menu .row-with-vspace{margin-bottom: 0;}
+header.stick .site-title-heading,header.stick .row-with-vspace{display: none;}
+.page-header.stick{padding-bottom: 0;}
+#gkBackToTop:before{
+    content: "^";
+    font-size: 14px;
+    padding: 0 5px 0 0;
+    color: #eb1e00
+}
+.custom_left{
+    float: left
+}
+.responsive-menu-open button#responsive-menu-button:hover, .responsive-menu-open button#responsive-menu-button:focus, button#responsive-menu-button:hover, button#responsive-menu-button:focus{
+    transform:none !important;
+}
+
+.btn-orange {
+    background: #f17f05 !important;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-weight: 600 !important;
+}
+.btn-orange:hover {
+    background: #000 !important;
+}
+.home-news-slider .bx-wrapper:nth-child(1){padding: 20px!important;}
+iframe{max-width: 100%!important; }
+.home-news-slider .bx-wrapper img{max-height: 300px!important; margin: 0 auto;}
+.share-to-whatsapp-wrapper {
+    min-height: 75px;
+}
+.sfsi_Sicons {
+    min-height: 50px;
+}
+/* ----custom css new ends here----*/

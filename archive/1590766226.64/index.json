@@ -1,0 +1,194 @@
+{
+    "title": "Struggling to survive in lockdown transgender kills self",
+    "url": "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415",
+    "timestamp": "1590766226.64",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768522",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:08:44.501207",
+                "start_ts": "2020-05-29 16:08:42.441426",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:08:59.438038",
+                "start_ts": "2020-05-29 16:08:57.404937",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.outlookindia.com"
+                ],
+                "end_ts": "2020-05-29 16:08:42.440983",
+                "start_ts": "2020-05-29 16:08:42.196021",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:08:46.078551",
+                "start_ts": "2020-05-29 16:08:44.501345",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:08:57.404549",
+                "start_ts": "2020-05-29 16:08:47.321789",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:09:01.114226",
+                "start_ts": "2020-05-29 16:08:59.438311",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "https://web.archive.org/web/20200529160900/https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415"
+                ],
+                "end_ts": "2020-05-29 16:08:47.321413",
+                "start_ts": "2020-05-29 16:08:46.079145",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.outlookindia.com/newsscroll/struggling-to-survive-in-lockdown-transgender-kills-self/1831415",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:08:42.195832",
+                "start_ts": "2020-05-29 16:08:42.056649",
+                "pwd": "/data/archive/1590766226.64",
+                "output": "Struggling to survive in lockdown transgender kills self"
+            }
+        ]
+    },
+    "updated": "1590788179.568746",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

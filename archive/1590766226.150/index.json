@@ -1,0 +1,194 @@
+{
+    "title": "Ambulance not found to take innocent child to PMCH in Jehanabad Bihar Sadar Hospital child death amid Corona lockdown - \u092c\u093f\u0939\u093e\u0930: \u091c\u0939\u093e\u0928\u093e\u092c\u093e\u0926 \u0938\u0926\u0930 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092e\u0947\u0902 \u092e\u093e\u0938\u0942\u092e \u0915\u094b \u092a\u0940\u090f\u092e\u0938\u0940\u090f\u091a \u0932\u0947 \u091c\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u090f\u0902\u092c\u0941\u0932\u0947\u0902\u0938, \u0917\u0908 \u091c\u093e\u0928",
+    "url": "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html",
+    "timestamp": "1590766226.150",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772110",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:08:40.979970",
+                "start_ts": "2020-05-29 17:08:30.822007",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:09:13.580309",
+                "start_ts": "2020-05-29 17:09:11.723048",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "end_ts": "2020-05-29 17:08:30.820641",
+                "start_ts": "2020-05-29 17:08:30.523680",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 11,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:08:52.430896",
+                "start_ts": "2020-05-29 17:08:40.980174",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:09:11.722682",
+                "start_ts": "2020-05-29 17:09:02.064333",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:09:15.813012",
+                "start_ts": "2020-05-29 17:09:13.580579",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "https://web.archive.org/web/20200529170914/https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html"
+                ],
+                "end_ts": "2020-05-29 17:09:02.063998",
+                "start_ts": "2020-05-29 17:08:52.431159",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/bihar/story-ambulance-not-found-to-take-innocent-child-to-pmch-in-jehanabad-bihar-sadar-hospital-child-death-amid-corona-lockdown-3142509.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:08:30.523384",
+                "start_ts": "2020-05-29 17:08:30.321369",
+                "pwd": "/data/archive/1590766226.150",
+                "output": "Ambulance not found to take innocent child to PMCH in Jehanabad Bihar Sadar Hospital child death amid Corona lockdown - \u092c\u093f\u0939\u093e\u0930: \u091c\u0939\u093e\u0928\u093e\u092c\u093e\u0926 \u0938\u0926\u0930 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092e\u0947\u0902 \u092e\u093e\u0938\u0942\u092e \u0915\u094b \u092a\u0940\u090f\u092e\u0938\u0940\u090f\u091a \u0932\u0947 \u091c\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u090f\u0902\u092c\u0941\u0932\u0947\u0902\u0938, \u0917\u0908 \u091c\u093e\u0928"
+            }
+        ]
+    },
+    "updated": "1590788234.846241",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

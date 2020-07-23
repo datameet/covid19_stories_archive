@@ -1,0 +1,194 @@
+{
+    "title": "Mistry committed suicide in lockdown in Haryana - Uttar Pradesh  Sant Kabir Nagar  Common Man Issues  News",
+    "url": "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html",
+    "timestamp": "1590766226.157",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:06.929727",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772325",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:05.297409",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:12.151114",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:10.627221",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:05.296958",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.jagran.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:05.024871",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:08.671739",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:06.930197",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:10.626841",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:09.940571",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:14.164885",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:12:12.151377",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "https://web.archive.org/web/20200529171213/https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:09.940316",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:08.671987",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:05.024579",
+                "cmd": [
+                    "curl",
+                    "https://www.jagran.com/uttar-pradesh/sant-kabir-nagar-mistry-committed-suicide-in-lockdown-in-haryana-20268503.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:04.345108",
+                "pwd": "/data/archive/1590766226.157",
+                "output": "Mistry committed suicide in lockdown in Haryana - Uttar Pradesh  Sant Kabir Nagar  Common Man Issues  News"
+            }
+        ]
+    },
+    "updated": "1590788237.168167",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

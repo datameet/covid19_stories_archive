@@ -1,0 +1,194 @@
+{
+    "title": "\u09aa\u09c1\u09b0\u09c1\u09b2\u09bf\u09df\u09be\u09df \u09e7\u09e6 \u09ac\u099b\u09b0\u09c7\u09b0 \u09ac\u09be\u09b2\u0995\u09c7\u09b0 \u09ae\u09c3\u09a4\u09cd\u09af\u09c1 \u0985\u09a8\u09be\u09b9\u09be\u09b0\u09c7 \u09a8\u09df, \u09b8\u09be\u09ab \u099c\u09be\u09a8\u09bf\u09df\u09c7 \u09aa\u09cd\u09b0\u09ae\u09be\u09a3 \u09aa\u09c7\u09b6 \u099c\u09c7\u09b2\u09be\u09b6\u09be\u09b8\u0995\u09c7\u09b0 | The DM of Purulia has denied the starvation cause in 10-year-old boy death case",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.397",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:41:11.463619",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781257",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 19:40:57.321675",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:42:16.914766",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:42:15.171194",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:40:57.320396",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=bangla.asianetnews.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:40:56.548961",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:41:31.267002",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 19,
+                "start_ts": "2020-05-29 19:41:11.463790",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:42:15.170867",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 18,
+                "start_ts": "2020-05-29 19:41:56.756709",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:42:18.690695",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:42:16.915014",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "https://web.archive.org/web/20200529194218/https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:41:56.756210",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+                ],
+                "duration": 25,
+                "start_ts": "2020-05-29 19:41:31.267249",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:40:56.548597",
+                "cmd": [
+                    "curl",
+                    "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:40:56.355195",
+                "pwd": "/data/archive/1590766226.397",
+                "output": "\u09aa\u09c1\u09b0\u09c1\u09b2\u09bf\u09df\u09be\u09df \u09e7\u09e6 \u09ac\u099b\u09b0\u09c7\u09b0 \u09ac\u09be\u09b2\u0995\u09c7\u09b0 \u09ae\u09c3\u09a4\u09cd\u09af\u09c1 \u0985\u09a8\u09be\u09b9\u09be\u09b0\u09c7 \u09a8\u09df, \u09b8\u09be\u09ab \u099c\u09be\u09a8\u09bf\u09df\u09c7 \u09aa\u09cd\u09b0\u09ae\u09be\u09a3 \u09aa\u09c7\u09b6 \u099c\u09c7\u09b2\u09be\u09b6\u09be\u09b8\u0995\u09c7\u09b0 | The DM of Purulia has denied the starvation cause in 10-year-old boy death case"
+            }
+        ]
+    },
+    "updated": "1590789475.154673",
+    "tags": "",
+    "url": "https://bangla.asianetnews.com/coronavirus-westbengal/the-dm-of-purulia-has-denied-the-starvation-cause-in-10-year-old-boy-death-case-q8mp50"
+}

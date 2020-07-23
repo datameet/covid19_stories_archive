@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dailyhunt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffffff" id="themeColor">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="manifest" href="https://m.dailyhunt.in/assets/manifest.json?mode=pwa">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="https://m.dailyhunt.in/assets/img/icon.png?mode=pwa">
+  <meta name="apple-mobile-web-app-title" content="DH">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://m.dailyhunt.in/assets/img/apple-touch-icon-72x72.png?mode=pwa">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://m.dailyhunt.in/assets/img/apple-touch-icon-114x114.png?mode=pwa">
+  <link rel="apple-touch-icon" href="https://m.dailyhunt.in/assets/img/apple-touch-icon-57x57.png?mode=pwa">
+  <link rel="apple-touch-startup-image" href="https://m.dailyhunt.in/assets/img/splash-startup.png?mode=pwa">
+  <meta name="application-name" content="Dailyhunt App"/>
+  <meta name="msapplication-TileColor" content="#000000"/>
+  <meta name="msapplication-square70x70logo" content="/assets/img/tiny.png?mode=pwa"/>
+  <meta name="msapplication-square150x150logo" content="/assets/img/square.png?mode=pwa"/>
+  <meta name="msapplication-wide310x150logo" content="/assets/img/wide.png?mode=pwa"/>
+  <meta name="msapplication-square310x310logo" content="/assets/img/large.png?mode=pwa"/>
+  <meta http-equiv="origin-trial" data-feature="getInstalledRelatedApps" data-expires="2018-01-30" content="Ah+y3HGg/ehf0GKrCSSYJunQNfW4zEcRCesp9QEsE+GpBZBccGoQUCJF1HiGdiY69r/LrE1UTT4dbPqclEH7zAIAAABUeyJvcmlnaW4iOiJodHRwczovL20uZGFpbHlodW50LmluOjQ0MyIsImZlYXR1cmUiOiJJbnN0YWxsZWRBcHAiLCJleHBpcnkiOjE1MTcyNzA0MDB9">
+  
+  <style>:hover,a,a.active,img{border:none}.sticky table,img{width:100%}*,body,html{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);}body *:focus{outline:none}body,html{line-height:normal;padding:0;margin:0;font-family:arial,sans-serif;font-size:14px;color:#2e2e2e}html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#f1f1f1}blockquote:after,blockquote:before,q:after,q:before{content:""}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}article,aside,details,figcaption,figure,footer,header,hgroup,html[xmlns] .clearfix,img,nav,section{display:block}sub,sup{font-size:75%;line-height:none;position:relative}sup{top:-.5em}sub{bottom:-.25em}img{height:auto;-ms-interpolation-mode:bicubic}.clearfix:after{content:" ";display:block;clear:both;line-height:0;height:0}*html .clearfix{height:1%}.CL{clear:both}a,a.active{text-decoration:none}:hover{text-decoration:underline;text-decoration:none}.new_ver_wrp{position:fixed;width:100%;bottom:0;left:0;background:#5c5c5c;color:#fff;letter-spacing:.02em;z-index:999999}.new_ver_wrp span{padding:16px 0;display:inline-block;font-size:12px}.new_ver_wrp span.refText{float:left;padding-left:15px}.new_ver_wrp span.refBtn{float:right;background:url(https://m.dailyhunt.in/assets/img/tp_refresh.svg?mode=pwa) 0 17px no-repeat;background-size:15px;padding-right:15px}#header.hdShimmer *,.block_np *,.catList *,.categoryWrp *,.cricket_ticker *,.defult *,.detailsWarp .infoBar *,.detailsWarp article .dt,.detailsWarp h1,.detailsWarp picture.hdImg *,.dh-list-item *,.edition *,.header *,.new_ver_wrp *,.npList *,.np_landing *,.related *,.removStyle,.shr_wrp *,.sideWap *,.smt_bnr_stic *,.smt_dn_bnr *,.sticky *,.suggested *,.topicWrp *,.tp_landing *,footer *,header *{margin:0;padding:0;border:none;font-weight:400;font-size:100%;font-family:inherit;list-style:none;text-decoration:none;font-style:normal}.lang_bh,.lang_bh *,.lang_bn,.lang_bn *,.lang_en,.lang_en *,.lang_gu,.lang_gu *,.lang_hi,.lang_hi *,.lang_ml,.lang_ml *,.lang_mr,.lang_mr *,.lang_ne,.lang_ne *,.lang_or,.lang_or *,.lang_pa,.lang_pa *,.lang_ta,.lang_ta *,.lang_te,.lang_te *,.lang_ur,.lang_ur *{font-family:dyLang,Arial,sans-serif}#header.hdShimmer #scrollNav:after,.catList li a:after,.categoryWrp .hd .inr:after,.categoryWrp .hd:after,.defult .lhs ul:after,.defult:after,.detailsWarp .infoBar .srcShare .share ul:after,.detailsWarp .infoBar .srcShare .share:after,.detailsWarp .infoBar .srcShare:after,.detailsWarp .infoBar:after,.header:after,.new_ver_wrp:after,.related .hd:after,.shr_wrp ul:after,.suggested .hd:after,.thumb_list ul:after,.topicWrp .hd:after,footer ul:after,header .siteNav:after,header nav:after,header.dtls .details_hd:after,header:after{content:" ";display:block;clear:both;line-height:0;height:0}.sticky{display:block;box-shadow:0 0 4px 1px rgba(232,232,232,.9);-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9)}.sticky table tr td .langIcnBlk,.sticky table tr td a,.sticky table tr td p{font-size:12px;color:#fff;text-decoration:none;padding:9px 0 9px 8px;display:block}.sticky table .close{border-left:1px solid #F1F1F1;margin:0 auto;width:30px;background:url(https://m.dailyhunt.in/assets/img/close.svg?mode=pwa) center center no-repeat;background-size:12px}.sticky table .close .closeBtn{width:30px;height:30px}.greenSticky,.grySticky{bottom:0;width:100%;position:fixed}.langIcn{background:url(https://m.dailyhunt.in/assets/img/language_icon.svg?mode=pwa) 8px center no-repeat;padding-left:46px!important;color:#fff}.orangSticky{background-color:#F6A623;margin:4px 4px 0}.greenSticky,.grySticky{background-color:#28B257}.grySticky{background-color:#6c6c6c}.defaultSticky{background-color:#fff;margin-top:0}.defaultSticky .langIcnBlk{color:#000!important;padding:17px 0 17px 46px!important;background:url(https://m.dailyhunt.in/assets/img/language_icon_blk.svg?mode=pwa) 8px center no-repeat}.browseF tr td.click a em,.browseF tr td.data p{color:#606060;font-size:12px}.defaultSticky .closeBlk{margin:0 auto;width:30px;background:url(https://m.dailyhunt.in/assets/img/close_blk.svg?mode=pwa) center center no-repeat;background-size:12px}.browseF{background-color:#F7F7F7;margin:4px 4px 0}.browseF tr td.click a{line-height:15px}.browseF tr td.click a span{float:right;padding-right:15px;font-size:10px;color:#9A9A9A}.arrowIcn{background:url(https://m.dailyhunt.in/assets/img/arrow-rht.svg) center right no-repeat;height:15px;display:block;background-size:8px;margin-right:7px}#snackbar{visibility:visible;width:100%;position:fixed;z-index:9999999;left:0;bottom:-50px;font-size:17px;opacity:0}#snackbar.show{-webkit-animation:snackbarFadein .5s;animation:snackbarFadein .5s;animation-fill-mode:forwards}@-webkit-keyframes snackbarFadein{0%{bottom:-50px;opacity:0}100%{bottom:0;opacity:1}}@keyframes snackbarFadein{0%{bottom:-50px;opacity:0}100%{bottom:0;opacity:1}}.addTOHS,.addTOHS .contentDiv{position:fixed;bottom:0;width:100%}@-webkit-keyframes snackbarFadeout{0%{opacity:1}100%{opacity:0}}#snackbar.hide{-webkit-animation:snackbarFadeout .5s ease-in;-webkit-animation-fill-mode:forwards;-webkit-animation-iteration-count:1;opacity:1}@-webkit-keyframes snackbarFadeout{0%{opacity:1}25%{opacity:.5}100%{opacity:0}}@keyframes snackbarFadeout{0%{opacity:1}25%{opacity:.5}100%{opacity:0}}.offline{-webkit-animation:offline-ani 5s forwards;animation:offline-ani 5s forwards}@-webkit-keyframes offline-ani{100%{-webkit-filter:grayscale(100%)}0%{-webkit-filter:grayscale(0)}}@keyframes offline-ani{100%{filter:grayscale(100%)}0%{filter:grayscale(0)}}.online{-webkit-animation:online-ani 5s forwards;animation:online-ani 5s forwards}@-webkit-keyframes online-ani{100%{-webkit-filter:grayscale(0)}0%{-webkit-filter:grayscale(100%)}}@keyframes online-ani{100%{filter:grayscale(0)}0%{filter:grayscale(100%)}}.addTOHS{height:100%;overscroll-behavior:contain;top:0;left:0;right:0;overflow:auto;z-index:999}.addTOHS .inr{background:rgba(0,0,0,.42);width:100%;height:100%;position:fixed;z-index:9999;overflow:auto;overscroll-behavior:contain;}.addTOHS .contentDiv{background-color:#fff;padding:14px;box-sizing:border-box;z-index:99999;overflow:auto;overscroll-behavior:contain;}.addTOHS .contentDiv p{margin:0 0 19px;padding:0 0 0 46px;background-image:url(https://m.dailyhunt.in/assets/img/homescreen192.png?mode=pwa);background-size:32px auto;background-repeat:no-repeat;font-size:14px;color:#737373}.addTOHS .contentDiv p strong{display:block;margin-bottom:8px;color:#000}.addTOHS .contentDiv ul{list-style:none;margin:0;padding:0;display:inline;float:right}.addTOHS .contentDiv ul li{min-width:100px;float:left;height:32px;font-size:14px;background-color:#fff;text-align:center;box-sizing:border-box}.addTOHS .contentDiv ul li a{display:block;margin:8px auto;padding:0 5px}.addTOHS .contentDiv ul li.active{background-color:#4285F4}.addTOHS .contentDiv ul li.active a span{color:#fff}.addTOHS .contentDiv ul li a span{color:#4285F4}.lang_en * .dh-list-item section .list-content h2,.lang_en .dh-list-item section .list-content h2{font-size:14px}.lang_en * .detailsWarp .related .hd h2,.lang_en * .detailsWarp .suggested .hd h2,.lang_en .detailsWarp .related .hd h2,.lang_en .detailsWarp .suggested .hd h2{font-size:16px}.lang_bh * .dh-list-item section .list-content h2,.lang_bh .dh-list-item section .list-content h2,.lang_hi * .dh-list-item section .list-content h2,.lang_hi .dh-list-item section .list-content h2,.lang_mr * .dh-list-item section .list-content h2,.lang_mr .dh-list-item section .list-content h2,.lang_ne * .dh-list-item section .list-content h2,.lang_ne .dh-list-item section .list-content h2{font-size:15px;line-height:1.5em}.lang_bh * .detailsWarp h1,.lang_bh .detailsWarp h1,.lang_hi * .detailsWarp h1,.lang_hi .detailsWarp h1,.lang_mr * .detailsWarp h1,.lang_mr .detailsWarp h1,.lang_ne * .detailsWarp h1,.lang_ne .detailsWarp h1{font-size:22px;line-height:1.5em}.lang_bh * .detailsWarp article .data,.lang_bh * .detailsWarp article .data *,.lang_bh .detailsWarp article .data,.lang_bh .detailsWarp article .data *,.lang_hi * .detailsWarp article .data,.lang_hi * .detailsWarp article .data *,.lang_hi .detailsWarp article .data,.lang_hi .detailsWarp article .data *,.lang_mr * .detailsWarp article .data,.lang_mr * .detailsWarp article .data *,.lang_mr .detailsWarp article .data,.lang_mr .detailsWarp article .data *,.lang_ne * .detailsWarp article .data,.lang_ne * .detailsWarp article .data *,.lang_ne .detailsWarp article .data,.lang_ne .detailsWarp article .data *{line-height:1.8em;font-size:15px}.lang_gu * .dh-list-item section .list-content h2,.lang_gu .dh-list-item section .list-content h2{font-size:15px;line-height:1.9em}.lang_gu * .detailsWarp h1,.lang_gu .detailsWarp h1{font-size:22px;line-height:1.6em}.lang_gu * .detailsWarp article .data,.lang_gu * .detailsWarp article .data *,.lang_gu .detailsWarp article .data,.lang_gu .detailsWarp article .data *{line-height:1.6em;font-size:16px}.lang_pa * .dh-list-item section .list-content h2,.lang_pa .dh-list-item section .list-content h2{line-height:1.6em}.lang_pa * .detailsWarp h1,.lang_pa .detailsWarp h1{font-size:22px;line-height:1.5em}.lang_pa * .detailsWarp article .data,.lang_pa * .detailsWarp article .data *,.lang_pa .detailsWarp article .data,.lang_pa .detailsWarp article .data *{line-height:1.9em;font-size:15px}.lang_bn * .dh-list-item section .list-content h2,.lang_bn .dh-list-item section .list-content h2{line-height:1.6em;font-size:13px}.lang_bn * .detailsWarp h1,.lang_bn .detailsWarp h1{font-size:21px;line-height:1.6em}.lang_bn * .detailsWarp article .data,.lang_bn * .detailsWarp article .data *,.lang_bn .detailsWarp article .data,.lang_bn .detailsWarp article .data *{line-height:1.7em;font-size:15px}.lang_kn,.lang_kn *{font-family:dyLang,Arial,sans-serif}.lang_kn * .dh-list-item section .list-content h2,.lang_kn .dh-list-item section .list-content h2{line-height:1.8em;font-size:15px}.lang_kn * .detailsWarp h1,.lang_kn .detailsWarp h1{font-size:20px;line-height:1.6em}.lang_kn * .detailsWarp article .data,.lang_kn * .detailsWarp article .data *,.lang_kn .detailsWarp article .data,.lang_kn .detailsWarp article .data *{line-height:1.9em}.lang_ta * .dh-list-item section .list-content h2,.lang_ta .dh-list-item section .list-content h2{line-height:1.7em;font-size:15px}.lang_ta * .detailsWarp h1,.lang_ta .detailsWarp h1{font-size:21px;line-height:1.6em}.lang_ta * .detailsWarp article .data,.lang_ta * .detailsWarp article .data *,.lang_ta .detailsWarp article .data,.lang_ta .detailsWarp article .data *{line-height:1.8em}.lang_te * .dh-list-item section .list-content h2,.lang_te .dh-list-item section .list-content h2{line-height:1.6em;font-size:13px}.lang_te * .detailsWarp h1,.lang_te .detailsWarp h1{line-height:1.6em}.lang_te * .detailsWarp article .data,.lang_te * .detailsWarp article .data *,.lang_te .detailsWarp article .data,.lang_te .detailsWarp article .data *{line-height:1.9em}.lang_ml * .dh-list-item section .list-content h2,.lang_ml .dh-list-item section .list-content h2{line-height:1.3em;font-size:15px}.lang_ml * .detailsWarp article .data,.lang_ml * .detailsWarp article .data *,.lang_ml .detailsWarp article .data,.lang_ml .detailsWarp article .data *,.lang_or * .detailsWarp article .data,.lang_or * .detailsWarp article .data *,.lang_or .detailsWarp article .data,.lang_or .detailsWarp article .data *{line-height:1.7em}.lang_ml * .detailsWarp h1,.lang_ml .detailsWarp h1{font-size:21px}.lang_ur * .dh-list-item section .list-content h2,.lang_ur .dh-list-item section .list-content h2{font-size:17px;line-height:1.7em}.lang_ur * .detailsWarp h1,.lang_ur .detailsWarp h1{font-size:24px}.lang_ur * .detailsWarp article .data,.lang_ur * .detailsWarp article .data *,.lang_ur .detailsWarp article .data,.lang_ur .detailsWarp article .data *{line-height:1.5em;font-size:17px} .detailsWarp iframe{ width:100%;}.overLay1{ width: 100%; height: 100%; position: fixed; top: 0; z-index: 999; } .overLay { background: #fff; width: 100%; height: 100%; position: absolute; top: 0; z-index: 99; }
+
+  </style>
+  <!-- Global site tag (gtag.js) - AdWords: 961171448 --><script async src="https://www.googletagmanager.com/gtag/js?id=AW-961171448"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());
+gtag('config', 'AW-961171448',{'send_page_view': false});</script>
+  <script>
+    var href = window && window.location.href;
+    if(href && href.includes('-newsid-') && href.includes('index=')){
+      var str = location.search.split('?')[1];
+      var newHref = window.location.pathname + '?mode=pwa';
+      str.replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
+        if(key !== "listname" && key!== "index" && key !=="topicIndex" && key!=="mode" && key !== "activeTopic"){
+          newHref += ("&" + m);
+        }
+      });
+      window.location.href = newHref;
+    }
+
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      //context.store.updateData({a2hsEvent:e});
+      window.a2hsEvent = e;
+      return false;
+    });
+    window.__STATE = {} || {}
+  </script>
+  <script>
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split('=');
+            if (decodeURIComponent(pair[0]) == variable) {
+                return decodeURIComponent(pair[1]);
+            }
+        }
+      }
+
+      function matchParams() {
+        let utm_medium = (getQueryVariable('utm_medium') ? getQueryVariable('utm_medium') : '') || (getQueryVariable('pm') ? getQueryVariable('pm') : '');
+        let utm_source = (getQueryVariable('utm_source') ? getQueryVariable('utm_source') : '') || (getQueryVariable('ps') ? getQueryVariable('ps') : '');
+        let s = getQueryVariable('s') ? getQueryVariable('s') : '';
+        let ss = getQueryVariable('ss') ? getQueryVariable('ss') : '';
+        if ((s && ss) && (utm_source && utm_medium)) {
+            if (s.toLowerCase() == utm_source.toLowerCase()) {
+                return true;
+            }
+        } else if ((utm_source && utm_medium)) {
+            return true;
+        }
+      }
+
+      function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+      }
+
+      function getPartnerId() {
+          var dimension = {};
+          var puid = (getQueryVariable('puid') ? getQueryVariable('puid') : '') ||
+              (getCookie('puid') ? getCookie('puid') : '') ||
+              (getCookie('pId') ? getCookie('pId') : '');
+
+              var partnerRef = (getQueryVariable('partnerRef') ? getQueryVariable('partnerRef') : false);
+
+          let utm_source = (getQueryVariable('utm_source') ? getQueryVariable('utm_source') : '') ||
+              (getCookie('utm_source') ? getCookie('utm_source') : '') ||
+              (getQueryVariable('ps') ? getQueryVariable('ps') : '') ||
+              (getQueryVariable('s') ? getQueryVariable('s') : '') ||
+              (getCookie('s') ? getCookie('s') : '');
+
+          let utm_medium = (getQueryVariable('utm_medium') ? getQueryVariable('utm_medium') : '') ||
+              (getCookie('utm_medium') ? getCookie('utm_medium') : '') ||
+              (getQueryVariable('pm') ? getQueryVariable('pm') : '') ||
+              (getQueryVariable('ss') ? getQueryVariable('ss') : '');
+
+          if (partnerRef) {
+            dimension.partnerRef = partnerRef;
+            dimension.ref = true;
+          } else {
+              let domain = window.location.host.split('.')[0] === "m" ? 'pwa' : window.location.host.split('.')[0];
+              let validPartners = window.__STATE.partnerList;
+
+              if (matchParams() && validPartners) {
+                  for (let i = 0; i < validPartners.length; i++) {
+                      let pUtmMedium = validPartners[i].utmMedium
+                      let pUtmSource = validPartners[i].utmSource;
+                      if (validPartners[i].code == 'def' && validPartners[i].name == 'default') {
+                        dimension.pid = validPartners[i].code
+                      }
+                      if (pUtmMedium && pUtmSource && pUtmSource.toLowerCase() == utm_source.toLowerCase() && pUtmMedium.toLowerCase() == utm_medium.toLowerCase()) {
+                          // dimension.dimension8 = pUtmSource;
+                          // dimension.dimension9 = pUtmMedium;
+                          dimension.pid = validPartners[i].code;
+                          break;
+                      }
+                  }
+
+              } else if (validPartners) {
+                  for (let i = 0; i < validPartners.length; i++) {
+                      if (validPartners[i].code == 'def' && validPartners[i].name == 'default') {
+                        dimension.pid = validPartners[i].code;
+                          break;
+                      }
+                  }
+
+              }
+
+          }
+          return dimension;
+      } 
+      if(!window.location.search.includes('da=true')){
+        var _partner = getPartnerId();
+        var utmSrc   = getQueryVariable('utm_source') || '';
+        var utmMed   = getQueryVariable('utm_medium') || '';
+        var utmCamp  = getQueryVariable('utm_campaign') || '';
+        var utmChannel = getQueryVariable('utm_channel') || '';
+        var prefStr  = {utm_source:utmSrc,utm_medium:utmMed,utm_campaign:utmCamp};
+        if(_partner.pid!=="def"){
+          prefStr.pid = _partner.pid;
+        }
+        var prefStr1 =  JSON.stringify(prefStr);
+        var _pid = _partner.ref ? encodeURI(_partner.partnerRef) : (_partner.pid == 'def' ? (JSON.stringify(prefStr)) : encodeURI((prefStr1)));
+        var partner = window.location.host.split('.')[0]==="m"?'pwa':window.location.host.split('.')[0];
+        var ads_script = document.createElement('script');
+        var ts = Date.now();
+        var domain = window.location.hostname;
+        var adUrlProd = 'https://money.dailyhunt.in/adtag.js?origin=pwa&env=prod&zone=web&partnerRef='+_pid+'&cb='+ts;
+        var adUrlStage = 'https://adenginestage.dailyhunt.in/adtag.js?origin=pwa&env=stage&zone=web&partnerRef='+_pid+'&cb='+ts
+        var adsUrl = ((domain=='pre.dailyhunt.in') || (domain=='pwaqa.dailyhunt.in') || (domain=='pwa.dailyhunt.in')) ? adUrlStage:adUrlProd;
+        ads_script.setAttribute('src',adsUrl);
+        ads_script.setAttribute("async", "");
+        ads_script.setAttribute("id", "adTag");
+        document.head.appendChild(ads_script);
+        if(utmMed && utmChannel && utmMed.toLowerCase() ==='paid' && utmChannel.toLowerCase()==='regular'){
+        }
+        else{
+          document.head.appendChild(ads_script);
+        } 
+        
+      }
+    </script>
+
+</head>
+<body>
+<div id="refreshBtn" class ="new_ver_wrp" style="display:none;" onclick="refreshPage(this)">
+  <span class="refText">Get the latest version</span>
+  <span class ="refBtn">Refresh</span>
+</div>
+<div id="app"><div id="shimmerList"><header id="header" class="hdShimmer">  <div class="siteNav"><ul class="LHS">  <li><div class="m_sprite thumb_nav">Menu</div>  </li>  <li><!--<div class="dh_logo"></div>-->  </li></ul>  </div></header><div class="dh-list-item">  <section class="crdShimmer"><div class="inr clearfix">  <picture class="aniBg"></picture>  <div class="list-content"><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div>  </div></div>  </section>  <section class="crdShimmer"><div class="inr clearfix">  <picture class="aniBg"></picture>  <div class="list-content"><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div>  </div></div>  </section>  <section class="crdShimmer"><div class="inr clearfix">  <picture class="aniBg"></picture>  <div class="list-content"><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div>  </div></div>  </section>  <section class="crdShimmer"><div class="inr clearfix">  <picture class="aniBg"></picture>  <div class="list-content"><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div>  </div></div>  </section>  <section class="crdShimmer"><div class="inr clearfix">  <picture class="aniBg"></picture>  <div class="list-content"><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div><div class="aniBg"></div>  </div></div>  </section></div></div></div>
+<div id="app2"></div>
+<!-- check connection: start -->
+<div class="sticky grySticky" id="snackbar">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <p id="connectionMsg">No Internet connection</p>
+      </td>
+      <!--<td class="close">
+        <div id="closeBtn" class="closeBtn"></div>
+      </td>-->
+    </tr>
+  </table>
+</div>
+<!-- check connection: end -->
+<style>.TCAP,header nav ul.lhs li div,header.defult .lhs h2{text-transform:capitalize}.BDRN,iframe{border:none}*{tap-highlight-color:transparent}body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.DB{display:block}.DN{display:none}.DINB{display:inline-block}.TAC{text-align:center}.TAL{text-align:left}.TAR,.dirRtl{text-align:right}.FSI{font-style:italic}.FL,.LHS{float:left}.FR,.RHS{float:right}.FN{float:none}.POSR{position:relative}.POSA{position:absolute}.POSF,header.fixdn,header.fixup{position:fixed}.TDU{text-decoration:underline}.TDN{text-decoration:none}.valignBline{vertical-align:baseline}.valignBtm{vertical-align:bottom}.divTable ul li,.valignTp{vertical-align:top}.MRAto{margin:0 auto}.BDRRN{border-right:none}.BDRLN{border-left:none}.BDRTN{border-top:none}.BDRBN{border-bottom:none}.BDRON{outline:0}.TLOWR{text-transform:lowercase}.TUPR{text-transform:uppercase}.FWN{font-weight:400}.FWB{font-weight:700}.overH{overflow:hidden}.overS{overflow:scroll}.overA{overflow:auto}.bgRepeatNo{background-repeat:no-repeat}.bgSize{background-size:100% auto}.dirRtl{direction:rtl}.bx_sizing{-webkit-box-sizing:border-box;box-sizing:border-box}.PA0{padding:0}.PA10{padding:10px}.PA15{padding:15px}.PA20{padding:20px}.PT0{padding-top:0}.PT10{padding-top:10px}.PT15{padding-top:15px}.PT20{padding-top:20px}.PL0{padding-left:0}.PL10{padding-left:10px}.PL20{padding-left:20px}.PR0{padding-right:0}.PR10{padding-right:10px}.PR20{padding-right:20px}.PB0{padding-bottom:0}.PB10{padding-bottom:10px}.PB20{padding-bottom:20px}.MA0{margin:0}.MT0{margin-top:0}.MT10{margin-top:10px}.MT15{margin-top:15px}.MT20{margin-top:20px}.MT30{margin-top:30px}.ML0{margin-left:0}.ML10{margin-left:10px}.ML15{margin-left:15px}.ML20{margin-left:20px}.ML30{margin-left:30px}.MB0{margin-bottom:0}.MB10{margin-bottom:10px}.MB15{margin-bottom:15px}.MB20{margin-bottom:20px}.MB30{margin-bottom:30px}.MR0{margin-right:0}.MR10{margin-right:10px}.MR15{margin-right:15px}.MR20{margin-right:20px}.MR30{margin-right:30px}.wdt_percent{width:100%}.ht_percent{height:100%}.wdt_auto{width:auto}.ht_auto{height:auto}.bg_none{background:0 0}.bg_white{background-color:#fff}.bg_red{background-color:#BF3D31}.bg_black{background-color:#000}.bg_gray{background-color:#f1f1f1}.bg_blue{background-color:#4b648f}.bg_yellow{background-color:#ffce08}.bg_green{background-color:#22a10d}.colWhite{color:#fff}.colBlack{color:#2e2e2e}.colRed,.np_landing nav ul li div.active,.tp_landing nav ul li div.active,header nav ul.lhs li div.active{color:#BF3D31}.divTable{display:table;width:100%;border-collapse:separate}.divTable ul{display:table-row}.divTable ul li{display:table-cell}.error-bar,.success-bar,.warning-bar{background-color:#BF3D31;padding:10px}.warning-bar{background-color:#ffce08}.success-bar{background-color:#22a10d}header.fixup{-webkit-animation:ani-fixup .5s forwards;animation:ani-fixup .5s forwards;width:100%;z-index:999;left:0}@keyframes ani-fixup{0%{top:0;background:#f2f2f2}100%{top:-35px;background:#fff}}@-webkit-keyframes ani-fixup{0%{top:0;background:#f2f2f2}100%{top:-35px;background:#fff}}@-moz-keyframes ani-fixup{0%{top:0;background:#f2f2f2}100%{top:-35px;background:#fff}}@-o-keyframes ani-fixup{0%{top:0;background:#f2f2f2}100%{top:-35px;background:#fff}}header.fixdn{-webkit-animation:ani-fixdn .5s forwards;animation:ani-fixdn .5s forwards;width:100%;z-index:999;left:0}@keyframes ani-fixdn{0%{top:-35px;background:#fff}100%{top:0;background:#f2f2f2}}@-webkit-keyframes ani-fixdn{0%{top:-35px;background:#fff}100%{top:0;background:#f2f2f2}}@-moz-keyframes ani-fixdn{0%{top:-35px;background:#fff}100%{top:0;background:#f2f2f2}}@-o-keyframes ani-fixdn{0%{top:-35px;background:#fff}100%{top:0;background:#f2f2f2}}.sidelft2rht{-webkit-animation-name:sidelft2rht;-webkit-animation-duration:.5s;animation-name:sidelft2rht;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes sidelft2rht{0%{left:-100%}100%{left:0}}@keyframes sidelft2rht{0%{left:-100%}100%{left:0}}.siderht2lft{-webkit-animation-name:siderht2lft;-webkit-animation-duration:.5s;animation-name:siderht2lft;animation-duration:.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes siderht2lft{0%{left:0}100%{left:-100%}}@keyframes siderht2lft{0%{left:0}100%{left:-100%}}@keyframes placeHolderShimmer{0%{background-position:-468px 0}100%{background-position:468px 0}}.aniBg{animation-duration:1s;animation-fill-mode:forwards;animation-iteration-count:infinite;animation-name:placeHolderShimmer;animation-timing-function:linear;background:#f6f7f8;background:linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);background-size:800px 104px}.np_landing nav ul li div:after,.tp_landing nav ul li div:after,header nav ul.lhs li div:after{content:'';height:2px;width:100%;background:#BF3D31;transform:scaleX(0);transition:transform 250ms ease-in-out;position:absolute;bottom:0;left:0}.np_landing nav ul li div.active:after,.tp_landing nav ul li div.active:after,header nav ul.lhs li div.active:after{transition-delay:150ms;transform:scaleX(1)}.dot-loader p{font-size:11px;color:#232323;text-align:center;padding-bottom:30px}.dot-loader-inner{text-align:center;padding:30px 10px 10px}.dot-loader-inner label{font-size:20px;opacity:0;display:inline-block}@keyframes dot{0%{opacity:0;transform:translateX(-300px)}33%,66%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(300px)}}@-webkit-keyframes dot{0%{opacity:0;-webkit-transform:translateX(-300px)}33%,66%{opacity:1;-webkit-transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(300px)}}.dot-loader-inner label:nth-child(4){color:#D95423;-webkit-animation:dot 3s .2s infinite ease-in-out;animation:dot 3s .2s infinite ease-in-out}.dot-loader-inner label:nth-child(3){color:#87D447;-webkit-animation:dot 3s .3s infinite ease-in-out;animation:dot 3s .3s infinite ease-in-out}.dot-loader-inner label:nth-child(2){color:#50AFCD;-webkit-animation:dot 3s .4s infinite ease-in-out;animation:dot 3s .4s infinite ease-in-out}.dot-loader-inner label:nth-child(1){color:#EFAA02;-webkit-animation:dot 3s .5s infinite ease-in-out;animation:dot 3s .5s infinite ease-in-out}.dh_logo{background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE5NnB4IiBoZWlnaHQ9IjUwcHgiIHZpZXdCb3g9IjAgMCAxOTYgNTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5sb2dvLXZlcnRpY2FsPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImxvZ28tdmVydGljYWwiPgogICAgICAgICAgICA8ZyBpZD0iUGV0YWwtbG9nby1Db3B5LTMiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTMwLjcyOTY4MzIsMC40MjI3NzM3NjEgQzM1LjU0MjQ3NjEsMC40MjI3NzM3NjEgMzguMjc0MDYxMywzLjgxMDE3NTI0IDM4LjI3NDA2MTMsNy41ODg0MzA3NCBDMzguMjc0MDYxMywxMy41MTYzODMzIDMzLjY1NjM4MTYsMTcuMzU5NzgxMSAyNS4zMzE1NTA1LDE3LjM1OTc4MTEgQzI0LjE2MDg3MTEsMTcuMzU5NzgxMSAyMi44NjAxMTYzLDE3LjI5NDYzODggMjEuNDk0MzIzNywxNy4yMjk0OTY1IEMyMS40MjkyODU5LDE1Ljg2MTUwNzQgMjEuMzY0MjQ4MSwxNC41NTg2NjA3IDIxLjM2NDI0ODEsMTMuMzg2MDk4NiBDMjEuMzY0MjQ4MSw1LjA0Nzg3OTYyIDI1LjIwMTQ3NSwwLjQyMjc3Mzc2MSAzMC43Mjk2ODMyLDAuNDIyNzczNzYxIEwzMC43Mjk2ODMyLDAuNDIyNzczNzYxIEwzMC43Mjk2ODMyLDAuNDIyNzczNzYxIFoiIGlkPSJQYXRoIiBmaWxsPSIjODdENDQ3Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzAuNzI5NjgzMiwzOC4yMDUzMjg3IEMyNS4yMDE0NzUsMzguMjA1MzI4NyAyMS4zNjQyNDgxLDMzLjU4MDIyMjggMjEuMzY0MjQ4MSwyNS4yNDIwMDM3IEMyMS4zNjQyNDgxLDI0LjA2OTQ0MTggMjEuNDI5Mjg1OSwyMi43NjY1OTUgMjEuNDk0MzIzNywyMS4zOTg2MDYgQzIyLjg2MDExNjMsMjEuMzMzNDYzNiAyNC4xNjA4NzExLDIxLjI2ODMyMTIgMjUuMzMxNTUwNSwyMS4yNjgzMjEyIEMzMy42NTYzODE2LDIxLjI2ODMyMTIgMzguMjc0MDYxMywyNS4xMTE3MTkxIDM4LjI3NDA2MTMsMzEuMDM5NjcxNyBDMzguMjc0MDYxMywzNC44MTc5MjcyIDM1LjU0MjQ3NjEsMzguMjA1MzI4NyAzMC43Mjk2ODMyLDM4LjIwNTMyODcgTDMwLjcyOTY4MzIsMzguMjA1MzI4NyBMMzAuNzI5NjgzMiwzOC4yMDUzMjg3IFoiIGlkPSJQYXRoIiBmaWxsPSIjNTBBRkNEIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOC4wOTY1NDg2NCwzOC4yMDUzMjg3IEMzLjI4Mzc1NTY0LDM4LjIwNTMyODcgMC41NTIxNzA0MzcsMzQuODE3OTI3MiAwLjU1MjE3MDQzNywzMS4wMzk2NzE3IEMwLjU1MjE3MDQzNywyNS4xMTE3MTkxIDUuMTY5ODUwMTgsMjEuMjY4MzIxMiAxMy40OTQ2ODEzLDIxLjI2ODMyMTIgQzE0LjY2NTM2MDcsMjEuMjY4MzIxMiAxNS45NjYxMTU1LDIxLjMzMzQ2MzYgMTcuMzMxOTA4MSwyMS4zOTg2MDYgQzE3LjM5Njk0NTksMjIuNzY2NTk1IDE3LjQ2MTk4MzYsMjQuMDY5NDQxOCAxNy40NjE5ODM2LDI1LjI0MjAwMzcgQzE3LjQ2MTk4MzYsMzMuNTgwMjIyOCAxMy42MjQ3NTY4LDM4LjIwNTMyODcgOC4wOTY1NDg2NCwzOC4yMDUzMjg3IEw4LjA5NjU0ODY0LDM4LjIwNTMyODcgTDguMDk2NTQ4NjQsMzguMjA1MzI4NyBaIiBpZD0iUGF0aCIgZmlsbD0iI0VGQUEwMiI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTguMDk2NTQ4NjQsMC40MjI3NzM3NjEgQzEzLjYyNDc1NjgsMC40MjI3NzM3NjEgMTcuNDYxOTgzNiw1LjA0Nzg3OTYyIDE3LjQ2MTk4MzYsMTMuMzg2MDk4NiBDMTcuNDYxOTgzNiwxNC41NTg2NjA3IDE3LjM5Njk0NTksMTUuODYxNTA3NCAxNy4zMzE5MDgxLDE3LjIyOTQ5NjUgQzE1Ljk2NjExNTUsMTcuMjk0NjM4OCAxNC42NjUzNjA3LDE3LjM1OTc4MTEgMTMuNDk0NjgxMywxNy4zNTk3ODExIEM1LjE2OTg1MDE4LDE3LjM1OTc4MTEgMC41NTIxNzA0MzcsMTMuNTE2MzgzMyAwLjU1MjE3MDQzNyw3LjU4ODQzMDc0IEMwLjU1MjE3MDQzNywzLjgxMDE3NTI0IDMuMjgzNzU1NjQsMC40MjI3NzM3NjEgOC4wOTY1NDg2NCwwLjQyMjc3Mzc2MSBMOC4wOTY1NDg2NCwwLjQyMjc3Mzc2MSBMOC4wOTY1NDg2NCwwLjQyMjc3Mzc2MSBaIiBpZD0iUGF0aCIgZmlsbD0iI0Q5NTQyMyI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik02MS4zNjg0Nzc2LDM1LjM2NDcwNTkgTDYxLjM2ODQ3NzYsMzQuNzI5NDExOCBDNjAuNTc4NjI2OSwzNC43Mjk0MTE4IDYwLjIxMDAyOTksMzQuMjUyOTQxMiA2MC4yMTAwMjk5LDMzLjAzNTI5NDEgTDYwLjIxMDAyOTksMS4wMDU4ODIzNSBDNjAuMjEwMDI5OSwwLjQyMzUyOTQxMiA1OS43ODg3NzYxLDAgNTkuMjA5NTUyMiwwIEw1NC43MzM3MzEzLDAgQzU0LjE1NDUwNzUsMCA1My43MzMyNTM3LDAuNDIzNTI5NDEyIDUzLjczMzI1MzcsMS4wMDU4ODIzNSBMNTMuNzMzMjUzNywxNC4wODIzNTI5IEM1My4zMTIsMTMuMDc2NDcwNiA1Mi4xMDA4OTU1LDEyLjIyOTQxMTggNDkuOTk0NjI2OSwxMi4yMjk0MTE4IEM0NS41MTg4MDYsMTIuMjI5NDExOCA0My4xNDkyNTM3LDE1LjgyOTQxMTggNDMuMTQ5MjUzNywyNS4yIEM0My4xNDkyNTM3LDM0LjU3MDU4ODIgNDUuNTE4ODA2LDM4LjE3MDU4ODIgNDkuOTk0NjI2OSwzOC4xNzA1ODgyIEM1MS44Mzc2MTE5LDM4LjE3MDU4ODIgNTMuNDE3MzEzNCwzNy40Mjk0MTE4IDU0LjA0OTE5NCwzNi4xNTg4MjM1IEM1NC41NzU3NjEyLDM3LjU4ODIzNTMgNTUuNzg2ODY1NywzOC4yMjM1Mjk0IDU3LjUyNDUzNzMsMzguMjIzNTI5NCBDNjAuNjgzOTQwMywzOC4yMjM1Mjk0IDYxLjM2ODQ3NzYsMzYuNjg4MjM1MyA2MS4zNjg0Nzc2LDM1LjM2NDcwNTkgTDYxLjM2ODQ3NzYsMzUuMzY0NzA1OSBMNjEuMzY4NDc3NiwzNS4zNjQ3MDU5IFogTTUzLjczMzI1MzcsMzIuOTgyMzUyOSBDNTMuMzEyLDMzLjE5NDExNzYgNTIuODM4MDg5NiwzMy4zNTI5NDEyIDUyLjIwNjIwOSwzMy4zNTI5NDEyIEM1MC43MzE4MjA5LDMzLjM1Mjk0MTIgNDkuNjI2MDI5OSwzMi42NjQ3MDU5IDQ5LjYyNjAyOTksMjUuMiBDNDkuNjI2MDI5OSwxNy42ODIzNTI5IDUwLjczMTgyMDksMTcuMDQ3MDU4OCA1Mi4yMDYyMDksMTcuMDQ3MDU4OCBDNTIuODM4MDg5NiwxNy4wNDcwNTg4IDUzLjMxMiwxNy4yMDU4ODI0IDUzLjczMzI1MzcsMTcuNDE3NjQ3MSBMNTMuNzMzMjUzNywzMi45ODIzNTI5IEw1My43MzMyNTM3LDMyLjk4MjM1MjkgWiBNODAuMTY2OTI1NCwzNS4zNjQ3MDU5IEw4MC4xNjY5MjU0LDM0LjcyOTQxMTggQzc5LjM3NzA3NDYsMzQuNzI5NDExOCA3OS4wMDg0Nzc2LDM0LjI1Mjk0MTIgNzkuMDA4NDc3NiwzMy4wMzUyOTQxIEw3OS4wMDg0Nzc2LDE5LjY5NDExNzYgQzc5LjAwODQ3NzYsMTQuNTA1ODgyNCA3Ni4zMjI5ODUxLDEyLjE3NjQ3MDYgNzEuMjY3OTQwMywxMi4xNzY0NzA2IEM2Ni45NTAwODk2LDEyLjE3NjQ3MDYgNjMuNTgwMDU5NywxNC40IDYzLjU4MDA1OTcsMTkuNDI5NDExOCBDNjMuNTgwMDU5NywyMC4zODIzNTI5IDY0LjI2NDU5NywyMC43IDY0Ljg5NjQ3NzYsMjAuNyBMNjguMTYxMTk0LDIwLjcgQzY4Ljg5ODM4ODEsMjAuNyA2OS4xNjE2NzE2LDIwLjI3NjQ3MDYgNjkuMTA5MDE0OSwxOS4yNzA1ODgyIEM2OS4wNTYzNTgyLDE4LjE1ODgyMzUgNjkuMzE5NjQxOCwxNi44MzUyOTQxIDcxLjAwNDY1NjcsMTYuODM1Mjk0MSBDNzIuNTMxNzAxNSwxNi44MzUyOTQxIDcyLjkwMDI5ODUsMTcuOTQ3MDU4OCA3Mi45MDAyOTg1LDE5LjIxNzY0NzEgTDcyLjkwMDI5ODUsMjMuMTg4MjM1MyBDNzIuMDU3NzkxLDIzLjAyOTQxMTggNzEuMTA5OTcwMSwyMi44NzA1ODgyIDY5Ljc0MDg5NTUsMjIuODcwNTg4MiBDNjQuNTgwNTM3MywyMi44NzA1ODgyIDYyLjY4NDg5NTUsMjYuNTc2NDcwNiA2Mi42ODQ4OTU1LDMwLjQ5NDExNzYgQzYyLjY4NDg5NTUsMzQuNTcwNTg4MiA2NC4yNjQ1OTcsMzguMjIzNTI5NCA2OC41Mjk3OTEsMzguMjIzNTI5NCBDNzAuNzk0MDI5OSwzOC4yMjM1Mjk0IDcyLjQ3OTA0NDgsMzcuNTM1Mjk0MSA3My4xNjM1ODIxLDM2LjEwNTg4MjQgQzczLjU4NDgzNTgsMzcuNTg4MjM1MyA3NC41MzI2NTY3LDM4LjIyMzUyOTQgNzYuMjcwMzI4NCwzOC4yMjM1Mjk0IEM3OS40ODIzODgxLDM4LjIyMzUyOTQgODAuMTY2OTI1NCwzNi42ODgyMzUzIDgwLjE2NjkyNTQsMzUuMzY0NzA1OSBMODAuMTY2OTI1NCwzNS4zNjQ3MDU5IEw4MC4xNjY5MjU0LDM1LjM2NDcwNTkgWiBNNzIuOTAwMjk4NSwzMy4zNTI5NDEyIEM3Mi4zMjEwNzQ2LDMzLjc3NjQ3MDYgNzEuNjM2NTM3MywzNC4wOTQxMTc2IDcwLjc5NDAyOTksMzQuMDQxMTc2NSBDNjkuNDI0OTU1MiwzMy45MzUyOTQxIDY4Ljc5MzA3NDYsMzIuODc2NDcwNiA2OC43OTMwNzQ2LDMwLjU0NzA1ODggQzY4Ljc5MzA3NDYsMjguMTExNzY0NyA2OS40MjQ5NTUyLDI2LjYyOTQxMTggNzEuMzczMjUzNywyNi41NzY0NzA2IEM3MS44NDcxNjQyLDI2LjU3NjQ3MDYgNzIuMzIxMDc0NiwyNi41NzY0NzA2IDcyLjkwMDI5ODUsMjYuNjI5NDExOCBMNzIuOTAwMjk4NSwzMy4zNTI5NDEyIEw3Mi45MDAyOTg1LDMzLjM1Mjk0MTIgWiBNODguOTA3OTQwMywzNi45IEw4OC45MDc5NDAzLDEzLjUgQzg4LjkwNzk0MDMsMTIuOTE3NjQ3MSA4OC40ODY2ODY2LDEyLjQ5NDExNzYgODcuOTA3NDYyNywxMi40OTQxMTc2IEw4My40MzE2NDE4LDEyLjQ5NDExNzYgQzgyLjg1MjQxNzksMTIuNDk0MTE3NiA4Mi40MzExNjQyLDEyLjkxNzY0NzEgODIuNDMxMTY0MiwxMy41IEw4Mi40MzExNjQyLDM2LjkgQzgyLjQzMTE2NDIsMzcuNDgyMzUyOSA4Mi44NTI0MTc5LDM3LjkwNTg4MjQgODMuNDMxNjQxOCwzNy45MDU4ODI0IEw4Ny45MDc0NjI3LDM3LjkwNTg4MjQgQzg4LjQ4NjY4NjYsMzcuOTA1ODgyNCA4OC45MDc5NDAzLDM3LjQ4MjM1MjkgODguOTA3OTQwMywzNi45IEw4OC45MDc5NDAzLDM2LjkgTDg4LjkwNzk0MDMsMzYuOSBaIE04OS4wMTMyNTM3LDUuMjQxMTc2NDcgQzg5LjAxMzI1MzcsMy4zMzUyOTQxMiA4Ny41Mzg4NjU3LDEuODUyOTQxMTggODUuNjQzMjIzOSwxLjg1Mjk0MTE4IEM4My44MDAyMzg4LDEuODUyOTQxMTggODIuMjczMTk0LDMuMzM1Mjk0MTIgODIuMjczMTk0LDUuMjQxMTc2NDcgQzgyLjI3MzE5NCw3LjA5NDExNzY1IDgzLjgwMDIzODgsOC42Mjk0MTE3NiA4NS42NDMyMjM5LDguNjI5NDExNzYgQzg3LjUzODg2NTcsOC42Mjk0MTE3NiA4OS4wMTMyNTM3LDcuMDk0MTE3NjUgODkuMDEzMjUzNyw1LjI0MTE3NjQ3IEw4OS4wMTMyNTM3LDUuMjQxMTc2NDcgTDg5LjAxMzI1MzcsNS4yNDExNzY0NyBaIE05OC43NTQ3NDYzLDM2LjkgTDk4Ljc1NDc0NjMsMS4wMDU4ODIzNSBDOTguNzU0NzQ2MywwLjQyMzUyOTQxMiA5OC4zMzM0OTI1LDAgOTcuNzU0MjY4NywwIEw5My4yNzg0NDc4LDAgQzkyLjY5OTIyMzksMCA5Mi4yNzc5NzAxLDAuNDIzNTI5NDEyIDkyLjI3Nzk3MDEsMS4wMDU4ODIzNSBMOTIuMjc3OTcwMSwzNi45IEM5Mi4yNzc5NzAxLDM3LjQ4MjM1MjkgOTIuNjk5MjIzOSwzNy45MDU4ODI0IDkzLjI3ODQ0NzgsMzcuOTA1ODgyNCBMOTcuNzU0MjY4NywzNy45MDU4ODI0IEM5OC4zMzM0OTI1LDM3LjkwNTg4MjQgOTguNzU0NzQ2MywzNy40ODIzNTI5IDk4Ljc1NDc0NjMsMzYuOSBMOTguNzU0NzQ2MywzNi45IEw5OC43NTQ3NDYzLDM2LjkgWiBNMTE5LjEzMjg5NiwzOC4wNjQ3MDU5IEwxMTkuMTMyODk2LDEzLjUgQzExOS4xMzI4OTYsMTIuOTE3NjQ3MSAxMTguNzExNjQyLDEyLjQ5NDExNzYgMTE4LjEzMjQxOCwxMi40OTQxMTc2IEwxMTMuNjU2NTk3LDEyLjQ5NDExNzYgQzExMy4wNzczNzMsMTIuNDk0MTE3NiAxMTIuNjU2MTE5LDEyLjkxNzY0NzEgMTEyLjY1NjExOSwxMy41IEwxMTIuNjU2MTE5LDMyLjY2NDcwNTkgQzExMS44NjYyNjksMzMuMDg4MjM1MyAxMTAuOTE4NDQ4LDMzLjMgMTEwLjIzMzkxLDMzLjMgQzEwOS4xMjgxMTksMzMuMyAxMDguNTQ4ODk2LDMyLjc3MDU4ODIgMTA4LjU0ODg5NiwzMS40NDcwNTg4IEwxMDguNTQ4ODk2LDEzLjUgQzEwOC41NDg4OTYsMTIuOTE3NjQ3MSAxMDguMTI3NjQyLDEyLjQ5NDExNzYgMTA3LjU0ODQxOCwxMi40OTQxMTc2IEwxMDMuMDcyNTk3LDEyLjQ5NDExNzYgQzEwMi40OTMzNzMsMTIuNDk0MTE3NiAxMDIuMDcyMTE5LDEyLjkxNzY0NzEgMTAyLjA3MjExOSwxMy41IEwxMDIuMDcyMTE5LDMxLjYwNTg4MjQgQzEwMi4wNzIxMTksMzUuODk0MTE3NiAxMDMuODYyNDQ4LDM4LjIyMzUyOTQgMTA3Ljc1OTA0NSwzOC4yMjM1Mjk0IEMxMDkuOTE3OTcsMzguMjIzNTI5NCAxMTEuNjU1NjQyLDM3LjI3MDU4ODIgMTEyLjY1NjExOSwzNi4zMTc2NDcxIEwxMTIuNjU2MTE5LDM4LjMyOTQxMTggQzExMi42NTYxMTksNDIuNDA1ODgyNCAxMTEuNzA4Mjk5LDQ0LjI1ODgyMzUgMTA4LjU0ODg5Niw0NC4yNTg4MjM1IEMxMDcuNzA2Mzg4LDQ0LjI1ODgyMzUgMTA2Ljc1ODU2Nyw0NC4wNDcwNTg4IDEwNi4wNzQwMyw0My43ODIzNTI5IEMxMDUuNjAwMTE5LDQzLjU3MDU4ODIgMTA1LjEyNjIwOSw0My40MTE3NjQ3IDEwNC44MTAyNjksNDMuNDExNzY0NyBDMTA0LjMzNjM1OCw0My40MTE3NjQ3IDEwNC4wNzMwNzUsNDMuNjc2NDcwNiAxMDQuMDczMDc1LDQ0LjIwNTg4MjQgTDEwNC4wNzMwNzUsNDcuOTExNzY0NyBDMTA0LjA3MzA3NSw0OS4wNzY0NzA2IDEwNy40NDMxMDQsNDkuNzExNzY0NyAxMDkuMjg2MDksNDkuNzExNzY0NyBDMTE2LjE4NDExOSw0OS43MTE3NjQ3IDExOS4xMzI4OTYsNDUuNzk0MTE3NiAxMTkuMTMyODk2LDM4LjA2NDcwNTkgTDExOS4xMzI4OTYsMzguMDY0NzA1OSBMMTE5LjEzMjg5NiwzOC4wNjQ3MDU5IFogTTEzOS41NjM3MDEsMzYuOSBMMTM5LjU2MzcwMSwxOC43OTQxMTc2IEMxMzkuNTYzNzAxLDE0LjUwNTg4MjQgMTM3Ljc3MzM3MywxMi4xNzY0NzA2IDEzMy45Mjk0MzMsMTIuMTc2NDcwNiBDMTMxLjY2NTE5NCwxMi4xNzY0NzA2IDEyOS44NzQ4NjYsMTMuMzQxMTc2NSAxMjguOTc5NzAxLDE0LjM0NzA1ODggTDEyOC45Nzk3MDEsMS4wMDU4ODIzNSBDMTI4Ljk3OTcwMSwwLjQyMzUyOTQxMiAxMjguNTU4NDQ4LDAgMTI3Ljk3OTIyNCwwIEwxMjMuNTAzNDAzLDAgQzEyMi45MjQxNzksMCAxMjIuNTAyOTI1LDAuNDIzNTI5NDEyIDEyMi41MDI5MjUsMS4wMDU4ODIzNSBMMTIyLjUwMjkyNSwzNi45IEMxMjIuNTAyOTI1LDM3LjQ4MjM1MjkgMTIyLjkyNDE3OSwzNy45MDU4ODI0IDEyMy41MDM0MDMsMzcuOTA1ODgyNCBMMTI3Ljk3OTIyNCwzNy45MDU4ODI0IEMxMjguNTU4NDQ4LDM3LjkwNTg4MjQgMTI4Ljk3OTcwMSwzNy40ODIzNTI5IDEyOC45Nzk3MDEsMzYuOSBMMTI4Ljk3OTcwMSwxNy43MzUyOTQxIEMxMjkuODIyMjA5LDE3LjMxMTc2NDcgMTMwLjc3MDAzLDE3LjEgMTMxLjQ1NDU2NywxNy4xIEMxMzIuNTYwMzU4LDE3LjEgMTMzLjA4NjkyNSwxNy42Mjk0MTE4IDEzMy4wODY5MjUsMTguOTUyOTQxMiBMMTMzLjA4NjkyNSwzNi45IEMxMzMuMDg2OTI1LDM3LjQ4MjM1MjkgMTMzLjUwODE3OSwzNy45MDU4ODI0IDEzNC4wODc0MDMsMzcuOTA1ODgyNCBMMTM4LjU2MzIyNCwzNy45MDU4ODI0IEMxMzkuMTQyNDQ4LDM3LjkwNTg4MjQgMTM5LjU2MzcwMSwzNy40ODIzNTI5IDEzOS41NjM3MDEsMzYuOSBMMTM5LjU2MzcwMSwzNi45IEwxMzkuNTYzNzAxLDM2LjkgWiBNMTYxLjA0NzY0MiwzNS4zNjQ3MDU5IEwxNjEuMDQ3NjQyLDM0LjcyOTQxMTggQzE2MC4yNTc3OTEsMzQuNzI5NDExOCAxNTkuODg5MTk0LDM0LjI1Mjk0MTIgMTU5Ljg4OTE5NCwzMy4wMzUyOTQxIEwxNTkuODg5MTk0LDEzLjUgQzE1OS44ODkxOTQsMTIuOTE3NjQ3MSAxNTkuNDY3OTQsMTIuNDk0MTE3NiAxNTguODg4NzE2LDEyLjQ5NDExNzYgTDE1NC40MTI4OTYsMTIuNDk0MTE3NiBDMTUzLjgzMzY3MiwxMi40OTQxMTc2IDE1My40MTI0MTgsMTIuOTE3NjQ3MSAxNTMuNDEyNDE4LDEzLjUgTDE1My40MTI0MTgsMzIuNjY0NzA1OSBDMTUyLjYyMjU2NywzMy4wODgyMzUzIDE1MS42NzQ3NDYsMzMuMyAxNTAuOTkwMjA5LDMzLjMgQzE0OS44ODQ0MTgsMzMuMyAxNDkuMzA1MTk0LDMyLjc3MDU4ODIgMTQ5LjMwNTE5NCwzMS40NDcwNTg4IEwxNDkuMzA1MTk0LDEzLjUgQzE0OS4zMDUxOTQsMTIuOTE3NjQ3MSAxNDguODgzOTQsMTIuNDk0MTE3NiAxNDguMzA0NzE2LDEyLjQ5NDExNzYgTDE0My44Mjg4OTYsMTIuNDk0MTE3NiBDMTQzLjI0OTY3MiwxMi40OTQxMTc2IDE0Mi44Mjg0MTgsMTIuOTE3NjQ3MSAxNDIuODI4NDE4LDEzLjUgTDE0Mi44Mjg0MTgsMzEuNjA1ODgyNCBDMTQyLjgyODQxOCwzNS44OTQxMTc2IDE0NC42MTg3NDYsMzguMjIzNTI5NCAxNDguNTE1MzQzLDM4LjIyMzUyOTQgQzE1MC44ODQ4OTYsMzguMjIzNTI5NCAxNTIuNjc1MjI0LDM3LjExMTc2NDcgMTUzLjY3NTcwMSwzNi4wNTI5NDEyIEMxNTQuMjAyMjY5LDM3LjUzNTI5NDEgMTU1LjQxMzM3MywzOC4yMjM1Mjk0IDE1Ny4yMDM3MDEsMzguMjIzNTI5NCBDMTYwLjM2MzEwNCwzOC4yMjM1Mjk0IDE2MS4wNDc2NDIsMzYuNjg4MjM1MyAxNjEuMDQ3NjQyLDM1LjM2NDcwNTkgTDE2MS4wNDc2NDIsMzUuMzY0NzA1OSBMMTYxLjA0NzY0MiwzNS4zNjQ3MDU5IFogTTE4MC4zNzI2NTcsMzYuOSBMMTgwLjM3MjY1NywxOC43OTQxMTc2IEMxODAuMzcyNjU3LDE0LjUwNTg4MjQgMTc4LjU4MjMyOCwxMi4xNzY0NzA2IDE3NC43MzgzODgsMTIuMTc2NDcwNiBDMTcyLjMxNjE3OSwxMi4xNzY0NzA2IDE3MC42MzExNjQsMTMuMjg4MjM1MyAxNjkuNjMwNjg3LDE0LjI5NDExNzYgQzE2OS4yNjIwOSwxMy4wNzY0NzA2IDE2OC4xNTYyOTksMTIuNDk0MTE3NiAxNjYuODkyNTM3LDEyLjQ5NDExNzYgTDE2NC4zMTIzNTgsMTIuNDk0MTE3NiBDMTYzLjczMzEzNCwxMi40OTQxMTc2IDE2My4zMTE4ODEsMTIuOTE3NjQ3MSAxNjMuMzExODgxLDEzLjUgTDE2My4zMTE4ODEsMzYuOSBDMTYzLjMxMTg4MSwzNy40ODIzNTI5IDE2My43MzMxMzQsMzcuOTA1ODgyNCAxNjQuMzEyMzU4LDM3LjkwNTg4MjQgTDE2OC43ODgxNzksMzcuOTA1ODgyNCBDMTY5LjM2NzQwMywzNy45MDU4ODI0IDE2OS43ODg2NTcsMzcuNDgyMzUyOSAxNjkuNzg4NjU3LDM2LjkgTDE2OS43ODg2NTcsMTcuNzM1Mjk0MSBDMTcwLjYzMTE2NCwxNy4zMTE3NjQ3IDE3MS41Nzg5ODUsMTcuMSAxNzIuMjYzNTIyLDE3LjEgQzE3My4zNjkzMTMsMTcuMSAxNzMuODk1ODgxLDE3LjYyOTQxMTggMTczLjg5NTg4MSwxOC45NTI5NDEyIEwxNzMuODk1ODgxLDM2LjkgQzE3My44OTU4ODEsMzcuNDgyMzUyOSAxNzQuMzE3MTM0LDM3LjkwNTg4MjQgMTc0Ljg5NjM1OCwzNy45MDU4ODI0IEwxNzkuMzcyMTc5LDM3LjkwNTg4MjQgQzE3OS45NTE0MDMsMzcuOTA1ODgyNCAxODAuMzcyNjU3LDM3LjQ4MjM1MjkgMTgwLjM3MjY1NywzNi45IEwxODAuMzcyNjU3LDM2LjkgTDE4MC4zNzI2NTcsMzYuOSBaIE0xOTEuMzI1MjU0LDE2LjgzNTI5NDEgTDE5NC4wMTA3NDYsMTYuODM1Mjk0MSBDMTk0LjU4OTk3LDE2LjgzNTI5NDEgMTk1LjAxMTIyNCwxNi40MTE3NjQ3IDE5NS4wMTEyMjQsMTUuODI5NDExOCBMMTk1LjAxMTIyNCwxMy41IEMxOTUuMDExMjI0LDEyLjkxNzY0NzEgMTk0LjU4OTk3LDEyLjQ5NDExNzYgMTk0LjAxMDc0NiwxMi40OTQxMTc2IEwxOTEuMzI1MjU0LDEyLjQ5NDExNzYgTDE5MS4zMjUyNTQsNy4zNTg4MjM1MyBDMTkxLjMyNTI1NCw2Ljc3NjQ3MDU5IDE5MC45MDQsNi4zNTI5NDExOCAxOTAuMzI0Nzc2LDYuMzUyOTQxMTggTDE4NS44NDg5NTUsNi4zNTI5NDExOCBDMTg1LjI2OTczMSw2LjM1Mjk0MTE4IDE4NC44NDg0NzgsNi43NzY0NzA1OSAxODQuODQ4NDc4LDcuMzU4ODIzNTMgTDE4NC44NDg0NzgsMTIuNDk0MTE3NiBMMTgzLjA1ODE0OSwxMi40OTQxMTc2IEMxODIuNDc4OTI1LDEyLjQ5NDExNzYgMTgyLjA1NzY3MiwxMi45MTc2NDcxIDE4Mi4wNTc2NzIsMTMuNSBMMTgyLjA1NzY3MiwxNS44Mjk0MTE4IEMxODIuMDU3NjcyLDE2LjQxMTc2NDcgMTgyLjQ3ODkyNSwxNi44MzUyOTQxIDE4My4wNTgxNDksMTYuODM1Mjk0MSBMMTg0Ljg0ODQ3OCwxNi44MzUyOTQxIEwxODQuODQ4NDc4LDMzLjM1Mjk0MTIgQzE4NC44NDg0NzgsMzYuNjM1Mjk0MSAxODYuNTMzNDkzLDM4LjI3NjQ3MDYgMTg5LjY5Mjg5NiwzOC4yNzY0NzA2IEMxOTEuNjkzODUxLDM4LjI3NjQ3MDYgMTkzLjAxMDI2OSwzNy45NTg4MjM1IDE5NC40MzIsMzcuMDU4ODIzNSBDMTk1LjAxMTIyNCwzNi42ODgyMzUzIDE5NS4zMjcxNjQsMzYuMTA1ODgyNCAxOTUuMzI3MTY0LDM0Ljk5NDExNzYgTDE5NS4zMjcxNjQsMzMuOTM1Mjk0MSBDMTk1LjMyNzE2NCwzMy4zIDE5NS4wNjM4ODEsMzMuMDg4MjM1MyAxOTQuNjQyNjI3LDMzLjA4ODIzNTMgQzE5NC4zNzkzNDMsMzMuMDg4MjM1MyAxOTQuMTY4NzE2LDMzLjE5NDExNzYgMTkzLjg1Mjc3NiwzMy4zIEMxOTMuMzI2MjA5LDMzLjQ1ODgyMzUgMTkzLjA2MjkyNSwzMy41NjQ3MDU5IDE5Mi41ODkwMTUsMzMuNTY0NzA1OSBDMTkxLjY0MTE5NCwzMy41NjQ3MDU5IDE5MS4zMjUyNTQsMzMuMDM1Mjk0MSAxOTEuMzI1MjU0LDMxLjgxNzY0NzEgTDE5MS4zMjUyNTQsMTYuODM1Mjk0MSBMMTkxLjMyNTI1NCwxNi44MzUyOTQxIFoiIGlkPSJkYWlseWh1bnQtY29weS0zIiBmaWxsPSIjM0MzQzNDIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=) center center no-repeat;background-size:100% auto;width:85px;height:24px}.thumb_nav{background:url(https://m.dailyhunt.in/assets/img/samsung_menu.svg?mode=pwa) center 15px no-repeat;background-size:20px auto;width:48px}header{background:#f2f2f2}header .btn_dn_arrow{border:1px solid #22a10d;border-radius:4px;margin:8px 12px 0 0;display:block;color:#22a10d;font-size:12px;padding:5px 10px}header .siteNav .LHS li{float:left}header .siteNav .LHS li .dh_logo{margin-top:12px!important;display:block}header .siteNav .LHS li a{display:block;overflow:hidden}header .siteNav .LHS li .thumb_nav{height:36px;text-indent:55px;overflow:hidden}header .siteNav .LHS li:first-child{margin-left:0}header nav ul.lhs{float:left;width:70%;width:calc(100% - 70px);padding-left:10px;white-space:nowrap;overflow-x:auto}header nav ul.lhs li{display:inline-block}header .rhs .btnMore,header.defult .lhs .action a,header.dtls .details_hd .lhs .action a,header.dtls .details_hd .rhs .btn_fnt{display:block}header nav ul.lhs li div{display:block;padding:15px 0 12px;margin-right:15px;color:#606060;text-align:center;position:relative;overflow:hidden}header.defult,header.dtls{position:fixed!important;z-index:999;top:0;box-shadow:0 1px 2px 0 rgba(0,0,0,.18);left:0}header .rhs{float:right}header .rhs .btnMore{width:48px;height:48px;background:url(https://m.dailyhunt.in/assets/img/dot_menu.svg?mode=pwa) center no-repeat;background-size:auto 18px;overflow:hidden;text-indent:-55px}header.defult,header.dtls .details_hd{background-color:#fff}header.dtls{width:100%}header.dtls .details_hd .lhs{float:left}header.dtls .details_hd .rhs{float:right}header.dtls .details_hd .rhs .btn_dn_arrow{margin-top:11px}header.defult{width:100%;height:48px}header.defult .lhs{position:relative}header.defult .lhs h2{position:absolute;text-align:center;width:100%;top:14px;left:0;color:#2e2e2e;font-size:16px;z-index:1}header.defult .lhs .action{position:absolute;width:48px;height:48px;left:0;top:0;z-index:2}header nav#scrollNav ul.lhs li:only-child{}.dh-list-item .ticker_lst a .inr{padding:0;max-height:120px;min-height:120px}#scoreTab{background:#110F16}#scoreTab table,img{width:100%}#scoreTab table td{width:50%;padding:19px;color:#969A9A;text-transform:uppercase;font-weight:700}#scoreTab table td.noTab{border-bottom:none}#scoreTab table td.active{color:#FFF}#scoreTab table .lTab,#scoreTab table .rTab{text-align:center;cursor:pointer;font-size:12px}.cricket_ticker{max-height:120px;min-height:120px;height:120px}.cricket_ticker .dtSty2_ticker{background:#FFF;padding:0 10px;overflow:hidden;max-height:116px;min-height:116px;height:116px}.cricket_ticker .dtSty2_ticker table.tickerTable{width:100%;height:100%}.cricket_ticker .dtSty2_ticker td.matchTiming p.macthNo{font-size:8px;text-align:center;color:#7F7F7F;font-weight:700;margin-bottom:3px}.cricket_ticker .dtSty2_ticker tr td p.venueTxt{font-size:10px;color:#4C4C4C;text-align:center}.cricket_ticker .dtSty2_ticker .flg.lSiz,.cricket_ticker .dtSty2_ticker .flg.rSiz{width:30%}.cricket_ticker .dtSty2_ticker .flg .teamFlag{width:30px;height:100%;display:inline-block}.cricket_ticker .dtSty2_ticker .flg.lSiz .teamFlag{float:left}.cricket_ticker .dtSty2_ticker .flg.rSiz .teamFlag{float:right}.cricket_ticker .dtSty2_ticker .flg .teamFlag img{width:100%;height:auto;border-radius:3px}.cricket_ticker .dtSty2_ticker .flg .teamFlag p{color:#7f7f7f;font-size:9px;text-align:center;margin-top:3px}.cricket_ticker .dtSty2_ticker td.matchTiming p.matcgTime{color:#4C4C4C;font-size:14px;text-align:center;margin:6px 0 8px;font-weight:700}.cricket_ticker .dtSty2_ticker .flg .teamScore{color:#000;font-size:14px;font-weight:700;display:block}.cricket_ticker .dtSty2_ticker .flg.lSiz .teamScore{padding-left:38px}.cricket_ticker .dtSty2_ticker .flg.rSiz .teamScore{padding-right:38px}.cricket_ticker .dtSty2_ticker .flg.lSiz .teamOver{color:#7F7F7F;font-size:10px;padding-left:38px;display:block}.cricket_ticker .dtSty2_ticker .flg.rSiz .teamOver{color:#7F7F7F;font-size:10px;padding-right:38px;display:block}.cricket_ticker .dtSty2_ticker .flg.rSiz{text-align:right}.cricket_ticker .dtSty2_ticker tr td.PT5 .crr{font-size:10px;color:#4C4C4C;text-align:center;margin-bottom:3px}.cricket_ticker .dtSty2_ticker tr td p.statusTxt{color:#888;font-size:10px;text-align:center;margin-bottom:4px}.cricket_ticker .dtSty2_ticker td.matchTiming p.crttxt{color:#4C4C4C;font-size:9px;text-align:center;margin:6px 0 0;line-height:12px;width:97%}.cricket_ticker .dtSty2_ticker td.matchTiming{color:#414141;font-size:12px;font-weight:700;vertical-align:middle}.scoreWrap .scc{padding:0 5px;background-color:#fff}.scoreWrap .scc table.brdr{border:1px solid #D8D8D8;border-radius:2px;margin:12px 0;background-color:#fff}.scc table thead tr th{padding:8px 5px;background:#6f6f6f;text-align:center;color:#fff}.scc table tbody tr td,.scc table thead tr th{vertical-align:middle;font-size:12px}.scc table tbody tr td.TAL,.scc table thead tr th.TAL{text-align:left;line-height:1.4em;border-top-left-radius:2px;border-bottom-left-radius:2px}.scc table tr td,.scc table tr th{font-size:15px;text-align:right;font-weight:400}.scc table tr th{padding:5px 13px;background:#f8f8f8;color:#999}.scc table tbody tr td{padding:10px 5px;font-size:14px;text-align:center;color:#4c4c4c}.scc table tr td{padding:20px 15px;color:#040404}.scc table tbody tr td span{font-size:11px;color:#6E6E6E;display:inline-block;padding-top:5px}.scc table tbody tr td.active{color:#d0021b}.scc table tbody .rndWrp{padding-bottom:10px}.scc table tbody .rndWrp:last-child{padding-bottom:0}.rndWrp em,.scc table tbody .rndWrp .rnd{float:left;font-size:10px}.scc table tbody .comntry{color:#4C4C4C;font-size:14px;text-align:left;line-height:1.4em;display:inline-block}.scoreWrap .scc .quiz_staus_tab{padding:0 5px!important;background-color:#fff;margin:10px 0}.scoreWrap .scc .quiz_staus_tab .teamName{font-size:15px;font-weight:700;text-transform:uppercase;padding-bottom:3px;color:#4C4C4C}.scoreWrap .scc .quiz_staus_tab .matchStats{font-size:12px;font-weight:400;color:#4C4C4C}.scoreWrap .scc .quiz_staus_tab .matchStats span{padding:0 3px 0 0}.scc table tbody tr td.TAR,.scc table thead tr th.TAR{text-align:right;line-height:1.4em}.wid12{width:12%}.wid10{width:10%}.wid18{width:18%}p.l2{color:#949494;font-size:10px;padding:0;text-align:center}.preMatch .scc{padding:60px 15px}.preMatch .scc .matchStatus{font-size:16px;color:#414141;text-align:center;letter-spacing:0;margin-bottom:8px}.preMatch .scc .statusDesc{font-size:11px;color:#898989;text-align:center}#headerhWarpContener #header_nav:after,.clearfix:after,.comntry:after,.rndWrp:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.scc table tbody .rndWrp em{font-weight:700;font-size:15px;color:#4c4c4c;display:inline-block;font-style:normal}.scc table tbody .rndWrp .rnd{background:#d7d7d7;border-radius:50%;width:20px;height:20px;color:#000;display:flex;align-items:center;margin-left:10px}.dh-list-item section a,.rippleEffect{display:block}.scc table tbody .rndWrp .rnd span{padding:0;margin:auto}.scc table tbody .rndWrp .rnd.blu{background:#4a90e2}.scc table tbody .rndWrp .rnd.red{background:#e23e3e}.scc table tbody .rndWrp .rnd.yellow{background:#ff982b}.scc table tbody .rndWrp .rnd.blu span,.scc table tbody .rndWrp .rnd.red span,.scc table tbody .rndWrp .rnd.yellow span{color:#fff}.onCloseAnimate{overflow-y:hidden;max-height:48px;transition-property:all;transition-duration:1s;transition-timing-function:cubic-bezier(0,1,.5,1)}.lang_close{max-height:0}.rippleEffect{position:absolute;background:rgba(0,0,0,.2);border-radius:100%;transform:scale(0);z-index:1}.rippleEffect.animate{animation:rippleEffectAni .65s linear;z-index:1}@keyframes rippleEffectAni{100%{opacity:0;transform:scale(2.5)}}.dh-list-item section a .inr.active{-webkit-animation:background 5s cubic-bezier(1,0,0,1);animation:background 5s cubic-bezier(1,0,0,1);animation-iteration-count:1}@-webkit-keyframes background{0%{background-color:#faf7e4}100%{background-color:#fff}}@keyframes background{0%{background-color:#faf7e4}100%{background-color:#fff}}.dh-list-item section{overflow:hidden}.dh-list-item section a .inr{display:block;padding:20px 10px;margin:5px;background-color:#fff;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9);position:relative;overflow:hidden;z-index:-1}.dh-list-item section picture{width:80px;height:80px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden}.dh-list-item section picture img,.dh-list-item section picture source{height:100%;width:100%;background:url(https://m.dailyhunt.in/assets/img/defult.jpg?mode=pwa) top left no-repeat #ededed;background-size:100% auto;margin-top:-50%;position:absolute}.dh-list-item section .list-content.PL0{padding-left:0}.dh-list-item section .list-content{display:table-cell;padding-left:10px}.dh-list-item .ph_multi .list-content,.dh-list-item .ph_multi5 .list-content{padding-left:0;padding-top:10px}.dh-list-item section .list-content h2{color:#010101;height:60px;max-height:60px;overflow:hidden;line-height:1.4em;margin-bottom:10px}.dh-list-item .ph_multi ul,.dh-list-item .ph_multi5 ul{white-space:nowrap;overflow-x:auto}.dh-list-item section .list-content .srcInfo em,.dh-list-item section .list-content .srcInfo span{font-size:10px;color:#888;display:inline-block;float:left;margin-right:3px}.dh-list-item section .ph_typ_sty,.dh-list-item section .vid_thumb{position:relative}.dh-list-item section .ph_typ_sty img,.dh-list-item section .ph_typ_sty source,.dh-list-item section .vid_thumb img,.dh-list-item section .vid_thumb source{-webkit-filter:brightness(50%);filter:brightness(50%)}.dh-list-item section .ph_typ_sty .icn_ph,.dh-list-item section .ph_typ_sty .icn_vid,.dh-list-item section .vid_thumb .icn_ph,.dh-list-item section .vid_thumb .icn_vid{position:absolute;width:24px;height:24px;top:50%;left:50%;margin-top:-12px;margin-left:-12px;border-radius:99%}.dh-list-item .ph_multi ul li{display:inline-block;margin-right:10px}.dh-list-item .ph_multi ul li picture{position:relative}.dh-list-item .ph_multi ul li picture img,.dh-list-item .ph_multi ul li picture source{-webkit-filter:brightness(100%);filter:brightness(100%)}.dh-list-item .ph_multi ul li picture span{color:#fff;position:absolute;top:50%;left:50%;width:40px;text-align:center;font-size:22px;margin:-12px 0 0 -20px}.dh-list-item .ph_multi .list-content h2,.dh-list-item .ph_multi5 .list-content h2{margin-bottom:0}.dh-list-item .ph_multi ul li:last-child{margin-right:0}.dh-list-item .ph_multi ul li:last-child picture img,.dh-list-item .ph_multi ul li:last-child picture source{-webkit-filter:brightness(50%);filter:brightness(50%)}.dh-list-item .ph_multi5 ul li{display:inline-block;margin-right:10px}.dh-list-item .ph_multi5 ul li picture{position:relative}.dh-list-item .ph_multi5 ul li picture img,.dh-list-item .ph_multi5 ul li picture source{-webkit-filter:brightness(100%);filter:brightness(100%)}.dh-list-item .ph_multi5 ul li picture span{color:#fff;position:absolute;top:50%;left:50%;width:50px;text-align:center;font-size:22px}.dh-list-item .ph_multi5 ul li:nth-child(3){margin-right:0}.dh-list-item .ph_multi5 ul li:nth-child(3) picture img,.dh-list-item .ph_multi5 ul li:nth-child(3) picture source{-webkit-filter:brightness(50%);filter:brightness(50%)}.dh-list-item section .ph_multi.grid5 ul li{margin-right:6px;float:left}.dh-list-item section .ph_multi.grid5 ul li:nth-child(3),.dh-list-item section .ph_multi.grid5 ul li:nth-child(5){margin-right:0}.dh-list-item section .ph_multi.grid5 ul li:nth-child(4),.dh-list-item section .ph_multi.grid5 ul li:nth-child(5){margin-top:6px}.dh-list-item .ph_multi.grid5 ul li:nth-child(3) picture img,.dh-list-item .ph_multi.grid5 ul li:nth-child(3) picture source{-webkit-filter:brightness(100%);filter:brightness(100%)}.dh-list-item section .ph_multi.grid5 picture img,.dh-list-item section .ph_multi.grid5 picture source{margin-top:0;position:inherit}.crd_invaild,.relativeWap{position:relative}.dh-list-item section .ph_multi.grid5 ul li picture span{margin-top:-13px;margin-left:-20px}.crd_invaild{height:50px;text-align:center;font-size:12px;display:block;padding:50px 20px 10px;margin:5px;background-color:#fff;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9);overflow:hidden;z-index:-1}.catList{padding:0 5px;display:table;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.catList ul{background-color:#fff;box-shadow:0 0 4px 0 rgba(0,0,0,.1)}.catList ul li:nth-child(even){background:#f7f7f7}.catList ul li .flex-container,.catList ul li a{background:url(https://m.dailyhunt.in/assets/img/row_arrow.png?mode=pwa) center right no-repeat}.catList ul li .flex-container{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center}.catList ul li .flex-container span{height:26px;border-radius:50%;display:table;padding-top:0}.catList ul li .flex-container span .flex-item{width:20px;height:20px;margin:10px;color:#fff;text-align:center;border-radius:50%;overflow:hidden;vertical-align:middle;display:table-cell;box-sizing:border-box;flex-direction:column;justify-content:center;align-items:center;line-height:19px;font-size:10px}.catList ul li .flex-container p{padding:2px 0 0 8px}.catList ul li a{display:block;background-size:15px auto;padding:10px}.catList ul li a em,.catList ul li a span{width:26px;height:21px;font-size:14px;color:#fff;border-radius:99%;display:inline-block;text-align:center;padding-top:5px;text-transform:capitalize;font-style:normal;float:left}.catList ul li a em{width:26px;height:26px;padding-top:0}.catList ul li a em picture{display:block}.catList ul li a em picture img,.catList ul li a em picture source{width:100%;height:100%}.catList ul li a p{font-size:12px;color:#2e2e2e;float:left;padding:6px 0 0 8px}.thumb_list ul li{width:50%;float:left}.thumb_list ul li .inr a{display:block;padding:2px;background-color:#fff;margin-bottom:8px;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9)}.thumb_list ul li .inr a picture{display:block;min-height:75px;background:url(https://m.dailyhunt.in/assets/img/defult.jpg?mode=pwa) top left no-repeat #ededed;background-size:100% auto}.thumb_list ul li .inr a h3{padding:5px 8px;font-size:10px;color:#333;display:block}.thumb_list ul li:nth-child(even) .inr{padding-left:4px}.thumb_list ul li:nth-child(odd) .inr{padding-right:4px}#header.hdShimmer #scrollNav ul.lhs{width:98%;margin:0 auto;float:none}#header.hdShimmer #scrollNav ul.lhs li .aniBg{width:20%;float:left;height:8px}.crdShimmer{background-color:#fff;margin:10px 5px}.crdShimmer .inr{padding:20px 10px}.crdShimmer .inr picture{display:block;float:left}.crdShimmer .inr .list-content{width:calc(100% - 100px);display:block;float:left}.crdShimmer .inr .list-content .aniBg{height:8px;margin-bottom:10px}.crdShimmer .inr .list-content .aniBg:nth-child(3){width:60%}.crdShimmer .inr .list-content .aniBg:nth-child(4){width:50%;margin:28px 0 0}.related .dh-list-item section{padding:10px;margin:10px 5px;background-color:#fff;-webkit-box-shadow:1px 1px 2px 2px rgba(232,232,232,.9);-moz-box-shadow:1px 1px 2px 2px rgba(232,232,232,.9);box-shadow:1px 1px 2px 2px rgba(232,232,232,.9)}.dh-list-item .relativeWap .showBtn{position:absolute;bottom:2px;right:18px;font-size:10px}.dh-list-item .relativeWap .showBtn a{color:#3979C3;background-image:url(https://m.dailyhunt.in/assets/img/choroBtn.svg?mode=pwa);background-repeat:no-repeat;background-size:6px auto;background-position:right center;padding:18px 12px 18px 6px}.dh-list-item.chrono{padding-top:48px}.ref_btn{background:url(https://m.dailyhunt.in/assets/img/refresh.svg?mode=pwa) center center no-repeat #bf574c;width:50px;height:50px;border-radius:99%;position:fixed;z-index:999999;bottom:10%;right:24px;opacity:.85;box-shadow:0 0 5px 0 #cdcdcd}.sideWap .sidenav,.sideWap aside{height:100%;top:0;position:fixed}.na{text-align:center;padding:40px 10px;background:#fff;margin:5px;box-shadow:0 0 4px 1px rgba(232,232,232,.9);color:#7e7e7e}.ads_wrp_btm,.ads_wrp_mid,.ads_wrp_top{margin:8px 5px 9px;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9);background:#fff}.ads_wrp_mid{margin:5px}.sideWap{display:none}.sideWap .sidenav{width:100%;left:0;z-index:999999;background:0 0;overflow:hidden}.sideWap aside{width:70%;left:-100%;z-index:9999999;background:#fff;overflow-y:auto;box-shadow:0 0 2px 1px #adadad}.sideWap aside .btn_bk{display:inline-block}.sideWap aside .login{background:rgba(214,214,214,.6);padding:20px 10px;display:none}.sideWap aside .login .dh_logo2{background:url(https://m.dailyhunt.in/assets/img/dailyHunt_logo_splash.svg?mode=pwa) center top no-repeat;background-size:100% auto;width:75px;height:55px;margin:0 auto}.sideWap aside .subnav ul li{border-bottom:1px solid #e4e4e4}.sideWap aside .subnav ul li a,.sideWap aside .subnav ul li div{display:block;padding:15px 15px 15px 30px}.sideWap aside .subnav ul li a p,.sideWap aside .subnav ul li div p{color:#606060;font-size:14px}.sideWap aside .subnav ul li a.active p,.sideWap aside .subnav ul li div.active p{color:#BF3D31}.sideWap aside .subnav ul li a.icn_buzz,.sideWap aside .subnav ul li a.icn_news,.sideWap aside .subnav ul li a.icn_setting{padding-left:58px}.sideWap aside .menuBtn{position:fixed;bottom:17px;left:0;z-index:9999999;-webkit-animation:menuBtnAni 2s forwards;-webkit-animation-iteration-count:1;-webkit-animation-delay:.5s;animation:menuBtnAni 1s forwards;animation-iteration-count:1;animation-delay:.5s;opacity:0;width:70%}.sideWap aside .menuBtn ul{width:70%;margin:0 auto}.sideWap aside .menuBtn ul li{width:100%;border-radius:2px;margin-bottom:15px;box-sizing:border-box}.sideWap aside .menuBtn ul li span{padding:12px 12px 12px 25px;text-decoration:none;font-size:12px;color:#535353;letter-spacing:0;background-size:12px 18px;display:block;margin-left:10px}.sideWap aside .menuBtn ul li.enNoto{border:1px solid #29B258}.sideWap aside .menuBtn ul li.enNoto span{background:url(https://m.dailyhunt.in/assets/img/notification.svg?mode=pwa) left center no-repeat}.sideWap aside .menuBtn ul li.adHp{border:1px solid #589EF3}.sideWap aside .menuBtn ul li.adHp span{background:url(https://m.dailyhunt.in/assets/img/homepage.svg?mode=pwa) left center no-repeat}@-webkit-keyframes menuBtnAni{0%{opacity:0}100%{opacity:1}}.edition{background-color:#fff}.edition .inr{margin:0 auto}.edition .lang_lst li a{display:block;padding:0 0 0 48px;font-size:16px;color:#333}.edition .lang_lst li a span{display:block;padding:19px 0;text-indent:-100%}.edition .lang_lst li:nth-child(odd){background-color:#F7F7F7}.edition .lang_lst li.active a{background:url(https://m.dailyhunt.in/assets/img/tick.svg?mode=pwa) 20px center no-repeat}.react-swipeable-view-container>div{overflow-y:auto!important}.details_hd .lhs .btn_bk{text-indent:100px;overflow:hidden}.detailsWarp{padding-top:48px}.detailsWarp article img.np_logo{width:auto!important;height:auto!important;margin:0 auto}.detailsWarp .data{word-wrap:break-word}.detailsWarp .data img{padding:0!important}.detailsWarp .data table{width:100%!important}.detailsWarp .hdImg{overflow:hidden;display:block;background:url(https://m.dailyhunt.in/assets/img/defult.jpg?mode=pwa) top left no-repeat #ededed;background-size:100% auto;position:relative}.detailsWarp .suggested ul,.np_landing nav ul,.tp_landing nav ul{white-space:nowrap;overflow-x:auto}.detailsWarp .hdImg .btn_phGal{position:absolute;bottom:10px;right:6px;z-index:1;background:url(https://m.dailyhunt.in/assets/img/image-gallery.svg?mode=pwa) 10px center no-repeat;background-size:18px;color:#fff;font-size:12px;padding:10px 10px 10px 35px;border-radius:5px;background-color:rgba(0,0,0,.5)}.detailsWarp .hdImg .btn_Loader{background:url(https://m.dailyhunt.in/assets/img/loaderGallery.gif?mode=pwa) no-repeat;padding:0;width:35px;height:35px}.detailsWarp .infoBar,.detailsWarp article,.detailsWarp h1{background-color:#fff}.detailsWarp h1{font-size:20px;color:#000;border-top:1px solid #eee;padding-top:20px}.detailsWarp .infoBar .srcShare .src{float:left;padding:11px 0 0 10px}.detailsWarp .infoBar .srcShare .src .info,.detailsWarp .infoBar .srcShare .src .logo{float:left}.detailsWarp .infoBar .srcShare .src .logo img{max-width:30px;width:30px;max-height:30px;height:30px}.detailsWarp .infoBar .srcShare .src .info{padding-left:8px}.detailsWarp .infoBar .srcShare .src .info em,.detailsWarp .infoBar .srcShare .src .info span{display:block}.detailsWarp .infoBar .srcShare .src .info span{font-size:12px;color:#2e2e2e;text-transform:capitalize}.detailsWarp .infoBar .srcShare .src .info em{color:rgba(0,0,0,.5);font-size:10px}.detailsWarp .infoBar .srcShare .share{float:right}.detailsWarp .infoBar .srcShare .share ul li{float:left}.detailsWarp article{padding:0 10px 10px}.detailsWarp article .wrp .dt{font-size:10px;color:#999;padding:18px 0 10px}.detailsWarp article .data *{color:#333;line-height:1.5em}.detailsWarp .related .hd,.detailsWarp .suggested .hd{padding:18px 10px 0 12px}.detailsWarp .related .hd h2,.detailsWarp .suggested .hd h2{color:#606060;font-size:14px;float:left}.detailsWarp .related .hd .btn_all,.detailsWarp .suggested .hd .btn_all{color:#606060;float:right;background:url(https://m.dailyhunt.in/assets/img/arrow-rht.svg?mode=pwa) center right no-repeat;font-size:14px;padding-right:10px;background-size:6px auto}.detailsWarp .suggested ul{margin:10px 0 18px 10px}.detailsWarp .suggested ul li{margin-right:4px;display:inline-block;padding-bottom:2px}.detailsWarp .suggested ul li a{display:block;border-radius:50px;color:#2e2e2e;font-size:12px;padding:8px;background-color:#fff;box-shadow:1px 1px 1px 0 #cdcdcd}.detailsWarp .suggested ul li a em{width:26px;height:21px;font-size:14px;color:#fff;border-radius:99%;display:inline-block;text-align:center;padding-top:5px;text-transform:capitalize;font-style:normal}.ReactModalPortal .ril-image-current,.ReactModalPortal img{width:auto!important}.ReactModalPortal .ril__navButtonNext,.ReactModalPortal .ril__navButtonPrev,.ReactModalPortal .ril__zoomInButton,.ReactModalPortal .ril__zoomOutButton{display:none}.detailsWarp .suggested ul li a span{text-transform:capitalize;padding-left:5px}.detailsWarp .btn_native_share{position:fixed;bottom:50px;right:12px;z-index:9;border-radius:99%;box-shadow:0 2px 6px 0 rgba(0,0,0,.3)}.copySnackbar{visibility:hidden;margin-left:-52px;background-color:#333;color:#fff;text-align:center;border-radius:20px;padding:10px 15px;position:fixed;z-index:1;left:50%;bottom:25px;font-size:14px}.np_landing nav ul li a,.tp_landing nav ul li a{text-transform:capitalize;position:relative;color:#505050;text-align:center}.copySnackbar p{margin:0;padding:0}.copySnackbar.show{visibility:visible;-webkit-animation:fadein .5s,fadeout .5s 2.5s;animation:fadein .5s,fadeout .5s 2.5s}@-webkit-keyframes fadein{from{bottom:0;opacity:0}to{bottom:25px;opacity:1}}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:25px;opacity:1}}@-webkit-keyframes fadeout{from{bottom:25px;opacity:1}to{bottom:0;opacity:0}}@keyframes fadeout{from{bottom:25px;opacity:1}to{bottom:0;opacity:0}}.ReactModalPortal .captionContent___30kw2{font-size:12px;line-height:1.6em}.ReactModalPortal .ril__captionContent{line-height:1.5em}.ReactModalPortal .ril__toolbarRightSide{padding-right:0}.ReactModalPortal .ril__outer{background-color:#000}.ReactModalPortal .ril__caption{overscroll-behavior:contain}.np_landing{padding-top:48px}.np_landing .np_logo{padding:30px 0;background-color:#fff}.np_landing .np_logo picture{display:block;height:50px;max-height:50px}.np_landing .np_logo picture img,.np_landing .np_logo picture source{height:100%;width:auto;max-height:100%;max-width:100%;margin:0 auto}.np_landing nav ul{margin-left:10px}.np_landing nav ul li{display:inline-block}.np_landing nav ul li a{display:block;padding:15px}.tp_landing{padding-top:48px}.tp_landing .hd_img picture{display:block}.tp_landing .hd_img picture img,.tp_landing .hd_img picture source{height:auto;width:100%;max-width:100%;margin:0 auto}.tp_landing nav ul{margin-left:10px}.tp_landing nav ul li{display:inline-block}.tp_landing nav ul li a{display:block;padding:15px}.categoryWrp .hd,.topicWrp .hd{padding:0 10px;max-height:40px;min-height:40px}.categoryWrp .hd h2,.topicWrp .hd h2{float:left;font-size:14px;color:#606060;padding:10px 15px 10px 2px}.categoryWrp .hd .lang_ddl,.topicWrp .hd .lang_ddl{float:right}.categoryWrp .hd .lang_ddl span,.topicWrp .hd .lang_ddl span{display:block;background:url(https://m.dailyhunt.in/assets/img/arrow-dn.svg?mode=pwa) center right no-repeat;font-size:14px;color:#606060;background-size:10px auto;padding:10px 15px 10px 10px}.categoryWrp{margin-top:10px}.categoryWrp .hd{padding:0 5px;max-height:inherit;min-height:inherit}.categoryWrp .hd .inr{background-color:#fff;padding:10px;box-shadow:-1px 1px 6px 0 rgba(0,0,0,.1)}.categoryWrp .lang_ddl{font-size:12px}.categoryWrp .lang_ddl a{background:#F5A623;color:#fff;display:block;width:auto;height:auto;padding:10px}.topicWrp .thumb_list{padding:0 4px;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;display:table}#comsContainer{display:none}.npList,.topicWrp{padding-top:50px}.errorMain{text-align:center;background-color:#fff;height:100%;margin-top:50px;color:#919191}.errorMain div{padding-top:40px;width:300px;margin:0 auto}.errorMain h2{padding:10px;margin:0}.errorMain p{margin:0;padding:5px 0 30px}.block_np{background:#f8f8f8;padding:15px}.block_np table a.android,.tlBlk_NP ul.appList li a{background-repeat:no-repeat;background-position:center center}.block_np table a.android,.tlBlk_NP ul.appList li a.android{background-image:url(https://m.dailyhunt.in/assets/img/google_play.svg?mode=pwa)}.block_np table{width:100%;margin:0 auto;max-width:400px;border-spacing:0}.block_np .gPLink{font-size:9px;color:#bfbfbf;text-align:center;border-top:1px solid #ebebeb;padding-top:10px;margin-top:10px}.block_np table td.store h3{font-size:11px;color:#bfbfbf;text-transform:uppercase;padding:0 4px 7px 0;text-align:center}.block_np table td.store ul{text-align:center}.block_np .gPLink a{font-size:10px;color:#d72b3f}.block_np table a.android{display:inline-block;height:32px;width:105px;background-size:105px auto}.tlBlk_NP{background-color:#fff;padding:100px 0}.tlBlk_NP p{text-align:center;padding:20px 0 0;font-size:12px}.tlBlk_NP .logo{width:90px;height:90px;margin:auto}.tlBlk_NP ul.appList{text-align:center;padding:0}.tlBlk_NP ul.appList li{display:inline-flex;padding:3px}.tlBlk_NP ul.appList li a{-moz-border-radius:3px;border-radius:3px;text-decoration:none;width:90px;height:32px;display:inline-block;background-size:100% auto}.tlBlk_NP ul.appList li a.ios{background-image:url(https://m.dailyhunt.in/assets/img/ios.svg?mode=pwa)}.tlBlk_NP ul.appList li a.window{background-image:url(https://m.dailyhunt.in/assets/img/window.svg?mode=pwa)}.shr_wrp{padding:0 10px 10px;background:#fff}.shr_wrp ul li{float:left}.shr_wrp ul li a{display:block;width:48px;height:48px;text-align:center}.shr_wrp ul li a span{width:35px;height:35px;display:inline-block;margin-top:6px!important}.smt_dn_bnr{background:#fafbeb;box-shadow:2px 0 2px 1px rgba(0,0,0,.3);position:fixed;bottom:0;z-index:999999;font-weight:700;width:100%;padding:5px 0}.smt_dn_bnr .buttn{width:36px;position:relative}.smt_dn_bnr .btn_close_1602{position:absolute;top:21px;left:10px;z-index:1;width:20px;height:20px;background:url(https://m.dailyhunt.in/assets/img/close_01-09-17.svg?mode=pwa) center center no-repeat #ccc;background-size:8px auto;border-radius:50%}.smt_dn_bnr .btn_close_1602 a{display:block;height:20px}.smt_dn_bnr .dh_logo{width:40px}.smt_dn_bnr .dh_logo .dh_logoS{width:40px;height:40px;background:url(https://m.dailyhunt.in/assets/img/dailyhunt_logo_01-09-17.svg?mode=pwa) center center no-repeat #fff;background-size:34px auto;box-shadow:1px 1px 4px #b5b5b5;border-radius:10%}.smt_dn_bnr .hd_txt{padding:5px 5px 0}.smt_dn_bnr .hd_txt p{font-size:13px;color:#000;padding-top:3px;font-family:dyLang,Arial,sans-serif;margin:0;font-weight:700}.smt_dn_bnr .hd_txt .rate{background:url(https://m.dailyhunt.in/assets/img/star_01-09-17.svg?mode=pwa) center center no-repeat;width:70px;height:15px;float:left;background-size:70px}.smt_dn_bnr .btn{vertical-align:top;position:relative;width:86px}.smt_dn_bnr .btn .txt{float:right;font-size:9px;padding:3px 0 0;text-transform:uppercase;color:#82827f}.smt_dn_bnr .btn a{max-width:70px;padding:7px 16px;background:#45b045;color:#fff;display:inline-block;font-size:10px;border-radius:3px;position:absolute;bottom:4px;right:10px}.smt_dn_bnr .hd_txt span{display:inline-block;color:#999;font-size:9px;padding-bottom:2px;float:left}.smt_bnr_stic{background-color:#FFFDEB;box-shadow:2px 0 15px 1px rgba(0,0,0,.3);position:fixed;bottom:0;z-index:999999;width:100%}.smt_bnr_stic .inr{position:relative}.smt_bnr_stic .inr .btn_close{width:30px;height:30px;opacity:.6;background-size:8px auto;position:absolute;top:18px;z-index:9999}.smt_bnr_stic .app_dnld{display:block;padding:5px 0}.smt_bnr_stic .app_dnld table{width:100%}.smt_bnr_stic .dh_logo_wrp{width:50px}.smt_bnr_stic .dh_logo_wrp .logo_150917{width:50px;height:50px;background:url(https://m.dailyhunt.in/assets/img/dh_logo.svg?mode=pwa) center center no-repeat #fff;background-size:34px auto;border-radius:5px;border:1px solid #d4d4d4;margin-left:30px}.smt_bnr_stic .hd_txt{padding:0 10px}.smt_bnr_stic .hd_txt h2{font-size:15px;color:#D95423;padding-bottom:8px;font-family:dyLang,Arial,sans-serif;margin:0;font-weight:700}.smt_bnr_stic .hd_txt em,.smt_bnr_stic .hd_txt span{display:block;color:#999;font-size:9px}.smt_bnr_stic .hd_txt em{font-style:italic;padding-top:1px}.coachmarks{width:100%;height:100%;position:fixed;top:0;background-color:rgba(0,0,0,.8);z-index:1000000}.coachmarks .overrealyImg{width:234px;margin:110px auto auto;text-align:center;color:#fff;position:relative}.coachmarks .overrealyImg span{width:67px;height:78px;background-image:url(https://m.dailyhunt.in/assets/img/swipe.svg?mode=pwa);margin:auto;display:block;background-size:100% auto;background-repeat:no-repeat}.edition .lang_lst a span,.sprite_lang{background-image:url(https://m.dailyhunt.in/assets/img/sprite_lang.svg?mode=pwa);background-repeat:no-repeat;background-size:60px auto}.coachmarks .overrealyImg p{font-size:16px;margin:5px 0}.edition .lang_lst a span{height:20px}.btn_bk,.btn_close{width:48px;height:48px}.edition .lang_lst .lang_en span{background-position:0 21px}.edition .lang_lst .lang_hi span{background-position:0 -89px}.edition .lang_lst .lang_mr span{background-position:0 -204px}.edition .lang_lst .lang_gu span{background-position:0 -317px}.edition .lang_lst .lang_pa span{background-position:0 -661px}.edition .lang_lst .lang_bn span{background-position:0 -430px}.edition .lang_lst .lang_kn span{background-position:0 -545px}.edition .lang_lst .lang_ta span{background-position:0 -773px}.edition .lang_lst .lang_te span{background-position:0 -879px}.edition .lang_lst .lang_ml span{background-position:0 -995px}.edition .lang_lst .lang_or span{background-position:0 -1103px}.edition .lang_lst .lang_ur span{background-position:0 -1329px}.edition .lang_lst .lang_bh span{background-position:0 -1217px}.edition .lang_lst .lang_ne span{background-position:0 -1436px}.icn_copy{background:url(https://m.dailyhunt.in/assets/img/icn_link.svg?mode=pwa) center center no-repeat;background-size:100%}.icn_email{background:url(https://m.dailyhunt.in/assets/img/icn_email.svg?mode=pwa) center center no-repeat;background-size:100%}.icn_twit{background:url(https://m.dailyhunt.in/assets/img/icn_twitter.svg?mode=pwa) center center no-repeat;background-size:100%}.icn_fb{background:url(https://m.dailyhunt.in/assets/img/icn_fb.svg?mode=pwa) center center no-repeat;background-size:100%}.icn_wht{background:url(https://m.dailyhunt.in/assets/img/icn_whatsapp.svg?mode=pwa) center center no-repeat;background-size:100%}.btn_close{background-image:url(https://m.dailyhunt.in/assets/img/close_blk.svg?mode=pwa);background-repeat:no-repeat;display:inline-block;background-size:12px auto;background-position:center}.btn_bk{background:url(https://m.dailyhunt.in/assets/img/icn_btn_bk.svg?mode=pwa) center center no-repeat;background-size:10px}.notify span,.turnOn p,p.blankText{text-align:center}.dh-list-notification section a .inr{display:block;margin:5px;background-color:#fff;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9)}.dh-list-notification section a .inr picture{width:80px;height:80px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden}.dh-list-notification section a .inr .list-content{display:table-cell;padding-left:10px}.notify p,.thumb_nav span{display:inline-block}.dh-list-notification section a .inr .list-content h2{color:#010101;height:60px;max-height:60px;overflow:hidden;line-height:1.4em;margin-bottom:10px}.lang_en * .dh-list-notification section a .inr section .list-content h2,.lang_en .dh-list-notification section a .inr section .list-content h2{font-size:14px}.dh-list-notification section a .inr section .list-content .srcInfo em,.dh-list-notification section a .inr section .list-content .srcInfo span{font-size:10px;color:#888;display:inline-block;float:left;margin-right:3px}.dh-list-item section a .inr section picture img,.dh-list-item section a .inr section picture source{height:100%;width:100%;background:url(https://m.dailyhunt.in/assets/img/defult.jpg?mode=pwa) top left no-repeat #ededed;background-size:100% auto;margin-top:-50%;position:absolute}.thumb_nav span{background:#BF3D31;width:6px;height:6px;border-radius:99%;position:absolute;top:10px;left:28px;border:2px solid #f4f4f4}.notify span{float:right;background:#BF3D31;border-radius:8px;font-size:12px;color:#fff;padding:1px 7px}p.blankText{font-size:14px;color:#4e4e4e;padding:60px 58px 23px}.turnOn p{font-size:14px;color:#fff;letter-spacing:0;background:#29B258;padding:0 10px;width:145px;height:30px;margin:auto;line-height:30px}.abt_us{padding:15px;margin-top:50px}.abt_us em{font-style:normal}.abt_us p{padding-bottom:15px}.abt_us a{color:red;text-decoration:underline}.feedbkWrp{border-radius:5px;padding:15px;margin-top:55px}.feedbkWrp input[type=text],.feedbkWrp textarea{width:100%;padding:12px;border:none;border-bottom:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:10px;resize:vertical}.feedbkWrp input:focus,.feedbkWrp select:focus,.feedbkWrp textarea:focus{outline-offset:-2px;outline:0}.feedbkWrp .countHold{float:right;color:#b7b7b7;display:inline}.feedbkWrp .countHold span,.feedbkWrp a{display:inline-block}.feedbkWrp .alertRed{border-bottom:1px solid #ea1414!important}.feedbkWrp .alertMsg{margin-top:10px;color:#fb0909;padding-left:10px}.feedbkWrp a{width:75px;padding:5px;box-sizing:border-box;text-align:center;margin-top:10px;background-color:#408e42;color:#fff}footer{padding:10px;background:#606060;position:relative}footer ul.ftNav li{float:left;width:50%;max-width:50%}footer ul.ftNav li a{color:#fff;font-size:10px;padding:18px 10px 18px 0;display:block}footer ul.ftNav li a em{border-left:2px solid #979797;padding-right:10px}
+
+/***** liveTV *****/
+.liveTvHome .videoWap *,.liveTvHome .hding_wrp *, .liveTvHome .livetv-list-item .inr *{margin:0;padding:0;border:none;font-weight:400;font-size:100%;font-family:inherit;list-style:none;text-decoration:none;font-style:normal}
+.liveTvHome .hding_wrp:after,.liveTvHome .livetv-list-item .inr a:after,.liveTvHome .livetv-list-item .inr:after{content:" ";display:block;clear:both;line-height:0;height:0}
+.liveTvHome .bdy_pt{padding-top:305px}
+
+.liveTvHome .videoWap .player,.liveTvHome .videoUtube .player{background:#000;width:100%;height:250px;}
+.liveTvHome .videoWap video,.liveTvHome .videoUtube iframe{width:100%;height:250px;margin:0 auto}
+.liveTvHome .videoWap .data,.liveTvHome .videoUtube .data{padding:10px;background:#fff}
+.liveTvHome .videoWap .data .table,.liveTvHome .videoUtube .table{display:table;width:100%;vertical-align:top}
+.liveTvHome .videoWap .data .table .tr,.liveTvHome .videoUtube .table .tr{display:table-row}
+.liveTvHome .videoWap .data .ch_logo,.liveTvHome .videoUtube .data .ch_logo,.liveTvHome .videoWap .data .txt,.liveTvHome .videoUtube .data .txt,.liveTvHome .data .btn_share,.liveTvHome .videoUtube .data .btn_share{display:table-cell;float:left}
+.liveTvHome .videoWap .data .txt span{display:inline-block;color:#909294;font-size:10px;padding:5px 20px 0 0}
+.liveTvHome .videoWap .data .btn_share,.liveTvHome .videoUtube .data .btn_share{float:right;/*background:url(/assets/img/share.svg) no-repeat right top;width:30px;background-size:11px*/}
+.liveTvHome .videoWap .data .ch_logo,.liveTvHome .videoUtube .data .ch_logo{width:28px;height:28px;border-radius:4px;}
+.liveTvHome .videoWap .data .btn_share span,.liveTvHome .videoUtube .data .btn_share span{display:block;text-align:right;padding-top:18px;text-transform:uppercase;color:rgba(204,0,3,1.00);font-weight:bold;font-size:10px}
+.liveTvHome .videoWap .data .txt,.liveTvHome .videoUtube .data .txt{padding-left:10px;width:calc(100% - 70px);overflow:hidden;max-height:30px}
+.liveTvHome .videoWap .data .txt h1,.liveTvHome .videoUtube .data .txt h1{color:#373838;font-size:12px;margin:0}
+
+
+.liveTvHome .hding_wrp{padding:10px}
+.liveTvHome .hding_wrp h2{padding:0;margin:0;font-size:12px;color:#373838;float:left;font-weight:bold}
+.liveTvHome .hding_wrp .btn_schedule{float:right;color:#76BF8F;font-size:10px;padding-top:3px}
+
+.liveTvHome .livetv-list-item .inr{background:#fff}
+.liveTvHome .livetv-list-item .inr a{display:block;padding:10px;border-bottom:1px solid #ececec}
+.liveTvHome .livetv-list-item .inr a .ch_logo{display:table-cell;float:left;width:50px;height:50px}
+.liveTvHome .livetv-list-item .inr a .ch_logo img{width:100%;height:100%}
+.liveTvHome .livetv-list-item .inr a .dts{padding:0 0 0 10px;float:left;width:calc(100% - 70px)}
+.liveTvHome .livetv-list-item .inr a .dts h3{font-size:14px;color:#373838;padding:0 0 6px 0}
+.liveTvHome .livetv-list-item .inr a .dts p{color:#373838;font-size:10px;padding-bottom:6px}
+.liveTvHome .livetv-list-item .inr a .dts .oth span,.liveTvHome .livetv-list-item .inr a .dts .oth em{display:inline-block;float:left;font-size:10px;color:#373838;opacity:.5}
+.liveTvHome .livetv-list-item .inr a .dts .oth em{padding:0 5px}
+.liveTvHome .dot-loader{position:fixed;top:30%;left:50%;margin-left:-30px}
+
+/*Start: loader*/
+.textInfo,.videoWap .player .emptyBlock{text-align:center;width:100%;position:absolute}
+.videoWap .player .emptyBlock{height:250px;top:82px;left:0;background-color:rgba(0,0,0,.62)}
+.textInfo{top:calc(50% - 15px);display:block!important;color:#fff}
+.loading{position:absolute;top:calc(50% - 16px);left:calc(50% - 16px)}
+.loading-bar{display:inline-block;width:6px;height:30px;border-radius:4px;animation:loading 1s ease-in-out infinite;margin-right:5px !important;}
+.loading-bar:nth-child(1){background-color:#EFAA02;animation-delay:0}
+.loading-bar:nth-child(2){background-color:#50AFCD;animation-delay:90ms}
+.loading-bar:nth-child(3){background-color:#87D447;animation-delay:.18s}.loading-bar:nth-child(4){background-color:#D95423;animation-delay:.27s}
+.loading-bar:nth-child(4){margin-right:0 !important;}
+@keyframes loading{0%,40%{transform:scale(1)}20%{transform:scale(1,2.2)}}
+/*End: loader*/
+
+.buzz{background-color:#F2F2F2;}
+.buzz .videoTitle{background-color:#F2F2F2;padding:12px 10px} 
+.buzz .videoTitle h2{font-size:12px;color:#373838;text-align:left;font-weight:bold;display:inline-block;line-height:12px}
+.buzz .videos{background: #FFFFFF; box-shadow: 0 0 4px 0 rgba(0,0,0,0.10);margin-bottom:10px;}
+.buzz .videos .videoCard{padding:12px}
+.buzz .videos .videoCard .videoImage{margin-bottom:6px;position:relative;line-height:0px}
+.buzz .videos .videoCard .videoImage img{width:100%;height:100%;border-radius:2px}
+.buzz .videos .videoCard .videoImage .playBtn{position:absolute;width:24px;height:24px;background:url(https://m.dailyhunt.in/assets/img/playbutton.svg?mode=pwa);background-size:100%;bottom:12px;left:12px}
+.buzz .videos .videoCard .videoImage .playTime,.buzzTv .wid108 .playTime{position:absolute;background-color:rgba(0, 0, 0, 0.6);border-radius:4px;padding:4px 5px;font-size:10px;color:#fff;bottom:12px;right:12px}
+.buzz .videos .videoCard .info .videoCaption,.buzz .videoWap .info .videoCaption{height:50px;max-height:50px}
+.buzz .videos .videoCard .info .videoCaption p,.buzz .videoWap .info .videoCaption p{font-size:14px !important;color:#000}
+.buzz .videos .videoCard .info .status,.buzz .videoWap .info .status{height:30px;max-height:30px}
+.buzz .videos .videoCard .info .status p,.buzz .videoWap .info .status p{font-size:10px;color:#909294;margin:5px 0}
+.buzz .videos .videoCard .info .status .srcInfo span,.buzz .videoWap .info .status .srcInfo span {display:block;font-size:10px;color:#909294;}
+.buzz .videos .videoCard .info .status .srcInfo span,.buzz .videoWap .info .status .srcInfo span, .dotSqure{margin-right:3px;float:left}
+.dotSqure {display:inline-block;width:2px;height:2px;background-color:#999;margin-top:5px;border-radius:50%;}
+.buzz .videoWap .player {background:#000;width:100%;height:260px;position:relative}
+.buzz .videoWap video {width:100%;margin:0 auto;}
+
+/*Start: loader*/
+.buzz .videoWap {background-color:#fff}
+.buzz .videoWap .info .videoCaption{padding:10px 12px 0}
+.buzz .videoWap .info .status{padding:5px 12px 10px}
+.buzz .videoWap .info .videoCaption p{color:#373838;}
+.buzz .videoWap .emptyBlock .textInfo,.buzz .videoWap .player .emptyBlock{text-align:center;width:100%;position:absolute}
+.buzz .videoWap .emptyBlock{height:100%;top:0;left:0;background-color:rgba(0,0,0,.62)}
+.buzz .videoWap .emptyBlock .textInfo{top:calc(50% - 15px);display:block!important;color:#fff}
+.buzz .videoWap .emptyBlock .textInfo p{font-size:10px}
+.loading{position:absolute;top:calc(50% - 16px);left:calc(50% - 16px)}
+.loading-bar{display:inline-block;width:4px;height:18px;border-radius:4px;animation:loading 1s ease-in-out infinite}
+.loading-bar:nth-child(1){background-color:#EFAA02;animation-delay:0}
+.loading-bar:nth-child(2){background-color:#50AFCD;animation-delay:90ms}
+.loading-bar:nth-child(3){background-color:#87D447;animation-delay:.18s}.loading-bar:nth-child(4){background-color:#D95423;animation-delay:.27s}@keyframes loading{0%,40%{transform:scale(1)}20%{transform:scale(1,2.2)}}
+/*End: loader*/
+
+/* for buzz video in landscape */
+div#vidInnerContainer iframe{width:100% !important}
+
+/*Start: Video card css*/
+.latestNews{padding:10px;background-color:#fff}
+.latestNews .latestHead{padding-bottom:24px}
+.latestNews .latestHead h2{font-size:16px;color:#000;text-align:left;font-weight:bold;display:inline-block}
+.latestNews table{border-spacing:0;width:100%;border-collapse:collapse}
+.latestNews table tr td.wid108{width:108px;}
+.latestNews table tr td picture{width:108px;height:66px;display:block;overflow:hidden;border-radius:5px;}
+.latestNews table tr td picture img{width:100%;height:100%;border-radius:5px;margin:0}
+.latestNews table tr td .latestContent{padding-left:10px;}
+.latestNews table tr td .latestContent h2{font-size:12px;color:#171717;height:61px;max-height:61px;overflow:hidden;}
+.latestNews table tr td .latestContent span{font-size:10px;color:#666666;display:block}
+.PR{position:relative;}
+.latestNews table tr td picture span.playBtn{position:absolute;width:18px;height:18px;background:url("https://m.dailyhunt.in/assets/img/playbutton.svg");background-size:100%;bottom:5px;left:5px}
+.latestNews table tr td .info .status{padding:12px 12px 0px}
+.latestNews table tr td .info .videoCaption p{font-size:12px;color:#000;padding:0px 12px 0;margin-bottom:8px;height:30px;overflow:hidden;}
+.latestNews table tr td .info .status p{font-size:10px;color:#909294;}
+.latestNews table tr td .info .status .srcInfo span{display:block;font-size:10px;color:#909294;}
+.latestNews table tr td .info .status .srcInfo span{margin-right:3px;float:left}
+/*end: Video card css*/
+
+/* Start : fixture*/
+.fixture ul, .fixture li{list-style:none;list-style-type: none;padding:0}
+.fixture ul li .click table{width:100%}
+.fixture ul li .click .tm .sprite{width:34px;height:34px;border-radius:3px}
+.fixture ul li .click .tm .sprite img{width:100%;height:100%}
+.fixture ul li.dt{background:0 0;border:none;color:#a5a5a5;font-size:10px;text-transform:uppercase;padding:5px 0}
+.fixture ul li{background:#f8f8f8;border:1px solid #d8d8d8;margin-bottom:10px}
+.fixture ul li .click{display:block;padding:10px}
+.fixture ul li .click .tm{width:34px;vertical-align:top}
+.fixture ul li .click .tm p{text-align:center;color:#000;font-size:10px;padding-top:5px}
+.fixture ul li .click .mid h3{font-size:18px;color:#000;padding-bottom:5px}
+.fixture ul li .click .mid p{color:#4C4C4C;font-size:12px}
+.noContentEle{background-color:#fff;padding:20px;text-align:center;box-sizing:border-box;color:#a5a5a5;font-size:16px;}
+/* End : fixture*/
+
+/* Error */
+.errBlock,.noConnection{box-sizing:border-box;z-index:99999;width:100%}
+.errBlock{padding:50% 56px 0;text-align:center;position:absolute;left:0;height:100%}
+.errBlock p img{width:auto;height:auto;margin:auto}
+.errBlock em,.errBlock span{display:block;color:#A4A4A4}
+.errBlock span{font-size:16px;font-weight:700;margin-top:18px}
+.errBlock em{font-size:14px;margin-top:6px}
+.errBlock a{display:inline-block;color:#fff;background-color:#29B258;font-size:10px;padding:9px;width:102px;box-sizing:border-box;margin-top:16px;height:30px}
+.noConnection{padding:0;position:fixed;bottom:10px;width:100%}
+.noConnection table{width:100%;background:#29B258;box-shadow:0 0 4px 0 rgba(0,0,0,.2);color:#fff}
+.noConnection table tr td.close{width:30px}
+.noConnection table tr td p{font-size:12px;padding:7px 8px}
+.noConnection table tr td a.closeBtn{
+  background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjJweCIgdmlld0JveD0iMCAwIDIwIDIyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDQuMSAoNDE0NTUpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg0KICAgIDx0aXRsZT5yZWxvYWQ8L3RpdGxlPg0KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPg0KICAgIDxkZWZzPjwvZGVmcz4NCiAgICA8ZyBpZD0iVjEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0iSGVhZGxpbmVzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjczLjAwMDAwMCwgLTk0NS4wMDAwMDApIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9IiNGRkZGRkYiPg0KICAgICAgICAgICAgPGcgaWQ9InJlbG9hZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjgzLjAwMDAwMCwgOTU2LjAwMDAwMCkgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtMjgzLjAwMDAwMCwgLTk1Ni4wMDAwMDApIHRyYW5zbGF0ZSgyNzMuMDAwMDAwLCA5NDUuMDAwMDAwKSI+DQogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLjcwOTE4MTksMjEuOTM4MzYyOCBDMTUuMTQzMjUzOCwyMS40NDQwMTM2IDE4LjY5NjgzMjksMTcuOTE2MTU4MSAxOS4yMDI1NTE5LDEzLjUwMjk2OCBDMTkuODY2MzA4MSw3LjczMjU2NDggMTUuMzU5OTkwNiwyLjgyMDUzMTUxIDkuNzExMjg5OTMsMi43NTc2MTQzNCBMOS43MTEyODk5MywwLjE2OTAyMjIyOSBDOS43MTEyODk5MywwLjAyNTIxMTU1NjIgOS41MzA2NzYwMSwtMC4wNTExODc4NjM4IDkuNDA4NzYxNiwwLjAzODY5MzgwNjcgTDQuMDUzNTU4NjIsMy45NTMwNDA1NiBDMy45NjMyNTE2Niw0LjAyMDQ1MTgxIDMuOTYzMjUxNjYsNC4xNTA3ODAyMyA0LjA1MzU1ODYyLDQuMjE4MTkxNDkgTDkuNDA4NzYxNiw4LjEzMjUzODI0IEM5LjUzMDY3NjAxLDguMjIyNDE5OTEgOS43MTEyODk5Myw4LjE0MTUyNjQgOS43MTEyODk5Myw4LjAwMjIwOTgxIEw5LjcxMTI4OTkzLDUuNDE4MTExNzkgQzEzLjY4MDI4MSw1LjQ4MTAyODk2IDE2Ljg1OTA4NjIsOC44NDI2MDM0MyAxNi41ODgxNjUzLDEyLjg2MDMxNDEgQzE2LjM1Nzg4MjUsMTYuMzE2MjY0MyAxMy41MjY3NTkyLDE5LjEyMDU3MjUgMTAuMDU0NDU2NCwxOS4zNDA3ODI1IEM2LjM3NDQ0NzYsMTkuNTc0NDc0OSAzLjI0NTMxMTI5LDE2Ljk1ODkxODMgMi42ODU0MDgxMSwxMy40OTg0NzQgQzIuNTgxNTU1MSwxMi44NTU4MiAyLjAxNzEzNjU3LDEyLjM4ODQzNTMgMS4zNjY5MjY0MywxMi4zODg0MzUzIEMwLjU1ODY3OTEwMSwxMi4zODg0MzUzIC0wLjA3MzQ2OTY0OTEsMTMuMTAyOTk0NiAwLjA1Mjk2MDEwMSwxMy44OTg0NDc0IEMwLjgzODYzMDY5MSwxOC44Mjg0NTcgNS40MTI2Nzg0MywyMi41MjcwODc4IDEwLjcwOTE4MTksMjEuOTM4MzYyOCBaIiBpZD0iU2hhcGUiPjwvcGF0aD4NCiAgICAgICAgICAgIDwvZz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==');
+  background-repeat:no-repeat;background-size:12px 12px;width:30px;height:28px;border-left:1px solid rgba(241,241,241,.6);display:inline-block;background-position:10px 10px}
+.noConnection.show{-webkit-animation:snackbarFadein .5s;animation:snackbarFadein .5s;animation-fill-mode:forwards}@keyframes snackbarFadein{0%{bottom:-50px;opacity:0}100%{bottom:0px;opacity:1}}
+.errBlock.deatilaPageError{position:relative;z-index:99999;padding-bottom:20px; padding-top: 0}
+
+.lang_subnav h2{font-size:14px;color:#000;padding:8px 20px}
+.lang_subnav ul li{display:block;padding:8px 12px 8px 21px}
+.lang_subnav ul li a{font-size:12px;padding:5px 20px;display:inline-block;color:#2B2B2B}
+.lang_subnav ul li a.active{color:#28B257;border:1px solid #28B257;border-radius:12px}
+.lang_subnav ul li.aboutUs{padding:20px;border-top:1px solid #D8D8D8}
+.lang_subnav ul li.aboutUs p{font-size:14px;color:#2B2B2B;background:url("https://m.dailyhunt.in/assets/img/arrow.svg") no-repeat right;background-size:6px 10px;padding:0;display:block}
+.lang_subnav ul li.PDB20{padding-bottom:20px}
+header .siteNav .RHS .ref_btn_top{background:url("https://m.dailyhunt.in/assets/img/refresh_samsung.svg") no-repeat center;background-size:15px auto;float:right;width:48px;height:36px;}
+.sponsorBlock{background:#D0D0D0;padding:4px 12px}
+.sponsorBlock .spnsr{display:table}
+.sponsorBlock .spnsr span{font-size:10px;color:#fff;display:table-cell;vertical-align:middle;padding-right:5px}
+.sponsorBlock .spnsr img{width:auto;height:10px;display:table-cell;vertical-align:middle;margin-top:2px}
+
+.galBox{width:100%;height:100%;position:fixed;z-index:99999;background:rgba(0,0,0,1);}
+  .galBox .subDiv{position:absolute;top:50%;left:50%;margin-right:-50%;transform:translate(-50%, -50%)}
+  .galBox .subDiv img{width:auto;max-width:100%;height:auto;max-height:100%;z-index:999999;margin:0 auto;}
+  .galBox .subDiv .previous,.galBox .subDiv .next{width:50px;height:50px;position:absolute;top:50%;margin-top:-25px}
+  .galBox .subDiv .previous{background:url("https://m.dailyhunt.in/assets/img/arrow_prev.svg") no-repeat center}
+  .galBox .subDiv .next{background:url("https://m.dailyhunt.in/assets/img/arrow_next.svg") no-repeat center;right:0px}
+  .header, .footer{background-color:rgba(0, 0, 0, 0.5);position:absolute;left:0;right:0;display:block;}
+  .header{top:0;height:50px;}
+  .header .leftSide{padding-left:20px;overflow:hidden;text-overflow:ellipsis;float:left}
+  .header .leftSide span{vertical-align:middle;}
+  .header .rightSide{float:right}
+  .header .rightSide button{width:40px;height:35px;cursor:pointer;border:none;background:url("https://m.dailyhunt.in/assets/img/close.svg") no-repeat center;vertical-align:middle}
+  .ril__toolbarItem{line-height:50px;padding:0;color:#fff;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .footer{bottom:0;max-height:150px;overflow:auto;overscroll-behavior:contain;}
+  .footer .footerContent{padding:10px 20px;color:#fff;line-height:1.5em;}
+
+  input[type=checkbox]{margin:4px 0 0;margin-top:1px\9;line-height:normal;}
+  input[type=checkbox]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;}
+  .popup{background:rgba(0,0,0,0.5);position:fixed;top:0;left:0;z-index:99999;width:100%;height:100%}
+  .popup .popContainer{position:fixed;background:#fff;top:50%;left:50%;width:100%;z-index:99999;transform:translate(-50%, -50%);width:60%}
+  .popup .popContainer .popContent{padding:15px}
+  .popup .popContainer .popContent .checkBox{position:relative;display:block;margin:15px 0px;}
+  label{display:inline-block;max-width:100%;}
+  .popup .popContainer .popContent .checkBox label{min-height:20px;padding-left:20px;margin-bottom:0;font-weight:400;cursor:pointer;}
+  .popup .popContainer .popContent .checkBox label input[type=checkbox]{position:absolute;margin-top:4px\9;margin-left:-20px;}
+  .popup .popContainer .popContent a{padding:6px 15px;border:1px solid transparent;border-radius:3px;color:#fff;display:block;background-color:#337ab7;text-align:center;font-size:14px;}
+
+
+/* ads */
+.ads_wrap_hid{ overflow: hidden; }
+
+
+
+  /*Start:Viral wrap*/
+.viralWarp{background-color:#F2F2F2;}
+.viralWarp .dh-list-item section{overflow:inherit}
+.viralWarp .videoTitle{background-color:#F2F2F2;padding:15px 10px}
+.viralWarp .videoTitle h2{font-size:16px;color:#373838;text-align:left;font-weight:bold;line-height:12px}
+.viralWarp .videos{background:#FFFFFF;box-shadow:0 0 4px 0 rgba(0,0,0,0.10);margin:5px}
+.viralWarp .videos .videoCard{padding:20px 10px;margin:10px 5px}
+.viralWarp .videos .videoCard .videoImage{margin-bottom:6px;position:relative;line-height:0px}
+.viralWarp .videos .videoCard .videoImage img{width:auto;height:100%;max-width:100%;max-height:100%;border-radius:2px;pointer-events: none; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.viralWarp .videos .videoCard .videoImage .playBtn{position:absolute;width:24px;height:24px;background:url("https://m.dailyhunt.in/assets/img/playbutton.svg?mode=pwa");background-size:100%;bottom:12px;left:12px}
+.viralWarp .videos .videoCard .videoImage .playTime{position:absolute;background-color:rgba(0, 0, 0, 0.6);border-radius:4px;padding:4px 5px;font-size:10px;color:#fff;bottom:12px;right:12px}
+.viralWarp .videos .videoCard .info .videoCaption p,.viralWarp .videoWap .info .videoCaption p{font-size:12px;color:#000}
+.viralWarp .videos .videoCard .info .status{display:inline-block;}
+.viralWarp .videos .videoCard .info .shareDiv{float:right;}
+.viralWarp .videos .videoCard .info .shareDiv ul{display:inline-block;}
+.viralWarp .videos .videoCard .info .shareDiv ul li{float:right;}
+.viralWarp .videos .videoCard .info .shareDiv ul li a { display:block;width:44px;height:44px;text-align:center;}
+.viralWarp .videos .videoCard .info .shareDiv ul li a span{width:35px;height:35px;display:inline-block;}
+.icn_fb {background:url(https://m.dailyhunt.in/assets/img/icn_fb.svg?mode=pwa) center center no-repeat;background-size:100%}
+.icn_wht {background:url(https://m.dailyhunt.in/assets/img/icn_whatsapp.svg?mode=pwa) center center no-repeat;background-size:100%;}
+.icn_shr {background:url(https://m.dailyhunt.in/assets/img/Share.svg?mode=pwa) center center no-repeat;background-size:100%;}
+.viralWarp .videos .videoCard .info .status p,.viralWarp .videoWap .info .status p{font-size:10px;color:#000;margin:5px 0}
+.viralWarp .videos .videoCard .titleCaption p{font-size:14px;color:#000;margin-bottom:6px}
+.viralWarp .videos .videoCard .titleCaption span{display:block;font-size:11px;color:#909294;margin-bottom:6px}
+.viralWarp .videos .videoCard .info .status .srcInfo span,.viralWarp .videoWap .info .status .srcInfo span {display:block;font-size:10px;color:#909294;}
+.viralWarp .videos .videoCard .info .status .srcInfo span,.viralWarp .videoWap .info .status .srcInfo span, .dotSqure{margin-right:3px;float:left}
+.dotSqure {display:inline-block;width:2px;height:2px;background-color:#999;margin-top:5px;border-radius:50%;}
+
+/*End:Viral wrap*/
+.showGal .subDiv .react-swipeable-view-container{ height:auto !important; }
+
+/* Start: Notifaction 28-March-2019*/
+.RHS.TopNavBanner{display:inline-block;}
+.RHS.TopNavBanner li{float:left;}
+.RHS.TopNavBanner li .btn_Notif{background-image:url("https://m.dailyhunt.in/assets/img/outline-notifications_none-24px.svg");background-size:18px auto;border:none;background-repeat:no-repeat;width:20px;height:20px;background-position:center center}
+.RHS.TopNavBanner li .btn_install{background-image:url("https://m.dailyhunt.in/assets/img/square-download.svg");background-repeat:no-repeat;background-position:7px 7px;padding-left:25px;color:#1F9EE1;border-color:#1F9EE1}
+.RHS.TopNavBanner li .btn_install span{display:inline-block;position:relative;}
+.RHS.TopNavBanner.hi li .btn_install span,.RHS.TopNavBanner.ml li .btn_install span,.RHS.TopNavBanner.ta li .btn_install span{top:1px}
+.RHS.TopNavBanner.te li .btn_install span,.RHS.TopNavBanner.ka li .btn_install span,.RHS.TopNavBanner.bn li .btn_install span,.RHS.TopNavBanner.gu li .btn_install span,.RHS.TopNavBanner.pa li .btn_install span{top:2px}
+.RHS.TopNavBanner.ur li .btn_install{background-position:8px}
+/* End: Notifaction 28-March-2019*/
+
+/*start : daily share */
+.dailyShare_nav{white-space:nowrap;overflow-x:auto;margin:0 5px}
+.dailyShare_nav li{display:inline-block;padding:5px 10px;border:1px solid #cacaca;background:#fff;border-radius:3px;margin:5px;color:#989898}
+/*end : daily share */
+.adsCloseBtn{cursor: pointer; font-size: 20px; width: 30px; height: 28px; text-align: center; background: #fff; border-radius: 99%; padding-top: 2px; clear: both; display: inline-block;}
+</style>
+<style>
+/* for ipl and cricket */
+/***** common for all card titles: START *****/
+.lang_hi .todayMatch *,.lang_hi .teamInfo *,.lang_hi .Stats *,.lang_hi .resutlCont *,.lang_hi .cardTitle * ,.lang_hi .upComingMatch *,
+.lang_kn .todayMatch *,.lang_kn .teamInfo *,.lang_kn .Stats *,.lang_kn .resutlCont *,.lang_kn .cardTitle *, .lang_kn .upComingMatch *,
+.lang_ta .todayMatch *,.lang_ta .teamInfo *,.lang_ta .Stats *,.lang_ta .resutlCont *,.lang_ta .cardTitle * ,.lang_ta .upComingMatch *,
+.lang_te .todayMatch *,.lang_te .teamInfo *,.lang_te .Stats *,.lang_te .resutlCont *,.lang_te .cardTitle * ,.lang_te .upComingMatch *,
+.lang_ml .todayMatch *,.lang_ml .teamInfo *,.lang_ml .Stats *,.lang_ml .resutlCont *,.lang_ml .cardTitle * ,.lang_ml .upComingMatch *,
+.lang_mr .todayMatch *,.lang_mr .teamInfo *,.lang_mr .Stats *,.lang_mr .resutlCont *,.lang_mr .resutlCont * ,.lang_mr .upComingMatch *,
+.lang_bn .todayMatch *,.lang_bn .teamInfo *,.lang_bn .Stats *,.lang_bn .resutlCont *,.lang_bn .cardTitle * ,.lang_bn .upComingMatch *,
+.lang_gu .todayMatch *,.lang_gu .teamInfo *,.lang_gu .Stats *,.lang_gu .resutlCont *,.lang_gu .cardTitle *  ,.lang_gu .upComingMatch *,
+.lang_pa .todayMatch *,.lang_pa .teamInfo *,.lang_pa .Stats *,.lang_pa .resutlCont *,.lang_pa .cardTitle *  ,.lang_pa .upComingMatch * {line-height:14px !important}
+
+.lang_hi .pointsTable *,.lang_kn .pointsTable *,.lang_ta .pointsTable *,.lang_te .pointsTable *,.lang_ml .pointsTable *
+, .lang_mr .pointsTable *,.lang_bn .pointsTable *,.lang_gu .pointsTable *,.lang_pa .pointsTable *{line-height:12px !important}
+
+
+.DN{display:none !important}
+.cardTitle{padding:24px 16px 8px;background:#fff;margin:0 5px}
+.cardTitle h2{font-size:1.125em;color:#1C1C1C;margin-bottom:4px;}
+.cardTitle h2 a{float:right;}
+.cardTitle p{font-size:0.625em;color:#9698A3;line-height:14px}
+.seeAllText{font-size:0.875em;color:#1F9EE1;text-align:center;display:inline-block;}
+.backBtn{padding:5px 16px;background-color:#f9f9f9;margin:0 5px}
+.backBtn .seeAllText.back{padding-left:10px;background:url("https://m.dailyhunt.in/assets/img/blue_left_arrow.svg?mode=pwa") left center no-repeat;font-weight:normal;}
+/*padding-right:10px;background:url("images/blue_arrow.svg") right center no-repeat;*/
+/***** common for all card titles: END *****/
+.advBlock{padding:24px 16px;background:#fff;margin-bottom:6px}
+.advBlock img{width:100%;height:100%;border-radius:4px}
+.MB0{margin-bottom:0 !important}
+.P0{padding:0 !important}
+.TAC{text-align:center  !important;}
+.TAL{text-align:left !important}
+.todayMatch h4,.pointsTable h4,.resutlCont .results ul li .resutlCard h4{font-size:1.125em;color:#1C1C1C;margin-bottom:12px;}
+.todayMatch,.pointsTable,.teamInfo,.Stats,.results{background-color:#fff;margin:0 5px}
+/* margin-bottom:6px */
+.P16{padding:16px !important}
+.upComingMatch .horizontalOverflow tr td p,.todayMatch .matchCard table tr td p,.pointsTable .tableCont table tr td .team p,.teamInfo .teamCard ul li .TeamDetails .teamName p,.teamInfo .teamCard ul li .TeamDetails p,.horizontalOverflow ul,.horizontalOverflow ol,.resutlCont .results ul li .resutlCard .matchCard table tr td .teamName,.Stats .horizontalOverflow ul li .Profile p,.backBtn p{margin:0px;padding:0px;}
+/***** common for all card titles: END *****/
+
+/* Todays match */
+.todayMatch .matchCard{border:1px solid rgba(188,188,188,0.59);border-radius: 4px;padding:0px 10px;margin-bottom:0px}
+.todayMatch .matchCard table{width:100%;}
+.todayMatch .matchCard table tr td{padding:4px 0}
+.todayMatch .matchCard table tr td:nth-child(odd){text-align:left;}
+.todayMatch .matchCard table tr td:nth-child(even){text-align:right;}
+.todayMatch .matchCard table tr td .matchNo{font-size:0.75em;font-weight:bold;color: #A5A5A5;}
+.todayMatch .matchCard table tr td .matchStatus{font-size:0.875em;color:#D0021B;font-weight:bold;}
+.todayMatch .matchCard table tr td .matchStatus .redDot{display:inline-block;width:5px;height:5px;border-radius:99%;background-color:#D0021B;margin-right:3px;position:relative;top:-1px;left:1px}
+.todayMatch .matchCard table tr td .flag{width:32px;height:32px;display:inline-block;border:1px solid rgba(188,188,188,0.59);border-radius:4px}
+.todayMatch .matchCard table tr td .flag img{width:100%;height:100%;border-radius:4px}
+.todayMatch .matchCard table tr td .teamName{display:inline-block;font-size:1.188em;color:#1c1c1c;text-transform:capitalize;position:relative;top:-10px;left:5px}
+.todayMatch .matchCard table tr td .score{font-size:1.188em;color:#9b9b9b;font-weight:bold;}
+.todayMatch .matchCard table tr td .score.trophyTxt{color:#1c1c1c;}
+.todayMatch .matchCard table tr td .futerMatchTim{font-size:1.188em;color:#1c1c1c;font-weight:bold;}
+.todayMatch .matchCard table tr td .score .notStarted{display:inline-block;width:20px;height:2px;background-color:#1c1c1c;}
+.todayMatch .matchCard table tr td .score .trophy{background-image:url(https://m.dailyhunt.in/assets/img/trophy.svg?mode=pwa);background-repeat:no-repeat;background-size:20px 20px;display:inline-block;width:20px;height:20px;position:relative;top:4px}
+.todayMatch .matchCard table tr td .matchSummary{font-size:0.750em;color:#4a4a4a;padding:12px;text-align:center;border-top:1px solid #EAEAEA;}
+.todayMatch .matchCard.futerMatch table{width:50%}
+
+
+
+
+/*Up coming matchs*/
+
+.upComingMatch{margin:0 5px;background:#fff;}
+.upComingMatch .horizontalOverflow ul{background:#fff;margin-bottom:2px;padding:0px 16px 20px}
+.upComingMatch .horizontalOverflow ul li{background:#FFFFFF;border:0.5px solid #DDDDDD;box-shadow:0 1px 4px 0 rgba(0,0,0,0.08);border-radius:4px;width:100%;display:inline-block;position:relative;margin-bottom:10px}
+.upComingMatch .horizontalOverflow ul li:last-child{margin-right:0px}
+.upComingMatch .horizontalOverflow ul li .dataCard .dataImg{width:100%;position:relative;height:126px}
+.upComingMatch .horizontalOverflow ul li .dataCard .dataImg img{width:100%;height:100%;display:block;border-top-left-radius:4px;border-top-right-radius:4px}
+.upComingMatch .horizontalOverflow ul li .dataCard .dataImg .playIcon{width:26px;height:26px;background:url(https://m.dailyhunt.in/assets/img/play.svg?mode=pwa) no-repeat;background-size:100% auto;position:absolute;bottom:7px;left:7px;}
+.upComingMatch .horizontalOverflow ul li .dataCard h2{font-size:1em;color:#1C1C1C;margin:8px;white-space:normal;height:44px;max-height:44px;overflow:hidden;line-height:22px}
+.upComingMatch .horizontalOverflow table{width:100%}
+.upComingMatch .horizontalOverflow tr td{padding:8px 10px}
+.upComingMatch .horizontalOverflow tr td.wid80{width:80px;box-sizing:border-box}
+.upComingMatch .horizontalOverflow tr td .teamFlag{border-radius:4px;width:50px;height:50px;border:1px solid rgba(188,188,188,0.59);display:block;margin:auto}
+.upComingMatch .horizontalOverflow tr td .teamFlag img{width:100%;height:100%;border-radius:4px}
+.upComingMatch .horizontalOverflow tr td .teamName{font-size:0.875em;color:#1c1c1c;padding-top:8px;font-weight:bold;text-align:center;}
+.upComingMatch .horizontalOverflow tr td .matchDate{font-size:1.375em;font-weight:bold;margin-bottom:6px;color:#1c1c1c}
+.upComingMatch .horizontalOverflow tr td .matchTime{font-size:0.875em;color:#4a4a4a;}
+
+
+ /* result Card*/
+.resutlCont{margin-bottom:5px}
+.resutlCont .results ul{background:#fff;margin-bottom:2px;padding:0px 16px 20px}
+.resutlCont .results ul li{background:#FFFFFF;border:0.5px solid #DDDDDD;box-shadow:0 1px 4px 0 rgba(0,0,0,0.08);border-radius:4px;width:100%;display:inline-block;position:relative;margin-bottom:10px}
+.resutlCont .results ul li:last-child{margin-right:0px}
+.resutlCont .results ul li .resutlCard{padding:0;margin:0 0;}
+.resutlCont .results ul li .resutlCard .matchCard{margin-bottom:0;border-radius:4px;border:none;padding:0 10px }
+.resutlCont .results ul li .resutlCard .matchCard table{width:100%;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td{padding:4px 0}
+.resutlCont .results ul li .resutlCard .matchCard table tr td:nth-child(odd){text-align:left;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td:nth-child(even){text-align:right;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .matchNo{font-size:0.750em;font-weight:bold;color: #A5A5A5;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .matchStatus{font-size:0.825em;color:#D0021B;font-weight:bold;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .matchStatus .redDot{display:inline-block;width:5px;height:5px;border-radius:99%;background-color:#D0021B;margin-right:3px;position:relative;top:-1px;left:1px}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .flag{width:32px;height:32px;display:inline-block;border:1px solid rgba(188,188,188,0.59);border-radius:4px}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .flag img{width:100%;height:100%;border-radius:4px}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .teamName{display:inline-block;font-size:1.188em;color:#1c1c1c;text-transform:capitalize;position:relative;top:-10px;left:4px}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .score{font-size:1.188em;color:#9b9b9b;font-weight:bold;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .score.trophyTxt{color:#1c1c1c;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .futerMatchTim{font-size:1.188em;color:#1c1c1c;font-weight:bold;}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .score .trophy{background-image:url(https://m.dailyhunt.in/assets/img/trophy.svg?mode=pwa);background-repeat:no-repeat;background-size:20px 20px;display:inline-block;width:20px;height:20px;position:relative;top:4px}
+.resutlCont .results ul li .resutlCard .matchCard table tr td .matchSummary{font-size:0.750em;color:#4a4a4a;padding:5px;text-align:center;border-top:1px solid #EAEAEA;}
+.resutlCont .results ul li .resutlCard .matchCard.futerMatch table{width:50%}
+
+
+  /*Points table*/
+
+.pointsTable .tableCont table{width:100%;border-radius:4px;border:1px solid #DDDDDD;}
+.pointsTable .tableCont table tr td{font-size:0.750em;color:#4c4c4c;text-align:center;padding:8px}
+.pointsTable .tableCont table tr:nth-child(odd){background-color:#f9f9f9}
+.pointsTable .tableCont table tr:nth-child(even){background-color:#FFFFFF}
+.pointsTable .tableCont table tr td.wd36{width:36px}
+.pointsTable .tableCont table tr:first-child{border-top-left-radius:4px;border-top-right-radius:4px;}
+.pointsTable .tableCont table tr:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+.pointsTable .tableCont table tr td .team{width:100px;}
+.pointsTable .tableCont table tr td .team.noWid{width:100%}
+.pointsTable .tableCont table tr td .team .teamFlag{width:20px;height:20px;border-radius:4px;display:inline-block;border:1px solid #DDDDDD;}
+.pointsTable .tableCont table tr td .team .teamFlag img{width:100%;height:100%;border-radius:4px;}
+.pointsTable .tableCont table tr td .team .teamName{display:inline-block;;position:relative;font-weight:bold;font-size:1.125em;color:#1c1c1c;top:-6px;text-transform:capitalize;left:5px}
+.pointsTable .tableCont table tr:first-child td:first-child{border-top-left-radius:4px}
+.pointsTable .tableCont table tr:first-child td:last-child{border-top-right-radius:4px}
+.pointsTable .tableCont table tr:last-child td:first-child{border-bottom-left-radius:4px}
+.pointsTable .tableCont table tr:last-child td:last-child{border-bottom-right-radius:4px}
+
+/*Team information*/
+.teamInfo .teamCard{display:block;padding:0 16px 10px}
+.teamInfo .teamCard ul{width:100%;display:inline-block;}
+.teamInfo .teamCard ul li{width:33%;display:inline-block;padding:5px;vertical-align:top;box-sizing:border-box}
+.teamInfo .teamCard ul li .TeamDetails{margin:auto;padding:10px;border:1px solid rgba(188,188,188,0.59);border-radius: 4px;}
+.teamInfo .teamCard ul li .TeamDetails .teamFlag{width:50px;height:50px;margin:auto auto 8px;border:1px solid rgba(188,188,188,0.59);display:block;border-radius:4px}
+.teamInfo .teamCard ul li .TeamDetails .teamFlag img{width:100%;height:100%;border-radius:4px;}
+.teamInfo .teamCard ul li .TeamDetails .teamName{display:block;text-transform:capitalize;text-align:center;font-size:10px;color:#1c1c1c}
+
+.ptb20{padding-top:20px;padding-bottom:20px}
+.Stats{margin-bottom:6px}
+.Stats .horizontalOverflow ul{background:#fff;width:100%;padding:0 16px;box-sizing:border-box}
+.Stats .horizontalOverflow ul li{background:#FFFFFF;width:calc(32% - 7px);display:inline-block;padding:5px 5px;}
+.Stats .horizontalOverflow ul li:last-child{margin-right:0px}
+.Stats .horizontalOverflow ul li .Profile{display:block;border:0.5px solid #DDDDDD;box-shadow:0 1px 4px 0 rgba(0,0,0,0.08);border-radius:4px;height:100%}
+.Stats .horizontalOverflow ul li .Profile .playerPic{width:50px;height:50px;border-radius:99%;margin:5px auto}
+.Stats .horizontalOverflow ul li .Profile .playerPic img{width:100%;height:100%;border-radius:99%}
+.Stats .horizontalOverflow ul li .Profile .achivements{background-color:#4A4A4A;text-transform:uppercase;font-size:0.625em;color:#fff;margin-bottom:8px;padding:5px;white-space:normal;height:34px;overflow:hidden;display:flex;justify-content:center;align-items:center;}
+.Stats .horizontalOverflow ul li .Profile .playerName{font-size:0.750em;color:#1c1c1c;white-space:normal;height:24px;width:100%;display:flex;justify-content:center;align-items:center;padding:0 5px;box-sizing:border-box}
+.Stats .horizontalOverflow ul li .Profile .stats{font-size:1.250em;color:#1c1c1c;font-weight:bold;white-space:normal;margin-top:8px;padding:0 5px}
+.Stats .horizontalOverflow ul li .Profile .runs{font-size:0.625em;color:#4A4A4A;margin-bottom:5px;height:11px;min-height:11px;white-space:normal;padding:0 5px}
+.Stats .horizontalOverflow ul li .Profile .teamName{font-size:0.625em;color:#1c1c1c;margin-bottom:8px;white-space:normal;margin:8px 0;padding:0 5px}
+
+.horizontalOverflow ul{white-space:nowrap;overflow-x:auto;padding:0px 16px 24px;background:#fff;margin-bottom:2px}
+.horizontalOverflow ul li:last-child{margin-right:0px}
+
+
+
+
+
+
+
+/* START custom scroll components*/
+
+
+
+
+.sectionBlock ul{padding:0px 16px 18px;background:#fff;margin-bottom:2px}
+.sectionBlock ul li{width:32%;display:inline-block;overflow:hidden;margin-right:2%;box-shadow:0px 1px 4px 0px rgba(0,0,0,0.08);}
+.sectionBlock ul li .inr{background:#fff;border-radius:4px;border:1px solid #DDDDDD;}
+.sectionBlock ul li:last-child{margin-right:0%}
+.sectionBlock ul li .inr figure{width:100%;height:100%;background:#cccccc;min-height:100px;position:relative;}
+.sectionBlock ul li .inr figure img{width:100%;height:100%;display:block;background-image:linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);box-shadow:0 1px 4px 0 rgba(0,0,0,0.08);border-radius:4px 4px 0px 0px;}
+.sectionBlock ul li .inr figure em{position:absolute;width:100%;height:100%;top:0px;left:0px;background-image:linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);border-radius:4px}
+.sectionBlock ul li .inr figure span{position:absolute;bottom:0;color:#fff;font-size:0.6875em;text-align:center;line-height:15px;padding:0px 10px;margin-bottom:10px;width:100%;box-sizing:border-box;}
+.sectionBlock ul li .inr figcaption{padding:8px 12px}
+.sectionBlock ul li .inr figcaption a{padding:4px 12px;font-size:0.75em;color:#1F9EE1;line-height:14px;border:1px solid #1F9EE1;border-radius:4px;text-align:center;}
+.sectionBlock ul li .inr figcaption a.active{background:#1F9EE1;color:#FFFFFF}
+.sectionBlock ul li .inr figcaption a span{background:url("https://m.dailyhunt.in/assets/img/follow.svg") no-repeat left center;padding-left:15px}
+.sectionBlock ul li .inr figcaption a.active span{background:none;padding:0}
+.sectionBlock .horizontalOverflow ul{white-space:nowrap;overflow-x:auto;}
+.gridSix ul li{margin-bottom:8px}
+.gridSix ul li:nth-child(3n){margin-right:0%}
+.sectionBlock ul li .brdrRadius figure img{border-radius:4px}
+
+
+
+
+
+.singleList ul li{width:100%}
+.singleList ul li .inr figure .imgText{position:absolute;bottom:10px;width:100%;}
+.singleList ul li .inr figure .imgText p{float:left;font-size:0.75em;font-weight:bold;color:#fff;margin:6px 0 6px 12px;}
+.singleList ul li .inr figure .imgText a{float:right;margin-right:12px;}
+.singleList ul li .inr figure .imgText a{padding:4px 12px;display:block;border:1px solid #fff;border-radius:4px;color:#fff;font-size:0.75em;line-height:14px;text-align:center;}
+.singleList ul li .inr figure .imgText a.active{background:#1F9EE1;color:#FFFFFF;border:none;padding:5px 15px}
+.singleList ul li .inr figure .imgText a em{background:url("https://m.dailyhunt.in/assets/img/follow_white.svg?mode=pwa") no-repeat left center;padding-left:15px}
+.singleList ul li .inr figure .imgText a.active em{background:none;padding:0}
+/* END custom scroll components*/
+
+/* START Card with share option*/
+
+.newsCards{padding:20px 16px;background:#fff;border-bottom:0.5px solid #eaeaea}
+.newsCards .crd{display:table;width:100%}
+.newsCards .crd .list_content{display:table-cell;padding-right:8px}
+.newsCards .crd .list_content h3{color:#1C1C1C;height:66px;max-height:66px;overflow:hidden;line-height:22px;margin-bottom:6px;font-size:1em;font-weight:bold}
+.newsCards .crd picture{width:96px;height:96px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden;}
+.newsCards .crd picture img{height:100%;width:100%;display:block;border-radius:5px}
+.newsCards .crd picture .playIcon{width:16px;height:16px;background:url(https://m.dailyhunt.in/assets/img/play.svg?mode=pwa) no-repeat;background-size:100% auto;position:absolute;bottom:8px;left:8px;}
+.infoBar .newspaperInfo{margin-bottom:12px}
+.infoBar .newspaperInfo .newsSrc,.infoBar .newspaperInfo .newsSrc picture,.infoBar .newspaperInfo .newsSrc .info{float:left;}
+.infoBar .newspaperInfo .newsSrc picture{max-width:24px;width:24px;max-height:24px;height:24px;border-radius:4px}
+.infoBar .newspaperInfo .newsSrc picture img{width:100%;height:100%;border-radius:4px}
+.infoBar .newspaperInfo .newsSrc .info{padding:4px 8px}
+.infoBar .newspaperInfo .newsSrc .info span{font-size:0.875em;color:#000000;text-align:left;line-height:10px;}
+.infoBar .newspaperInfo .newsFollow{float:right;}
+.infoBar .newspaperInfo .newsFollow a{background-color:rgba(255,255,255,0.5);border:1px solid #BCBCBC;border-radius:4px;padding:4px 14px;}
+.infoBar .newspaperInfo .newsFollow a p{font-size:0.75em;color:#1F9EE1;line-height:14px;background:url("https://m.dailyhunt.in/desktop_site/news/temp_daily/fonts/gu/images/follow.svg") no-repeat left center;padding-left:15px}
+.infoBar .newspaperInfo .followed a{padding:5px}
+.infoBar .newspaperInfo .followed a p{background:url("https://m.dailyhunt.in/assets/img/filled_follow.svg") no-repeat left center;width:12px;height:12px;padding-left:0px}
+.withoutImage .crd .list_content h3{height:44px;max-height:44px;margin-bottom:8px;}
+.withoutImage .crd .list_content{padding-right:0px}
+.seeAllBlock{padding:19px 0px 38px;background:#fff;text-align:center}
+.reservedblock p{font-size:0.5em;color:#565868;text-align:center;display:inline-block;background:#EAEAEA;border-radius:4px;padding:4px 6px;font-weight:bold;margin-bottom:16px}
+.srcInfo .src{float:left}
+.srcInfo .src p{font-size:0.625em;color:#333333}
+.srcInfo .src span,.srcInfo em{font-size:0.5625em;color:#999999}
+.srcInfo .srcShare{float:right}
+.srcInfo .srcShare .srcIcons{float:left}
+.srcInfo .srcShare .srcIcons a{display:block;width:24px;height:24px;text-align:center;}
+.srcInfo .srcShare .srcIcons a span{width:18px;height:18px;display:inline-block;margin:3px 0px}
+.whatsapp{background:url(https://m.dailyhunt.in/assets/img/whatsappele.svg?mode=pwa&v=1) center center no-repeat;}
+/* END Card with share option*/
+
+ /*pop up for election*/
+ .ElectionContainer{left:0;position:fixed;z-index:999999;height:200px;width:100%}
+ .ElectionContainer .popUp{padding:40px;height:100%;width:100%;bottom:0px;border-top-left-radius:5px;border-top-right-radius:5px;box-sizing: border-box;background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1)35%);}
+   .ElectionContainer .popUp .cBtn {width:20px;height:20px;float:right;background-image:url(https://m.dailyhunt.in/assets/img/close_ele.png?mode=pwa);background-repeat:no-repeat;position:relative;padding:20px;top:-70px;background-position:center;right:-20px;}
+ .ElectionContainer .popUp .DH-logo{width:120px;height:auto;margin:auto;}
+ .ElectionContainer .popUp .playStore{width:100px;height:auto;margin:auto;}
+ .ElectionContainer .popUp .DH-logo img,.ElectionContainer .popUp .playStoreimg{width:100%;height:auto}
+ .ElectionContainer .popUp p{font-size:12px;color:#000;margin:5px 0 30px 0;text-align:center;}
+ .ElectionContainer .popUp p span{display:inline-block;width:100%;}
+ .slideCss{display: none;}
+.slideCss.show {display: block;-webkit-animation: fadein .7s;animation: fadein .7s;}
+@-webkit-keyframes fadein {from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;}}
+@keyframes fadein {from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;}}
+
+
+
+
+.panelPopUp{background-color:#fff;padding:80px 40px;}
+.panelPopUp .cBtn{width:20px;height:20px;background-image:url(https://m.dailyhunt.in/assets/img/close_ele.png?mode=pwa);background-repeat:no-repeat;position:absolute;padding:20px;background-position:center;right:0;top:0;}
+.panelPopUp .DH-logo{width:150px;height:38px;margin:auto;}
+.panelPopUp .DH-logo img, .panelPopUp .playStore img{width:100%;height:auto;}
+.panelPopUp p{font-size:12px;color:#000;margin:5px 0 30px 0;text-align:center;}
+.panelPopUp p span{display:inline-block;width:100%;font-size:12px;}
+.panelPopUp .playStore{width:125px;height:38px;margin:auto auto 20px;}
+
+.buzzTv .wid108 .playTime{bottom:6px;right:6px}
+</style>
+<style>
+    /* transparent banner */
+      .smart_banner_trans{background-color:transparent;position:fixed;bottom:0;z-index:999999;width:100%;}
+      .smart_banner_trans .inr{position:relative;}
+      .smart_banner_trans .app_dnld{display:block;padding:20px 0;}
+      .smart_banner_trans .app_dnld table{width:100%}
+      .smart_banner_trans .app_dnld table .dwnld_txt{text-align:center}
+      .smart_banner_trans .app_dnld table .dwnld_txt a{padding:8px 12px;display:inline-block;background-color:#D95423 !important;border-radius:4px;color:#fff;background:url("https://m.dailyhunt.in/assets/img/square-download_w.svg?mode=pwa");background-repeat:no-repeat;background-position:10px center;background-size:12px auto;padding-left:32px}
+  </style>
+  <!-- corona  -->
+  <style>
+  /***** common for all card titles: START *****/
+.cardTitle{padding:24px 16px 16px;background:#fff;border-bottom:0 solid #eaeaea;margin:0 !important}
+.cardTitle h2{font-size:0.875em;color:#1C1C1C;margin-bottom:4px;font-weight:bold;}
+.cardTitle h2 a{float:right;}
+.cardTitle p{font-size:0.625em;color:#9698A3;line-height:14px}
+a.seeAllText{font-size:0.75em;color:#1F9EE1;text-align:center;font-weight:bold;display:inline-block;background:url("https://m.dailyhunt.in/assets/img/blue_arrow.svg?mode=pwa") right center no-repeat;padding-right:10px;}
+/***** common for all card titles: END *****/
+.newsCards{padding:20px 16px;background:#fff;border-bottom:0.5px solid #eaeaea}
+.newsCards .crd{display:table;width:100%}
+.newsCards .crd .list_content{display:table-cell;padding-right:8px}
+.newsCards .crd .list_content h3{color:#1C1C1C;height:66px;max-height:66px;overflow:hidden;line-height:22px;margin-bottom:6px;font-size:1em;font-weight:bold}
+.newsCards .crd picture{width:96px;height:96px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden;}
+.newsCards .crd picture img{height:100%;width:100%;display:block;border-radius:5px}
+.newsCards .crd picture .playIcon{width:16px;height:16px;background:url(https://m.dailyhunt.in/assets/img/play.svg?mode=pwa) no-repeat;background-size:100% auto;position:absolute;bottom:8px;left:8px;}
+.infoBar .newspaperInfo{margin-bottom:12px}
+.infoBar .newspaperInfo .newsSrc,.infoBar .newspaperInfo .newsSrc picture,.infoBar .newspaperInfo .newsSrc .info{float:left;}
+.infoBar .newspaperInfo .newsSrc picture{max-width:24px;width:24px;max-height:24px;height:24px;border-radius:4px;position:relative;}
+.infoBar .newspaperInfo .newsSrc picture img{width:100%;height:100%;border-radius:4px;background-size: 100% auto;margin-top:0;}
+.infoBar .newspaperInfo .newsSrc .info{padding:4px 8px}
+.infoBar .newspaperInfo .newsSrc .info span{font-size:0.875em;color:#000000;text-align:left;line-height:10px;}
+.infoBar .newspaperInfo .newsFollow{float:right;}
+.infoBar .newspaperInfo .newsFollow a{background-color:rgba(255,255,255,0.5);border:1px solid #BCBCBC;border-radius:4px;padding:4px 14px;}
+.infoBar .newspaperInfo .newsFollow a p{font-size:0.75em;color:#1F9EE1;line-height:14px;background:url("https://m.dailyhunt.in/assets/img/follow.svg?mode=pwa") no-repeat left center;padding-left:15px}
+.infoBar .newspaperInfo .followed a{padding:5px}
+.infoBar .newspaperInfo .followed a p{background:url("https://m.dailyhunt.in/assets/img/filled_follow.svg?mode=pwa") no-repeat left center;width:12px;height:12px;padding-left:0px}
+.withoutImage .crd .list_content h3{height:44px;max-height:44px;margin-bottom:8px;}
+.withoutImage .crd .list_content{padding-right:0px}
+.seeAllBlock{padding:19px 0px 22px;background:#fff;text-align:center}
+.reservedblock p{font-size:0.5em;color:#565868;text-align:center;display:inline-block;background:#EAEAEA;border-radius:4px;padding:4px 6px;font-weight:bold;margin-bottom:16px}
+.srcInfo_top .src{float:left}
+.srcInfo_top .src p{font-size:0.625em;color:#333333}
+.srcInfo_top .src span,.srcInfo_top em{font-size:0.5625em;color:#999999}
+.srcInfo_top .srcShare{float:right}
+.srcInfo_top .srcShare .srcIcons{float:left}
+.srcInfo_top .srcShare .srcIcons a{display:block;width:24px;height:24px;text-align:center;}
+.srcInfo_top .srcShare .srcIcons a span{width:18px;height:18px;display:inline-block;margin:3px 0px}
+.whatsapp{background:url(https://m.dailyhunt.in/assets/img/whatsapp_elect.svg?mode=pwa) center center no-repeat;}
+
+/* top table corona */
+
+  /***** common for all card titles: START *****/ 
+  strong.icon{display:inline-block;background-repeat:no-repeat;background-size:6px 3px;background-position:left center;}
+  strong.icon.up{color:#2e7d32;background-image:url(https://m.dailyhunt.in/assets/img/inc.svg);}
+  strong.icon.down{color:#c62828;background-image:url(https://m.dailyhunt.in/assets/img/dec.svg);}
+  strong.icon.up1{color:#2e7d32;background-image:url(https://m.dailyhunt.in/assets/img/inc1.svg);}
+  strong.icon.down1{color:#c62828;background-image:url(https://m.dailyhunt.in/assets/img/dec1.svg);}
+  /***** common for all card titles: END *****/
+  .menuItems ul{background:#fff;padding:16px;}
+  .menuItems ul li{display:inline-block;margin-right:16px;vertical-align:top;width:calc(50% - 8px);margin-right:8px}
+  .menuItems ul li:last-child{margin-right:0px}
+  .menuItems ul li a{padding:10px 20px;font-size:0.75em;color:#9698A3;line-height:16px;font-weight:bold;box-shadow:0 1px 4px 0 rgba(0,0,0,0.20);border-radius:18px;background:#FFFFFF;text-transform:capitalize;text-align:center;} 
+  .menuItems ul li:last-child{margin-right:0px}
+  .menuItems ul li a.active{background:#DB4437;color:#FAFAFA} 
+
+  .discoverCards ul{padding:0px 16px 10px;background:#fff;}
+  .discoverCards ul li{width:calc(33% - 8px);display:inline-block;margin-right:8px;}          
+  .discoverCards ul li:last-child{margin-right:0px}
+  .discoverCards ul li a{height:100%;}
+  .discoverCards ul li a .inrCards{border-radius:4px;border:1px solid rgb(221, 221, 221);box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.08);padding:16px 2px 12px}
+  .discoverCards ul li a .inrCards .top{display:block;text-align:center;}
+  .discoverCards ul li a .inrCards .top span{font-size:15px;display:block;margin-bottom:2px;font-weight:bold;}
+  .discoverCards ul li a .inrCards .top strong.icon{font-size:12px;padding-left:8px;margin-bottom:2px} 
+  .discoverCards ul li a .inrCards .top em{display:block;font-size:11px;text-transform:capitalize;color:#000000} 
+
+
+.tal{text-align:left !important;}
+.tableCont{width:100%}
+.tableCont table{width:100%}
+.tableCont table tr th{font-size:10px;color:#000;font-weight:bold;padding:15px 0px 11px;text-align:center;box-sizing:border-box;}
+.tableCont table tr th span,.tableCont table tr td span{display:inline-block;padding-left:11px}
+.tableCont table tr td{font-size:12px;text-align:center;}
+.tableCont table tr td strong.icon{font-size:11px;padding-left:8px;} 
+.accordionItemHeading td{padding:16px 2px 16px 2px}
+.accordionItemContent td{padding:10px 2px 10px 2px;}
+.accordionItemContent tr,.accordionItemContent td{border-bottom:2px solid #fff}
+.gry{background-color:#f4f4f4}
+.white{background-color:#ffffff}  
+.tableCont .accordionItem{width:100%}
+.tableCont .close .accordionItemContent{height:0px;transition:height 1s ease-out; -webkit-transform: scaleY(0); -o-transform: scaleY(0); -ms-transform: scaleY(0); transform: scaleY(0);display:none}
+.tableCont .open .accordionItemContent{-webkit-transform: scaleY(1); -o-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); -webkit-transform-origin: top; -o-transform-origin: top; -ms-transform-origin: top; transform-origin: top; -webkit-transition: -webkit-transform 0.4s ease-out; -o-transition: -o-transform 0.4s ease; -ms-transition: -ms-transform 0.4s ease; transition: transform 0.4s ease; box-sizing: border-box;} 
+.tableCont .imageIcon{display:block;background-image:url(https://m.dailyhunt.in/assets/img/up.svg);background-size:auto;background-repeat:no-repeat;background-position:0 3px}
+.tableCont .imageIcon.upImage{background-image:url(https://m.dailyhunt.in/assets/img/down.svg);background-position:0 3px} 
+
+.src{background-color:#f6f6f6;margin:10px 16px;padding:8px 10px 3px;text-align:center;}
+.src p{color:#000000;font-size:11px;margin-bottom:5px}
+.src p strong{width:12px;margin-right:10px;height:8px;background-size:contain; }
+.src span{display:block;color:#000;font-size:10px}
+ 
+</style>
+
+<div id="comsContainer"></div>
+<div style="display:none" id="listCom"></div>
+<script>
+ var delayInRetry = 300;
+  var noOfRetry = 4;
+    function closeElePop(){
+      let popup = document.getElementById('electPopUp');
+      popup && popup.classList.remove("show");
+      popup && sendGAAnalyticsEvent('UA-64780041-3','Dismiss');
+      popup && sendGAAnalyticsEvent('UA-139067481-1','Dismiss');
+    }
+
+    function clickDownload(e){
+      sendGAAnalyticsEvent('UA-64780041-3','Click');
+      sendGAAnalyticsEvent('UA-139067481-1','Click');
+      // var url= "https://play.google.com/store/apps/details?id=com.eterno&referrer=utm_source%3DPWA%'26utm_medium%3DApp%2520Install";
+      //    window.location = url;
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    function fetchRetry(url, delay, limit, fetchOptions = {}) {
+      return new Promise((resolve,reject) => {
+        function success(response) {
+          resolve(response);
+        }
+        function failure(error){
+          limit--;
+          if(limit){
+            setTimeout(fetchUrl,delay)
+          }
+          else {
+            // this time it failed for real
+            reject(error);
+          }
+        }
+        function finalHandler(finalError){
+          throw finalError;
+        }
+        function fetchUrl() {
+          return fetch(url,fetchOptions)
+            .then(success)
+            .catch(failure)
+            .catch(finalHandler);
+        }
+        fetchUrl();
+      });
+    }
+
+function sendGAAnalyticsEvent(id,action) {
+      var trackingId = id;//'UA-112546024-1';//'UA-64780041-3'
+        var payloadData = {
+          v:1,
+          t: 'event',
+          ec: 'Install Prompt',//category
+          ea: action,//action
+          el: 'Election Zone',//label
+          cid: getCookie('clientId4')||getCookie('clientId'),
+          tid: trackingId,
+          cd5:'PWA'
+        };
+
+    var payloadString = Object.keys(payloadData)
+      .filter(function(analyticsKey) {
+        return payloadData[analyticsKey];
+      }).map(function(analyticsKey) {
+        return analyticsKey + '=' + encodeURIComponent(payloadData[analyticsKey]);
+      }).join('&');
+
+    fetchRetry('https://www.google-analytics.com/collect',delayInRetry,noOfRetry, {
+      method: 'post',
+      body: payloadString
+    }).then(function(response){
+        if(!response.ok){
+          throw new Error('failed!');
+        }
+        return response;
+      })
+      .then(function(response){
+        //console.log("response is:",response);
+      })
+      .catch(function(error){
+        //console.log("error is:",error);
+      });
+
+    return;
+
+}
+</script>
+<script>
+  window.getNativeAdTemplate = function (adData) {
+  var cardHTML = " <html><head><style>.dh-list-item *{margin:0;padding:0;border:none;font-weight:400;font-size:100%;font-family:inherit;list-style:none;text-decoration:none;font-style:normal;font-family:dyLang,Arial,sans-serif;}.relativeWap{position:relative}.dh-list-item section a,.rippleEffect{display:block}.dh-list-item section a .inr{display:block;padding:20px 10px;margin:5px;background-color:#fff;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9);position:relative;overflow:hidden;z-index:-1}.dh-list-item section a .inr .crd{display:table;width:100%}.dh-list-item section picture{width:80px;height:80px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden}.dh-list-item section picture img,.dh-list-item section picture source{height:100%;width:100%;background:#fff top left no-repeat #ededed;background-size:100% auto;margin-top:-50%;position:absolute}.dh-list-item section .list-content{display:table-cell;padding-left:10px}.dh-list-item section .list-content h2{color:#010101;height:60px;max-height:60px;overflow:hidden;line-height:1.4em;margin-bottom:10px;font-size:14px}.dh-list-item section .list-content .srcInfo em,.dh-list-item section .list-content .srcInfo span{font-size:10px;color:#888;display:inline-block;float:left;margin-right:3px}</style></head><body><div class=\"dh-list-item\"><section><div class=\"relativeWap\"><a target=\"_blank\" href="https://m.dailyhunt.in/desktop_site/news/temp_daily/fonts/gu/.concat(adData.action,"> <div class=\"inr\"><div class=\"crd\"> <picture class=\"\"> <img src="https://m.dailyhunt.in/desktop_site/news/temp_daily/fonts/gu/).concat(adData.content.iconLink," alt=\"\"><span class=\"icn_ph\"></span> </picture> <div class=\"list-content\"><h2>").concat(adData.content.itemTitle.data, " - ").concat(adData.content.itemSubtitle1.data, "</h2><div class=\"srcInfo\"><span style=\"float:left;\">").concat(adData.content.itemTag.data, "</span><span style=\"float:right;\">").concat(adData.content.itemSubtitle2.data, "</span></div> </div></div> </div></a> </div></section></div></body></html>");
+  return cardHTML;
+};
+  //{ var cardHTML = ` <html><head><style>.dh-list-item *{margin:0;padding:0;border:none;font-weight:400;font-size:100%;font-family:inherit;list-style:none;text-decoration:none;font-style:normal;font-family:dyLang,Arial,sans-serif;}.relativeWap{position:relative}.dh-list-item section a,.rippleEffect{display:block}.dh-list-item section a .inr{display:block;padding:20px 10px;margin:5px;background-color:#fff;-webkit-box-shadow:0 0 4px 1px rgba(232,232,232,.9);-moz-box-shadow:0 0 4px 1px rgba(232,232,232,.9);box-shadow:0 0 4px 1px rgba(232,232,232,.9);position:relative;overflow:hidden;z-index:-1}.dh-list-item section a .inr .crd{display:table;width:100%}.dh-list-item section picture{width:80px;height:80px;vertical-align:middle;display:table-cell;position:relative;overflow:hidden}.dh-list-item section picture img,.dh-list-item section picture source{height:100%;width:100%;background:url(https://m.dailyhunt.in/assets/img/defult.jpg?mode=pwa) top left no-repeat #ededed;background-size:100% auto;margin-top:-50%;position:absolute}.dh-list-item section .list-content{display:table-cell;padding-left:10px}.dh-list-item section .list-content h2{color:#010101;height:60px;max-height:60px;overflow:hidden;line-height:1.4em;margin-bottom:10px;font-size:14px}.dh-list-item section .list-content .srcInfo em,.dh-list-item section .list-content .srcInfo span{font-size:10px;color:#888;display:inline-block;float:left;margin-right:3px}</style></head><body><div class="dh-list-item"><section><div class="relativeWap"><a target="_blank" href="https://m.dailyhunt.in/desktop_site/news/temp_daily/fonts/gu/${adData.action}"> <div class="inr"><div class="crd"> <picture class=""> <img src="https://m.dailyhunt.in/desktop_site/news/temp_daily/fonts/gu/${adData.content.iconLink}" alt=""><span class="icn_ph"></span> </picture> <div class="list-content"><h2>${adData.content.itemTitle.data} - ${adData.content.itemSubtitle1.data}</h2><div class="srcInfo"><span style="float:right;">${adData.content.itemTag.data}</span></div> </div></div> </div></a> </div></section></div></body></html>`;
+    // return cardHTML;};
+      // 'window.collapseAd = function(adWrapperId) ' +
+      //   '{console.log("callback to collapse Ad",adWrapperId); var appW = document.getElementById("app");' +
+      //   'var event = new CustomEvent("HTMLEvents", {detail: {index:'+index+',id:adWrapperId.replace("ad_",""),}});' +
+      //   'event.initEvent("HTMLEvents", true, true); ' +
+      //   'appW.dispatchEvent(event)' +
+      // '};'
+      // +
+      // 'window.adRenderComplete = function(data)' +
+      // '{console.log(data,"data in the ad render complete callback")'+
+      // '};' +
+</script>
+<script>
+    function scrollForRender(){
+      var wrapper = document.getElementsByClassName('ReactVirtualized__Grid ReactVirtualized__List');
+      if(wrapper){
+        for(let i=0;i<=wrapper.length;i++){
+          setTimeout(() => {
+            wrapper && wrapper[i] && (wrapper[i].scrollTop += 1);
+        }, 1000);
+
+        }
+      }
+    }
+</script>
+<script>window.adRenderComplete=function(data){
+    scrollForRender()
+  let adWrapperId = data.targetId;
+    var appW = document.getElementById("app");
+        var event = new CustomEvent("HTMLEvents",
+        {detail: {adHeight:data.height,width:data.width,id:adWrapperId.replace("ad_",""),}});
+        event.initEvent("HTMLEvents", true, true);
+        appW.dispatchEvent(event)
+  }
+  window.detailsPgiAdRenderComplete=function(data){
+    let adWrapperId  = data.targetId;
+    var appW = document.getElementById("app");
+    var event = new CustomEvent("HTMLEventsForPgi",
+        {detail: {id:adWrapperId.replace("ad_","")}});
+        event.initEvent("HTMLEventsForPgi", true, true);
+        appW.dispatchEvent(event)
+  }
+  </script>
+<div class="ElectionContainer slideCss" id="electPopUp">
+  <div id="ele_android" style="display:none" class="popUp">
+    <span class="cBtn" onclick=closeElePop()></span>
+    <div class="DH-logo">
+      <a onclick='return clickDownload(event)' href="https://play.google.com/store/apps/details?id=com.eterno&referrer=utm_source%3DSyndication%26utm_medium%3DPN%2520Election"><img src="https://m.dailyhunt.in/assets/img/logo_dh_ele.png?mode=pwa"></a>
+    </div>
+    <p><span>Download the app to view this section</span></p>
+
+    <div class="playStore">
+      <a onclick='return clickDownload(event)' href="https://play.google.com/store/apps/details?id=com.eterno&referrer=utm_source%3DSyndication%26utm_medium%3DPN%2520Election">
+        <img src="https://m.dailyhunt.in/assets/img/google-play-badge_ele.png?mode=pwa"/>
+      </a>
+    </div>
+  </div>
+
+  <div id="ele_ios" style="display:none" class="popUp">
+    <span class="cBtn" onclick=closeElePop()></span>
+    <br class="CL"/>
+    <div class="DH-logo">
+      <a onclick='return clickDownload(event)' href="https://itunes.apple.com/in/app/dailyhunt-formerly-newshunt/id338525188?mt=8"><img src="https://m.dailyhunt.in/assets/img/logo_dh_ele.png?mode=pwa"></a>
+    </div>
+    <p><span>Download the app to view this section</span></p>
+
+    <div class="playStore">
+      <a onclick='return clickDownload(event)' href="https://itunes.apple.com/in/app/dailyhunt-formerly-newshunt/id338525188?mt=8">
+        <img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2009-12-02&kind=iossoftware&bubble=ios_apps"/>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- toast for copy link: start --->
+<div id="copySnackbar" class="copySnackbar">
+  <p>Link Copied</p>
+</div>
+<!-- toast for copy link: end --->
+
+<script>
+  (function(){
+    var location = window.location.href;
+    var chkDetail = location.indexOf('newsid');
+    if(chkDetail!=-1){
+      document.getElementById('shimmerList') && (document.getElementById('shimmerList').style.display = "none");
+      document.getElementById('shimmerDetail') && (document.getElementById('shimmerDetail').style.display = "block");
+    }else{
+      document.getElementById('shimmerList') && (document.getElementById('shimmerList').style.display = "block");
+      document.getElementById('shimmerDetail') && (document.getElementById('shimmerDetail').style.display = "none");
+    }
+
+    let isLiveTv = window.location.pathname.startsWith('/livetv/');
+    let host = (window.location.host || window.location.hostname);
+    let prevRef = window.location.search.includes('prevRef=');
+    var hamb = document.getElementById('hamb');
+    if(hamb && isLiveTv && prevRef && host.startsWith('samsung')){
+      hamb.style = 'display:none';
+    }
+  })()
+</script>
+<script src="https://m.dailyhunt.in/assets/idb/lib/idb.js?mode=pwa" async></script>
+<script src="https://m.dailyhunt.in/swhelper.js?mode=pwa&amp;v=1.2.66&amp;hash=8254" async></script>
+<script src="https://m.dailyhunt.in/bundleDesktop.js?mode=pwa&amp;v=1.2.66&amp;hash=8254" async></script>
+</body>
+</html>

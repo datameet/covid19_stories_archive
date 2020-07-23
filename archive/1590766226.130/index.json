@@ -1,0 +1,194 @@
+{
+    "title": "Two youth commit suicide in Nashik due to fear of corona virus and lockdown aau 85 |Coronavirus: \u0915\u0930\u094b\u0928\u093e\u091a\u094d\u092f\u093e \u0927\u093e\u0938\u094d\u0924\u0940\u0928\u0902 \u0906\u0923\u093f \u0932\u0949\u0915\u0921\u093e\u0909\u0928\u092e\u0941\u0933\u0947 \u0928\u093e\u0936\u093f\u0915\u092e\u0927\u094d\u092f\u0947 \u0926\u094b\u0918\u093e\u0902\u091a\u094d\u092f\u093e \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e | Loksatta",
+    "url": "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/",
+    "timestamp": "1590766226.130",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771456",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:57:45.635074",
+                "start_ts": "2020-05-29 16:57:36.887329",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:57:58.730959",
+                "start_ts": "2020-05-29 16:57:57.195132",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.loksatta.com"
+                ],
+                "end_ts": "2020-05-29 16:57:36.886913",
+                "start_ts": "2020-05-29 16:57:36.646867",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:57:49.661010",
+                "start_ts": "2020-05-29 16:57:45.635218",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:57:57.194795",
+                "start_ts": "2020-05-29 16:57:55.351071",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:58:00.315627",
+                "start_ts": "2020-05-29 16:57:58.731200",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "https://web.archive.org/web/20200529165759/https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/"
+                ],
+                "end_ts": "2020-05-29 16:57:55.350824",
+                "start_ts": "2020-05-29 16:57:49.661383",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://www.loksatta.com/maharashtra-news/two-youth-commit-suicide-in-nashik-due-to-fear-of-corona-virus-and-lockdown-aau-85-2138241/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:57:36.646454",
+                "start_ts": "2020-05-29 16:57:33.824821",
+                "pwd": "/data/archive/1590766226.130",
+                "output": "Two youth commit suicide in Nashik due to fear of corona virus and lockdown aau 85 |Coronavirus: \u0915\u0930\u094b\u0928\u093e\u091a\u094d\u092f\u093e \u0927\u093e\u0938\u094d\u0924\u0940\u0928\u0902 \u0906\u0923\u093f \u0932\u0949\u0915\u0921\u093e\u0909\u0928\u092e\u0941\u0933\u0947 \u0928\u093e\u0936\u093f\u0915\u092e\u0927\u094d\u092f\u0947 \u0926\u094b\u0918\u093e\u0902\u091a\u094d\u092f\u093e \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e | Loksatta"
+            }
+        ]
+    },
+    "updated": "1590788228.183944",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "title": "\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0905\u092c \u0924\u0915 50 \u0915\u0940 \u092e\u094c\u0924, 60 \u0938\u0947 \u0905\u0927\u093f\u0915 \u0917\u0902\u092d\u0940\u0930 \u0930\u0942\u092a \u0938\u0947 \u0918\u093e\u092f\u0932 \u2013 BeyondHeadlines",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.396",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781168",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:28.645188",
+                "start_ts": "2020-05-29 19:39:28.637315",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:51.734408",
+                "start_ts": "2020-05-29 19:40:47.832020",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=beyondheadlines.in"
+                ],
+                "end_ts": "2020-05-29 19:39:28.636027",
+                "start_ts": "2020-05-29 19:39:24.122912",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:36.039316",
+                "start_ts": "2020-05-29 19:40:28.645996",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 21:57:38.952534",
+                "start_ts": "2020-05-29 21:57:32.595936",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:47.830959",
+                "start_ts": "2020-05-29 19:40:42.077537",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:56.084313",
+                "start_ts": "2020-05-29 19:40:51.734661",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "https://web.archive.org/web/20200529194053/https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:40:42.076738",
+                "start_ts": "2020-05-29 19:40:36.039952",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 15,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 21:57:54.797494",
+                "start_ts": "2020-05-29 21:57:38.953201",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:39:24.122633",
+                "start_ts": "2020-05-29 19:39:22.040426",
+                "pwd": "/data/archive/1590766226.396",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0905\u092c \u0924\u0915 50 \u0915\u0940 \u092e\u094c\u0924, 60 \u0938\u0947 \u0905\u0927\u093f\u0915 \u0917\u0902\u092d\u0940\u0930 \u0930\u0942\u092a \u0938\u0947 \u0918\u093e\u092f\u0932 &#8211; BeyondHeadlines"
+            }
+        ]
+    },
+    "updated": "1590789474.797987",
+    "tags": "",
+    "url": "https://beyondheadlines.in/2020/03/deaths-due-to-lockdown/"
+}

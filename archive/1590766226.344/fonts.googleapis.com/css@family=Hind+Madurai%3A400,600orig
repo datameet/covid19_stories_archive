@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Madurai Regular'), local('HindMadurai-Regular'), url(https://fonts.gstatic.com/s/hindmadurai/v5/f0Xx0e2p98ZvDXdZQIOcpqjX9ocH.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind Madurai SemiBold'), local('HindMadurai-SemiBold'), url(https://fonts.gstatic.com/s/hindmadurai/v5/f0Xu0e2p98ZvDXdZQIOcpqjfKaMXfsEs.ttf) format('truetype');
+}

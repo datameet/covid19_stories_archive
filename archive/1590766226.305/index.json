@@ -1,0 +1,194 @@
+{
+    "title": "Coronavirus: Man dies outside Indore hospital, family alleges hospital refused to give ambulance",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.305",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:29.210129",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778280",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 18:51:20.246578",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:43.769205",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:51:41.911011",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:20.245230",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=scroll.in"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:51:19.945844",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:33.422843",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:51:29.210424",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:41.910679",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:51:38.331175",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:46.489210",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:51:43.769455",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "https://web.archive.org/web/20200529185144/https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:38.330924",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:51:33.423087",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:51:19.945510",
+                "cmd": [
+                    "curl",
+                    "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:51:19.546375",
+                "pwd": "/data/archive/1590766226.305",
+                "output": "Coronavirus: Man dies outside Indore hospital, family alleges hospital refused to give ambulance"
+            }
+        ]
+    },
+    "updated": "1590789103.536623",
+    "tags": "",
+    "url": "https://scroll.in/latest/959278/coronavirus-man-dies-outside-indore-hospital-family-alleges-hospital-refused-ambulance"
+}

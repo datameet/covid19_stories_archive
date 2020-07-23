@@ -1,0 +1,94 @@
+(function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (!d.getElementById(id)) return;
+
+let link=document.createElement('link');
+link.setAttribute('rel', 'stylesheet');
+link.setAttribute('type', 'text/css');
+link.setAttribute('href', 'https://media-central.indianexpress.com/static/results/css/cbr-style.css');
+fjs.parentNode.insertBefore(link,fjs);
+js = d.createElement(s);
+js.setAttribute("type","text/javascript");
+js.setAttribute("charset","utf-8");
+let board=d.getElementById(id).getAttribute("data-cbrBoard");
+let lang=d.getElementById(id).getAttribute("data-cbrLang");
+let standard=d.getElementById(id).getAttribute("data-cbrStandard");
+let year=d.getElementById(id).getAttribute("data-cbrYear");
+if(standard!=null){
+      js.src = "https://results.indianexpress.com/api/board?board="+board+"&lang="+lang+"&year="+year+"&standard="+standard;
+}
+else{
+      js.src = "https://results.indianexpress.com/api/board?board="+board+"&lang="+lang+"&year="+year;
+}
+
+fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "cbr-base-register-div"));
+
+/***** Just now / Breaking news Widget ******/
+function js_just_now_createCookie( name, value, exTime ) {
+  var date        = new Date();
+  date.setTime( date.getTime() + ( exTime ) );
+  var expires     = date.toGMTString();
+  var offset      = -date.getTimezoneOffset() / 60;
+  document.cookie = name+'='+value+';timezone='+offset+';expires='+expires+';path=/';
+}
+
+function js_just_now_getCookie( c_name ) {
+  var i,x,y,ARRcookies = document.cookie.split( ';' );
+  for( i = 0;i < ARRcookies.length;i++ ) {
+    x = ARRcookies[i].substr( 0,ARRcookies[i].indexOf( '=' ) );
+    y = ARRcookies[i].substr( ARRcookies[i].indexOf( '=' ) + 1 );
+    x = x.replace( /^\s+|\s+$/g,"" );
+    if ( x === c_name ) {
+      return unescape( y );
+    }
+  }
+}
+jQuery( document ).ready( function() {
+  jQuery(document).on( 'click', '.breaking-closebtn', function() {
+    var cookieid = jQuery( '.just-now-box .box' ).attr( 'id' );
+    js_just_now_createCookie( 'jsjustnowclick', cookieid, 60000*60*24 );
+    jQuery( '#append_breaking_box' ).hide();
+    jQuery( '#append_breaking_box' ).removeClass( 'animate-break' );
+    var article_href = jQuery( '.just-now-click').attr( 'href' );
+    ga( "send", "event", "cross_just_now", "click", article_href , { 'dimension1': null, 'dimension2': null, 'dimension3': null, 'dimension4': null, 'dimension5': null, 'dimension6': null, 'dimension7': null, 'dimension9': null } );
+  } );
+  jQuery(document).on( 'click', '.just-now-click', function() {
+    var cookieid = jQuery( '.just-now-box .box' ).attr( 'id' );
+    js_just_now_createCookie( 'jsjustnowclick', cookieid, 60000*60*24 );
+    jQuery( '#append_breaking_box' ).hide();
+  } );  
+});
+function show_justnow_wid() {  
+  if ( jQuery( "#append_breaking_box" ).length > 0 ) { 
+      if ( "undefined" === typeof story_id || null === story_id ) {
+          story_id = 0;
+      }
+      try {
+          jQuery.ajax({
+            url: ajax_site_url + '/just-now-widget/?current_story_id='+encodeURIComponent( story_id ),
+            success: function( result ){
+              jQuery( '#append_breaking_box' ).text( '' );
+              var cookieid = jQuery( '#append_breaking_box .box' ).attr( 'id' );
+              var jscookieval = js_just_now_getCookie( 'jsjustnowclick' );
+              if ( ! result.match( jscookieval ) || null === jscookieval || 'undefined' === typeof jscookieval ) {
+                  jQuery( '#append_breaking_box' ).append( result );
+              }
+            }
+          });
+      } catch (err) {}
+      jQuery(document).scroll(function() {
+          var y = jQuery( this ).scrollTop();
+          if (y > 400) {
+              jQuery( '#append_breaking_box' ).addClass( 'animate-break' );
+          } else {
+              jQuery( '#append_breaking_box' ).removeClass( 'animate-break' );
+          }
+      });
+  }
+}
+jQuery(window).scroll(function() {
+  if( window.scrollY > 100 ) {
+    show_justnow_wid();
+  }
+});

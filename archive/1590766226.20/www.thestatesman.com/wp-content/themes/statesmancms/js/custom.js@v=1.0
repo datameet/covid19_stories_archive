@@ -1,0 +1,412 @@
+jQuery(function ($) {
+
+    //vertical tabs on hover
+    $('.vertical-tabs a').hover(function (e) {
+        //alert("ok")
+        e.preventDefault()
+        $(this).tab('show')
+    });
+    /*$("img").one("load", function() {
+     // do stuff
+
+     }).each(function() {
+     if(this.complete) $(this).load();
+     });*/
+});
+
+//Responsive Navigation
+//
+var winW;
+var infinitescroll_flag = 1;
+jQuery(document).ready(function ($) {
+//Start Right Side Top Stories V20161129
+//     mostPopular();
+//END Right Side Top Stories V20161129
+//
+//Start Story Page Infinite Scroll V20161216
+    if ($("#story_page").length == 1) {
+        var currentHash = "#";
+        var win = $(window);
+        win.scroll(function () {
+            // Put logic here
+            if ($(document).height() - win.height() == win.scrollTop()) {
+                //infinitescroll_flag = 0;
+                story_ajax_infinitescroll();
+            }
+            $('.current_page_scroll').each(function () {
+                var top = window.pageYOffset;
+                var distance = top - $(this).offset().top;
+                var cpage_no = $(this).attr('pgid');
+                //alert(cpage_no);
+                var cstory_url = $("#story_urls_" + cpage_no).val();
+                var cstory_title = $("#story_title_" + cpage_no).val();
+                // 30 is an arbitrary padding choice,
+                // if you want a precise check then use distance===0
+                if (distance < 30 && distance > -30) {
+                    //window.location.hash = (hash);
+                    window.history.replaceState(cstory_title, cstory_title, cstory_url);
+                    //currentHash = hash;
+                }
+                /*else{
+                 window.history.replaceState(cstory_title,cstory_title,cstory_url);
+                 }*/
+            });
+            /*var fromTop = $(this).scrollTop()+ 30;
+             alert(fromTop);
+             stateData = {
+             path: window.location.href,
+             scrollTop: win.scrollTop()
+             };
+             //var story_url = $("#story_urls_"+cpage).val();
+             //var story_title = $("#story_title_"+cpage).val();
+             window.history.replaceState(stateData, 'title', 'page2.html');*/
+
+        });
+    }
+//end Story Page Infinite Scroll V20161216
+
+    $(".sreach").hide();
+    winW = $(window).width();
+    $('.nav_bar').click(function () {
+        $(this).toggleClass("open");
+        $(".navigation_responsive").show();
+        if ($('.navigation_responsive').hasClass('slidenav')) {
+            $('.navigation_responsive').removeClass('slidenav');
+            $('.navigation_responsive').animate({left: '-220'}, 400);
+            $('.navwrap ul li span').removeClass("showmenu");
+            $('.navwrap ul li ul').hide();
+        } else {
+            $('.navigation_responsive').addClass('slidenav');
+            $('.navigation_responsive').animate({left: '0'}, 400);
+        }
+    });
+    $(".sroll-hide").hide();
+    $(".navwrap ul li").children('ul').each(function () {
+        $(this).parent().prepend('<span></span>');
+    });
+
+
+    $(".navwrap ul li span").on('click', function () {
+        if ($(this).hasClass('level-1')) {
+            $(this).addClass("menu-open");
+            $(this).next().addClass("menu-open");
+            $(".navwrap ul li span:not('.menu-open')").removeClass("showmenu");
+            $(".navwrap ul li ul:not('.menu-open')").slideUp();
+            $(this).removeClass("menu-open");
+            $(this).next().removeClass("menu-open");
+            $(this).toggleClass("showmenu");
+        }
+        if ($(this).next().hasClass('sub-menu')) {
+            $(this).next().slideToggle();
+            //$(this).toggleClass("showmenu");
+            //$(this).next().toggle("active-menu");
+        } else {
+            $(this).next().next().toggle("active");
+            $(this).toggleClass("showmenu");
+        }
+    });
+
+    //vices-block
+    $('#vices-block').bxSlider({
+        minSlides: 2,
+        maxSlides: 5,
+        slideWidth: 220,
+        slideMargin: 15,
+        auto: false
+    });
+    $('.sucess').delay().fadeOut(4000);
+    //science-tech-left
+    $('#science-tech-left').bxSlider({
+        mode: 'horizontal',
+        captions: false
+    });
+
+    //soprts-left
+    $('#soprts-left').bxSlider({
+        mode: 'horizontal',
+        captions: false
+    });
+    //soprts-left
+    $('#top-news').bxSlider({
+        onSliderLoad: function () {
+            $("#top-news li").css("visibility", "visible");
+        },
+        mode: 'horizontal',
+        captions: false,
+        auto: true
+    });
+    //Serach Toggle
+    $("#serach").click(function () {
+        $(".sreach").slideDown("slow");
+    });
+    $(".cross").click(function () {
+        //alert("ok");
+        $(".sreach").slideUp("slow");
+    });
+
+    //slider-news
+    $('#slider-news').bxSlider({
+        mode: 'horizontal',
+        captions: false
+    });
+    //video-slider
+    $('#video-slidezr').bxSlider({
+        mode: 'horizontal',
+        captions: false
+    });
+    //photo-slider
+    $('#photo-slider').bxSlider({
+        mode: 'horizontal',
+        captions: false
+    });
+    //Poll Result
+    $("#poll-result").hide();
+    $("#poll_btn_resul").click(function () {
+        //$('#err_poll_resul').html("Please Wait...");
+
+        var poll_result_answer = $.trim($("input[type='radio']:checked").val());
+
+        var poll_question_id = $.trim($(this).attr("oid"));
+        //alert(poll_question_id);
+        if (poll_result_answer == '') {
+            alert('Please select one answer.');
+            $('#err_poll_resul').html('');
+            //$('#err_poll_resul').html('<span class="error">Please select one answer.</span>');
+        } else {
+            ajaxPollUserSurveyResult(poll_question_id, poll_result_answer);
+        }
+        /*$("#poll-result").show();
+         $("#poll-content").hide();*/
+
+    });
+    $("#return").click(function () {
+        $("#poll-content").show();
+        $("#poll-result").hide();
+    });
+
+    //PHOTO PAGE GALLRY
+    $('.bxslider').bxSlider({
+        //nextSelector: '#slider-next',
+        //prevSelector: '#slider-prev',
+        //nextText: 'next',
+        //prevText: 'prev',
+        //pager: true,
+        prependtxt: 'Examples  ',
+        pagerType: 'short',
+        mode: 'fade',
+        auto: false,
+        captions: false,
+        onSliderLoad: function (currentIndex) {
+            $(".slider-txt").html($('.bxslider li').eq(currentIndex).find("img").attr("title"));
+        },
+        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+            $(".slider-txt").html($slideElement.find("img").attr("title"));
+        }
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            $('.add160x600').addClass("top-zero");
+            $('.add160x600-right').addClass("top-zero");
+        } else {
+            $('.add160x600').removeClass("top-zero");
+            $('.add160x600-right').removeClass("top-zero");
+        }
+    });
+    if ($(window).width() >= 1200) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 130) {
+                $('#desktop-nav').addClass("freeze-menu");
+				$(".fa-home").hide(); 
+            } else {
+                $('#desktop-nav').removeClass("freeze-menu");
+				$(".fa-home").show(); 
+            }
+        });
+    }
+
+});
+
+//Date Start	
+
+//start Amit Js 19102016
+jQuery(document).ready(function ($) {
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    var newDate = new Date();
+    newDate.setDate(newDate.getDate());
+    $('#Date').html(dayNames[newDate.getDay()] + ", " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ', ' + newDate.getFullYear());
+    // // for autocomplete suggest search button
+    // /*$("#search").autocomplete({
+    //  source: __WEBROOT__ + '/ajax.php?typ=autocomplete'
+    //  });*/
+    // /*
+    //  $("img.lazy").lazyload({
+    //  effect : "fadeIn"
+    //  });*/
+    // // For Newletter email
+    // $('#btn_newsletter').on('click', function (e) {
+    //     $("#err_email_newsletter").fadeIn();
+    //     $('#err_email_newsletter').html();
+    //     //var image = $('<img></img>');
+    //     //image.attr('src', __WEBROOT__+'/images/ajax-loader.gif');
+    //     //$('#err_email_newsletter').html(image);
+    //     $('#err_email_newsletter').append("Please Wait...");
+    //     var email = $.trim($("#email_newsletter").val());
+    //     if (email == '') {
+    //         $('#err_email_newsletter').html('<span class="error">Please enter valid email address.</span>');
+    //         $("#email_newsletter").focus();
+    //     } else if (!isEmail(email)) {
+    //         $('#err_email_newsletter').html('<span class="error">Please enter valid email address.</span>');
+    //         $("#email_newsletter").focus();
+    //     } else {
+    //         ajaxNewsletterEmail(email);
+    //     }
+    //     $("#err_email_newsletter").delay(3000).fadeOut("slow");
+    // });
+    // //for search button
+    // $('#search_btn').on('click', function (e) {
+    //     var srch_val = $.trim($('#search').val());
+    //     if (srch_val != '') {
+    //         window.location.href = __WEBROOT__ + "/search/" + srch_val;
+    //     }
+    // });
+    // //for search button
+    // $('#search_btn_inner').on('click', function (e) {
+    //     var srch_val = $.trim($('#search_inner').val());
+    //     if (srch_val != '') {
+    //         window.location.href = __WEBROOT__ + "/search/" + srch_val;
+    //     }
+    // });
+});
+//For Validate Email  v. 10052016
+function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+}
+//For Save Email in Newsletter v. 10052016
+function ajaxNewsletterEmail(vals) {
+    if (vals != '') {
+        //$('#myModal').modal('show');
+        $.ajax
+        ({
+            type: "POST",
+            url: __WEBROOT_IP__ + "/ajax.php?typ=newsletter_email",
+            data: "email=" + vals + "",
+            success: function (msg) {
+                //alert(msg);
+                $('#err_email_newsletter').html(msg);
+            }
+        });
+    }
+}
+//END Amit Js 19102016
+//For Save Email in Newsletter v. 10052016
+function ajaxPollUserSurveyResult(poll_question_id, poll_result_answer) {
+    if (poll_question_id != '' && poll_result_answer != '') {
+        //$('#myModal').modal('show');
+        $.ajax
+        ({
+            type: "POST",
+            url: __WEBROOT_IP__ + "/ajax.php?typ=poll_user_survey",
+            async: true,
+            crossDomain: true,
+            data: "poll_question_id=" + poll_question_id + "&poll_result_answer=" + poll_result_answer + "",
+            success: function (res) {
+                //alert(res);
+                $('#err_poll_resul').html("");
+                $('#poll_user_survey_result').html(res);
+                $.trim($("input[type='radio']:checked").val());
+                $('input[type=radio]').prop('checked', function () {
+                    return this.getAttribute('checked') == 'checked';
+                });
+                $("#poll-result").show();
+                $("#poll-content").hide();
+            }
+        });
+    }
+}
+//END Amit Js 19102016
+//Start Right Side Top Stories V20161129
+// function mostPopular() {
+//     //$("#loading").show();
+//     jQuery.ajax
+//     ({
+//         type: "POST",
+//         // url: __WEBROOT_IP__ + "/modules/home-mostpopular-ajax.php",
+//         //url: __WEBROOT__ + "/modules/home-mostpopular-ajax.php",
+//         success: function (msg) {
+//             //alert(msg);
+//             $('#home_mostpopular').html(msg);
+//         }
+//     });
+// };
+//END Right Side Top Stories V20161129
+//Start Story Infinite Scroll in Story or Article Page V20161216
+function story_ajax_infinitescroll() {
+    //$("#loading").show();
+    var cpage = $("#story_ajax_infinitescroll_loop").val();
+    var cslug = $("#txtcatslug").val();
+    var newsid = $("#txtnewsid").val();
+    var total_story_infinite_scroll = $("#total_story_infinite_scroll").val();
+    //var infinitescroll_flag = 1;
+
+    if (cpage > 0) {
+        cpage = cpage;
+    } else {
+        cpage = 1;
+
+    }
+    //alert('sdaf');
+    //"&poll_result_answer="+poll_result_answer+
+    if (infinitescroll_flag == 1) {
+        infinitescroll_flag = 0;
+        if (cpage < 5) {
+            $('#show_footer').hide();
+            if (total_story_infinite_scroll <= story_ajax_infinitescroll_loop) {
+                $("#story_ajax_infinitescroll_loop").val(Number(cpage) + 1);
+                $.ajax
+                ({
+                    type: "POST",
+                    url: __WEBROOT__ + "/story_ajax_infinitescroll.php",
+                    async: true,
+                    crossDomain: false,
+                    data: "cpage=" + cpage + "&cslug=" + cslug + "&newsid=" + newsid + "",
+                    beforeSend: function (html) {
+                        $("#loading").show();
+                    },
+                    success: function (msg) {
+                        //alert(msg);
+                        $('#story_ajax_infinitescroll').append(msg);
+                        //$('#current_page'+cpage).append(msg);
+                        //$(document).scrollTo('#current_page'+cpage);
+                        /*$('html, body').animate({
+                         scrollTop: $('#current_page'+cpage).offset().top
+                         }, 1000);*/
+                        $("#loading").hide();
+                        FB.XFBML.parse();// for facebook comments
+                        var story_url = $("#story_urls_" + cpage).val();
+                        var story_title = $("#story_title_" + cpage).val();
+                        //alert(story_title);
+                        window.history.pushState(story_title, story_title, story_url);
+                        infinitescroll_flag = 1;
+                        //alert(infinitescroll_flag);
+                    }
+                });
+            } else {
+                no_data = false;
+                $('#story_ajax_infinitescroll').append('');
+                $("#loading").hide();
+
+            }
+            if (cpage >= 5) {
+                $('#show_footer').show();
+            }
+        }
+    }
+}
+//End Story Infinite Scroll in Story or Article Page V20161216
+function story_tagclick(tagId) {
+    document.getElementById(tagId).submit();
+}

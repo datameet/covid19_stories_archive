@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+		body{ padding: 0px; margin: 0px}
+		.icon{display: inline-block; width: 90px; clear: none;}
+		.icon span{
+			font-size: 9pt; 
+			font-family: arial
+		}
+		#topbar a{ color: white; text-decoration: none; }
+	</style>
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body style="padding-top: 100px">
+
+<div id="topbar" style="background: gray; z-index: 9999; padding-top: 5px; height: 65px; text-align: center; color: white; line-height: 20px; font-size: 25px; position: fixed; width: 100%; top:0px; left: 0px">
+	<a href="#" onclick="window.print();"><div class="icon">
+		<i class="fa fa-print"></i><br/>
+		<span>PRINT</span>
+	</div></a>
+
+
+
+
+
+	<a href="/cdn-cgi/l/email-protection#82e1edecf6e3e1f6c2e7fae3eff2eee7ace1edefbdf1f7e0e8e7e1f6a2bfa2d1eae3f0ebece5a2e3a2ece7f5f1a2ebf6e7efa4e0ede6fba2bfa2eaf6f6f2b8adadf1e3e1eae9ebe3f5e3f8ace1edefade7f2e3f2e7f0adebece1eef7e6e7adebefe5f1f0e1acf2eaf2bdebf1f1f7e7ebe6bfb6b1b4a4f2e3e5e7bfb1a4e1ededf0e6f1bfb7b2aeb3b4b5baaeb3b3b3b0aeb0b1b7b3a4e1f0edf2bfb7b2aeb3b4b5baaeb3b2b4b0aeb4b5b1a4e6edf5eceeede3e6bfb3">
+		<div class="icon">
+		<i class="fa fa-envelope"></i><br/>
+		<span>EMAIL</span>
+		</div>
+	</a>
+
+	<a href="#disqus_thread">
+		<div class="icon">
+		<i class="fa fa-comment"></i><br/>
+		<span>COMMENT</span>
+		</div>
+	</a>
+
+	<a href="include/imgsrc.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673&download=1">
+		<div class="icon">
+			<i class="fa fa-download"></i><br/>
+			<span>DOWNLOAD</span>
+		</div>
+	</a>
+
+	<div class="icon">
+		<img src="img/logo.png" style="height: 50px; ">
+	</div>
+</div>
+<div style="text-align: center;" id="zoomarea">
+	<img style="max-width: 700px"  src="include/imgsrc.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673">
+</div>
+
+<div class="" style="padding: 10px; margin:0px auto; max-width: 700px">
+<div id="disqus_thread"></div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c9484479b272f00119ab34f&product=inline-share-buttons-wp' async='async'></script>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.zoom.min.js"></script>
+<script type="text/javascript">
+/*$(document).ready(function(){
+  $('#zoomarea img')
+    .wrap('<span style="display:inline-block"></span>')
+    .css('display', 'block')
+    .parent()
+    .zoom({magnify: 2, on: 'mouseover'});
+});
+
+*/
+</script>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://epaper-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>

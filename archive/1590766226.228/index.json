@@ -1,0 +1,194 @@
+{
+    "title": "chhattisgarh bilaspur City bus conductor commits suicide after not getting salary due to covid-19 lockdown | \u092c\u0938 \u0915\u0902\u0921\u0915\u094d\u091f\u0930 \u0928\u0947 \u092b\u0902\u0926\u093e \u0932\u0917\u093e\u0915\u0930 \u091c\u093e\u0928 \u0926\u0940, \u092a\u0930\u093f\u091c\u0928 \u092c\u094b\u0932\u0947- \u0935\u0947\u0924\u0928 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u0928\u0947 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0925\u0947 - Dainik Bhaskar",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.228",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 16,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774952",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:08.336284",
+                "start_ts": "2020-05-29 17:55:52.065431",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:19.573674",
+                "start_ts": "2020-05-29 17:56:17.747286",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "end_ts": "2020-05-29 17:55:52.064132",
+                "start_ts": "2020-05-29 17:55:51.780312",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:11.526444",
+                "start_ts": "2020-05-29 17:56:08.336604",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:17.746932",
+                "start_ts": "2020-05-29 17:56:14.999205",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:22.198426",
+                "start_ts": "2020-05-29 17:56:19.573935",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "https://web.archive.org/web/20200529175620/https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+                ],
+                "end_ts": "2020-05-29 17:56:14.998906",
+                "start_ts": "2020-05-29 17:56:11.526708",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:55:51.779996",
+                "start_ts": "2020-05-29 17:55:50.937222",
+                "pwd": "/data/archive/1590766226.228",
+                "output": "chhattisgarh bilaspur City bus conductor commits suicide after not getting salary due to covid-19 lockdown | \u092c\u0938 \u0915\u0902\u0921\u0915\u094d\u091f\u0930 \u0928\u0947 \u092b\u0902\u0926\u093e \u0932\u0917\u093e\u0915\u0930 \u091c\u093e\u0928 \u0926\u0940, \u092a\u0930\u093f\u091c\u0928 \u092c\u094b\u0932\u0947- \u0935\u0947\u0924\u0928 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u0928\u0947 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0925\u0947 - Dainik Bhaskar"
+            }
+        ]
+    },
+    "updated": "1590788302.264517",
+    "tags": "",
+    "url": "https://www.bhaskar.com/local/chhattisgarh/news/chhattisgarh-city-bus-conductor-commits-suicide-in-bilaspur-after-not-getting-salary-due-to-covid-19-lockdown-127288207.html"
+}

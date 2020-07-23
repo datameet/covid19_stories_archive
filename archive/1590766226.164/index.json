@@ -1,0 +1,194 @@
+{
+    "title": "Married woman commits suicide due to not being sent to her mothers home in lockdown \u0964 Lockdown \u092e\u0947\u0902 \u092e\u093e\u092f\u0915\u0947 \u0928\u0939\u0940\u0902 \u092d\u0947\u091c\u0947 \u091c\u093e\u0928\u0947 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0935\u093f\u0935\u093e\u0939\u093f\u0924\u093e \u0928\u0947 \u0915\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940 -  India TV Hindi News",
+    "url": "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009",
+    "timestamp": "1590766226.164",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 20,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772413",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:13:53.290756",
+                "start_ts": "2020-05-29 17:13:33.011728",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:14:10.409326",
+                "start_ts": "2020-05-29 17:14:09.078972",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatv.in"
+                ],
+                "end_ts": "2020-05-29 17:13:33.011149",
+                "start_ts": "2020-05-29 17:13:32.187978",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:13:57.690601",
+                "start_ts": "2020-05-29 17:13:53.291116",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:14:09.078630",
+                "start_ts": "2020-05-29 17:14:03.739196",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:14:13.044786",
+                "start_ts": "2020-05-29 17:14:10.409594",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "https://web.archive.org/web/20200529171411/https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009"
+                ],
+                "end_ts": "2020-05-29 17:14:03.738947",
+                "start_ts": "2020-05-29 17:13:57.690841",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.indiatv.in/india/uttar-pradesh-married-woman-commits-suicide-due-to-not-being-sent-to-her-mothers-home-in-lockdown-704009",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:13:32.187651",
+                "start_ts": "2020-05-29 17:13:31.431608",
+                "pwd": "/data/archive/1590766226.164",
+                "output": "Married woman commits suicide due to not being sent to her mothers home in lockdown \u0964 Lockdown \u092e\u0947\u0902 \u092e\u093e\u092f\u0915\u0947 \u0928\u0939\u0940\u0902 \u092d\u0947\u091c\u0947 \u091c\u093e\u0928\u0947 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0935\u093f\u0935\u093e\u0939\u093f\u0924\u093e \u0928\u0947 \u0915\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940 -  India TV Hindi News"
+            }
+        ]
+    },
+    "updated": "1590788239.540607",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "title": "Bhagalpur: Truck carrying migrants rams into bus; 9 killed, 5 other injured",
+    "url": "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028",
+    "timestamp": "1590766226.17",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:28.929276",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590767065",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:44:25.145790",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:44.130193",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:44:42.812517",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:25.145214",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:44:24.877072",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 15:44:33.806132",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:44:28.929483",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:30:01.420646",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:29:55.369649",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "end_ts": "2020-05-29 21:35:20.704630",
+                "start_ts": "2020-05-29 21:35:15.959994",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:42.811200",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:44:37.968310",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:46.049633",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:44:44.130435",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "https://web.archive.org/web/20200529154445/https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:37.968049",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:44:33.806370",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:44:24.876862",
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:44:24.534695",
+                "pwd": "/data/archive/1590766226.17",
+                "output": "Bhagalpur: Truck carrying migrants rams into bus; 9 killed, 5 other injured"
+            }
+        ]
+    },
+    "updated": "1590788120.705585",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

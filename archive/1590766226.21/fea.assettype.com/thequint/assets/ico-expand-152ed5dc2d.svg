@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>fullscreen copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Photoessay-new" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="Photoessay-Desktop" transform="translate(-1281.000000, -3683.000000)" fill="#FFFFFF">
+            <g id="expand" transform="translate(1273.000000, 3675.000000)">
+                <path d="M22.244898,11.2896479 L28.7214505,11.2896479 L28.7214505,17.755102 L31.4285714,17.755102 L31.4285714,8.57142857 L22.244898,8.57142857 L22.244898,11.2896479 Z M17.755102,28.7103521 L11.2785495,28.7103521 L11.2785495,22.244898 L8.57142857,22.244898 L8.57142857,31.4285714 L17.755102,31.4285714 L17.755102,28.7103521 Z" id="fullscreen-copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>

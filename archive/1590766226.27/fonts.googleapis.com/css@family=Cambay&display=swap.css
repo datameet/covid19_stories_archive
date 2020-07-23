@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cambay Regular'), local('Cambay-Regular'), url(https://fonts.gstatic.com/s/cambay/v6/SLXJc1rY6H0_ZDs2ab6M.ttf) format('truetype');
+}

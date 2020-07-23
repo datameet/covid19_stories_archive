@@ -1,0 +1,485 @@
+
+<!DOCTYPE HTML><html><head><title></title><!--<meta http-equiv="content-type" content="text/html; charset=utf-8" Charset ="ISO-8859-1"  />--><meta http-equiv="content-type"  content="text/html;"  Charset ="ISO-8859-1"  /><meta name="description" content="" /><meta name="keywords" content="	" /><link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic" rel="stylesheet" type="text/css"><link rel="shortcut icon" href="http://www.indiatomorrow.net/images/favicon.ico" type="image/x-icon"><link rel="icon" href="http://www.indiatomorrow.net/images/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="http://www.indiatomorrow.net/commonincludes/css/responsive.css" /><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ITN_English"><meta name="twitter:creator" content="@ITN_English"><meta name="twitter:title" content=""><meta name="twitter:description" content=""><meta name="twitter:image" content=""><meta property="fb:app_id" content="145684582475019"><meta property="og:title" content=""><meta property="og:site_name" content="IndiaTomorrow.net"><meta property="og:description" content=""><meta property="og:type" content="Website"><meta property="og:image" content=""><link rel="shortcut icon" href="http://www.indiatomorrow.net/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.indiatomorrow.net/images/favicon.ico" type="image/x-icon">
+<script src="http://www.indiatomorrow.net/commonincludes/js/jquery-1.8.3.min.js"></script>
+<script src="http://www.indiatomorrow.net/commonincludes/css/5grid/init.js?use=mobile,desktop,1000px"></script>
+<script src="http://www.indiatomorrow.net/commonincludes/css/5grid/init.js"></script>
+ 
+<!--<script src="http://www.indiatomorrow.net/commonincludes/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://www.indiatomorrow.net/commonincludes/js/jcarousellite_1.0.1c4.js"></script>-->
+
+ 
+<script src="http://www.indiatomorrow.net/commonincludes/js/common.js" type="text/javascript"></script>
+<script src="http://www.indiatomorrow.net/commonincludes/js/dnews.js" type="text/javascript"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+
+<link rel="stylesheet" href="http://www.indiatomorrow.net/commonincludes/css/main1.css" />
+<!--<link rel="stylesheet" href="http://www.indiatomorrow.net/commonincludes/css/social.css" />-->
+<script src="http://www.indiatomorrow.net/commonincludes/js/jquery.js" type="text/javascript"></script><script src="http://www.indiatomorrow.net/commonincludes/js/widgets.js" type="text/javascript"></script>
+<script language="javascript">
+function searchtext(txt)
+{
+	if(txt != '')
+	{
+		document.frm1.action = 'http://indiatomorrow.net/search-from-website.php?srcBox='+txt;
+		document.frm1.submit();
+		
+	}
+	
+}
+</script>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<style type="text/css" media="screen">
+audio { width: 72%; }
+.div-wrapper {
+    position: relative;
+   
+}
+
+.div-wrapper audio {
+    position: absolute;
+    left:14%;
+    bottom: 18px;
+}
+
+</style>
+</head><body class="homepage"><div id="wrapper"><div id="header-wrapper"><header id="header1">
+
+<script language="javascript">
+	
+	function disp_date() 
+	{
+		var now1 = new Date();
+		var days1 = new Array(
+		  'Sunday','Monday','Tuesday',
+		  'Wednesday','Thursday','Friday','Saturday');
+		var months1 = new Array(
+		  'Jan','Feb','Mar','Apr','May',
+		  'Jun','Jul','Aug','Sep','Oct',
+		  'Nov','Dec');
+
+		var date_1 = ((now1.getDate()<10) ? "0" : "")+ now1.getDate();
+
+		today_1 =  days1[now1.getDay()] + ", " +  
+		  date_1 + " " + months1[now1.getMonth()] + " " +
+		   (fourdigits(now1.getYear()));
+		return today_1;
+	}
+
+	function fourdigits(number)	{
+    	  return (number < 1000) ? number + 1900 : number;
+	}
+	function doSrcPro(txtVal)
+	{ 
+		if(txtVal != '' &&  txtVal.length >= 3)
+		{
+			document.frmGsr.submit();
+		} 		
+	}
+	
+	function Gotosrchfrm()
+	{
+		document.getElementById("srcBox").focus();
+	}
+	
+ </script>
+
+<div class="5grid-layout">
+	<div class="row">
+		<div class="12u" id="logo"> 
+				<div class="logoD"><h1><a href="http://www.indiatomorrow.net/" title="Home" class="mobileUI-site-name"><img src="http://www.indiatomorrow.net/images/logopng.png" border="0"></a></h1></div>
+                <div class="dateAl">
+				<script language="javascript">
+				document.write('<b>'+disp_date()+'</b>');
+				</script>
+				 IST</div>
+				
+				<div class="logoDR">                
+				<h2 style="font-size:20px; margin-left:-187px; margin-bottom:-57px;margin-top: 38px;" class="othlnk"><a href="http://www.indiatomorrow.net/hindi/" target="_blank">&#2361;&#2367;&#2306;&#2342;&#2368;</a></h2>
+				<div class="icons" style="margin-top: 40px;float: left;">
+					<a href="https://www.facebook.com/IndiaTomorrow.net"  title="ITN" target="_blank"><img src="http://www.indiatomorrow.net/images/facebook.png" id="socialicn1" class="box-shadow" border="0"></a>
+					<a href="#" title=""><img src="http://www.indiatomorrow.net/images/plus.png" id="socialicn2" class="box-shadow" border="0"></a>
+					<a href="https://twitter.com/_IndiaTomorrow"  title="twitter" target="_blank"><img src="http://www.indiatomorrow.net/images/twitter.png"  id="socialicn3" class="box-shadow" border="0"></a> 
+					<a href="https://www.youtube.com/channel/UC7WqCU4xkB4xwnORuPlDGfQ/videos" target="_blank">
+					<img src="http://www.indiatomorrow.net/images/youtube.png" class="box-shadow" id="socialicn4" border="0"></a>
+				</div>
+			   &nbsp;&nbsp;
+				<a href="" target="_blank"><img class="box-shadow" src="http://www.indiatomorrow.net/thumb.php?src=&h=110&w=304&zc=1" border="0" ></a>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<div style="display:none;"><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script>
+
+<script type="text/javascript">sc_flag(752930,"FFFFFF","000000","cccccc",2,10,0,0)</script><br>
+
+<noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
+</div>
+
+<!-- END: Powered by Supercounters.com --><div class="5grid-layout">
+
+<div class="row" id="srcfrm">
+	<div class="10u" id="menu">
+		<nav class="mobileUI-site-nav">
+			<ul>
+															 <li><a href="http://www.indiatomorrow.net/eng/about-us" >ABOUT US</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/youth" >YOUTH</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/economy" >ECONOMY</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/education" >EDUCATION</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/politics" >POLITICS</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/opinion" >OPINION</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/world-affairs" >WORLD AFFAIRS</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/page/human-rights" >HUMAN RIGHTS</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/videos" >VIDEOS</a></li>
+					 						 <li><a href="http://www.indiatomorrow.net/eng/contact-us" >CONTACT US</a></li>
+					 				                                
+			</ul>
+		</nav>
+	</div>
+	<div class="2u">
+		<div class="subscRib2">
+			<form name="frmGsr"  method="post" action="http://www.indiatomorrow.net/search-from-website">
+				<input  type="text" name="srcBox" class="srcbuttn" id="srcBox" size="36" AUTOCOMPLETE="OFF" value="">
+				 	<a href="javascript:void(0);" onclick="javascript:doSrcPro(document.getElementById('srcBox').value);">
+				 <img src="http://www.indiatomorrow.net/images/search32.png"></a>
+			 </form> 
+		</div>	 
+	</div>
+</div></div><div class="5grid-layout"  >
+    <link href="http://www.indiatomorrow.net//ticker/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://www.indiatomorrow.net//ticker/css/styles.css">
+
+	<script type="text/javascript" src="http://www.indiatomorrow.net//ticker/js/tickerme.min.js"></script>
+	
+	
+		<script type="text/javascript">
+		$(function(){
+			$('#ticker').tickerme();
+		});
+		</script>
+	
+
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+
+
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+	</div></header><div id="page"><div class="5grid-layout"><div class="row"><div class="9u"><div  id="content"><section><div class="post"><div class="brecrm"><a class=pathlink href="/" title="Home">Home</a> &gt; 
+</div><h4 class="cmstitle"></h4><div class="dateCom">, IST</div><div class="clrs"><br></div><div align="center" style="border:0px solid #FF0000"><div class="clrs" style="border:#FF0000"><br></div><!----><div align="center"  style="border:0px solid #FF0000; width:65%"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/facebook.JPG" width="124" height="44"  /></div></a>
+<a href="https://twitter.com/share?text=favicon.ico&url=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/twuter.JPG"  width="124" height="44"  /></div></a>
+<a href="mailto:?Subject=&body=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/mail.JPG"  width="124" height="44"  /></div></a>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/googl.JPG"  width="124" height="44" /></div></a>
+
+
+
+
+
+</div><div style="clear:both;"></div></div><div class="socialicons"><div class="ar-share-icons"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/itnmedia" target="new" data-category="Mobile" data-label="Share button clicked" class="fb-share ga-track"><div><div class="ar-social-facebook"></div></div></a><a href="https://twitter.com/share?text=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway&amp;url=https://twitter.com/ITN_media" target="new" data-category="Mobile" data-label="Share button clicked" class="twitter-share ga-track"><div><div class="ar-social-twitter"></div></div></a><a href="mailto:?Subject=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway&amp;body=http://scroll.in//article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway" target="_blank" data-category="Mobile" data-label="Share button clicked" class="mail-share ga-track"><div><div class="ar-social-mail"></div></div></a><a href="https://plus.google.com/share?url=http://scroll.in/article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway" target="new" data-category="Mobile" data-label="Share button clicked" class="gplus-share show-for-medium-up ga-track"><div><div class="ar-social-gplus show-for-medium-up"></div></div></a><a href="http://www.reddit.com/submit?url=http://scroll.in/article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway&amp;title=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway" target="new" data-category="Mobile" data-label="Share button clicked" class="reddit-share show-for-medium-up ga-track"><div></div></a></div></div><b style="font-size:16px;" class="link"><a href="http://www.indiatomorrow.net/eng/"></a></b><br><div class="cmsDetails"></div><br><br><br><div class="socialicons"><div class="ar-share-icons"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/itnmedia" target="new" data-category="Mobile" data-label="Share button clicked" class="fb-share ga-track"><div><div class="ar-social-facebook"></div></div></a><a href="https://twitter.com/share?text=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway&amp;url=https://twitter.com/ITN_media" target="new" data-category="Mobile" data-label="Share button clicked" class="twitter-share ga-track"><div><div class="ar-social-twitter"></div></div></a><a href="mailto:?Subject=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway&amp;body=http://scroll.in//article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway" target="_blank" data-category="Mobile" data-label="Share button clicked" class="mail-share ga-track"><div><div class="ar-social-mail"></div></div></a><a href="https://plus.google.com/share?url=http://scroll.in/article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway" target="new" data-category="Mobile" data-label="Share button clicked" class="gplus-share show-for-medium-up ga-track"><div><div class="ar-social-gplus show-for-medium-up"></div></div></a><a href="http://www.reddit.com/submit?url=http://scroll.in/article/741160/amit-shah-didnt-really-say-acche-din-will-take-25-years-but-twitter-had-a-laugh-anyway&amp;title=Amit%20Shah%20didn%27t%20really%20say%20Acche%20Din%20will%20take%2025%20years%2C%20but%20Twitter%20had%20a%20laugh%20anyway" target="new" data-category="Mobile" data-label="Share button clicked" class="reddit-share show-for-medium-up ga-track"><div></div></a></div></div><form name="frm1" method="post"><p></p></form><div class="clrs"><br></div><div align="left"  style="border:0px solid #FF0000; width:65%"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/facebook.JPG" width="124" height="44"  /></div></a>
+<a href="https://twitter.com/share?text=favicon.ico&url=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/twuter.JPG"  width="124" height="44"  /></div></a>
+<a href="mailto:?Subject=&body=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/mail.JPG"  width="124" height="44"  /></div></a>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.indiatomorrow.net%2Feng%2Ffavicon.ico" target="_blank"><div style="float:left; margin-left:10px;"> <img  src="http://www.indiatomorrow.net/imgsocial/googl.JPG"  width="124" height="44" /></div></a>
+
+
+
+
+
+</div><div style="clear:both;"></div><div class="clrs"><br><br></div><div class="commentPost"><h3>You might like</h3><br><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/NationalConferencetoBoycottDelimitat11074.jpg&h=130&w=130&zc=1" /><div class="cmtlist" style="font-size:14px;"><a href="http://www.indiatomorrow.net/eng/national-conference-announces-to-boycott-delimitation-commission">National Conference Announces to Boycott Delimitation Commission</a></div></div><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/JamiaMilliaIslamiastudentAsifIqbal11073.jpg&h=130&w=130&zc=1" /><div class="cmtlist" style="font-size:14px;"><a href="http://www.indiatomorrow.net/eng/police-probe-seems-targeted-to-one-end-only-fail-to-investigate-the-rival-factions-role-in-delhi-riots-delhi-court">Police Probe "Seems Targeted To One End Only",  "Fail To Investigate The Rival Faction's Role" In Delhi Riots: Delhi Court</a></div></div><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/LucknowresidentUzmaintworoles--sa11072.jpg&h=130&w=130&zc=1" /><div class="cmtlist" style="font-size:14px;"><a href="http://www.indiatomorrow.net/eng/face-of-lucknow-anti-caa-protest-uzma-sanitizing-temples-and-streets-during-covid-lockdown">Face of Lucknow Anti-CAA Protest, Uzma Sanitizing Temples and Streets during COVID Lockdown</a></div></div><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/JamiaMilliaIslamiastudentAsifTanha11070.jpg&h=130&w=130&zc=1" /><div class="cmtlist" style="font-size:14px;"><a href="http://www.indiatomorrow.net/eng/-jamia-student-asif-granted-bail-in-jamia-violence-case-will-continue-in-jail-due-to-uapa-charges-against-him-in-northeast-delhi-violence-case">Granted Bail in Jamia Case, Jamia Student Asif Tanha To Remain In Jail In Northeast Delhi Violence Case</a></div></div><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/Dontchargetrainbusfaresfrommigr11069.jpeg&h=130&w=130&zc=1" /><div class="cmtlist" style="font-size:14px;"><a href="http://www.indiatomorrow.net/eng/-dont-charge-train-bus-fares-from-migrant-labourers-directs-supreme-court">Don't Charge Train, Bus Fares From Migrant Labourers: Directs Supreme Court</a></div></div><div style="width:150px; float:left; border:0px  solid #999999; margin:8px 8px 0 8px;"></div><div>
+ 
+ <script language="javascript">
+ 
+  function isValidEmailAddress(emailAddress) {
+		var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+		return pattern.test(emailAddress);
+	}
+ 
+ function checkValidate()
+ {
+ 	var cName = $('#cName').val();
+	var cEmail = $('#cEmail').val();
+	var comment = $('#comment').val();
+	var sCode = $('#sCode').val();
+	var url = $('#url').val();
+	
+	if(cName == '')
+	{
+		$('#cNameId').html("Please enter Name.");
+		$('#cName').focus();
+		return false;
+	}
+	else
+		$('#cNameId').html("");
+		
+	if(cEmail == '')
+	{
+		$('#cEmailId').html("Please enter Email Id.");
+		$('#cEmail').focus();
+		return false;
+	}
+	else
+		$('#cEmailId').html("");
+		
+	if(cEmail != '' && isValidEmailAddress(cEmail) == false)
+	{
+		$('#cEmailId').html("Please enter valid Email Id.");
+		$('#cEmail').focus();
+		return false;
+	}
+	else
+		$('#cEmailId').html("");
+		
+	if(comment == '')
+	{
+		$('#commentId').html("Please enter comment.");
+		$('#comment').focus();
+		return false;
+	}
+	else
+		$('#commentId').html("");	
+		
+	if(sCode == '')
+	{
+		$('#sCodeId').html("Please enter security code.");
+		$('#sCode').focus();
+		return false;
+	}
+	else
+		$('#sCodeId').html("");
+		
+	document.frmComment.action=url+"submitComment";
+	document.frmComment.submit();					
+ }
+ 
+  function checkValidate1(id)
+ {	
+ 	var cName = $('#cName1').val();
+	var cEmail = $('#cEmail1').val();
+	var comment = $('#comment1').val();
+	var sCode = $('#sCode1').val();
+	var url = $('#url').val();
+	
+	if(cName == '')
+	{
+		$('#cNameId1').html("Please enter Name.");
+		$('#cName1').focus();
+		return false;
+	}
+	else
+		$('#cNameId1').html("");
+		
+	if(cEmail == '')
+	{
+		$('#cEmailId1').html("Please enter Email Id.");
+		$('#cEmail1').focus();
+		return false;
+	}
+	else
+		$('#cEmailId1').html("");
+		
+	if(cEmail != '' && isValidEmailAddress(cEmail) == false)
+	{
+		$('#cEmailId1').html("Please enter valid Email Id.");
+		$('#cEmail1').focus();
+		return false;
+	}
+	else
+		$('#cEmailId1').html("");
+		
+	if(comment == '')
+	{
+		$('#commentId1').html("Please enter comment.");
+		$('#comment1').focus();
+		return false;
+	}
+	else
+		$('#commentId1').html("");	
+		
+	if(sCode == '')
+	{
+		$('#sCodeId1').html("Please enter security code.");
+		$('#sCode1').focus();
+		return false;
+	}
+	else
+		$('#sCodeId1').html("");
+		
+	document.frmComment.action=url+"submitComment?id="+id;
+	document.frmComment.submit();					
+ }
+ 
+
+
+ 
+ function showDiv(id)
+ {
+	var divId = "cmt_"+id;
+	var artId1 = id;
+	
+	if(id != '')
+	{	
+		if(document.getElementById(divId).style.display == 'none')
+		{
+			document.getElementById(divId).style.display = 'block';
+			var page = '<div class="clrs"></div><div class="commentPost"><h3>Leave a Reply</h3><br><b>Your email address will not be published.</b><br><br><table width="100%" cellpadding="0" border="1"> <tr><td width="10%">Name: <span class="alert">*</span></td><td width="90%"><input  type="text" name="cName1" id="cName1" size="56" AUTOCOMPLETE="OFF" value="" ><br><span id="cNameId1" class="alert"></span></td></tr><tr><td >Email: <span class="alert">*</span></td><td ><input  type="text" name="cEmail1" id="cEmail1" size="56" value=""><br><span id="cEmailId1" class="alert"></span></td></tr><tr><td style="vertical-align:middle">Comment: <span class="alert">*</span></td><td ><textarea name="comment1" id="comment1" rows="5" cols="42"></textarea><br><span id="commentId1" class="alert"></span></td></tr><tr><td style="vertical-align:middle; margin-top:-10px;">Code: <span class="alert">*</span></td><td ><input  type="text" name="sCode1" id="sCode1" size="12" AUTOCOMPLETE="OFF" style="vertical-align:top;">&nbsp;&nbsp;<img src="../captcha.php" name="capt2" width="95"  id="capt2" style="margin-top:5px;" /><br><span id="sCodeId1" class="alert"></span></td></tr><tr><td colspan="2"><div class="subscRib" style="margin-top:20px;"><input type="button" name="submitcomment1" id="submitcomment1"  value="Submit Comment" onClick="checkValidate1('+artId1+');"/></div></td></tr></table></div>';
+			document.getElementById(divId).innerHTML = page;		
+			document.getElementById('mainDiv').style.display = 'none';
+		}	
+		else
+		{
+			document.getElementById(divId).style.display = 'none';
+			document.getElementById('mainDiv').style.display = 'block';
+		}		
+	}		
+ }
+ </script>
+ 
+ </div></section></div></div><div class="3u"><div id="sidebar2">
+	<section>
+		<div  class="sbox1"  style="margin-top:10px; ">
+				</div>
+	</section>
+	<section>
+	
+			                       	
+		<div class="sbox1"> 
+			<h2><a href="http://www.indiatomorrow.net/latest-updates">Latest Updates</a></h2>
+			<ul class="style1">
+												  <li class="first"><a href="http://www.indiatomorrow.net/eng/national-conference-announces-to-boycott-delimitation-commission">National Conference Announces to Boycott Delimitation Commission</a></li>
+								  <li ><a href="http://www.indiatomorrow.net/eng/police-probe-seems-targeted-to-one-end-only-fail-to-investigate-the-rival-factions-role-in-delhi-riots-delhi-court">Police Probe "Seems Targeted To One End Only",  "Fail To Investigate The Rival Faction's Role" In Delhi Riots: Delhi Court</a></li>
+								  <li ><a href="http://www.indiatomorrow.net/eng/face-of-lucknow-anti-caa-protest-uzma-sanitizing-temples-and-streets-during-covid-lockdown">Face of Lucknow Anti-CAA Protest, Uzma Sanitizing Temples and Streets during COVID Lockdown</a></li>
+								  <li ><a href="http://www.indiatomorrow.net/eng/-jamia-student-asif-granted-bail-in-jamia-violence-case-will-continue-in-jail-due-to-uapa-charges-against-him-in-northeast-delhi-violence-case">Granted Bail in Jamia Case, Jamia Student Asif Tanha To Remain In Jail In Northeast Delhi Violence Case</a></li>
+								  <li ><a href="http://www.indiatomorrow.net/eng/-dont-charge-train-bus-fares-from-migrant-labourers-directs-supreme-court">Don't Charge Train, Bus Fares From Migrant Labourers: Directs Supreme Court</a></li>
+								
+			</ul>
+			<div class="moreClk"><a href="http://www.indiatomorrow.net/latest-updates">More..</a></div><br>
+		</div>
+		
+	</section>
+	 <section>                            	
+		<div class="sbox1"> 
+			<h2 style="width:281px;"><a href="http://www.indiatomorrow.net/most-popular">Most Popular of the Week</a></h2>
+			<ul class="style2">
+			   									<li style="float:left">
+						<a href="http://www.indiatomorrow.net/eng/supreme-court-questions-government-on-action-taken-against-media-houses-for-communal-news-reporting-on-coronavirus"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/SCasksgovernmentonactiontakenagain11066.jpeg&h=65&w=65&zc=1" border="0" class="popularimg"></a>
+						<p><a href="http://www.indiatomorrow.net/eng/supreme-court-questions-government-on-action-taken-against-media-houses-for-communal-news-reporting-on-coronavirus">Supreme Court Questions Government On Action Taken Against Media Houses for 'Communal News Reporting' on Coronavirus </a></p>
+					</li>
+					<div class="clrs"></div> 
+									<li style="float:left">
+						<a href="http://www.indiatomorrow.net/eng/face-of-lucknow-anti-caa-protest-uzma-sanitizing-temples-and-streets-during-covid-lockdown"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/LucknowresidentUzmaintworoles--sa11072.jpg&h=65&w=65&zc=1" border="0" class="popularimg"></a>
+						<p><a href="http://www.indiatomorrow.net/eng/face-of-lucknow-anti-caa-protest-uzma-sanitizing-temples-and-streets-during-covid-lockdown">Face of Lucknow Anti-CAA Protest, Uzma Sanitizing Temples and Streets during COVID Lockdown </a></p>
+					</li>
+					<div class="clrs"></div> 
+									<li style="float:left">
+						<a href="http://www.indiatomorrow.net/eng/assalam-alaikum!-greet-hirevali-muslims-who-were-forced-to-convert-to-hinduism-on-april-5"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/JIHvice-presidentEngrMohammadsalimt11060.jpg&h=65&w=65&zc=1" border="0" class="popularimg"></a>
+						<p><a href="http://www.indiatomorrow.net/eng/assalam-alaikum!-greet-hirevali-muslims-who-were-forced-to-convert-to-hinduism-on-april-5">"Assalam Alaikum"! Greet Harevali Muslims Who Were Forced to Convert to Hinduism on April 5 </a></p>
+					</li>
+					<div class="clrs"></div> 
+									<li style="float:left">
+						<a href="http://www.indiatomorrow.net/eng/godi-media-beware-of-the-fate-of-german-rwandan-journalists"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/AsectionofIndianmediaisaccusedof11056.jpg&h=65&w=65&zc=1" border="0" class="popularimg"></a>
+						<p><a href="http://www.indiatomorrow.net/eng/godi-media-beware-of-the-fate-of-german-rwandan-journalists">'Godi' Media, Beware of the Fate of German, Rwandan Journalists </a></p>
+					</li>
+					<div class="clrs"></div> 
+									<li style="float:left">
+						<a href="http://www.indiatomorrow.net/eng/when-muslimsaviours-trended-high-on-india-twitter"><img src="http://www.indiatomorrow.net/thumb.php?src=http://www.indiatomorrow.net/images/img_images/Muslimyouthsprovidingfoodwatertom11051.jpg&h=65&w=65&zc=1" border="0" class="popularimg"></a>
+						<p><a href="http://www.indiatomorrow.net/eng/when-muslimsaviours-trended-high-on-india-twitter">When #MuslimSaviours Trended High on India Twitter </a></p>
+					</li>
+					<div class="clrs"></div> 
+					
+					
+			</ul>
+						<div class="moreClk"><a href="http://www.indiatomorrow.net/most-popular">More..</a></div><br>
+					</div>
+		
+	</section>
+	<!--<section>
+		<div class="sbox1"> 
+			<h2><a href="#">Poll</a></h2>
+			<ul class="style1">
+				<li class="first">Q. Maecenas luctus lectus at sapien?</li>
+				<li></li>
+			 </ul>
+			 <div style="padding-left:15px;margin-top:-15px;">
+				<input type="radio" value="1">Yes <br>
+				<input type="radio" value="1">No<br>
+				<input type="radio" value="1">Can't Say<br>
+			 </div>
+			<div class="subscRib" style="padding-left:20px;">
+				<input type="text" style="width:70px;"><strong><a href="#">w23F4q</a></strong>
+			</div>
+			<div class="subscRib">
+			 <strong><a href="#">VOTE</a></strong><strong><a href="#">RESULT</a></strong>
+			</div>
+		</div>
+	</section>-->
+	 <section>
+	<h2></h2>
+	<div class="sbox1"> 
+		<!--<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FIndiaTomorrow.net%3Fref%3Dhl&amp;width&amp;height=320&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:320px; width:240" allowTransparency="true"></iframe>--><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FIndiaTomorrow.net%3Fref%3Dhl&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:240px; width:240" allowTransparency="true"></iframe>
+		
+		</br></br>
+	   <a href="https://www.facebook.com/itnmedia"  title="facebook"><img src="http://www.indiatomorrow.net/images/facebook.png" class="box-shadow" border="0"></a> <a href="#"  title=""><img src="http://www.indiatomorrow.net/images/plus.png" class="box-shadow" border="0"></a> <a href="https://twitter.com/ITN_media"  title="twitter"><img src="http://www.indiatomorrow.net/images/twitter.png"  class="box-shadow" border="0"></a> <a href="#"  title=""><img src="http://www.indiatomorrow.net/images/youtube.png" class="box-shadow" border="0"></a>
+	</div>                        
+</section>
+	</div></div></div></div></div></div><div id="footer-wrapper"></div><div id="footer-wrapper"><div class="5grid-layout" ></div></div></div>
+<div id="wrapper" >
+	<div class="5grid-layout">
+		<div class="row" id="footer-content">
+					<div class="clrs"></div>
+			
+				<div class="9u" id="box1" >
+					<ul  >
+										   <li class="first" id="foterCss">
+					   										<a href="http://www.indiatomorrow.net/eng/about-us">About Us</a>
+																				</li>
+										   <li class="first" id="foterCss">
+					   										<a href="http://www.indiatomorrow.net/">Sitemap</a>
+																				</li>
+										   <li class="first" id="foterCss">
+					   																	<a href="javascript:void(0);" onclick="Gotosrchfrm();">Search</a>
+													</li>
+										   <li class="first" id="foterCss">
+					   										<a href="http://www.indiatomorrow.net/eng/contact-us">Contact Us</a>
+																				</li>
+										   <li class="first" id="foterCss">
+					   										<a href="http://www.indiatomorrow.net/enquiry">Enquiry</a>
+																				</li>
+						
+					</ul>
+				</div>
+				<!--				<div class="clrs"></div> 
+				-->
+			
+			 
+		</div>
+		</div>	
+	</div>
+</div>
+<div id="copyright">
+	<div class="5grid-layout">
+		<div class="row">
+			<div class="12u">
+				<p>&copy; IndiaTomorrow.net <strong>Powered by:</strong> <a href="http://c9soft.com" target="_blank">C9 SOFT </a></p>
+			</div>
+		</div>
+	</div>
+</div>
+     
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46465317-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body></html>

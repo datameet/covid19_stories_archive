@@ -1,0 +1,194 @@
+{
+    "title": "daughter alleged father for physical harassment committed suicide uttar pradesh agra india lockdown - \u092f\u0942\u092a\u0940: \u092a\u093f\u0924\u093e \u092a\u0930 \u0936\u093e\u0930\u0940\u0930\u093f\u0915 \u092a\u094d\u0930\u0924\u093e\u0921\u093c\u0928\u093e \u0915\u093e \u0906\u0930\u094b\u092a \u0932\u0917\u093e \u0928\u093e\u092c\u093e\u0932\u093f\u0917 \u092c\u0947\u091f\u0940 \u0928\u0947 \u0915\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921, \u0915\u0947\u0938 \u0926\u0930\u094d\u091c - Jansatta",
+    "url": "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/",
+    "timestamp": "1590766226.154",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772280",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:28.824717",
+                "start_ts": "2020-05-29 17:11:20.394605",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:41.004520",
+                "start_ts": "2020-05-29 17:11:36.799115",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.jansatta.com"
+                ],
+                "end_ts": "2020-05-29 17:11:20.393259",
+                "start_ts": "2020-05-29 17:11:19.674210",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:32.062861",
+                "start_ts": "2020-05-29 17:11:28.824950",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:36.798782",
+                "start_ts": "2020-05-29 17:11:34.838735",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:43.324692",
+                "start_ts": "2020-05-29 17:11:41.004788",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "https://web.archive.org/web/20200529171142/https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/"
+                ],
+                "end_ts": "2020-05-29 17:11:34.838491",
+                "start_ts": "2020-05-29 17:11:32.063115",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.jansatta.com/crime-news-hindi/daughter-alleged-father-for-physical-harassment-committed-suicide-uttar-pradesh-agra-india-lockdown/1380608/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:11:19.673925",
+                "start_ts": "2020-05-29 17:11:18.812254",
+                "pwd": "/data/archive/1590766226.154",
+                "output": "daughter alleged father for physical harassment committed suicide uttar pradesh agra india lockdown - \u092f\u0942\u092a\u0940: \u092a\u093f\u0924\u093e \u092a\u0930 \u0936\u093e\u0930\u0940\u0930\u093f\u0915 \u092a\u094d\u0930\u0924\u093e\u0921\u093c\u0928\u093e \u0915\u093e \u0906\u0930\u094b\u092a \u0932\u0917\u093e \u0928\u093e\u092c\u093e\u0932\u093f\u0917 \u092c\u0947\u091f\u0940 \u0928\u0947 \u0915\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921, \u0915\u0947\u0938 \u0926\u0930\u094d\u091c - Jansatta"
+            }
+        ]
+    },
+    "updated": "1590788236.153971",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

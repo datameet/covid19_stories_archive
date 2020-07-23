@@ -1,0 +1,45 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.metaTag', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.metaTagList', {
+                url: '/meta-tags/:articleId/:pageIndex?&date&metaTag',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/metaTag/metaTagList.view.html',
+                        controller: 'MetaTagController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/metaTag/metaTagList.controller.js" + version
+                            ]
+                        });
+                    }]
+                }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            $state.go('root.404');
+        });
+    };
+})();

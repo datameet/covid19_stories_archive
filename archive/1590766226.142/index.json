@@ -1,0 +1,194 @@
+{
+    "title": "Two people including teenager committed suicide by hanging - \u0915\u093f\u0936\u094b\u0930\u0940 \u0938\u0939\u093f\u0924 \u0926\u094b \u0932\u094b\u0917\u094b\u0902 \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e\u0915\u0930 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e \u0915\u0940",
+    "url": "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s",
+    "timestamp": "1590766226.142",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771868",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:32.586732",
+                "start_ts": "2020-05-29 17:04:28.510550",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:37.854621",
+                "start_ts": "2020-05-29 17:04:36.534933",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "end_ts": "2020-05-29 17:04:28.509178",
+                "start_ts": "2020-05-29 17:04:28.233126",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:33.786911",
+                "start_ts": "2020-05-29 17:04:32.587176",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:36.534568",
+                "start_ts": "2020-05-29 17:04:35.081789",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:39.779359",
+                "start_ts": "2020-05-29 17:04:37.854882",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "https://web.archive.org/web/20200529170439/https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 17:04:35.081515",
+                "start_ts": "2020-05-29 17:04:33.787151",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/mainpuri/story-two-people-including-teenager-committed-suicide-by-hanging-3206562.amp.html#aoh=15891677191807&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:04:28.232846",
+                "start_ts": "2020-05-29 17:04:28.048767",
+                "pwd": "/data/archive/1590766226.142",
+                "output": "Two people including teenager committed suicide by hanging - \u0915\u093f\u0936\u094b\u0930\u0940 \u0938\u0939\u093f\u0924 \u0926\u094b \u0932\u094b\u0917\u094b\u0902 \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e\u0915\u0930 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e \u0915\u0940"
+            }
+        ]
+    },
+    "updated": "1590788232.176491",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

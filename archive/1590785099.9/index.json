@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.9",
+    "history": {
+        "title": [
+            {
+                "status": "failed",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 20:52:30.610814",
+                "start_ts": "2020-05-29 20:52:30.363501",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "Unable to detect page title"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:38.605195",
+                "start_ts": "2020-05-29 20:52:34.871235",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thenewsminute.com"
+                ],
+                "end_ts": "2020-05-29 20:52:30.867968",
+                "start_ts": "2020-05-29 20:52:30.610988",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:34.870986",
+                "start_ts": "2020-05-29 20:52:31.172281",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:47.504445",
+                "start_ts": "2020-05-29 20:52:44.590642",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "https://web.archive.org/web/20200529205246/https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785550",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:31.171871",
+                "start_ts": "2020-05-29 20:52:30.868409",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:41.419225",
+                "start_ts": "2020-05-29 20:52:38.605480",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+                ],
+                "end_ts": "2020-05-29 20:52:44.590374",
+                "start_ts": "2020-05-29 20:52:41.420233",
+                "pwd": "/data/archive/1590785099.9",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590785567.508149",
+    "tags": "",
+    "url": "https://www.thenewsminute.com/article/mysuru-newspaper-served-notice-islamophobic-editorial-122407"
+}

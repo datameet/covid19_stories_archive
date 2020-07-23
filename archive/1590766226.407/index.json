@@ -1,0 +1,194 @@
+{
+    "title": "COVID-19 Lockdown : man allegedly commits suicide for not getting liquor",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.407",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:23.414183",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781876",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 19:51:16.229612",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:51:36.345042",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:51:34.678076",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:16.227994",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.uniindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:51:15.919539",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:27.051359",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:51:23.414694",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:34.677705",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:51:30.391106",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:40.759402",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:51:36.345341",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "https://web.archive.org/web/20200529195138/http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:30.390850",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:51:27.051620",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:51:15.919246",
+                "cmd": [
+                    "curl",
+                    "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 19:51:06.844614",
+                "pwd": "/data/archive/1590766226.407",
+                "output": "COVID-19 Lockdown : man allegedly commits suicide for not getting liquor"
+            }
+        ]
+    },
+    "updated": "1590789501.96719",
+    "tags": "",
+    "url": "http://www.uniindia.com/covid-19-lockdown-man-allegedly-commits-suicide-for-not-getting-liquor/south/news/1952738.html"
+}

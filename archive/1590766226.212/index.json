@@ -1,0 +1,213 @@
+{
+    "title": "COVID-19: Man commits suicide after being quarantined in Madhya Pradesh | Deccan Herald",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.212",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774381",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:26.397623",
+                "start_ts": "2020-05-29 17:46:21.151576",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:44.167008",
+                "start_ts": "2020-05-29 17:46:42.661222",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.deccanherald.com"
+                ],
+                "end_ts": "2020-05-29 17:46:21.150305",
+                "start_ts": "2020-05-29 17:46:20.866903",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:32.382482",
+                "start_ts": "2020-05-29 17:46:26.397849",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:42.660869",
+                "start_ts": "2020-05-29 17:46:38.792722",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:46.043664",
+                "start_ts": "2020-05-29 17:46:44.167264",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "https://web.archive.org/web/20200529174645/https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 17:46:38.792494",
+                "start_ts": "2020-05-29 17:46:32.382725",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+                ],
+                "end_ts": "2020-05-29 21:38:06.414125",
+                "start_ts": "2020-05-29 21:38:04.545823",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:46:20.866620",
+                "start_ts": "2020-05-29 17:46:20.647111",
+                "pwd": "/data/archive/1590766226.212",
+                "output": "COVID-19: Man commits suicide after being quarantined in Madhya Pradesh | Deccan Herald"
+            }
+        ]
+    },
+    "updated": "1590788286.415482",
+    "tags": "",
+    "url": "https://www.deccanherald.com/national/covid-19-man-commits-suicide-after-being-quarantined-in-madhya-pradesh-829304.html"
+}

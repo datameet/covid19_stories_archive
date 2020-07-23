@@ -1,0 +1,194 @@
+{
+    "title": "Craving alcohol amid lockdown, two TN men die after drinking aftershave mixed with soda- The New Indian Express",
+    "url": "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html",
+    "timestamp": "1590766226.90",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770385",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:39:51.368901",
+                "start_ts": "2020-05-29 16:39:45.305113",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:40:04.664775",
+                "start_ts": "2020-05-29 16:40:02.987964",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "end_ts": "2020-05-29 16:39:45.304466",
+                "start_ts": "2020-05-29 16:39:45.013940",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:39:56.003367",
+                "start_ts": "2020-05-29 16:39:51.369419",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:40:02.987504",
+                "start_ts": "2020-05-29 16:39:59.835596",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:40:06.835135",
+                "start_ts": "2020-05-29 16:40:04.665078",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "https://web.archive.org/web/20200529164005/https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html"
+                ],
+                "end_ts": "2020-05-29 16:39:59.835294",
+                "start_ts": "2020-05-29 16:39:56.003625",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/states/tamil-nadu/2020/apr/04/craving-alcohol-amid-lockdown-two-tn-men-die-after-drinking-aftershave-mixed-with-soda-2125733.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:39:45.013615",
+                "start_ts": "2020-05-29 16:39:44.737096",
+                "pwd": "/data/archive/1590766226.90",
+                "output": "Craving alcohol amid lockdown, two TN men die after drinking aftershave mixed with soda- The New Indian Express"
+            }
+        ]
+    },
+    "updated": "1590788214.929706",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

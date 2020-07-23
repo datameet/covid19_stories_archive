@@ -1,0 +1,213 @@
+{
+    "title": "Assam Boy stuck in Hyderabad due to lockdown commits suicide - Prag News",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.310",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778578",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:18.869826",
+                "start_ts": "2020-05-29 18:56:18.864059",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:38.833238",
+                "start_ts": "2020-05-29 18:57:35.687096",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=pragnews.com"
+                ],
+                "end_ts": "2020-05-29 18:56:18.863553",
+                "start_ts": "2020-05-29 18:56:15.014505",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:24.844637",
+                "start_ts": "2020-05-29 18:57:18.870581",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 21:53:14.128710",
+                "start_ts": "2020-05-29 21:53:07.723266",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:35.686762",
+                "start_ts": "2020-05-29 18:57:29.679605",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:41.804033",
+                "start_ts": "2020-05-29 18:57:38.833518",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "https://web.archive.org/web/20200529185739/https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:57:29.679347",
+                "start_ts": "2020-05-29 18:57:24.845430",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "curl",
+                    "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:56:15.014205",
+                "start_ts": "2020-05-29 18:56:09.596933",
+                "pwd": "/data/archive/1590766226.310",
+                "output": "Assam Boy stuck in Hyderabad due to lockdown commits suicide - Prag News"
+            }
+        ]
+    },
+    "updated": "1590789194.129669",
+    "tags": "",
+    "url": "https://pragnews.com/regional/assam-boy-stuck-in-hyderabad-due-to-lockdown-commits-suicide/"
+}

@@ -1,0 +1,278 @@
+/* support full-screen apps */
+.bbc-news-vj-embed-wrapper--full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.bbc-news-vj-embed-wrapper--full-screen > iframe {
+    height: 100vh;
+    max-height: 100%;
+}
+
+/* Apply some default styling for core content */
+.bbc-news-vj-embed-wrapper html,
+.bbc-news-vj-embed-wrapper address,
+.bbc-news-vj-embed-wrapper blockquote,
+.bbc-news-vj-embed-wrapper body,
+.bbc-news-vj-embed-wrapper dd,
+.bbc-news-vj-embed-wrapper div,
+.bbc-news-vj-embed-wrapper dl,
+.bbc-news-vj-embed-wrapper dt,
+.bbc-news-vj-embed-wrapper fieldset,
+.bbc-news-vj-embed-wrapper form,
+.bbc-news-vj-embed-wrapper frame,
+.bbc-news-vj-embed-wrapper frameset,
+.bbc-news-vj-embed-wrapper h1,
+.bbc-news-vj-embed-wrapper h2,
+.bbc-news-vj-embed-wrapper h3,
+.bbc-news-vj-embed-wrapper h4,
+.bbc-news-vj-embed-wrapper h5,
+.bbc-news-vj-embed-wrapper h6,
+.bbc-news-vj-embed-wrapper noframes,
+.bbc-news-vj-embed-wrapper ol,
+.bbc-news-vj-embed-wrapper p,
+.bbc-news-vj-embed-wrapper ul,
+.bbc-news-vj-embed-wrapper center,
+.bbc-news-vj-embed-wrapper dir,
+.bbc-news-vj-embed-wrapper hr,
+.bbc-news-vj-embed-wrapper menu,
+.bbc-news-vj-embed-wrapper pre {
+  display: block;
+}
+
+.bbc-news-vj-embed-wrapper li {
+  display: list-item;
+  padding: 0.2em;
+}
+
+.bbc-news-vj-embed-wrapper head {
+  display: none;
+}
+
+.bbc-news-vj-embed-wrapper table {
+  display: table;
+}
+
+.bbc-news-vj-embed-wrapper tr {
+  display: table-row;
+}
+
+.bbc-news-vj-embed-wrapper thead {
+  display: table-header-group;
+}
+
+.bbc-news-vj-embed-wrapper tbody {
+  display: table-row-group;
+}
+
+.bbc-news-vj-embed-wrapper tfoot {
+  display: table-footer-group;
+}
+
+.bbc-news-vj-embed-wrapper col {
+  display: table-column;
+}
+
+.bbc-news-vj-embed-wrapper colgroup {
+  display: table-column-group;
+}
+
+.bbc-news-vj-embed-wrapper td,
+.bbc-news-vj-embed-wrapper th {
+  display: table-cell;
+}
+
+.bbc-news-vj-embed-wrapper caption {
+  display: table-caption;
+}
+
+.bbc-news-vj-embed-wrapper th {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.bbc-news-vj-embed-wrapper caption {
+  text-align: center;
+}
+
+.bbc-news-vj-embed-wrapper h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.bbc-news-vj-embed-wrapper h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+}
+
+.bbc-news-vj-embed-wrapper h3 {
+  font-size: 1.4em;
+  margin: 0.83em 0;
+  margin-top: 2em;
+}
+
+.bbc-news-vj-embed-wrapper h4,
+.bbc-news-vj-embed-wrapper p,
+.bbc-news-vj-embed-wrapper blockquote,
+.bbc-news-vj-embed-wrapper ul,
+.bbc-news-vj-embed-wrapper fieldset,
+.bbc-news-vj-embed-wrapper form,
+.bbc-news-vj-embed-wrapper ol,
+.bbc-news-vj-embed-wrapper dl,
+.bbc-news-vj-embed-wrapper dir,
+.bbc-news-vj-embed-wrapper menu {
+  margin: 1.12em 0;
+}
+
+.bbc-news-vj-embed-wrapper h5 {
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+
+.bbc-news-vj-embed-wrapper h6 {
+  font-size: .75em;
+  margin: 1.67em 0;
+}
+
+.bbc-news-vj-embed-wrapper h1,
+.bbc-news-vj-embed-wrapper h2,
+.bbc-news-vj-embed-wrapper h3,
+.bbc-news-vj-embed-wrapper h4,
+.bbc-news-vj-embed-wrapper h5,
+.bbc-news-vj-embed-wrapper h6,
+.bbc-news-vj-embed-wrapper b,
+.bbc-news-vj-embed-wrapper strong {
+  font-weight: bolder;
+}
+
+.bbc-news-vj-embed-wrapper blockquote {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+.bbc-news-vj-embed-wrapper i,
+.bbc-news-vj-embed-wrapper cite,
+.bbc-news-vj-embed-wrapper em,
+.bbc-news-vj-embed-wrapper var,
+.bbc-news-vj-embed-wrapper address {
+  font-style: italic;
+}
+
+.bbc-news-vj-embed-wrapper pre,
+.bbc-news-vj-embed-wrapper tt,
+.bbc-news-vj-embed-wrapper code,
+.bbc-news-vj-embed-wrapper kbd,
+.bbc-news-vj-embed-wrapper samp {
+  font-family: monospace;
+}
+
+.bbc-news-vj-embed-wrapper pre {
+  white-space: pre;
+}
+
+.bbc-news-vj-embed-wrapper button,
+.bbc-news-vj-embed-wrapper textarea,
+.bbc-news-vj-embed-wrapper input,
+.bbc-news-vj-embed-wrapper select {
+  display: inline-block;
+}
+
+.bbc-news-vj-embed-wrapper big {
+  font-size: 1.17em;
+}
+
+.bbc-news-vj-embed-wrapper small,
+.bbc-news-vj-embed-wrapper sub,
+.bbc-news-vj-embed-wrapper sup {
+  font-size: 0.83em;
+}
+
+.bbc-news-vj-embed-wrapper sub {
+  vertical-align: sub;
+}
+
+.bbc-news-vj-embed-wrapper sup {
+  vertical-align: super;
+}
+
+.bbc-news-vj-embed-wrapper table {
+  border-spacing: 2px;
+}
+
+.bbc-news-vj-embed-wrapper thead,
+.bbc-news-vj-embed-wrapper tbody,
+.bbc-news-vj-embed-wrapper tfoot {
+  vertical-align: middle;
+}
+
+.bbc-news-vj-embed-wrapper td,
+.bbc-news-vj-embed-wrapper th,
+.bbc-news-vj-embed-wrapper tr {
+  vertical-align: inherit;
+}
+
+.bbc-news-vj-embed-wrapper s,
+.bbc-news-vj-embed-wrapper strike,
+.bbc-news-vj-embed-wrapper del {
+  text-decoration: line-through;
+}
+
+.bbc-news-vj-embed-wrapper hr {
+  border: 1px inset;
+}
+
+.bbc-news-vj-embed-wrapper ol,
+.bbc-news-vj-embed-wrapper ul,
+.bbc-news-vj-embed-wrapper dir,
+.bbc-news-vj-embed-wrapper menu,
+.bbc-news-vj-embed-wrapper dd {
+  margin-left: 1.12em;
+  padding-left: 1.12em;
+}
+
+.bbc-news-vj-embed-wrapper ol {
+  list-style-type: decimal;
+}
+
+.bbc-news-vj-embed-wrapper ul {
+  list-style-type: disc;
+}
+
+.bbc-news-vj-embed-wrapper ol ul,
+.bbc-news-vj-embed-wrapper ul ol,
+.bbc-news-vj-embed-wrapper ul ul,
+.bbc-news-vj-embed-wrapper ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bbc-news-vj-embed-wrapper u,
+.bbc-news-vj-embed-wrapper ins {
+  text-decoration: underline;
+}
+
+.bbc-news-vj-embed-wrapper center {
+  text-align: center;
+}
+
+.bbc-news-vj-embed-wrapper :link,
+.bbc-news-vj-embed-wrapper :visited {
+  text-decoration: underline;
+}
+
+.bbc-news-vj-embed-wrapper :focus {
+  outline: thin dotted invert;
+}
+
+.bbc-news-vj-embed-wrapper a {
+  font-size: 1em;
+}
+
+.bbc-news-vj-embed-wrapper iframe {
+    -webkit-overflow-scrolling: touch; /* Allow scroll when using VoiceOver */
+}

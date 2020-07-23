@@ -1,0 +1,12 @@
+body{font-family:Arial, Helvetica, sans-serif;}
+.eng-body{font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+.eng-headings{font-family:Arial, Helvetica, sans-serif;font-size:16px;}
+.telugu_uni_headings{font-family:EenaduUH;font-size:26px;color:#2691F3;font-weight:normal;}
+.telugu_uni_headings.sub-head{font-family:EenaduUH;font-size:24px;color:#222;font-weight:normal;}
+.telugu_uni_headings.sub-head1{font-family:EenaduUH;font-size:20px;color:#222;font-weight:normal;}
+.telugu_uni_headings.sub-head2{font-family:EenaduUH;font-size:18px;color:#222;font-weight:normal;}
+.telugu_uni_headings.tab-head{font-family:EenaduUH;font-size:24px;color:#222;font-weight:normal;}
+.telugu_uni_body{font-family:EenaduU;font-size:24px;line-height:29px;font-weight:normal;}
+.article-title-rgt, .article-title{font-family:EenaduUH;color:#2691F3;font-weight:normal;font-size:19px;width:220px;}
+.blue{color:#2691F3;font-weight:normal;}
+.black{color:#000;font-weight:normal;}

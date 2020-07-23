@@ -1,0 +1,102 @@
+
+var currentScript = document.currentScript || (function() {
+  var scripts = document.getElementsByTagName('script');
+  return scripts[scripts.length - 1];
+})();
+
+(function() {
+    window.TRINITY_PLAYER = window.TRINITY_PLAYER || {
+        isLegacyBrowser: true,
+        options: {
+            isTrinityEnabled: false,
+            campaignId: '2900000785',
+            parser_s: '',
+            parser_params: '',
+            trinityGAAccountId: '',
+            gaAccountId: '',
+            partnerName: '',
+            paramsObject: {"testId":null},
+            FAB_config: {},
+            multipleArticlesAlg: '',
+            GDPR: '$$GDPR_MACRO$$',
+            GDPR_CONSENT: '$$GDPR_CONSENT_MACRO$$',
+            documentLoadType: '',
+            documentLoadTypeSelector: '',
+            adsDurationThreshold: '',
+            loaderText: '',
+            useCFCDN: 0,
+            serverSubdomain: '',
+            language: 'hi',
+            enableDoubleWrite: true        },
+
+        config: {
+            injectorScript: 'https://vd.trinitymedia.ai/trinity-player/tts-player/20200529_8258e42df01efbd18abd0bcd0326d2a03db01965/trinity_inject_script-legacy.js'
+        },
+
+        version: '20200529_8258e42df01efbd18abd0bcd0326d2a03db01965',
+        userAgentData: '{"browser":"Other","browser_ver":"","is_legacy_browser":"true","os":"Other","os_ver":""}',
+        userAgent: 'ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18',
+        server: 'ip-10-64-34-180.thetimmedia.site',
+        campaignData: {tgtSeller: '1182'},
+        ts: Date.now()
+    };
+
+    const playerId = currentScript.dataset.playerId || '99f3913b3830a53698d06ab1ce6821bc'
+    currentScript.setAttribute('data-player-id', playerId); // set dynamically generated ID
+
+    window.TRINITY_PLAYER.players = window.TRINITY_PLAYER.players || {};
+    window.TRINITY_PLAYER.players[playerId] = {
+        abtest: '',
+        language: '', //FIXME: Do we need it?
+        textSelector: '.sec-info>p:not(a), .sec-info>h1, .sec-info>h2, .sec-info>h3',
+        imageSelector: '',
+        activateFAB: true,
+        state: 'not-started'
+    };
+
+    /* NOTE: This script doesn't transpiled. Please use ES5 code here */
+window.TRINITY_PLAYER.injectScript = function(playerId) {
+  var isDOMContentLoaded = false;
+
+  /* TTS could be loaded dynamically and skip DOMContentLoaded event. So check if document already ready as well */
+  function checkIfDocumentReady() {
+    return ['interactive', 'complete', 'loaded'].includes(document.readyState) || isDOMContentLoaded;
+  }
+
+  function run() {
+    if (document.body) {
+      if (!document.getElementById('trinity-audio-js')) {
+        var js = document.createElement('script');
+        js.type = 'text/javascript';
+        js.setAttribute('crossorigin', 'anonymous');
+        js.src = window.TRINITY_PLAYER.config.injectorScript;
+        js.id = 'trinity-audio-js';
+
+        js.addEventListener('load', createPlayer);
+
+        document.body.appendChild(js);
+      } else {
+        if (window.TRINITY_PLAYER.isLoaded) createPlayer();
+        else document.getElementById('trinity-audio-js').addEventListener('load', createPlayer);
+      }
+    }
+  }
+
+  function createPlayer() {
+    if (checkIfDocumentReady()) window.TRINITY_PLAYER.api.createPlayer(playerId);
+    else document.addEventListener('DOMContentLoaded', function() {
+      isDOMContentLoaded = true;
+      window.TRINITY_PLAYER.api.createPlayer(playerId);
+    });
+  }
+
+  run();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    isDOMContentLoaded = true;
+    run();
+  });
+};
+
+    window.TRINITY_PLAYER.injectScript(playerId);
+})();

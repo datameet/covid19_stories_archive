@@ -1,0 +1,25 @@
+<svg version="1.1" id="purpleComment" width="39px" height="39px" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <g transform="translate(19.5 19)">
+        <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             values="1; 1.0540540541; 1"
+             keyTimes="0; 0.5; 1"
+             begin="0s"
+             dur="2s"
+             repeatCount="indefinite"
+        />
+        <g transform="translate(-18.5 -18)">
+            <defs>
+                <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+                    <stop stop-color="#7D00BE" offset="0%"></stop>
+                    <stop stop-color="#6B00FA" offset="50.973478%"></stop>
+                    <stop stop-color="#4C26F8" offset="100%"></stop>
+                </linearGradient>
+                <path id="bubble" d="M3.5546875,0 C2.57486489,0 1.73747092,0.347490015 1.04248047,1.04248047 C0.347490015,1.73747092 0,2.57486489 0,3.5546875 L0,23.1738281 C0,24.1536507 0.347490015,24.9910447 1.04248047,25.6860352 C1.73747092,26.3810256 2.57486489,26.7285156 3.5546875,26.7285156 L13.8867188,26.7285156 L13.8867188,30.9326172 C13.8867188,31.3655621 14.0405258,31.7187486 14.3481445,31.9921875 C14.6557633,32.2656264 14.9918602,32.4023438 15.3564453,32.4023438 C15.5159513,32.4023438 15.6697584,32.3795575 15.8178711,32.3339844 C15.9659838,32.2884112 16.1083978,32.2086594 16.2451172,32.0947266 L23.4228516,26.7285156 L32.5058594,26.7285156 C33.485682,26.7285156 34.323076,26.3810256 35.0180664,25.6860352 C35.7130569,24.9910447 36.0605469,24.1536507 36.0605469,23.1738281 L36.0605469,3.5546875 C36.0605469,2.57486489 35.7130569,1.73747092 35.0180664,1.04248047 C34.323076,0.347490015 33.485682,0 32.5058594,0 L3.5546875,0 Z"></path>
+            </defs>
+            <use xlink:href="#bubble" transform="translate(0 3)" fill="#000000" fill-opacity="0.13" />
+            <use xlink:href="#bubble" fill="url(#linearGradient-1)" />
+        </g>
+    </g>
+</svg>

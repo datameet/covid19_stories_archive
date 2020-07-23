@@ -1,0 +1,194 @@
+{
+    "title": "Hanged In Hospital Due To Fear Of Corona",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.236",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775198",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:10.607539",
+                "start_ts": "2020-05-29 17:59:58.504534",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867@src=story-related.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:18.273599",
+                "start_ts": "2020-05-29 18:00:16.102857",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.amarujala.com"
+                ],
+                "end_ts": "2020-05-29 17:59:58.503271",
+                "start_ts": "2020-05-29 17:59:58.183062",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:13.138151",
+                "start_ts": "2020-05-29 18:00:10.607760",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:16.102528",
+                "start_ts": "2020-05-29 18:00:14.894984",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:22.429642",
+                "start_ts": "2020-05-29 18:00:18.273847",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "https://web.archive.org/web/20200529180019/https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+                ],
+                "end_ts": "2020-05-29 18:00:14.894750",
+                "start_ts": "2020-05-29 18:00:13.138395",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:59:58.182772",
+                "start_ts": "2020-05-29 17:59:56.013133",
+                "pwd": "/data/archive/1590766226.236",
+                "output": "Hanged In Hospital Due To Fear Of Corona"
+            }
+        ]
+    },
+    "updated": "1590788304.931844",
+    "tags": "",
+    "url": "https://www.amarujala.com/uttar-pradesh/kannauj/hanged-in-hospital-due-to-fear-of-corona-kannauj-news-knp558280867?src=story-related"
+}

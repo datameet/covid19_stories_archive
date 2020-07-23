@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.60",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:23:52.824276",
+                "start_ts": "2020-05-29 21:23:51.949295",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "\u0917\u093e\u0902\u0935 \u0938\u0947 \u0932\u0947\u0915\u0930 \u0936\u0939\u0930 \u0924\u0915 \u0926\u0947\u0936 \u092d\u0930 \u092e\u0947\u0902 \u092e\u0941\u0938\u094d\u0932\u093f\u092e \u0926\u0941\u0915\u093e\u0928\u0926\u093e\u0930\u094b\u0902 \u0915\u094b \u0928\u0939\u0940\u0902 \u0932\u0917\u093e\u0928\u0947 \u0926\u0940 \u091c\u093e \u0930\u0939\u0940 \u0939\u0948\u0902 \u092b\u0932 \u0914\u0930 \u0938\u092c\u094d\u091c\u093f\u092f\u094b\u0902 \u0915\u0940 \u0926\u0941\u0915\u093e\u0928\u0947\u0902"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:12.913967",
+                "start_ts": "2020-05-29 21:24:09.351530",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=janchowk.com"
+                ],
+                "end_ts": "2020-05-29 21:23:56.135081",
+                "start_ts": "2020-05-29 21:23:52.824568",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:09.351288",
+                "start_ts": "2020-05-29 21:24:04.671251",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:20.619682",
+                "start_ts": "2020-05-29 21:24:17.103938",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "https://web.archive.org/web/20200529212418/https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787436",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:04.671039",
+                "start_ts": "2020-05-29 21:23:56.138148",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:15.087502",
+                "start_ts": "2020-05-29 21:24:12.914221",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+                ],
+                "end_ts": "2020-05-29 21:24:17.103696",
+                "start_ts": "2020-05-29 21:24:15.087841",
+                "pwd": "/data/archive/1590785099.60",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787460.623441",
+    "tags": "",
+    "url": "https://janchowk.com/beech-bahas/muslim-are-not-allowed-to-sell-their-fruit-vegetables/"
+}

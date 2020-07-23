@@ -1,0 +1,273 @@
+var auw_speak_chunks = [];
+var auw_speak_final_chunks = [];
+backgroundSound = null;
+var lang_index = 40;
+
+function commaChunker() {
+//    var chunks = {};
+
+
+    $.each(auw_speak_chunks, function (i, v) {
+
+        if (v.length <= 150) {
+            var tmp = [v];
+            console.log(v);
+            auw_speak_final_chunks.push.apply(auw_speak_final_chunks, tmp);
+        } else {
+            var tmp = v.split(",");
+            auw_speak_final_chunks.push.apply(auw_speak_final_chunks, tmp);
+        }
+
+
+    });
+    console.log(auw_speak_final_chunks);
+}
+
+function speechChunker(text) {
+
+    auw_speak_chunks = text.split("।");
+    console.log(auw_speak_chunks);
+
+}
+
+function callSynthesis(text,i) {
+    
+    var msg = new SpeechSynthesisUtterance();
+    var voices = speechSynthesis.getVoices();
+    msg.voice = voices[lang_index];
+    msg.voiceURI = 'native';
+    msg.volume = 1;
+    msg.rate = 1.3;
+    msg.pitch = 1.3;
+    msg.text = text;
+    msg.lang = 'hi-IN';
+
+    speechSynthesis.speak(msg);
+
+}
+
+
+function initSpeak() {
+    
+    auw_speak_chunks = [];
+    auw_speak_final_chunks = [];
+    speechSynthesis.cancel();
+    console.log('init play called');
+    var body = '';
+
+    $('.auw_speak_body').each(function (i, text) {
+        //alert(text.textContent);
+        body += text.textContent + " । ";
+    });
+
+
+
+
+    speechChunker(body);
+    commaChunker();
+    //backgroundSound.start();
+    
+    $.each(auw_speak_final_chunks, function (i, v) {
+        callSynthesis(v,i);        
+    });
+}
+
+
+function initBreakingSpeak() {
+    
+    auw_speak_chunks = [];
+    auw_speak_final_chunks = [];
+    speechSynthesis.cancel();
+
+
+    var body = '';
+
+    $('.marqueeDv li').each(function (i, text) {
+        //alert(text.textContent);
+        body += text.textContent + " । ";
+    });
+
+
+
+    speechChunker(body);
+    commaChunker();
+
+    $.each(auw_speak_final_chunks, function (i, v) {
+        callSynthesis(v);
+    });
+}
+
+
+function loadTTS() {
+    
+    var voice = speechSynthesis.getVoices();
+    loadLanguage(voice);
+    
+    if( lang_index != false && typeof voice[lang_index] != 'undefined' && (voice[lang_index].lang == 'hi-IN' || voice[lang_index].lang == 'hi_IN')) {
+        $('#auw_speak_article').show();
+        $('#auw_cancel_article').hide();
+        $('.show-on-tts').show();
+        
+        //gaTrackEvent("TTS",'loaded',null,null,true);
+    }
+}
+
+function loadLanguage(voice){
+
+    if(typeof voice != 'undefined'){
+       
+        
+        for(var i=0; i < voice.length -1 ; i++) {
+  
+            if(typeof voice[i].lang != 'undefined' && (voice[i].lang == 'hi-IN' || voice[i].lang == 'hi_IN')) {
+ 
+                lang_index = i;
+            }
+        }
+    }
+}
+
+$(document).ready(function () {
+
+    if(typeof speechSynthesis != 'undefined' && typeof is_mobile != 'undefined' && is_mobile() && !navigator.userAgent.match(/iPhone/i)){
+        //$('#auw_speak_markee').show();
+        loadTTS();
+        if(typeof speechSynthesis.onvoiceschanged!='undefined'){
+            speechSynthesis.onvoiceschanged = loadTTS;
+        }
+        //backgroundSound = new Sound("/assets/v1/media/amarujala_signature.mp3",0.1,true);
+
+        //$('#auw_cancel_markee').hide();
+    }
+    
+//    $('body').on('click', '.next', function (){
+//        if(typeof speechSynthesis != 'undefined'){
+//            cancelSpeak();
+//            $('#auw_speak_article').show();
+//            $('#auw_cancel_article').hide();
+//            
+//        }
+//    });
+//    
+//    $('body').on('click', '.prev', function (){
+//        if(typeof speechSynthesis != 'undefined'){
+//            cancelSpeak();
+//            $('#auw_speak_article').show();
+//            $('#auw_cancel_article').hide();
+//            
+//        }
+//    });
+    
+//    $('#auw_speak_markee').on('click', function () {
+//
+//        initBreakingSpeak();
+//        $(this).hide();
+//        $('#auw_cancel_markee').show();
+//        $('#auw_cancel_article').hide();
+//        $('#auw_speak_article').show();
+//        //$('#auw_cancel_markee').show();
+//    });
+
+    $('#auw_speak_article').on('click', function () {
+        console.log('speak button clicked');
+        checkPlay();
+        initSpeak();
+        $(this).hide();
+        $('#auw_cancel_article').show();
+        gaTrackEvent("TTS",'play','click',null,true);
+       // $('#auw_cancel_markee').hide();
+        //$('#auw_speak_markee').show();
+        //$('#auw_cancel_article').show();
+    });
+    
+    $('#auw_cancel_article').on('click', function () {
+
+        cancelSpeak();
+        $(this).hide();
+        $('#auw_speak_article').show();
+        //gaTrackEvent("TTS",'cancel','click',null,true);
+    });
+    
+//    $('#auw_cancel_markee').on('click', function () {
+//
+//        cancelSpeak();
+//        $(this).hide();
+//        $('#auw_speak_markee').show();
+//    });
+
+
+
+
+});
+
+document.addEventListener("visibilitychange", function() {
+ cancelSpeak();
+}, false);
+
+function cancelSpeak(){
+    speechSynthesis.cancel();
+   // backgroundSound.stop();
+ //   backgroundSound.remove();
+}
+
+$(window).on('unload',function(){
+    cancelSpeak();
+});
+
+function checkPlay(){
+    console.log('check play checked');
+    var check = setInterval(function(){
+        console.log('check');
+      if(speechSynthesis.speaking === false && speechSynthesis.pending === false){
+          $('#auw_speak_article').show();
+          $('#auw_cancel_article').hide();
+        //  backgroundSound.stop();
+          clearInterval(check);
+      }
+    }, 2000);
+}
+
+function Sound(source,volume,loop)
+{
+    this.source=source;
+    this.volume=volume;
+    this.loop=loop;
+    var son = new Audio(source);
+    son.loop = loop;
+    son.volume = volume;
+    this.son=son;
+    this.finish=false;
+    
+    this.stop=function()
+    {
+        this.son.pause();
+    }
+    
+    this.start=function()
+    {
+        if(this.finish){return false;}
+//        this.son=document.createElement("embed");
+//        this.son.setAttribute("src",this.source);
+//        this.son.setAttribute("hidden","true");
+//        this.son.setAttribute("volume",this.volume);
+//        this.son.setAttribute("autostart","true");
+//        this.son.setAttribute("loop",this.loop);
+//        document.body.appendChild(this.son);
+        this.son.play();
+        return true;
+    }
+    
+    this.remove=function()
+    {
+        //document.body.removeChild(this.son);
+        this.son.pause();
+        this.finish=true;
+    }
+    
+    this.reset=function(volume,loop)
+    {
+        this.finish=false;
+        this.volume=volume;
+        this.loop=loop;
+    }
+}

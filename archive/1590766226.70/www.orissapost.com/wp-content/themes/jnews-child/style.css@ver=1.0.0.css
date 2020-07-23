@@ -1,0 +1,324 @@
+/*
+Theme Name: JNews - Child Theme
+Version: 1.0.0
+Theme URI: http://themeforest.net/?ref=jegtheme
+Description: A basic starter child theme for customization purpose of JNews theme.
+Author: Jegtheme
+Author URI: http://themeforest.net/user/jegtheme?ref=jegtheme
+Template: jnews
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ------------------------------------------------------------------------- *
+ *  Theme customization starts here
+/* ------------------------------------------------------------------------- */
+@import url('../../../../fonts.googleapis.com/css@family=Merriweather.css');
+#breadcrumbs { padding-top: 12px; }
+.home hr { border-top: 1px solid #D5D5D5 !important; }
+.jeg_breakingnews_title span { color: #fff; }
+#post-grid-401 .element_0 { font-family: 'Merriweather', serif; font-weight: 700; font-size: 1.25em; }
+#post-grid-401 .element_1 { font-family: Roboto; font-size: 0.99em !important; }
+.home .vc_col-sm-3 .jeg_main_content .wpb_button .wpb_content_element ul.wpb_thumbnails-fluid>li {
+    margin-bottom: 0px !important;
+}
+.jeg_navbar{
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #d5d5d5;
+}
+.jeg_footer_4 .jeg_footer_primary{
+	padding:10px 0;
+	border-bottom: 1px solid #d5d5d5;
+	margin-bottom: 160px;
+}
+.jeg_menu_footer{
+	margin-bottom:0;
+}
+/*.jeg_menu_style_1>li{
+	padding-right: 9px;
+}*/
+.jeg_menu_footer li{
+	margin-right: -8px;
+}
+.btn, .button, input[type=submit]{
+	    /* border: none; */
+   /* background: #f70d28;*/
+    color: #2a2a2a;
+    padding: 0 6px;
+    line-height: 40px;
+    height: 36px;
+    display: inline-block;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    font-size: 13px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    outline: 0;
+    -webkit-appearance: none;
+    transition: .3s ease;
+}
+.jeg_footer .socials_widget.nobg .fa{
+	color: #2a2a2a;
+}
+.jeg_menu_style_1 > li > a:before, .jeg_menu_style_2 > li > a:before, .jeg_menu_style_3 > li > a:before, .jeg_side_toggle, .jeg_slide_caption .jeg_post_category a, .jeg_slider_type_1 .owl-nav .owl-next, .jeg_block_heading_1 .jeg_block_title span, .jeg_block_heading_2 .jeg_block_title span, .jeg_block_heading_3, .jeg_block_heading_4 .jeg_block_title span, .jeg_block_heading_6:after, .jeg_pl_lg_box .jeg_post_category a, .jeg_pl_md_box .jeg_post_category a, .jeg_readmore:hover, .jeg_thumb .jeg_post_category a, .jeg_block_loadmore a:hover, .jeg_postblock.alt .jeg_block_loadmore a:hover, .jeg_block_loadmore a.active, .jeg_postblock_carousel_2 .jeg_post_category a, .jeg_heroblock .jeg_post_category a, .jeg_pagenav_1 .page_number.active, .jeg_pagenav_1 .page_number.active:hover, input[type="submit"], .btn, .button, .widget_tag_cloud a:hover, .popularpost_item:hover .jeg_post_title a:before, .jeg_splitpost_4 .page_nav, .jeg_splitpost_5 .page_nav, .jeg_post_tags a:hover, .comment-reply-title small a:before, .comment-reply-title small a:after, .jeg_storelist .productlink, .authorlink li.active a:before, .jeg_footer.dark .socials_widget:not(.nobg) a:hover .fa, .jeg_overlay_slider_bottom.owl-carousel .owl-nav div, .jeg_overlay_slider_bottom.owl-carousel .owl-nav div:hover, .jeg_vertical_playlist .jeg_video_playlist_current, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .jeg_popup_post .caption, .jeg_footer.dark input[type="submit"], .jeg_footer.dark .btn, .jeg_footer.dark .button, .footer_widget.widget_tag_cloud a:hover{
+	    background-color: #fff !important;
+}
+.btnsecondary{
+	    padding: 7px 10px;
+    background-color: #fff;
+}
+
+.vc_btn3-container.vc_btn3-left{
+	text-align: left;
+    display: none;
+}
+.image-display{
+	display: none;
+}
+.jeg_pl_lg_2 .jeg_thumb, .jeg_pl_lg_3 .jeg_thumb{
+	width: 182px;
+}
+.jeg_pl_lg_3 .jeg_thumb{
+	margin-left: 0;
+}
+.jeg_pl_lg_2 .jeg_postblock_content, .jeg_pl_lg_3 .jeg_postblock_content{
+
+	overflow: hidden;
+}
+.jeg_post_meta{
+	display: block;
+}
+.jeg_content{
+
+	padding: 0px !important;
+}
+h3{
+	margin: 0;
+	font-size: 21px;
+    font-style: normal;
+}
+.jeg_readmore{
+
+	display: none;
+}
+
+.jeg_pl_md_2, .jeg_pl_md_3 {
+	background-color: none !important;
+    margin-bottom: 12px;
+    overflow: hidden;
+    border-bottom: 1px solid #d5d5d5;
+	padding: 7px 0 12px 0;
+}
+.jeg_block_heading_6{
+
+	margin-bottom: 22px;
+}
+/*.post-background{
+	background-color: #fff;
+	bottom: 21px;
+}
+*/
+.jeg_block_title {
+    border-top: 3px solid;
+    width: 10%;
+}
+.for-test{
+	border-top: 3px solid;
+	width: 33%;
+}
+.trending{
+
+	font-size: 19px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+.jeg_postblock_3.jeg_col_3o3 .jeg_pl_md_2 .jeg_post_title, .jeg_postblock_4.jeg_col_3o3 .jeg_pl_md_3 .jeg_post_title{
+
+	font-size: 18px;
+    line-height: 1.3em;
+}
+.politics-text{
+	font-size: 15px;
+    padding: 15px;
+    font-weight: 600;
+	
+}
+.line{
+	color: #d5d5d5
+}
+a, .jeg_menu_style_5 > li > a:hover, .jeg_menu_style_5 > li.sfHover > a, .jeg_navbar .jeg_menu:not(.jeg_main_menu) > li > a:hover, .jeg_midbar .jeg_menu:not(.jeg_main_menu) > li > a:hover, .jeg_side_tabs li.active, .jeg_block_heading_5 strong, .jeg_block_heading_6 strong, .jeg_block_heading_7 strong, .jeg_block_heading_8 strong, .jeg_subcat_list li a:hover, .jeg_subcat_list li button:hover, .jeg_pl_lg_7 .jeg_thumb .jeg_post_category a, .jeg_pl_xs_2:before, .jeg_pl_xs_4 .jeg_postblock_content:before, .jeg_postblock .jeg_post_title a:hover, .jeg_hero_style_6 .jeg_post_title a:hover, .jeg_sidefeed .jeg_pl_xs_3 .jeg_post_title a:hover, .widget_jnews_popular .jeg_post_title a:hover, .jeg_meta_author a, .widget_archive li a:hover, .widget_pages li a:hover, .widget_meta li a:hover, .widget_recent_entries li a:hover, .widget_rss li a:hover, .widget_rss cite, .widget_categories li a:hover, .widget_categories li.current-cat > a, #breadcrumbs a:hover, .jeg_share_count .counts, .commentlist .bypostauthor > .comment-body > .comment-author > .fn, span.required, .jeg_review_title, .bestprice .price, .authorlink a:hover, .jeg_vertical_playlist .jeg_video_playlist_play_icon, .jeg_vertical_playlist .jeg_video_playlist_item.active .jeg_video_playlist_thumbnail:before, .jeg_horizontal_playlist .jeg_video_playlist_play, .woocommerce li.product .pricegroup .button, .widget_display_forums li a:hover, .widget_display_topics li:before, .widget_display_replies li:before, .widget_display_views li:before, .bbp-breadcrumb a:hover, .jeg_mobile_menu li.sfHover > a, .jeg_mobile_menu li a:hover{
+	color: #000 !important;
+}
+.background-white{
+	background-color: #fff;
+	border: 1px solid #d5d5d5;
+}
+.box-content{
+	padding: 14px;
+}
+.boxpadding{
+
+	padding-top: 20px;
+}
+.jeg_post_category{
+	display: none !important;
+}
+.subscribe-text{
+	font-size: 12px !important;
+    border: 1px solid #ddd !important;
+    text-transform: capitalize !important;
+}
+/*-------- CSS 22-02-2018 -------------*/
+.jeg_logo img {
+    height: 80px !important;
+    image-rendering: optimizeQuality;
+}
+.jeg_midbar {
+    height: 110px;
+    padding-top: 16px;
+}
+/*.jeg_main_menu>li {
+    padding: 0 6px;
+}*/
+.jeg_main_menu>li>a {
+   font-weight: normal; 
+	}
+.jeg_menu_footer {
+	font-weight: normal; 
+}	
+
+.jeg_menu_style_1>li.current-menu-item>a {
+	color: #e55520 !important;
+	font-weight: bold; 
+}
+.jeg_sidebar {
+    padding-top: 26px !important;
+    border-left: 1px solid #d5d5d5;
+}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+    font-weight: 700 !important;
+}
+/*----Trending-----Dt. 22.02.18-----*/
+
+.vc_custom_heading {
+	font-family: 'Merriweather', serif;
+}
+.wpb_text_column h3 {
+	font-family: 'Merriweather', serif !important;
+}
+.trending {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+.jeg_navbar {
+    border-top: 3px solid #000 !important;
+    /*margin-top: 9px !important;*/
+}
+.content-inner .jeg_post_title {
+	font-family: 'Merriweather', serif !important;
+}
+.jeg_menu_footer li {
+    padding-right: 4px;
+}
+.btnsecondary {
+    border: 1px solid #ddd;
+}
+#jnews_module_block_4-2 .jeg_posts {
+	background-color: #fff;
+	padding: 6px 10px;
+}
+.jeg_block_heading_6 {
+    border-bottom: none !important;
+}
+.jeg_block_heading_6:after {
+	background-color: #f7f7f7 !important;
+}
+.vc_custom_heading p {
+    font-family: Roboto;
+}
+.jeg_hero_style_1 .jeg_thumb a>div:after {
+    opacity: 99 !important;
+}
+.jeg_heroblock .jeg_post_info {
+	text-shadow : none !important;
+}
+.blue { display: none; }
+.show-on-mobile { display: none !important; }
+.hide-on-mobile { display: block !important; }
+
+.recentcomments a{
+	font-weight: bold !important;
+	color: #e80000;
+}
+.jnews_module_50_0_5abb41257d47b .jeg_breakingnews_title{
+	background: #e55520 !important;
+	background-color: #e55520 !important;
+}
+.jeg_menu_style_1>li{
+	padding-right: 17px;
+}
+@media screen and (max-width: 767px) {
+	.jeg_inner_content .content-inner p a {    color: #0462b3!important;}
+    .blue { display: block; background-color: #0071af !important; padding: 9px 14px; color:#fff !important; text-align: center;font-weight:600!important }	
+a.blue { color:#fff !important; }
+.show-on-mobile { display: block !important; }
+.hide-on-mobile { display: none !important; }
+}
+.jeg_inner_content .content-inner p a {
+    font-weight: 600;
+    color: #0070af;
+}
+.jeg_mobile_wrapper{
+    display:block !important;
+}
+.jeg_block_heading_1 .jeg_block_title span{
+    color:#000!important;
+    padding-left:0px!important;
+}
+.btn, .button, input[type=submit] {
+    border: 0;
+    border-radius: 0;
+    background: #f70d28!important;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline: 0;
+    -webkit-appearance: none;
+    transition: .3s ease;
+}
+.jeg_slide_caption .jeg_post_title a {
+    color: #fff !important;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+.jeg_block_heading_1 .jeg_block_title span{
+    background: #f70d28!important;
+    color: #fff !important;
+}
+.app-submit{
+    background-color: #479cf0 !important;
+}
+#commentform p.form-submit{
+    margin-top: 100px;
+}
+.jeg_inner_content .content-inner p a {
+    color: #0462b3!important;
+}
+
+@media screen and (max-width: 767px) {
+a, a:visited{
+    color: #0462b3!important;
+}
+	.jeg_viewport{
+		padding-bottom: 0!important;
+	}
+	a.blue, a:visited.blue{
+    color: #fff!important;
+}
+}

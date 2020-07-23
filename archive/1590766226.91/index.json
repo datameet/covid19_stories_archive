@@ -1,0 +1,194 @@
+{
+    "title": "Two tipplers in Kerala commit suicide upset at not getting liquor\u00a0during COVID-19 lockdown- The New Indian Express",
+    "url": "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html",
+    "timestamp": "1590766226.91",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:13.483718",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770407",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 16:40:07.418707",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:26.595946",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:40:24.619383",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:07.418063",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:40:07.168277",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:18.142212",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:40:13.483978",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:24.618879",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:40:22.094893",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:28.656799",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:40:26.596253",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "https://web.archive.org/web/20200529164027/https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:22.094634",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:40:18.142818",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:40:07.168130",
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/states/kerala/2020/mar/29/two-tipplers-in-kerala-commit-suicide-upset-at-not-getting-liquor-during-covid-19-lockdown-2123056.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:40:06.931688",
+                "pwd": "/data/archive/1590766226.91",
+                "output": "Two tipplers in Kerala commit suicide upset at not getting liquor\u00a0during COVID-19 lockdown- The New Indian Express"
+            }
+        ]
+    },
+    "updated": "1590788215.257323",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head prefix="og:http://ogp.me/ns#">
+    <title>बिहार: जहानाबाद सदर अस्पताल में मासूम को पीएमसीएच ले जाने के लिए नहीं मिला एंबुलेंस, गई जान</title>
+    <meta charset="utf-8">
+    <meta property="og:url" content="https://content.jwplatform.com/previews/bEqtmHIz-SBGWwnIq">
+    <meta property="og:title" content="बिहार: जहानाबाद सदर अस्पताल में मासूम को पीएमसीएच ले जाने के लिए नहीं मिला एंबुलेंस, गई जान">
+    <meta property="og:image" content="https://assets-jpcust.jwpsrv.com/thumbs/bEqtmHIz-720.jpg">
+    <meta property="og:description" content="बिहार: जहानाबाद सदर अस्पताल में मासूम को पीएमसीएच ले जाने के लिए नहीं मिला एंबुलेंस, गई जान">
+    <meta property="og:type" content="video">
+    <meta property="og:video" content="https://content.jwplatform.com/videos/bEqtmHIz-j8LWHt9g.mp4">
+    <meta property="og:video:secure_url" content="https://content.jwplatform.com/videos/bEqtmHIz-j8LWHt9g.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="640">
+    <meta property="og:video:height" content="360">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="https://content.jwplatform.com/players/bEqtmHIz-SBGWwnIq.html">
+    <meta name="twitter:player:width" content="640">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:player:stream" content="https://content.jwplatform.com/videos/bEqtmHIz-640.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+    <style type="text/css">
+        body { background: #2f3542; color: #FFF; font: 1rem/1.5 Arial, sans-serif; margin: 0 auto; padding: 0; overflow: hidden }
+        #title, #description { display: none; font-weight: normal; -webkit-font-smoothing: antialiased }
+        #title { font-size: 24px; margin: 40px auto 10px }
+        #description { color: #aab4c8; font-size: 14px; margin: 15px auto }
+    </style>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h1 id="title">बिहार: जहानाबाद सदर अस्पताल में मासूम को पीएमसीएच ले जाने के लिए नहीं मिला एंबुलेंस, गई जान</h1>
+    <div id="botr_bEqtmHIz_SBGWwnIq_div"></div>
+    <p id="description">बिहार: जहानाबाद सदर अस्पताल में मासूम को पीएमसीएच ले जाने के लिए नहीं मिला एंबुलेंस, गई जान</p>
+    <script>
+        (function() {
+            var head = document.head;
+            var script;
+            function setupPlayer(w, h) {
+                if (script) return;
+                script = document.createElement('script');
+                script.async = 1;
+                script.src = "https://content.jwplatform.com/players/bEqtmHIz-SBGWwnIq.js";
+                head.appendChild(script);
+                if (w && h) {
+                    var interval = setInterval(function() {
+                        var jwplayer = window.jwplayer;
+                        if (jwplayer && jwplayer('botr_bEqtmHIz_SBGWwnIq_div')) {
+                            clearInterval(interval);
+                            jwplayer('botr_bEqtmHIz_SBGWwnIq_div').on('ready', function(){this.resize(w, h);});
+                        }
+                    }, 100);
+                }
+            }
+            function setMeta(name, value) {
+                var meta = window.document.querySelector('meta[property="' + name + '"]');
+                if (!meta) {
+                    meta = document.createElement('meta');
+                    meta.setAttribute('property', name);
+                    head.appendChild(meta);
+                }
+                meta.setAttribute('content', value);
+            }
+            if (window === window.top) {
+                document.getElementById("title").style.display = "block";
+                document.getElementById("description").style.display = "block";
+                document.body.style.width = "70%";
+                document.body.style.overflow = "visible";
+                setupPlayer();
+            } else {
+                var w = 0;
+                var h = 0;
+                /** Used to pass play/pause messages parent iframe via postMessage **/
+                window.addEventListener("message", function(evt) {
+                    var player = window.jwplayer ? window.jwplayer('botr_bEqtmHIz_SBGWwnIq_div') : null;
+                    switch (evt.data) {
+                        case "play" && player:
+                            player.play();
+                            break;
+                        case "pause" && player:
+                            player.pause();
+                            break;
+                        default:
+                            if (evt.data.type && evt.data.type === 'page-meta' && !script) {
+                                setMeta('og:description', evt.data.description);
+                                setMeta('og:title', evt.data.title);
+                                setupPlayer(w, h);
+                            }
+                    }
+                });
+                window.addEventListener('load', function() {
+                    setTimeout(function() {setupPlayer(w, h);}, 100);
+                });
+            }
+        }());
+    </script>
+  </body>
+</html>

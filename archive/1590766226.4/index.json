@@ -1,0 +1,194 @@
+{
+    "title": "Ajit News @ 10 pm, 21 April 2020 Ajit Web Tv. - YouTube",
+    "url": "https://www.youtube.com/watch?v=6di3XSZMKsY",
+    "timestamp": "1590766226.4",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 11,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766507",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:18.635616",
+                "start_ts": "2020-05-29 15:35:07.537809",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "www.youtube.com/watch@v=6di3XSZMKsY.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:41.836769",
+                "start_ts": "2020-05-29 15:35:37.302738",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.youtube.com"
+                ],
+                "end_ts": "2020-05-29 15:35:07.537079",
+                "start_ts": "2020-05-29 15:35:07.183328",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:24.504935",
+                "start_ts": "2020-05-29 15:35:18.635829",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:37.301981",
+                "start_ts": "2020-05-29 15:35:33.128442",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:43.812201",
+                "start_ts": "2020-05-29 15:35:41.837170",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "https://web.archive.org/web/20200529153542/https://www.youtube.com/watch?v=6di3XSZMKsY"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY"
+                ],
+                "end_ts": "2020-05-29 15:35:33.128078",
+                "start_ts": "2020-05-29 15:35:24.505307",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://www.youtube.com/watch?v=6di3XSZMKsY",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 15:35:07.183007",
+                "start_ts": "2020-05-29 15:35:06.150075",
+                "pwd": "/data/archive/1590766226.4",
+                "output": "Ajit News @ 10 pm, 21 April 2020 Ajit Web Tv. - YouTube"
+            }
+        ]
+    },
+    "updated": "1590788097.260464",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

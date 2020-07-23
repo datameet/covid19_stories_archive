@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="24" height="24">
+      <g fill="none" fillRule="evenodd">
+        <rect width="24" height="24" fill="#4E71A8" fillRule="nonzero" rx="12" />
+        <path
+          fill="#FFF"
+          d="M12.698 17.897v-5.95h1.645l.218-2.05h-1.863l.002-1.026c0-.534.051-.82.82-.82h1.029V6h-1.645c-1.977 0-2.672.995-2.672 2.667v1.23H9v2.05h1.232v5.95h2.466z"
+        />
+      </g>
+    </svg>

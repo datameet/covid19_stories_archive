@@ -1,0 +1,262 @@
+﻿body 
+{
+	
+}
+
+.divtop
+{
+	width:715px;
+	padding:13px 0px 15px 0px;
+	margin:0px;
+	border-color:#C6B286;
+}
+
+.divtop1
+{
+	width:234px;
+	padding:13px 0px 13px 4px;
+	margin:0px;
+	background:url(../new_images/english_core_bg1.jpg);
+	background-repeat:repeat-x;
+	border-color:#C8BFAE;
+	border:1px;
+}
+
+.photo_result
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	background-color:#B5A98D;
+	height:38px;
+	width:720px;
+	padding: 0px 0px 2px 10px;
+}
+
+.select_all
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	background-color:#D0C3A4;
+	height:38px;
+	width:715px;
+	padding: 0px 0px 2px 10px;
+}
+
+.caption
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	padding-left:10px;
+	text-align:left;
+	display:inline;
+}
+
+.oldarchive
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:#716A5A;
+	padding-right:10px;
+	padding-left:80px;
+	text-align:right;
+	display:inline;
+}
+
+.photo_cat
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	text-align:left;
+	background-color:#CABB9B;
+	border-left: solid 2px #C8B58A;
+	border-top: solid 2px #C8B58A;
+	border-bottom: solid 2px #C8B58A;
+	padding: 10px 0px 12px 10px;
+}
+
+.photo_cat1
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	text-align:left;
+	background-color:#CABB9B;
+	border-right: solid 2px #C8B58A;
+	border-top: solid 2px #C8B58A;
+	border-bottom: solid 2px #C8B58A;
+	padding: 10px 10px 12px 10px;
+}
+
+.enq
+{
+
+	background-color:#CABB9B;
+	border-right: solid 2px #C8B58A;
+	border-top: solid 2px #C8B58A;
+	border-bottom: solid 2px #C8B58A;
+	padding: 0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	position:absolute;
+
+   height:100px;
+	width:230px;
+	
+}
+.text
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	text-align:left;
+	float:left;
+	margin:0px;
+	padding:5px 0px 0px 10px;
+}
+
+.photo_cat_expand
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:White;
+	padding: 8px 0px 8px 8px;
+	background-color:#D0C3A4;
+	text-decoration:none;
+}
+.photo_cat_expand td
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:White;
+	padding: 8px 0px 8px 6px;
+	background-color:#D0C3A4;
+	text-decoration:none;
+}
+
+.photo_cat_black
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:Black;
+	padding: 8px 0px 8px 6px;
+	background-color:#D9C391;
+	text-decoration:none;
+	cursor:default;
+}
+.photo_cat_black td
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:Black;
+	padding: 8px 0px 8px 6px;
+	background-color:#D9C391;
+	text-decoration:none;
+	cursor:default;
+}
+.photo_cat_expand_black
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:Black;
+	padding: 8px 0px 8px 6px;
+	background-color:#D9C391;
+	text-decoration:none;
+	cursor:default;
+}
+
+
+.photo_box
+{
+	/*background-color:#fdfdfd;*/
+	background-color:red;
+	padding:20px 20px 2px 20px;
+}
+
+.photo_caption
+{
+	font-family:Verdana; font-size:11px; color:#445581;
+}
+
+.photo_caption1
+{
+	font-family:Verdana;
+	font-size:11px;
+	color:#445581;
+}
+
+.gallery_padding
+{
+	padding-left:20px;
+}
+
+.caption_black
+{
+	font-family:Verdana;
+	font-size:12px;
+	padding-top:120px;
+	font-weight:bold;
+	color:Black;
+	text-align:right;
+	display:inline;
+	width:715px;
+	text-decoration:none;
+}
+
+.gallery_onmouseover
+{
+	font-family:Verdana; font-size:11px; font-weight:bold; color:White; padding: 5px 0px 5px 0px;
+}
+
+.gallery_onmouseover_attribes
+{
+	font-family:Arial; font-size:11px; color:Black; padding: 5px 0px 5px 0px;
+}
+
+.caption_black1
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:Black;
+	text-align:right;
+	display:inline;
+}
+
+.download_meter
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	background-color:#D0C3A4;
+	text-align:right;
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+.photo_available
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+	color:White;
+	background-color:#544f42;
+	text-align:center;
+	padding: 5px 20px 5px 20px;
+}
+

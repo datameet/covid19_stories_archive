@@ -1,0 +1,194 @@
+{
+    "title": "Female Officer Commits Suicide In Arunachal Due To Fear Of Coronavirus - \u0905\u0930\u0942\u0923\u093e\u091a\u0932\u0903 \u0915\u094b\u0930\u094b\u0928\u093e \u0915\u0947 \u0921\u0930 \u0938\u0947 \u092e\u0939\u093f\u0932\u093e \u0905\u0927\u093f\u0915\u093e\u0930\u0940 \u0928\u0947 \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e\u00a0 - Amar Ujala Hindi News Live",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.242",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775337",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:25.690451",
+                "start_ts": "2020-05-29 18:02:17.223179",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:33.060694",
+                "start_ts": "2020-05-29 18:02:30.922683",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.amarujala.com"
+                ],
+                "end_ts": "2020-05-29 18:02:17.222666",
+                "start_ts": "2020-05-29 18:02:16.454530",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:27.680072",
+                "start_ts": "2020-05-29 18:02:25.690721",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:30.922347",
+                "start_ts": "2020-05-29 18:02:29.675227",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:36.880284",
+                "start_ts": "2020-05-29 18:02:33.060936",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "https://web.archive.org/web/20200529180234/https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+                ],
+                "end_ts": "2020-05-29 18:02:29.674981",
+                "start_ts": "2020-05-29 18:02:27.680330",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:02:16.454247",
+                "start_ts": "2020-05-29 18:02:14.001751",
+                "pwd": "/data/archive/1590766226.242",
+                "output": "Female Officer Commits Suicide In Arunachal Due To Fear Of Coronavirus - \u0905\u0930\u0942\u0923\u093e\u091a\u0932\u0903 \u0915\u094b\u0930\u094b\u0928\u093e \u0915\u0947 \u0921\u0930 \u0938\u0947 \u092e\u0939\u093f\u0932\u093e \u0905\u0927\u093f\u0915\u093e\u0930\u0940 \u0928\u0947 \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e\u00a0 - Amar Ujala Hindi News Live"
+            }
+        ]
+    },
+    "updated": "1590788306.918371",
+    "tags": "",
+    "url": "https://www.amarujala.com/india-news/female-officer-commits-suicide-in-arunachal-due-to-fear-of-coronavirus"
+}

@@ -1,0 +1,194 @@
+{
+    "title": "Man kills self as wife left for Mumbai on foot after a fight: Police - India News",
+    "url": "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01",
+    "timestamp": "1590766226.168",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 15,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772541",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:15:57.144309",
+                "start_ts": "2020-05-29 17:15:41.550437",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:16:05.498586",
+                "start_ts": "2020-05-29 17:16:03.866826",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatoday.in"
+                ],
+                "end_ts": "2020-05-29 17:15:41.549050",
+                "start_ts": "2020-05-29 17:15:41.266133",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:16:00.390734",
+                "start_ts": "2020-05-29 17:15:57.144483",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:16:03.866493",
+                "start_ts": "2020-05-29 17:16:02.455118",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:16:07.335771",
+                "start_ts": "2020-05-29 17:16:05.498830",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "https://web.archive.org/web/20200529171606/https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01"
+                ],
+                "end_ts": "2020-05-29 17:16:02.454879",
+                "start_ts": "2020-05-29 17:16:00.390969",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://www.indiatoday.in/india/story/man-suicide-wife-mumbai-1673283-2020-05-01",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:15:41.265754",
+                "start_ts": "2020-05-29 17:15:39.535596",
+                "pwd": "/data/archive/1590766226.168",
+                "output": "Man kills self as wife left for Mumbai on foot after a fight: Police - India News"
+            }
+        ]
+    },
+    "updated": "1590788240.865477",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

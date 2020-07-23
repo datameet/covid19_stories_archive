@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gujaratSamachar">
+
+<head>
+    <link type="application/manifest+json" rel="manifest" href="https://www.gujaratsamachar.com/manifest.json">
+    <meta charset="UTF-8">
+    <title
+        data-ng-bind="$state.current.data.pageTitle + 'Gujarati News - News in Gujarati - Gujarati Newspaper - ગુજરાતી સમાચાર - Gujarat Samachar'">
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="allow-search" content="yes">
+    <meta name="googlebot" content="index,follow, noodp">
+    <meta name="yahooSeeker" content="index, follow">
+    <meta name="msnbot" content="index, follow">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <link rel="shortcut icon apple-touch-icon" href="https://www.gujaratsamachar.com/favicon.ico" type="image/x-icon">
+    <!-- Dynamic MetaTags Start -->
+    <meta name="title" content="{{metaservice.metaTitle()}}">
+    <meta name="description" content="{{metaservice.metaDescription()}}">
+    <meta name="keywords" content="{{metaservice.metaKeywords()}}">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gujratsamachar" />
+    <meta name="twitter:title" content="{{metaservice.heading()}}"
+        ng-if="$state.current.name == 'root.mainSidebar.articleDetails'" />
+    <meta name="twitter:title" content="{{metaservice.metaTitle()}}"
+        ng-if="$state.current.name != 'root.mainSidebar.articleDetails'" />
+    <meta name="twitter:description" content="{{metaservice.metaDescription()}}" />
+    <meta name="twitter:image" content="{{metaservice.metaImage()}}" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="628" />
+
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="{{metaservice.heading()}}"
+        ng-if="$state.current.name == 'root.mainSidebar.articleDetails'" />
+    <meta property="og:title" content="{{metaservice.metaTitle()}}"
+        ng-if="$state.current.name != 'root.mainSidebar.articleDetails'" />
+    <meta property="og:description" content="{{metaservice.metaDescription()}}" />
+    <meta property="og:image" content="{{metaservice.metaImage()}}" />
+    <!-- Dynamic MetaTags End -->
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Gujarat Samachar">
+    <meta name="theme-color" content="#EE1729">
+
+    <!-- Note: Do not use transparency in your Apple Touch icon. The reason: iOS forbids transparent icons and it fills the gaps with black. -->
+    <link rel="apple-touch-icon" href="https://www.gujaratsamachar.com/assets/images/apple-touch-icon.png" />
+
+    <link rel="canonical" href="https://www.gujaratsamachar.com/assets/images/{{currentUrl}}" />
+    <link rel="preconnect" href="https://static.gujaratsamachar.com" crossorigin="anonymous">
+    <!-- Angular UI css start -->
+
+    <link rel="stylesheet" async='async'
+        ng-href="{{app_base_url}}/bower_components/fancybox-plus/css/jquery.fancybox-plus.css?v.0.0.90"
+        href="../../bower_components/fancybox-plus/css/jquery.fancybox-plus.css@v.0.0.90.css" media="all">
+    <link rel="stylesheet" async='async' ng-href="{{app_base_url}}/src/style.min.css?v.0.0.90"
+        href="../../src/style.min.css@v.0.0.90.css" media="all">
+    <link rel="stylesheet" async='async' ng-href="{{app_base_url}}/assets/css/dist.css?v.0.0.90"
+        href="../css/dist.css@v.0.0.90.css" media="all" />
+    <link rel="stylesheet" async='async' ng-href="{{app_base_url}}/assets/css/responsive.css?v.0.0.90"
+        href="../css/responsive.css@v.0.0.90.css" media="all" />
+    <link rel="stylesheet" async='async' ng-href="{{app_base_url}}/assets/css/classifiedicon.css?v.0.0.90"
+        href="../css/classifiedicon.css@v.0.0.90.css" media="all" />
+
+    <!-- Stream CAT Fish 30082019 Start -->
+    <script async src="../../../securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        if (!navigator.userAgent.includes('Prerender')) {
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/21710144538/DP-DP-Gujaratsamachar.com-CF-1x1', [1, 1], 'div-gpt-ad-1585136731745-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        }
+    </script>
+    <!-- /21710144538/DP-DP-Gujaratsamachar.com-CF-1x1 -->
+    <div id='div-gpt-ad-1585136731745-0' style='width: 1px; height: 1px;'>
+        <script>
+            if (!navigator.userAgent.includes('Prerender')) {
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1585136731745-0'); });
+            }
+        </script>
+    </div>
+    <!-- Stream CAT Fish 30082019 End -->
+
+    <!-- Stream Disp Banner 25032020 Start -->
+    <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        if (!navigator.userAgent.includes('Prerender')) {
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/21710144538/DR-DP-RS-Gujaratsamachar.com-N-SF-728x90', [728, 90], 'div-gpt-ad-1583572793804-0').addService(googletag.pubads());
+                googletag.defineSlot('/21710144538/DR-DP-RS-Gujaratsamachar.com-N-SF-300x250', [300, 250], 'div-gpt-ad-1583573032801-0').addService(googletag.pubads());
+                googletag.defineSlot('/21710144538/DP-RS-Gujaratsamachar.com-Namitha-300x600', [[120, 600], [300, 600]], 'div-gpt-ad-1584348755488-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        }
+    </script> -->
+    <!-- Stream Disp Banner 25032020 End -->
+
+    <!-- Stream In Image 25032020  Start -->
+    <script src='../../../www.googletagservices.com/tag/js/gpt.js'>
+        if (!navigator.userAgent.includes('Prerender')) {
+            googletag.pubads().definePassback('/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1', [1, 1]).set("page_url", "gujaratsamachar.com").display();
+        }
+    </script>
+    <script src='../../../www.googletagservices.com/tag/js/gpt.js'>
+        if (!navigator.userAgent.includes('Prerender')) {
+            googletag.pubads().definePassback('/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1', [1, 1]).set("page_url", "gujaratsamachar.com").display();
+        }
+    </script>
+    <!-- Stream In Image 25032020  End -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Start-->
+    <script async src="../../../www.googletagmanager.com/gtag/js@id=UA-38699406-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-38699406-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics End-->
+    <base href="">
+</head>
+
+<body when-scrolled="more()">
+    <main>
+        <div class="">
+            <div ui-view></div>
+        </div>
+    </main>
+
+
+    <!-- angular libs start -->
+    <script type="text/javascript" src="../../src/mainLibs.min.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../src/libs.min.js@v.0.0.90"></script>
+
+    <script type="text/javascript"
+        src='../../bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js@v.0.0.90'></script>
+    <script type="text/javascript" src="../js/angular-masonry.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/home/home.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/articleDetails/articleDetails.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/articleList/articleList.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/magazine/magazine.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/slideShow/slideShow.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/videoGallery/videoGallary.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/photoGallery/photoGallary.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/metaTag/metaTag.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/sharePdfLink/sharePdfLink.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/sitemap/sitemap.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/sections/sections.module.js@v.0.0.90"></script>
+    <script type="text/javascript" src="../../modules/main/classifieds/classified.module.js@v.0.0.90"></script>
+
+    <!-- angular libs end -->
+    <script src="../../src/app.min.js@v.0.0.90"></script>
+
+</body>
+
+</html>

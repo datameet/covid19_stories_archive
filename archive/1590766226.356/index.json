@@ -1,0 +1,194 @@
+{
+    "title": "Youth commits suicide due to lockdown in Jajpur of Odisha",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.356",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 25,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779944",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:29.896458",
+                "start_ts": "2020-05-29 19:19:04.866315",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:40.079162",
+                "start_ts": "2020-05-29 19:19:37.627890",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=kalingatv.com"
+                ],
+                "end_ts": "2020-05-29 19:19:04.864880",
+                "start_ts": "2020-05-29 19:19:02.135426",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:32.383041",
+                "start_ts": "2020-05-29 19:19:29.896599",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:37.627140",
+                "start_ts": "2020-05-29 19:19:34.903099",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:42.777466",
+                "start_ts": "2020-05-29 19:19:40.079411",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "https://web.archive.org/web/20200529191941/https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+                ],
+                "end_ts": "2020-05-29 19:19:34.902852",
+                "start_ts": "2020-05-29 19:19:32.383290",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:19:02.135065",
+                "start_ts": "2020-05-29 19:19:00.890688",
+                "pwd": "/data/archive/1590766226.356",
+                "output": "Youth commits suicide due to lockdown in Jajpur of Odisha"
+            }
+        ]
+    },
+    "updated": "1590789384.108127",
+    "tags": "",
+    "url": "https://kalingatv.com/state/youth-commits-suicide-over-job-loss-due-to-lockdown-in-odishas-jajpur/"
+}

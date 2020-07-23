@@ -1,0 +1,74 @@
+.highlight-div-telugu {
+    background-color: #d4d0d0;
+    color: #fff;
+    float: right;
+    width: 30%;
+    margin-left: 0%;
+    max-height: 340px;
+    min-height: 340px;
+}
+
+
+.article-details-img-area-telugu {
+    width: 70%;
+    float: left;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+
+.highlight-block-telugu {
+    position: absolute;
+    background-color: #fcdc05;
+    color: #212629;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 15px 2px 15px;
+    font-family: 'Roboto', sans-serif;
+    left: 0;
+}
+
+.post-summary-telugu {
+    margin-top: 0px;
+    padding: 10px !important;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 40px !important;
+}
+
+.post-summary-telugu p {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 0px;
+}
+.highlight-div-telugu-mobile {
+  display:none;
+}
+@media (max-width:767px) {
+  .highlight-block-telugu {
+    left:initial !important;
+  }
+  .highlight-div-telugu {
+    display:none ;
+  }
+  .highlight-div-telugu-mobile {
+    display:block;
+  }
+  .article-details-img-area-telugu {
+    margin-top:10px;
+  }
+  .highlight-div-telugu-mobile,
+  .article-details-img-area-telugu {
+    width: 100% !important;
+  }
+  .highlight-div-telugu {
+    background-color: #1f4b8c;
+  }
+
+  .post-summary-telugu p {
+    color: #fff !important;
+    font-size: 15px;
+    margin-top: 0px;
+}
+}

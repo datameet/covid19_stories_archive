@@ -1,0 +1,270 @@
+{
+    "title": "\u0932\u0949\u0915\u0921\u093e\u090a\u0928\u092e\u0927\u094d\u092f\u0947 \u0915\u093e\u092e \u0928 \u092e\u093f\u0933\u093e\u0932\u094d\u092f\u093e\u0928\u0947 \u0915\u0941\u091f\u0941\u0902\u092c\u093e\u0935\u0930 \u0909\u092a\u093e\u0938\u092e\u093e\u0930\u0940\u091a\u0940 \u0935\u0947\u0933, \u092a\u0941\u0923\u094d\u092f\u093e\u0924 \u092c\u0938 \u091a\u093e\u0932\u0915\u093e\u091a\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e | Suicide due to no job amid lockdown in Pune",
+    "url": "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html",
+    "timestamp": "1590766226.6",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766614",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:37:54.614554",
+                "start_ts": "2020-05-29 15:36:54.605405",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:38:08.543062",
+                "start_ts": "2020-05-29 15:38:06.472318",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.tv9marathi.com"
+                ],
+                "end_ts": "2020-05-29 15:36:54.602857",
+                "start_ts": "2020-05-29 15:36:53.023777",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:37:58.242865",
+                "start_ts": "2020-05-29 15:37:54.615051",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 17:29:40.717416",
+                "start_ts": "2020-05-29 17:29:36.860641",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 21:35:02.536567",
+                "start_ts": "2020-05-29 21:34:57.944302",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:38:06.471422",
+                "start_ts": "2020-05-29 15:38:02.844354",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:38:10.959702",
+                "start_ts": "2020-05-29 15:38:08.543396",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "https://web.archive.org/web/20200529153810/https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 15:38:02.843091",
+                "start_ts": "2020-05-29 15:37:58.243782",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 17:29:44.121124",
+                "start_ts": "2020-05-29 17:29:40.718336",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html"
+                ],
+                "end_ts": "2020-05-29 21:35:06.397638",
+                "start_ts": "2020-05-29 21:35:02.537617",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://www.tv9marathi.com/maharashtra/school-bus-driver-from-latur-suicide-in-pune-due-to-lack-of-job-amid-lockdown-216313.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 15:36:53.023567",
+                "start_ts": "2020-05-29 15:36:51.227820",
+                "pwd": "/data/archive/1590766226.6",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u090a\u0928\u092e\u0927\u094d\u092f\u0947 \u0915\u093e\u092e \u0928 \u092e\u093f\u0933\u093e\u0932\u094d\u092f\u093e\u0928\u0947 \u0915\u0941\u091f\u0941\u0902\u092c\u093e\u0935\u0930 \u0909\u092a\u093e\u0938\u092e\u093e\u0930\u0940\u091a\u0940 \u0935\u0947\u0933, \u092a\u0941\u0923\u094d\u092f\u093e\u0924 \u092c\u0938 \u091a\u093e\u0932\u0915\u093e\u091a\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e | Suicide due to no job amid lockdown in Pune"
+            }
+        ]
+    },
+    "updated": "1590788106.403355",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

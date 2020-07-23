@@ -1,0 +1,125 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.classified', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination',
+            'ui.bootstrap',
+            'wu.masonry'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$locationProvider', '$stateProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $locationProvider, $stateProvider) {
+        //$locationProvider.html5Mode(true).hashPrefix('!');html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+
+        $urlRouterProvider.otherwise('/');
+
+        var version = GENERAL_CONFIG.file_version;
+
+        $stateProvider
+            .state('root.gsclassifieds', {
+                url: '/classified',
+                params: {
+                    stateCalling: null
+                },
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/classifieds/classifiedsList/classifiedsList.view.html',
+                        controller: 'ClassifiedsListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version,
+                                // "bower_components/masonry-layout/masonry.js" + version,
+                                "assets/js/masonry.js" + version,
+                                "assets/js/masonry-img-loaded.js" + version,
+                                // "assets/js/angular-masonry.js" + version,
+                                "modules/main/classifieds/classifiedsList/script.js" + version,
+                                "bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js" + version,
+                                "assets/js/bootstrap.min.js" + version,
+                                "modules/main/classifieds/classifiedsList/classifiedsList.controller.js" + version,
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Classified Listing Page | ' }
+            })
+
+        if (navigator.userAgent.toString().search('Android') >= 0 || navigator.userAgent.toString().search('iPhone') >= 0) {
+            $stateProvider.state("root.classifiedDetailsMobileView", {
+                url: '/classified/advertisement/:advID',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/classifieds/classifiedDetails/classifiedDetails.view.html',
+                        controller: 'ClassifiedDetailsMobileController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/classifieds/classifiedDetails/classifiedDetailsMobile.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version,
+                                "assets/js/bootstrap.min.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Classified Details Page | ' }
+            })
+        } else {
+            $stateProvider.state("classifiedDetails", {
+                parent: 'root.gsclassifieds',
+                url: '/advertisement/:advID',
+                onEnter: function ($stateParams, $state, $uibModal) {
+                    $uibModal.open({
+                        templateUrl: "modules/main/classifieds/classifiedDetails/classifiedDetails.view.html",
+                        resolve: {},
+                        controller: 'ClassifiedDetailsController  as vm',
+                        size: 'lg',
+                        windowClass: 'details-popup classified-modal-main classified-modal-small',
+                        backdrop: 'static',
+                        keyboard: false
+                    })
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/classifieds/classifiedDetails/classifiedDetails.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version,
+                                "assets/js/bootstrap.min.js" + version
+                            ]
+                        });
+                    }]
+                }
+            })
+        }
+    }
+
+    function run($state, $rootScope, $stateParams, $transitions) {
+        /* Show loader on page load(On html, controller files load) */
+        $rootScope.loading = true;
+        $rootScope.advID = $stateParams.advID;
+        $transitions.onSuccess({}, ($transition) => {
+            const params = $transition.params();
+            $rootScope.advID = params['advID'];
+            // console.log($rootScope.advID,'$rootScope.advID')
+        });
+
+
+        //Redirect to login if not authenticated before any transition       
+        //$trace.enable('TRANSITION'); /* Enable transition tracing to print transition information to the console */
+        $state.defaultErrorHandler(function () {
+            //Default error handler fired!
+            $state.go('root.404');
+        });
+    };
+})();

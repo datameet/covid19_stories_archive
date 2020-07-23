@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" itemscope="" itemtype="http://schema.org/WebPage" lang="en" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab"><script src="https://js-agent.newrelic.com/nr-1169.min.js"></script><script src="//www.googletagmanager.com/gtm.js?id=GTM-MQ4Z7GV" type="text/javascript" async=""></script><script async="" src="https://sb.scorecardresearch.com/beacon.js"></script><script src="https://connect.facebook.net/signals/config/1727482514152393?v=2.9.18&amp;r=stable" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//cdn.taboola.com/libtrc/thenewsminute/loader.js" id="tb_loader_script"></script><script id="ns_script_dc" data-key="a00008a0-7599-444b-b9a0-b02c18088986" data-e="5" src="//includemodal.global.ssl.fastly.net/sp.js" type="text/javascript"></script><!--[if IE]><![endif]--><script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({article:'auto'});
+!function (e, f, u, i) {
+if (!document.getElementById(i)){
+e.async = 1;
+e.src = u;
+e.id = i;
+f.parentNode.insertBefore(e, f);
+}
+}(document.createElement('script'),
+document.getElementsByTagName('script')[0],
+'//cdn.taboola.com/libtrc/thenewsminute/loader.js',
+'tb_loader_script');
+if(window.performance && typeof window.performance.mark == 'function')
+{window.performance.mark('tbl_ic');}
+</script><script> window._izq = window._izq || []; window._izq.push(["init"]); </script><script src="https://cdn.izooto.com/scripts/399df240c7bf3b6cca534c668fbc9198cd08dda6.js" async=""></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQICUFVaDRACXFdVDgcFUA==",licenseKey:"6b99e88210",applicationID:"28679626"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script><link rel="shortcut icon" href="https://www.thenewsminute.com/sites/default/files/fevicon_1_0.png" type="image/png"><meta property="fb:pages" content="1375307999395597"><meta name="atdlayout" content="article"><script>window._izq.push(["userProfile",{"add":{ "Category":["Coronavirus"]} }]);</script><link rel="amphtml" href="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977?amp"><meta name="dailymotion-domain-verification" content="dm1vku8o7z7okd9vr"><meta name="description" content="Ever since the Tablighi Jamaat congregation in New Delhi resulted in a rise of COVID-19 cases in the country, several Muslims have been heckled and harassed in Karnataka. On Monday, residents of a village in Bagalakote humiliated members of the Muslim community, who had gone to the banks of the Krishna river to fish.&nbsp; A video of the incident went viral on social media on"><meta name="keywords" content="Bagalkot, Muslim men heckled, Muslim community, Muslim communtiy harassed, Coronavirus, Corona virus, COVID 19, COVID-19, Coronavirus india, India, Tamil nadu, Kerala, Karnataka, Andhra, Andhra pradesh, Telangana, Telengana, section 144, Janata curfew, Janta curfew, Janatha, curfew, Quarantine, Isolation, Self quarantine, Total cases, Dublin patient, Dublin, Google techie, Google, Bengaluru, Bangalore, India patient 31, Pinarayi vijayan, Edappadi palaniswami, Eps, Kcr, Jagan mohan reddy, Bjp, Modi, Modi speech, Tnm coronavirus, TNM, tnm live tracker, Thenewsminute, Update, Screening, Testing, Vijayabaskar, Icmr, Work from home, Social distancing, Andhra corona, Tn corona, Kerala corona, Hyderabad, Chennai"><meta name="robots" content="follow, index"><meta name="standout" content="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"><meta name="rating" content="general"><meta name="referrer" content="origin"><meta name="generator" content="Drupal 7 (https://www.drupal.org)"><link rel="canonical" href="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"><link rel="shortlink" href="https://www.thenewsminute.com/node/121977"><meta name="original-source" content="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"><meta property="og:site_name" content="The News Minute"><meta property="og:type" content="article"><meta property="og:url" content="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"><meta property="og:title" content="COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka"><meta property="og:description" content="Ever since the Tablighi Jamaat congregation in New Delhi resulted in a rise of COVID-19 cases in the country, several Muslims have been heckled and harassed in Karnataka. On Monday, residents of a village in Bagalakote humiliated members of the Muslim community, who had gone to the banks of the Krishna river to fish.&nbsp; A video of the incident went viral on social media on Monday. Around 10 to 15 residents of Bidari village in Rabkavi Banahatti taluk in Bagalakote can be seen holding wooden sticks and iron rods, while heckling three Muslim men.&nbsp;"><meta property="og:updated_time" content="2020-04-06T19:15:06+05:30"><meta property="og:image" content="https://www.thenewsminute.com/sites/default/files/Muslim-men-heckled%2C-harassed.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:url" content="https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"><meta name="twitter:title" content="COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka"><meta name="twitter:image" content="https://www.thenewsminute.com/sites/default/files/Muslim-men-heckled%2C-harassed.jpg"><meta property="article:published_time" content="2020-04-06T15:56:58+05:30"><meta property="article:modified_time" content="2020-04-06T19:15:06+05:30"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"><title>COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka | The News Minute</title><link rel="dns-prefetch" href="//googleads.g.doubleclick.net"><link rel="dns-prefetch" href="//www.google.com"><link rel="dns-prefetch" href="//www.google.co.in"><link rel="dns-prefetch" href="//securepubads.g.doubleclick.net"><link rel="dns-prefetch" href="//cdn.taboola.com"><link rel="dns-prefetch" href="//www.facebook.com"><link rel="dns-prefetch" href="//pagead2.googlesyndication.com"><link rel="dns-prefetch" href="//d3js.org"><link type="text/css" rel="stylesheet" href="https://www.thenewsminute.com/sites/default/files/advagg_css/css__xcY6R8T5Ah2JqEhbRlTm7LuBupRMTAFQUuUv_gpV630__ossw5-x-f-PpCuskxXzK2SvL-PWeiQNUcL1wHdbkqb8__hLir7mC_1zkkpeu0wckzEOECH912ZsK47XVPbfUTTrA.css" media="all"> <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="https://www.thenewsminute.com/sites/all/libraries/respondjs/respond.min.js?qb32p6"></script><script type="text/javascript" src="https://www.thenewsminute.com/sites/default/files/advagg_js/js__c1-x0u4sE-NPDnjcyvKG44RXjYtPhjgW-u2HHyOaAfU__dK5klwjO3Ib6Y51Bd2Nz2OiiE-MaN2usEYK6aSE5rMQ__hLir7mC_1zkkpeu0wckzEOECH912ZsK47XVPbfUTTrA.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-48350389-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "dimension4", "No");var ___t =window.location.pathname;
+if( ___t.indexOf('/article/') != 0 ){ga("send", "pageview");}
+//--><!]]>
+</script><script type="text/javascript" src="https://www.thenewsminute.com/sites/default/files/advagg_js/js__IZSqWWkKkjBbbjV8ghSbudapyZ91iIgvA4J9kvnyjzc__ncPF9pQ3CXHtDfMMMEr7su5ArOv8QoU3UCEXktdHejs__hLir7mC_1zkkpeu0wckzEOECH912ZsK47XVPbfUTTrA.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;window.twttr=(function(r,w,i){var e,n=r.getElementsByTagName(w)[0],t=window.twttr||{};if(r.getElementById(i))return t;e=r.createElement(w);e.id=i;e.src='https://platform.twitter.com/widgets.js';n.parentNode.insertBefore(e,n);t._e=[];t.ready=function(e){t._e.push(e)};return t}(document,'script','twitter-wjs'));
+//--><!]]>
+</script><script type="text/javascript" src="https://www.thenewsminute.com/sites/default/files/advagg_js/js__IEsLereoI3UD7Cxdn39k7g0FvtWeF7QbI89D7C90phM__d8xV_lKcM0evrCFwGDIBUBYy0EzXh9KKBkdCrY-nekg__hLir7mC_1zkkpeu0wckzEOECH912ZsK47XVPbfUTTrA.js"></script><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"tnm","theme_token":"Jd1gH1Ecoz3Zwtsdvgwlno45ek1Zsd9sBHA1YZYmeD0","jquery_version":"1.10","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/responsive_menus\/styles\/responsive_menus_simple\/css\/responsive_menus_simple.css":1,"sites\/all\/themes\/newsminute\/css\/jquery.bxslider.css":1,"sites\/all\/modules\/custom\/tnm_custom\/css\/tnm_admin_styles.css":1,"sites\/all\/themes\/tnm\/styles\/slick.css":1,"sites\/all\/themes\/tnm\/dist\/styles\/styles.min.css":1,"sites\/all\/themes\/tnm\/styles\/sticky_scroll.css":1},"js":{"sites\/all\/libraries\/respondjs\/respond.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/tnm_custom\/js\/tnmCustom.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/responsive_menus\/styles\/responsive_menus_simple\/js\/responsive_menus_simple.js":1,"sites\/all\/modules\/views_ajax_get\/views_ajax_get.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/custom\/views_infinite_cached_scroll\/views-infinite-cached-scroll.js":1,"sites\/all\/modules\/views_load_more\/views_load_more.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/themes\/newsminute\/js\/jquery.bxslider.min.js":1,"sites\/all\/themes\/tnm\/js\/jquery.min.js":1,"sites\/all\/themes\/tnm\/js\/jquery-migrate.min.js":1,"sites\/all\/themes\/tnm\/js\/slick.min.js":1,"sites\/all\/themes\/tnm\/dist\/scripts\/scripts.min.js":1,"sites\/all\/themes\/tnm\/js\/search.js":1,"sites\/all\/themes\/tnm\/js\/menu_state_click.js":1,"sites\/all\/themes\/tnm\/js\/scrolltop.js":1}},"tnm_custom":{"ads_configuration":"{\u0022left_vertical_ads_block\u0022:{\u0022desktop\u0022:1,\u0022mobile\u0022:\u0022\u0022,\u0022category\u0022:{\u0022345\u0022:\u0022345\u0022,\u0022516\u0022:\u0022516\u0022,\u0022452\u0022:\u0022452\u0022,\u002212\u0022:\u002212\u0022,\u0022409\u0022:\u0022409\u0022,\u002210\u0022:\u002210\u0022,\u002219\u0022:\u002219\u0022,\u0022162\u0022:\u0022162\u0022,\u0022288\u0022:\u0022288\u0022,\u0022159\u0022:\u0022159\u0022,\u0022160\u0022:\u0022160\u0022,\u0022158\u0022:\u0022158\u0022,\u0022161\u0022:\u0022161\u0022,\u0022140\u0022:\u0022140\u0022},\u0022region\u0022:{\u002250\u0022:\u002250\u0022,\u002246\u0022:\u002246\u0022,\u002247\u0022:\u002247\u0022,\u002249\u0022:\u002249\u0022,\u002248\u0022:\u002248\u0022,\u00222\u0022:\u00222\u0022}},\u0022right_vertical_ads_block\u0022:{\u0022desktop\u0022:1,\u0022mobile\u0022:0,\u0022category\u0022:{\u0022345\u0022:\u0022345\u0022,\u0022516\u0022:\u0022516\u0022,\u0022452\u0022:\u0022452\u0022,\u002212\u0022:\u002212\u0022,\u0022409\u0022:\u0022409\u0022,\u002210\u0022:\u002210\u0022,\u002219\u0022:\u002219\u0022,\u0022162\u0022:\u0022162\u0022,\u0022288\u0022:\u0022288\u0022,\u002220\u0022:\u002220\u0022,\u0022159\u0022:\u0022159\u0022,\u0022160\u0022:\u0022160\u0022,\u0022158\u0022:\u0022158\u0022,\u0022161\u0022:\u0022161\u0022,\u0022140\u0022:\u0022140\u0022},\u0022region\u0022:{\u002250\u0022:\u002250\u0022,\u002246\u0022:\u002246\u0022,\u002247\u0022:\u002247\u0022,\u002249\u0022:\u002249\u0022,\u002248\u0022:\u002248\u0022,\u00222\u0022:\u00222\u0022}},\u0022top_horizontal_ads_block\u0022:{\u0022desktop\u0022:1,\u0022mobile\u0022:0,\u0022category\u0022:{\u0022345\u0022:\u0022345\u0022,\u0022516\u0022:\u0022516\u0022,\u0022452\u0022:\u0022452\u0022,\u002212\u0022:\u002212\u0022,\u0022409\u0022:\u0022409\u0022,\u002210\u0022:\u002210\u0022,\u002219\u0022:\u002219\u0022,\u0022162\u0022:\u0022162\u0022,\u0022288\u0022:\u0022288\u0022,\u0022159\u0022:\u0022159\u0022,\u0022160\u0022:\u0022160\u0022,\u0022158\u0022:\u0022158\u0022,\u0022161\u0022:\u0022161\u0022,\u0022140\u0022:\u0022140\u0022},\u0022region\u0022:{\u002250\u0022:\u002250\u0022,\u002246\u0022:\u002246\u0022,\u002247\u0022:\u002247\u0022,\u002249\u0022:\u002249\u0022,\u002248\u0022:\u002248\u0022,\u00222\u0022:\u00222\u0022}},\u0022inline_horizontal_ads_block\u0022:{\u0022desktop\u0022:1,\u0022mobile\u0022:1,\u0022category\u0022:{\u0022345\u0022:\u0022345\u0022,\u0022516\u0022:\u0022516\u0022,\u0022452\u0022:\u0022452\u0022,\u002212\u0022:\u002212\u0022,\u0022409\u0022:\u0022409\u0022,\u002210\u0022:\u002210\u0022,\u002219\u0022:\u002219\u0022,\u0022162\u0022:\u0022162\u0022,\u0022288\u0022:\u0022288\u0022,\u0022159\u0022:\u0022159\u0022,\u0022160\u0022:\u0022160\u0022,\u0022158\u0022:\u0022158\u0022,\u0022161\u0022:\u0022161\u0022,\u0022140\u0022:\u0022140\u0022},\u0022region\u0022:{\u002250\u0022:\u002250\u0022,\u002246\u0022:\u002246\u0022,\u002247\u0022:\u002247\u0022,\u002249\u0022:\u002249\u0022,\u002248\u0022:\u002248\u0022,\u00222\u0022:\u00222\u0022}},\u0022bottom_horizontal_ads_block\u0022:{\u0022desktop\u0022:1,\u0022mobile\u0022:1,\u0022category\u0022:{\u0022345\u0022:\u0022345\u0022,\u0022516\u0022:\u0022516\u0022,\u0022452\u0022:\u0022452\u0022,\u002212\u0022:\u002212\u0022,\u0022409\u0022:\u0022409\u0022,\u002210\u0022:\u002210\u0022,\u002219\u0022:\u002219\u0022,\u0022162\u0022:\u0022162\u0022,\u0022288\u0022:\u0022288\u0022,\u002220\u0022:\u002220\u0022,\u0022159\u0022:\u0022159\u0022,\u0022160\u0022:\u0022160\u0022,\u0022158\u0022:\u0022158\u0022,\u0022161\u0022:\u0022161\u0022,\u0022140\u0022:\u0022140\u0022},\u0022region\u0022:{\u002250\u0022:\u002250\u0022,\u002246\u0022:\u002246\u0022,\u002247\u0022:\u002247\u0022,\u002249\u0022:\u002249\u0022,\u002248\u0022:\u002248\u0022,\u00222\u0022:\u00222\u0022}}}"},"marquee":{"base_url":"https:\/\/www.thenewsminute.com","nid":"121977","type":"category","value":"897","type_value":{"tid":"897","vid":"3","name":"Coronavirus","description":"","format":"full_html","weight":"0","uuid":"e072a231-be05-4ed7-acca-886738392d9f","vocabulary_machine_name":"news_category","rdf_mapping":{"rdftype":["skos:Concept"],"name":{"predicates":["rdfs:label","skos:prefLabel"]},"description":{"predicates":["skos:definition"]},"vid":{"predicates":["skos:inScheme"],"type":"rel"},"parent":{"predicates":["skos:broader"],"type":"rel"}},"path":{"pathauto":"0"}},"marquee_node":"0","created":"1586168818"},"viewsAjaxGet":["home_page_latest_article_second_block","home_page_latest_article_first_block","homepage_more_from_tnm"],"views_infinite_cached_scroll":{"img_path":"\/sites\/all\/modules\/custom\/views_infinite_cached_scroll\/images\/ajax-loader.gif","views":{"home_page_latest_article_second_block-block":{"view_name":"home_page_latest_article_second_block","view_display_id":"block","view_args":null,"view_dom_id":"77e69ce0c2f9fb022509108c01a55a24","view_path":null,"view_base_path":null}}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:77e69ce0c2f9fb022509108c01a55a24":{"view_name":"home_page_latest_article_second_block","view_display_id":"block","view_args":"","view_path":"node\/34297","view_base_path":null,"view_dom_id":"77e69ce0c2f9fb022509108c01a55a24","pager_element":0},"views_dom_id:95f24177bd924e134a4a88ff1e2b6a24":{"view_name":"home_page_latest_article_first_block","view_display_id":"block","view_args":"","view_path":"node\/120173","view_base_path":null,"view_dom_id":"95f24177bd924e134a4a88ff1e2b6a24","pager_element":0},"views_dom_id:e1b69935dd290bbd26ee06421bd604c9":{"view_name":"inner_page_most_popular","view_display_id":"block_1","view_args":"","view_path":"node\/20544","view_base_path":null,"view_dom_id":"e1b69935dd290bbd26ee06421bd604c9","pager_element":0},"views_dom_id:058865880baa60c2de0342485b59073b":{"view_name":"single_article_page","view_display_id":"block_3","view_args":"no result","view_path":"node\/49624","view_base_path":null,"view_dom_id":"058865880baa60c2de0342485b59073b","pager_element":0},"views_dom_id:eb250311af2d5c872fbf2e2d8ffc9ddc":{"view_name":"homepage_special_edition_block","view_display_id":"block","view_args":"","view_path":"node\/121977","view_base_path":null,"view_dom_id":"eb250311af2d5c872fbf2e2d8ffc9ddc","pager_element":0},"views_dom_id:1d20a858f2d59e963af8712d299f34dc":{"view_name":"homepage_states","view_display_id":"block","view_args":"","view_path":"node\/90453","view_base_path":null,"view_dom_id":"1d20a858f2d59e963af8712d299f34dc","pager_element":0},"views_dom_id:bff57b4dd8f6d2a9f4311838c6de5c34":{"view_name":"delve","view_display_id":"block","view_args":"","view_path":"node\/90453","view_base_path":null,"view_dom_id":"bff57b4dd8f6d2a9f4311838c6de5c34","pager_element":0},"views_dom_id:58ff0a8db8024c31fcb83b3a13f0940b":{"view_name":"delve","view_display_id":"block_1","view_args":"","view_path":"node\/124436","view_base_path":null,"view_dom_id":"58ff0a8db8024c31fcb83b3a13f0940b","pager_element":0},"views_dom_id:3fa9fac76fa1978a06c52a7dbed49433":{"view_name":"videos","view_display_id":"block","view_args":"","view_path":"node\/121977","view_base_path":null,"view_dom_id":"3fa9fac76fa1978a06c52a7dbed49433","pager_element":0},"views_dom_id:a12be007595e22a7208570a2ccc2e190":{"view_name":"home_flixs","view_display_id":"block","view_args":"","view_path":"node\/90453","view_base_path":null,"view_dom_id":"a12be007595e22a7208570a2ccc2e190","pager_element":0},"views_dom_id:0038f57cfc0e6c589c784221f9691588":{"view_name":"home_atom","view_display_id":"block_1","view_args":"","view_path":"node\/125542","view_base_path":null,"view_dom_id":"0038f57cfc0e6c589c784221f9691588","pager_element":0},"views_dom_id:517241cfb5ed1a22b0ac7dc0998dc756":{"view_name":"home_atom","view_display_id":"block","view_args":"","view_path":"node\/124436","view_base_path":null,"view_dom_id":"517241cfb5ed1a22b0ac7dc0998dc756","pager_element":0},"views_dom_id:657bafeeaa60c34df6d333b2ea62d103":{"view_name":"home_money","view_display_id":"block_1","view_args":"","view_path":"node\/123346","view_base_path":null,"view_dom_id":"657bafeeaa60c34df6d333b2ea62d103","pager_element":0},"views_dom_id:2106442ff538c049c48fe3b95f34a215":{"view_name":"home_money","view_display_id":"block","view_args":"","view_path":"node\/123346","view_base_path":null,"view_dom_id":"2106442ff538c049c48fe3b95f34a215","pager_element":0},"views_dom_id:23af09eca6d191eefcc04bc0091be1fe":{"view_name":"homepage_more_from_tnm","view_display_id":"block_1","view_args":"","view_path":"node\/125542","view_base_path":null,"view_dom_id":"23af09eca6d191eefcc04bc0091be1fe","pager_element":0},"views_dom_id:297a67337f79db5ce5bbc222a4e8def8":{"view_name":"homepage_more_from_tnm","view_display_id":"block","view_args":"","view_path":"node\/90453","view_base_path":null,"view_dom_id":"297a67337f79db5ce5bbc222a4e8def8","pager_element":0},"views_dom_id:9d591d19ec73c159b9c870ba904419bf":{"view_name":"homepage_more_from_tnm","view_display_id":"block_2","view_args":"","view_path":"node\/125542","view_base_path":null,"view_dom_id":"9d591d19ec73c159b9c870ba904419bf","pager_element":0},"views_dom_id:aef242c6dc6c4fbc8f2081702f2b901b":{"view_name":"brand","view_display_id":"brands","view_args":"","view_path":"node\/121977","view_base_path":null,"view_dom_id":"aef242c6dc6c4fbc8f2081702f2b901b","pager_element":0}}},"urlIsAjaxTrusted":{"\/views\/ajax":true},"responsive_menus":[{"toggler_text":"\u2630 Menu","selectors":["#block-system-main-menu"],"media_size":"768","absolute":true,"remove_attributes":true,"responsive_menus_style":"responsive_menus_simple"}],"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"infinite_scroll":{"base_url":"https:\/\/www.thenewsminute.com","ref_url":"","tnm_next_nid":[]}});
+//--><!]]>
+</script><script>
+! function(f, b, e, v, n, t, s) {
+if (f.fbq) return;
+n = f.fbq = function() {
+n.callMethod ?
+n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+};
+if (!f._fbq) f._fbq = n;
+n.push = n;
+n.loaded = !0;
+n.version = '2.0';
+n.queue = [];
+t = b.createElement(e);
+t.async = !0;
+t.src = v;
+s = b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t, s)
+}(window,
+document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1727482514152393');
+fbq('track', "PageView");
+</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1727482514152393&ev=PageView&noscript=1" /></noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto&display=swap" rel="stylesheet" type="text/css" /> </noscript><script type="text/javascript">
+var _sf_startpt = (new Date()).getTime()
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"url": "https://www.thenewsminute.com",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.thenewsminute.com/custom-search?keys={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name": "The News Minute",
+"url": "https://www.thenewsminute.com",
+"logo": "https://www.thenewsminute.com/sites/default/files/styles/home_page_articles/public/logo_0.png?itok=hyLDcfjs",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "No 6, State Bank of India Rd, Shanthala Nagar",
+"addressLocality": "Ashok Nagar, Bengaluru, Karnataka",
+"addressRegion": "India",
+"postalCode": "560001",
+"Telephone": "+91-080-41648158"
+},
+"sameAs": [
+"https://www.facebook.com/TheNewsMinute",
+"https://twitter.com/thenewsminute",
+"https://plus.google.com/+Thenewsminute",
+"https://www.youtube.com/channel/UCspQie3i29iIFbCgfGisO9Q"
+]
+}
+</script><script>
+var _comscore = _comscore || [];
+_comscore.push({
+c1: "2",
+c2: "20519288"
+});
+(function() {
+var s = document.createElement("script"),
+el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+</script><noscript> <img src="https://sb.scorecardresearch.com/p?c1=2&c2=20519288&cv=2.0&cj=1" /> </noscript><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.4b4530aef3cb5159868348e8a492de60.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/tweet.d9fbeaac3a8ebd6a63dcb70064957d89.js"></script></head><body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-121977 node-type-news i18n-en responsive-menus-load-processed" style=""><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQ4Z7GV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MQ4Z7GV');</script><div id="skip-link"> <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div> <header><div class="row no-gutters"><div class="col-lg-3 col-8 logo-wrap"><div class="ham-icon"> <i class="fa fa-bars"></i></div><div class="logo"> <a href="https://www.thenewsminute.com"><img alt="TheNewsMinute Logo" title="TheNewsMinute" src="/sites/all/themes/tnm/logo_0.png"></a></div> <nav class="primary-nav"><ul><li class="parent"><a href="/section/News">NEWS</a></li><li class="parent has-child"><div class="parent-label">STATES</div><ul class="child-nav"><li><a href="/section/Andhra Pradesh">ANDHRA</a></li><li><a href="/section/Karnataka">KARNATAKA</a></li><li><a href="/section/Kerala">KERALA</a></li><li><a href="/section/Tamil Nadu">TAMIL NADU</a></li><li><a href="/section/Telangana">TELANGANA</a></li></ul></li><li class="parent"><a href="/section/Features">FEATURES</a></li><li class="parent"><a href="/section/Flix">FLIX</a></li><li class="parent"><a href="/section/Voices">VOICES</a></li><li class="parent"><a href="/section/Atom">ATOM</a></li><li class="parent"><a href="/section/delve">DELVE</a></li><li class="parent"><a href="/section/Health">HEALTH</a></li><li class="parent"><a href="/section/Money">MONEY</a></li><li class="parent"><a href="/section/coronavirus">Coronavirus</a></li></ul> </nav></div><div class="col-lg-7 tnm-advt-block header-advt"><style>
+.rw_top_sticky {
+left: 0;
+top: 0;
+width: 100%;
+text-align: center;
+z-index: 999999;
+padding: 5px;
+}
+</style><div class="rw_top_sticky"><div id="div-gpt-ad-1585037547616-0"></div></div></div><div class="col-lg-2 col-4 menu-right-wrap"><div class="social-media-plugin"> <a target="_blank" href="https://www.facebook.com/TheNewsMinute"><i class="fa fa-facebook"></i></a> <a target="_blank" href="https://twitter.com/thenewsminute"><i class="fa fa-twitter"></i></a> <a target="_blank" href="https://www.instagram.com/thenewsminute/"><i class="fa fa-instagram"></i></a> <a target="_blank" href="https://www.youtube.com/channel/UCspQie3i29iIFbCgfGisO9Q"><i class="fa fa-youtube"></i></a></div><div class="search-form"> <i class="fa fa-search"></i><div class="search-form-wrap"><form class="row no-gutters"><div class="col-10 col-md-11"> <input type="text" value="" id="search-value" placeholder="Enter keyword"></div><div class="col-2 col-md-1"><button id="search-submit" class="search"><i class="fa fa-search"></i></button></div></form></div></div><div class="special-header"> <a href="javascript:void(0)" id="CoronaModal">COVID <span>TRACKER</span></a></div></div></div> </header><main class="article-page"><div class="region region-content"><div id="block-system-main" class="block block-system"><div class="content"><div id="div-gpt-ad-1583914215892-0" style="width: 1px; height: 1px;"></div><div class="mobile-top-header-ad d-block d-md-none"><div id="div-gpt-ad-1585548186183-0"></div></div><script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@id": "https://www.thenewsminute.com",
+"name": "The News Minute",
+"image": "https://www.thenewsminute.com/sites/default/files/styles/home_page_articles/public/logo_0.png?itok=hyLDcfjs"
+}
+},{
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@id": "https://www.thenewsminute.com/section/Karnataka",
+"name": "Karnataka"
+}
+},{
+"@type": "ListItem",
+"position": 3,
+"item": {
+"@id": "https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977",
+"name": "COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka",
+"image": "https://www.thenewsminute.com/sites/default/files/styles/home_page_articles/public/Muslim-men-heckled%2C-harassed.jpg?itok=C75l3-yX"
+}
+}]
+}
+</script><script type="application/ld+json">
+[
+{
+"@context": "http://schema.org",
+"mainEntityOfPage":{
+"@type":"WebPage",
+"@id": "https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"
+},
+"@type": "NewsArticle",
+"name": "The News Minute | Karnataka",
+"url": "https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977",
+"headline": "COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka",
+"author":[{"@context":"http:\/\/schema.org","@type":"Person","name":"Soumya Chatterjee","url":"https:\/\/www.thenewsminute.com\/author-articles\/Soumya-Chatterjee"},{"@context":"http:\/\/schema.org","@type":"Person","name":"Theja Ram","url":"https:\/\/www.thenewsminute.com\/author-articles\/Theja-Ram"}],
+"description": "On Monday, a video emerged of three Muslim men being heckled by villagers in Bagalakote, accusing the community of spreading coronavirus.",
+"datePublished": "2020-04-06T15:56:58+05:30",
+"dateModified": "2020-04-06T19:15:06+05:30",
+"articleSection": "Coronavirus",
+"articleBody": "Ever since the Tablighi Jamaat congregation in New Delhi resulted in a rise of COVID-19 cases in the country, several Muslims have been heckled and harassed in Karnataka. On Monday, residents of a village in Bagalakote humiliated members of the Muslim community, who had gone to the banks of the Krishna river to fish.&nbsp; A video of the incident went viral on social media on Monday. Around 10 to 15 residents of Bidari village in Rabkavi Banahatti taluk in Bagalakote can be seen holding wooden sticks and iron rods, while heckling three Muslim men.&nbsp; The three men can be seen folding their hands and begging for mercy, while the village residents kick them and shoo them away with the wooden sticks. �Don�t touch them. They are the ones spreading the disease,� one of the men can be heard saying.&nbsp;   One of them makes the men kneel in front of them and apologise for coming outside. �You people (referring to members of the Muslim community) are the ones who are spreading the disease. Why are you coming to our village Do you know how many people have died� one of the men can be heard saying.&nbsp; When TNM contacted the Mudhol Police, under whose jurisdiction the incident occurred, they said that no complaint had been filed due to which an FIR was not registered.&nbsp; Attacks in Belagavi On Sunday night, a mob of men allegedly attacked two mosques in Belagavi district. Two separate cases have been registered in the district in connection with the attacks. Belagavi police say that the mosques were attacked by miscreants as the lights were on at 9 pm.&nbsp; Nine people were arrested by the Yamkanmardi Police. The men allegedly barged into the mosque and heckled the imam, who was cleaning up the space. �These men attacked the mosque and tried to shut it down. They kept saying that the whole country is switching off the lights and lighting candles and that members in the mosque too must follow the same. They have been arrested now,� the Yamkanmardi Police said.&nbsp; Prime Minister Narendra Modi had asked people of the country to shut off their lights for nine minutes at 9 pm on Sunday and light candles instead.&nbsp; Meanwhile, the Sadalaga Police arrested 13 people for allegedly attacking another mosque in the area. The men allegedly barged into the mosque and demanded that the lights be turned off.&nbsp; All 22 men in connection with the two cases have been booked under sections 153A (Acts prejudicial to the maintenance of harmony between different groups), 295A (malicious acts intended to outrage the religious feelings) of the IPC.&nbsp; More incidents in Bengaluru In Bengaluru, more than one incident of activists arranging and delivering food for migrant worker communities being harassed allegedly by BJP RSS activists has come to light.&nbsp;&nbsp; Zeerin, an activist working in Amruthahalli area in north Bengaluru said she was surrounded by more than 20 RSS workers on Saturday evening. �They said �who gave you permission to give food You are a Muslim, you guys mix poison and spit on food before distributing. Have you guys come from Nizamuddin and want to spread the disease to everyone� They also went to meet my landlord and asked him why he rented us a room knowing that we are Muslims. They said �Go to Shivajinagar or RK Hegde Nagar, we don�t need help from Muslims, thank god we have enough�,� she said. She continued, �Then they called the police after arguing with us for two hours and demanded the police arrest us. But the police came and supported us and only said we should maintain social distancing.�&nbsp;&nbsp; In another incident, Roselin Gomes, a volunteer who was supplying food in Devi Nagar, also in north Bengaluru was stopped by BJP activists.&nbsp; �I had put up a video on social media stating that I was going to pick up some food packets from Indira Canteen and these are the things that I want to collect. Then I got a call from Jai Shankar (a BJP worker) saying �why are you picking up food For people like you there is a shortage of food.� So I replied that I am only giving to the needy people and asked them if they can arrange food for them, then I need not move,� she said. Both of them are volunteers of Swaraj Abhiyan, a socio-political organisation founded by psephologist Yogendra Yadav and senior advocate Prashanth Bhushan. At least two other incidents of Swaraj Abhiyan members being harassed came to light on Saturday. Following these incidents, Swaraj Abhiyan leaders from Bengaluru met with senior police officials to complain about the developments. �We went today and met DCP (Deputy Commissioner of Police) North and he was very supportive. In fact, he condemned it and said especially in this time such kind of racial and communal attacks should not take place and people need to help each other,� Zia Nomani, Youth President of the outfit, said. Karnataka Chief Minister BS Yediyurappa has repeatedly said that the disease should not be communalised and had even met Muslim legislators to ensure that those who attended the jamaath declared themselves.&nbsp; #Karnataka CM @BSYBJP says if anybody tries to target Muslims community alleging spread of #coronavirusinindia , he will take strict action, wont tolerate communal targeting. BSY probes his mettle, yet again. #Respect https:t.coueIMk9QlTb � Pooja Prasanna (@PoojaPrasanna4) April 6, 2020",
+"image":{
+"@context": "http://schema.org",
+"@type": "ImageObject",
+"width": "200px",
+"height": "200px",
+"url":"https://www.thenewsminute.com/sites/default/files/styles/home_page_articles/public/Muslim-men-heckled%2C-harassed.jpg?itok=C75l3-yX"
+},
+"publisher":{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name": "The News Minute",
+"logo": {
+"@context": "http://schema.org",
+"@type": "ImageObject",
+"width": "100px",
+"height": "100px",
+"url": "https://www.thenewsminute.com/sites/default/files/styles/home_page_articles/public/logo_0.png?itok=hyLDcfjs"
+},
+"url":"https://www.thenewsminute.com"
+}
+}
+]
+</script><div id="div-gpt-ad-1588590379914-0" style="width: 1px; height: 1px;"></div><article class="left_vertical_ads_block right_vertical_ads_block top_horizontal_show_ads_on_desktop "><div class="view-single-article-page view-id-single_article_page"><div class="views-row views-row-1"><div class="row article news-default"><div class="col-3 tnm-advt-block sidebar-left-advt text-right"><div id="ZYX_160x600_D_AP_LHS"></div><div class="stick-desktop-left"><div id="div-gpt-ad-1585037683276-0"></div></div><style>
+.stick-desktop-left {
+position:fixed;
+top:100px;
+left:30px;
+z-index:999;
+}
+@media(max-width : 1100px){
+.stick-desktop-left{
+display:none;
+}
+}
+</style></div><div class="col-12 col-lg-6 article-wrap offset-lg-3"><div class="mobile-headline-ad-768 d-md-none"></div><div class="article-data partner"></div><div class="views-field views-field-title" data-url="/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977" itemprop="url"><h1 class="article-title">COVID-19: Muslims and Muslim volunteers heckled, harassed in Karnataka</h1></div><p class="article-body views-field views-field-field-blurb-news">On Monday, a video emerged of three Muslim men being heckled by villagers in Bagalakote, accusing the community of spreading coronavirus.</p><div class="article-slider"><div class="views-field views-field-field-inner-page-image"><div class="field-content"></div></div><div class="views-field views-field-field-flickr-image"><div class="field-content"></div></div></div><div class="article-banner article-slider"><div class="views-field views-field-php-4 views-field-nothing-2"><div class="field-content singe-article-image img-wrap"> <img src="https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/Muslim-men-heckled%2C-harassed.jpg?itok=K8I-U76l" title="" alt="COVID-19 Muslims and Muslim volunteers heckled harassed in Karnataka" class="article-main-image"></div></div></div><div class="article-data views-field views-field-nothing title-left"> <span class="label label-black">Coronavirus</span> <span class="label-text" id="ga_field_bread_crumb_news">Coronavirus</span> <span class="time createddate" data-create="1586168818">Monday, April 06, 2020 - 15:56</span></div><div class="share-block-wrap views-field"><div class="share-inline share-links-wrapper"><div class="fb-share"> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.thenewsminute.com%2Farticle%2Fcovid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"> <i class="fa fa-facebook"></i> </a></div><div class="twitter-share"> <a target="_blank" href="https://twitter.com/share?url=https%3A%2F%2Fwww.thenewsminute.com%2Farticle%2Fcovid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977&amp;text=COVID-19%3A+Muslims+and+Muslim+volunteers+heckled%2C+harassed+in+Karnataka"> <i class="fa fa-twitter"></i> </a></div><div class="whatsapp-share"> <a target="_blank" href="whatsapp://send?text=https%3A%2F%2Fwww.thenewsminute.com%2Farticle%2Fcovid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"> <i class="fa fa-whatsapp"></i> </a></div><div class="reddit-share"> <a target="_blank" href="http://reddit.com/submit?url=https%3A%2F%2Fwww.thenewsminute.com%2Farticle%2Fcovid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977&amp;title=COVID-19%3A+Muslims+and+Muslim+volunteers+heckled%2C+harassed+in+Karnataka"> <i class="fa fa-reddit-alien"></i> </a></div><div class="mail-share"> <a target="_blank" href="mailto:?subject=COVID-19%3A Muslims and Muslim volunteers heckled%2C harassed in Karnataka&amp;body=https%3A%2F%2Fwww.thenewsminute.com%2Farticle%2Fcovid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"> <i class="fa fa-envelope"></i> </a></div></div><div class="share-inline-btn-sm"> <i class="fa fa-share-alt"></i></div></div><div class="report-details"> <span class="reported-by"> <a itemprop="name" href="https://www.thenewsminute.com/author-articles/Soumya-Chatterjee">Soumya Chatterjee</a></span> <span class="follow"> <a href="https://twitter.com/CSoumya21"><i class="fa fa-twitter"></i>Follow @CSoumya21</a> </span> <span class="reported-by"> <a itemprop="name" href="https://www.thenewsminute.com/author-articles/Theja-Ram">Theja Ram</a></span> <span class="follow"> <a href="https://twitter.com/thejaram92"><i class="fa fa-twitter"></i>Follow @thejaram92</a> </span></div><div id="div-gpt-ad-1585037094547-0"></div><div class="views-field views-field-body article-content article-body"><p dir="ltr">Ever since the Tablighi Jamaat congregation in New Delhi resulted in a rise of COVID-19 cases in the country, several Muslims have been heckled and harassed in Karnataka. On Monday, residents of a village in Bagalakote humiliated members of the Muslim community, who had gone to the banks of the Krishna river to fish.&nbsp;</p><p>A video of the incident went viral on social media on Monday. Around 10 to 15 residents of Bidari village in Rabkavi Banahatti taluk in Bagalakote can be seen holding wooden sticks and iron rods, while heckling three Muslim men.&nbsp;</p><p>The three men can be seen folding their hands and begging for mercy, while the village residents kick them and shoo them away with the wooden sticks. “Don’t touch them. They are the ones spreading the disease,” one of the men can be heard saying.&nbsp;</p><div id="div-gpt-ad-1585037320732-0"><script>
+// googletag.cmd.push(function() { googletag.display('div-gpt-ad-1585037320732-0'); });
+</script></div><p>One of them makes the men kneel in front of them and apologise for coming outside. “You people (referring to members of the Muslim community) are the ones who are spreading the disease. Why are you coming to our village? Do you know how many people have died?” one of the men can be heard saying.&nbsp;</p><p><div class="fb_post_center videoWrapper"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="433" src="https://www.youtube.com/embed/TfYwhSgC8iM" width="650"></iframe></div></p><p>When TNM contacted the Mudhol Police, under whose jurisdiction the incident occurred, they said that no complaint had been filed due to which an FIR was not registered.&nbsp;</p><p><strong>Attacks in Belagavi</strong></p><p>On Sunday night, a mob of men allegedly attacked two mosques in Belagavi district. Two separate cases have been registered in the district in connection with the attacks. Belagavi police say that the mosques were attacked by miscreants as the lights were on at 9 pm.&nbsp;</p><p>Nine people were arrested by the Yamkanmardi Police. The men allegedly barged into the mosque and heckled the imam, who was cleaning up the space. “These men attacked the mosque and tried to shut it down. They kept saying that the whole country is switching off the lights and lighting candles and that members in the mosque too must follow the same. They have been arrested now,” the Yamkanmardi Police said.&nbsp;</p><p dir="ltr">Prime Minister Narendra Modi had asked people of the country to shut off their lights for nine minutes at 9 pm on Sunday and light candles instead.&nbsp;</p><p>Meanwhile, the Sadalaga Police arrested 13 people for allegedly attacking another mosque in the area. The men allegedly barged into the mosque and demanded that the lights be turned off.&nbsp;</p><p>All 22 men in connection with the two cases have been booked under sections 153A (Acts prejudicial to the maintenance of harmony between different groups), 295A (malicious acts intended to outrage the religious feelings) of the IPC.&nbsp;</p><p><strong>More incidents in Bengaluru</strong></p><p>In Bengaluru, more than one incident of activists arranging and delivering food for migrant worker communities being harassed allegedly by BJP/ RSS activists has come to light.&nbsp;&nbsp;</p><p>Zeerin, an activist working in Amruthahalli area in north Bengaluru said she was surrounded by more than 20 RSS workers on Saturday evening.</p><p>“They said ‘who gave you permission to give food? You are a Muslim, you guys mix poison and spit on food before distributing. Have you guys come from Nizamuddin and want to spread the disease to everyone?’ They also went to meet my landlord and asked him why he rented us a room knowing that we are Muslims. They said ‘Go to Shivajinagar or RK Hegde Nagar, we don’t need help from Muslims, thank god we have enough’,” she said.</p><p>She continued, “Then they called the police after arguing with us for two hours and demanded the police arrest us. But the police came and supported us and only said we should maintain social distancing.”&nbsp;&nbsp;</p><p>In another incident, Roselin Gomes, a volunteer who was supplying food in Devi Nagar, also in north Bengaluru was stopped by BJP activists.&nbsp;</p><p>“I had put up a video on social media stating that I was going to pick up some food packets from Indira Canteen and these are the things that I want to collect. Then I got a call from Jai Shankar (a BJP worker) saying ‘why are you picking up food? For people like you there is a shortage of food.’ So I replied that I am only giving to the needy people and asked them if they can arrange food for them, then I need not move,” she said.</p><p>Both of them are volunteers of Swaraj Abhiyan, a socio-political organisation founded by psephologist Yogendra Yadav and senior advocate Prashanth Bhushan. At least two other incidents of Swaraj Abhiyan members being harassed came to light on Saturday.</p><p>Following these incidents, Swaraj Abhiyan leaders from Bengaluru met with senior police officials to complain about the developments.</p><p>“We went today and met DCP (Deputy Commissioner of Police) North and he was very supportive. In fact, he condemned it and said especially in this time such kind of racial and communal attacks should not take place and people need to help each other,” Zia Nomani, Youth President of the outfit, said.</p><p>Karnataka Chief Minister BS Yediyurappa has repeatedly said that the disease should not be communalised and had even met Muslim legislators to ensure that those who attended the jamaath declared themselves.&nbsp;</p><twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" style="position: static; visibility: visible; display: block; transform: rotate(0deg); width: 500px; margin: 10px auto; max-width: 100%; min-width: 220px;" data-tweet-id="1247147738338189314"></twitter-widget><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div><div class="views-field views-field-body_2 article-content article-body"></div><div class="bottom_horizontal_ads_block bottom_horizontal_show_ads_on_desktop_and_mobile"></div><div id="div-gpt-ad-1585037389206-0"></div></div><div class="col-3 tnm-advt-block sidebar-right-advt text-left"><div class="stick-desktop-right"><div id="div-gpt-ad-1585037930629-0" style="width: 160px; height: 600px;"></div></div><style>
+.stick-desktop-right {
+position:fixed;
+top:100px;
+right:30px;
+z-index:999;
+}@media(max-width : 1100px){
+.stick-desktop-right{
+display:none;
+}
+}
+</style></div></div></div></div></article></div></div></div><div class="tnm-marquee-block"><!--outstream gpt tags-->
+<div id="div-gpt-ad-1583914215892-0" style="width: 1px; height: 1px;">
+</div>
+<!--outstream gpt tags ends-->
+<!--mobile header ad starts here-->
+<div class="mobile-top-header-ad d-block d-md-none">
+  <div id="div-gpt-ad-1585548186183-0">
+  </div>
+</div>
+<!--mobile header ad ends here-->
+<div id="div-gpt-ad-1588590379914-0" style="width: 1px; height: 1px;">
+</div>
+<article class="tnm_block_ads">
+<div class="view-single-article-page view-id-single_article_page">
+ <div class="views-row views-row-1">
+<div class="row article  news-default">
+  
+    <div class="col-12 col-lg-6 article-wrap offset-lg-3">
+              <div class="mobile-headline-ad-768 d-md-none"></div>
+        
+      <div class="article-data partner">
+              <span class="label-text">Partner</span></div>
+      <div class="views-field views-field-title" data-url="https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315" itemprop="url">
+        <h1 class="article-title">How to beat work-from-home burnout: Take a break with these video playlists</h1>
+      </div>
+      <p class="article-body views-field views-field-field-blurb-news">With stress levels rising, your Netflix binge-breaks aren't going to be enough. These awesome video playlists might just be what you need.</p>
+      <div class="article-slider">
+        <div class="views-field views-field-field-inner-page-image">
+          <div class="field-content"></div>
+        </div>
+        <div class="views-field views-field-field-flickr-image">
+          <div class="field-content"></div>
+        </div>
+      </div>
+              <div class="article-banner article-slider">
+          <div class="views-field views-field-php-4  views-field-nothing-2">
+            <div class="field-content singe-article-image img-wrap"><img src="https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/woman-in-white-shirt-showing-frustration_1200_800.jpg?itok=ytmsvrq-" title="Working from home" alt="Image of a woman who is frustrated with work"></div>
+          </div>
+        </div>
+      
+        <div class="article-data views-field views-field-nothing title-left">
+                       <span class="label label-black" style="display: none;">TNM Marquee</span>
+           <span class="label-text" id="ga_field_bread_crumb_news" style="display: none;">Partner</span>
+                       <span class="time createddate" data-create="1590497051">Tuesday, May 26, 2020 - 18:14</span>
+        </div>
+        <div class="share-block-wrap views-field">
+            <div class="share-inline share-links-wrapper">
+                              <div class="fb-share">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="twitter-share">
+                    <a target="_blank" href="https://twitter.com/share?url=https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315&amp;text=How to beat work-from-home burnout: Take a break with these video playlists">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="whatsapp-share">
+                  <a target="_blank" href="whatsapp://send?text=https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315">
+                    <i class="fa fa-whatsapp"></i>
+                  </a>
+                </div>
+                <div class="reddit-share">
+                    <a target="_blank" href="http://reddit.com/submit?url=https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315&amp;title=How to beat work-from-home burnout: Take a break with these video playlists">
+                        <i class="fa fa-reddit-alien"></i>
+                    </a>
+                </div>
+                <div class="mail-share">
+                    <a target="_blank" href="mailto:?subject=How to beat work-from-home burnout: Take a break with these video playlists&amp;body=https://www.thenewsminute.com/article/how-beat-work-home-burnout-take-break-these-video-playlists-125315">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="share-inline-btn-sm">
+                <i class="fa fa-share-alt"></i>
+            </div>
+        </div>
+
+                
+        
+        <div class="report-details">
+                </div>
+	                      <!-- /28110228/TNM_Interstitial_1x1_Mobile -->
+
+        <!-- Top Article ad starts here -->
+        <!-- /28110228/TNM_Article_Top -->
+        <div id="div-gpt-ad-1585037094547-0"></div>
+        <!-- Top Article ad ends here -->
+                          <div class="views-field views-field-body article-content article-body"><style type="text/css">
+.booster-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 2px;
+}
+
+.article-page .article .booster-head img {
+    width: 95px;
+    height: 95px;
+    margin-right: 45px;
+}
+
+.booster-head h3 {
+    margin-left: 43px;
+    font-size: 38px;
+    color: #2c610a;
+    text-shadow: 1px 1px 1px #fdf1f6;
+    text-transform: uppercase;
+}
+ 
+
+.booster-wrap .media img {
+    width: 160px;
+    border-radius: 5px;
+}
+
+.booster-wrap .media h4 {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.booster-wrap .media h5 {
+    font-size: 17px;
+    font-style: italic;
+    display: none;
+    font-weight: 600;
+}
+
+.booster-wrap .media p {
+    font-size: 17px;
+    line-height: 1.4;
+    max-width: 401px;
+}
+
+.booster-wrap .media {
+    margin: 10px 0;
+    background: rgba(114, 151, 50, 0.19);
+    padding: 6px 12px;
+cursor: pointer;
+}
+
+.booster-wrap h2 {
+    text-align: center;
+    font-size: 23px;
+    line-height: 0.2;
+    background: #b8d0b1;
+    font-weight: 700;
+    padding: 21px;
+    color: #fff;
+    border: solid 1px #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+    /* margin: auto; */
+}
+
+.booster-wrap {
+    padding: 10px 2px;
+    padding: 12px 0;
+    margin-top: 19px;
+    background: url('https://www.thenewsminute.com/sites/all/var/www/images/airtel-marqueee-pattern.jpg');
+}
+
+.booster-wrap p.boost-cap {
+    margin: 0 5%;
+    text-align: center;
+    font-style: italic;
+}
+
+.article-page .article .booster-footer img {
+    width: 70px;
+    margin: auto;
+}
+
+.booster-footer .footer-column span {
+    display: block;
+    text-align: center;
+    height: 54px;
+    font-size: 15px;
+    line-height: 1.2;
+font-weight: 600;
+    margin: 0 12%;
+    margin-top: 12px;
+}
+
+.footer-column {justify-content: space-between;display: flex;flex-direction: column;}
+
+.booster-footer {
+    width: 100%;
+}
+.booster-footer h3 {
+    font-weight: 700;
+    margin: 32px 0;
+}
+
+.booster-wrap.btw-work .booster-head h3 {
+    color: #9d4b79;
+}
+
+
+.booster-wrap.btw-work  h2 {
+    background: #9f798f;
+    border-color: #9d4c7a;
+}
+
+.booster-wrap.btw-work .media {
+    background: rgba(157, 75, 121, 0.24);
+}
+
+.booster-head .clock {
+    height: 101px;
+    padding: 33px 18px;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 0px 1px black;
+}
+
+.booster-head .clock {
+    width: 97px;
+    height: 97px;
+    background: url('https://www.thenewsminute.com/sites/all/var/www/images/css_sprites_new.png') -108px -108px;
+    background-size: 211px;
+    font-size: 13px;
+}
+
+.booster-wrap.btw-work  .clock {
+    background-position: -3px -111px;
+}
+
+.booster-wrap.lunch-time .clock {
+    background-position: -3px -4px;
+}
+
+.booster-wrap.lunch-time  h3 {
+    color: #db9e00;
+}
+
+.booster-wrap.lunch-time  h2 {
+    background: #d5b972;
+}
+
+.booster-wrap.down-time .clock {
+    background-position: -111px -2px;
+}
+
+.booster-wrap.down-time h3 {
+    color: #006665;
+}
+
+.booster-wrap.down-time .media {
+    background: #0066655e;
+}
+
+.booster-wrap.down-time h2 {
+    background: #88c2c2;
+}
+
+.booster-wrap.lunch-time .media {
+    background: rgba(219, 158, 0, 0.31);
+}
+
+.booster-wrap .top-h .play {width: 50px;height: 50px;margin-left: 10px;display: flex;background: #b8d0b1;padding: 11px;border-radius: 50%;border: solid 1px #fff;}
+
+.booster-wrap .top-h {
+    display: flex;
+    width: 122px;
+    margin: auto;
+    align-items: center;
+}
+
+.booster-wrap .top-h .play svg {
+    width: 22px;
+    margin: auto;
+    fill: #fff;
+    margin-left: 6px;
+}
+
+.booster-wrap.btw-work .play {
+    background: #9f798f;
+}
+
+.booster-wrap.lunch-time .play {
+    background: #d5b972;
+}
+
+.booster-wrap.down-time .play {
+    background: #88c2c2;
+}
+@media (max-width: 480px) {
+ .booster-head h3{
+     margin-left: 3px;
+ }
+ .booster-head .clock{
+     width: 100px;
+     height: 94px;
+     display: flex;
+     align-items: center;
+     background-size: 191px;
+     background-position: 92px 92px;
+     padding: 0;
+ }
+ .booster-wrap.btw-work .clock{
+     background-position: -4px -97px;
+ }
+ .booster-wrap .booster-head h3 {
+    width: 291px;
+}
+.booster-wrap.lunch-time .clock{
+    background-position: -5px -5px;
+}
+.booster-wrap.down-time .clock{
+    background-position: -101px -3px;
+    padding: 0 5px;
+}
+}
+@media screen and (min-width: 600px) {
+ .booster-wrap .booster-head h3 br {
+    display: none;
+}
+}</style>
+<p>Work-from-home burnout is a very real problem. The work hours aren't clearly defined, neither are the breaks. On top of that, a lot of us are cooking and doing other chores ourselves. With stress levels rising, your Netflix binge-breaks aren't going to be enough.&nbsp;So, here's how you can build a playlist that relaxes and revitalises you, and keeps you productive from morning to night, between breaks and during free-time.&nbsp;</p>
+<p>According to Opensignal, a global authority on mobile network analysis, <strong><a href="https://www.airtel.in/?utm_source=Airtel_Advocacy_2020_Campaign_newsminute_howtobeatworkfromhomeburnout&amp;utm_medium=Content&amp;utm_content=grpm-Infographic&amp;utm_campaign=AirtelAdvocacy20&amp;cid=mis" target="_blank">Airtel</a></strong> offers the best video experience and download speed experience in India.</p>
+<p>Though keep in mind, poor data service during these breaks will make it more stressful than calming. So make sure you have a network connection that allows for quality streaming and downloads. According to Opensignal, a global authority on mobile network analysis, <strong><a href="https://www.airtel.in/?utm_source=Airtel_Advocacy_2020_Campaign_newsminute_howtobeatworkfromhomeburnout&amp;utm_medium=Content&amp;utm_content=grpm-Infographic&amp;utm_campaign=AirtelAdvocacy20&amp;cid=mis">Airtel</a></strong> offers the best video experience and download speed experience in India.</p>
+<p>Check out these 4 playlists, they might just be what you need today!</p>
+<div class="booster-wrap">
+	<div class="top-h">
+		<h2>
+			1</h2>
+		<div class="play">
+			<svg aria-hidden="true" data-icon="play" data-prefix="fas" focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></div>
+	</div>
+	<div class="booster-head">
+		<h3>
+			morning<br>
+			power-boosters</h3>
+		<div class="clock">
+			10 to 20 minutes</div>
+	</div>
+	<p class="boost-cap">You wake up with only an hour to go before your first work call of the day, and you’re groggy. How do you inject some energy into your morning?</p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="media" href="https://play.google.com/store/apps/details?id=com.rainfrog.yoga&amp;hl=en_IN">
+				<a href="https://play.google.com/store/apps/details?id=com.rainfrog.yoga&amp;hl=en_IN"><img alt="POCKET YOGA" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/12(1).png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://play.google.com/store/apps/details?id=com.rainfrog.yoga&amp;hl=en_IN">Pocket Yoga</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Practice yoga at your own pace, with guided sessions.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.youtube.com/user/TheFitnessMarshall">
+				<a href="https://www.youtube.com/user/TheFitnessMarshall"><img alt="THE FITNESS MARSHAL" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/THE_FITNESS_MARSHALL.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/user/TheFitnessMarshall">The fitness marshall</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Dance aerobics to Top-40 songs, in just 7 minutes.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.youtube.com/channel/UCDsw2uWGRD8ALLkUtPvhuDw">
+				<a href="https://www.youtube.com/channel/UCDsw2uWGRD8ALLkUtPvhuDw"><img alt="KINETIC LIVING" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/work_those_musacles.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/channel/UCDsw2uWGRD8ALLkUtPvhuDw">Kinetic living</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Nike trainer Urmi teaches everything, from pushups to pilates.</p>
+				</div>
+			</div>
+			<div class="media" href="https://fitifyapps.com/">
+				<a href="https://fitifyapps.com/"><img alt="HIIT FITIFY" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/HIIT_FITIFY.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://fitifyapps.com/">Hiit fitify</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>High-intensity workouts that you can customise.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="booster-wrap btw-work">
+	<div class="top-h">
+		<h2>
+			2</h2>
+		<div class="play">
+			<svg aria-hidden="true" data-icon="play" data-prefix="fas" focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></div>
+	</div>
+	<div class="booster-head">
+		<h3>
+			between-work entertainers</h3>
+		<div class="clock">
+			5 to 10 minutes</div>
+	</div>
+	<p class="boost-cap">You log out of one Zoom call and your calendar pings - you have 10 minutes before the next one. How can you turn a quick break into a super-fast relaxation session?</p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="media" href="https://www.youtube.com/watch?v=qzR62JJCMBQ&amp;t=67s">
+				<a href="https://www.youtube.com/watch?v=qzR62JJCMBQ&amp;t=67s"><img alt="ALL IT TAKES IS 10 MINDFUL MINUTES" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/ALL_IT_TAKES%20_S_10_MINDFUL_MINUTES.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/watch?v=qzR62JJCMBQ&amp;t=67s">All it takes is 10 mindful minutes</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>A TED Talk on how to do nothing for 10 whole minutes.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.youtube.com/channel/UCksDdfM7oTsGz2-slHIijGg">
+				<a href="https://www.youtube.com/channel/UCksDdfM7oTsGz2-slHIijGg"><img alt="EXTREME RELAXATION ASMR SOAP GRANNY" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/EXTREME_RELAXATION_ASMR_SOAP_GRANNY.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/channel/UCksDdfM7oTsGz2-slHIijGg">EXTREME RELAXATION ASMR SOAP GRANNY</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Tranquil visuals of colourful soaps being cut into tiny pieces.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.instagram.com/danishsait/?hl=en">
+				<a href="https://www.instagram.com/danishsait/?hl=en"><img alt="DANISH SAIT'S COMEDY SKETCHES" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/DANISH_SAITS_COMEDY_SKETCHES.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.instagram.com/danishsait/?hl=en">DANISH SAIT'S COMEDY SKETCHES</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Hilarious parody videos on life during lockdown.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.youtube.com/channel/UCe2JAC5FUfbxLCfAvBWmNJA">
+				<a href="https://www.youtube.com/channel/UCe2JAC5FUfbxLCfAvBWmNJA"><img alt="YOUR FOOD LAB" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/YOUR_FOOD_LAB.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/channel/UCe2JAC5FUfbxLCfAvBWmNJA">YOUR FOOD LAB</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Snacky food videos on delicious desi recipes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="booster-wrap lunch-time">
+	<div class="top-h">
+		<h2>
+			3</h2>
+		<div class="play">
+			<svg aria-hidden="true" data-icon="play" data-prefix="fas" focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></div>
+	</div>
+	<div class="booster-head">
+		<h3>
+			lunch-time stressbusters</h3>
+		<div class="clock">
+			5 to 10 minutes</div>
+	</div>
+	<p class="boost-cap">You have a little less than an hour for lunch before you have to jump back into work. What can you do to cure that afternoon drowsiness while you eat?</p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="media" href="https://www.youtube.com/user/1takemedia">
+				<a href="https://www.youtube.com/user/1takemedia"><img alt="POCKET FILIMS" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/POCKET_FILIMS.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.youtube.com/user/1takemedia">Pocket Filims</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Simple, heart-warming Hindi shorts.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.netflix.com/title/70153404">
+				<a href="https://www.netflix.com/title/70153404"><img alt="Friends Series" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/friends_series.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.netflix.com/title/70153404">F.R.I.E.N.D.S.</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Pick any episode for a comforting re-run.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.netflix.com/title/80198288">
+				<a href="https://www.netflix.com/title/80198288"><img alt="SALT FAT ACID HEAT" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/SALT_FAT_ACID_HEAT.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.netflix.com/title/80198288">Salt fat acid heat</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Lessons on cooking and eating with passion.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.primevideo.com/detail/Modern-Love/0KVQAAI5LR5DXQUXVFX8UZPCO4">
+				<a href="https://www.primevideo.com/detail/Modern-Love/0KVQAAI5LR5DXQUXVFX8UZPCO4"><img alt="MODERN LOVE" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/MODERN_LOVE.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.primevideo.com/detail/Modern-Love/0KVQAAI5LR5DXQUXVFX8UZPCO4">Modern Love</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Practice yoga at your own pace, with guided sessions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="booster-wrap down-time">
+	<div class="top-h">
+		<h2>
+			4</h2>
+		<div class="play">
+			<svg aria-hidden="true" data-icon="play" data-prefix="fas" focusable="false" role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></div>
+	</div>
+	<div class="booster-head">
+		<h3>
+			down-time unwinders</h3>
+		<div class="clock">
+			1 to 4 hours</div>
+	</div>
+	<p class="boost-cap">You’ve wrapped up for the day or the week, but you can’t seem to relax. How do you force your brain to take a chill pill?</p>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="media" href="https://www.netflix.com/title/80209379">
+				<a href="https://www.netflix.com/title/80209379"><img alt="TIDYING UP WITH MARIE KONDO" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/TIDYING_UP_WITH_MARIE_KONDO.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.netflix.com/title/80209379">TIDYING UP WITH MARIE KONDO</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>Best show to watch along with your weekend cleaning.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.primevideo.com/detail/Kumbalangi-Nights/0IIH4C2IQSRU9B8L3F4XOLI5WH">
+				<a href="https://www.primevideo.com/detail/Kumbalangi-Nights/0IIH4C2IQSRU9B8L3F4XOLI5WH"><img alt="KUMBALANGI NIGHTS" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/KUMBALANGI_NIGHTS.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.primevideo.com/detail/Kumbalangi-Nights/0IIH4C2IQSRU9B8L3F4XOLI5WH">KUMBALANGI NIGHTS</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>A love story set in a world of class-struggle and sexism.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.primevideo.com/detail/The-Family-Man/0S3QYI59BAEI5KVLHCKSR91YGD">
+				<a href="https://www.primevideo.com/detail/The-Family-Man/0S3QYI59BAEI5KVLHCKSR91YGD"><img alt="FAMILY MAN" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/FAMILY_MAN.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.primevideo.com/detail/The-Family-Man/0S3QYI59BAEI5KVLHCKSR91YGD">FAMILY MAN</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>A middle-class man who is a world-class spy.</p>
+				</div>
+			</div>
+			<div class="media" href="https://www.netflix.com/title/80230399">
+				<a href="https://www.netflix.com/title/80230399"><img alt="EXTRACTION" class="align-self-center mr-3" src="https://www.thenewsminute.com/sites/all/var/www/images/EXTRACTION.png"></a>
+				<div class="media-body">
+					<h4 class="mt-0">
+						<a href="https://www.netflix.com/title/80230399">EXTRACTION</a></h4>
+					<h5 class="mt-0">
+						&nbsp;</h5>
+					<p>A straighforward story loaded with gripping fight scenes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<p>&nbsp;</p>
+<h5 class="rtecenter">
+	<em>This article was created by <a href="https://www.thenewsminute.com/article/tnm-marquee" target="_blank">TNM Brand Studio</a> in association with Airtel.</em></h5>
+<p><img height="0" src="https://secure.insightexpressai.com/adServer/adServerESI.aspx?script=false&amp;bannerID=7272281&amp;rnd=[INSERT_CACHEBUSTER_HERE]&amp;gdpr=&amp;gdpr_consent=&amp;redir=https://secure.insightexpressai.com/adserver/1pixel.gif" width="0"> <script>
+$(".booster-wrap .media").click(function() {
+ 
+window.location.href = $(this).attr("href");
+  return false;
+});
+</script></p>
+</div>
+                        <div class="views-field views-field-body_2 article-content article-body"></div>
+                    
+                    <!-- Bottom Article ad starts here -->
+                  <!-- /28110228/TNM_Article_Bottom -->
+          <div id="div-gpt-ad-1585037389206-0">
+          </div>
+                <!-- Bottom Article ad ends here -->
+    </div>
+  
+</div>
+</div>
+</div>
+</article></div><div class="tnm-infinite-scroll-block view-content"></div> </main> <footer><div id="block-tnm-custom-tnm-custom-footer--2" class="block block-tnm-custom"><div class="content"><div class="nav-top-wrap"> <nav class="nav-top container"><ul><li><a href="/section/News">NEWS</a></li><li><div id="prettydropdown-states" class="prettydropdown arrow" style="width: 129px;"><ul tabindex="0" role="listbox" aria-activedescendant="item129308999999193470-1" aria-expanded="false" style="max-height:48px;margin:0px 0px 0px 0px;"><li id="item129308999999193470-1" data-value="states" role="option" class="selected" style="width: 129px;">states<span aria-hidden="true" class="checked"> <i class="fa fa-check" aria-hidden="true"></i></span></li><li id="item129308999999193470-2" data-value="/section/Andhra Pradesh" role="option" style="width: 129px;">ANDHRA</li><li id="item129308999999193470-3" data-value="/section/Karnataka" role="option" style="width: 129px;">KARNATAKA</li><li id="item129308999999193470-4" data-value="/section/Kerala" role="option" style="width: 129px;">KERALA</li><li id="item129308999999193470-5" data-value="/section/Tamil Nadu" role="option" style="width: 129px;">TAMIL NADU</li><li id="item129308999999193470-6" data-value="/section/Telangana" role="option" style="width: 129px;">TELANGANA</li></ul><select class="states-select enable-prettydropdown" name="states" style="visibility: hidden; height: 50px;"><option value="states" selected="selected">states</option><option value="/section/Andhra Pradesh">ANDHRA</option><option value="/section/Karnataka">KARNATAKA</option><option value="/section/Kerala">KERALA</option><option value="/section/Tamil Nadu">TAMIL NADU</option><option value="/section/Telangana">TELANGANA</option></select></div></li><li><a href="/section/Features">FEATURES</a></li><li><a href="/section/Flix">FLIX</a></li><li><a href="/section/Voices">VOICES</a></li><li><a href="/section/Atom">ATOM</a></li><li><a href="/section/delve">DELVE</a></li><li><a href="/section/Health">HEALTH</a></li><li><a href="/section/Money">MONEY</a></li><li><a href="/section/coronavirus">Coronavirus</a></li></ul> <a class="btn btn-red btn-top">top</a> </nav></div><div class="footer-credits"><div class="container"><div class="social-media-plugin"> <a target="_blank" href="https://www.facebook.com/TheNewsMinute"><i class="fa fa-facebook"></i></a> <a target="_blank" href="https://twitter.com/thenewsminute"><i class="fa fa-twitter"></i></a> <a target="_blank" href="https://www.instagram.com/thenewsminute/"><i class="fa fa-instagram"></i></a> <a target="_blank" href="https://www.youtube.com/channel/UCspQie3i29iIFbCgfGisO9Q"><i class="fa fa-youtube"></i></a></div><div class="logo-wrap"> <a href="https://www.thenewsminute.com"><img alt="TheNewsMinute Logo" title="TheNewsMinute" src="/sites/all/themes/tnm/images/logo-white-bg.png"></a></div></div><div class="app-download-wrap"><div class="app-store-btn-wrap"><div class="title">download our new app today</div><div class="link-wrap"> <a target="_blank" href="https://play.google.com/store/apps/details?id=tnm.influx.thenewsminute&amp;hl=en_IN" class="button"><img alt="GOOGLE PLAY" src="/sites/all/themes/tnm/dist/images/google-play-badge.svg"></a> <a target="_blank" href="https://apps.apple.com/in/app/the-news-minute/id1466736192" class="button"><img alt="APP STORE" src="/sites/all/themes/tnm/dist/images/app-store-badge.svg"></a></div></div></div></div><div class="footer-bottom"><div class="container"><div class="row"><div class="col-12 col-lg-9 nav-bottom-wrap"><ul><li class=""><a href="/About-Us">About Us</a></li><li class=""><a href="/content/disclaimer">Disclaimer</a></li><li class="divider"><a href="/write-to-us">Write to Us</a></li><li class=""><a href="/content/terms-and-conditions">Terms &amp; Conditions</a></li><li class=""><a href="/brand-cafe">TNM Brand Studio</a></li></ul></div><div class="col-12 col-lg-3 copyright-wrap"><p>©2020 the news minute</p></div><div class="col-12 text-center tech-partner"> <span>Technology Partner</span> <a class="zyx-title" href="http://zyxware.com/" target="_blank" title="Zyxware Technologies Pvt. Ltd."> <span>zyxware</span> <span>technologies</span> </a></div></div></div></div></div></div> </footer><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+;window._taboola=window._taboola||[];_taboola.push({flush:!0});
+//--><!]]>
+</script><div class="rw_footer_sticky"><div id="div-gpt-ad-1585037429940-0"></div></div><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6b99e88210","applicationID":"28679626","transactionName":"YARXYUADXBFZBxFYXllOdFZGC10MFwoKVVRoEVRSVz1EC10T","queueTime":0,"applicationTime":1024,"atts":"TENUFwgZTx8=","errorBeacon":"bam.nr-data.net","agent":""}</script><script>
+dataLayer.push({
+'display_ads': 1,
+'event': 'display_ads_event'
+});
+</script><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2a008290075125adde2d7b849b06a0bb.html?origin=https%3A%2F%2Fwww.thenewsminute.com" title="Twitter settings iframe" style="display: none;"></iframe> 
+  <style>
+    .zyx-zonar {
+      position: absolute;
+      background: #ec2c2c59;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 9px;
+      color: #fff;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 8
+    }
+
+    .zyx-zonar span {
+      content: '';
+      width: 19px;
+      height: 19px;
+      z-index: 99999;
+      border-radius: 50%;
+      line-height: 2.3;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    svg#india_map {
+      position: relative
+    }
+
+    .zyx-tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 200px;
+      background-color: rgba(255, 255, 255, .9);
+      border: solid 1px #cb0606;
+      border-radius: 2px;
+      z-index: 9
+    }
+
+    .zyx-tooltip h5 {
+      background: #d30000;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 1px 6px;
+      margin: 0
+    }
+
+    .zyx-tooltip p {
+      font-size: 13px;
+      padding: 0 5px;
+      margin: 0
+    }
+
+    .zyx-tooltip p strong {
+      padding: 0 5px
+    }
+
+    .zyx-tooltip.zyx-clicked {
+      right: 12px !important;
+      left: auto;
+      top: 13px
+    }
+
+    .infection-status {
+      width: 100%
+    }
+
+    .infection-status li {
+      margin: 0;
+      font-size: 10px;
+      margin: 0;
+      display: inline-block;
+      float: left;
+    }
+
+    .infection-status li span {
+      margin-right: 18px;
+      font-weight: 600;
+      padding-left: 5px
+    }
+
+    .infection-status li span.conf {
+      color: #f60000
+    }
+
+    .infection-status li span.reco {
+      color: #1c7d21
+    }
+
+    .infection-status li {
+      font-size: 12px
+    }
+
+    div#coronaModal a.btn.btn-red {
+      position: absolute;
+      right: 27px;
+      z-index: 99
+    }
+
+    #coronaModal p.loading-data {
+      text-align: center;
+      color: #8a8a8a
+    }
+  </style>
+  <div class="modal fade" id="coronaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Coronavirus Live Tracker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="loading-data">Loading data...</p>
+          <a href="/section/coronavirus" class="btn btn-red rd-more" style="">read news updates</a>
+          <div class="corona_outbreak" style="position:relative;">
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="infection-status">
+            <li>Total Confirmed: <span class="conf"></span></li>
+            <li>Total Recovered: <span class="reco"></span></li>
+            <li>Total Death:<span class="death"></span></li>
+          </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<script type="text/javascript" id="" src="https://d3js.org/d3.v5.min.js"></script><div style="display: none; visibility: hidden;"><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script src="/sites/all/modules/custom/tnm_custom/js/adsBundle.js"></script>
+<script data-ad-client="ca-pub-2886564420349602" async="null" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></div>
+<script type="text/javascript" id="">var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):$jscomp.arrayIterator(a)};$jscomp.arrayFromIterator=function(a){for(var b,c=[];!(b=a.next()).done;)c.push(b.value);return c};
+$jscomp.arrayFromIterable=function(a){return a instanceof Array?a:$jscomp.arrayFromIterator($jscomp.makeIterator(a))};
+jQuery(document).ready(function(){jQuery("a#CoronaModal").on("click",function(){var a=jQuery("#coronaModal"),b=a.find("a.btn-red"),c=a.find("p.loading-data");b.css("display","none");c.css("display","block");a.modal("toggle");jQuery.get("/sites/all/modules/custom/tnm_custom/resorces/india.svg",function(a){$(".corona_outbreak").html(a.documentElement);c.css("display","none");b.css("display","block");window.corona_data=_getCoronaData}).done(function(){var a=d3Tooltip(),b=d3.select("svg#india_map"),c=
+d3.select(".corona_outbreak"),f=b.selectAll("g#states");f.call(a);b.node().getBoundingClientRect();f=b.selectAll("g#states");f.each(function(a){a=d3.select(this);a.select("circle");a.select("path");var b=a.attr("data-state");0<corona_data[b].no_cases&&(a.select("text").select("tspan").text(corona_data[b].no_cases),a.select("g#label").style("display","block"),a.select("circle").style("stroke-width",_getRadius(corona_data[b].no_cases)))});a=d3Tooltip();c=c.selectAll(".zyx-zonar");c.call(a);b.selectAll("g#states").on("click.tooltip",
+function(a){a=d3.select(this);_renderTooltipTop(a.attr("data-state"))});c.on("click.tooltip",function(a){a=d3.select(this);_renderTooltipTop(a.attr("data-state"))});_renderTotal()});ga("send",{hitType:"event",eventCategory:"corona-map",eventAction:"modalToggle",eventLabel:window.location.pathname})})});
+var _getCoronaData=function(){var a=null,b=Math.random().toString(36).substring(7);jQuery.ajax({async:!1,type:"GET",global:!1,dataType:"json",url:"/get_corona_data/z21333/?pos\x3d"+b,success:function(b){a=b}});return a}();
+function d3Tooltip(){function a(a){a.each(function(a){var b=d3.select(this);d3.select(".corona_outbreak").selectAll(".zyx-tooltip").data([a]).enter().append("div").classed("zyx-tooltip",!0).html(function(){return _getTemplate(b.attr("data-state"))})})}function b(a){a.each(function(a){var b=d3.select(".corona_outbreak");b.node();a=b.selectAll("div.zyx-tooltip").data([a]);b=parseInt(b.style("width"),10);var c=parseInt(a.style("height"),10),d=+d3.event.clientX-b;c=+d3.event.clientY-2.4*c;window.innerWidth<
+d+b+15&&(d=window.innerWidth-b);3>d&&(d=2);a.style("left",d+"px").style("top",c+"px")})}function c(a){a.each(function(a){d3.select(".corona_outbreak");d3.selectAll("div.zyx-tooltip").data([a]).remove()})}return function(e){e.each(function(d){d=d3.select(this);d.on("mouseover.tooltip",function(b){d3.select(this).call(a)});d.on("mousemove.tooltip",function(a){d3.select(this).call(b)});d.on("mouseout.tooltip",function(a){d3.select(this).call(c)})})}}
+function _getRadius(a){var b=0,c=1,e=[];Object.values(corona_data).reduce(function(a,b){a=b.no_cases;0!=a&&e.push(a)},0);c=Math.min.apply(Math,$jscomp.arrayFromIterable(e));b=Math.max.apply(Math,$jscomp.arrayFromIterable(e));OldRange=b-c;return 20*(a-c)/OldRange+10}
+function _renderTotal(){var a=[];a.confi=0;a.recovered=0;a.death=0;Object.values(corona_data).forEach(function(b,e){a.confi+=b.no_cases;a.recovered+=b.recovered;a.death+=b.death});var b=jQuery("#coronaModal").find(".infection-status");b.find("span.conf").text(a.confi);b.find("span.reco").text(a.recovered);b.find("span.death").text(a.death)}
+function _renderTooltipTop(a){var b=_getPositions();d3.select(".corona_outbreak").append("div").classed("zyx-tooltip",!0).classed("zyx-clicked",!0).html(function(){return _getTemplate(a)}).style("left",b.x+"px").style("top",b.y+"px")}
+function _getTemplate(a){return"\x3ch5\x3e"+corona_data[a].name+"\x3c/h5\x3e\x3cp\x3eConfirmed cases:\x3cstrong\x3e"+corona_data[a].no_cases+"\x3c/strong\x3e\x3c/p\x3e\x3cp\x3eRecovered:\x3cstrong\x3e"+corona_data[a].recovered+"\x3c/strong\x3e\x3c/p\x3e\x3cp\x3eDeath:\x3cstrong\x3e"+corona_data[a].death+"\x3c/strong\x3e\x3c/p\x3e"}
+function _getPositions(){var a=d3.select(".corona_outbreak");a.node();var b=a.selectAll("div.zyx-tooltip");a=parseInt(a.style("width"),10);var c=parseInt(b.style("height"),10);b=+d3.event.clientX-a;c=+d3.event.clientY-2.4*c;window.innerWidth<b+a+15&&(b=window.innerWidth-a);3>b&&(b=2);return{y:c,x:b}};</script>
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

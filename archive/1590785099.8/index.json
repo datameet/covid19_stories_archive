@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.8",
+    "history": {
+        "title": [
+            {
+                "status": "failed",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 20:51:54.988271",
+                "start_ts": "2020-05-29 20:51:53.242619",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "Unable to detect page title"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:21.000421",
+                "start_ts": "2020-05-29 20:52:12.852475",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thenewsminute.com"
+                ],
+                "end_ts": "2020-05-29 20:51:55.288296",
+                "start_ts": "2020-05-29 20:51:54.988688",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:12.852256",
+                "start_ts": "2020-05-29 20:52:08.145361",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:30.064774",
+                "start_ts": "2020-05-29 20:52:27.121025",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "https://web.archive.org/web/20200529205228/https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785515",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:08.145224",
+                "start_ts": "2020-05-29 20:51:55.288712",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:23.967508",
+                "start_ts": "2020-05-29 20:52:21.000657",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+                ],
+                "end_ts": "2020-05-29 20:52:27.120772",
+                "start_ts": "2020-05-29 20:52:23.967876",
+                "pwd": "/data/archive/1590785099.8",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590785550.068151",
+    "tags": "",
+    "url": "https://www.thenewsminute.com/article/religious-discrimination-hospital-karimnagar-allegedly-refused-treat-muslims-122500"
+}

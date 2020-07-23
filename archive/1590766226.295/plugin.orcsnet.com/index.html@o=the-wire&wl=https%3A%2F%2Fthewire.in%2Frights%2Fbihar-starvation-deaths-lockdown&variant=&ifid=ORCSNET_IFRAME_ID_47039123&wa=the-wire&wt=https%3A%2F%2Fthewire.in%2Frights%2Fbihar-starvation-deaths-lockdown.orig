@@ -1,0 +1,281 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Orcsnet: Support content online</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ek+Mukta:200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:wght@400" rel="stylesheet">
+    <link rel="stylesheet" href="styles/9c91cb88.main.css">
+    <!-- for exception logging only -->
+    <!-- <script src="//console.re/connector.js" data-channel="orcsnet-plugin" id="consolerescript"></script> -->
+  </head>
+  <body>
+
+    <div id="orcsnet" style="height: 100%"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.110.0/aws-sdk.min.js"></script>
+
+    <script src="scripts/bb4cddba.vendor2.js"></script>
+
+    <script type="text/javascript">
+      // namespace
+      window.Plugin = {};
+      window.Plugin.log = function() {};
+    </script>
+
+    <script src="scripts/9189c0f7.templates.js"></script>
+
+    <script src="scripts/d5409e8a.main.js"></script>
+
+    <script type="text/javascript">
+      'use strict';
+
+      function ready(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      };
+
+      var parseParameters = function(params) {
+        Plugin.log('[index.parseParameters]');
+        var parsedParams = {};
+
+        // set the content owner's account name
+        parsedParams.ownerid = params.o || 'default';
+
+        // rename dalit-dastak
+        if(parsedParams.ownerid === 'dalit-dastak') {
+          parsedParams.ownerid = 'dalit-dastak-2';
+        }
+
+        // wordpress
+        if(params.wl) {
+          parsedParams.wp_link = decodeURIComponent(params.wl);
+          parsedParams.content_url = parsedParams.wp_link;
+
+        // youtube
+        } else if(params.ytvid) {
+          parsedParams.content_url = 'https://www.youtube.com/watch?v=' + params.ytvid;
+
+        }
+        // publishers.orcsnet.com
+        if(params.channel) {
+          parsedParams.channel = decodeURIComponent(params.channel);
+          // being extra careful
+          if (['plugin','youtube','paynow','pay-now','support'].indexOf(parsedParams.channel.toLowerCase()) > -1) {
+            parsedParams.channel = parsedParams.channel.toLowerCase();
+          }
+          if(params.contentid) {
+            parsedParams.contentId = decodeURIComponent(params.contentid);
+            if(parsedParams.channel === 'youtube') {
+              parsedParams.content_url = 'https://www.youtube.com/watch?v=' + parsedParams.contentId;
+            }
+          }
+        } else {
+          parsedParams.channel = 'plugin';
+        }
+
+        // certain variants override the channel
+        if(params.variant) {
+          params.variant = decodeURIComponent(params.variant);
+          var variants = params.variant.split(';');
+          for (var vidx = 0; vidx < variants.length; vidx++) {
+            var variant = variants[vidx];
+            console.log("applying variant: " + variant);
+            if (variant.indexOf('support-kl') > -1) {
+              parsedParams.channel = 'supportkl';
+            }
+            if (variant.indexOf('pay-now') > -1) {
+              parsedParams.channel = 'pay-now';
+            }
+            if (variant.indexOf('home-page') > -1) {
+              parsedParams.channel = 'homepage';
+            }
+            if (variant.indexOf('site:') > -1) {
+              parsedParams.channel = variant.split(':')[1];
+            }
+            if (variant.indexOf('uxv2') > -1) {
+              parsedParams.ux = 'uxv2';
+            }
+            if (variant.indexOf('uxv3') > -1) {
+              parsedParams.ux = 'uxv3';
+            }
+            // portrait is only for uxv2
+            if (variant.indexOf('portrait_tall') > -1) {
+              parsedParams.orientation = 'portrait_tall';
+            } else if (variant.indexOf('portrait_small') > -1) {
+              parsedParams.orientation = 'portrait_small';
+            }
+            // override flow in config
+            if (variant.indexOf('flowName:') > -1) {
+              parsedParams.flowName = variant.split(':')[1];
+            }
+          }
+        }
+
+        // for talking to the enclosing iframe, if any
+        if(params.ifid) {
+          parsedParams.iframe_id = decodeURIComponent(params.ifid);
+        }
+        // this is also needed for postMessage
+        if(params.origin) {
+          parsedParams.origin = decodeURIComponent(params.origin);
+        }
+
+        // facebook instant article detection
+        if(params.hasOwnProperty('ia_share_url') || params.hasOwnProperty('ia_title')) {
+          parsedParams.instant_article = true;
+        }
+
+        if(params.test_config) {
+          parsedParams.test_config = true;
+        }
+
+        if(params.force_refresh) {
+          parsedParams.force_refresh = true;
+        }
+
+        if (params.language) {
+          parsedParams.language = params.language;
+        }
+
+        if (params.amount) {
+          parsedParams.amount = params.amount;
+        }
+
+        if (params.name) {
+          parsedParams.name = decodeURIComponent(params.name);
+        }
+
+        // http://localhost:9004/?twspfn=rohit&twspln=chatterjee&twspe=rohitsemail&twspp=rohitsphone&twspa=agfpc9293a&twspm=100&twspf=monthly
+        // http://localhost:9004/?twspfn=rohit&twspln=chatterjee&twspe=rohitsemail&twspp=rohitsphone&twspm=1000&twspf=s&channel=ownyournews
+        // http://localhost:9004/?twspfn=rohit&twspln=chatterjee&twspe=rohitsemail&twspp=rohitsphone&twspm=1000&twspf=s&twspc=usd
+        if (params.twspfn || params.twspln || params.twspe || params.twspp || params.twspa || params.twspm || params.twspf) {
+          var duri = function(p) { return (p && decodeURIComponent(p)) || null };
+          parsedParams.theWireSupportPage = {
+            firstName: duri(params.twspfn),
+            lastName: duri(params.twspln),
+            email: duri(params.twspe),
+            phone: duri(params.twspp),
+            pan: duri(params.twspa),
+            amount: duri(params.twspm),
+            currency: (duri(params.twspc) || 'INR').toUpperCase(),
+            frequency: duri(params.twspf),
+            origin: duri(params.twsporigin) || 'thewire',
+            supportChannel: 'support',
+          };
+          console.log("Received parameters for The Wire's support page:")
+          console.log("First name: " + parsedParams.theWireSupportPage.firstName);
+          console.log("Last name: " + parsedParams.theWireSupportPage.lastName);
+          console.log("Email: " + parsedParams.theWireSupportPage.email);
+          console.log("Phone: " + parsedParams.theWireSupportPage.phone);
+          console.log("PAN: " + parsedParams.theWireSupportPage.pan);
+          console.log("Amount: " + parsedParams.theWireSupportPage.amount);
+          console.log("Currency: " + parsedParams.theWireSupportPage.currency);
+          console.log("Frequency: " + parsedParams.theWireSupportPage.frequency);
+          console.log("Origin: " + parsedParams.theWireSupportPage.origin);
+          parsedParams.ownerid = 'the-wire';
+          parsedParams.channel = 'support';
+          if (params.channel === 'ownyournews') {
+            parsedParams.theWireSupportPage.supportChannel = 'ownyournews';
+          }
+          parsedParams.content_url = 'https://thewire.in/support';
+        }
+
+        // http://localhost:9004/?subm=factly&subn=rohit&sube=rohitsemail&subp=rohitsphone&suba=100&subf=monthly
+        if (params.subm || params.subn || params.sube || params.subp || params.suba || params.subf) {
+          var duri = function(p) { return (p && decodeURIComponent(p)) || null };
+          parsedParams.supportPage = {
+            pubname: duri(params.subm),
+            supporterName: duri(params.subn),
+            email: duri(params.sube),
+            phone: duri(params.subp),
+            amount: duri(params.suba),
+            currency: (duri(params.subc) || 'INR').toUpperCase(),
+            frequency: duri(params.subf),
+            supportChannel: 'support',
+          };
+          console.log("Received parameters for support page:")
+          console.log("Publisher: " + parsedParams.supportPage.pubname);
+          console.log("Name: " + parsedParams.supportPage.supporterName);
+          console.log("Email: " + parsedParams.supportPage.email);
+          console.log("Phone: " + parsedParams.supportPage.phone);
+          console.log("Amount: " + parsedParams.supportPage.amount);
+          console.log("Currency: " + parsedParams.supportPage.currency);
+          console.log("Frequency: " + parsedParams.supportPage.frequency);
+          parsedParams.ownerid = parsedParams.supportPage.pubname;
+          parsedParams.channel = 'support';
+        }
+
+        // subscription mgmt
+        if (params.ownerid && params.action) {
+          parsedParams.subscriptionManagement = {
+            ownerid: params.ownerid,
+            action: params.action,
+            subid: params.subid || null,
+            token: params.token || null,
+          };
+          parsedParams.ownerid = parsedParams.subscriptionManagement.ownerid;
+        }
+
+        return parsedParams;
+      };
+
+      function lsTest() {
+        var orcsnetlstest = 'orcsnetlstest';
+        try {
+          localStorage.setItem(orcsnetlstest, orcsnetlstest);
+          localStorage.removeItem(orcsnetlstest);
+          return true;
+        } catch(e) {
+          return false;
+        }
+      }
+
+      ready(function () {
+        var psplitter = function(p) {
+          var parsedParams = {};
+          if(p.length===2) {
+            var params = p[1].split('&');
+            for(var pIdx=0; pIdx<params.length; ++pIdx) {
+              var c = params[pIdx].split('=');
+              parsedParams[c[0]]=c[1];
+            }
+          }
+          return parsedParams;
+        }; 
+        var sParams = psplitter(window.location.search.split('?'));
+        var applicationParams = parseParameters(sParams);
+        if(applicationParams.hide_plugin) {
+          return;
+        }
+        applicationParams.localStorageAvailable = lsTest();
+        if(!applicationParams.error) {
+          Plugin.app = new class_Plugin();
+          try {
+            Plugin.app.init(applicationParams);
+          }
+          catch (e) {
+            if (console.re && console.re.log) {
+              console.re.log(e.message);
+              if (window.navigator && window.navigator.userAgent) {
+                console.re.log(window.navigator.userAgent);
+              }
+            } else {
+              console.log(e.message);
+            }
+          }
+        }
+      });
+    </script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
+  </body>
+</html>

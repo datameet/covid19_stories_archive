@@ -1,0 +1,1 @@
+var Better_Social_Counter=function(e){"use strict";return{init:function(){this.fix_element_query()},fix_element_query:function(){"function"==typeof elementQuery&&elementQuery({".better-social-counter":{"max-width":["358px","199px","230px","900px","530px","750px"]},".better-social-banner":{"max-width":["250px"]}})}}}(jQuery);jQuery(function(e){Better_Social_Counter.init()});

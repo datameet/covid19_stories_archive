@@ -1,0 +1,194 @@
+{
+    "title": "Migrant dies in Hyd while on his way home to TN- The New Indian Express",
+    "url": "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html",
+    "timestamp": "1590766226.107",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:46:53.683152",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770802",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 11,
+                "start_ts": "2020-05-29 16:46:42.223258",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:47:11.542237",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:47:09.840078",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:46:42.219392",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:46:41.827404",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:47:01.092035",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:46:53.683400",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:47:09.838394",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:47:06.396301",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:47:13.851607",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:47:11.542622",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "https://web.archive.org/web/20200529164712/https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:47:06.396013",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 16:47:01.092353",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:46:41.827232",
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/cities/hyderabad/2020/may/01/migrant-dies-in-hyderbad-while-on-his-way-home-to-tamil-nadu-2137651.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:46:41.433486",
+                "pwd": "/data/archive/1590766226.107",
+                "output": "Migrant dies in Hyd while on his way home to TN- The New Indian Express"
+            }
+        ]
+    },
+    "updated": "1590788220.569675",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

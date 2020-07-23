@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.58",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:22:20.389008",
+                "start_ts": "2020-05-29 21:22:19.602332",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "'This is corona terrorism', says BJP's Sangeet Som over Nizamuddin Markaz"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:40.848485",
+                "start_ts": "2020-05-29 21:22:34.535183",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=news.abplive.com"
+                ],
+                "end_ts": "2020-05-29 21:22:20.678084",
+                "start_ts": "2020-05-29 21:22:20.389316",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:34.534509",
+                "start_ts": "2020-05-29 21:22:29.223367",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:53.049836",
+                "start_ts": "2020-05-29 21:22:50.641521",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "https://web.archive.org/web/20200529212251/https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787340",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:29.222956",
+                "start_ts": "2020-05-29 21:22:20.679370",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:48.899691",
+                "start_ts": "2020-05-29 21:22:40.848951",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+                ],
+                "end_ts": "2020-05-29 21:22:50.641245",
+                "start_ts": "2020-05-29 21:22:48.900060",
+                "pwd": "/data/archive/1590785099.58",
+                "output": "Failed to download media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787373.053145",
+    "tags": "",
+    "url": "https://news.abplive.com/videos/news/india-this-is-corona-terrorism-says-bjps-sangeet-som-over-nizamuddin-markaz-1186833"
+}

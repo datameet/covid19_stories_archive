@@ -1,0 +1,1079 @@
+ 
+	 var channelInfo = { 
+	    appkey : 'IV',
+	    pagetype : '',
+	    langid : '2',
+	    channelid : '2147477892',
+	    msid : '' , // 62517841(my comments are here), 62548651
+	    fbapp_id : '860285730683906',
+	    hostid : '245',
+	    twitter_handle : 'Vijaykarnataka',
+	    usermessage: 'ಪರಿಶೀಲನೆಗಾಗಿ ನಿಮಗೊಂದು ಇಮೇಲ್‌ ಕಳುಹಿಸಲಾಗಿದೆ. ಮೇಲ್‌ ನಲ್ಲಿ ಕಳಿಸಲಾದ ಲಿಂಕ್‌ಗೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ.',
+	    succesmessage: 'ಕಾಮೆಂಟ್‌ ಮಾಡಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದ',
+	    message_offensive : 'ಈ ಕಾಮೆಂಟ್‌ ನೀವು ಪೋಸ್ಟ್‌ ಮಾಡಲಾಗದು. ಏಕೆಂದರೆ ಇದರಲ್ಲಿ ಆಕ್ಷೇಪಾರ್ಹ ಶಬ್ಧಗಳು ಇವೆ. ',
+        message_duplicate : 'ಈಗಾಗಲೇ ಇದೇ ರೀತಿಯ ಕಾಮೆಂಟ್‌ ನೀವು ಪೋಸ್ಟ್‌ ಮಾಡಿದ್ದೀರಿ. ಹೀಗಾಗಿ ಮತ್ತೊಮ್ಮೆ ಅದೇ ಕಾಮೆಂಟ್‌ ಪೋಸ್ಟ್‌ ಮಾಡಲಾಗುವುದಿಲ್ಲ.',
+        message_emailverify : 'ನಿಮ್ಮ ಇ-ಮೇಲ್‌ ವೇರಿಫಿಕೇಶನ್‌ ಮಾಡಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದ',
+        message_knowmore_tp : 'अधिक माहितीसाठी क्लिक करा',
+        message_default_textarea : 'ಕಾಮೆಂಟ್‌ ಮಾಡಿ',
+        message_lang_abusive : 'ಅಸಭ್ಯ ಭಾಷೆ',
+        message_defame : 'ತಪ್ಪು ಮಾಹಿತಿ',
+        message_defame_community : 'ಯಾವುದೇ ಸಮುದಾಯದ ವಿರುದ್ಧ ಪ್ರಚೋದನೆ',
+        message_others : 'ಇತರ',
+        message_reply : 'ಉತ್ತರಿಸಿ',
+        message_responses : 'ಲೇಖಕರ ಕಾಮೆಂಟ್‌',
+ 
+        message_offensive : 'ಆಕ್ಷೇಪಾರ್ಹ ',
+        message_offensive_conf : 'ನಿಮ್ಮ ಸೂಚನೆಯನ್ನು ಸಂಪಾದಕರಿಗೆ ತಲುಪಿಸಲಾಗುತ್ತದೆ',
+        message_disclaimer_offensive : "ಕೆಳಗಿರುವ ಕಾರಣಗಳಲ್ಲಿ ಯಾವುದನ್ನಾದರೂ ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು 'ನಿಂದನಾತ್ಮಕ' ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ. ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವು ನಮ್ಮ ಮಾಡರೇಟರ್‌ಗೆ ಶೀಘ್ರವೇ ತಲುಪಲಿದೆ ಮತ್ತು ನೀವು ನೀಡಿದ ಕಾರಣವು ತೃಪ್ತಿಕರವಾಗಿದ್ದರೆ, ಈ ಕಾಮೆಂಟ್ ಅನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.",
+        message_is_offensive : 'ಈ ಕಾಮೆಂಟ್ ಬಗ್ಗೆ ಏನು ಸಮಸ್ಯೆಯಿದೆ?',
+        message_offensive_reason : ' ಹೆಸರು:',
+        message_objection : 'Submit',
+        message_close : 'Cancel',
+        message_objected : 'ನಿಮ್ಮ ಸೂಚನೆಯನ್ನು ಸಂಪಾದಕರಿಗೆ ತಲುಪಿಸಲಾಗುತ್ತದೆ',
+        message_disclaimer_comments : 'ನಿಮ್ಮ ಕಾಮೆಂಟ್ ಕೆಲವೇ ಕ್ಷಣಗಳಲ್ಲಿ ಸೈಟ್‌ನಲ್ಲಿ ಲೈವ್ ಆಗುತ್ತದೆ. ಯಾವುದೇ ನಿಂದನಾತ್ಮಕ ಅಥವಾ ಅಸಭ್ಯ ಶಬ್ದ ಅಥವಾ ಕಾಮೆಂಟ್ ಲೈವ್ ಆಗಬಾರದೆಂಬ ಕಾರಣಕ್ಕೆ ನಾವು ಫಿಲ್ಟರ್ ಅಳವಡಿಸಿದ್ದೇವೆ. ಆದರೂ, ಕೆಲವೊಮ್ಮೆ ಅಶ್ಲೀಲ, ಅಸಭ್ಯ ಪದಗಳು ಕಾಣಿಸಿಕೊಂಡರೆ, ಆ ಬಗ್ಗೆ ನಮಗೆ ಮಾಹಿತಿ ತಲುಪಿದ ಬಳಿಕ ನಾವದನ್ನು ಸೈಟ್‌ನಿಂದ ತೆಗೆದುಹಾಕುತ್ತೇವೆ. ಓದುಗರು ನಮ್ಮ ಷರತ್ತುಗಳು, ನಿಯಮಗಳು, ಪ್ರೈವೆಸಿ ನೀತಿ ಹಾಗೂ ಈ ಸೈಟ್‌ಗೆ ಅನ್ವಯವಾಗುವ ಯಾವುದೇ ನಿಯಮಗಳನ್ನು ಉಲ್ಲಂಘನೆ ಮಾಡಿದರೆ, ಅವರನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತದೆ.',
+        message_write_hindi : 'ಕನ್ನಡದಲ್ಲಿ ಬರೆಯಿರಿ (ಇಂಗ್ಲಿಷ್ ಅಕ್ಷರಗಳ ಮೂಲಕ) ',
+        message_inscript : 'ಕನ್ನಡದಲ್ಲಿ ಬರೆಯಿರಿ',
+        message_error_blank : "Comment should not be blank",
+        message_error_blank_name : "Name should not be blank",
+        message_error_blank_email : "Email Id should not be blank",
+        message_error_invalid_email : "Kindly enter a valid Email Id",
+        message_error_captcha : "Kindly enter captcha value",
+        tp_url : 'http://www.timespoints.com/?utm_source=mt&utm_medium=comment'
+        
+	}
+	 
+	        
+             
+            var AbusedVal = null;
+            var AbusedElm = null;
+            var commentInfo = {
+                clickedViaSocial : false,
+                parentCommentId : null,
+                rootCommentId : null,
+                commentLevel : null
+            }; 
+			function CommentsModule(channelInfo, sortcriteria) {
+                this.pagetype = channelInfo.pagetype;
+                this.authorDefaultPic = "https://mytimes.indiatimes.com/image/thumb/0/default";
+                this.APIComments = "/commentsdata.cms";
+                this.APIPostComments = "/postro.cms";
+                this.APIEmailVerification = "/json/postroemailverification.cms";
+                this.APICommentVerification = "/cmtverified/{msid}.cms";
+                this.APIFollowee = "https://myt.indiatimes.com/mytimes/activity/myfriends?openNetworkId=sso&appKey=&size=-1&lastSeenId=0&after=true&type=followee";
+                this.APIFollow = "https://myt.indiatimes.com/mytimes/followuser",
+                this.APIOffensive = "/offensive/mark",
+                this.APIRatecomment = "https://myt.indiatimes.com/mytimes/addActivity",
+                this.articleCommentscount = 0;
+                this.articleComments = Array();
+                this.indexcount = 0;  
+                this.commentsParams = {
+                    appkey : channelInfo.appkey,
+                    msid :  channelInfo.msid,
+                    sortcriteria : "CreationDate",  //CreationDate
+                    order : "asc",
+                    size : 3,
+                    lastdeenid : 0,
+                    after : true,
+                    withReward : true,  //set this to false if reward details not required.
+                    pagenum : 1
+                }, 
+                this.rateComment = function(type, commentId, ckieVal, currentObj) {
+                    var params = {
+                        actorType : "U", 
+                        activityType : type,
+                        objectId : commentId,
+                        objectType : "A",
+                        fromMyTimes : true
+                    }
+                    //$.get(this.APIRatecomment, params);
+                    $.ajax({
+                        url:this.APIRatecomment,
+                        dataType: "jsonp",
+                        data:params,
+                        success:function(data) {
+                            var count = parseInt($(currentObj).prev('span[data-action="comment-'+ckieVal+'-count"]').text());
+                            $(currentObj).prev('span[data-action="comment-'+ckieVal+'-count"]').text(count + 1);
+                            if(typeof Set_Ckie == 'function') {
+                                Set_Ckie('votec_'+commentId, commentId+':'+ckieVal, 30); //30 days
+                            }
+                            if(typeof set_activity_log == 'function') {
+                                var articleId =  getArticleIdFromUrl(0);
+                                var tpActivity = type == 'Agreed' ? 'COMMENT_UP_VOTE' : 'COMMENT_DOWN_VOTE';
+                                set_activity_log(TIMESPOINTCONFIG.get(tpActivity), articleId);
+                            }  
+                        }
+                    });
+                    
+                },
+                this.InvokeSocialPopup = function(isfb, istwittr, textToShare) {
+                    if(isfb) {
+                      var shareURL = document.location.origin + document.location.pathname;
+                      var path = "https://www.facebook.com/dialog/share?app_id="+channelInfo.fbapp_id+"&display=popup&href="+shareURL;
+                      window.open(path, "", "left=300,top = 100, width=600,height=100")  
+                    }
+                    if(istwittr) {
+                         var shareURL = document.location.origin + document.location.pathname;
+                         window.open('https://twitter.com/share?url=' + shareURL + '&amp;text=' + textToShare + '&via='+channelInfo.twitter_handle, 'sharer', 'toolbar=0,status=0,width=626,height=436,scrollbars=1');  
+                    }
+                    
+                },
+                this.postComment = function(dataToPost, errorPlaceholder) {
+                    $.ajax({
+        				  type: "POST",
+        				  async : false,
+        				  url: this.APIPostComments,
+        			      data: dataToPost,
+        				 // dataType: "json",
+        				  headers : {
+        				      "Content-Type" : 'application/x-www-form-urlencoded; charset=UTF-8'
+        				  },
+        				  success :function(data) {
+        				     if(data == 'abusivelanguage') {
+        				         $(errorPlaceholder).text(channelInfo.message_offensive);
+        				     }
+        				     else if(data == 'duplicatecontent') {
+        				         $(errorPlaceholder).text(channelInfo.message_duplicate);
+        				     }
+        				     else {
+        				         $(errorPlaceholder).text(channelInfo.succesmessage).removeClass('error').addClass('comment-verification-msg');  
+        				     }
+        				  },
+                		   error: function(err){
+                             console.log(err); 
+                             if(err.responseText == 'abusivelanguage') {
+        				         $(errorPlaceholder).text(channelInfo.message_offensive);
+        				     }
+        				     else if(err.responseText == 'duplicatecontent') {
+        				         $(errorPlaceholder).text(channelInfo.message_duplicate);
+        				     }
+                           } 
+    			    });   
+                },
+                this.validateEmail = function(email) {
+                 var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+                 return filter.test(email); 
+                },
+                this.verifyComment = function() {
+                    $('<div class="email_verification">'+channelInfo.message_emailverify+'</div>').insertBefore('#ajexcontents');
+                    var commentid =  this.getUrlParameter('messageid');
+                    var r = this.getUrlParameter('r');
+                    $.get(this.APICommentVerification.replace('{msid}', channelInfo.msid), {cmtid: commentid, r : r}, function(){ }); 
+                },
+                this.validateForm = function(dataToProcess) { 
+                  var obj = this;
+                  $(dataToProcess.errorPlaceholder).text('');
+                  if(dataToProcess.userType === 'authenticated') {
+                        if(!dataToProcess.commentVal || dataToProcess.commentVal == channelInfo.message_default_textarea) {
+                            $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_blank).addClass('error');
+                            return;
+                        } 
+                        var dataToPost = {
+                			fromname : userInfoconfig.fullname,
+                			fromaddress : userInfoconfig.email,
+                			userid : userInfoconfig.email,
+                			loggedstatus : 1,
+                			message : dataToProcess.commentVal,
+                			roaltdetails : 1,
+                			ArticleID : channelInfo.msid,
+                			article_id : channelInfo.msid,
+                			msid :  channelInfo.msid,
+                			rchid :  channelInfo.channelid,
+                			langid : channelInfo.langid,
+                			url : document.location.href,
+                			medium : 'WEB',
+                		    imageurl : userInfoconfig.thumb
+                	    };
+                	    
+                	    if(userInfoconfig.city.toLowerCase() != 'unknown') {
+                	       dataToPost.location = userInfoconfig.city;
+                	    }
+                	    
+                	    if(channelInfo.pagetype && channelInfo.pagetype == 'moviereview') {
+                	       dataToPost.urs = 2 ;
+                	       dataToPost.rotype = 3 ; 
+                	    }
+                	    
+                	    if(dataToProcess.commentLevel >= 1) {
+                	      dataToPost.parentid = dataToProcess.parentCommentId;
+                	      dataToPost.rootid = dataToProcess.rootCommentId;
+                	    } 
+                	    
+                	    
+                        obj.postComment(dataToPost, dataToProcess.errorPlaceholder);
+                        obj.InvokeSocialPopup(dataToProcess.isfbChecked, dataToProcess.isTwittrChecked, dataToProcess.commentVal);//Open social popups
+                        
+                  } 
+                  else {
+                    if(!dataToProcess.commentVal || dataToProcess.commentVal == channelInfo.message_default_textarea) {
+                        $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_blank).addClass('error');
+                        return;
+                    }
+                    else if(!dataToProcess.userName) {
+                        $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_blank_name).addClass('error');
+                        return;
+                    } else if(!dataToProcess.userEmail) {
+                        $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_blank_email).addClass('error');
+                        return;
+                    }
+                    else if(!this.validateEmail(dataToProcess.userEmail)) {
+                        $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_invalid_email).addClass('error');
+                        return;
+                    }
+                    else if(!dataToProcess.captchaAns) {
+                        $(dataToProcess.errorPlaceholder).text(channelInfo.message_error_captcha).addClass('error');
+                        return;
+                    }
+                    else {
+                         
+                          
+    					/*	fromname:Ranjeet Singh
+                            fromaddress:c-ranjeet.paliwal@timesinternet.in
+                            userid:49t79x3nf0h7fmmcd0hxev6a9
+                            location:
+                            imageurl:https://mytimes.indiatimes.com/image/thumb/1/43936462
+                            loggedstatus:1
+                            message:ssss
+                            roaltdetails:1
+                            ArticleID:62366414
+                            msid:62366414
+                            parentid:0
+                            rootid:0
+                            medium:WEB
+                            url:https://timesofindia.indiatimes.com/india/vijay-mallya-declared-proclaimed-offender-by-delhi-court/articleshow/62366414.cms
+                            configid:41083278
+                            urs:
+                            rotype:0
+                            pcode:TOI*/
+                            
+                        var dataTosend = {
+                			fromname : dataToProcess.userName,
+                			fromaddress : dataToProcess.userEmail,
+                			userid : 'qrst',
+                			location : dataToProcess.userLocation,
+                			loggedstatus : 0,
+                			message : dataToProcess.commentVal,
+                			roaltdetails : 1,
+                			ArticleID : channelInfo.msid,
+                			article_id : channelInfo.msid,
+                			msid :  channelInfo.msid,
+                			rchid :  channelInfo.channelid,
+                			langid : channelInfo.langid,
+                			url : document.location.href,
+                			medium : 'WEB',
+                			captchaText : dataToProcess.captchaAns
+                	    }; 
+                	    if(channelInfo.pagetype && channelInfo.pagetype == 'moviereview') {
+                	       dataToPost.urs = 2 ;
+                	       dataToPost.rotype = 3 ; 
+                	    }
+                	    if(dataToProcess.commentLevel >= 1) {
+                	      dataTosend.parentid = dataToProcess.parentCommentId;
+                	      dataTosend.rootid = dataToProcess.rootCommentId;
+                	    } 	 
+                	    obj.processComment(dataTosend, dataToProcess.errorPlaceholder); 
+                	   
+                    } 
+                  }
+                    
+              },
+              this.processComment = function(dataTosend, errorPlaceholder) { 
+                 $.ajax({
+        				  type: "POST",
+        				  async : false,
+        				  url: this.APIEmailVerification,
+        			      data: dataTosend,
+        				  dataType: "json",
+        				  success :function(data) {
+        				    if(data.postroemailverification.error){
+        				        $(errorPlaceholder).text("Captcha Not valid. Please try again.").addClass('error');
+        				    } else if(data.postroemailverification.insertro) {
+        						 $(errorPlaceholder).text(channelInfo.usermessage).removeClass('error').addClass('comment-verification-msg');
+        				    }
+        				   },
+                		   error: function(err){
+                             console.log(err);
+                           } 
+    			    });   
+              },
+              this.FlagComments = function(flaggedValue, currentObj) {
+                var commentId = $(currentObj).closest('.comment-box').attr('data-id'); 
+                   
+                var dataTosend = {
+                    ofusername : userInfoconfig.fullname,
+                    ofreason : flaggedValue,
+                    clname : "VSNL",
+                    ofcommenteroid : commentId,
+                    ofcommenthostid : channelInfo.hostid,
+                    ofcommentchannelid : channelInfo.channelid,
+                    ofcommentid : channelInfo.msid,
+                    ofuserisloggedin : 1,
+                    ofuserssoid : userInfoconfig.email,
+                    ofuseremail : userInfoconfig.email
+                } 
+            	$.ajax({
+                  url: this.APIOffensive,
+                  data: dataTosend,
+                  success: function(data) {
+                    $(currentObj).closest('.flagcontainer').find('.success-message').show();
+                    $(currentObj).closest('.flagcontainer').find('.info-txt, h6, ul[data-action="option_list"], span[data-action="submit_offensive"]').hide();
+                    $(currentObj).closest('div[data-action="flag_comment_box"]').find('.heading-block').hide();
+                    $(currentObj).closest('span[data-action="flag_comment"]').next('span[data-action="flagged"]').show();
+                    $(currentObj).closest('span[data-action="flag_comment"]').find('span[data-action="text-flag"]').hide();
+                    if(typeof Set_Ckie == 'function') {
+                       //Set_Ckie('markedabuse_'+commentId, commentId, 30); 
+                       Set_Ckie('votec_'+commentId, commentId+':flagged', 30); //30 days
+                    }
+                    /*Times Point Logging*/
+                    if(typeof set_activity_log == 'function') {
+                        var articleId =  getArticleIdFromUrl(0);
+                        set_activity_log(TIMESPOINTCONFIG.get('COMMENT_OFFENCIVE'), articleId);
+                    }
+                    /*Times Point Logging*/
+                  }
+                }); 
+              },
+                this.Get_Ckie = function(name) {
+                    var value = "; " + document.cookie;
+                    var parts = value.split("; " + name + "=");
+                    if (parts.length == 2) return parts.pop().split(";").shift();
+                },
+                this.updateFollowingstatus = function () {
+                    $.ajax({
+                      dataType: "jsonp",
+                      url: this.APIFollowee,
+                      success: function(data) {
+                          var followids = [];
+                           $(data).each(function(index, value){
+                               followids[index] = parseInt(value._id);
+                           });
+                           //console.log(followids);
+                           $("div[id^='cmnt_']").each(function() {
+            			        var userId = $(this).attr('data-userid'); //console.log(userId); 
+            			        if($.inArray(parseInt(userId), followids) != -1) {
+            			            //alert("ssss");
+            			            var title = '';
+            			            if($(this).find('.metadata.follow').attr('title')) {
+            			                title = $(this).find('.metadata.follow').attr('title').replace('Follow', 'Following');    
+            			            }
+            			            
+                                    $(this).find('.metadata.follow').attr('title', title);
+                                    $(this).find('.metadata.follow').html('<span class="divider"></span><i class="icon-follow"></i>Following');
+            			        }
+            			   });
+                      }
+                    });
+                }, 
+                this.followUser = function (userId, followPlaceholder) { 
+                    var followParams = {userId : userId, fromMyTimes : true, isNotify : false, appKey : channelInfo.appkey, callback : "?"};
+                    $.ajax({
+                      dataType: "jsonp",
+                      url: this.APIFollow,
+                      data: followParams,
+                      success: function(data) {
+                          var title = $(followPlaceholder).attr('title').replace('Follow', 'Following');
+                          $(followPlaceholder).attr('title', title);
+                          $(followPlaceholder).html('<span class="divider"></span><i class="icon-follow"></i>Following');
+                          /*Times Point Logging*/
+                            if(typeof set_activity_log == 'function') {
+                                var articleId =  getArticleIdFromUrl(0);
+                                //apiLogForOtherUser(authorEmail, authorSSOID, id, TIMESPOINTCONFIG.get('FOLLOW_BUTTON_AUTHOR')); // author point
+                                set_activity_log(TIMESPOINTCONFIG.get('FOLLOW_BUTTON_USER'), articleId);   
+                            } 
+                          /*Times Point Logging*/
+                      }
+                    });
+                },
+                this.getUrlParameter = function(parameter) {
+            	   fullQString = window.location.search.substring(1);
+            	   paramArray = fullQString.split("&");
+            	   found = false;
+            	   for (i=0;i<paramArray.length;i++)
+            	   {
+            	     currentParameter = paramArray[i].split("=");
+            	     if(currentParameter[0] == parameter)
+            			return currentParameter[1];
+            	   }
+            	   return false; //params not found
+	            },
+                this.getCommentData = function (commentObg, level, loggedinUserId) {
+                 // console.log(commentObg);
+                    var badges = [];
+                    var obj = this;
+                    if(commentObg.user_reward_point_info) {
+        				var badgedetails = commentObg.user_reward_point_info.activityBadge;
+        			} 
+        			if(badgedetails) { 
+                        $.each(badgedetails, function(index, badgeObg) {
+            				 badges[index] =  {
+            				 	bName : badgeObg.currentBadge.bname,
+            					bImage : badgeObg.currentBadge.bimg,
+            					bLevel : badgeObg.currentBadge.level
+                             };
+            			});
+        			}
+        			var commentData = { 
+            			    id : commentObg.A_U_I,
+            			    level : level,
+                            title: commentObg.C_T,
+                            postedAt : commentObg.C_D,
+            				agreeCount:  commentObg.AC_A_C,
+            				disagreeCount:  commentObg.AC_D_C,
+            				rootid :  commentObg.C_R_EROID
+                        }
+        			 
+        			if(badges.length > 0) { 
+                        commentData.badgeinfo = badges;
+                    }
+                    
+                    if(commentObg.C_A_ID) { 
+                        commentData.isAuthor = true;
+                    }
+                    
+                    if(commentObg.CHILD && !$.isEmptyObject(commentObg.CHILD[0])) { 
+                        commentData.ischildNode = true;
+                    } 
+                    
+        		    if(commentObg.user_detail && commentObg.user_detail._id) {
+                        commentData.userId = commentObg.user_detail._id;
+                        if(commentObg.user_detail._id == loggedinUserId) {
+            			    commentData.self = true; 
+            		    }
+        		    }
+        		    else {
+        		        commentData.userId = false;
+        		    }
+            		
+        		    if(commentObg.user_detail && commentObg.user_detail.CITY && commentObg.user_detail.CITY.toLowerCase() != 'unknown') {
+                        commentData.authorCity = commentObg.user_detail.CITY;
+        		    }
+        		    if(commentObg.user_detail && commentObg.user_detail && commentObg.user_detail.F_C) {
+                       commentData.folowee = commentObg.user_detail.F_C;
+        		    }
+        		   
+        		    if(commentObg.user_detail && commentObg.user_detail.F_C) {
+                       commentData.folowee = commentObg.user_detail.F_C;
+        		    }
+        		    
+        		    if(commentObg.user_detail && (commentObg.user_detail.F_N || commentObg.user_detail.L_N)) {
+                        if(commentObg.user_detail.L_N!=null){
+                           commentData.authorName = commentObg.user_detail.F_N + ' ' + commentObg.user_detail.L_N;
+        		            }
+        		            else{
+        		                commentData.authorName = commentObg.user_detail.F_N; 
+        		            }
+        		    }      
+        		    else {
+        		        commentData.authorName = commentObg.A_D_N; 
+        		    }
+        		    
+        		    if(commentObg.user_detail && commentObg.user_detail.thumb) {
+                       commentData.authorPic = commentObg.user_detail.thumb;
+        		    } else {
+        		      commentData.authorPic = obj.authorDefaultPic;  
+        		    } 
+                     
+                    
+                    if(loggedinUserId) {
+                       commentData.loggedin = true; 
+                    } 
+                    
+                    if(commentObg.user_reward && commentObg.user_reward.statusPoints) {
+        			    commentData.rewardPoints = commentObg.user_reward.statusPoints;
+        			}
+			 
+        			if(obj.Get_Ckie('ssoid')) {
+        			    commentData.ssoId = obj.Get_Ckie('ssoid');
+        			}
+        			
+        			if(obj.Get_Ckie('ssoid') && userInfoconfig.thumb) {
+        			    commentData.authorPiconform = userInfoconfig.thumb;
+        			}
+        			else {
+        			    commentData.authorPiconform = obj.authorDefaultPic;
+        			}
+        			
+        			 commentData.tp_url = channelInfo.tp_url;
+        			
+		            obj.articleComments[obj.indexcount++] = commentData;
+		            
+        			if(commentObg.CHILD && commentObg.CHILD.length > 0) {
+        			     level++;
+            		     for(var i = 0; i < commentObg.CHILD.length; i++ ) {
+            		        obj.getCommentData(commentObg.CHILD[i], level);
+            		     }
+            		     
+        			}
+		            return;
+                },
+                
+                this.initializeQuillPad = function() {
+                    var isScriptexist = false;
+                    var scripts = document.getElementsByTagName("script");
+                    for (var i=0;i<scripts.length;i++) {  
+                         if (scripts[i].src.split('/')[3] && scripts[i].src.split('/')[3] == 'canvas_mochikit.cms?minify=1' ) {
+                            var isScriptexist = true;
+                            break;
+                         }
+                     
+                    }
+                   if(!isScriptexist) {
+                    
+                    var scrt3=document.createElement('script');
+                	scrt3.type = 'text/javascript';
+                	scrt3.src='/canvas_quillpad.cms?minify=1&version=2';
+                	document.getElementsByTagName("head")[0].appendChild(scrt3); 
+                	var scrt6=document.createElement('link');
+                	scrt6.rel  = 'stylesheet';
+                	scrt6.type = 'text/css';
+                	scrt6.href='/opinioncmnt_ie9_quillcss.cms?minify=1';
+                	
+                    var scrt=document.createElement('script');
+                	scrt.type = 'text/javascript';
+                	scrt.src='/canvas_mochikit.cms?minify=1';
+                	document.getElementsByTagName("head")[0].appendChild(scrt);
+                
+                	var scrt1=document.createElement('script');
+                	scrt1.type = 'text/javascript';
+                	scrt1.src='/canvas_inscriptmap.cms?minify=1';
+                	document.getElementsByTagName("head")[0].appendChild(scrt1);
+                
+                	var scrt2=document.createElement('script');
+                	scrt2.type = 'text/javascript';
+                	scrt2.src='/canvas_config.cms?new=2&minify=1';
+                	document.getElementsByTagName("head")[0].appendChild(scrt2);
+                	
+                	document.getElementsByTagName("head")[0].appendChild(scrt6); 
+                	
+                   }	 
+                	
+                }, 
+                
+                this.updateDom = function() {
+                    $('.more-info a').text(channelInfo.message_knowmore_tp);
+                    $('span[data-val="text-reply"]').text(channelInfo.message_reply);
+                    $('span[data-val="text-responses"]').text(channelInfo.message_responses);
+                    $('span[data-action="text-flag"]').text(channelInfo.message_offensive);
+                    $('div[data-action="flag_comment_box"] h4').text(channelInfo.message_is_offensive);
+                    $('.flagcontainer .success-message').text(channelInfo.message_offensive_conf);
+                    $('.flagcontainer .info-txt').text(channelInfo.message_disclaimer_offensive);
+                    $('.flagcontainer h6').text(channelInfo.message_offensive_reason);
+                    $('.sec-badges .heading-block h4').text(channelInfo.message_medal);
+                     
+                    /*$('ul[data-action="option_list"] label[data-val="fl"]').append(channelInfo.message_lang_abusive );
+                    $('ul[data-action="option_list"] label[data-val="dfame"]').append(channelInfo.message_defame );
+                    $('ul[data-action="option_list"] label[data-val="community"]').append(channelInfo.message_defame_community );
+                    $('ul[data-action="option_list"] label[data-val="other"]').append(channelInfo.message_others );*/
+                    
+                    $('ul[data-action="option_list"] label[data-val="fl"] b').text(channelInfo.message_lang_abusive );
+                    $('ul[data-action="option_list"] label[data-val="dfame"] b').text(channelInfo.message_defame );
+                    $('ul[data-action="option_list"] label[data-val="community"] b').text(channelInfo.message_defame_community );
+                    $('ul[data-action="option_list"] label[data-val="other"] b').text(channelInfo.message_others );
+                    
+                    $('span[data-action="submit_offensive"]').text(channelInfo.message_objection);
+                    $('span[data-action="close_popup_offensive"]').text(channelInfo.message_close);
+                    $('span[data-action="flagged"]').text(channelInfo.message_objected);
+                    $('p[data-val="disclaimer-comment"]').text(channelInfo.message_disclaimer_comments);
+                    $('a[data-action="lang-hindi"]').text(channelInfo.message_write_hindi);
+                    $('a[data-action="lang-inscript"]').text(channelInfo.message_inscript)
+                },
+                
+                this.loadCommentsOptimized  = function(commentsData, userId) {
+                     var obj = this;
+                     $.each(commentsData, function(index, commentObg) { 
+        			     console.log("Called ");
+        				 obj.getCommentData(commentObg, 1, userId);//1 is the comment Level  
+    			     });
+        			 $('#image-loader').remove();
+        			 console.log(obj.articleComments);
+		            $("#commentTemplate").tmpl(obj.articleComments).appendTo("#commentsContainer"); 
+		            
+		            obj.updateFollowingstatus();//update user follow statys to following  
+		             
+		            if(obj.articleCommentscount <= obj.commentsParams.size) {
+		                $('.loadmore').hide();
+		            } 
+		            
+		            obj.updateDom();
+                },
+                this.loadComments = function(params) {
+                    var obj = this;
+                    obj.articleComments = Array();
+                    obj.indexcount = 0;
+                    //params.msid =  ArticleInview; //ArticleInview, A Global varibale set in articleshowjs_canvas;
+                    $.getJSON(this.APIComments, params, function(commentsData) { 
+                        if(commentsData.length > 0) {
+                             var badges = []; 
+                             obj.articleCommentscount = commentsData[0].totalcount;
+                             $('#total_comment').text(commentsData[0].cmt_c);
+                		 	 commentsData.shift(); //removes first entry contains commentcount
+                		 	  console.log(commentsData); 
+                			  if(obj.Get_Ckie('ssoid')) {
+                			     $.ajax({
+                                    dataType: 'jsonp',
+                                    url: 'https://myt.indiatimes.com/mytimes/profile/info/v1/?ssoid=' + obj.Get_Ckie('ssoid'),
+                                    success: function(UserInfo) {
+                                        var loggedinUserId = UserInfo ? parseInt(UserInfo._id) : '';
+                                        obj.loadCommentsOptimized(commentsData, loggedinUserId);
+                                    }  
+                			    
+                			    });               
+                			  }
+                			  else {
+                			     obj.loadCommentsOptimized(commentsData, null);
+                			  }
+                        }
+                        else {
+                            $('.comments-heading h2').text('Be the first one to review');
+                            $('.loadmore').hide();
+                            $('#image-loader, div[data-plugin="comment-sorting"]').remove();
+                        }
+    		       });
+                },
+                this.QuillTimer = function(timerObj) {
+                    if(typeof Quill != 'undefined' && typeof Quill.init == 'function' && $('#Quillcommentarea').length == 0) {
+                        Quill.init('commentarea',  '', '', 'kanada'); 
+                        setTimeout(function(){
+                            Quill.setPrefillText('commentarea' , 'kanada', channelInfo.message_default_textarea);
+                        }, 100);
+                        clearInterval(timerObj);
+                    }
+                },
+                this.getCommentText = function(ObjectId) {
+                    var commentText = Quill.getLanguageText(ObjectId).replace(/<\/?[^>]+(>|$)/g, "");//remove HTML tags	
+                    return commentText.trim();
+                },
+                this.initialise =function() {
+                    console.log("hello");
+                     //update Captcha value
+			      $('.mathbox img.capchaimg').attr('src','/getCaptchaImage?&timesstamp=' + Date.now() + '&msid=' + channelInfo.msid);
+			     
+                    this.initializeQuillPad();
+                    var obj = this;
+                    setTimeout(function(){
+                        if(obj.Get_Ckie('ssoid') && userInfoconfig.thumb) {
+                            $('#user-thumbnail img').attr('src', userInfoconfig.thumb);
+                        }
+                    }, 1000);
+                    
+                    this.loadComments(this.commentsParams);
+                    
+                    var timerObj = setInterval(function() {
+                        obj.QuillTimer(timerObj);
+                    }, 100); 
+                    
+                },
+                //basic initilization
+                this.initialise();
+            }; 
+        	
+        	function loginLogoutCallback(event) {
+	             if(event == 'login' &&  AbusedVal && AbusedElm) {
+	                commentObj.FlagComments(AbusedVal, AbusedElm);  
+	             }
+	             if(event == 'login' && commentInfo.clickedViaSocial) { 
+	                 if(commentInfo.formObj) {
+	                    $(commentInfo.formObj).hide(); 
+	                 }
+	                 var dataToProcess = {
+			           userType : 'authenticated', 
+			           commentVal: commentInfo.commentVal,
+			           errorPlaceholder : commentInfo.errorPlaceholder,
+			           commentLevel : commentInfo.commentLevel,
+			           parentCommentId : commentInfo.parentCommentId,
+			           rootCommentId : commentInfo.rootCommentId,
+			         };
+			         commentObj.validateForm(dataToProcess);
+	                 
+	             }
+	        }
+	        
+	        function openTPURL() {
+	           window.open(channelInfo.tp_url);
+	        }
+	        
+            $(function() {
+                 
+                
+                 
+                 
+                /*if(document.location.search.search('messageid') != -1 && document.location.search.search('r') != -1) {
+			        commentObj.verifyComment();    
+			    } */
+			    
+			   
+			    
+                /*if(typeof Get_Ckie == 'function' && !Get_Ckie('ssoid')) {
+                    $('div[data-action="login-input-box"]').show();
+                }
+                else {
+                    $('.login-area .social-post').show(); 
+                }*/
+                
+                $(document).on("click", 'a[data-action="lang-inscript"], a[data-action="lang-hindi"], a[data-action="lang-eng"]', function() {//Close RHS comments slider
+                    var elmId = $(this).attr('data-commentid');
+                    $(this).closest('span[data-action="choose-language"]').find('.lang-disable').removeClass('lang-disable');
+                    $(this).addClass('lang-disable');
+                    var lang = $(this).attr('data-lang');
+                    if(lang == 'inscript') {
+                        Quill.setInscriptMode(elmId, true);   
+                    }
+                    else {
+                        Quill.setLanguage(elmId, lang);	
+                    }
+                    
+                 });
+                
+                 
+                $(document).on("click", ".close.close_comments, .comments-overlay", function() {//Close RHS comments slider
+                    if($('.comments-overlay').length > 0) {
+                       $('.comments-overlay,.comments-body').remove();
+                       $('body').removeClass('disable-scroll'); 
+                    }
+                });
+                
+                $(document).on("click", 'i[data-action="icon-uparrow"], i[data-action="icon-downarrow"]', function(event) { 
+                    //event.stopPropagation();
+                    var elmclicked = $(this).attr('data-action');
+                    var commentId = $(this).closest('.comment-box').attr('data-id');
+                    $('b.vote-tooltip').remove();
+                    if(typeof Get_Ckie == 'function' && Get_Ckie('votec_'+commentId)) {
+                        var cookieval = Get_Ckie('votec_'+commentId);
+                        cookieval = cookieval.split(':')[1];
+                        if(cookieval == 'agree' && elmclicked == 'icon-uparrow') {
+                           $('<b class="vote-tooltip">You have already agreed this </b>').insertBefore($(this));
+                           setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        }
+                        else if(cookieval == 'dagree' && elmclicked == 'icon-downarrow') {
+                           $('<b class="vote-tooltip">You have already disagreed this</b>').insertBefore($(this));
+                           setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        }
+                        else if(cookieval == 'flagged') {
+                           $('<b class="vote-tooltip">You have already Flagged this</b>').insertBefore($(this));
+                           setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        }
+                        else {
+                           $('<b class="vote-tooltip">You cant agree and disagree to the same review</b>').insertBefore($(this));
+                           setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        }
+                    }
+                    else if(elmclicked == 'icon-uparrow') {
+                         if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid')) {
+                       // var count = parseInt($(this).prev('span[data-action="comment-agree-count"]').text());
+                        //$(this).prev('span[data-action="comment-agree-count"]').text(count + 1);
+                        commentObj.rateComment('Agreed', commentId, 'agree', $(this));
+                         }
+                        else { 
+                              opensso('login'); 
+                         }
+                    }
+                    else if(elmclicked == 'icon-downarrow') {
+                       // var count = parseInt($(this).prev('span[data-action="comment-sagree-count"]').text());
+                       // $(this).prev('span[data-action="comment-dagree-count"]').text(count + 1);
+                        if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid')) {
+                        commentObj.rateComment('Disagreed', commentId, 'dagree',  $(this));
+                        }
+                        else { 
+                              opensso('login'); 
+                         }
+                    }
+			    });
+			    
+                $(document).on("click", '.cpointer.flag_comment span[data-action="text-flag"]', function() { //When clicked on Flag text offensive popup
+                    var commentId = $(this).closest('.comment-box').attr('data-id');
+                    var userId = $(this).closest('.comment-box').attr('data-userid');
+                    if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid') && userInfoconfig._id && userId == userInfoconfig._id) {
+                        $('<b class="vote-tooltip">You can\'t Flag you own comment</span>').insertBefore($(this));
+                        setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        return;
+                    } 
+                    else if(typeof Get_Ckie == 'function' && Get_Ckie('votec_'+commentId)) {
+                        var cookieval = Get_Ckie('votec_'+commentId);
+                        cookieval = cookieval.split(':')[1];
+                        $('b.vote-tooltip').remove();
+                        if(cookieval && cookieval == 'agree') {
+                          $('<b class="vote-tooltip">You cant Agree and mark the same review offensive </span>').insertBefore($(this));
+                          setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                          return;
+                        }
+                        if(cookieval && cookieval == 'dagree') {
+                          $('<b class="vote-tooltip">You cant Disagree and mark the same review offensive</span>').insertBefore($(this));
+                          setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                          return;
+                        } 
+                        if(cookieval == 'flagged') {
+                           $('<b class="vote-tooltip">You have already Flagged this</b>').insertBefore($(this));
+                           setTimeout(function(){$('.vote-tooltip').fadeOut();},3000);
+                        }
+                        
+                        return;
+                    }
+                    
+                    $(this).closest('.cpointer.flag_comment').find('div[data-action="flag_comment_box"]').show();
+			    });  
+			    
+			    $(document).on("click", 'span[data-action="close_popup_offensive"]', function() { //When clicked on Close button offensive popup
+                    $(this).closest('div[data-action="flag_comment_box"]').hide();
+			    });
+			    
+			    $(document).on("click", 'ul[data-action="option_list"] input[name="radiotype"]', function() { //When clicked on offensive radio buttons offensive popup
+			         //console.log($(this).val());
+			         if($(this).val() == "Others") {  
+			           $(this).closest('li').next('li').find('textarea').show();
+			         }
+			    });
+			     
+			    $(document).on("click", 'span[data-action="submit_offensive"]', function() { //When clicked on Report/Submit button offensive popup
+			        var flaggedValue = null;
+                    $(this).closest('.flagcontainer').find('ul[data-action="option_list"] input[name="radiotype"]:checked').each(function(){
+                        flaggedValue = $(this).val();
+                        //console.log(flaggedValue);
+                    });
+                    if(flaggedValue == "Others") {
+                        //$(this).closest('.flagcontainer').find('textarea[data-action="offensive_popup_reason"]').show(); 
+                        flaggedValue = $(this).closest('.flagcontainer').find('ul[data-action="option_list"] textarea[data-action="offensive_popup_reason"]').val();
+                    }
+                    if(!flaggedValue || (flaggedValue == "Others")) {
+                        $(this).closest('.flagcontainer').find('div[data-action="comment-offensive-error"]').text("Please select a reason");
+                    }
+                    else {
+                        if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid')) {
+                          $(this).closest('.flagcontainer').find('div[data-action="comment-offensive-error"]').text('');
+                          commentObj.FlagComments(flaggedValue, $(this)); 
+                        }
+                        else {
+                          $(this).closest('.flagcontainer').find('div[data-action="comment-offensive-error"]').text('');
+                          AbusedVal = flaggedValue;
+                          AbusedElm = $(this);
+                          opensso('login');  
+                          
+                        }
+                        
+                    }
+			    });
+			    
+                
+                //alert(userInfoconfig.fullname);
+                $(document).on("click", '.login-area .mathbox a.refresh-captcha', function() {  
+                  $(this).closest('.mathbox').find('img.capchaimg').attr('src','/getCaptchaImage?&timesstamp=' + Date.now() + '&msid=' + channelInfo.msid);
+				    //$('#capchaimg').attr("src", "/getCaptchaImage?timesstamp=" + Date.now() + "&msid=" + pageInfo.msid);   
+			    }); 
+			    
+			     
+			    
+			     
+			     
+                
+                 $(document).on("click", '.loadmore', function() {
+                    $('#commentsContainer').append('<img src="/photo/42715392.cms" id="image-loader" />');
+                    if((commentObj.commentsParams.size * (commentObj.commentsParams.pagenum +1)) >= commentObj.articleCommentscount) {
+                        $(this).hide();
+                    }
+                    commentObj.commentsParams.pagenum = commentObj.commentsParams.pagenum + 1;
+                    commentObj.loadComments(commentObj.commentsParams);
+                });
+                
+                 
+                $(document).on("click", '.metadata.follow', function() {
+                    if($(this).find('[data-val="follow"]').text() == 'Follow') {
+                        var userId = $(this).closest('.comment-box').attr('data-userid');
+                        commentObj.followUser(userId, $(this));
+                    }
+                }); 
+                
+                $(document).on("click", 'span[data-action="social-login-fb"], span[data-action="social-login-google"], span[data-action="social-login-email"]', function() {
+                     
+                    var elmClicked = $(this).attr('data-action');
+                    /*var errorPlaceholder = $(this).closest('.comment-holder').find('.response-box');
+                      var commentLevel = $(this).closest('.comment-box').attr('data-level');
+                      var isfbChecked = $(this).closest('.comment-holder').find('.social-post input[name="fb"]').is(":checked");
+                      var isTwittrChecked = $(this).closest('.comment-holder').find('.social-post input[name="twittr"]').is(":checked");
+                      var parentCommentId = null;
+                      var rootCommentId = null;
+                      if(commentLevel >= 1) {
+    			        var parentCommentId = $(this).closest('.comment-box').attr('data-id');
+    			        var rootCommentId = $(this).closest('.comment-box').attr('data-rootid');
+    			      }*/
+    			     commentInfo.clickedViaSocial = true;
+    			     var textareaId = $(this).closest('.comment-holder').find('.add-comment-section textarea').attr('id');
+                     commentInfo.commentVal = commentObj.getCommentText(textareaId);
+                     //commentInfo.commentVal = $(this).closest('.comment-holder').find('.add-comment-section textarea').val()
+                     commentInfo.errorPlaceholder = $(this).closest('.comment-holder').find('.response-box');
+                     commentInfo.formObj = $(this).closest('.comment-holder').find('.signin-form');
+                     if($(this).closest('.comment-box').attr('data-level')) {
+                        commentInfo.commentLevel = $(this).closest('.comment-box').attr('data-level'); 
+                     } 
+                     if(commentInfo.commentLevel && commentInfo.commentLevel >= 1) {
+    			        commentInfo.parentCommentId = $(this).closest('.comment-box').attr('data-id');
+    			        commentInfo.rootCommentId = $(this).closest('.comment-box').attr('data-rootid');
+    			     }
+                     
+                     
+                    if(!commentInfo.commentVal || commentInfo.commentVal == channelInfo.message_default_textarea) {
+                        $(this).closest('.comment-holder').find('.response-box').text(channelInfo.message_error_blank).addClass('error');
+                        return;
+                    }
+                    if(elmClicked == 'social-login-fb') {
+                        opensso('Facebook'); 
+                    }
+                    else if(elmClicked == 'social-login-google') {
+                        opensso('googleplus');
+                    }
+                    else if(elmClicked == 'social-login-email') {
+                        opensso('login');
+                    }
+                     
+                });
+                
+                
+                $(document).on("click", '.add-comment-section input[type="button"]', function() { //When clicked on Post comment button. 
+                  //var commentVal = $(this).closest('.add-comment-section').find('textarea').val().replace(/<\/?[^>]+(>|$)/g, ""); //remove HTML tags
+                  var textareaId = $(this).closest('.add-comment-section').find('textarea').attr('id');
+                  var commentVal = commentObj.getCommentText(textareaId);
+                  var errorPlaceholder = $(this).closest('.comment-holder').find('.response-box');
+                  var commentLevel = $(this).closest('.comment-box').attr('data-level');
+                  var isfbChecked = $(this).closest('.comment-holder').find('.social-post input[name="fb"]').is(":checked");
+                  var isTwittrChecked = $(this).closest('.comment-holder').find('.social-post input[name="twittr"]').is(":checked");
+                  var parentCommentId = null;
+                  var rootCommentId = null;
+                  if(commentLevel >= 1) {
+			        var parentCommentId = $(this).closest('.comment-box').attr('data-id');
+			        var rootCommentId = $(this).closest('.comment-box').attr('data-rootid');
+			      }   
+                  if(typeof Get_Ckie == 'function' && !Get_Ckie('ssoid')) { //Annonymous user
+			       var userName = $(this).closest('.comment-holder').find('.signin-form input[name="username"]').val().trim();
+			       var userEmail = $(this).closest('.comment-holder').find('.signin-form input[name="useremail"]').val().trim();
+			       var userLocation  = $(this).closest('.comment-holder').find('.signin-form input[name="userlocation"]').val().trim();
+			       var captchaAns = $(this).closest('.comment-holder').find('.signin-form input[name="captchaans"]').val().trim();
+			       var dataToProcess = {
+			           userType : 'anonymous',
+			           userName : userName,
+			           userEmail : userEmail,
+			           userLocation : userLocation,
+			           errorPlaceholder : errorPlaceholder,
+			           captchaAns : captchaAns,
+			           commentLevel : commentLevel,
+			           parentCommentId : parentCommentId ,
+			           rootCommentId : rootCommentId ,
+			           commentVal : commentVal
+			       };
+			       commentObj.validateForm(dataToProcess);
+                  }
+                  else { //Authenticated user
+                     var dataToProcess = {
+			           userType : 'authenticated', 
+			           commentVal: commentVal,
+			           errorPlaceholder : errorPlaceholder,
+			           commentLevel : commentLevel,
+			           parentCommentId : parentCommentId,
+			           rootCommentId : rootCommentId,
+			           isfbChecked : isfbChecked,
+			           isTwittrChecked : isTwittrChecked
+			         };
+			         commentObj.validateForm(dataToProcess);
+                  }
+				   // console.log(Name);
+				        /*var Name = $('#fromname').val().trim();
+                        var EmailId = $('#fromaddress').val().trim();
+                        var Location = $('#location').val().trim();
+                        var Captcha = $('#mathuserans').val().trim();
+				        commentObj.validateForm(commentVal)
+				        
+                    
+                    if(!Name) {
+                        $('.errormsg').text("Name should not be blank");
+                    } else if(!EmailId) {
+                        $('.errormsg').text("Email Id should not be blank");
+                    }
+                    else if(!this.validateEmail(EmailId)) {
+                        $('.errormsg').text("Kindly enter a valid Email Id"); 
+                    }
+                    else {
+                        
+                    }*/
+				   
+				   //commentObj.postComments(commentVal);
+			    });
+                
+                $(document).on("click", ".footbar .reply", function() { //replying to comment
+				    $(this).closest('.comment-box').find('.comment-form').show() ;
+				    var textAreaId = $(this).closest('.comment-box').find('.comment-form textarea').attr('id') ;
+				    
+				    if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid')) {
+				       $(this).closest('.comment-box').find('.comment-form .social-post').show() ; 
+				    } 
+				    else {
+                        $(this).closest('.comment-box').find('.comment-form .login-input').show() ;
+                     }
+                     
+                     if(typeof Quill != 'undefined' && !$('#inputField_Quill'+textAreaId).length) { 
+				        Quill.init(textAreaId,  'kanada'); 
+				        Quill.setPrefillText(textAreaId, 'kanada', channelInfo.message_default_textarea); 
+				    }
+			    });
+			    
+			    $(document).on("click", ".comment-form .close", function() {
+				    $(this).closest('.comment-form').hide() ;
+			    });
+			    
+			    $(document).on("click", "div .replies", function() {
+                    var allsibling = $(this).parents(".comment-box").nextAll();
+                    $(allsibling ).each(function( index ) {
+                        if($(this).hasClass("hide")) {
+                           // $(this).toggle("slow");
+                            $(this).slideToggle("slow");
+                        }
+                        else {
+                           return false; 
+                        }  
+                    });
+                });
+                
+                
+                   $(document).on("change", '#comment_sort', function() {
+                    var obj = this;
+                     
+                    $('#commentsContainer').html('<img src="/photo/42715392.cms" id="image-loader" />');
+                    var optionVal = $(this).val();
+                    commentObj.commentsParams.pagenum = 1;
+                	if(optionVal) {
+                	    switch(optionVal) {
+                	        case 'upvote' :
+                	            commentObj.commentsParams.order = 'desc';
+                	            commentObj.commentsParams.sortcriteria = 'AgreeCount';
+                	            break;
+                	         case 'downvote' :
+                	         
+                	            commentObj.commentsParams.order = 'desc';
+                	            commentObj.commentsParams.sortcriteria = 'DisagreeCount';
+                	            break;
+                	         case 'oldest' :
+                	         
+                	            commentObj.commentsParams.order = 'desc';
+                	            commentObj.commentsParams.sortcriteria = 'CreationDate';
+                	            break;
+                	            
+                	         case 'newest' :
+                	         
+                	            commentObj.commentsParams.order = 'asc';
+                	            commentObj.commentsParams.sortcriteria = 'CreationDate';
+                	            break;
+                	        case 'discussed' :
+                	        
+                	            commentObj.commentsParams.order = 'desc';
+                	            commentObj.commentsParams.sortcriteria = 'discussed';
+                	            break;
+                	    }
+                	    commentObj.loadComments(commentObj.commentsParams);
+                	    $('.loadmore').show();
+                	}
+                });
+                
+            }); 
+            //var commentObj = new CommentsModule(channelInfo);
+             
+            
+        
+    //  http://stephenwalther.com/archive/2010/11/30/an-introduction-to-jquery-templates
+      //window.open("https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https://navbharattimes.indiatimes.com/photomazza/national-international-photogallery/key-points-of-pm-modis-speech-in-davos/key-points-of-modi-speech-in-davos/photomazaashow/62621221.cms", "", "left=300,top = 100, width=600,height=100");
+
+	

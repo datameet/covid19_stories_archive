@@ -1,0 +1,194 @@
+{
+    "title": "Mumbai man beaten on suspicion of being Covid-19 patient, dies - India News",
+    "url": "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24",
+    "timestamp": "1590766226.170",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772593",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:47.074968",
+                "start_ts": "2020-05-29 17:16:33.375970",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:56.006371",
+                "start_ts": "2020-05-29 17:16:54.499114",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatoday.in"
+                ],
+                "end_ts": "2020-05-29 17:16:33.374701",
+                "start_ts": "2020-05-29 17:16:33.050969",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:50.142656",
+                "start_ts": "2020-05-29 17:16:47.075107",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:54.498776",
+                "start_ts": "2020-05-29 17:16:52.946932",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:57.518710",
+                "start_ts": "2020-05-29 17:16:56.006625",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "https://web.archive.org/web/20200529171657/https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24"
+                ],
+                "end_ts": "2020-05-29 17:16:52.946692",
+                "start_ts": "2020-05-29 17:16:50.142921",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.indiatoday.in/india/story/maharashtra-man-dies-after-being-attacked-on-suspicion-of-being-covid-19-patient-1670415-2020-04-24",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:16:33.050678",
+                "start_ts": "2020-05-29 17:16:32.874566",
+                "pwd": "/data/archive/1590766226.170",
+                "output": "Mumbai man beaten on suspicion of being Covid-19 patient, dies - India News"
+            }
+        ]
+    },
+    "updated": "1590788241.543042",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

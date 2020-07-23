@@ -1,0 +1,81 @@
+function js_check_is_mobile(){var e=/Series60|Nokia|SymbianOS|iphone|android|blackberry|mini|Dalvik|windows\sce|palm/i.test(navigator.userAgent.toLowerCase());return e?!0:!1}document.createElement("article"),document.createElement("section"),document.createElement("aside"),document.createElement("hgroup"),document.createElement("nav"),document.createElement("header"),document.createElement("footer"),document.createElement("figure"),document.createElement("figcaption"),1==js_check_is_mobile()&&jQuery(document).ready(function(){jQuery(".comment,.breakingnews-block h1,.breakingnews-block .bx-controls-direction a,.breakingnews-block .npppbx,.bx-pager").remove(),jQuery(".thechoices").change(function(){jQuery("#"+this.value).show().siblings().hide()}),jQuery(".thechoices").change()});
+//share this close button 
+var current_location_url = location.href;
+if( current_location_url.match( "js_share" ) ) {
+	try{
+		self.close();
+		window.close();
+	} catch(err) {}
+}
+jQuery(document).ready(function(){
+	jQuery('.rightsec iframe').each( function() {
+		var srcjw = jQuery(this).attr('src');
+		if( srcjw != undefined && srcjw.match('electionresults.') ) {
+			if( navigator.userAgent.toLowerCase().match('mobile') && jQuery(document).width() <= '480' ) {
+				jQuery(this).height('410');
+			}
+		}
+		if( srcjw != undefined && ( srcjw.match('jwplatform') || srcjw.match('vidshare') || srcjw.match('videoshare') ) ) {
+			doc_width = jQuery( document ).width();
+			if( doc_width > 0 && doc_width <= 320 ) {
+				jQuery(this).attr('height', '170px');
+			} else if( doc_width > 320 && doc_width <= 360 ) {
+				jQuery(this).attr('height', '192px');
+			} else if( doc_width > 360 && doc_width <= 375 ) {
+				jQuery(this).attr('height', '200px');
+			} else if( doc_width > 375 && doc_width <= 414 ) {
+				jQuery(this).attr('height', '222px');
+			} else if( doc_width > 414 && doc_width <= 480 ) {
+				jQuery(this).attr('height', '258px');
+			} else if( doc_width > 480 && doc_width <= 640 ) {
+				jQuery(this).attr('height', '350px');
+			} else if( doc_width > 640 && doc_width <= 667 ) {
+				jQuery(this).attr('height', '365px');
+			} else if( doc_width > 667 && doc_width < 768 ) {
+				jQuery(this).attr('height', '420px');
+			} else if( doc_width > 768 ) {
+				jQuery(this).attr('height', '378px');
+			}
+			jQuery(this).css({position:'relative'});
+			jQuery(this).parent('p').parent('div').css({padding:0});
+			jQuery(this).parent('div').css({padding:0});
+		}
+	});
+	try {
+		jQuery(window).resize(function() {
+			jQuery('.rightsec iframe').each( function() {
+				var srcjw = jQuery(this).attr('src');
+				if( srcjw != undefined && ( srcjw.match('jwplatform') || srcjw.match('vidshare') || srcjw.match('videoshare') ) ) {
+					doc_width = jQuery( document ).width();
+					if( doc_width > 0 && doc_width <= 320 ) {
+						jQuery(this).attr('height', '170px');
+					} else if( doc_width > 320 && doc_width <= 360 ) {
+						jQuery(this).attr('height', '192px');
+					} else if( doc_width > 360 && doc_width <= 375 ) {
+						jQuery(this).attr('height', '200px');
+					} else if( doc_width > 375 && doc_width <= 414 ) {
+						jQuery(this).attr('height', '222px');
+					} else if( doc_width > 414 && doc_width <= 480 ) {
+						jQuery(this).attr('height', '258px');
+					} else if( doc_width > 480 && doc_width <= 640 ) {
+						jQuery(this).attr('height', '350px');
+					} else if( doc_width > 640 && doc_width <= 667 ) {
+						jQuery(this).attr('height', '365px');
+					} else if( doc_width > 667 && doc_width < 768 ) {
+						jQuery(this).attr('height', '420px');
+					} else if( doc_width > 768 ) {
+						jQuery(this).attr('height', '378px');
+					}
+					jQuery(this).css({position:'relative'});
+					jQuery(this).parent('p').parent('div').css({padding:0});
+					jQuery(this).parent('div').css({padding:0});
+				}
+			});
+		});
+	} catch( err ) {}
+	if( js_check_is_mobile() == true ) {
+		jQuery('.search').click(function(){
+			jQuery('.swidth').slideToggle();
+		});
+	}
+});

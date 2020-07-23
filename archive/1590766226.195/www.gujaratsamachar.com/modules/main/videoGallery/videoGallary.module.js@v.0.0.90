@@ -1,0 +1,77 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.videoGallary', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.videoGalleryList', {
+                url: '/video-gallery/list/:pageIndex',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/videoGallery/videoGalleryList.view.html',
+                        controller: 'VideoGalleryListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/videoGallery/videoGalleryList.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Video Gallery | ' }
+            })
+            .state('root.mainSidebar.videoGalleryDetails', {
+                url: '/video-gallery-details/:url/:Id',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/videoGallery/videoGalleryDetails.view.html',
+                        controller: 'VideoGalleryDetailsController as vm'
+                    },
+                    'articlesByCity@root.mainSidebar.videoGalleryDetails': {
+                        templateUrl: 'modules/main/home/articlesByCity/articlesByCity.view.html',
+                        controller: 'ArticlesByCityController as vm'
+                    },
+                    'articlesByCategory@root.mainSidebar.videoGalleryDetails': {
+                        templateUrl: 'modules/main/home/articlesByCategory/articlesByCategory.view.html',
+                        controller: 'ArticlesByCategoryController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/videoGallery/videoGalleryDetails.controller.js" + version,
+                                "directives/windowResize.directive.js" + version,
+                                "modules/main/home/articlesByCity/articlesByCity.controller.js" + version,
+                                "modules/main/home/articlesByCategory/articlesByCategory.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: '' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            $state.go('root.404');
+        });
+    };
+})();

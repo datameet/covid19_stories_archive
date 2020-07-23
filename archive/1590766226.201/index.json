@@ -1,0 +1,194 @@
+{
+    "title": "\u0c06\u0c17\u0c28\u0c3f \u0c35\u0c4d\u0c2f\u0c38\u0c28\u0c4b\u0c24\u0c4d\u0c2a\u0c3e\u0c24\u0c02..!",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.201",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:05.212895",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590773980",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 24,
+                "start_ts": "2020-05-29 17:39:40.565533",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:33.299133",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:40:30.191085",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:39:40.564220",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.eenadu.net"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:39:40.298113",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:13.662344",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 17:40:05.213076",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:30.190752",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 17:40:21.910951",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:36.365023",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:40:33.299383",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "https://web.archive.org/web/20200529174034/https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:40:21.910711",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 17:40:13.662577",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:39:40.297993",
+                "cmd": [
+                    "curl",
+                    "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:39:39.066918",
+                "pwd": "/data/archive/1590766226.201",
+                "output": "\u0c06\u0c17\u0c28\u0c3f \u0c35\u0c4d\u0c2f\u0c38\u0c28\u0c4b\u0c24\u0c4d\u0c2a\u0c3e\u0c24\u0c02..!"
+            }
+        ]
+    },
+    "updated": "1590788260.18871",
+    "tags": "",
+    "url": "https://www.eenadu.net/archivespage/archivenewsdetails/220057767/01-04-2020/ts"
+}

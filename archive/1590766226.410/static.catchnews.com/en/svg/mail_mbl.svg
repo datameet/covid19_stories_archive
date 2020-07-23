@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>email-9-icon copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,0 C6.71570388,0 0,6.71570388 0,15 C0,23.2842961 6.71570388,30 15,30 C23.2842961,30 30,23.2842961 30,15 C30,6.71570388 23.2842961,0 15,0 L15,0 Z M24.0259223,8.33330097 L15.0731796,15.1995874 L6.13470874,8.33330097 L24.0259223,8.33330097 L24.0259223,8.33330097 Z M6.07274272,10.2139806 L11.3392718,14.2595388 L6.07274272,19.526068 L6.07274272,10.2139806 L6.07274272,10.2139806 Z M6.09466019,21.6666262 L12.5622087,15.1990777 L15.0724515,17.127233 L17.5786165,15.2051942 L24.0401214,21.6665534 L6.09466019,21.6665534 L6.09466019,21.6666262 Z M24.0728155,19.5369175 L18.8024272,14.2665291 L24.0728155,10.224466 L24.0728155,19.5369175 L24.0728155,19.5369175 Z" id="path-1"></path>
+    </defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-/-HP-Mobile-Hamburger" sketch:type="MSArtboardGroup" transform="translate(-141.000000, -592.000000)">
+            <g id="Imported-Layers-Copy-16" sketch:type="MSLayerGroup" transform="translate(141.000000, 592.000000)">
+                <g id="email-9-icon-copy">
+                    <use fill="#F3F3F3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

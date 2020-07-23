@@ -1,0 +1,143 @@
+@media screen and (min-width:320px) and (max-width:786px) {
+	
+}
+
+@media only screen and (max-width:375px){header{margin:0 auto;width:97%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:97%!important;margin: 0 auto;}
+a:link, a:visited, a:hover {text-decoration: none;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_storypage{width: 100%;float:left;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.morefrom_website{width: 100%;float: left;margin: 0px;}
+.morefrom_website1{width: 100%;float: left;margin: 0px;max-width: 100%;margin-top: 10px;}
+
+.article_page p{font-family: 'PT Serif', serif;} 
+.read_more_in {margin-top: 20px;width: 97%;float:left;}
+.middle_banner{width: 99%;margin-top: 20px;margin-right: auto;margin-bottom: 20px;margin-left: auto;height: auto;}
+.middle_banner img{width:100%;height: auto;}
+.article-nextprv a{width:85%;padding-left: 40px;}
+.stry_desc{float:left; display:block !important;}
+.desk_desc{display:none;}
+.morefrom_website .content {
+    float: right;
+    width: 63%;
+    margin-right: 8px;
+}
+.slug1{margin-left:10px;width:97%;margin-top:40px;}
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    /* STYLES HERE */
+
+header{margin:0 auto;width:97%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:97%!important;margin: 0 auto;}
+a:link, a:visited, a:hover {text-decoration: none;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_slug{margin-left:10px;width:97%;}
+.slug{margin-left:10px;width:97%;}
+.slug1{margin-left:10px;width:97%;margin-top:60px;}
+.main_storypage{width: 98%;float:left; margin: 0 1%;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.morefrom_website{width: 100%;float: left;margin: 0px;}
+.morefrom_website1{max-width: 100%;width: 100%;float: left;margin: 0px;margin-top: 15px;}
+
+.article_page p{font-family: 'PT Serif', serif;}
+.read_more_in {margin-top: 20px;width: 97%;float:left;}
+.middle_banner{width: 99%;margin-top: 20px;margin-right: auto;margin-bottom: 20px;margin-left: auto;height: auto;}
+.middle_banner img{width:100%;height: auto;}
+.article-nextprv a{width:85%;}
+.morefrom_website1 .box{width:100%;float:left;}
+.article_description{display:block;float:left:width:100%;position:relative;}
+.stry_desc{float:left; display:block !important;}
+.desk_desc{display:none;}
+.morefrom_website .content {
+    float: right;
+    width: 66%;
+    margin-right: 8px;
+}
+.article-nextprv a {width: 87%;}
+}
+@media screen and (min-width:360px) and (max-width:640px) {
+header{margin:0 auto;width:99%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:99%!important;margin: 0 auto;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_storypage{width: 100%;float:left;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.morefrom_website{width: 92%;float: left;margin-left: 12px;}
+.morefrom_website1{width: 92%;float: right;margin-right: 12px;}
+
+.article_page p{font-family: 'PT Serif', serif;}
+	
+}
+@media screen and (min-width:375px) and (max-width:667px){
+header{margin:0 auto;width:97%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:97%!important;margin: 0 auto;}
+a:link, a:visited, a:hover {text-decoration: none;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_storypage{width: 100%;float:left;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.article-nextprv a{width:89%;}
+.morefrom_website{width: 44%;float: right;margin-left: 20px;}
+.morefrom_website1{width: 42%;float: left;margin-right: 20px;max-width: 100%;}
+
+.article_page p{font-family: 'PT Serif', serif;padding:0 10px 0 0;}
+.read_more_in {margin-top: 20px;width: 97%;float:left;}
+.middle_banner{width: 99%;margin-top: 20px;margin-right: auto;margin-bottom: 20px;margin-left: auto;height: auto;}
+.middle_banner img{width:100%;height: auto;}
+.morefrom_website .content {
+    float: right;
+    width: 54%;
+    margin-right: 8px;
+}
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media screen and (min-width:641px) and (max-width:800px) {
+header{margin:0 auto;width:97%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:97%!important;margin: 0 auto;}
+a:link, a:visited, a:hover {text-decoration: none;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_storypage{width: 100%;float:left;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.morefrom_website{width: 45%;float: right;margin-left: 20px;}
+.morefrom_website1{width: 45%;float: left;margin-right: 20px;}
+
+.article_page p{font-family: 'PT Serif', serif;padding:0 10px;}
+}
+/* ----------- iPad mini ----------- */
+/* Portrait and Landscape */
+@media screen and (min-width:768px) and (max-width:1024px) {
+header{margin:0 auto;width:97%;}
+.ads_container{width:100%;float:left;}.ads_container img{width:100%;height:100%;}
+.container{	width:97%!important;margin: 0 auto;}
+.logo_div{width: 100%;float: left;padding-bottom: 5px;}
+.main_storypage{width: 100%;float:left;}
+.main_storypage h2{font-size: 27px;line-height: 25px;font-weight: 500;}
+.main_storypage h3{font-size:18px;}
+.article_page{width:97%;text-align:justify;margin:0 auto;}
+.morefrom_website{width: 38%;float: right;margin-left: 20px;}
+.morefrom_website1{width: 38%;float: left;margin-right: 20px;}
+
+.article_page p{font-family: 'PT Serif', serif;padding:10px 0px;}
+.morefrom_website  .content{float:left;margin-left:20px;width:74%;}
+}
+
+@media screen and (max-width: 420px) and (min-width: 390px){
+	.morefrom_website{width:100%;}
+	.morefrom_website1{width:100%;}
+}

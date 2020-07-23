@@ -1,0 +1,117 @@
+var img_ad_html   = '';
+var tie_img_codes = {"ad_name":"/1050432/www.indianexpress.com/IE_Desktop_IMAGE_OVERLAY","ad_id":"IE_728x90_IMAGE_OVERLAY"};
+
+var adrndm = 0;
+function img_rand_adcode() {
+	adrndm++;
+	img_ad_html  = '';
+		rand     = adrndm;
+		slotName = 'IE_728x90_IMAGE_OVERLAY' + rand;
+	if ( jQuery( window ).width() <= 767 ) {
+		var adsize  = '[[320, 50], [300, 50], [345, 57]]';
+		img_ad_html = '<div id="inhouseimg" class="imghalder" style="background:#f8f8f8;padding:0; display: block; width: 320px; z-index: 1; margin: 0 auto 7px; top:0;text-align:center;position: relative;">';
+	} else {
+		var adsize  = '[[320, 50], [468, 60], [550, 100], [300, 100], [300, 50]]';
+		img_ad_html = '<div id="inhouseimg" class="imghalder" style="min-width: 300px;padding-bottom: 5px;display: block;z-index: 1;position: relative;">';
+	}
+		io_css = '';
+	if ( jQuery( document ).width() <= 330 ) {
+		io_css = 'margin:0 -20px';
+	}
+		// ad300x250
+	if ( jQuery( window ).width() <= 767 ) {
+		img_ad_html += '<div class="aside visible-md visible-lg io-code-box" id="div-gpt-ad-1566978488384-0" style="' + io_css + '"></div><scr' + 'ipt type="text/javascript">googletag.cmd.push(function() {slot = googletag.defineSlot("/1050432/www.indianexpress.com/IE_Mobile_IMAGE_OVERLAY", ' + adsize + ', "div-gpt-ad-1566978488384-0").addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs(); googletag.enableServices();googletag.display("div-gpt-ad-1566978488384-0");googletag.pubads().refresh([slot]);});</scr' + 'ipt></div>';
+
+	} else {
+		img_ad_html += '<div class="aside visible-md visible-lg io-code-box" id="IE_728x90_IMAGE_OVERLAY" style="' + io_css + '"></div><scr' + 'ipt type="text/javascript">googletag.cmd.push(function() {slot = googletag.defineSlot("/1050432/www.indianexpress.com/IE_Desktop_IMAGE_OVERLAY", ' + adsize + ', "IE_728x90_IMAGE_OVERLAY").addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs(); googletag.enableServices();googletag.display("IE_728x90_IMAGE_OVERLAY");googletag.pubads().refresh([slot]);});</scr' + 'ipt></div>';
+	}
+	return img_ad_html;
+}
+function img_generate_ad( afterad ) {
+	try {
+		var cmnter = 1;
+		jQuery('span').each(
+			function() {
+				if ( jQuery( this ).attr( 'itemprop' ) == 'articleBody' || jQuery( this ).hasClass( 'custom-caption' ) || jQuery( this ).hasClass( 'ie-post-image' ) ) {
+					jQuery( this ).find( 'img' ).each(
+						function() {
+							if ( cmnter == 1 ) {
+								getadcode = img_rand_adcode();
+								jQuery( getadcode ).insertAfter( this );
+								jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+								if ( jQuery( '.io-code-box' ).html() != undefined && ! jQuery( '.io-code-box' ).attr( 'style' ).match( 'none' ) ) {
+									var tu = setTimeout(
+										function() {
+											var imgclose = '2px';
+											if ( jQuery( document ).width() <= 330 ) {
+												imgclose = '0';
+											}
+											jQuery( '.io-code-box > div' ).prepend( '<span class="imgclose" style="left: ' + imgclose + ';position:absolute; top: -18px;background: #000;box-sizing: border-box;color:#fff;width: 22px;height: 22px;cursor: pointer;border-radius: 25px;display:block;padding: 5px; font-size: 12px;text-align: center;line-height: 12px;z-index: 9999999;">X</span>' );
+											var ti = setTimeout(
+												function() {
+													jQuery( '.imgclose' ).on(
+														'click',
+														function() {
+															jQuery( '#inhouseimg' ).remove();
+														}
+													);
+												},
+												1000
+											);
+										},
+										4000 
+									);
+								}
+								 cmnter++;
+							}
+						}
+					);
+				}
+			}
+		);
+		
+		jQuery( window ).on(
+			"orientationchange",
+			function(){
+				var tu = setTimeout(
+					function(){
+						jQuery( 'figure > img' ).each(
+							function() {
+								jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+							}
+						);
+					},
+					1000 
+				);
+			}
+		);
+		
+		jQuery( 'figure' ).each(
+			function() {
+				if ( jQuery( this ).attr( 'itemprop' ) == 'articleBody' || jQuery( this ).hasClass( 'wp-caption-text' ) ) {
+					jQuery( this ).find( 'img' ).each(
+						function() {
+							if ( cmnter == 1 ) {
+								if ( jQuery( this ).next( '.custom-caption' ).html() == undefined ) {
+									getadcode = img_rand_adcode();
+									jQuery( getadcode ).insertAfter( this );
+									jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+									cmnter++;
+								}
+							}
+						}
+					);
+				}
+			}
+		);
+	} catch (err) {
+	}
+}
+jQuery( window ).load(
+	function(){
+		img_generate_ad();
+		jQuery( "#inhouseimg .io-code-box" ).css( {'margin':'0 auto','text-align':'center'} );
+	}
+);
+
+

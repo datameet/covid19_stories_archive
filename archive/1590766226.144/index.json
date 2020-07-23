@@ -1,0 +1,194 @@
+{
+    "title": "When the factory closed in lockdown  committing suicide in the village - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092b\u0948\u0915\u094d\u091f\u094d\u0930\u0940 \u092c\u0902\u0926 \u0939\u0941\u0908 \u0924\u094b \u0917\u093e\u0902\u0935 \u0906\u0915\u0930 \u0915\u0930 \u0932\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940",
+    "url": "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html",
+    "timestamp": "1590766226.144",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771913",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:24.052853",
+                "start_ts": "2020-05-29 17:05:13.247404",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:45.207880",
+                "start_ts": "2020-05-29 17:05:43.576897",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "end_ts": "2020-05-29 17:05:13.246055",
+                "start_ts": "2020-05-29 17:05:12.961307",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:31.358971",
+                "start_ts": "2020-05-29 17:05:24.053040",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:43.576313",
+                "start_ts": "2020-05-29 17:05:38.143024",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:47.159317",
+                "start_ts": "2020-05-29 17:05:45.208149",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "https://web.archive.org/web/20200529170546/https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html"
+                ],
+                "end_ts": "2020-05-29 17:05:38.142743",
+                "start_ts": "2020-05-29 17:05:31.359231",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/etawah-auraiya/story-when-the-factory-closed-in-lockdown-committing-suicide-in-the-village-3221440.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:05:12.960956",
+                "start_ts": "2020-05-29 17:05:12.729905",
+                "pwd": "/data/archive/1590766226.144",
+                "output": "When the factory closed in lockdown  committing suicide in the village - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092b\u0948\u0915\u094d\u091f\u094d\u0930\u0940 \u092c\u0902\u0926 \u0939\u0941\u0908 \u0924\u094b \u0917\u093e\u0902\u0935 \u0906\u0915\u0930 \u0915\u0930 \u0932\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940"
+            }
+        ]
+    },
+    "updated": "1590788232.849781",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

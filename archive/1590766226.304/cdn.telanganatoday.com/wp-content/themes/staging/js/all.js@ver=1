@@ -1,0 +1,35 @@
+var $ = jQuery;
+
+
+
+$(document).ready(function() {
+
+	$('.mainMenuBtn').click(function() {
+
+		if($('.mainNavBlock').hasClass('show')) {
+
+			$('.mainNavBlock').removeClass('show');
+
+			//$('body').removeClass('noScroll');
+
+		} else {
+
+			$('.mainNavBlock').addClass('show');
+
+			//$('body').addClass('noScroll');
+
+		}
+
+	});
+
+
+
+	$('.moreLinks').click(function() {
+
+		$('.menu-primary-menu-container').toggleClass('openPrimaryMenu');
+
+
+
+	});
+
+});

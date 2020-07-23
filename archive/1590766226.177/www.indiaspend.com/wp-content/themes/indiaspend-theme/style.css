@@ -1,0 +1,191 @@
+/*
+Theme Name:         IndiaSpend Theme
+Theme URI:          https://www.indiaspend.com
+Description:        WordPress theme for IndiaSpend.
+Version:            1.0
+Author:             Akshat Kedia
+Author URI:         https://akshatkedia.github.io
+Text Domain:        indiaspend
+
+Bitbucket Theme URI:   https://bitbucket.org/urbansciences/indiaspend-theme
+*/
+
+ .homepageCarousel
+{
+    width: 100%;
+    display: inline-block; 
+}
+.graph
+{
+    width: 30%;
+    float: right;
+    position: relative; 
+}
+.graph>.title
+{
+    position: absolute;
+    bottom: 35%;
+    left: 20px;
+    background-color: #000000ba;
+    padding: 0px 10px; 
+}
+.graph>.title>a
+{
+ color: #ffffff;
+}
+
+.pd-top20{
+	padding-top:20px;
+}
+.social_icons
+{
+    padding-bottom: 20px;   
+}
+.social_icons .us_wrapper.us_skin_default .us_button
+{
+    line-height: normal;
+    height: auto;   
+}
+.social_icons .us_wrapper.us_skin_default a
+{
+    padding: 8px 0px;
+    display: block;
+}
+.social_icons .us_wrapper.us_skin_default a:hover
+{
+    background-color: #008000;
+}
+.social_icons .us_facebook a
+{
+    background-color: #3b5998;  
+}
+.social_icons .us_twitter a
+{
+    background-color: #00ABF0;
+}
+.social_icons .us_google a
+{
+    background-color: #D95232;
+}
+.social_icons .us_linkedin a
+{
+    background-color: #1C86BC;
+}
+.social_icons .us_print a
+{
+    background-color: #60d0d4;
+}
+.social_icons .us_mail a
+{
+    background-color: #666666;
+}
+.social_icons .us_mail .us_share
+{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none!important;
+    padding: 7px 0px;
+}
+.social_icons .us_mail .us_share i
+{
+    cursor: pointer;
+}
+@media only screen and (max-width:1024px){
+	/* .main header{ */
+		/* padding-top:150px; */
+	/* } */
+	/* header.banner{ */
+		/* padding-top:0px !important; */
+	/* } */
+}
+.admin-bar .primary-navigation.fixed-top {
+    top: 0;
+}
+
+.endpd {
+    position: relative;
+}
+.endpd:before {
+    content: "\f0ce";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+.search-forms .search-field{width:100% !important;}
+.search-forms .search-submit{width:100% !important;border-radius: .25rem !important;}
+.searching-list {padding-top:10px;}
+.searching-list .endpd input{padding-left:5px;border:1px solid #000000;color:#000000;}
+.search-form .searching-list li:first-child{margin-left:0px;}
+.search-form .searching-list li{
+	list-style:none;
+	display:inline-block;
+	margin-left:10px;
+}
+.search-form .searching-list {padding-left:0px;}
+.search-forms [type="radio"]:checked,
+.search-forms [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.search-forms [type="radio"]:checked + label,
+.search-forms [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.search-forms [type="radio"]:checked + label:before,
+.search-forms [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    background: #fff;
+}
+.search-forms [type="radio"]:checked + label:after,
+.search-forms [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #000000;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.search-forms [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.search-forms [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.search-forms label{font-weight:normal;}
+
+@media only screen and (max-width:767px){
+	.search-forms .search-submit {
+		    margin-top: 10px;
+	}
+	.search-form .searching-list li:last-child{
+		width: 100%;
+		margin: 10px 0px 0px 0px;
+	}
+	.search-form .searching-list li input{width:100%;}
+}

@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.68",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:26:56.701435",
+                "start_ts": "2020-05-29 21:26:55.343751",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "Nuh: Seven booked for allegedly attacking retired Army man for &#8216;spreading coronavirus&#8217; | Cities News,The Indian Express"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:12.651207",
+                "start_ts": "2020-05-29 21:27:10.456392",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "end_ts": "2020-05-29 21:26:56.949589",
+                "start_ts": "2020-05-29 21:26:56.701576",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:10.456021",
+                "start_ts": "2020-05-29 21:27:07.950071",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:22.048440",
+                "start_ts": "2020-05-29 21:27:20.063583",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "https://web.archive.org/web/20200529212721/https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787616",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:07.949898",
+                "start_ts": "2020-05-29 21:26:56.950837",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:15.751333",
+                "start_ts": "2020-05-29 21:27:12.651446",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+                ],
+                "end_ts": "2020-05-29 21:27:20.063314",
+                "start_ts": "2020-05-29 21:27:15.751663",
+                "pwd": "/data/archive/1590785099.68",
+                "output": "Failed to download media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787642.051731",
+    "tags": "",
+    "url": "https://indianexpress.com/article/cities/delhi/nuh-gurgaon-coronavirus-army-man-assaulted-6357475/"
+}

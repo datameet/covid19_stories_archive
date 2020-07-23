@@ -1,0 +1,194 @@
+{
+    "title": "Migrant Worker Dies in MP After 350 km Bicycle Ride To Home From Maharashtra Coronavirus Lockdown - \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930 \u0938\u0947 \u0938\u093e\u0907\u0915\u093f\u0932 \u0932\u0947\u0915\u0930 \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u0915\u0932\u093e \u092e\u091c\u0926\u0942\u0930, 350 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u091a\u0932\u093e \u0914\u0930 \u0939\u094b \u0917\u0908 \u092e\u094c\u0924",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.347",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:49.457057",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779745",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:15:45.192149",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:57.280842",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:15:55.771104",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:45.190353",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=khabar.ndtv.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:15:44.365745",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:51.742756",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:15:49.457271",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:55.770756",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:15:53.991031",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:59.105709",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:15:57.281077",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "https://web.archive.org/web/20200529191558/https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:53.990783",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:15:51.742995",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:15:44.365225",
+                "cmd": [
+                    "curl",
+                    "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:15:44.040630",
+                "pwd": "/data/archive/1590766226.347",
+                "output": "Migrant Worker Dies in MP After 350 km Bicycle Ride To Home From Maharashtra Coronavirus Lockdown - \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930 \u0938\u0947 \u0938\u093e\u0907\u0915\u093f\u0932 \u0932\u0947\u0915\u0930 \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u0915\u0932\u093e \u092e\u091c\u0926\u0942\u0930, 350 \u0915\u093f\u0932\u094b\u092e\u0940\u091f\u0930 \u091a\u0932\u093e \u0914\u0930 \u0939\u094b \u0917\u0908 \u092e\u094c\u0924"
+            }
+        ]
+    },
+    "updated": "1590789358.434358",
+    "tags": "",
+    "url": "https://khabar.ndtv.com/news/mp-chhattisgarh/migrant-worker-dies-in-mp-after-350-km-bicycle-ride-to-home-from-maharashtra-coronavirus-lockdown-2221955"
+}

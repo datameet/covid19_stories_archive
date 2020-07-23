@@ -1,0 +1,194 @@
+{
+    "title": "Navi Mumbai: Youth commits suicide due to lockdown | english.lokmat.com",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.394",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781109",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:32.637277",
+                "start_ts": "2020-05-29 19:38:29.345245",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:38.944536",
+                "start_ts": "2020-05-29 19:38:37.288590",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=english.lokmat.com"
+                ],
+                "end_ts": "2020-05-29 19:38:29.344004",
+                "start_ts": "2020-05-29 19:38:27.120798",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:34.431023",
+                "start_ts": "2020-05-29 19:38:32.637754",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:37.287615",
+                "start_ts": "2020-05-29 19:38:36.123051",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:42.953984",
+                "start_ts": "2020-05-29 19:38:38.944779",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "https://web.archive.org/web/20200529193841/https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:38:36.122759",
+                "start_ts": "2020-05-29 19:38:34.431262",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:38:27.120517",
+                "start_ts": "2020-05-29 19:38:26.560098",
+                "pwd": "/data/archive/1590766226.394",
+                "output": "Navi Mumbai: Youth commits suicide due to lockdown | english.lokmat.com"
+            }
+        ]
+    },
+    "updated": "1590789451.918554",
+    "tags": "",
+    "url": "https://english.lokmat.com/maharashtra/navi-mumbai-youth-commits-suicide-due-to-lockdown/"
+}

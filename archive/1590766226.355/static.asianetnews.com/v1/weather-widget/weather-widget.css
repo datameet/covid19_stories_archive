@@ -1,0 +1,149 @@
+.wh-wgt-wrpr {
+  width: 220px;
+  height: 45px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  float: right;
+  border-radius: 10px 0 0 0;
+  margin-top: 5px;
+}
+.wh-wgt-wrpr .spr-logo {
+  width: 55%;
+}
+.wh-wgt-wrpr .wh-wdgt {
+  background: #09428f;
+  width: 45%;
+  height: 42px;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.wh-wgt-wrpr .wh-wdgt .city{
+  padding: 2px 5px;
+  color: #ffffff;
+  background: #9D1016;
+  font-size: 12px;
+  border-radius: 10px 0 0 0;
+}
+.wh-details {
+  /* width: 50%; */
+  padding-left: 10px;
+}
+.asianet-kannada .wh-details {
+  width: auto;
+  padding-left: 5px;
+}
+.wh-details.wh-icon .wh-img-wrp{
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 3px;
+}
+.wh-details.wh-temp {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.wh-details.wh-icon .wh-img-wrp img{
+  width: 100%;
+}
+.spr-logo,  .spr-logo img{
+  width: 100%;
+  height: 42px;
+}
+.flex-box {
+  display: flex;
+}
+.weather-widget {
+    margin-top: 5px;
+}
+#selectCity, #selectCityMob {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background: #ed1c24;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+}
+.wh-wgt-wrpr .wh-wdgt .city {
+  padding: 0;
+}
+.wh-wgt-wrpr .flex-box {
+  width: auto !important;
+  display: flex;
+}
+@media only screen and (max-width: 600px){
+  .sticky-menu.affix-top {
+    height: 55px;
+  }
+  .asianet-kannada .sticky-menu.affix-top {
+    height: auto;
+  }
+  .wh-wgt-wrpr .wh-wdgt {
+    background: #09428f;
+    width: 40%;
+    height: 36px;
+  }
+  .weather-widget{
+    padding-right: 0;
+  }
+  .sticky-menu.affix.headroom--pinned .weather-widget,
+  .sticky-menu.affix.headroom--unpinned .weather-widget
+  {
+    display: none;
+  }
+  .asianet-kannada .wh-details.wh-temp {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 414px){
+  #selectCity, #selectCityMob {
+    -webkit-appearance: none;
+  }
+  .spr-logo, .spr-logo img {
+      width: 100%;
+      height: 37px;
+  }
+  .col.wh-wdgt::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    z-index: 999;
+}
+}
+@media only screen and (max-width: 375px){
+  .weather-widget {
+      margin-left: 27px;
+  }
+}
+@media only screen and (max-width: 360px){
+  .wh-wgt-wrpr {
+    margin-top: 3px;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .weather-widget {
+    display: none;
+  }
+}

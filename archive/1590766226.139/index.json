@@ -1,0 +1,194 @@
+{
+    "title": "two youth fasal abbas and suraj kumar moved for basti and azamgarh on bike both died in accident in basti - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u0915\u093e\u092e \u091b\u0942\u091f\u093e \u0924\u094b \u0926\u093f\u0932\u094d\u200d\u0932\u0940 \u0938\u0947 \u092c\u093e\u0907\u0915 \u092a\u0930 \u091a\u0932 \u092a\u0921\u093c\u0947 \u0926\u094b \u092f\u0941\u0935\u0915, \u092c\u0938\u094d\u200d\u0924\u0940 \u092e\u0947\u0902 \u091f\u094d\u0930\u0915 \u0938\u0947 \u091f\u0915\u0930\u093e\u0915\u0930 \u092e\u094c\u0924",
+    "url": "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html",
+    "timestamp": "1590766226.139",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:01.305326",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771770",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 17:02:50.887860",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:22.159573",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:03:20.672126",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:02:50.886578",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:02:50.603832",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:08.418301",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 17:03:01.305535",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:20.671729",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 17:03:15.111131",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:23.695308",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:03:22.159918",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "https://web.archive.org/web/20200529170323/https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:03:15.110877",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:03:08.418547",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:02:50.603332",
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/story-two-youth-fasal-abbas-and-suraj-kumar-moved-for-basti-and-azamgarh-on-bike-both-died-in-accident-in-basti-3208227.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:02:50.358163",
+                "pwd": "/data/archive/1590766226.139",
+                "output": "two youth fasal abbas and suraj kumar moved for basti and azamgarh on bike both died in accident in basti - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u0915\u093e\u092e \u091b\u0942\u091f\u093e \u0924\u094b \u0926\u093f\u0932\u094d\u200d\u0932\u0940 \u0938\u0947 \u092c\u093e\u0907\u0915 \u092a\u0930 \u091a\u0932 \u092a\u0921\u093c\u0947 \u0926\u094b \u092f\u0941\u0935\u0915, \u092c\u0938\u094d\u200d\u0924\u0940 \u092e\u0947\u0902 \u091f\u094d\u0930\u0915 \u0938\u0947 \u091f\u0915\u0930\u093e\u0915\u0930 \u092e\u094c\u0924"
+            }
+        ]
+    },
+    "updated": "1590788231.189037",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "title": "Unable to detect page title",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.300",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777657",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:41:57.804536",
+                "start_ts": "2020-05-29 18:40:57.737494",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'wget' timed out after 60 seconds"
+            },
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590788935",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 21:49:55.558559",
+                "start_ts": "2020-05-29 21:48:55.531891",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 201,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:48:19.840033",
+                "start_ts": "2020-05-29 18:44:58.036783",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thehushpost.com"
+                ],
+                "end_ts": "2020-05-29 18:40:57.735898",
+                "start_ts": "2020-05-29 18:39:57.727233",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'curl' timed out after 60 seconds"
+            },
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thehushpost.com"
+                ],
+                "end_ts": "2020-05-29 21:48:55.531455",
+                "start_ts": "2020-05-29 21:48:48.877387",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:42:57.891488",
+                "start_ts": "2020-05-29 18:41:57.805432",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 21:50:55.624372",
+                "start_ts": "2020-05-29 21:49:55.559764",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "dom": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:44:58.036371",
+                "start_ts": "2020-05-29 18:43:57.989106",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:48:26.306464",
+                "start_ts": "2020-05-29 18:48:19.840307",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
+            },
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 21:51:41.824197",
+                "start_ts": "2020-05-29 21:51:35.315606",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "WaybackException: java.net.SocketTimeoutException: Read timed out"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 18:43:57.988212",
+                "start_ts": "2020-05-29 18:42:57.892293",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "status": "succeeded",
+                "duration": 39,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+                ],
+                "end_ts": "2020-05-29 21:51:35.315293",
+                "start_ts": "2020-05-29 21:50:55.624696",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "failed",
+                "duration": 13,
+                "cmd": [
+                    "curl",
+                    "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:39:57.726910",
+                "start_ts": "2020-05-29 18:39:44.229491",
+                "pwd": "/data/archive/1590766226.300",
+                "output": "Unable to detect page title"
+            }
+        ]
+    },
+    "updated": "1590789101.824365",
+    "tags": "",
+    "url": "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"
+}

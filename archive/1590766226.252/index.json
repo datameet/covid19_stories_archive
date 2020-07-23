@@ -1,0 +1,194 @@
+{
+    "title": "Rofl Republic on Twitter: \"In Assam, this mother couldn't take her sick 4-year old son to the hospital due to the #lockdown\n\nThe baby died in her arms.\n\n#ModiMadeDisaster\nhttps://t.co/sLLmdJyxck\"",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.252",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590776029",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:01.357164",
+                "start_ts": "2020-05-29 18:13:49.009394",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "twitter.com/i_theindian/status/1244227668200968199.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:10.656413",
+                "start_ts": "2020-05-29 18:14:08.323133",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=twitter.com"
+                ],
+                "end_ts": "2020-05-29 18:13:49.008151",
+                "start_ts": "2020-05-29 18:13:48.700449",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:03.797658",
+                "start_ts": "2020-05-29 18:14:01.357320",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:08.322793",
+                "start_ts": "2020-05-29 18:14:06.354771",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:12.394817",
+                "start_ts": "2020-05-29 18:14:10.656684",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "https://web.archive.org/web/20200529181411/https://twitter.com/i_theindian/status/1244227668200968199"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://twitter.com/i_theindian/status/1244227668200968199"
+                ],
+                "end_ts": "2020-05-29 18:14:06.354520",
+                "start_ts": "2020-05-29 18:14:03.798054",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://twitter.com/i_theindian/status/1244227668200968199",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:13:48.700160",
+                "start_ts": "2020-05-29 18:13:46.361344",
+                "pwd": "/data/archive/1590766226.252",
+                "output": "Rofl Republic on Twitter: &quot;In Assam, this mother couldn&#39;t take her sick 4-year old son to the hospital due to the #lockdown&#10;&#10;The baby died in her arms.&#10;&#10;#ModiMadeDisaster&#10;https://t.co/sLLmdJyxck&quot;"
+            }
+        ]
+    },
+    "updated": "1590788615.631052",
+    "tags": "",
+    "url": "https://twitter.com/i_theindian/status/1244227668200968199"
+}

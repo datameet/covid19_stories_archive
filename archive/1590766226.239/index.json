@@ -1,0 +1,194 @@
+{
+    "title": "Aligarh Lockdown News Poor Man Died As He Did Not Get Proper Treatment - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0947 \u0915\u093e\u0930\u0923 \u0928\u0939\u0940\u0902 \u0939\u094b \u092a\u093e\u092f\u093e \u0907\u0932\u093e\u091c, \u092e\u094c\u0924 \u0915\u0947 \u092c\u093e\u0926 \u092c\u0947\u091f\u093f\u092f\u094b\u0902 \u0928\u0947 \u092a\u093f\u0924\u093e \u0915\u0940 \u0905\u0930\u094d\u0925\u0940 \u0915\u094b \u0926\u093f\u092f\u093e \u0915\u0902\u0927\u093e - Amar Ujala Hindi News Live",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.239",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:19.318250",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775269",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 18:01:09.337338",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:27.189061",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:01:24.943100",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:09.336076",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.amarujala.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:01:09.055362",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:21.866740",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:01:19.318474",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:24.942679",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:01:23.622744",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:29.832289",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:01:27.189300",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "https://web.archive.org/web/20200529180128/https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:23.622509",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:01:21.866984",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:01:09.055077",
+                "cmd": [
+                    "curl",
+                    "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:01:06.336302",
+                "pwd": "/data/archive/1590766226.239",
+                "output": "Aligarh Lockdown News Poor Man Died As He Did Not Get Proper Treatment - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0947 \u0915\u093e\u0930\u0923 \u0928\u0939\u0940\u0902 \u0939\u094b \u092a\u093e\u092f\u093e \u0907\u0932\u093e\u091c, \u092e\u094c\u0924 \u0915\u0947 \u092c\u093e\u0926 \u092c\u0947\u091f\u093f\u092f\u094b\u0902 \u0928\u0947 \u092a\u093f\u0924\u093e \u0915\u0940 \u0905\u0930\u094d\u0925\u0940 \u0915\u094b \u0926\u093f\u092f\u093e \u0915\u0902\u0927\u093e - Amar Ujala Hindi News Live"
+            }
+        ]
+    },
+    "updated": "1590788305.92999",
+    "tags": "",
+    "url": "https://www.amarujala.com/uttar-pradesh/aligarh/aligarh-lockdown-news-poor-man-died-as-he-did-not-get-proper-treatment"
+}

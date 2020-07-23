@@ -1,0 +1,194 @@
+{
+    "title": "Non Virus Deaths : Non Virus Deaths : Free Download, Borrow, and Streaming : Internet Archive",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.401",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:44:59.704656",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781450",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 49,
+                "start_ts": "2020-05-29 19:44:10.195697",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "archive.org/details/NonVirusDeaths.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:45:27.619709",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:45:25.551249",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:44:10.194090",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=archive.org"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:44:09.903955",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:45:14.062638",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 19:44:59.704929",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:45:25.550905",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:45:20.171025",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:45:29.727880",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:45:27.619990",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "https://web.archive.org/web/20200529194529/https://archive.org/details/NonVirusDeaths"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:45:20.170780",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://archive.org/details/NonVirusDeaths"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 19:45:14.063448",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:44:09.903642",
+                "cmd": [
+                    "curl",
+                    "https://archive.org/details/NonVirusDeaths",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:44:07.133255",
+                "pwd": "/data/archive/1590766226.401",
+                "output": "Non Virus Deaths : Non Virus Deaths : Free Download, Borrow, and Streaming : Internet Archive"
+            }
+        ]
+    },
+    "updated": "1590789487.316968",
+    "tags": "",
+    "url": "https://archive.org/details/NonVirusDeaths"
+}

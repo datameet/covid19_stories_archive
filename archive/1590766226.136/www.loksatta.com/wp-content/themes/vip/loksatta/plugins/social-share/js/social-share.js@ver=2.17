@@ -1,0 +1,79 @@
+jQuery( document ).ready( function() {
+	try {
+	var og_title       = encodeURIComponent( document.querySelector( "meta[property='og:title']" ).getAttribute( "content" ) );
+	var og_url         = document.querySelector( "meta[property='og:url']" ).getAttribute( "content" );
+	} catch( err ) {}
+	var m_nxt_btn = '';
+	if ( ls_is_mobile_meta_new() == true ) {
+		var nextp = jQuery("#nextbutton").data('href');
+		if( nextp != undefined ){
+			var m_nxt_btn = '<div class="next-button"><a onclick="ga( &quot;send&quot;, &quot;event&quot;, &quot;WAP_Next_Button&quot;, &quot;click&quot;, &quot;'+nextp+'&quot; );" href="'+nextp+'">Next</a></div>';
+		}
+	}
+	var gplus = '';
+	var s_count_onoff = 0;
+	if( s_count_onoff == 1 ){ 
+		var sharecount = '<div class="ie-count-container"><div id="sharecount" class="sharecount ie-count">0</div><div class="ie-share-title">Reactions</div></div>';
+	} else {
+		var sharecount = '';
+	}
+	
+	var share_button   = sharecount +'<ul class="custom-share"> <li class="facebook"><a target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?u='+ encodeURIComponent( og_url ) +'" onClick="ga(&quot;send&quot;, {hitType: &quot;social&quot;, socialNetwork: &quot;Facebook&quot;, socialAction: &quot;Share&quot;, socialTarget: &quot;'+ og_url+'&quot;, page: &quot;'+og_url+'&quot;})"><i class="fb"><img src="/wp-content/themes/vip/loksatta/plugins/social-share/images/facebook.svg" alt=""></i><span class="ie-lable">Share</span></a></li><li class="twit"><a title="Share on Twitter" rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?url='+ encodeURIComponent( og_url ) +'&via=LoksattaLive&text='+ og_title +'" onClick="ga(&quot;send&quot;, {hitType: &quot;social&quot;, socialNetwork: &quot;Twitter&quot;, socialAction: &quot;Share&quot;, socialTarget: &quot;'+ og_url+'&quot;, page: &quot;'+og_url+'&quot;})"><i class="twit"><img src="/wp-content/themes/vip/loksatta/plugins/social-share/images/twitter.svg" alt=""></i></a></li>'+ gplus +'<li class="whatsapp"><a rel="nofollow" href="https://api.whatsapp.com//send?text='+og_title+' – '+og_url+'&utm_source=whatsapp_web&utm_medium=social&utm_campaign=socialsharebuttons" data-action="share/whatsapp/share" aria-label="Whatsapp" onClick="ga(&quot;send&quot;, {hitType: &quot;social&quot;, socialNetwork: &quot;Whatsapp&quot;, socialAction: &quot;Share&quot;, socialTarget: &quot;'+ og_url+'&quot;, page: &quot;'+og_url+'&quot;})" target="_blank"><i class="wapp"><img src="/wp-content/themes/vip/loksatta/plugins/social-share/images/whatsapp.svg" alt=""></i></a></li></ul>'+m_nxt_btn;
+	jQuery( '.append_social_share' ).html( share_button );
+	if( s_count_onoff == 1 && '' !== s_post_id && 'undefined' !== s_post_id ) {	
+		var post_id = parseInt( s_post_id );
+		try {
+			jQuery.ajax({
+				url: "https://graph.facebook.com?id="+og_url+"&fields=og_object{engagement}",
+				type:"get",
+				dataType: "jsonp",
+				cache: true
+			}).done( function( value ) {
+				if( value['og_object'] != undefined && value['og_object'] != null ){
+						jQuery.ajax({
+						url: "/share-count/" + post_id + '/'+parseInt( value['og_object']['engagement']['count'] )+'/update/',
+						cache: true
+					}).done(function( countdata ) {
+						jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+					});
+				} else {
+					jQuery.ajax({
+						url: "/share-count/" + post_id + '/getvalue',
+						cache: true
+					}).done(function( countdata ) {
+						jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+					});
+				} 
+			}).fail( function() {
+				jQuery.ajax({
+					url: "/share-count/" + post_id + '/getvalue',
+					cache: true
+				}).done(function( countdata ) {
+					jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+				});
+		  });
+		} catch( err ){}
+	}
+});
+
+function nFormatter( num ) {
+	 if ( num >= 1000000000 ) {
+		return (num / 1000000000).toFixed( 1 ).replace( /\.0$/, '' ) + 'G';
+	 }
+	 if ( num >= 1000000 ) {
+		return ( num / 1000000 ).toFixed( 1 ).replace( /\.0$/, '' ) + 'M';
+	 }
+	 if ( num >= 1000 ) {
+		return ( num / 1000 ).toFixed( 1 ).replace( /\.0$/, '' ) + 'K';
+	 }
+	 return num;
+}
+
+function ls_is_mobile_meta_new() {
+	var mobiledevice = (/Series60|Nokia|SymbianOS|iphone|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+	if( mobiledevice ) {
+		return true;
+	} else {
+		return false;
+	}
+}

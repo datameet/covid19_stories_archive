@@ -1,0 +1,194 @@
+{
+    "title": "Pudukkottai district: Lorry driver hacked to death | \u0baa\u0bc1\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0b9f\u0bcd\u0b9f\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd \u0b85\u0bb1\u0ba8\u0bcd\u0ba4\u0bbe\u0b99\u0bcd\u0b95\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0ba4\u0bc1 \u0b95\u0bbf\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bbe\u0ba4\u0ba4\u0bbe\u0bb2\u0bcd \u0bb2\u0bbe\u0bb0\u0bbf \u0b93\u0b9f\u0bcd\u0b9f\u0bc1\u0ba8\u0bb0\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8 | Dinakaran",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.344",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779620",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:43.774452",
+                "start_ts": "2020-05-29 19:13:40.116046",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "m.dinakaran.com/article/News_Detail/577283/amp.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:50.271276",
+                "start_ts": "2020-05-29 19:13:48.951522",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=m.dinakaran.com"
+                ],
+                "end_ts": "2020-05-29 19:13:40.114603",
+                "start_ts": "2020-05-29 19:13:39.454093",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:45.666876",
+                "start_ts": "2020-05-29 19:13:43.774851",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:48.951185",
+                "start_ts": "2020-05-29 19:13:47.535542",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:52.233422",
+                "start_ts": "2020-05-29 19:13:50.271531",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "https://web.archive.org/web/20200529191351/https://m.dinakaran.com/article/News_Detail/577283/amp"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+                ],
+                "end_ts": "2020-05-29 19:13:47.535222",
+                "start_ts": "2020-05-29 19:13:45.667109",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:13:39.453777",
+                "start_ts": "2020-05-29 19:13:38.988560",
+                "pwd": "/data/archive/1590766226.344",
+                "output": "Pudukkottai district: Lorry driver hacked to death | \u0baa\u0bc1\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0b9f\u0bcd\u0b9f\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd \u0b85\u0bb1\u0ba8\u0bcd\u0ba4\u0bbe\u0b99\u0bcd\u0b95\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0ba4\u0bc1 \u0b95\u0bbf\u0b9f\u0bc8\u0b95\u0bcd\u0b95\u0bbe\u0ba4\u0ba4\u0bbe\u0bb2\u0bcd \u0bb2\u0bbe\u0bb0\u0bbf \u0b93\u0b9f\u0bcd\u0b9f\u0bc1\u0ba8\u0bb0\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8 | Dinakaran"
+            }
+        ]
+    },
+    "updated": "1590789349.847003",
+    "tags": "",
+    "url": "https://m.dinakaran.com/article/News_Detail/577283/amp#aoh=15863494190865&amp_ct=1586349447386&csi=1&referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s"
+}

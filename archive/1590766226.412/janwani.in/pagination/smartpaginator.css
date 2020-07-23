@@ -1,0 +1,134 @@
+	.pager {
+	width: 100%;
+	padding: 4px 0;
+	margin: 0 0 12px 0;
+	float: left;
+	}
+	.pager div.short
+	{
+	float: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+	width: 74px;
+	display:none;
+	}
+	
+	.pager div.short input
+	{
+	width: 28px;
+	height: 18px;
+	border: none;
+	margin-left: 8px;
+	float: left;
+	}
+	
+	.pager ul
+	{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	margin-right: 4px;
+	margin-left:4px;
+	display: inline;
+	}
+	
+	.pager ul li
+	{
+	display: inline;
+	margin-left: 2px;
+	}
+	.pager ul li a {
+	text-decoration: none;
+	display: inline-table;
+	width: 22px;
+	height: 20px;
+	text-align: center;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	}
+	
+	
+	
+	.pager span {
+	margin-left: 4px;
+	color: #333;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0 0 0 9px;
+	font-family:sans-serif;
+	}
+	
+	.pager .btn {
+	display: block;
+	width: 45px;
+	text-align: center;
+	float: left;
+	padding: 4px 0;
+	margin: 0;
+	margin-left: 10px;
+	cursor: pointer;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	font-size: 13px;
+	font-weight: bold;
+	}
+	
+	
+	.pager .disabled {
+	color: #000000 !important;
+	text-shadow: none;
+	background: #d6d6d6 !important;
+	box-shadow: none !important;
+	}
+	
+	.red {
+	background-color: #d6d6d6;
+	border-bottom: solid 1px #717171;
+	}
+	
+	.red.normal {
+	background-color: white;
+	color: #333;
+	border: solid 1px #444040;
+	padding: 4px 0;
+	margin: 0 2px 0 0;
+	font-size:14px;
+	font-family:sans-serif;
+	}
+	
+	.red.active {
+    background-color: #808080;
+    color: White;
+    border: solid 1px #717171;
+	}
+	
+	.pager.red .btn {
+	background: #0db4f3;
+   background: -webkit-linear-gradient(#6cd7ff, #3c7fae);
+   background: -o-linear-gradient(#6cd7ff, #3c7fae);
+   background: -moz-linear-gradient(#6cd7ff, #3c7fae);
+   background: linear-gradient(#6cd7ff, #3c7fae);
+   padding: 6px;
+    border: 1px solid #428ab8;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px #57b5dc;
+    color: White;
+    font-size: 14px;
+    font-family: sans-serif;
+	/* padding: 3px 0; */
+	}
+	

@@ -1,0 +1,218 @@
+/*
+*Author: Kaumudy
+*Date: 20-04-2019
+*Desc:  
+*/
+var KAUMUDI = KAUMUDI || {};
+$(document).ready(function () {
+    KAUMUDI.AUTH.init();
+});
+KAUMUDI.AUTH = (function () {
+    /***************
+    *Private Region*
+    ****************/
+    /**************
+    *Public Region*
+    ***************/
+    return {
+        init: function () {
+            /*Login*/
+            $("input").click(function () {
+                $(this).removeClass('errorbox');
+                $('.alert').addClass('hidden');
+            });
+            $("#googLogin").click(function () {
+                $(".g-signin2").find('.abcRioButtonContentWrapper').click();
+            });
+            $("#login_btn").click(function () {
+                var useremail = $("#user_mail").val();
+                var password = $("#user_pass").val();
+                // Checking for blank fields.
+                if (useremail == '' || password == '') {
+                    $("#error_msg").text("Please fill mandatory fields!").removeClass('hidden');
+                    $('input[type="email"]').addClass('errorbox');
+                    $('input[type="password"]').addClass('errorbox');
+                } else {
+                    var formData = new FormData();
+                    var ladda = Ladda.create(document.querySelector('#login_btn'));
+                    ladda.start();
+                    formData.append("usermail", useremail);
+                    formData.append("password", password);
+                    sendAjaxPost('/api/auth/kklogin.php?g_fe=en', formData, 'json',
+                    function (data) {
+                        ladda.stop();
+                        if (data.status == 400) {
+                            $(".alert").addClass('hidden');
+                            $("#error_msg").text(data.text).removeClass('hidden');
+                        } else {
+                            window.location = data.redirect;
+                        }
+                    }, function (textStatus, errorThrown) {
+                        ladda.stop();
+                        console.log(textStatus);
+                    });
+                }
+
+            });
+            /*forgot password*/
+            $("#forgotPopup").click(function () {
+                $('body').removeClass('modal-open');
+                $('#loginModal').removeClass('in');
+                $('body').find('.modal-backdrop').remove();
+                $('#loginModal').css({ "display": "none" });
+                $('body').addClass('modal-open');
+                $('body').append('<div class="modal-backdrop fade in"></div>');
+                $('#forgotModal').addClass('in');
+                $('#forgotModal').css({ "display": "block" });
+            });
+            $("#reset_password").click(function () {
+                var forgotEmail = $("#forgot_password").val();
+                if (forgotEmail) {
+                    var formData = new FormData();
+                    formData.append("forgot-email", forgotEmail);
+                    var ladda = Ladda.create(document.querySelector('#reset_password'));
+                    ladda.start();
+                    sendAjaxPost('/api/auth/forgot-password.php', formData, 'json',
+                    function (data) {
+                        ladda.stop();
+                        if (data.status == 200) {
+                            //alert("Please check your inbox");
+                            $('form').trigger("reset");
+                            $(".alert-msg").addClass('hidden');
+                            $("#forgot_msg").text(data.text).removeClass('hidden');
+                        } else {
+                            $(".alert-msg").addClass('hidden');
+                            $("#fgerror_msg").text("Please enter a valid email/mobile number ").removeClass('hidden');
+                        }
+                    }, function (textStatus, errorThrown) {
+                        ladda.stop();
+                        console.log(textStatus);
+                    });
+                } else {
+                    //alert("Please enter a valid email/mobile number");
+                    $("#alert_msg").text("Please enter a valid email/mobile number ").removeClass('hidden');
+                }
+            });
+
+            /*Registration form*/
+            $("#reg_btn").click(function () {
+                var username = $("#reg_name").val();
+                var email = $("#reg_email").val();
+                var mobileNumber = $("#reg_mobile").val();
+                var password = $("#reg_pass").val();
+                var confirmPassword = $("#reg_confm_pass").val();
+                var profile = $("#profile_img")[0] && $("#profile_img")[0].files ? $("#profile_img")[0].files[0] : '';
+
+                if (username == '' || password == '' || mobileNumber == '' || email == '') {
+                    $(".alert").addClass('hidden');
+                    $("#rgerr_msg").text("All fields are mandatory").removeClass('hidden');
+                    return false;
+                }
+                if (password != confirmPassword) {
+                    $(".alert").addClass('hidden');
+                    $("#rgerr_msg").text("Passwords should match").removeClass('hidden');
+                    return false;
+                }
+                var emailre = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!emailre.test(email)) {
+                    $(".alert").addClass('hidden');
+                    $("#rgerr_msg").text("Not a valid email address.").removeClass('hidden');
+                    return false;
+                }
+                var ladda = Ladda.create(document.querySelector('#reg_btn'));
+                ladda.start();
+                var formData = new FormData();
+                formData.append("user_name", username);
+                formData.append("email", email);
+                formData.append("mobile_no", mobileNumber);
+                formData.append("password", password);
+                formData.append("profile_img", profile);
+                formData.append("device-width", window.innerWidth > 0 ? window.innerWidth : screen.width);
+                formData.append("profile", profile);
+                sendAjaxPost('/api/auth/kk-register-form.php', formData, 'json',
+                    function (data) {
+                        ladda.stop();
+                        if (data.status == 200) {
+                            $('form').trigger("reset");
+                            $(".alert").addClass('hidden');
+                            $("#reg_msg").text(data.text).removeClass('hidden');
+                        } else {
+                            $(".alert").addClass('hidden');
+                            $("#rgerr_msg").text(data.text).removeClass('hidden');
+                        }
+                    }, function (textStatus, errorThrown) {
+                        ladda.stop();
+                        console.log(textStatus);
+                    });
+            });
+            /*login popup*/
+
+            
+            $("#modal").on('click', '[data-dismiss="modal"]', function () {
+                $('body').removeClass('modal-open');
+                $('#modal').removeClass('in');
+                $('body').find('.modal-backdrop').remove();
+                $('#modal').css({ "display": "none" });
+            });
+            $("#forgotModal").on('click', '[data-dismiss="modal"]', function () {
+                $('body').removeClass('modal-open');
+                $('#forgotModal').removeClass('in');
+                $('body').find('.modal-backdrop').remove();
+                $('#forgotModal').css({ "display": "none" });
+            });
+            /*popup*/
+            $("#sign-btn").click(function () {
+                $("#tabs").removeClass('hide');
+            })
+            
+            
+        },
+        /*google login*/
+        googleSignIn: function (googleUser) {
+            var profile = googleUser.getBasicProfile();
+            var id_token = googleUser.getAuthResponse().id_token;
+            KAUMUDI.AUTH.saveUserData({"username":profile.getName(),"emailid":profile.getEmail(),"imgurl":profile.getImageUrl()});
+        },
+        saveUserData: function (data) {
+            var formData = new FormData();
+            formData.append("username", data.username);
+            formData.append("emailid", data.emailid);
+            formData.append("imgurl", data.imgurl);
+            formData.append("device-width", window.innerWidth > 0 ? window.innerWidth : screen.width);
+           sendAjaxPost('/api/social/kk-social-login.php', formData, 'json',
+                         function (data) {
+                             if (data.status == 200) {
+                                 if (gapi && gapi.auth2) {
+                                     var auth2 = gapi.auth2.getAuthInstance();
+                                     auth2.signOut().then(function () {
+                                         console.log('User signed out.');
+                                     });
+                                 }
+                                 window.location = data.redirect;
+                                 $(".alert").addClass('hidden');
+                                 $("#reg_msg").text(data.text).removeClass('hidden');
+                             } else {
+                                 $(".alert").addClass('hidden');
+                                 $("#rgerr_msg").text(data.text).removeClass('hidden');
+                             }
+                         }, function (textStatus, errorThrown) {
+                             console.log(textStatus);
+                         });
+        },
+        userLogout: function (btn, redirectUri) {
+            var ladda = Ladda.create(document.querySelector(btn));
+            ladda.start();
+            var formData = new FormData();
+            sendAjaxPost('/api/auth/logout.php', formData, 'json',
+                         function (data) {
+                             ladda.stop();
+                             if (data.status == 200) {
+                                 window.location = redirectUri;
+                             }
+                         }, function (textStatus, errorThrown) {
+                             ladda.stop();
+                             console.log(textStatus);
+                         });
+        }
+  }
+})();

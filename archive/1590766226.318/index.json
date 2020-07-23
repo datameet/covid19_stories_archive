@@ -1,0 +1,194 @@
+{
+    "title": "Andhra Pradesh: 21 year old youth ends life after cops seize cycle for violating COVID-19 lockdown",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.318",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778892",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:36.530983",
+                "start_ts": "2020-05-29 19:01:32.868477",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:44.605528",
+                "start_ts": "2020-05-29 19:01:42.063230",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=newsd.in"
+                ],
+                "end_ts": "2020-05-29 19:01:32.867279",
+                "start_ts": "2020-05-29 19:01:32.589610",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:38.375059",
+                "start_ts": "2020-05-29 19:01:36.531414",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:42.062901",
+                "start_ts": "2020-05-29 19:01:40.506945",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:47.253134",
+                "start_ts": "2020-05-29 19:01:44.605787",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "https://web.archive.org/web/20200529190145/https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+                ],
+                "end_ts": "2020-05-29 19:01:40.506701",
+                "start_ts": "2020-05-29 19:01:38.375308",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:01:32.589386",
+                "start_ts": "2020-05-29 19:01:31.843487",
+                "pwd": "/data/archive/1590766226.318",
+                "output": "Andhra Pradesh: 21 year old youth ends life after cops seize cycle for violating COVID-19 lockdown"
+            }
+        ]
+    },
+    "updated": "1590789233.676614",
+    "tags": "",
+    "url": "https://newsd.in/andhra-pradesh-youth-ends-life-after-cops-seize-cycle-for-violating-lockdown/"
+}

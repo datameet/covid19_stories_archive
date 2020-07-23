@@ -1,0 +1,194 @@
+{
+    "title": "Delhi: Delhi Shelter Allegedly Set On Fire By Inmates After Fight Over Food",
+    "url": "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133",
+    "timestamp": "1590766226.116",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770989",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:49:52.056946",
+                "start_ts": "2020-05-29 16:49:49.734542",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:49:58.620119",
+                "start_ts": "2020-05-29 16:49:56.663001",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.ndtv.com"
+                ],
+                "end_ts": "2020-05-29 16:49:49.733991",
+                "start_ts": "2020-05-29 16:49:49.457623",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:49:54.093491",
+                "start_ts": "2020-05-29 16:49:52.057163",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:49:56.662672",
+                "start_ts": "2020-05-29 16:49:55.590908",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:50:00.764797",
+                "start_ts": "2020-05-29 16:49:58.620429",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "https://web.archive.org/web/20200529164959/https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133"
+                ],
+                "end_ts": "2020-05-29 16:49:55.590659",
+                "start_ts": "2020-05-29 16:49:54.093868",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.ndtv.com/india-news/fire-at-shelter-home-in-delhi-s-kashmiri-bagh-many-fire-engines-on-spot-2210133",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:49:49.457286",
+                "start_ts": "2020-05-29 16:49:48.915776",
+                "pwd": "/data/archive/1590766226.116",
+                "output": "Delhi: Delhi Shelter Allegedly Set On Fire By Inmates After Fight Over Food"
+            }
+        ]
+    },
+    "updated": "1590788223.526644",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

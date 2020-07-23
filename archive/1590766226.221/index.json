@@ -1,0 +1,194 @@
+{
+    "title": "Agra Corona Lockdown News Today Update On Starvation Death | \u092d\u0942\u0916 \u0935 \u0907\u0932\u093e\u091c \u0915\u0947 \u0905\u092d\u093e\u0935 \u092e\u0947\u0902 \u090f\u0915 \u092c\u0947\u091f\u0940 \u0915\u0940 \u092e\u094c\u0924, \u0926\u0942\u0938\u0930\u0940 \u0915\u0940 \u092d\u0940 \u0939\u093e\u0932\u0924 \u0916\u0930\u093e\u092c; \u092e\u091c\u0926\u0942\u0930\u0940 \u091b\u093f\u0928\u0940 \u0924\u094b \u0932\u0902\u091a \u092a\u0948\u0915\u0947\u091f \u0916\u093e\u0915\u0930 \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u0930 \u0930\u0939\u093e \u0925\u093e \u0917\u0941\u091c\u093e\u0930\u093e - Dainik Bhaskar",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.221",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:47.826481",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774682",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 25,
+                "start_ts": "2020-05-29 17:51:22.611044",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:52:01.529456",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:51:59.658773",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:22.609634",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:51:22.308564",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:51.738504",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:51:47.826782",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:59.658404",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:51:56.214863",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:52:04.261629",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:52:01.529782",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "https://web.archive.org/web/20200529175203/https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:56.214602",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:51:51.738756",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:51:22.308175",
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:51:21.424891",
+                "pwd": "/data/archive/1590766226.221",
+                "output": "Agra Corona Lockdown News Today Update On Starvation Death | \u092d\u0942\u0916 \u0935 \u0907\u0932\u093e\u091c \u0915\u0947 \u0905\u092d\u093e\u0935 \u092e\u0947\u0902 \u090f\u0915 \u092c\u0947\u091f\u0940 \u0915\u0940 \u092e\u094c\u0924, \u0926\u0942\u0938\u0930\u0940 \u0915\u0940 \u092d\u0940 \u0939\u093e\u0932\u0924 \u0916\u0930\u093e\u092c; \u092e\u091c\u0926\u0942\u0930\u0940 \u091b\u093f\u0928\u0940 \u0924\u094b \u0932\u0902\u091a \u092a\u0948\u0915\u0947\u091f \u0916\u093e\u0915\u0930 \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u0930 \u0930\u0939\u093e \u0925\u093e \u0917\u0941\u091c\u093e\u0930\u093e - Dainik Bhaskar"
+            }
+        ]
+    },
+    "updated": "1590788299.911324",
+    "tags": "",
+    "url": "https://www.bhaskar.com/local/uttar-pradesh/news/agra-corona-lockdown-news-today-update-on-starvation-death-127278920.html"
+}

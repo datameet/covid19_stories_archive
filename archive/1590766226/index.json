@@ -1,0 +1,194 @@
+{
+    "title": "Wife committed suicide in fire amid lockdown in Mal Bazar I \u09b8\u09cd\u09ac\u09be\u09ae\u09c0 \u09ac\u09bf\u09ad\u09c1\u0981\u0987\u09df\u09c7, \u09b2\u0995\u09a1\u09be\u0989\u09a8\u09c7\u09b0 \u099c\u09c7\u09b0\u09c7 \u0986\u09b8\u09a4\u09c7 \u09a8\u09be \u09aa\u09be\u09b0\u09be\u09df \u0997\u09be\u09df\u09c7 \u0986\u0997\u09c1\u09a8 \u09b2\u09be\u0997\u09bf\u09df\u09c7 \u0986\u09a4\u09cd\u09ae\u0998\u09be\u09a4\u09c0 \u09b8\u09cd\u09a4\u09cd\u09b0\u09c0!",
+    "url": "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html",
+    "timestamp": "1590766226",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:10.114000",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766228",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 41,
+                "start_ts": "2020-05-29 15:30:28.498494",
+                "pwd": "/data/archive/1590766226",
+                "output": "zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:44.250414",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:31:42.512126",
+                "pwd": "/data/archive/1590766226",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:30:28.496985",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=zeenews.india.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:30:28.211439",
+                "pwd": "/data/archive/1590766226",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:22.656111",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 12,
+                "start_ts": "2020-05-29 15:31:10.114721",
+                "pwd": "/data/archive/1590766226",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:42.511766",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 15:31:36.180244",
+                "pwd": "/data/archive/1590766226",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:46.687712",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:31:44.250740",
+                "pwd": "/data/archive/1590766226",
+                "output": "https://web.archive.org/web/20200529153145/https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:31:36.179987",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html"
+                ],
+                "duration": 13,
+                "start_ts": "2020-05-29 15:31:22.656363",
+                "pwd": "/data/archive/1590766226",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:30:28.210994",
+                "cmd": [
+                    "curl",
+                    "https://zeenews.india.com/bengali/state/wife-committed-suicide-in-fire-amid-lockdown-in-mal-bazar_315008.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:30:27.159430",
+                "pwd": "/data/archive/1590766226",
+                "output": "Wife committed suicide in fire amid lockdown in Mal Bazar I \u09b8\u09cd\u09ac\u09be\u09ae\u09c0 \u09ac\u09bf\u09ad\u09c1\u0981\u0987\u09df\u09c7, \u09b2\u0995\u09a1\u09be\u0989\u09a8\u09c7\u09b0 \u099c\u09c7\u09b0\u09c7 \u0986\u09b8\u09a4\u09c7 \u09a8\u09be \u09aa\u09be\u09b0\u09be\u09df \u0997\u09be\u09df\u09c7 \u0986\u0997\u09c1\u09a8 \u09b2\u09be\u0997\u09bf\u09df\u09c7 \u0986\u09a4\u09cd\u09ae\u0998\u09be\u09a4\u09c0 \u09b8\u09cd\u09a4\u09cd\u09b0\u09c0!"
+            }
+        ]
+    },
+    "updated": "1590788095.564852",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

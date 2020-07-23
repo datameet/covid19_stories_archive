@@ -1,0 +1,232 @@
+{
+    "title": "\u0905\u0939\u092e\u0926\u093e\u092c\u093e\u0926 \u0938\u0947 UP \u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u0915\u0932\u093e \u0925\u093e \u0936\u094d\u0930\u092e\u093f\u0915\u094b\u0902 \u0915\u093e \u0938\u092e\u0942\u0939, \u091a\u093f\u0932\u091a\u093f\u0932\u093e\u0924\u0940 \u0927\u0942\u092a \u0928\u0947 \u0932\u0940 \u090f\u0915 \u0914\u0930 \u092a\u094d\u0930\u0935\u093e\u0938\u0940 \u092e\u091c\u0926\u0942\u0930 \u0915\u0940 \u091c\u093e\u0928 - Gujarat ExclusiveGujarat Exclusive",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.389",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:35:27.500960",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780902",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 25,
+                "start_ts": "2020-05-29 19:35:02.166149",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:35:43.366980",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:35:40.908103",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:35:02.164850",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=hindi.gujaratexclusive.in"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:34:58.903517",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:35:32.592913",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:35:27.501145",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "end_ts": "2020-05-29 21:57:05.306913",
+                "start_ts": "2020-05-29 21:57:01.178363",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:35:40.907014",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:35:36.861222",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:35:46.013640",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:35:43.367254",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "https://web.archive.org/web/20200529193544/https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:35:36.860558",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:35:32.593215",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+                ],
+                "end_ts": "2020-05-29 21:57:09.652839",
+                "start_ts": "2020-05-29 21:57:05.307599",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:34:58.903197",
+                "cmd": [
+                    "curl",
+                    "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:34:57.741038",
+                "pwd": "/data/archive/1590766226.389",
+                "output": "\u0905\u0939\u092e\u0926\u093e\u092c\u093e\u0926 \u0938\u0947 UP \u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u0915\u0932\u093e \u0925\u093e \u0936\u094d\u0930\u092e\u093f\u0915\u094b\u0902 \u0915\u093e \u0938\u092e\u0942\u0939, \u091a\u093f\u0932\u091a\u093f\u0932\u093e\u0924\u0940 \u0927\u0942\u092a \u0928\u0947 \u0932\u0940 \u090f\u0915 \u0914\u0930 \u092a\u094d\u0930\u0935\u093e\u0938\u0940 \u092e\u091c\u0926\u0942\u0930 \u0915\u0940 \u091c\u093e\u0928 - Gujarat ExclusiveGujarat Exclusive"
+            }
+        ]
+    },
+    "updated": "1590789429.653748",
+    "tags": "",
+    "url": "https://hindi.gujaratexclusive.in/workers-left-for-ahmedabad-from-up-scorching-sun-killed-another-migrant-worker/"
+}

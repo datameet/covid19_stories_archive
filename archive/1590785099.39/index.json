@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.39",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:06:06.014899",
+                "start_ts": "2020-05-29 21:06:04.651577",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "Video from Bijnor viral with false allegation that elderly Muslim vendor sprinkled urine on fruits - Alt News"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:16.334723",
+                "start_ts": "2020-05-29 21:06:12.759626",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.altnews.in"
+                ],
+                "end_ts": "2020-05-29 21:06:08.437526",
+                "start_ts": "2020-05-29 21:06:06.015343",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:12.758890",
+                "start_ts": "2020-05-29 21:06:09.020789",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:24.812441",
+                "start_ts": "2020-05-29 21:06:22.340095",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "https://web.archive.org/web/20200529210623/https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786368",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:09.020595",
+                "start_ts": "2020-05-29 21:06:08.438007",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:20.241907",
+                "start_ts": "2020-05-29 21:06:16.335189",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+                ],
+                "end_ts": "2020-05-29 21:06:22.339836",
+                "start_ts": "2020-05-29 21:06:20.242937",
+                "pwd": "/data/archive/1590785099.39",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590786384.816414",
+    "tags": "",
+    "url": "https://www.altnews.in/video-shared-with-false-claim-that-muslim-fruit-seller-caught-contaminating-bananas-with-his-urine-in-bijnor-up/"
+}

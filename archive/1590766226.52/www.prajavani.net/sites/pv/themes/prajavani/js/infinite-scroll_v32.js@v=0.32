@@ -1,0 +1,561 @@
+
+/* global define, require, history, window, document, location  */
+(function(root, factory) {
+  "use strict";
+  if (typeof define === "function" && define.amd) {
+    define(["jquery"], factory);
+  } else if (typeof exports === "object") {
+    factory(require("jquery"));
+  } else {
+    factory(root.jQuery);
+  } 
+})(this, function($) {
+  "use strict";
+  /**
+   * Elements it reffers. Each page must has those selectors.
+   * The structure must be same as article1.html
+   * #contentsWrapper, .content, #next
+   */
+  $.fn.isInViewport = function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = elementTop + $(this).outerHeight();
+
+			var viewportTop = $(window).scrollTop();
+			var viewportBottom = viewportTop + $(window).height();
+
+			return elementBottom > viewportTop && elementTop < viewportBottom;
+		};
+	
+  $.fn.InfiniteScroll = function(options) {
+     /**
+     * Settings
+     */
+    var windowHeight = (typeof window.outerHeight !== "undefined") ? Math.max(window.outerHeight, $(window).height()) : $(window).height(),
+      defaults = {
+        contentsWrapperSelector: "#contentsWrapper",
+        contentSelector: ".content",
+        nextSelector: "#next",
+        loadImage: "",
+        offset: windowHeight,
+		loadAllstories: 0, //added by YS
+      },
+      settings = $.extend(defaults, options);
+	var count = 1;	//added by ys
+   var tprcount = 0;
+   var xhttp = new XMLHttpRequest();
+	var margin_l_r = $(settings.contentsWrapperSelector).width() - $(settings.contentSelector).width();	//added by ys
+ 	//added for ads
+	
+    /**
+     * Private methods
+     */
+    var generateHiddenSpans = function(_title, _path) {
+        return "<span class='hidden-title' style='display:none'>" + _title + "</span><span class='hidden-url' style='display:none'>" + _path + "</span>";
+      },
+      setTitleAndHistory = function(_title, _path) {
+        // Set history
+        history.replaceState(null, _title, _path);
+        // Set title
+        $("title").html(_title);
+        //if(OBR != null && OBR != undefined)
+        
+        
+      },
+      changeTitleAndURL = function(_value) {
+        // value is an element of a content user is seeing
+        // Get title and path of the article page from hidden span elements
+        var title = $(_value).children(".hidden-title:first").text(),
+          path = $(_value).children(".hidden-url:first").text();
+         if ($("title").text() !== title) {
+          // If it has changed
+          $(settings.appendSelector).removeClass("active");
+          $(_value).addClass("active");
+          setTitleAndHistory(title, path);
+         
+          //mobile carousel active
+          if(screen.width < 667)
+          {
+             var po = $(".owl-four [href='"+path+"']").parents('.owl-item').index();
+             po = po + 1;
+             
+             setTimeout(function()
+            {
+             if((po) == 5){
+                $('.dynamic_articles').addClass('hide');
+                $('.dynamic_articles').attr('data-top', $(window).scrollTop());
+             }
+             else if((po) == 1){
+                $('.owl-four').trigger('to.owl.carousel', 1);
+             }
+             else{
+                $('.owl-four').trigger('to.owl.carousel', po);
+                $('.dynamic_articles').removeClass('hide');
+             }
+            },500);
+          }
+             if(tprcount < 5) {
+              //if (typeof OBR !== 'undefined')
+              //{
+              // OBR.extern.researchWidget();
+           //} 
+           
+           
+            
+          }
+          else
+            tprcount++;
+         
+         /*social share urls*/
+          var $share_url = window.location.origin + path;
+          var $whatsappweb = 'https://web.whatsapp.com/send?text=' + title + ' ' + $share_url;
+          var $fb_share = 'https://www.facebook.com/sharer/sharer.php?u=' + $share_url;
+          var $tweet_share = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(title) + ' ' + $share_url ;
+          
+          $('.pj-web-whatsapp').attr('href', $whatsappweb);
+          $('.pj-facebook').attr('href', $fb_share);
+          $('.pj-twitter').attr('href', $tweet_share);
+            if(typeof gtag !== 'undefined' )
+               gtag('config', 'UA-120820755-1');
+            (self.COMSCORE && COMSCORE.beacon({c1: "2", c2: "27128009"}));
+            xhttp.open("GET", "/pv.xml?t=" + Math.random(), true);
+            xhttp.send();
+               /*setTimeout(function(){
+                  $("#footer-wrapper .storyShare").html($(_value).find('.article-title .storyShare').html());
+               },10); 
+               */
+         }
+       // else 
+       // console.log('dsdsds - ' + title + " - " + $("title").text());
+      },
+	  loadHtml = function(){
+		// Getting URL from settings.nextSelector
+        var $next_url = [$(settings.nextSelector).attr("href")];
+        $(settings.nextSelector).remove();
+		if ($next_url[0] !== undefined) {
+			setTimeout(function(){
+				ajaxCall($next_url);
+			},50);
+		}
+	  },
+	  ajaxCall = function($url){
+        if ($url[0] !== undefined) {
+          // If the page has link, call ajax
+          if (settings.loadImage !== "") {
+            $(settings.contentsWrapperSelector).append("<img src='" + settings.loadImage + "' id='cis-load-img' />");
+          }
+          var currentCount = count;
+          $.ajax({
+            url: $url[0],
+            dataType: "html",
+            async: true,            
+            success: function(res) {
+              // Get title and URL
+              title = $(res).filter("title").text();
+              path = $url[0];
+              // Set hidden span elements and history
+               var cUrl = this.url;
+               //$(settings.contentsWrapperSelector).append($(res).find(settings.contentSelector).append(generateHiddenSpans(title, path)));
+               
+               var appElement = null;
+               $(settings.appendSelector).each(function(key, value) { 
+                var url = $(value).data('url');
+               if(url != undefined){
+                  if(url == cUrl)
+                  {                      
+                     appElement = $(value);
+                     return false;
+                  }               
+               }
+               });
+               if(appElement == null)
+                  return;
+              // appElement.append($(res).find('#breadcrumb-wrapper').clone());
+               appElement.append($(res).find(settings.contentSelector).html());
+               appElement.append(generateHiddenSpans(title, path));
+            
+               $(settings.contentSelector).find('.pj-article__recommented').remove(); 
+               //$(appElement).find('.vads').remove();                
+               $(appElement).find('.astrology').remove();
+            
+            var image = $(appElement).find('.node .field-name-field-image img');
+            if (image)
+            {
+               var caption = image.attr('title');
+               if (caption && caption.length > 0)
+                  $(appElement).find('.node .field-name-field-image').append('<p class="pj-article__banner__description">' + caption + '</p>');
+            }
+         
+         
+			   var nodeID = appElement.find('.node').attr('id').split('-').pop();
+			   //appElement.find('.node .field-name-body .field-items div.field-item p:eq(1)').after("<div id ='div-gpt-inart-ad-"+nodeID+"' style='padding:20px 0px;background-color: transparent;' align='center'></div>");
+               /*if(screen.width > 1200) 
+               {
+                 // $('#main-wrapper .section-container:first').find('#sidebar-second-wrapper').clone().insertAfter($(settings.contentsWrapperSelector).find('.row'));
+               }
+               else{
+                  // $(settings.contentsWrapperSelector).find('#sidebar-second-wrapper').remove();  
+                   //  console.log($(res).find('.node .field-name-body .field-items div.field-item p:eq(0)'));                     
+                   appElement.find('.node .field-name-body .field-items div.field-item p:eq(0)').after("<div id ='m_artad' style='padding:20px 0px;background-color: transparent;' align='center'><div id='div-gpt-ad-M-300x250-inarticle-fi_ap_inr1'></div></div>");
+                     
+
+               }*/
+			   
+			//$('#'+appElement.attr('id')+' .owl-carousel').owlCarousel('refresh');
+			/* Video gallery */
+         if(screen.width > 1025 )
+         {
+            $('#'+appElement.attr('id')+' #video_gallery .owl-carousel').trigger('destroy.owl.carousel');
+            $('#'+appElement.attr('id')+' #video_gallery .owl-carousel').owlCarousel(video_options);
+         }
+			
+			$('#'+appElement.attr('id')+' .image_gallery .owl-carousel').trigger('destroy.owl.carousel');
+			$('#'+appElement.attr('id')+' .image_gallery .owl-carousel').owlCarousel(image_options);
+			
+			
+		
+			//$('#'+appElement.attr('id')+' .owl-carousel').trigger('refresh.owl.carousel');
+               /*$('.related_slider.owl-carousel').not('.owl-loaded').owlCarousel({
+                   margin:10,
+                   loop:false,
+                   autoWidth:true,
+                   items:1,
+                   nav:true,
+                   dots:false,
+                   responsive:{
+                     0:{ items:1 },
+                     768: { items:3,slideBy: 3 },
+                   }
+               });*/
+            
+               
+              
+                     
+			  //added by YS
+			  if(settings.secondarySelector){
+				  $(settings.appendSelector+':last').append($(res).find(settings.secondarySelector));
+			  }
+				//$(settings.appendSelector+':last').attr('id','article'+count);
+             
+           
+               
+             
+            if (typeof OBR !== 'undefined')
+            {
+               OBR.extern.researchWidget();    
+               
+            }
+                     
+           
+				  /*$('#article'+count+ ' .adver-wrapper--250').each(function(){
+					  var id = $(this).children().attr('id');
+						
+						
+						switch(count){
+							case 1: 
+								if(a1_ads[id])
+									$(this).children().attr('id', a1_ads[id]);
+								break;
+							
+							case 2: 
+								if(a2_ads[id])
+									$(this).children().attr('id', a1_ads[id]);
+								break;
+								
+							case 3: 
+								if(a3_ads[id])
+									$(this).children().attr('id', a1_ads[id]);
+								break;
+						}
+						
+				  });*/
+			  
+			  
+			  if(settings.showNextStory){
+				//  $('<div class="next_story">NEXT STORY</div>').insertBefore($(settings.appendSelector+':last'));
+               $('<h6 class="rule"><span>ಮುಂದಿನದು</span></h6>').insertBefore(appElement);
+				  
+				  /*$(settings.contentSelector+':last .next_story').css({
+					 'margin-left' : -(margin_l_r/2),
+					 'margin-right' : -(margin_l_r/2)
+				  });*/
+			  }
+			  
+			  
+              if ($(res).find(settings.appendSelector).find(settings.nextSelector).length === 0) {
+                //If there is no nextSelector in the contentSelector, get next Slecter from response and append it.
+                appElement.append($(res).find(settings.nextSelector));
+              }
+			  appElement.addClass("loaded");
+           
+			  if(settings.loadAllstories){
+				documentHeight = documentHeight;
+				loadHtml();
+			  }
+			  else{
+				  documentHeight = $(document).height();
+			  }
+			
+              $contents = $(settings.appendSelector);
+             // $("#cis-load-img").remove();
+             // $(document).trigger('clever-infinite-scroll-content-loaded');
+			  
+			  //added by YS, show only 2 paragraphs for the number of articles specified in variable 'fullArticle'
+			  count++;
+           var id = appElement.attr('id').replace('article', '');
+			  if(id > 1)
+			  {
+            //specially designed for DH
+              if(screen.width <= 1024) {
+                 //var h = '750px';//($('#sidebar-second-wrapper').height())/2;
+                 var classname='h750';
+                 if(screen.width > 480)
+                 {
+                    //h = '950px';
+                    classname='h950';
+                 }
+                 
+                 
+                 //appElement.css({    'height': h,  });
+                 appElement.addClass(classname);
+                 if(settings.loadAllstories){
+                  documentHeight = documentHeight;
+                 }
+                 else{
+                    documentHeight = $(document).height();
+                 }
+                 
+                 //var id = appElement.attr('id');
+                 //appElement.append('<div class="read_more_container"><input type="button" value="Read more" data-id='+id+' class="read_full_article"/></div>');
+              }
+            }
+            if(lazyLoader)
+                     lazyLoader.reload();
+            
+               
+            }
+            
+            
+          });
+        }
+	  };
+
+		$(document).on("click", ".read_full_article", function(){
+			var id = $(this).attr('data-id');
+			$(this).parent().remove();
+			//$('#'+id+' p').slideDown();
+			
+			//specially designed for DH
+			$('#'+id).css({
+					  'height': 'auto',
+					  'overflow': 'visible',
+				  });
+         var classname='h750';
+         if(screen.width > 480)
+         {
+           classname='h950';
+         }
+         $('#'+id).removeClass(classname);     
+         
+         $('#'+id + ' .node .field-name-body ._yeti_main_container').addClass('displayBlock');
+         
+			documentHeight = $(document).height();
+			changeTitleAndURL($('#'+id));
+		});
+				
+    /**
+     * Initialize
+     */
+    // Get current page's title and URL.
+    var title = $("title").text(),
+      //path = $(location).attr("href"),
+	  path = $(location)[0].href,
+      documentHeight = $(document).height(),
+      threshold = settings.offset,
+      $contents = $(settings.appendSelector);
+    // Set hidden span elements and history
+    $(settings.appendSelector + ":last").append(generateHiddenSpans(title, path));
+    $(settings.appendSelector).addClass("active loaded");
+    $(settings.appendSelector).attr('id', 'article0');		//added by YS
+    setTitleAndHistory(title, path);
+    processArticles();
+
+
+    /**
+     * scroll
+     */
+    var lastScroll = 0,
+      currentScroll = 0;
+       var scrollingif = false;
+    
+    $(window).scroll(function() {
+      
+      if(scrollingif == true)
+         return;
+      
+      scrollingif = true;
+      processArticles();
+      // Detect where you are
+      //window.clearTimeout($.data("this", "scrollTimer"));
+      //$.data(this, "scrollTimer", window.setTimeout(function() {      
+         
+         // Get current scroll position
+        
+      scrollingif = false;
+    }); //scroll
+    
+    
+    function processArticles()
+    {
+       currentScroll = $(window).scrollTop();
+        var ret = false;
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+           
+            if($(settings.appendSelector+'.loaded').length == 5 )
+            {
+               //console.log('here... ' + currentScroll);
+               var v = $(settings.appendSelector + ":last");
+               if(!v.hasClass('activescroll'))
+               {
+                  //  console.log('making active... ' + $(settings.appendSelector + ":last").attr('id')); 
+                  changeTitleAndURL($(settings.appendSelector + ":last"));
+                  $('.dynamic_articles .item').removeClass('activescroll');
+                  $(".dynamic_articles a[data-href*="+$(settings.appendSelector + ":last").attr('id')+"]").parent().addClass('activescroll');
+               }
+            }
+               lastScroll = currentScroll;
+               scrollingif = false
+             return ;
+         }
+         
+         //console.log('currentScroll... ' + currentScroll + ' lastScroll - ' + lastScroll);
+         //console.log("s - " + Math.abs(lastScroll - currentScroll));
+         if (Math.abs(lastScroll - currentScroll) > 1000)
+         {
+            
+            $contents.each(function(key, value) {
+               if( $(value).isInViewport() && !$(value).hasClass("active"))
+               {
+                 //console.log("fix large ... scroll " + $(value).attr('id')) ;
+                 ret = true;
+                 //setTimeout(function(){
+                   changeTitleAndURL($(value));
+                    $('.dynamic_articles .item').removeClass('activescroll');
+                  $(".dynamic_articles a[data-href*="+$(value).attr('id')+"]").parent().addClass('activescroll');
+                //  },10);                   
+                 return false;
+               }
+            });
+         }
+         
+         
+        // Detect whether it's scrolling up or down by comparing current scroll location and last scroll location
+        if (currentScroll > lastScroll) {
+        
+            
+          // If it's scrolling down
+          $contents.each(function(key, value) {  			
+            if($(value).next().length != 0 && $(value).hasClass('loaded') ){
+              // console.log("21111.");
+                 if($(value).next().isInViewport() && $(value).hasClass("active")){
+                    // Change title and URL
+                   // setTimeout(function(){
+                       changeTitleAndURL($(value).next().next());
+                         $('.dynamic_articles .item').removeClass('activescroll');
+                     $(".dynamic_articles a[data-href*="+$(value).next().next().attr('id')+"]").parent().addClass('activescroll');
+                   //  },10);
+                    
+                    // Quit each loop
+                   // $(settings.appendSelector).removeClass("active");
+                  //  $($(value).next().next()).addClass("active");
+                    
+                   // console.log("chnaged.. down");
+                  
+                     
+                    return false;
+                 }
+                 
+                 if( $(value).isInViewport() && !$(value).next().isInViewport() && !$(value).hasClass("active"))
+                 {
+                   //console.log("fix... down") ;
+                    
+                   // setTimeout(function(){
+                       changeTitleAndURL($(value));
+                       $('.dynamic_articles .item').removeClass('activescroll');
+                        $(".dynamic_articles a[data-href*="+$(value).attr('id')+"]").parent().addClass('activescroll');
+                   //  },10);
+                    
+                    return false;
+                 }
+                 
+             }
+          });
+        } 
+        if (currentScroll < lastScroll) {
+          // If it's scrolling up     
+         
+          $contents.each(function(key, value) {   
+           
+           
+          
+            if($(value).prev().length != 0 && $(value).hasClass('loaded'))
+            {
+               //console.log(" scroll up 1");
+               if(($(value).prev().isInViewport() || $(value).isInViewport())  && $(value).hasClass("active")) {
+                  // Change title and URL   
+                  //console.log(" scroll up 2");
+                  var off2 =  $(value).offset().top - $(window).scrollTop();
+                  // get the offdset for the Sticky menu adjustment.
+                 // console.log(off2);
+                  if( off2 > 150 ){ 
+                     
+                    // setTimeout(function(){
+                      changeTitleAndURL($(value).prev().prev());
+                      $('.dynamic_articles .item').removeClass('activescroll');
+                     $(".dynamic_articles a[data-href*="+$(value).prev().prev().attr('id')+"]").parent().addClass('activescroll');
+                  //},10);
+                     
+                     //$(settings.appendSelector).removeClass("active");
+                     //  $($(value).prev().prev()).addClass("active");
+                       
+                     //console.log("chnaged.. " + off2);                    
+                     // Quit each loop
+                     return false;
+                  }   
+                  
+                  if( $(value).isInViewport() && !$(value).prev().prev().isInViewport() && !$(value).hasClass("active"))
+                  {
+                    //console.log("fix... up ") ;
+                    
+                    //setTimeout(function(){
+                      changeTitleAndURL($(value));
+                       $('.dynamic_articles .item').removeClass('activescroll');
+                    $(".dynamic_articles a[data-href*="+$(value).attr('id')+"]").parent().addClass('activescroll');
+                   //  },10);
+                   
+                    return false;
+                  }
+					}	
+            } 
+          
+           
+          
+          });
+        } else {
+          // When currentScroll == lastScroll, it does not do anything because it has not been scrolled.
+        }
+        // Renew last scroll position
+        lastScroll = currentScroll;
+        scrollingif = false;
+    //}, 30));
+      
+	  if(settings.loadAllstories){
+		  if($(settings.nextSelector).length > 0){
+			  loadHtml();
+		  }
+		  
+	  }
+    }
+
+    return (this);
+  }; //$.fn.InfiniteScroll
+});

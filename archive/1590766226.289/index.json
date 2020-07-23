@@ -1,0 +1,232 @@
+{
+    "title": "Tamil Nadu man kills three children, ends life | Chennai News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.289",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:33.521213",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777143",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 18:32:23.063688",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:52.535191",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:32:49.647970",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:23.062667",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:32:22.771683",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:32:37.951559",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:32:33.521354",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "end_ts": "2020-05-29 21:47:34.368623",
+                "start_ts": "2020-05-29 21:47:30.029782",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:49.646854",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:32:45.018356",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:54.515215",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:32:52.535446",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "https://web.archive.org/web/20200529183253/https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:32:45.017678",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 18:32:37.951840",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+                ],
+                "end_ts": "2020-05-29 21:47:37.619120",
+                "start_ts": "2020-05-29 21:47:34.368950",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:32:22.771401",
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:32:21.996533",
+                "pwd": "/data/archive/1590766226.289",
+                "output": "Tamil Nadu man kills three children, ends life | Chennai News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788857.61944",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/chennai/tn-man-kills-3-children-ends-life/articleshow/75815382.cms"
+}

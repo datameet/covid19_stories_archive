@@ -1,0 +1,194 @@
+{
+    "title": "No booze, 8 commit suicide in Kerala : The Tribune India",
+    "url": "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002",
+    "timestamp": "1590766226.11",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:15.856053",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766860",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 15,
+                "start_ts": "2020-05-29 15:41:00.854557",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:27.743192",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:41:25.176462",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:00.852797",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.tribuneindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:41:00.517050",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:19.455412",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:41:15.856227",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:25.176118",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:41:22.954622",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:30.881270",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:41:27.743438",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "https://web.archive.org/web/20200529154128/https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:22.954375",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:41:19.455766",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:41:00.516578",
+                "cmd": [
+                    "curl",
+                    "https://www.tribuneindia.com/news/nation/no-booze-8-commit-suicide-in-kerala-64002",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:40:59.765698",
+                "pwd": "/data/archive/1590766226.11",
+                "output": "No booze, 8 commit suicide in Kerala : The Tribune India"
+            }
+        ]
+    },
+    "updated": "1590788114.009741",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

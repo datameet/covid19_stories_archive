@@ -1,0 +1,194 @@
+{
+    "title": "Old Man Death In Bhind Due To Hunger During Lockdown From Corona - \u092e\u0926\u0926 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u0908 \u092e\u094c\u0924 :\u00a0\u090f\u0915 \u0935\u0915\u094d\u0924 \u0916\u093e\u0928\u093e \u0916\u093e\u0915\u0930 \u0917\u0941\u091c\u0930 \u0915\u0930 \u0930\u0939\u0947 \u092c\u0942\u0922\u093c\u0947 \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0915\u0940 \u0939\u0941\u0908 \u092e\u094c\u0924,\u00a0\u0928\u0939\u0940\u0902 \u092a\u0939\u0941\u0902\u091a\u0940 \u0938\u0930\u0915\u093e\u0930\u0940 \u092e\u0926\u0926 | Patrika News",
+    "url": "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U",
+    "timestamp": "1590766226.57",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:05:44.860000",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768332",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 12,
+                "start_ts": "2020-05-29 16:05:32.786597",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/index.html@fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 16:06:04.938542",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:06:00.006593",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:05:32.786133",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.patrika.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:05:32.482192",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:05:51.796904",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 16:05:44.860150",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:06:00.006172",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:05:56.161532",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:06:09.179823",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:06:04.938866",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "https://web.archive.org/web/20200529160606/https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:05:56.161205",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:05:51.797211",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:05:32.482076",
+                "cmd": [
+                    "curl",
+                    "https://www.patrika.com/gwalior-news/old-man-death-in-bhind-due-to-hunger-during-lockdown-from-corona-5980463/?fbclid=IwAR0bB2uNNC6p2YH4MDt0Y39kcJ1U8USpFKGeMb6j8pLK3jTlDRgBUqNgF5U",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:05:28.707130",
+                "pwd": "/data/archive/1590766226.57",
+                "output": "Old Man Death In Bhind Due To Hunger During Lockdown From Corona - \u092e\u0926\u0926 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0906\u0908 \u092e\u094c\u0924 :\u00a0\u090f\u0915 \u0935\u0915\u094d\u0924 \u0916\u093e\u0928\u093e \u0916\u093e\u0915\u0930 \u0917\u0941\u091c\u0930 \u0915\u0930 \u0930\u0939\u0947 \u092c\u0942\u0922\u093c\u0947 \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0915\u0940 \u0939\u0941\u0908 \u092e\u094c\u0924,\u00a0\u0928\u0939\u0940\u0902 \u092a\u0939\u0941\u0902\u091a\u0940 \u0938\u0930\u0915\u093e\u0930\u0940 \u092e\u0926\u0926 | Patrika News"
+            }
+        ]
+    },
+    "updated": "1590788177.242087",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

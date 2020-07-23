@@ -1,0 +1,194 @@
+{
+    "title": "Delhi: Out of job during lockdown, labourer commits suicide | Cities News,The Indian Express",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.379",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:45.119356",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780698",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 19:31:38.240339",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:52.731274",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:31:51.375133",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:38.238804",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:31:37.969982",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:47.742557",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:31:45.119523",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:51.374797",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:31:50.054001",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:54.730752",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:31:52.731516",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "https://web.archive.org/web/20200529193153/https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:50.053463",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:31:47.742803",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:31:37.969696",
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:31:36.964765",
+                "pwd": "/data/archive/1590766226.379",
+                "output": "Delhi: Out of job during lockdown, labourer commits suicide | Cities News,The Indian Express"
+            }
+        ]
+    },
+    "updated": "1590789414.191295",
+    "tags": "",
+    "url": "https://indianexpress.com/article/cities/delhi/delhi-out-of-job-during-lockdown-labourer-commits-suicide-6399415/"
+}

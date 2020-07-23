@@ -1,0 +1,271 @@
+/*
+Theme Name: Magcess
+Theme URI: https://afthemes.com/products/magcess/
+Author: AF themes
+Author URI: https://afthemes.com
+Description:  Magcess is a child theme of Newsphere which is a perfect news and magazine responsive WordPress theme that lets you write articles and blog posts with ease. The child theme is coming with different layout and color for main banner section as well as introduced new background color for main navigation background. Make an extraordinary news site the assistance of live customizer choices and custom widgets, you can structure your site as you like and see the progressions live. It is compatible with the Gutenberg and RTL alongside WooCommerce module which encourages you to coordinate an online business with our layout. As it incorporates numerous helpful highlights that require to construct a magnificent looking newsportal, the theme is ideal for blogging and incredible for a newspaper, magazine, distributing or review website. The theme is all around enhanced that positions your site in the highest point of web indexes and users will get an exceptional help from the support team if there will be any troubles while utilizing the theme.
+ See Demo: https://demo.afthemes.com/newsphere/magcess/
+ Support: https://afthemes.com/supports/
+Template: newsphere
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: magcess
+Tags: news, blog, entertainment, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Magcess WordPress Theme, Copyright 2018 AF themes
+Magcess is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+
+
+
+
+img.imgdonate {
+    width: 150px;
+    height: 150px;
+}
+
+#singular-form button,
+.emailcontainer>#singular-form>#input-container>input {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.emailcontainer {
+    width: 19rem;
+    height: 5rem;
+    padding: 10px;
+    background-color: var(--main-color);
+    text-align: center;
+    border-radius: 3rem;
+    overflow: hidden;
+    transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.emailcontainer>#singular-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: --main-color;
+}
+
+.emailcontainer>#singular-form button {
+    width: 9rem;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.emailcontainer>#singular-form>button#trigger {
+    padding: 0;
+    width: 100%;
+    color: var(--accent-color);
+    background-color: transparent;
+    z-index: 3;
+}
+
+.emailcontainer>#singular-form>#input-container {
+    z-index: 2;
+}
+
+.emailcontainer>#singular-form>#input-container>input {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0 26% 0 3%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease .4s;
+}
+
+.emailcontainer>#singular-form>#input-container>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease .4s;
+}
+
+.emailcontainer>#singular-form>#success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    font-weight: bold;
+    z-index: 1;
+}
+
+.emailcontainer>#singular-form>button#trigger,
+.emailcontainer>#singular-form>#input-container,
+.emailcontainer>#singular-form>#success {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.emailcontainer>#singular-form>button#trigger {
+    transition: all .4s ease;
+}
+
+.emailcontainer>#singular-form>#input-container {
+    transform: scale(1);
+    opacity: 1;
+    transition: all .4s ease .4s;
+}
+
+.emailcontainer>#singular-form>#success {
+    transition: all .2s ease .4s;
+}
+
+.emailcontainer>#singular-form>button#trigger.shown,
+.emailcontainer>#singular-form>#input-container.shown,
+.emailcontainer>#singular-form>#success.shown,
+.emailcontainer>#singular-form>#input-container>button.shown,
+.emailcontainer>#singular-form>#input-container>input.shown {
+    transform: scale(1);
+    opacity: 1;
+}
+
+figure.wp-block-embed-facebook.wp-block-embed.is-type-video.is-provider-facebook {
+    width: 300px !important;
+}
+span.important-title {
+    background: #fff;
+    color: #376976;
+    position: absolute;
+    display: block;
+    top: -0.8em;
+    left: 10px;
+    padding: 3px 8px;
+    font-size: 120%;
+}
+p {
+    color: #404040;
+    font-family: Arial,Verdana,Geneva,Helvetica,sans-serif;
+    font-weight: 500;
+    font-size: 19px !important;
+}
+.important {
+    border: 1px solid #E5E5E5;
+    background: url(../../../../i2.wp.com/www.altnews.in/wp-content/uploads/theme-images/download.png) repeat-x 0 100%;
+    padding: 15px;
+    margin: 25px 0 10px 0;
+    position: relative;
+}
+body.aft-default-mode .bottom-bar {
+    background-color: #af0000;
+}
+
+body.aft-default-mode .inner-suscribe input[type=submit],
+body.aft-default-mode #scroll-up,
+body.aft-default-mode .trending-posts-vertical .trending-no,
+body.aft-default-mode .aft-main-banner-section .aft-trending-latest-popular .nav-tabs>li.active,
+body.aft-default-mode .aft-main-banner-wrapper span.trending-no,
+body.aft-default-mode .read-img .min-read-post-comment,
+body.aft-default-mode .aft-home-icon {
+    background-color: #cc0000;
+}
+
+body.aft-default-mode .read-img .min-read-post-comment:after{
+    border-top-color: #cc0000;
+}
+
+
+bodybody.aft-default-mode  .sticky .read-title h4 a:before {
+    color: #cc0000;
+}
+
+
+body.aft-default-mode .newsphere_tabbed_posts_widget .nav-tabs > li > a:hover,
+body.aft-default-mode .newsphere_tabbed_posts_widget .nav-tabs > li > a,
+body.aft-default-mode .related-title,
+body.aft-default-mode .widget-title span, body.aft-default-mode .header-after1 span{
+    border-bottom-color: #cc0000;
+}
+
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-1,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-1,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-2,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-2,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-3,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-3,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-4,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-4,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-5,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-5,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-6,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-6,
+body.aft-default-mode .aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-7,
+body.aft-default-mode .main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-7,
+body.aft-default-mode .af-sp-wave:before, body.aft-default-mode .af-sp-wave:after ,
+body.aft-default-mode .af-video-slider .swiper-slide.selected{
+    border-color: #cc0000;
+}
+
+body.aft-default-mode .inner-suscribe input[type=submit], body.aft-default-mode #scroll-up, body.aft-default-mode .aft-main-banner-section .aft-trending-latest-popular .nav-tabs>li.active>a:hover, body.aft-default-mode .aft-main-banner-section .aft-trending-latest-popular .nav-tabs>li.active>a, body.aft-default-mode .read-img .min-read-post-comment a, body.aft-default-mode .aft-home-icon a, body.aft-default-mode .aft-main-banner-wrapper span.trending-no, body.aft-default-mode .trending-posts-vertical .trending-no{
+    color: #fff;
+}
+
+
+body.aft-light-mode.aft-transparent-main-banner-box .aft-main-banner-section .aft-trending-latest-popular li.af-double-column.list-style:before, body.aft-dark-mode.aft-transparent-main-banner-box .aft-main-banner-section .aft-trending-latest-popular li.af-double-column.list-style:before, body.aft-default-mode.aft-transparent-main-banner-box .aft-main-banner-section .aft-trending-latest-popular li.af-double-column.list-style:before, body.aft-light-mode.aft-transparent-main-banner-box .aft-main-banner-section .read-single.color-pad:before, body.aft-dark-mode.aft-transparent-main-banner-box .aft-main-banner-section .read-single.color-pad:before, body.aft-default-mode.aft-transparent-main-banner-box .aft-main-banner-section .read-single.color-pad:before{
+    background-color: #fff;
+}
+
+.aft-main-banner-section .color-pad .entry-meta span, .banner-carousel-1 .read-details .entry-meta span.byline a{
+    color: #404040;
+}
+
+body .aft-blocks.banner-carousel-1-wrap {
+    background-color: #d2d2d2;
+}
+
+body.aft-default-mode .aft-main-banner-section .read-single.color-pad, .aft-main-banner-section .read-single.color-pad{
+    background-color: #fff;
+}
+
+body .aft-main-banner-section .color-pad .read-title h4 a{
+    color: #404040;
+}
+
+.aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-1,
+.main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-1
+{
+   color: #cc0000;
+    border-color: #ffbf3f;
+}
+
+.aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-2,
+.main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-2{
+    color: #404040;
+    border-color: #ffbf3f;
+}
+
+.aft-main-banner-section .color-pad .cat-links li a.newsphere-categories.category-color-3,
+.main-banner-widget-section .color-pad .cat-links li a.newsphere-categories.category-color-3{
+    color: #d27f05;
+    border-color: #ffbf3f;
+}
+
+body .color-pad .cat-links li a.newsphere-categories.category-color-1,
+a.newsphere-categories.category-color-1 {
+    border-color: #ffbf3f;
+}

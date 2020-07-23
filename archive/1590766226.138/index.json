@@ -1,0 +1,194 @@
+{
+    "title": "UP: woman hanged in gonda - \u092f\u0942\u092a\u0940 : \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092e\u093e\u092f\u0915\u0947 \u091c\u093e\u0928\u0947 \u0915\u0940 \u091c\u093f\u0926 \u0905\u0921\u093c\u0940 \u092e\u0939\u093f\u0932\u093e \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e \u0926\u0940 \u091c\u093e\u0928",
+    "url": "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html",
+    "timestamp": "1590766226.138",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 27,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771719",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:27.613437",
+                "start_ts": "2020-05-29 17:01:59.955004",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:47.897742",
+                "start_ts": "2020-05-29 17:02:46.406966",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "end_ts": "2020-05-29 17:01:59.953703",
+                "start_ts": "2020-05-29 17:01:59.671632",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:34.546041",
+                "start_ts": "2020-05-29 17:02:27.613652",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:46.406587",
+                "start_ts": "2020-05-29 17:02:40.627056",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:50.214558",
+                "start_ts": "2020-05-29 17:02:47.898001",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "https://web.archive.org/web/20200529170249/https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html"
+                ],
+                "end_ts": "2020-05-29 17:02:40.626798",
+                "start_ts": "2020-05-29 17:02:34.546437",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/story-up-woman-hanged-in-gonda-3180972.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:01:59.671344",
+                "start_ts": "2020-05-29 17:01:59.373542",
+                "pwd": "/data/archive/1590766226.138",
+                "output": "UP: woman hanged in gonda - \u092f\u0942\u092a\u0940 : \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092e\u093e\u092f\u0915\u0947 \u091c\u093e\u0928\u0947 \u0915\u0940 \u091c\u093f\u0926 \u0905\u0921\u093c\u0940 \u092e\u0939\u093f\u0932\u093e \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e \u0926\u0940 \u091c\u093e\u0928"
+            }
+        ]
+    },
+    "updated": "1590788230.856302",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

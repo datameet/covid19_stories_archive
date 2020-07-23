@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.86" height="61.86" viewBox="0 0 61.86 61.86">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#101a25}.cls-3{filter:url(#Ellipse_15)}
+        </style>
+        <filter id="Ellipse_15" width="61.86" height="61.86" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation="3.5"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="Group_27484" data-name="Group 27484" transform="translate(10.5 9.5)">
+        <g class="cls-3" transform="translate(-10.5 -9.5)">
+            <ellipse id="Ellipse_15-2" cx="20.43" cy="20.43" class="cls-1" data-name="Ellipse 15" rx="20.43" ry="20.43" transform="translate(10.5 9.5)"/>
+        </g>
+        <path id="Path_131744" d="M0 16.128l6.084-7.65L0 .829 1.859 0l8.6 8.478-8.6 8.478z" class="cls-2" data-name="Path 131744" transform="translate(16.344 12.017)"/>
+    </g>
+</svg>

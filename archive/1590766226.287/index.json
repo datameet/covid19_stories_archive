@@ -1,0 +1,232 @@
+{
+    "title": "Gurugram News: Three buried in 15-foot-deep pit while walking home | Gurgaon News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.287",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:31.760112",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777082",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 18:31:22.923799",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms@utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:49.567317",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:31:46.867784",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:22.922484",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:31:22.648990",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:31:38.355429",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 18:31:31.760266",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "end_ts": "2020-05-29 21:47:16.111423",
+                "start_ts": "2020-05-29 21:47:12.177140",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:46.866706",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 18:31:40.492403",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:51.539526",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:31:49.567574",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "https://web.archive.org/web/20200529183150/https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:31:40.492170",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:31:38.356153",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+                ],
+                "end_ts": "2020-05-29 21:47:19.451190",
+                "start_ts": "2020-05-29 21:47:16.111674",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:31:22.648600",
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:31:22.057719",
+                "pwd": "/data/archive/1590766226.287",
+                "output": "Gurugram News: Three buried in 15-foot-deep pit while walking home | Gurgaon News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788839.455761",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-three-buried-in-15-foot-deep-pit-while-walking-home/articleshow/74903630.cms?utm_campaign=andapp&utm_medium=referral&utm_source=native_share_tray"
+}

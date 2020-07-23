@@ -1,0 +1,115 @@
+/* # Phones to portrait tablets and narrow desktops
+-------------------------------------------------- */
+@media (max-width: 1024px) {
+	.sliderNews{ width:100%!important; margin-top:87px!important;}
+	#covertitle a { width:100%!important;height:110px!important; font-size:30px!important; margin-top:20px;}
+	.atrgaltitle{ margin-top:326px!important;}
+	.atrgaltitle3{ margin-top:326px!important;font-size: 6pt;}
+	#audclas{ margin-top:34px!important;}
+	#socialicn1{ float:left; width:20%;margin-left: -138px;}
+	#socialicn2{ float:left; width:20%;margin-left: -89px;}
+	#socialicn3{ float:left; width:20%;margin-left: -39px;}
+	#socialicn4{ float:left; width:20%;margin-left: -0px;}
+	.icons{margin-top: 13px!important;float: right!important;margin-left: 50px; width:60%;margin-bottom:12px;}
+	.logoDR a img {width: 49%;margin-left: -72px;}
+	.ppad{ margin-bottom:-50px;}
+	#subscribe{ margin-top:60px;}
+	.popularimg{ width:40%!important}
+	#twiclas{ margin-bottom:-80px!important;}
+	
+}
+
+@media (max-width: 767px) {
+	.sliderNews{ width:100%!important; margin-top:87px!important;}
+	#covertitle a{ width:100%!important;font-size:25px!important; margin-top:20px;}
+	
+	.atrgaltitle{ margin-top:326px!important;}
+	#socialicn1{ float:left; width:20%;margin-left: -138px;}
+	#socialicn2{ float:left; width:20%;margin-left: -89px;}
+	#socialicn3{ float:left; width:20%;margin-left: -39px;}
+	#socialicn4{ float:left; width:20%;margin-left: -0px;}
+	.icons{margin-top: 13px!important;float: right!important;margin-left: 50px; width:62%;margin-bottom:12px;}
+	.logoDR a img {width: 49%;margin-left: -72px;}
+	.ppad{ margin-bottom:-50px;}
+	#subscribe{ margin-top:60px;}
+	.atrgaltitle3{ margin-top:326px!important;font-size: 6pt;}
+	.popularimg{ width:30%!important}
+	#audclas{ margin-top:54px!important;}
+	#twiclas{ margin-bottom:-80px!important;}
+	.othlnk{ margin-left:60px!important; margin-bottom:7px!important; margin-top:-3px!important; font-size:20px!important;}
+	.imgCaptionnew {width: 100% !important;}
+	.subscRib2 input{width:60%!important;margin-left: 2px!important;}
+	.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 480px) {
+	.sliderNews{ width:100%!important; margin-top:87px!important;}
+	#covertitle a { width:100%!important;height:110px!important; font-size:20px!important;}
+	.atrgaltitle2 {height:auto!important;}
+	#socialicn1{ float:left; width:20%;margin-left: -138px;}
+	#socialicn2{ float:left; width:20%;margin-left: -89px;}
+	#socialicn3{ float:left; width:20%;margin-left: -39px;}
+	#socialicn4{ float:left; width:20%;margin-left: -0px;}
+	.icons{margin-top: 13px!important;float: right!important;margin-left: 50px; width:60%; margin-bottom:12px;}
+	.logoDR a img {width: 49%;margin-left: -72px;}
+	.ppad{ margin-bottom:-50px;}
+	#subscribe{ margin-top:60px;}
+	.popularimg{ width:30%!important}
+	.atrgaltitle3{ margin-top:326px!important;font-size: 5pt;}
+	#audclas{ margin-top:54px!important;}
+	#twiclas{ margin-bottom:-80px!important;}
+	.othlnk{ margin-left:60px!important; margin-bottom:7px!important; margin-top:-3px!important; font-size:20px!important;}
+	.imgCaptionnew {width: 100% !important;}
+	.subscRib2 input{width:60%!important;margin-left: 2px!important;}
+	.subsbtnn{ width:70%!important; }
+	.subsbtnn strong{float:left!important;}
+	.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+}
+@media (max-width: 320px) {
+	.sliderNews{ width:100%!important;float:left!important}
+	#covertitle a { width:100%!important; height:200px!important;font-size:9px!important;}
+	#covertitle { width:100%!important; font-size:9px!important; height:100px!important;}
+	.atrgaltitle2 {height:auto!important;}
+	#socialicn1{ float:left; width:10%;margin-left: -138px;}
+	#socialicn2{ float:left; width:10%;margin-left: -89px;}
+	#socialicn3{ float:left; width:10%;margin-left: -39px;}
+	#socialicn4{ float:left; width:10%;margin-left: -0px;}
+	.ppad{ margin-bottom:-50px;}
+	#subscribe{ margin-top:60px;}
+	.atrgaltitle3{ margin-top:326px!important;font-size: 4pt;}
+	.popularimg{ width:30%!important}
+	#audclas{ margin-top:54px!important;}
+	#twiclas{ margin-bottom:-80px!important;}
+	.subscRib2 input{width:50%!important;margin-left: 2px!important;}
+	.subsbtnn{ width:70%!important; }
+	.subsbtnn strong{float:left!important;}
+	.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+}
+@media (max-width: 240px) {
+	.sliderNews{ width:100%!important;float:left!important}
+	#covertitle a { width:100%!important; height:200px!important;font-size:9px!important;}
+	#covertitle { width:100%!important; font-size:9px!important; height:100px!important;margin-top:-60px!important;}
+	.atrgaltitle2 {height:auto!important;}
+	#socialicn1{ float:left; width:10%;margin-left: -138px;}
+	#socialicn2{ float:left; width:10%;margin-left: -89px;}
+	#socialicn3{ float:left; width:10%;margin-left: -39px;}
+	#socialicn4{ float:left; width:10%;margin-left: -0px;}
+	.ppad{ margin-bottom:-50px;}
+	#subscribe{ margin-top:60px;}
+	.atrgaltitle3{ margin-top:326px!important;font-size: 4pt;}
+	.popularimg{ width:30%!important}
+	#audclas{ margin-top:54px!important;}
+	#twiclas{ margin-bottom:-80px!important;}
+}
+

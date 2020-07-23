@@ -1,0 +1,95 @@
+function ls_check_is_mobile() {
+	var mobiledevice = (/Series60|Nokia|SymbianOS|iphone|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+	if (mobiledevice) {
+		return true;
+	} else {
+	  return false;
+	}
+}
+document.createElement("article");document.createElement("section");document.createElement("aside");document.createElement("hgroup");document.createElement("nav");document.createElement("header");document.createElement("footer");document.createElement("figure");document.createElement("figcaption");
+
+jQuery(window).scroll(function (event) {
+	var y = jQuery(this).scrollTop();
+	if (y >= 70) {
+	jQuery('body').addClass('fixed');
+	jQuery("body").fadeIn();
+	} else if(y < 70){
+	jQuery('body').removeClass('fixed');	
+	}
+});
+
+if(jQuery(window).scrollTop() >= 500){
+	jQuery(window).trigger('scroll');
+}
+
+jQuery(document).ready(function(){jQuery(".bkslider").bxSlider({auto:!0,autoHover:!0,mode:"vertical",autoControls:!0,autoControlsCombine:!0,nextText:'<i class="fa fa-angle-right"></i>',prevText:'<i class="fa fa-angle-left"></i>',startText:'<i class="fa fa-play"></i>',stopText:'<i class="fa fa-pause"></i>'});jQuery(".wcslider").bxSlider({auto:!0,slideWidth:300,autoControls:!1,pager:!0,pagerType:"short",pagerLocation:"bottom",pagerShortSeparator:" of "});jQuery(".lp-slider").bxSlider({auto:!0,pager:!0,
+adaptiveHeight:!0,nextText:'<i class="fa fa-angle-right"></i>',prevText:'<i class="fa fa-angle-left"></i>'});jQuery(".flip-slider").bxSlider({auto:!0,pager:!0,minSlides:3,maxSlides:3,slideWidth:268,slideMargin:10,infiniteLoop:!1,nextText:'<i class="fa fa-angle-right"></i>',prevText:'<i class="fa fa-angle-left"></i>'});jQuery(".commontabs ul li a, .rashi_holder ul li a").click(function(){jQuery(this).parent().siblings().removeClass("active");jQuery(this).parent().addClass("active");var a=jQuery(this).attr("href").replace("#","");a=a.split("-");
+jQuery("div[id^='"+a[0]+"']").hide();jQuery("div[id='"+a[0]+"-"+a[1]+"']").show();return!1});
+var m_web='';
+if (ls_check_is_mobile() == true){m_web = 'Mobile';}else{m_web='Desktop';}
+jQuery(".brandlogo").click(function(){
+	ga('send', 'event', {
+		eventCategory: 'Loksatta_logo',
+		eventAction: 'click',
+		eventLabel: m_web,
+		transport: 'beacon'
+	});
+});
+jQuery(".navicon").click(function(){
+	if ( jQuery('.mainbox .navicon').hasClass('active') ){
+		
+	} else {
+		ga('send', 'event', {
+		eventCategory: 'Hamburger_Menu',
+		eventAction: 'click',
+		eventLabel: m_web,
+		transport: 'beacon'
+		});
+	}
+	jQuery(this).toggleClass("active");jQuery("body").toggleClass("show")});
+jQuery(".sitemap_overlay").click(function(){jQuery(".navicon").removeClass("active");jQuery("body").removeClass("show")});jQuery(".morebtn").click(function(){jQuery(".subnav").toggleClass("open")});jQuery("#accordion li:has(ul)").addClass("arrow");jQuery("#accordion > li > a").click(function(){var a=
+jQuery(this).next();jQuery("#accordion li").removeClass("active");jQuery(this).closest("li").addClass("active");a.is("ul")&&a.is(":visible")&&(jQuery(this).closest("li").removeClass("active"),a.slideUp("normal"));a.is("ul")&&!a.is(":visible")&&(jQuery("#accordion li > ul:visible").slideUp("normal"),a.slideDown("normal"));return a.is("ul")?!1:!0});jQuery("#accordion > li > ul > li > a").click(function(){var a=jQuery(this).next();jQuery("#accordion li").removeClass("active");jQuery(this).closest("li").addClass("active");
+a.is("ul")&&a.is(":visible")&&(jQuery(this).closest("li").removeClass("active"),a.slideUp("normal"));a.is("ul")&&!a.is(":visible")&&(jQuery("#accordion li > ul > li > ul:visible").slideUp("normal"),a.slideDown("normal"));return a.is("ul")?!1:!0});jQuery(window).scroll(function(a){a=jQuery(this).scrollTop();140<=a?(jQuery("#fixedBnews").addClass("fixedbn"),jQuery("#fixedBnews").fadeIn()):140>a&&jQuery("#fixedBnews").removeClass("fixedbn")});500<=jQuery(window).scrollTop()&&
+jQuery(window).trigger("scroll")});
+jQuery(document).ready(function(){
+	jQuery('.related-slider').bxSlider({ pager:false, slideWidth:313, minSlides:1, maxSlides:2, moveSlides:1, slideMargin:15 });
+});
+// Election counting 2019
+
+/*if (ls_check_is_mobile() == true) {
+	jQuery('.key-condidates').bxSlider({controls:false,
+		minSlides: 1,
+		maxSlides: 1,
+		speed: 1000,
+		easing: 'swing',
+		pager: true,
+		autoControls: false,
+		auto: true,
+		infiniteLoop: true,
+		slideWidth: 300,
+		moveSlides: 1,
+		pause: 10000,
+	});
+} else {
+	jQuery('.key-condidates').bxSlider({controls:false,
+		minSlides: 4,
+		maxSlides: 4,
+		speed: 1000,
+		easing: 'swing',
+		pager: true,
+		autoControls: false,
+		auto: true,
+		infiniteLoop: true,
+		slideWidth: 250,
+		moveSlides: 4,
+		pause: 10000,
+	});
+}*/
+if ( ls_check_is_mobile() == true ) {
+	jQuery(function(){
+		jQuery('.elect-slider').bxSlider({
+			mode: 'horizontal',
+			pager: true
+		});
+	});
+}

@@ -1,0 +1,67 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.articleDetails', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.articleDetails', {
+                url: '/news/:categorySlug/:articleUrl',
+                params: {
+                    url: {
+                        value: null,
+                        squash: true
+                    }
+                },
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleDetails/articleDetails.view.html',
+                        controller: 'ArticleDetailsController as vm'
+                    },
+                    'articlesByCity@root.mainSidebar.articleDetails': {
+                        templateUrl: 'modules/main/home/articlesByCity/articlesByCity.view.html',
+                        controller: 'ArticlesByCityController as vm'
+                    },
+                    'articlesByCategory@root.mainSidebar.articleDetails': {
+                        templateUrl: 'modules/main/home/articlesByCategory/articlesByCategory.view.html',
+                        controller: 'ArticlesByCategoryController as vm'
+                    },
+                    'socialShareUpdates@root.mainSidebar.articleDetails': {
+                        templateUrl: 'modules/main/home/socialShareUpdates/socialShareUpdates.view.html'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleDetails/articleDetails.controller.js" + version,
+                                "directives/disqusComments.directive.js" + version,
+                                "modules/main/home/articlesByCity/articlesByCity.controller.js" + version,
+                                "modules/main/home/articlesByCategory/articlesByCategory.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: '' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            $state.go('root.404');
+        });
+    };
+})();

@@ -1,0 +1,99 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+padding: 0px;
+margin: 0px;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+    color: #f0f0f0;
+}
+
+.shadetabs li{
+display: inline;
+margin: 0px; padding: 0px;
+    border-right: 1px solid #555;
+	height:35px;
+    color: #f0f0f0;
+}
+
+.shadetabs li a, .shadetabs li a:active, .shadetabs li a:link{
+text-decoration: none;
+position: relative;
+z-index: 1;padding: 10px 12px;
+display: block;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.shadetabs li a:visited{
+background: #F5F5F5 url(../images/topnav_active.gif) repeat-x;
+color: #666666;
+}
+
+.shadetabs li a:hover{
+text-decoration: underline;
+background: #F5F5F5 url(../images/topnav_active.gif) repeat-x; color:#666666;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+top: 0px; 
+background: #F5F5F5 url(../images/topnav_active.gif) repeat-x; color:#666666;
+}
+
+.shadetabs li a.selected{ /*selected main tab style */
+background-color:#F5F5F5;
+background: #F5F5F5 url(../images/topnav_active.gif) repeat-x; color:#666666;
+}
+
+.shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none; color:#000000;
+}
+
+.tabcontent{
+display:none;
+border-bottom:1px solid #666666;
+	background-color:#F5F5F5;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+	background-color:#F5F5F5;
+}
+}
+
+.tabcontent ul{
+	margin:0px;
+	padding:2px 4px;
+	list-style-type:none;
+	background-color:#F5F5F5;
+	}
+	
+.tabcontent ul li{
+	font:normal 12px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 100%;
+	color:#313131;
+	line-height:24px;
+	text-decoration:none;
+	display:inline;
+	padding:4px;
+	height:24px;
+	}
+	
+.tabcontent ul li a:active, .tabcontent ul li a:visited, .tabcontent ul li a:link{
+	color:#313131;
+	text-decoration:none;
+	}
+	
+.tabcontent ul li a:hover{
+	color:#3D7CA4;
+	text-decoration:underline;
+	}
+	
+.tabcontent ul li a.selected{
+	color:#3D7CA4;
+	text-decoration:none;
+	}
+

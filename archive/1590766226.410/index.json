@@ -1,0 +1,232 @@
+{
+    "title": "Noida: Depressed due to present lockdown, woman commits suicide by jumping off 17th floor of highrise | Catch News",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.410",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 41,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590782075",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:16.825378",
+                "start_ts": "2020-05-29 19:54:35.655338",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:43.038411",
+                "start_ts": "2020-05-29 19:55:41.243182",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.catchnews.com"
+                ],
+                "end_ts": "2020-05-29 19:54:35.654087",
+                "start_ts": "2020-05-29 19:54:35.369479",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 11,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:28.421816",
+                "start_ts": "2020-05-29 19:55:16.825524",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 21:58:33.928398",
+                "start_ts": "2020-05-29 21:58:30.377717",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:41.242821",
+                "start_ts": "2020-05-29 19:55:34.557795",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:46.814870",
+                "start_ts": "2020-05-29 19:55:43.038689",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "https://web.archive.org/web/20200529195545/http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 19:55:34.557074",
+                "start_ts": "2020-05-29 19:55:28.422203",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+                ],
+                "end_ts": "2020-05-29 21:58:36.819032",
+                "start_ts": "2020-05-29 21:58:33.928783",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:54:35.369158",
+                "start_ts": "2020-05-29 19:54:34.821469",
+                "pwd": "/data/archive/1590766226.410",
+                "output": "Noida: Depressed due to present lockdown, woman commits suicide by jumping off 17th floor of highrise | Catch News"
+            }
+        ]
+    },
+    "updated": "1590789516.819349",
+    "tags": "",
+    "url": "http://www.catchnews.com/india-news/noida-depressed-due-to-present-lockdown-woman-commits-suicide-by-jumping-off-17th-floor-of-highrise-189387.html"
+}

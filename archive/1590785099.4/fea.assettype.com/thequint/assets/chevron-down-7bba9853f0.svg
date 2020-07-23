@@ -1,0 +1,18 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="18.346" height="10.673" viewBox="0 0 18.346 10.673">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#Path_131811)}
+        </style>
+        <filter id="Path_131811" width="18.346" height="10.673" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="1" dy="1"/>
+            <feGaussianBlur result="blur" stdDeviation=".5"/>
+            <feFlood flood-opacity=".4"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="ic_arrow_drop_down_36px" class="cls-2">
+        <path id="Path_131811-2" d="M12.5 16l7.673 7.673L27.847 16l-7.58 3.994z" class="cls-1" data-name="Path 131811" transform="translate(-12 -15.5)"/>
+    </g>
+</svg>

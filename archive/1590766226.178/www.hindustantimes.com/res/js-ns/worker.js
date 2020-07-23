@@ -1,0 +1,1 @@
+"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw-desktop.js").then(function(e){},function(e){}),window.addEventListener("beforeinstallprompt",function(e){e.userChoice.then(function(e){e.outcome})});

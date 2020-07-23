@@ -1,0 +1,194 @@
+{
+    "title": "Three men die in Tamil Nadu after consuming hand sanitizer following non-availability of alcohol",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.399",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:00.326719",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781369",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 19:42:49.368958",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:21.563654",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:43:19.779100",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:42:49.367633",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=bangaloremirror.indiatimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:42:49.070788",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:05.192266",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:43:00.327201",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:19.778749",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 19:43:09.115007",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:24.437190",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:43:21.563907",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "https://web.archive.org/web/20200529194323/https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:43:09.114759",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:43:05.192533",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:42:49.070502",
+                "cmd": [
+                    "curl",
+                    "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:42:48.769917",
+                "pwd": "/data/archive/1590766226.399",
+                "output": "Three men die in Tamil Nadu after consuming hand sanitizer following non-availability of alcohol"
+            }
+        ]
+    },
+    "updated": "1590789484.291693",
+    "tags": "",
+    "url": "https://bangaloremirror.indiatimes.com/news/india/three-men-die-in-tamil-nadu-after-consuming-hand-sanitizer-following-non-availability-of-alcohol/articleshow/75007306.cms"
+}

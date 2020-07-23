@@ -1,0 +1,15 @@
+.sticky-menu .corp-logo .navbar-brand.navbar-m {
+    margin-top: 6px;
+    padding-left: 10px;
+  }
+  .section-1 .empty-component {
+    height: auto;
+  }
+  .section-1 .empty-component .pds-box {
+    width: 100% !important;
+  }
+
+  @media (max-width: 768px) {
+  .sticky-menu.affix-top {background-color: #f0f0f0;}
+  .asianet-newsable .Election_row {margin-bottom: 0;}
+  }

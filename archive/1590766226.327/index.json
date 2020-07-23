@@ -1,0 +1,213 @@
+{
+    "title": "suicide in lockdown: \u0938\u0942\u0930\u0924\u0903 \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0924\u094b\u0921\u093c\u0915\u0930 \u0930\u094b\u091c \u0917\u0930\u094d\u0932\u092b\u094d\u0930\u0947\u0902\u0921 \u0915\u094b \u0926\u0947\u0916\u0928\u0947 \u091c\u093e\u0924\u093e \u0925\u093e, \u092a\u093f\u0924\u093e \u0928\u0947 \u0932\u0917\u093e\u0908 \u092b\u091f\u0915\u093e\u0930 \u0924\u094b \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e - man kills himself after father scolded him for breaking lockdown norms for his girlfriend | Navbharat Times",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.327",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:06:21.699221",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779169",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 11,
+                "start_ts": "2020-05-29 19:06:09.822787",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:07:34.076613",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:07:31.963488",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:06:09.821223",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=navbharattimes.indiatimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:06:09.535923",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:06:27.246948",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:06:21.699366",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:07:31.963118",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:07:27.335519",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:07:36.537111",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:07:34.076868",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "https://web.archive.org/web/20200529190735/https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:07:27.335132",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "duration": 60,
+                "start_ts": "2020-05-29 19:06:27.247208",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+                ],
+                "end_ts": "2020-05-29 21:55:11.995351",
+                "start_ts": "2020-05-29 21:55:05.723566",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:06:09.535652",
+                "cmd": [
+                    "curl",
+                    "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:06:08.668796",
+                "pwd": "/data/archive/1590766226.327",
+                "output": "suicide in lockdown: \u0938\u0942\u0930\u0924\u0903 \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0924\u094b\u0921\u093c\u0915\u0930 \u0930\u094b\u091c \u0917\u0930\u094d\u0932\u092b\u094d\u0930\u0947\u0902\u0921 \u0915\u094b \u0926\u0947\u0916\u0928\u0947 \u091c\u093e\u0924\u093e \u0925\u093e, \u092a\u093f\u0924\u093e \u0928\u0947 \u0932\u0917\u093e\u0908 \u092b\u091f\u0915\u093e\u0930 \u0924\u094b \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e - man kills himself after father scolded him for breaking lockdown norms for his girlfriend | Navbharat Times"
+            }
+        ]
+    },
+    "updated": "1590789311.99568",
+    "tags": "",
+    "url": "https://navbharattimes.indiatimes.com/state/gujarat/other-cities/man-kills-himself-after-father-scolded-him-for-breaking-lockdown-norms-for-his-girlfriend/articleshow/75502093.cms"
+}

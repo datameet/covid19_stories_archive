@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.0",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 20:45:41.216319",
+                "start_ts": "2020-05-29 20:45:40.336560",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "Covid-19: In virtual world, Haryana cops battle hate posts, rumours : The Tribune India"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:46:03.759135",
+                "start_ts": "2020-05-29 20:45:58.016453",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.tribuneindia.com"
+                ],
+                "end_ts": "2020-05-29 20:45:41.576374",
+                "start_ts": "2020-05-29 20:45:41.216857",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:45:58.016203",
+                "start_ts": "2020-05-29 20:45:54.606576",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:46:10.834975",
+                "start_ts": "2020-05-29 20:46:07.537696",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "https://web.archive.org/web/20200529204608/https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785141",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:45:54.606412",
+                "start_ts": "2020-05-29 20:45:41.578360",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:46:05.842867",
+                "start_ts": "2020-05-29 20:46:03.759375",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+                ],
+                "end_ts": "2020-05-29 20:46:07.537426",
+                "start_ts": "2020-05-29 20:46:05.843203",
+                "pwd": "/data/archive/1590785099.0",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590785170.838375",
+    "tags": "",
+    "url": "https://www.tribuneindia.com/news/haryana/covid-19-in-virtual-world-haryana-cops-battle-hate-posts-rumours-79462"
+}

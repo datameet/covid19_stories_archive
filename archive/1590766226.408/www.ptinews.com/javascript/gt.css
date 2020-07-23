@@ -1,0 +1,15 @@
+﻿
+
+/*PHOTO* css*/
+
+			
+			
+.gallery{position:relative;overflow:hidden;
+	background-image:url(../images/gallery.jpg);
+	height:290px;width:337px;padding:7px 7px 7px 6px;}
+	.galleryBar{position:absolute;left:0;background:#000;display:none;margin:0;padding:8px 0;}
+	.galleryBar li{overflow:hidden;float:left;list-style:none;margin:0 7px 0 0;padding:0 0 0 7px;}
+	.galleryScreen,.galleryInfo{position:absolute;}
+	.galleryInfo{background-color:#333;color:#fff;font-size:11px;line-height:16px; font-weight:bold; text-align:left;
+			font-family:Arial;width:367px; margin:16px 0px 0px 5px; border:0px solid red; padding:5px 0px 0px 5px; }
+	

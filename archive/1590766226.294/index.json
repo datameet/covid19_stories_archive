@@ -1,0 +1,232 @@
+{
+    "title": "6 migrants among 7 killed as truck collide with auto in Mathura | Agra News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.294",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777297",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:07.576713",
+                "start_ts": "2020-05-29 18:34:57.859223",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:26.175670",
+                "start_ts": "2020-05-29 18:35:23.227160",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 18:34:57.857811",
+                "start_ts": "2020-05-29 18:34:57.580153",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:12.894684",
+                "start_ts": "2020-05-29 18:35:07.576870",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 21:48:15.152221",
+                "start_ts": "2020-05-29 21:48:10.397149",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:23.226798",
+                "start_ts": "2020-05-29 18:35:20.062992",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:28.014126",
+                "start_ts": "2020-05-29 18:35:26.175924",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "https://web.archive.org/web/20200529183527/https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 18:35:20.062220",
+                "start_ts": "2020-05-29 18:35:12.895517",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+                ],
+                "end_ts": "2020-05-29 21:48:18.407440",
+                "start_ts": "2020-05-29 21:48:15.152486",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:34:57.579871",
+                "start_ts": "2020-05-29 18:34:56.994660",
+                "pwd": "/data/archive/1590766226.294",
+                "output": "6 migrants among 7 killed as truck collide with auto in Mathura | Agra News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788898.407801",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/agra/6-migrants-among-7-killed-as-truck-collide-with-auto-in-mathura/articleshow/75564283.cms"
+}

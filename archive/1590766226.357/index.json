@@ -1,0 +1,194 @@
+{
+    "title": "Migrant worker from Odisha commits suicide in Haryana",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.357",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:19:54.583812",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779984",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 19:19:44.589940",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:20:03.704083",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:20:01.469275",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:19:44.589396",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=kalingatv.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:19:43.786308",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:19:56.418588",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:19:54.583954",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:20:01.468831",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:19:59.059323",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:20:08.813235",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:20:03.704319",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "https://web.archive.org/web/20200529192006/https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:19:59.059065",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:19:56.418830",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:19:43.785996",
+                "cmd": [
+                    "curl",
+                    "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:19:43.054913",
+                "pwd": "/data/archive/1590766226.357",
+                "output": "Migrant worker from Odisha commits suicide in Haryana"
+            }
+        ]
+    },
+    "updated": "1590789384.449643",
+    "tags": "",
+    "url": "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
+}

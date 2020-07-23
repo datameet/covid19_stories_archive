@@ -1,0 +1,194 @@
+{
+    "title": "Hyderabad: Eight migrants returning home killed in road accident | Cities News,The Indian Express",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.378",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780681",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:28.121433",
+                "start_ts": "2020-05-29 19:31:21.738170",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/index.html@fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:34.952347",
+                "start_ts": "2020-05-29 19:31:33.547112",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "end_ts": "2020-05-29 19:31:21.736864",
+                "start_ts": "2020-05-29 19:31:21.407785",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:30.063015",
+                "start_ts": "2020-05-29 19:31:28.121679",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:33.546770",
+                "start_ts": "2020-05-29 19:31:32.270969",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:36.701495",
+                "start_ts": "2020-05-29 19:31:34.952594",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "https://web.archive.org/web/20200529193136/https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+                ],
+                "end_ts": "2020-05-29 19:31:32.270724",
+                "start_ts": "2020-05-29 19:31:30.063302",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:31:21.407501",
+                "start_ts": "2020-05-29 19:31:20.402645",
+                "pwd": "/data/archive/1590766226.378",
+                "output": "Hyderabad: Eight migrants returning home killed in road accident | Cities News,The Indian Express"
+            }
+        ]
+    },
+    "updated": "1590789413.851498",
+    "tags": "",
+    "url": "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
+}

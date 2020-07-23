@@ -1,0 +1,38 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://simplemodal.com
+ *
+ * Copyright (c) 2013 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000;}
+
+/* Container */
+#simplemodal-container {color:#bbb; background-color:white; border:1px solid #444; padding:0px;position: fixed; z-index: 1002; height: 468px; width: 559px; left: 0; top: 0; bottom: 0; right: 0; margin: auto;font-family: sans-serif;}
+#remember_field{vertical-align: middle;}
+.lable label{font-size: 14px; font-weight: bold;}
+#simplemodal-container .simplemodal-data {padding:0px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:red;}
+#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png)  no-repeat;background-size: cover; width:33px; height:37px; display:inline; z-index:3200; position:absolute; top:-18px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;}
+.table_gap tr{line-height: 2;}
+.rbtm_div1{
+    font-weight: bold;
+    font-siz`e: 14px;
+    margin-top: 10px;
+}
+.rm_bottom{
+margin-bottom:5px;
+overflow: hidden;
+}
+
+
+.subrad, .subrads{display: inline-block; width: 80px;}
+.rsubrad{display: inline-block; vertical-align: middle; margin: 0 20px;}

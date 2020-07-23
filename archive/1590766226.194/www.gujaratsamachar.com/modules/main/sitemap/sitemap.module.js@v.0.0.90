@@ -1,0 +1,38 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.sitemap', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.sitemap', {
+                url: '/sitemap',
+                templateUrl: 'modules/main/sitemap/sitemap.view.html',
+                controller: 'sitemapController as vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load("modules/main/sitemap/sitemap.controller.js" + version);
+                    }]
+                },
+                data: { pageTitle: 'Sitemap | ' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            $state.go('root.404');
+        });
+    };
+})();

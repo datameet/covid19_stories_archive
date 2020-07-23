@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.3" viewBox="0 0 20 18.3">
+    <defs>
+        <style>
+            .cls-1{fill:#ebba16}.cls-2{fill:#ed8a19}.cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="chat" transform="translate(0 -2.465)">
+        <path id="Path_660" d="M15.172 15.165v7.29a1.7 1.7 0 0 1-1.7 1.7l-5.887.024-3.447 3.793v-3.793H1.7a1.7 1.7 0 0 1-1.7-1.7v-7.29a1.7 1.7 0 0 1 1.7-1.7l11.773-.024a1.7 1.7 0 0 1 1.699 1.7z" class="cls-1" data-name="Path 660" transform="translate(0 -7.207)"/>
+        <path id="Path_661" d="M27.473 2.489L15.7 2.465a1.7 1.7 0 0 0-1.7 1.7v2.111l8.645-.018a1.7 1.7 0 0 1 1.7 1.7v6.359l2.414 2.655v-3.793h.714a1.7 1.7 0 0 0 1.7-1.7v-7.29a1.7 1.7 0 0 0-1.7-1.7z" class="cls-2" data-name="Path 661" transform="translate(-9.172)"/>
+        <circle id="Ellipse_13" cx="1.034" cy="1.034" r="1.034" class="cls-3" data-name="Ellipse 13" transform="translate(2.759 10.736)"/>
+        <circle id="Ellipse_14" cx="1.034" cy="1.034" r="1.034" class="cls-3" data-name="Ellipse 14" transform="translate(6.552 10.736)"/>
+        <circle id="Ellipse_15" cx="1.034" cy="1.034" r="1.034" class="cls-3" data-name="Ellipse 15" transform="translate(10.345 10.736)"/>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+#demo123 {border-radius: 4px; background-color: #33333330; background-image: url("../images/COVID-19-BG.jpg"); }
+#cronaBox{padding: 2%; } 
+#coronaFigure{color: #f44336;padding: 4%; } 
+.demo321 {background-color: #33333347; border-radius: 5px; padding: 10px; color: white; margin: 5px; } 
+div.cronaBoxText{ padding: 1%; margin: 2%; background-color: #33333347; border-radius: 5px; text-align: center;}
+div.cronaBoxText h3{font-weight: bolder; font-size: 17px;}
+div.cronaBoxText h1{padding: 6px 0 3px 0; border-radius: 5px; font-size: 2.6rem;}
+.totalCase strong h3{color: #ffb123; } 
+.totalCase h1{color: white; background-color: #ffb123;  }
+.recoveredCase strong h3{color: #64c764;}
+.recoveredCase h1{color: white; background-color: #64c764;}
+.deathCase strong h3{color: #fc4b50;}
+.deathCase h1{color: white; background-color: #fc4b50;}
+  .centers {
+    margin: auto;
+    width: 50%;
+  }
+  div.cronaBoxText div.change h1{
+    font-size: 15px;
+    font-weight: normal;
+
+  }
+/*.s751{ background-color: yellow; color: #000; font-weight: bold; }*/
+#marqueeCovid span.demo321 strong{color: #fff; border-radius:3px; margin-left:5px; padding: 2px 5px 2px 5px; font-weight: normal;}
+#marqueeCovid span.demo321 strong:nth-child(1){background-color: #ffb123;}
+#marqueeCovid span.demo321 strong:nth-child(2){background-color: #64c764;}
+#marqueeCovid span.demo321 strong:nth-child(3){background-color: #fc4b50;}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700');
+@import url("https://static.asianetnews.com/v1/css/main.css");
+body {
+    background: #fff !important;
+ -ms-overflow-style: scrollbar;
+ font-family: 'Fira Sans', sans-serif !important;
+ margin-top: -1px;
+}
+
+.widget04 .related-post-txt {
+   min-height: 70px;
+   max-height: 70px;
+}
+
+.category-txt-content {
+   padding: 15px;
+}
+
+.wid12-post-txt h2 {
+	overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   line-height: 22px;
+   height: 66px;
+}
+
+.row-article p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+@media (max-width:767px) {
+	.row-article p {
+		font-size: 15px;
+		line-height: 20px;
+		margin-top: -2px;
+	}
+
+	.wid04-r-post {
+		box-shadow: none !important;
+	}
+	.wid04-img-area {width:35% !important;}
+
+	.wid04-r-post-txt h2 {
+		overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-box-orient: vertical;
+	   line-height: 22px;
+	   height: 66px;
+	   font-weight: 500 !important;
+	}
+
+	.wid04-r-post-txt {
+		width: 63% !important;
+		padding: 0 0 0 2% !important;
+	}
+
+	.related-post {
+		margin-top: 10px;
+	}
+
+	.sticky-logo {
+   	 	width: 117px !important;
+   	}
+
+   	.article-card .title-p {
+		padding: 0 0 0 2% !important;
+		margin-top: -4px;
+	}
+
+	.category-article-card .title-p {
+		padding: 0 0 0 2% !important;
+		margin-top: -4px;
+	}
+
+	.category-article-card {
+		margin-bottom: 4px;
+		margin-top: 4px;
+	}
+
+	.category-tab-cont h4 {
+		overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   -webkit-box-orient: vertical;
+	   line-height: 22px !important;
+	   height: 66px;
+	   font-weight: normal !important;
+	}
+
+	.category-tab-cont {
+		padding-left: 5px !important;
+		margin: 0px !important;
+	}
+
+	.tab-cont {
+		margin-top: 0px !important;
+	}
+
+	.category-txt-content {
+	   padding-left: 0px !important;
+	}
+
+	.category-tab-cont.col-w-63 {
+		padding-left: 2px !important;
+	}
+}

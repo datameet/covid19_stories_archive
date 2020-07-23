@@ -1,0 +1,52 @@
+.small-title {
+         float: left;
+         width: 100%;
+         padding: 10px 0 0 0;
+         border-bottom: 0px solid rgba(220, 220, 220, .5);
+     }
+     .small-title h5 {
+           float: left;
+           display: inline-block;
+           text-transform: uppercase;
+           font-size: 14px;
+           font-weight: 500;
+           vertical-align: middle;
+           line-height: 32px;
+           color: #486266;
+           }
+           .margin-right-6{
+             margin-right: 6px;
+           }
+
+           .marg-t10 {
+                 margin-top: 10px;
+             }
+
+           .thoughtoftheday {
+               font-weight: bold;
+               color: #9ca7a9;
+               font-size: 13px;
+               text-transform: uppercase;
+               margin-bottom: 12px;
+             }
+
+             .margin-t-b{
+               margin: 10px 0;
+             }
+             .name{
+               font-weight: normal;
+               color: #eee;
+               font-size: 12px;
+               text-transform: uppercase;
+               margin-top: 10px;
+             }
+
+           .right-small-heading{ font-size:14px; }
+           .jfl-top-padding{ padding-top: 20px !important; }
+           .no-padding{ padding-left:0 !important;  padding-right:0 !important; }
+           .line-mob{display: none;}
+
+           @media (max-width:750px) {
+             .no-padding{ padding-left:0 !important;  padding-right:0 !important; }
+             .line-mob{ display: block; border: .5px solid rgba(220,220,220,.5); }
+           }

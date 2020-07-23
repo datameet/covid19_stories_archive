@@ -1,0 +1,232 @@
+{
+    "title": "Youth ends life after cops seize bike for violating lockdown - KERALA - GENERAL | Kerala Kaumudi Online",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.353",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:17:43.044344",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779853",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 19:17:33.823379",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "keralakaumudi.com/en/news/news.php@id=286979&u.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:17:58.574321",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:17:56.288005",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:17:33.822129",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=keralakaumudi.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:17:33.532449",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:17:49.012514",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:17:43.044485",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "end_ts": "2020-05-29 21:56:11.677250",
+                "start_ts": "2020-05-29 21:56:07.482715",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:17:56.286920",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:17:52.684270",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:18:04.747338",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 19:17:58.574592",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "https://web.archive.org/web/20200529191759/https://keralakaumudi.com/en/news/news.php?id=286979&u"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:17:52.683568",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:17:49.013207",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+                ],
+                "end_ts": "2020-05-29 21:56:15.971940",
+                "start_ts": "2020-05-29 21:56:11.677592",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:17:33.532030",
+                "cmd": [
+                    "curl",
+                    "https://keralakaumudi.com/en/news/news.php?id=286979&u",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:17:32.734813",
+                "pwd": "/data/archive/1590766226.353",
+                "output": "Youth ends life after cops seize bike for violating lockdown - KERALA - GENERAL | Kerala Kaumudi Online"
+            }
+        ]
+    },
+    "updated": "1590789375.972334",
+    "tags": "",
+    "url": "https://keralakaumudi.com/en/news/news.php?id=286979&u"
+}

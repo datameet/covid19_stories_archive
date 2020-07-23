@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'GS-Jobportal';
+  src:  url('../classifiedfonts/GS-Jobportal.eot?waxbap');
+  src:  url('../classifiedfonts/GS-Jobportal.eot?waxbap#iefix') format('embedded-opentype'),
+    url('../classifiedfonts/GS-Jobportal.ttf?waxbap') format('truetype'),
+    url('../classifiedfonts/GS-Jobportal.woff?waxbap') format('woff'),
+    url('../classifiedfonts/GS-Jobportal.svg?waxbap#GS-Jobportal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'GS-Jobportal' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ahmedabad:before {
+  content: "\e900";
+}
+.icon-gandhinagar:before {
+  content: "\e901";
+}
+.icon-surat:before {
+  content: "\e902";
+}
+.icon-bhuj:before {
+  content: "\e903";
+}
+.icon-kheda:before {
+  content: "\e904";
+}
+.icon-rajkot:before {
+  content: "\e905";
+}
+.icon-bhavnagar:before {
+  content: "\e906";
+}
+.icon-baroda:before {
+  content: "\e907";
+}
+.icon-mumbai:before {
+  content: "\e908";
+}
+.icon-Artboard-10:before {
+  content: "\e909";
+}
+.icon-automobiles:before {
+  content: "\e90a";
+}
+.icon-jobs:before {
+  content: "\e90b";
+}
+.icon-matrimonial:before {
+  content: "\e90c";
+}
+.icon-property:before {
+  content: "\e90d";
+}
+.icon-commercial:before {
+  content: "\e90e";
+}
+.icon-active:before {
+  content: "\e90f";
+}
+.icon-Artboard-17:before {
+  content: "\e910";
+}
+.icon-Artboard-18:before {
+  content: "\e911";
+}
+.icon-filter:before {
+  content: "\e912";
+}
+.icon-whatsapp:before {
+  content: "\e913";
+}
+.icon-facebook:before {
+  content: "\e914";
+}
+.icon-share:before {
+  content: "\e915";
+}

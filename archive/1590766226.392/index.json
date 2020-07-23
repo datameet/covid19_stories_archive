@@ -1,0 +1,213 @@
+{
+    "title": "Watchman commits suicide due to fear of Corona, report came negative | News Track Live, NewsTrack English 1",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.392",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 27,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781029",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:37.007588",
+                "start_ts": "2020-05-29 19:37:09.822476",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:51.468076",
+                "start_ts": "2020-05-29 19:37:49.088107",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=english.newstracklive.com"
+                ],
+                "end_ts": "2020-05-29 19:37:09.821092",
+                "start_ts": "2020-05-29 19:37:09.527831",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:40.833392",
+                "start_ts": "2020-05-29 19:37:37.007745",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 21:57:31.220620",
+                "start_ts": "2020-05-29 21:57:27.023280",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:49.086817",
+                "start_ts": "2020-05-29 19:37:44.478822",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:54.208746",
+                "start_ts": "2020-05-29 19:37:51.468335",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "https://web.archive.org/web/20200529193753/https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+                ],
+                "end_ts": "2020-05-29 19:37:44.478559",
+                "start_ts": "2020-05-29 19:37:40.833899",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:37:09.527523",
+                "start_ts": "2020-05-29 19:37:08.730039",
+                "pwd": "/data/archive/1590766226.392",
+                "output": "Watchman commits suicide due to fear of Corona, report came negative | News Track Live, NewsTrack English 1"
+            }
+        ]
+    },
+    "updated": "1590789451.220977",
+    "tags": "",
+    "url": "https://english.newstracklive.com/news/rajasthan-churu-a-watchman-commit-suicide-in-fear-of-corona-mc23-nu764-ta272-1085968-1.html"
+}

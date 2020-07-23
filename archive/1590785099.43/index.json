@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.43",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:08:34.986867",
+                "start_ts": "2020-05-29 21:08:34.120788",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "Women from northeast face racial slur in Kolkata | Kolkata News - Times of India"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:09:03.324163",
+                "start_ts": "2020-05-29 21:08:54.149623",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 21:08:35.264752",
+                "start_ts": "2020-05-29 21:08:34.987158",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 9,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:08:54.148874",
+                "start_ts": "2020-05-29 21:08:44.938359",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:09:14.999621",
+                "start_ts": "2020-05-29 21:09:12.435961",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "https://web.archive.org/web/20200529210914/https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786515",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:08:44.938216",
+                "start_ts": "2020-05-29 21:08:35.266086",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:09:09.498357",
+                "start_ts": "2020-05-29 21:09:03.324422",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:09:12.435709",
+                "start_ts": "2020-05-29 21:09:09.499450",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590786555.00318",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+}

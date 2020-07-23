@@ -1,0 +1,232 @@
+{
+    "title": "A Different Tragedy Strikes Kerala During COVID-19 Lockdown Due to Non-Availability of Alcohol",
+    "url": "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html",
+    "timestamp": "1590766226.80",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770095",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:01.823243",
+                "start_ts": "2020-05-29 16:34:55.597599",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:34.087910",
+                "start_ts": "2020-05-29 16:35:31.817896",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "end_ts": "2020-05-29 16:34:55.597142",
+                "start_ts": "2020-05-29 16:34:55.307976",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 13,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:15.737141",
+                "start_ts": "2020-05-29 16:35:01.823448",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 17,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 17:31:47.992267",
+                "start_ts": "2020-05-29 17:31:30.496753",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 21:36:42.471523",
+                "start_ts": "2020-05-29 21:36:38.089168",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:31.817306",
+                "start_ts": "2020-05-29 16:35:25.931012",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:35.945100",
+                "start_ts": "2020-05-29 16:35:34.088240",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "https://web.archive.org/web/20200529163535/https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html"
+                ],
+                "end_ts": "2020-05-29 16:35:25.930762",
+                "start_ts": "2020-05-29 16:35:15.737411",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/a-different-sort-of-tragedy-strikes-kerala-during-covid-19-lockdown-due-to-non-availability-of-alcohol-2556049.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:34:55.307604",
+                "start_ts": "2020-05-29 16:34:54.744888",
+                "pwd": "/data/archive/1590766226.80",
+                "output": "A Different Tragedy Strikes Kerala During COVID-19 Lockdown Due to Non-Availability of Alcohol"
+            }
+        ]
+    },
+    "updated": "1590788202.47188",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

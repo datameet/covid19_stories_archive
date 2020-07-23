@@ -1,0 +1,194 @@
+{
+    "title": "A migrant worker desperate to go home, among two suicide cases in 24 hrs in Uttarakhand - india news - Hindustan Times",
+    "url": "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html",
+    "timestamp": "1590766226.185",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:22:57.660287",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772971",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:22:51.303511",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:23:07.571638",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:23:06.095435",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:22:51.301852",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.hindustantimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:22:51.019778",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:23:00.734725",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:22:57.660515",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:23:06.095075",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:23:03.896073",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:23:10.531072",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:23:07.571906",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "https://web.archive.org/web/20200529172308/https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:23:03.895801",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:23:00.734986",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:22:51.019455",
+                "cmd": [
+                    "curl",
+                    "https://www.hindustantimes.com/india-news/a-migrant-worker-desperate-to-go-home-among-two-suicide-cases-in-24-hrs-in-uttarakhand/story-MYFYVoH6j4Do2rmvSBj19K.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:22:50.533089",
+                "pwd": "/data/archive/1590766226.185",
+                "output": "A migrant worker desperate to go home, among two suicide cases in 24 hrs in Uttarakhand - india news - Hindustan Times"
+            }
+        ]
+    },
+    "updated": "1590788246.519442",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

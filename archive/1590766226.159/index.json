@@ -1,0 +1,194 @@
+{
+    "title": "An unknown vehicle was thrashed the laborer coming from Noida. Outraged by death",
+    "url": "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html",
+    "timestamp": "1590766226.159",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:26.976399",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772345",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:25.442887",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:31.880144",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:30.399185",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:25.441524",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.jagran.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:25.158968",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:28.674367",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:26.976959",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:30.398818",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:29.782801",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:34.224079",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:12:31.880401",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "https://web.archive.org/web/20200529171233/https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:29.782546",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:12:28.674619",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:12:25.158637",
+                "cmd": [
+                    "curl",
+                    "https://www.jagran.com/uttar-pradesh/hathras-an-unknown-vehicle-was-thrashed-the-laborer-coming-from-noida-outraged-by-death-20145590.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:12:24.599040",
+                "pwd": "/data/archive/1590766226.159",
+                "output": "An unknown vehicle was thrashed the laborer coming from Noida. Outraged by death"
+            }
+        ]
+    },
+    "updated": "1590788237.84062",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

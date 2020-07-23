@@ -1,0 +1,28 @@
+.logo-scroll img{max-width: 100%;}
+footer {float: none;padding: 0;margin-top: 20px;width: auto;}
+
+.g-footer__main{background-color: #3f3f3f;color: #eaeaea;position: relative;padding-top: 15px;}
+.footer-logo-wrap img {max-width: 250px;margin-bottom: 10px;}
+.footer-text-wrap {font-family: 'Montserrat', sans-serif;font-size: 15px;font-weight: 400;}
+.footer-email-wrap {padding: 21px 0;}
+.footer-email-wrap a{color: #EC6A1C;}
+.footer-social-wrap {float: left;margin-top: 48px;margin-left: 15px;}
+.block-title {font-size: 14px;letter-spacing: 0.35px;line-height: 1;margin-top: 0;margin-bottom: 15px;background-color: #3f3f3f; border-left: 2px;border-color: #3f3f3f;border-bottom: 2px;}
+.block-title span {color: #fff;padding: 6px 0 5px;}
+.g-footer__social li{display: inline-block;}
+
+.g-footer__sub {background-color: #EC6A1C;}
+.sub-footer-menu,
+.sub-footer-copy {display: block;min-height: 1px;float: left;padding-right: 15px;padding-left: 15px;position: relative;}
+.sub-footer-menu {float: right;}
+.sub-footer-copy {float: left;color: #fff;line-height: 20px;margin-top: 8px;margin-bottom: 8px;}
+.subfooter-menu {display: inline-block;margin: 7px 0;}
+.subfooter-menu li {display: inline-block;margin-left: 0;margin-bottom: 0; line-height: 18px;}
+.subfooter-menu li a {margin-right: 16px;line-height: 18px;display: inline-block;color: #fcfcfc;}
+
+@media screen and (max-width: 767px) {
+    .footer-logo-wrap {text-align: center;}
+    .footer-social-wrap {float: none;margin-top: 30px;margin-left: 0;text-align: center;}
+    .sub-footer-copy,.sub-footer-menu {float: none;text-align: center;}
+}
+img {max-width: 100%;}

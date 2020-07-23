@@ -1,0 +1,191 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.articleList', [
+            'gujaratSamachar.config'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.articleList', { // Id will be unique for each category
+                url: '/:listType/:slug/:pageIndex?date', //listType : category/city
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/articleList.view.html',
+                        controller: 'ArticleListController as vm'
+                    },
+                    'boxByCategory@root.mainSidebar.articleList': {
+                        templateUrl: 'modules/main/articleList/articlesByCategory/articlesByCategory.view.html',
+                        controller: 'CategoryBoxController as vm'
+                    }
+                },
+                params: {
+                    Id: '',
+                    squash: true
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/articleList.controller.js" + version,
+                                "modules/main/articleList/articlesByCategory/articlesByCategory.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: '' }
+            })
+            .state('root.mainSidebar.meta', {
+                url: '/tags/:metaTag/:pageIndex?date', //listType : single metaTag list page
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/articleList.view.html',
+                        controller: 'metaController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/metaTag/metaTag.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: '' }
+            })
+            .state('root.mainSidebar.topReadNewsList', {
+                url: '/top-read-news/:id/:pageIndex?date', //listType : category/city
+                params: {
+                    id: {
+                        value: null,
+                        squash: true
+                    }
+                },
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/topReadNewsList/topReadNewsList.view.html',
+                        controller: 'TopReadNewsListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/topReadNewsList/topReadNewsList.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Top Read News | ' }
+            })
+            .state('root.mainSidebar.topHeadingNewsList', {
+                url: '/top-Head-news/:id/:pageIndex?date', //listType : category/city
+                params: {
+                    id: {
+                        value: null,
+                        squash: true
+                    }
+                },
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/topHeadingNewsList/topHeadingNewsList.html',
+                        controller: 'topHeadingNewsListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/topHeadingNewsList/topHeadingNewsList.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Top Head News | ' }
+            })
+            .state('root.mainSidebar.recentNewsList', {
+                url: '/recent-news/:id/:pageIndex?date', //listType : category/city
+                params: {
+                    id: {
+                        value: null,
+                        squash: true
+                    }
+                },
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/recentNewsList/recentNewsList.view.html',
+                        controller: 'recentNewsListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/recentNewsList/recentNewsList.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Recent News | ' }
+            })
+            // Section page start
+            // every section has unique id and slugname will be section's title
+            .state('root.mainSidebar.sectionPage', {
+                url: '/special-page/:slug/:pageIndex?date',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/sectionPage/sectionPage.view.html',
+                        controller: 'sectionPageController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/sectionPage/sectionPage.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Special Page | ' }
+            })
+            .state('root.mainSidebar.electionNews', {
+                url: '/election-news/:pageIndex?date',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/articleList/election/election.view.html',
+                        controller: 'ElectionListController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/articleList/election/election.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Election Page | ' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        /* Show loader on page load(On html, controller files load) */
+        $rootScope.loading = true;
+        //Redirect to login if not authenticated before any transition       
+        //$trace.enable('TRANSITION'); /* Enable transition tracing to print transition information to the console */
+        $state.defaultErrorHandler(function () {
+            //Default error handler fired!
+            $state.go('login');
+        });
+    };
+})();

@@ -1,0 +1,551 @@
+<style>
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.com_user_text {width: 100%;margin: 5px 0 0;}
+.com_user_text p{font-size: 12px;}
+
+.outlook_comment_widget .comments_txt {
+	max-height: 79vh;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.write_box_widget {
+	width: calc(100% - 10px);
+	float: left;
+	margin-bottom: 10px;
+}
+
+.outlook_comment_widget .comment_head {
+	width: 100%;
+	float: left;
+	margin-top: 7px;
+	margin-bottom: 15px;
+}
+
+.outlook_comment_widget {
+	width: 100%;
+	overflow: hidden;
+}
+
+.outlook_comment_widget .comments_txt ul li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.com_user_text {
+	width: 100%;
+	margin: 5px 0 0;
+}
+
+.com_interactives {
+	background-color: #fff;
+	margin: 5px 0 0;
+	display: table;text-transform: uppercase;
+	font-size:12px;
+}
+.com_interactives a{text-decoration:none;}
+
+.com_interactives span {
+	position: relative;
+	padding: 3px 6px 6px;
+	margin-bottom: 0;
+	text-align: center;
+	box-sizing: border-box;
+	font-weight: 400;
+	line-height: 13px;
+}
+
+.outlook_comment_widget .comments_txt ul li p {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.outlook_comment_widget .comments_txt ul li span {
+	display: inline-block;
+}
+
+.outlook_comment_widget .new_comment_boxs {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: 0 0;
+}
+
+.write_box_widget textarea {
+	width: 100%;
+	height: 30px;
+	line-height: 18px;
+	margin: 0 0 10px;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	font-size: 13px;
+}
+
+#anonymous-login {
+	background: 0 0;
+	padding: 0;
+	margin-bottom: 10px!important;
+}
+
+
+
+.outlook_comment_widget .comments_txt ul li span strong {
+	font-weight: 600;
+	text-style: italic;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	border-radius: 7px;
+	background-color: #c1c1c1;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 7px;
+	background-color: #ececec;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	background-color: #c1c1c1;
+}
+
+.like a {
+	color: green
+}
+
+.like{
+    width: 45px;
+    padding: 0px 5px !important;
+}
+
+.unlike{
+    width: 45px;
+    padding: 0px 5px !important;
+}
+
+.like img {
+float:left;	
+}
+.unlike img {
+float:left;	
+}
+.unlike a {
+	color: red
+}
+
+.reply a {
+	color: #03a9f4
+}
+
+.headerwrap {
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.report_abuse a {
+	color: #9a9898
+}
+
+.dateline {
+	color: #ccc;
+}
+
+.comment_user .fa {
+	font-size: 20px;
+	margin: 5px 5px 5px 0;
+}
+
+.comment_user {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: #212020;
+	text-transform: uppercase;
+}
+
+.time_ago {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: lowercase;
+	color: #ea6d6d;
+}
+
+
+
+.com_fbook {
+	background-color: #4267b2;
+	border-color: #4267b2;
+	left: 116px;
+}
+#t_connect {
+	background-color: #00abf1;
+	border-color: #00abf1;
+	left: 116px;
+}
+
+.com_twitter {
+	background-color: #38A1F3;
+	border-color: #38A1F3;
+	left: 64px;
+}
+
+.com_gplus {
+	background-color: #f34a38;
+	border-color: #da4f3f;
+	right: 20px;
+}
+
+.new_commentwrap .com_head .com_socialwrap a {
+	display: inline-block;
+	position: relative;
+	margin: 0 8px 0 0;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	padding: 3px 5px;
+	font-size: 12px;text-decoration:none;
+	border-radius: 3px;
+	-webkit-transition: padding .2s, font-size .2s, margin .2s;
+	transition: padding .2s, font-size .2s, margin .2s;
+}
+
+.new_commentwrap .com_head .com_socialwrap a:hover {
+	padding: 5px 7px;
+	font-size: 14px;
+	margin: -2px 8px 0 0;
+}
+
+element.style {
+	height: 10em;
+}
+
+.write_box_widget textarea {
+	width: 100%;
+	height: 30px;
+	line-height: 18px;
+	margin: 0 0 10px;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	font-size: 13px;
+	resize: none;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+}
+
+element.style {}
+
+.outlook_comment_widget .loginbutton input {
+	float: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 3px 15px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	position: relative;
+	width:auto !important;
+	height: 30px;
+	background-color: #757575;
+	border: none;
+	border-radius: 30px;
+	border-bottom: 2px solid #6d6d6d;
+	transition: all .2s ease;
+	-webkit-appearance: none;
+}
+
+#anonymous-login input:focus,
+.write_box_widget textarea:focus {
+	border: 1px solid #a6c8ff;
+	outline: 0;
+}
+
+.sortby {
+	width: calc(100% - 10px);
+	display: block;
+	margin: 0 0 15px;
+	padding: 0 1px 0 0;
+	border-bottom: 1px solid #e5e5e5;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+.sortby select {
+	border: none;
+	text-align: right;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 0;
+}
+
+.outlook_comment_widget .comment_head span {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 900;
+}
+.outlook_comment_widget .loginbutton {
+    float: left;
+    width: 100%;
+    color: #069;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.outlook_comment_widget .new_comment_box {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background: 0 0;
+}
+.outlook_comment_widget .new_commentwrap .com_head .com_socialwrap {
+    width: calc(100% + 20px);
+    float: left;
+    box-sizing: border-box;
+}
+.outlook_comment_widget .comment_error {
+    font-size: 13px;
+    font-weight: 400;
+    color: red;
+    margin-bottom: 10px;
+}
+.outlook_comment_widget .new_commentwrap {
+    padding: 0;
+    position: relative;
+    float: left;
+    height: 50px;
+}.outlook_comment_widget .new_commentwrap .com_head {
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+.comments_content ul{padding:0;}
+.err_msg{
+	    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 5px;
+	text-transform: none;
+}
+
+	</style>
+<script src="../../../../../code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="../../../../jquery/jquery.colorbox.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../../css/colorbox.css">
+<script>
+	jQuery(document).ready(function(){		
+		jQuery(".iframe").colorbox({iframe:true, width:"100%", height:"90%",scrolling:false});
+		jQuery(".box_login").colorbox({iframe:true, width:"100%", height:"60%",scrolling:false});
+	});
+</script>
+
+
+
+
+
+<div class="outlook_comment_widget" id="outlook_comment_widget" style="">
+
+<!--<div class="comment_head"><i></i><span> Comments </span></div>-->
+<div class="write_box_widget" id="write_box_widget">
+<div id="comment-reply"></div>
+<div class="clear"></div>
+		<div style="clear:both;">  <a name="commentbox"></a>
+		<form method="post" action="https://www.outlookindia.com/magazine/commentsave" id="mycomment" >
+		<div>
+		<textarea rows="4" cols="50" name="comment"  id="comment" placeholder="Share your thoughts."   style="height: 10em;"  ></textarea>
+		<span class="err_msg time_ago"></span>
+		<br>	
+	
+		<input type="hidden" name="type" value="web">
+		<input type="hidden" name="type_id" value="352761">
+		<input type="hidden" name="useremail" value="" id="useremail">
+		<input type="hidden" name="redirectUrl" value="https://www.outlookindia.com/comments/website/352761/india-news-migrant-worker-commits-suicide-at-quarantine-centre-in-chhattisgarh/latest">
+		
+		<input type="hidden" name="story_title" value="" id="story_title">
+		<input type="hidden" name="story_slug" value="india-news-migrant-worker-commits-suicide-at-quarantine-centre-in-chhattisgarh" id="story_slug">
+		<input type="hidden" name="feedback_type" value="1">		 </div>	 
+		<p class="loginbutton">
+		<a class="box_login cboxElement " onclick="setCommentText();" href="https://www.outlookindia.com/t_login/desktop/new_signup.php">
+		<input name="submit" id="btnNew" type="submit" class="input_btn" value="Post Comment">
+		</a>
+		</p>
+		
+		</form>	 
+		</div>
+
+</div>
+
+<div class="sortby">
+<div class="select-style">
+<select name="comment_sort" placeholder="Sort By" onchange="fetch_type(this);">
+<option value="latest" selected >Latest</option>
+<option value="oldest"  >Oldest</option>
+</select>
+</div>
+</div>
+
+<script>
+function fetch_type(val){
+	window.location.href = 'https://www.outlookindia.com/comments/website/352761/india-news-migrant-worker-commits-suicide-at-quarantine-centre-in-chhattisgarh/'+val.value;
+	
+}
+</script>
+
+<div class="comments_content">
+<div class="comments_txt" style="height: 50vh;">
+
+
+
+																
+</div></div></div>
+
+
+<script>
+jQuery(document).ready(function(){
+	var track_load = 5; 
+    var loading  = false;
+	var total_groups = "0"; 
+	var page_number = 1;
+	var page_url = "/comments/load_more/web/352761/";
+	
+   jQuery("#load").click(function(){		
+		if(total_groups > 0 && loading == false) 
+		{
+			loading = true; 
+			jQuery('#load').hide();
+			jQuery.get(page_url+(track_load*page_number), function(data){
+				jQuery("#comments_list").append(data); 
+				jQuery('#load').show();
+				page_number++;
+				total_groups--;
+				loading = false;
+				 console.log(page_url+(track_load*page_number)+', total_groups:'+total_groups);
+				if(total_groups<=0){
+					jQuery("#load").hide();
+				}
+				
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				jQuery('#load').show();
+				loading = false;
+			});
+		} else {
+			jQuery("#load").hide();
+		}
+	});
+});
+
+</script>
+
+
+<script>
+function likedislike(id, type) {
+	var like_count = jQuery('#'+type+'_'+id).data("id");
+	jQuery.ajax({
+    type: "POST",
+    url: '/magazine/like_dislike/'+id+'/'+type,
+    data: {'id':id,'type':type},
+    success: function (data) {
+                  if(data) {
+					 like_total = parseInt(data)+parseInt(like_count);
+                      jQuery('#'+type+'_'+id).html('('+like_total+')');
+                  } else {
+						alert('You have already voted.');
+					}	
+            }
+	});
+}
+</script>
+
+
+
+<script>
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+//==============================
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";   
+}	
+
+//console.log('Login' + checkLoginState());
+function checkLoginState(){
+	if(getCookie('user_email') !=''){
+	return 'true';
+	}else{
+		return 'false';
+	}
+}
+
+function setCBox(){
+		$('.box_login').replaceWith(function() {
+		return $('#btnNew', this);
+		});
+}
+function setCommentText(){
+	parent.commentText = $('#comment').val();
+}
+$('#mycomment').submit(function(){
+	if($('#comment').val().length > 3){
+		parent.commentText='';
+	}else{
+	 event.preventDefault();
+	 setCommentText();
+	 $('.err_msg').text('To Comment, Minimum 4 Character Required');
+	return false;	
+	}
+		});
+function getSetComment(){
+	if(checkLoginState() =='true'){
+		jQuery('#comment').show();
+		jQuery('.report_abuse_login').hide();
+		jQuery('.report_abuse_data').show();
+		jQuery('#afcommentbtn').hide();
+		jQuery('#useremail').val(getCookie('user_email'));
+		setCBox();
+		
+	}else{
+		jQuery('.report_abuse_login').show();
+		jQuery('.report_abuse_data').hide();
+		jQuery('#afcommentbtn').show();
+	}
+	$('#comment').val(parent.commentText);
+	$.colorbox.close();
+}	
+getSetComment();
+
+//==============================
+
+</script>
+

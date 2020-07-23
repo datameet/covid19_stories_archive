@@ -1,0 +1,232 @@
+{
+    "title": "Uttar Pradesh: 2 Separate Accidents Kill Four Migrant Workers, Kin on Way Home",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.297",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:36.102278",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777432",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 23,
+                "start_ts": "2020-05-29 18:37:12.518572",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:54.275272",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:37:52.543728",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:12.517230",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thewire.in"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:37:12.223487",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:37:42.844929",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 18:37:36.102417",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "end_ts": "2020-05-29 21:48:36.551717",
+                "start_ts": "2020-05-29 21:48:24.318528",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:52.542713",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:37:47.713405",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:56.600850",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:37:54.275515",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "https://web.archive.org/web/20200529183755/https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:37:47.712745",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:37:42.845783",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+                ],
+                "end_ts": "2020-05-29 21:48:42.986378",
+                "start_ts": "2020-05-29 21:48:36.551976",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:37:12.223161",
+                "cmd": [
+                    "curl",
+                    "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:37:11.880593",
+                "pwd": "/data/archive/1590766226.297",
+                "output": "Uttar Pradesh: 2 Separate Accidents Kill Four Migrant Workers, Kin on Way Home"
+            }
+        ]
+    },
+    "updated": "1590788922.986663",
+    "tags": "",
+    "url": "https://thewire.in/labour/lockdown-uttar-pradesh-migrant-workers-killed"
+}

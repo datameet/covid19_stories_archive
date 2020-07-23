@@ -1,0 +1,194 @@
+{
+    "title": "\u092c\u0940\u092e\u093e\u0930 \u092a\u093f\u0924\u093e \u0915\u094b \u0915\u0902\u0927\u0947 \u092a\u0930 \u0932\u0947\u0915\u0930 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u0915\u0947 \u091a\u0915\u094d\u0915\u0930 \u0915\u093e\u091f\u0924\u093e \u0930\u0939\u093e \u092c\u0947\u091f\u093e, \u092e\u094c\u0924 | man died on his son shoulder after no treatment on hospital - Hindi Oneindia",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.387",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:33:30.743588",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780799",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 11,
+                "start_ts": "2020-05-29 19:33:19.645471",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:34:10.041249",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:34:08.407854",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:33:19.644146",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=hindi.oneindia.com"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:33:17.339518",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:33:39.914716",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 19:33:30.743835",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:34:08.406759",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 13,
+                "start_ts": "2020-05-29 19:33:54.471337",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:34:13.919984",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:34:10.041511",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "https://web.archive.org/web/20200529193412/https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:33:54.471074",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 19:33:39.914983",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:33:17.339235",
+                "cmd": [
+                    "curl",
+                    "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:33:16.628897",
+                "pwd": "/data/archive/1590766226.387",
+                "output": "\u092c\u0940\u092e\u093e\u0930 \u092a\u093f\u0924\u093e \u0915\u094b \u0915\u0902\u0927\u0947 \u092a\u0930 \u0932\u0947\u0915\u0930 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u0915\u0947 \u091a\u0915\u094d\u0915\u0930 \u0915\u093e\u091f\u0924\u093e \u0930\u0939\u093e \u092c\u0947\u091f\u093e, \u092e\u094c\u0924 | man died on his son shoulder after no treatment on hospital - Hindi Oneindia"
+            }
+        ]
+    },
+    "updated": "1590789416.969401",
+    "tags": "",
+    "url": "https://hindi.oneindia.com/news/farrukhabad/man-died-on-his-son-shoulder-after-no-treatment-on-hospital-555684.html"
+}

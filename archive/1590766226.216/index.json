@@ -1,0 +1,232 @@
+{
+    "title": "Unable to return home, migrant labourer from Bengal ends life in Kerala",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.216",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 15,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774477",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:48:13.008478",
+                "start_ts": "2020-05-29 17:47:57.634864",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:49:39.452699",
+                "start_ts": "2020-05-29 17:49:37.475165",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.deccanchronicle.com"
+                ],
+                "end_ts": "2020-05-29 17:47:57.633164",
+                "start_ts": "2020-05-29 17:47:57.316406",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:49:13.114767",
+                "start_ts": "2020-05-29 17:48:13.008718",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 21:38:13.551574",
+                "start_ts": "2020-05-29 21:38:07.725206",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 19,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:49:37.474809",
+                "start_ts": "2020-05-29 17:49:18.107177",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:49:42.349455",
+                "start_ts": "2020-05-29 17:49:39.452952",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "https://web.archive.org/web/20200529174941/https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 17:49:18.106437",
+                "start_ts": "2020-05-29 17:49:13.115050",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+                ],
+                "end_ts": "2020-05-29 21:38:18.195240",
+                "start_ts": "2020-05-29 21:38:13.551833",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:47:57.316272",
+                "start_ts": "2020-05-29 17:47:56.893526",
+                "pwd": "/data/archive/1590766226.216",
+                "output": "Unable to return home, migrant labourer from Bengal ends life in Kerala"
+            }
+        ]
+    },
+    "updated": "1590788298.19557",
+    "tags": "",
+    "url": "https://www.deccanchronicle.com/nation/current-affairs/100520/unable-to-return-home-migrant-labourer-from-bengal-ends-life-in-keral.html"
+}

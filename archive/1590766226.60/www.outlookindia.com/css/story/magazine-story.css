@@ -1,0 +1,208 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;background:#EDEDEF;
+}
+a{color: #000;text-decoration: none;background-color: transparent;}
+.weather_date a {
+    color: #3C3A3A;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.wrapper_story_left,.wrapper_story_right{background:#fff;box-shadow:0 0 10px #ccc;padding:20px;margin-top:20px;}
+.wrapper_story_left {width:66.5%;margin-bottom:30px;}
+#magazine_page .wrapper_story_left .story_breadcrum {text-align:center;margin:0 25% 10px;width:50%;font-size:12px;color:#ccc;}
+#magazine_page .story_breadcrum a{color:#000}
+
+#magazine_page .wrapper_story_left h1{text-align:center;font-size:40px;margin:10px 5%;display:block;}
+#magazine_page .wrapper_story_left h4{text-align:center;margin:10px 5%;}
+.also_read_magazine{margin-left: 15px;
+    margin-bottom:2px;background:#F9F9F9;float:right;width:25%;padding:0 20px;box-shadow:0 0 10px #ccc;}
+.also_read_magazine ul li{color:#0D0C0C;font-size:14px;font-weight:500;line-height:16px;margin-bottom:15px;list-style: outside square;margin-left: 10px;}
+.also_read_magazine h5{}
+.also_read_magazine span{background:#E0001B;color:#fff;padding:1px 10px;position:relative;z-index:9}
+.also_read_magazine span::before {content: "";
+    position: absolute;
+    width: 150px;
+    margin-left: 10px;
+    background: #E0001B;
+    height: 2px;
+    /* top: 0; */
+    margin-top: 9px;
+    z-index:-1;
+}
+.latest_issue{margin-top:0;padding:0 5%;border:0}
+.photocaption_mag{float:left;width:100%;border-bottom:dashed 1px #ccc;margin-bottom:10px;padding-bottom: 7px;}
+.photocaption_mag .inner{width:70%;float: left;} 
+.photocaption_mag .story_share{width:30%;padding-top: 0;margin: 5px 0;}
+.mag_blurb_left,.mag_blurb_right{border-top:5px solid #000000;box-shadow:0 0 10px #ccc;background:#fff;padding:12px;float:left;width:125px;margin:10px 10px 5px 0;font-size:12px;    line-height: 16px;color:#0D0C0C;font-weight:600}
+.mag_blurb_right{float:right;margin:10px 0 5px 10px;}
+.blurb_quote{color: #e0001b;font-size: 16px;font-weight: 600;font-family: 'Lora', serif;line-height: 20px;padding: 15px 15px;margin: 5px 20px 15px 0 !important;width: 150px;}
+.blurb_quote_right{margin: 5px 0 15px 20px !important;}
+
+.story_description p {font-size: 17px;font-weight: 300;color: #2D2B2B;margin: 0 0 10px;}
+.story_description img {display: block;margin: auto;}
+	
+.story_description strong{font-weight:500;}
+.blrub_author{font-size:12px;font-weight:400;color:#e0001b}
+.magazine_story_author .story_author{width: fit-content;margin: auto;float: none;}
+.magazine_story_author .story_author .author_icon {    float: left;
+    margin-right: 5px;font-size: 37px;width:auto;}
+.magazine_story_author  .author_name_date span {
+    color: #E0001B;
+    font-size: 14px;
+    float: none;
+    width: auto;
+    font-weight: 500;
+}
+.magazine_story_author .author_name_date {
+    width: 100%;
+    float: left;
+    color: #272626;
+    font-size: 13px;
+    padding-left: 1%;
+    padding-top:0%;font-weight:600;line-height: 60px;
+}
+.author_social{border:0}
+.footer_search {
+    border: 0;
+    padding: 5px;
+    background: #747272;
+    color: #fff;
+    outline: none;
+}.go {
+    background: #E0001B;
+    color: #fff;
+    padding: 5px 8px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.search_inner{background: #fff;box-shadow: 0 0 10px #ccc;}
+.search_inner input{border: 0;padding: 5px;}
+/* LISTING PAGE CSS*/
+.ad_section_listing{margin:auto;text-align:center;font-size:12px;font-weight:600;padding:10px 0}
+.category_slug{position:relative}
+.category_slug h3{background:#e0001b;color:#fff;padding: 1px 5px;display: inline-block;
+    font-size: 16px;position: relative;
+    z-index: 8;}
+.category_slug h3:before{content: '';
+    position: absolute;
+    background: #e0001b;
+    height: 1px;
+    width: 842px;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+#magazine_page h2{margin:0 0 10px;    line-height: 40px;font-weight: bold;font-size: 35px;text-transform: capitalize;
+}
+.view_morestories{background:#343434;color:#fff;width:99%;float:left;margin:10px 0;text-align:right;font-size: 14px;
+    font-weight: 600;padding:5px 10px 5px 0}
+.category_story_listing8{float:left;width:100%;margin-top:10px;}
+
+.category_story_listing8 ul li:first-child{float:left;width:100%;display: contents;
+    border: 0;}
+.category_story_listing8 ul li {float: left;
+    width: 23.1%;
+    margin-right: 2.5%;
+    margin-bottom: 2%;
+    border-bottom: dashed 1px #ccc;
+    padding-bottom: 5px;
+    height: 252px;
+    overflow: hidden;}
+.category_story_listing8 ul li h5{font-size:14px;line-height:18px;margin:0;font-weight:500}
+.story_date{color:#E0001B;font-size:12px;text-transform:uppercase;font-weight:600;margin-top:5px;}
+  
+.category_story_listing8 ul li:nth-child(5),.category_story_listing8 ul li:nth-child(9),.category_story_listing8 ul li:nth-child(13),.category_story_listing8 ul li:nth-child(17),.category_story_listing8 ul li:nth-child(21),.category_story_listing8 ul li:nth-child(21),.category_story_listing8 ul li:nth-child(25),.category_story_listing8 ul li:nth-child(29){margin-right:0;}
+.new_pagination li.prev{float:left;padding-left:5px;}
+.new_pagination li.prev a,.new_pagination li:last-child a{color:#fff;}
+
+/* Photos */
+.india_photos{float:left;width:100%;position:relative}
+.view_all {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #737373;
+}
+.india_photos h3 span {background: #E0001B;padding: 1px 10px;color: #fff;display: inline-block;font-size:17px;}
+.india_photos h3{float:left;width:100%;border-bottom:solid 1px #e0001b}
+.india_photos ul li{float:left;width:31.3%;margin-right:3%;font-size:14px;line-height:18px;font-weight:600}
+.india_photos ul li:last-child{margin-right:0;}
+.img_rel{position:relative}
+.img_icon{position: absolute;
+    right: 10px;
+    bottom: 16px;
+    color: #fff;
+    background: #000;
+    padding:2px 6px;font-size:14px;}
+.img_icon .fa{color:#FFCE31;}
+/* LISTING PAGE CSS*/
+
+.books_wdgt_mid {height: auto;width: 100%;float: left;margin: 20px 0;}
+.books_wdgt_mid .book_img {width: 175px;height: auto;float: left;}
+
+.books_wdgt_mid .book_cnt {float: left;width: 65%;margin-left: 60px;border-bottom: 2px solid #00ae97;
+border-top: 2px solid #00ae97;margin-top: 10px;margin-bottom: 0px;padding: 20px 0;overflow: hidden;}
+
+.books_wdgt_mid .book_cnt .head {text-transform: uppercase;font-size: 18px;width: 100%;float: left;
+font-weight: 600;margin-bottom: 10px;color: #00ae97;}
+
+.books_wdgt_mid .book_cnt .subhead {text-transform: uppercase;font-weight: 400;width: 100%;   font-size: 15px;line-height: 20px;margin-bottom: 10px;float: left;}
+
+.books_text span {color: #00ae97;}
+.covr_wr_bg span {font-size: 16px;text-transform: uppercase;float: left;font-weight: 500;}
+.story_description p a {color: #23527c;font-weight: bold;}
+
+.slig_ins {width: 100%;float: left;border-top: 1px solid #ac2b5c;padding: 20px 0;border-bottom: 1px solid #949597;text-align: center;font-size: 18px;color: #666;line-height: 25px;font-family: 'Lora', serif;margin-bottom: 10px;}
+.story_description em {font-style: italic;}
+
+.story_description .family_type {width: 100%;float: left;border-bottom: 1px solid #ac2b5c;padding: 5px 0;
+    margin-bottom: 10px;}
+.story_description .family_type .fam_head {font-size: 14px;text-transform: uppercase;padding-bottom: 3px;
+    width: 100%;float: left;color: #ac2b5c;font-weight: 900;}
+.story_description .family_type p {padding: 0 0 2px;font-family: 'Lora', serif;}
+.story_description .writterbody {margin-top: 10px;letter-spacing: 0px;font-size: 13px;font-weight: 900;
+    color: #ac2b5c;text-transform: uppercase;}
+.story_description ul{list-style-type: disc; margin-left: 20px;}
+.mag_blurb_left{clear:both;}
+
+/* blurb */
+.mag_blurb_left,.mag_blurb_right{position:relative;border:0;margin: 15px;}
+.blurb_outer{position: relative;float: left;margin: 10px;clear: both;}
+.blurb_outer_right{position: relative;float: right;margin: 10px;}
+.top_left:before{position:absolute;content:'';width:70px;background:#E0001B;height:4px;left:0;border-bottom:solid 1px #e0001b}
+.top_left:after{position:absolute;content:'';width:5px;background:#E0001B;height:70px;left:0;}
+.bottom_right:before{position:absolute;content:'';width:70px;background:#E0001B;height:5px;right:-15px;bottom:-15px;}
+.bottom_right:after{position:absolute;content:'';width:5px;background:#E0001B;height:70px;right:-15px;bottom:-15px;}
+.blurb_outer_right .bottom_right:before{position:absolute;content:'';width:70px;background:#E0001B;height:5px;right:0;bottom:0;}
+.blurb_outer_right .bottom_right:after{position:absolute;content:'';width:5px;background:#E0001B;height:70px;right:0px;bottom:0px;}
+/* blurb */
+
+ /* Glitterati */
+#glitterati h1{margin:0;color: #ac2b5c;font-size:40px;}
+#glitterati .wrapper_story_left img{margin: auto;width:auto;max-width:844.55px;float: none;display: block;}
+.magzine_story_inside{background: #f3d6d9;padding-bottom:20px;}
+.magzine_story_inside h5{color:#ac2b5c;font-size:20px;margin:5px 0;font-family: 'Lora', serif;}
+.magzine_story_inside p	{font-size: 15px;margin:5px 0;}
+.glitterati_ins{margin: 0 auto 20px;width: 96%;padding: 2% 0;border-bottom: solid 1px #ad1347;}
+
+.author_name_date_glitrati{width: 100%;background: #fff;border-bottom: solid 1px #ccc;margin-bottom: 6px;    padding: 8px 0;display: inline-block;}
+.author_name_date_glitrati ul li{float:left;margin-right:5px;padding:3px;position:relative;color: #8C8888;
+    font-size: 13px;padding-right:10px;}
+.author_name_date_glitrati ul li:before{content: '';
+    width: 1px;
+    background: #862727;
+    height: 12px;
+    right: 0;
+    position: absolute;
+    top:7px;}
+.author_name_date_glitrati ul li:last-child:before {
+  content: none;
+}
+.morefrom_india .descriptn{font-size: 13px;color: #8c8585;}

@@ -1,0 +1,194 @@
+{
+    "title": "\u0915\u094b\u0930\u094b\u0928\u093e \u0932\u0949\u0915\u0921\u093e\u0909\u0928: \u092c\u0926\u093e\u092f\u0942\u0902 \u092e\u0947\u0902 \u0932\u0917\u093e\u0924\u093e\u0930 \u0926\u0942\u0938\u0930\u0947 \u0926\u093f\u0928 \u0930\u093e\u0936\u0928 \u0915\u0940 \u0932\u093e\u0907\u0928 \u092e\u0947\u0902 \u0932\u0917\u0940 \u092e\u0939\u093f\u0932\u093e \u0915\u0940 \u092e\u094c\u0924 - BBC News \u0939\u093f\u0902\u0926\u0940",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.231",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:57:58.649434",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775048",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 30,
+                "start_ts": "2020-05-29 17:57:28.476177",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "www.bbc.com/hindi/india-52338267@at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:58:12.467442",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:58:11.158550",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:57:28.474966",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bbc.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:57:28.169443",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:58:03.930652",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 17:57:58.649727",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:58:11.157868",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:58:07.939023",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:58:16.672585",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:58:12.467713",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "https://web.archive.org/web/20200529175814/https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:58:07.938772",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:58:03.930935",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:57:28.169166",
+                "cmd": [
+                    "curl",
+                    "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:57:24.485454",
+                "pwd": "/data/archive/1590766226.231",
+                "output": "\u0915\u094b\u0930\u094b\u0928\u093e \u0932\u0949\u0915\u0921\u093e\u0909\u0928: \u092c\u0926\u093e\u092f\u0942\u0902 \u092e\u0947\u0902 \u0932\u0917\u093e\u0924\u093e\u0930 \u0926\u0942\u0938\u0930\u0947 \u0926\u093f\u0928 \u0930\u093e\u0936\u0928 \u0915\u0940 \u0932\u093e\u0907\u0928 \u092e\u0947\u0902 \u0932\u0917\u0940 \u092e\u0939\u093f\u0932\u093e \u0915\u0940 \u092e\u094c\u0924 - BBC News \u0939\u093f\u0902\u0926\u0940"
+            }
+        ]
+    },
+    "updated": "1590788303.248958",
+    "tags": "",
+    "url": "https://www.bbc.com/hindi/india-52338267?at_custom4=8E01F2F2-817C-11EA-A80E-42A64744363C&at_campaign=64&at_custom2=twitter&at_custom1=%5Bpost+type%5D&at_medium=custom7&at_custom3=BBC+Hindi"
+}

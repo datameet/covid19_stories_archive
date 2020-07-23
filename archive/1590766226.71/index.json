@@ -1,0 +1,194 @@
+{
+    "title": "Fearing coronavirus infection, engineering student commits suicide in Telangana",
+    "url": "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/",
+    "timestamp": "1590766226.71",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:10:57.185705",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768656",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:10:56.246089",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:11:25.977404",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:11:22.297885",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:10:56.245398",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.opindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:10:55.972210",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:11:07.565637",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 16:10:57.185919",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:11:22.297427",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:11:15.084631",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:11:28.976579",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:11:25.977638",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "https://web.archive.org/web/20200529161127/https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:11:15.084358",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:11:07.565907",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:10:55.972068",
+                "cmd": [
+                    "curl",
+                    "https://www.opindia.com/2020/04/telangana-engineering-student-suicide-covid-19-infection/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:10:55.171024",
+                "pwd": "/data/archive/1590766226.71",
+                "output": "Fearing coronavirus infection, engineering student commits suicide in Telangana"
+            }
+        ]
+    },
+    "updated": "1590788190.190298",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

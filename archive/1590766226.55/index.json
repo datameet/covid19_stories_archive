@@ -1,0 +1,194 @@
+{
+    "title": "Youth Committed Suicide Due Cash Crunch During Lockdown - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930\u0940 \u0914\u0930 \u092a\u0948\u0938\u0947 \u0915\u0940 \u0915\u092e\u0940 \u0915\u0947 \u0915\u093e\u0930\u0923 \u092f\u0941\u0935\u0915 \u0928\u0947 \u0909\u0920\u093e\u092f\u093e \u092f\u0947 \u0916\u094c\u092b\u0928\u093e\u0915 \u0915\u0926\u092e | Patrika News",
+    "url": "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/",
+    "timestamp": "1590766226.55",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:34.402641",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768267",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:04:27.142767",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:47.848503",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:04:45.594270",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:27.142213",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.patrika.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:04:26.838091",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:38.499029",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:04:34.402840",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:45.593904",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:04:42.486213",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:52.123449",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:04:47.848795",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "https://web.archive.org/web/20200529160449/https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:42.485859",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:04:38.499513",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:04:26.837943",
+                "cmd": [
+                    "curl",
+                    "https://www.patrika.com/meerut-news/youth-committed-suicide-due-cash-crunch-during-lockdown-6082754/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:04:24.955548",
+                "pwd": "/data/archive/1590766226.55",
+                "output": "Youth Committed Suicide Due Cash Crunch During Lockdown - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930\u0940 \u0914\u0930 \u092a\u0948\u0938\u0947 \u0915\u0940 \u0915\u092e\u0940 \u0915\u0947 \u0915\u093e\u0930\u0923 \u092f\u0941\u0935\u0915 \u0928\u0947 \u0909\u0920\u093e\u092f\u093e \u092f\u0947 \u0916\u094c\u092b\u0928\u093e\u0915 \u0915\u0926\u092e | Patrika News"
+            }
+        ]
+    },
+    "updated": "1590788176.56796",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

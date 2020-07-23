@@ -1,0 +1,15 @@
+.tickContainer
+{
+	float:left;
+	width:780px;
+	padding:0px 15px 0px 15px;
+	margin-top:15px;
+}
+.tickContainer span
+{
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	color:#000066;
+	padding:0px 10px 0px 10px;
+}

@@ -1,0 +1,64 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.home', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.home', {
+                url: '/',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/home/home.view.html',
+                        controller: 'HomeController as vm'
+                    },
+                    'articlesByCity@root.mainSidebar.home': {
+                        templateUrl: 'modules/main/home/articlesByCity/articlesByCity.view.html',
+                        controller: 'ArticlesByCityController as vm'
+                    },
+                    'articlesByCategory@root.mainSidebar.home': {
+                        templateUrl: 'modules/main/home/articlesByCategory/articlesByCategory.view.html',
+                        controller: 'ArticlesByCategoryController as vm'
+                    },
+                    'breakingNews@root.mainSidebar.home': {
+                        templateUrl: 'modules/main/home/breakingNews/breakingNews.view.html',
+                        controller: 'BreakingNewsController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/home/articlesByCity/articlesByCity.controller.js" + version,
+                                "modules/main/home/articlesByCategory/articlesByCategory.controller.js" + version,
+                                "bower_components/fancybox-plus/dist/jquery.fancybox-plus.min.js" + version,
+                                "bower_components/angular-fancybox-plus/js/angular-fancybox-plus.js" + version,
+                                "modules/main/home/breakingNews/breakingNews.controller.js" + version,
+                                "directives/imageLoading.directive.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'GujaratSamachar Home ' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            //Default error handler fired!
+            $state.go('root.404');
+        });
+    };
+})();

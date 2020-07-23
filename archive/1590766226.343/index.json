@@ -1,0 +1,194 @@
+{
+    "title": "Jharkhand woman dies waiting in a bank queue to withdraw Rs 500 from Jan Dhan account, rural areas see big rush - india news - Hindustan Times",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.343",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:27.973203",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779603",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:13:23.781940",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:36.851841",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:13:35.515029",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:23.780297",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=m.hindustantimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:13:23.506423",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:30.714608",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:13:27.973720",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:35.514680",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:13:33.575121",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:38.717735",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:13:36.852101",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "https://web.archive.org/web/20200529191338/https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:33.574870",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:13:30.714859",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:13:23.506127",
+                "cmd": [
+                    "curl",
+                    "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:13:22.878019",
+                "pwd": "/data/archive/1590766226.343",
+                "output": "Jharkhand woman dies waiting in a bank queue to withdraw Rs 500 from Jan Dhan account, rural areas see big rush - india news - Hindustan Times"
+            }
+        ]
+    },
+    "updated": "1590789349.511484",
+    "tags": "",
+    "url": "https://m.hindustantimes.com/india-news/jharkhand-woman-dies-waiting-in-a-bank-queue-to-withdraw-rs-500-from-jan-dhan-account-rural-areas-see-big-rush/story-AK17D75HOAYHXBNYu7jKoO_amp.html"
+}

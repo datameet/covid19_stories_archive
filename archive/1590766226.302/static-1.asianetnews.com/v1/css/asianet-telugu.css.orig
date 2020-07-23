@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Noto Sans Telugu';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Regular.eot);
+	src: url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Regular.eot?#iefix) format('embedded-opentype'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Regular.woff2) format('woff2'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Regular.woff) format('woff'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Noto Sans Telugu';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Bold.eot);
+	src: url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Bold.eot?#iefix) format('embedded-opentype'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Bold.woff2) format('woff2'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Bold.woff) format('woff'), url(https://static.asianetnews.com/v1/fonts/asianet-telugu/NotoSansTelugu-Bold.ttf) format('truetype');
+}

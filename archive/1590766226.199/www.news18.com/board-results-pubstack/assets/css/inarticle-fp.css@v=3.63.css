@@ -1,0 +1,38 @@
+/* Desktop on news 18 site */
+.fp-board-iframe-desktop {
+    border: 0;
+    height: 365px;
+	    clear: both;
+    width: 101%;
+}
+@media screen and (min-width: 767px) {
+.firstpost-commentary.live-blog .nw_bresult_content.nw18boardresultdiv iframe {
+    height: 530px;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+/* Mobile on news 18 site having only two fields - Roll no and class */
+.fp-board-iframe-dual-mobile {
+    height: 615px;border: 0;margin-top: 10px;
+	    clear: both;
+    width: 100%;
+}
+
+/* Mobile on news 18 site having only three fields - Roll no, class and one other field */
+.fp-board-iframe-tertiary-mobile {
+       height: 694px !important;
+    border: 0;
+    margin-top: 10px !important;
+    clear: both;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+/* Mobile on news 18 site having four fields - Roll no, class and two other fields */
+.fp-board-iframe-quadraple-mobile {
+height: 665px !important;margin-top: 10px !important;     clear: both;  clear: both;     width: 100%;     margin-bottom: 0 !important;
+}
+
+}

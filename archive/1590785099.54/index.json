@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.54",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:18:35.365103",
+                "start_ts": "2020-05-29 21:18:32.969800",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "&#039;Beaten, abused, spat on&#039;: People from Northeast endure racist slurs amid coronavirus panic"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:20:37.051242",
+                "start_ts": "2020-05-29 21:19:36.995929",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=theprint.in"
+                ],
+                "end_ts": "2020-05-29 21:18:35.660729",
+                "start_ts": "2020-05-29 21:18:35.365430",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 29,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:19:36.995675",
+                "start_ts": "2020-05-29 21:19:07.625802",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:20:50.713195",
+                "start_ts": "2020-05-29 21:20:47.993462",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "https://web.archive.org/web/20200529212049/https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 31,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787115",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:19:07.625626",
+                "start_ts": "2020-05-29 21:18:35.662236",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:20:43.787386",
+                "start_ts": "2020-05-29 21:20:37.051624",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "end_ts": "2020-05-29 21:20:47.993211",
+                "start_ts": "2020-05-29 21:20:43.787760",
+                "pwd": "/data/archive/1590785099.54",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787250.716586",
+    "tags": "",
+    "url": "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+}

@@ -1,0 +1,194 @@
+{
+    "title": "Fearing Covid infection, CRPF man \u2018commits suicide\u2019 in J&K | India News,The Indian Express",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.367",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:25:53.659363",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780346",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 19:25:46.997690",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:26:14.687031",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:26:13.095313",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:25:46.996127",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:25:46.639444",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:25:59.410805",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:25:53.659579",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:26:13.094968",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 19:26:07.855164",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:26:16.672438",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:26:14.687273",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "https://web.archive.org/web/20200529192616/https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:26:07.854917",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 19:25:59.411061",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:25:46.639094",
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:25:45.450401",
+                "pwd": "/data/archive/1590766226.367",
+                "output": "Fearing Covid infection, CRPF man \u2018commits suicide\u2019 in J&amp;K | India News,The Indian Express"
+            }
+        ]
+    },
+    "updated": "1590789394.28686",
+    "tags": "",
+    "url": "https://indianexpress.com/article/india/fearing-covid-infection-crpf-man-commits-suicide-in-jk-6405375/"
+}

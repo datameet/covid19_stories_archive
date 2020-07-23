@@ -1,0 +1,149 @@
+{
+    "title": "Unable to detect page title",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.195",
+    "history": {
+        "git": [],
+        "wget": [],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:33:36.699073",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:33:32.678815",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "media"
+            }
+        ],
+        "favicon": [],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:33:25.906663",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:33:22.490688",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:33:32.678464",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:33:29.385803",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:33:38.460290",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:33:36.699322",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "https://web.archive.org/web/20200529173337/https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:33:29.385520",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:33:25.906938",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:33:22.489612",
+                "cmd": [
+                    "curl",
+                    "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:33:20.806042",
+                "pwd": "/data/archive/1590766226.195",
+                "output": "Unable to detect page title"
+            }
+        ]
+    },
+    "updated": "1590788249.845887",
+    "tags": "",
+    "url": "https://www.gujaratsamachar.com/news/gir-somnath/plumber-commits-suicide-as-business-collapses-due-to-lockdown"
+}

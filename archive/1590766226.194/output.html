@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gujaratSamachar" class="ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <link type="application/manifest+json" rel="manifest" href="/manifest.json">
+    <meta charset="UTF-8">
+    <title data-ng-bind="$state.current.data.pageTitle + 'Gujarati News - News in Gujarati - Gujarati Newspaper - ગુજરાતી સમાચાર - Gujarat Samachar'" class="ng-binding">Gujarati News - News in Gujarati - Gujarati Newspaper - ગુજરાતી સમાચાર - Gujarat Samachar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="allow-search" content="yes">
+    <meta name="googlebot" content="index,follow, noodp">
+    <meta name="yahooSeeker" content="index, follow">
+    <meta name="msnbot" content="index, follow">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <link rel="shortcut icon apple-touch-icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Dynamic MetaTags Start -->
+    <meta name="title" content="Gujarat Samachar : World's Leading Gujarati Newspaper, Gujarati News, News in Gujarati, Gujarat News, News from Ahmedabad, Baroda, Bhuj, Bhavnagar, Rajkot, Surat, Gujarati News Headlines, Gujarati Headlines, Breaking News, 2G Spectrum Scam Exposed, 2g Scam Explained, video clip, muncipal, kite, festival, ahmedabad news, Politics news, opposition party, congress, bjp, health, relations">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="News from Ahmedabad,News from Baroda,Gujarati Newspaper,Ahmedabad News,Baroda News,Gujarati News live,Gujarati, Gujrati News,Gujarat Samachar,Gujarati News,Gujarati News Paper,Gujarati News paper,gujrat,samachar,gujarati garba,news from Ahmedabad,news from Baroda,news from Surat,magazine,purti,gujarat samachar,gujarat, gujarati news, news, india, ahmedabad, narendra modi, bjp, congress, election, politics, nrg, nri, baroda, bhavnagar, rajkot, surat, vadodara, sandesh, bhaskar, times, songs, bollywood, films, movies, business, finance, rent, android, ipod, iphone, mac, phone, mobile, ring tone,usa,america,ravi purti,Gujarati News Headlines,Gujarati Headlines">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@gujratsamachar">
+    <!-- ngIf: $state.current.name == 'root.mainSidebar.articleDetails' -->
+    <!-- ngIf: $state.current.name != 'root.mainSidebar.articleDetails' --><meta name="twitter:title" content="Gujarat Samachar : World's Leading Gujarati Newspaper, Gujarati News, News in Gujarati, Gujarat News, News from Ahmedabad, Baroda, Bhuj, Bhavnagar, Rajkot, Surat, Gujarati News Headlines, Gujarati Headlines, Breaking News, 2G Spectrum Scam Exposed, 2g Scam Explained, video clip, muncipal, kite, festival, ahmedabad news, Politics news, opposition party, congress, bjp, health, relations" ng-if="$state.current.name != 'root.mainSidebar.articleDetails'" class="ng-scope"><!-- end ngIf: $state.current.name != 'root.mainSidebar.articleDetails' -->
+    <meta name="twitter:description" content=" ">
+    <meta name="twitter:image" content="https://www.gujaratsamachar.com/assets/images/GSlogo_200.jpg">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="628">
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- ngIf: $state.current.name == 'root.mainSidebar.articleDetails' -->
+    <!-- ngIf: $state.current.name != 'root.mainSidebar.articleDetails' --><meta property="og:title" content="Gujarat Samachar : World's Leading Gujarati Newspaper, Gujarati News, News in Gujarati, Gujarat News, News from Ahmedabad, Baroda, Bhuj, Bhavnagar, Rajkot, Surat, Gujarati News Headlines, Gujarati Headlines, Breaking News, 2G Spectrum Scam Exposed, 2g Scam Explained, video clip, muncipal, kite, festival, ahmedabad news, Politics news, opposition party, congress, bjp, health, relations" ng-if="$state.current.name != 'root.mainSidebar.articleDetails'" class="ng-scope"><!-- end ngIf: $state.current.name != 'root.mainSidebar.articleDetails' -->
+    <meta property="og:description" content=" ">
+    <meta property="og:image" content="https://www.gujaratsamachar.com/assets/images/GSlogo_200.jpg">
+    <!-- Dynamic MetaTags End -->
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Gujarat Samachar">
+    <meta name="theme-color" content="#EE1729">
+
+    <!-- Note: Do not use transparency in your Apple Touch icon. The reason: iOS forbids transparent icons and it fills the gaps with black. -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="canonical" href="">
+    <link rel="preconnect" href="https://static.gujaratsamachar.com" crossorigin="anonymous">
+    <!-- Angular UI css start -->
+
+    <link rel="stylesheet" async="async" ng-href="https://www.gujaratsamachar.com/bower_components/fancybox-plus/css/jquery.fancybox-plus.css?v.0.0.90" href="https://www.gujaratsamachar.com/bower_components/fancybox-plus/css/jquery.fancybox-plus.css?v.0.0.90" media="all">
+    <link rel="stylesheet" async="async" ng-href="https://www.gujaratsamachar.com/src/style.min.css?v.0.0.90" href="https://www.gujaratsamachar.com/src/style.min.css?v.0.0.90" media="all">
+    <link rel="stylesheet" async="async" ng-href="https://www.gujaratsamachar.com/assets/css/dist.css?v.0.0.90" href="https://www.gujaratsamachar.com/assets/css/dist.css?v.0.0.90" media="all">
+    <link rel="stylesheet" async="async" ng-href="https://www.gujaratsamachar.com/assets/css/responsive.css?v.0.0.90" href="https://www.gujaratsamachar.com/assets/css/responsive.css?v.0.0.90" media="all">
+    <link rel="stylesheet" async="async" ng-href="https://www.gujaratsamachar.com/assets/css/classifiedicon.css?v.0.0.90" href="https://www.gujaratsamachar.com/assets/css/classifiedicon.css?v.0.0.90" media="all">
+
+    <!-- Stream CAT Fish 30082019 Start -->
+    <script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        if (!navigator.userAgent.includes('Prerender')) {
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/21710144538/DP-DP-Gujaratsamachar.com-CF-1x1', [1, 1], 'div-gpt-ad-1585136731745-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        }
+    </script><link rel="preload" href="https://adservice.google.co.in/adsid/integrator.js?domain=www.gujaratsamachar.com" as="script"><script type="text/javascript" src="https://adservice.google.co.in/adsid/integrator.js?domain=www.gujaratsamachar.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.gujaratsamachar.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.gujaratsamachar.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020052601.js?21066296" async=""></script>
+    <!-- /21710144538/DP-DP-Gujaratsamachar.com-CF-1x1 -->
+    <link rel="prefetch" href="https://2670d65b790db684372d5301e00848d6.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html"><script src="modules/main/articleDetails/articleDetails.controller.js?v.0.0.90" async=""></script><script src="directives/disqusComments.directive.js?v.0.0.90" async=""></script><script src="modules/main/home/articlesByCity/articlesByCity.controller.js?v.0.0.90" async=""></script><script src="modules/main/home/articlesByCategory/articlesByCategory.controller.js?v.0.0.90" async=""></script><script src="bower_components/angular-socialshare/dist/angular-socialshare.min.js?v.0.0.90" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head><body when-scrolled="more()"><div id="div-gpt-ad-1585136731745-0" style="width: 1px; height: 1px;" data-google-query-id="CPvYzrDM2ekCFQ0waAodCWwM3A">
+        <div id="google_ads_iframe_/21710144538/DP-DP-Gujaratsamachar.com-CF-1x1_0__container__" style="border: 0pt none; display: none;"><iframe id="google_ads_iframe_/21710144538/DP-DP-Gujaratsamachar.com-CF-1x1_0" title="3rd party ad content" name="google_ads_iframe_/21710144538/DP-DP-Gujaratsamachar.com-CF-1x1_0" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div>
+    </div>
+    <!-- Stream CAT Fish 30082019 End -->
+
+    <!-- Stream Disp Banner 25032020 Start -->
+    <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+        if (!navigator.userAgent.includes('Prerender')) {
+            window.googletag = window.googletag || { cmd: [] };
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/21710144538/DR-DP-RS-Gujaratsamachar.com-N-SF-728x90', [728, 90], 'div-gpt-ad-1583572793804-0').addService(googletag.pubads());
+                googletag.defineSlot('/21710144538/DR-DP-RS-Gujaratsamachar.com-N-SF-300x250', [300, 250], 'div-gpt-ad-1583573032801-0').addService(googletag.pubads());
+                googletag.defineSlot('/21710144538/DP-RS-Gujaratsamachar.com-Namitha-300x600', [[120, 600], [300, 600]], 'div-gpt-ad-1584348755488-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        }
+    </script> -->
+    <!-- Stream Disp Banner 25032020 End -->
+
+    <!-- Stream In Image 25032020  Start -->
+    <script src="https://www.googletagservices.com/tag/js/gpt.js">
+        if (!navigator.userAgent.includes('Prerender')) {
+            googletag.pubads().definePassback('/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1', [1, 1]).set("page_url", "gujaratsamachar.com").display();
+        }
+    </script><div id="gpt_unit_/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1_1" data-google-query-id="CJijz7DM2ekCFRuDrAIdRZkA0w" style="display: none;"><div id="google_ads_iframe_/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1_1" title="3rd party ad content" name="google_ads_iframe_/21710144538/DP-RS-Gujaratsamachar.com-Namitha-1x1_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+    <script src="https://www.googletagservices.com/tag/js/gpt.js">
+        if (!navigator.userAgent.includes('Prerender')) {
+            googletag.pubads().definePassback('/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1', [1, 1]).set("page_url", "gujaratsamachar.com").display();
+        }
+    </script><div id="gpt_unit_/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1_1" data-google-query-id="CJjpz7DM2ekCFQoh1Qodkz8P9A" style=""><div id="google_ads_iframe_/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1_1__container__" style="border: 0pt none; display: none;"><iframe id="google_ads_iframe_/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1_1" title="3rd party ad content" name="google_ads_iframe_/21710144538/dr-ii-rs-gujaratsamachar.com-nam-1x1_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="3" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+    <!-- Stream In Image 25032020  End -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics Start-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38699406-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-38699406-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics End-->
+    <base href="/">
+
+
+
+    <main>
+        <div class="" style="">
+            <!-- uiView: --><div ui-view="" style="" class="ng-scope"></div>
+        </div>
+    </main>
+
+
+    <!-- angular libs start -->
+    <script type="text/javascript" src="/src/mainLibs.min.js?v.0.0.90"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><iframe id="google_osd_static_frame_2870818772350" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe><div id="so_center_33311319" style="position: fixed; z-index: 999999999; text-align: center; width: 728px; height: 90px; left: 356px; top: 1910px;"><a style="z-index:999999999;width:12px;height:12px;position:absolute;top:0px;left:0px;text-decoration:none;" href="javascript:window.top._stay_on_close('so_center_33311319');"><img style="width:12px;position:absolute;left:0px;top:0px; background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%) rgba(0, 0, 0, 0.3); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px 2px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCRMHJDWxrGqMAAAAfElEQVQoz4WRsRHCMAxFv2jCAvjwTMxLFggdqeKCHbKAy0cDZxsJUKE76z/ZX5Zx06SL7XJB0qwqVqCQvEwB7uLEBjzIg/yunvtDDmU5xMkjEsqdqfLKznS75aP7oCgs6v/9RLMW/svo3CF+sAGJ5+6Qf8syFh2/rvuq+gQCIMf5MCc1PgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wOS0xOVQwNzozNjo1MyswMDowMMALQagAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDktMTlUMDc6MzY6NTMrMDA6MDCxVvkUAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="></a><div style="width: 728px; height: 90px; transform-origin: 0px 0px; transform: scale(1, 1);"><iframe src="about:blank" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="margin: 0px; padding: 0px; overflow: hidden; width: 728px; height: 90px;"></iframe></div></div>
+    <script type="text/javascript" src="/src/libs.min.js?v.0.0.90"></script>
+
+    <script type="text/javascript" src="/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/assets/js/angular-masonry.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/home/home.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/articleDetails/articleDetails.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/articleList/articleList.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/magazine/magazine.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/slideShow/slideShow.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/videoGallery/videoGallary.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/photoGallery/photoGallary.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/metaTag/metaTag.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/sharePdfLink/sharePdfLink.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/sitemap/sitemap.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/sections/sections.module.js?v.0.0.90"></script>
+    <script type="text/javascript" src="/modules/main/classifieds/classified.module.js?v.0.0.90"></script>
+
+    <!-- angular libs end -->
+    <script src="/src/app.min.js?v.0.0.90"></script>
+
+
+
+</body></html>

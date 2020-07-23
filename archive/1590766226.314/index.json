@@ -1,0 +1,213 @@
+{
+    "title": "Lockdown Fallout: Odisha Youth Fails To Buy Medicine For Sick Father, Commits Suicide - ODISHA BYTES",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.314",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 14,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778773",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:59:48.358728",
+                "start_ts": "2020-05-29 18:59:33.661881",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 19:00:14.551380",
+                "start_ts": "2020-05-29 19:00:09.488119",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=odishabytes.com"
+                ],
+                "end_ts": "2020-05-29 18:59:33.660581",
+                "start_ts": "2020-05-29 18:59:33.380163",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 18:59:54.549303",
+                "start_ts": "2020-05-29 18:59:48.358881",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 21:53:43.580297",
+                "start_ts": "2020-05-29 21:53:36.097033",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 19:00:09.487091",
+                "start_ts": "2020-05-29 19:00:03.102780",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 19:00:17.348097",
+                "start_ts": "2020-05-29 19:00:14.551762",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "https://web.archive.org/web/20200529190016/https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+                ],
+                "end_ts": "2020-05-29 19:00:03.102542",
+                "start_ts": "2020-05-29 18:59:54.549979",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:59:33.379875",
+                "start_ts": "2020-05-29 18:59:32.649758",
+                "pwd": "/data/archive/1590766226.314",
+                "output": "Lockdown Fallout: Odisha Youth Fails To Buy Medicine For Sick Father, Commits Suicide - ODISHA BYTES"
+            }
+        ]
+    },
+    "updated": "1590789223.584669",
+    "tags": "",
+    "url": "https://odishabytes.com/lockdown-fallout-odisha-youth-fails-to-buy-medicine-for-sick-father-commits-suicide/"
+}

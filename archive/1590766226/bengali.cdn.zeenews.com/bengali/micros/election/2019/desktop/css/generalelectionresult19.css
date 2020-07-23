@@ -1,0 +1,236 @@
+.grap img{float:none!important}
+.grap{position:relative;text-align:center;font-weight:500;font-size:18px}
+.grap-txt{width:100%;position:absolute;bottom:0}
+.tar{display:block;font-size:11px;color:#666}
+
+
+.asselechedrstatebxh2{margin-top: 7px;font-size: 27px;margin-left: 10px;}
+.asselechedrstatebx img{float: left;}
+.asselechedrstatebx li a{font-weight: normal; font-size: 18px}
+
+.electionlivetv{margin-left: 0; margin-right: 0; margin-top: 25px}
+.asselechedrstatebx ul{white-space: nowrap;font-family: 'roboto';}
+.post-state-block{width: 100%}
+.kyecandidatesbx .bx-controls{width: 100%;top: 0px;}
+.kyecandidatesbx .bx-wrapper .bx-controls-direction a{top:72%}
+.kyecandidatesbx  .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom: 8px}
+.kyecandidatesbx .bx-wrapper img{margin-right: 10px}
+.bx-wrapper{margin-bottom: 0px}
+.k-sec{min-height: 85px}
+
+.tablebjpbox{width: 32%; margin-right: 1%; float: left;border-bottom: 5px solid #ff8033; border-right:0px solid #ececec; border-left:1px solid #ececec; margin-bottom: 10px }
+
+.tablebjpbox table{width:100%;  table-layout: fixed;border-collapse: collapse; }
+.tablebjpbox table thead{background:  #ff8033; color: #fff;}
+.tablebjpbox table thead td{color: #fff; font-size: 14px; font-weight: bold;width: 28%;}
+.tablebjpbox tr{display: block; border-bottom: 1px solid #ececec;}
+.tablebjpbox  td{padding:2px 0 2px 5px; width: 30%; display: inline-block; color:#313131; padding-top: 5px; padding-bottom: 5px; font-size: 13px; text-align: center}
+.tablebjpbox table tbody, .tablebjpbox table thead{  display: block;}
+.tablebjpbox table tbody {overflow: auto;height: 240px; scrollbar-width: thin;}
+
+.tablecongbox{border-bottom: 5px solid #028be2; }
+.tablecongbox table thead{background:  #028be2; }
+
+.tableothersbox{width: 34%; margin-right: 0;border-bottom: 5px solid #189d0e; }
+.tableothersbox table thead{background:  #189d0e; }
+.just{scrollbar-width: thin;height: 320px;}
+.key-data-block{scrollbar-width: thin;}
+.just::-webkit-scrollbar, .tablebjpbox table tbody::-webkit-scrollbar, .tableelcectincosbox::-webkit-scrollbar, .key-data-block::-webkit-scrollbar {width: 5px;background-color: #cdcdcd;}
+
+.just::-webkit-scrollbar-thumb, .tablebjpbox table tbody::-webkit-scrollbar-thumb, .tableelcectincosbox::-webkit-scrollbar-thumb, .key-data-block::-webkit-scrollbar {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);background-color: #cdcdcd;}
+.just-quote{font-size: 19px;}
+.electionlivetv .nation-lead-txt{line-height: 23px;font-size: 22px;margin-bottom: 10px;}
+
+
+.constituncytracerbox{border:1px solid #dbdbdb; background:#f3f3f3; margin:10px auto 30px auto; padding-left:10px; padding-top: 10px; font-family:'roboto'; position:relative;}
+.constituncytracerbox h2{display:inline-block; text-transform:uppercase; font-size:17px; color:#36363c;  width: 17%}
+.constituncytracerbox div{display:inline-block}
+
+.constituncytracerbox1 .consitituncyname {width: 40%}
+.constituncytracerbox1 .consitituncyname input {width: 81%; min-width:auto}
+
+.consitituncyname button{background:#565656; border:0px; color:#fff; padding:0px 5px 2px 5px;  margin-right:3px; float: right;margin-top: 4px;font-size: 16px;}
+
+.consitituncyname{background: #fff;color: #8c8c8c; border: 1px solid #d5d5d5; margin: 0px auto 10px auto; }
+.consitituncyname input{color:#8c8c8c; font-size:17px; border:0px solid #d5d5d5; padding:0px 5px 5px 5px; margin:4px auto 1px auto;  background: #fff; font-family: 'roboto'; text-transform: uppercase;min-width: 205px}
+.video-story h2{font-size: 20px;}
+
+.key-data-block h5 a{color: #333}
+.ass-slider{font-family: 'roboto';}
+.mini-list-story h2{overflow:hidden;font-weight:400;line-height:22px;font-size:14px;display:inline;}
+.mini-list-story h2 a{margin:0;padding:0;display:inline;color:#000;font-weight:400}
+
+.f-result{text-align:right;}
+.f-result a{color:#028be2;font-size:11px;text-align:right;}
+.ass-state-tr{background-color:#f5f5f5;}
+.ass-state-name{font-size:16px;color:#000;}
+.ass-slider{width: 100%;}
+.ass-slider table{width:100%;}
+.ass-state-tr td{padding:5px;}
+.ass-digit-block td{border:1px solid #ededed;}
+.ass-grey-bg{background-color:#ededed;font-size: 14px; text-transform: uppercase; padding: 2px 0}
+.bjpcolrtxt{color:#ff8033; }
+.incpcolrtxt{color:#028be2}
+.otherpcolrtxt{color:#9a9a9a}
+.ass-graybigtxt{font-size: 34px; color: #000}
+.ass-graylink{font-weight: normal; font-size: 19px; background: url(../images/asseletionicon.png) no-repeat 12px 5px; padding-left: 28px}
+.ass-graylink a{color: #36363c;}
+.consitituncylinktxt{color: #9b9b9b; text-align: center; display: block}
+
+.mrgntop40px-ele{margin-top: 40px}
+.tableelcectincosbox .lead, .tableelcectincosbox .trail, .tableelcectincosbox .waiting{color: #FFF;font-family: 'roboto';font-size: 12px;padding: 3px 8px 4px 8px;}
+
+.bx-wrapper{box-shadow: none}
+.bxsliderwhosaidwhat li{padding-bottom: 35px}
+.electionlivetv .nation-lead-txt{border-bottom:0}
+.electionlivetv .m-img-block{max-width:134px;margin-right:10px;float:left;position:relative;}
+.electionlivetv .head-one a, .electionlivetv .head-two a{font-size: 28px}
+.ass-slider .head-two a, .mrgntop40px-ele .head-two a{font-size: 28px}
+.whosaidwhatbox1 .bx-wrapper .bx-controls-direction a{top:-40px; height: 40px; width: 40px; border-radius: 50px; border: 1px solid #eeeeee; }
+
+.whosaidwhatbox1 .bx-wrapper .bx-prev{left: auto; right: 55px; background: url('../images/sliderarrowrightbutton.png@a=sd') no-repeat center 15px #fff;}
+
+.whosaidwhatbox1 .bx-wrapper .bx-next{right: 0;background: url('../images/sliderarrowleftbutton.png@a=sd') no-repeat center 15px #fff; }
+
+#seatchange{width:100%; display: block; margin-bottom: 20px}
+
+.asselechedrstatebx1{overflow: auto; background: #fff}
+.nav-aelegujbx{ float:none; border-top: 4px solid #e21727; margin-bottom: 10px; margin-top: -20px}
+.generalelectionleft{float:left; display: flex; margin-top: 15px}
+.generalelectionleft .aabkibartxt{height: auto}
+.generalelectionleft img{display: inline-block; }
+.generalelectionleft h2{font-size:13px; color: #000; text-transform: uppercase; line-height: 37px; display: inline-block}
+.generalelectionleft h2 span{display: block;font-size: 50px}
+.generalelectionright{float: right; width: 61%}
+.generalelectionright1{float: none; width: 100%}
+.generalelectionright ul{float: none;width: 100%;}
+.aegujhdrtablft .aegujhdrtablft li:first-child{width: 30%}
+.asselechedrstatebxh2 a{font-size: 23px !important}
+
+
+.keymargintop .bx-controls{top:45px}
+.keymargintop .bx-wrapper .bx-controls-direction a{top: 30%;}
+.keycanditaremadhyaprdesh{margin-bottom: 20px}
+
+.key-data-block{overflow: auto}
+
+
+.aselconstbx .tab-content{background: transparent}
+.livetvbox{background: url(../images/livetvicon.png)no-repeat 10px center #e21727; font-family: 'roboto'; font-size: 12px; text-transform: uppercase;  margin-bottom: 5px; height: 33px; padding-top: 5px}
+
+.livetvbox h2{display: inline-block; margin-left: 45px; font-weight: normal; font-size: 14px; color: #fff}
+.livetvbox select{display: inline-block; float: right;margin-right: 5px;width: 175px; position:relative;vertical-align:middle;height: 22px;}
+.electionlivetv .mini-con{line-height: 14px; font-size: 20px}
+.electionlivetv .mini-list-story h2{font-size: 18px}
+
+
+.w-party-color{color:#FFF;}
+.b-party-color{color:#000;}
+.tablebjpbox table tbody a{color:#000;}
+
+.alliancetblebx {margin: 0; padding: 0; display: flex;align-items: center;justify-content: center;}
+                                      .alliancetblebx li{list-style-type: none; display: inline-block; width: 55%;  height: 37px; border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2;align-self: flex-start; padding-top: 8px; padding-bottom: 35px; text-align: center; font-size: 20px}
+                                      .alliancetblebx li:first-child{width: 17%; padding-top: 0; border-top: 0; border-bottom: 0; margin-right: -17px; margin-left: 0px}
+                                      .alliancetblebx li:nth-child(2) {padding-left: 25px; width: 52%; text-align: left}
+                                      .alliancetblebx li:last-child{border-right: 1px solid #e2e2e2; }
+                                      .alliancetblebx li:first-child a{ border: 1px solid #e2e2e2; border-radius: 50px;  display: block; padding:3px;  width: 45px; height: 45px}
+                                      .alliancetblebx .orange h4, .alliancetblebx .blue h4{padding-top: 0px}
+.alliancetblebx .orange h4 a, .alliancetblebx .blue h4 a, .alliancetblebx .green h4 a{font-size: 20px}
+                                     .dataeletable .data-head tr{border-bottom: 0}
+                                      .dataeletable tbody{margin-top: 10px}
+                                      .alliancetblebx .green h4, .alliancetblebx .blue h4{padding-top: 0px;}
+                                      .state-data-block{padding: 0}
+                                      
+                                      .dataeletable table{margin-top: 10px}
+                                      .dataeletable .data-head tr th{width: 36%;text-align: center;}
+.dataeletable .data-head tr th:first-child{text-align: left; }
+
+.electionlivetv .margin-bt40px{margin-bottom: 25px; margin-left: -15px;width: 110%;}
+.tar {
+    display: block;
+    font-size: 11px;
+    color: #666;
+}
+.grap-txt{font-size: 18px;}
+.candidate-section{max-width: 100%}
+.txt2019{display: block; text-align: right; font-size: 20px !important; line-height:28px !important}
+
+.sponserlink{float: left; margin-left: 20px}
+.sponserlink h2{font-size: 11px; color: #8d8d8d; text-align: center; font-weight: normal; margin-bottom: 7px; display: block}
+.sponserlink img{margin-left: 10px}
+.aabkibartxt{height: 60px}
+
+.aegujhdrtablft1 li{width: 22%}
+.aegujhdrtablft1 li:first-child{width: 26% !important}
+.bjpindextablewin h4{font-size: 40px !important;font-weight: bold; line-height: 35px !important; text-align: center}
+.bjpindextablechange h4{font-size: 25px !important;font-weight: normal; line-height: 34px !important; color:#a8a8a8 !important; text-align: center}
+.bjpindextablewin span, .bjpindextablechange span{font-size: 11px; font-weight: normal; color: #8d8d8d !important; display: block; text-align: center; text-transform: uppercase}
+
+.aegujbjpclor{color: #ff873d !important}
+.aegujbjpclor1{display: block; color: #ff873d !important}
+.aegujincclor1{display: block; color: #028be2 !important}
+.aegujincclor{color: #028be2 !important}
+.aegujothrclor1{display: block; color: #189d0e !important}
+.aegujothrclor{ color: #189d0e !important}
+
+.asselechedrstatebx2{background: #fff; margin: 0 0 0 -15px; padding:0 }
+.constituncytracerbox2{margin: 0 0 0 -15px}
+
+.keycandidatenew{position: relative; padding:0 35px 30px 35px}
+.keycandidatenew .bx-viewport{height: auto !important}
+.keycandidatenew  .bx-wrapper .bx-controls-direction a{top:50%;height: 40px; width: 40px; border-radius: 50px; border: 1px solid #eeeeee;}
+.keycandidatenew  .bx-wrapper .bx-prev{left: -45px; background: url('../images/sliderarrowrightbutton.png@a=sd') no-repeat center 15px #fff;}
+.keycandidatenew  .bx-wrapper .bx-next{right: -45px; background: url('../images/sliderarrowleftbutton.png@a=sd') no-repeat center 15px #fff;}
+.keycandidatenew li img{margin-right: 5px}
+.bxsliderwhosaidwhat .assemelec-quote{width: 100%}
+.whosaidwhatbox1{margin-bottom: 30px}
+.aegujhdrtablft li:first-child{width: 35%}
+
+
+.expand{height: 45px; overflow: hidden; text-align: left; }
+.expandh4{display: inline-block; padding: 5px 25px 5px 5px; border: 1px solid #7b7b7b; margin: 5px auto 0 auto; text-align: center; background: url(../images/downarrowcons.png) no-repeat right 7px top 13px; cursor: pointer; margin-left: 45%; font-weight: normal}
+
+.expandh4less{display: inline-block; padding: 5px 25px 5px 5px; border: 1px solid #7b7b7b; margin: 30px auto 0 auto; text-align: center; background: url(../images/uparrowcons.png) no-repeat right 7px top 13px; cursor: pointer; margin-left: 45%; font-weight: normal}
+.videoexpandheight{height:auto; overflow:visible; transition: height 2s}
+.aegujhdrtablft li{margin-top: 20px}
+
+.assmelecptag{line-height: 24px}
+.activeas1{border-bottom: 3px solid #e21727}
+
+.aegujhdrtablft li{width: 20%;}
+.aegujhdrtablft li h4 a{margin-top: 10px}
+.ass-graylink{font-weight: normal; font-size: 15px; background: url(../images/asseletionicon.png) no-repeat 5px 5px; padding-left: 19px; margin-top: 2px;}
+
+
+
+@media(max-width:1300px){
+.consitituncyname input{min-width: 170px}
+
+}
+
+
+
+
+@media(max-width:1175px){
+    
+    
+    .asselechedrstatebx ul{width: 100%; padding: 0}
+    .consitituncyname input{min-width: 140px; font-size: 11px}
+    .constituncytracerbox h2{width: 20%}
+    .generalelectionright{width: 57%}
+    .generalelectionright1{width: 100%}
+    .aegujhdrtablft li:first-child{width: 40%}
+    .aegujhdrtablft li h4{font-size: 22px}
+    .aegujhdrtablft li img{margin-right: 2px}
+    .generalelectionleft h2 span{font-size: 40px}
+    .generalelectionleft h2{font-size: 15px}
+    .generalelectionleft img{display: block; margin: 0 auto 5px auto}
+    .constituncytracerbox1 .consitituncyname {width: 38%}
+.constituncytracerbox1 .consitituncyname input {width: 84%; min-width:auto}
+}
+
+
+
+
+
+

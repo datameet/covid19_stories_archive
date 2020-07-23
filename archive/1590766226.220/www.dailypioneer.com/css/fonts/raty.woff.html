@@ -1,0 +1,39 @@
+<div style='text-align:center; padding-top:100px; font-family:arial;font-size:14px; '><img src='https://www.dailypioneer.com/images/logo.jpg' border=0 ><BR>Please wait...<BR><img src='https://www.dailypioneer.com/images/small-loader.gif' border=0 ></div>            
+            
+            <script src="../../js/all.min.js"></script>
+            <script language="javascript" type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                
+                 var SECURLKEY = "css";
+                 var CATEGORYURLKEY = "fonts";
+                 var SUBCATEGORYURLKEY = "raty.woff";
+                 //alert(SECURLKEY + "======" + CATEGORYURLKEY + "======" + SUBCATEGORYURLKEY);
+                 //return false; 
+                
+                 $.ajax({
+                    type: "POST",
+                    url: "https://www.dailypioneer.com/ajax_common.php",
+                    data: "type=from404&WCH=2&SECURLKEY=" + SECURLKEY + "&CATEGORYURLKEY=" + CATEGORYURLKEY + "&SUBCATEGORYURLKEY=" + SUBCATEGORYURLKEY,
+                    beforeSend: function() {
+                        
+                    },
+                    success: function(msg) 
+                    {
+                        
+                        console.log(msg);
+                        var spl_txt = msg.split("~~~");
+                        window.location.href = spl_txt[1]; 
+                        
+                    }
+                    
+                });
+                        
+                 
+            });    
+            </script>
+            
+            
+            
+            
+            
+         

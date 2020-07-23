@@ -1,0 +1,213 @@
+{
+    "title": "As COVID-19\u00a0turns Telangana\u00a0dry, alcoholic commits suicide- The New Indian Express",
+    "url": "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html",
+    "timestamp": "1590766226.82",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770176",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:28.776812",
+                "start_ts": "2020-05-29 16:36:16.020861",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:43.871913",
+                "start_ts": "2020-05-29 16:36:42.395793",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "end_ts": "2020-05-29 16:36:16.020075",
+                "start_ts": "2020-05-29 16:36:15.675391",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:35.518947",
+                "start_ts": "2020-05-29 16:36:28.776984",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 17:31:52.946282",
+                "start_ts": "2020-05-29 17:31:48.192405",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:42.394775",
+                "start_ts": "2020-05-29 16:36:38.710758",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:46.045462",
+                "start_ts": "2020-05-29 16:36:43.872181",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "https://web.archive.org/web/20200529163645/https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html"
+                ],
+                "end_ts": "2020-05-29 16:36:38.710489",
+                "start_ts": "2020-05-29 16:36:35.519857",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/states/telangana/2020/mar/28/as-covid-19-turns-telangana-dry-alcoholic-commits-suicide-2122527.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:36:15.674944",
+                "start_ts": "2020-05-29 16:36:15.182963",
+                "pwd": "/data/archive/1590766226.82",
+                "output": "As COVID-19\u00a0turns Telangana\u00a0dry, alcoholic commits suicide- The New Indian Express"
+            }
+        ]
+    },
+    "updated": "1590788203.126512",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

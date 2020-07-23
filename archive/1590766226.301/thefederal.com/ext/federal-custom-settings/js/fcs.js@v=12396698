@@ -1,0 +1,51 @@
+jQuery(document).ready(function() {  
+	var checkPop,popDate;
+	var cDate = getTodayDate();
+	jQuery('.cusmodal-close').on('click',function(){ 
+       jQuery('#cusmodal').hide(); 
+	   setCookie('closedPop',1,1);
+	   setCookie('popDate',cDate,1);
+    }); 
+	checkPop = getCookie('closedPop'); 
+	popDate = getCookie('popDate'); 
+	if(popDate != cDate) {
+		setCookie('popDate',cDate,1);
+		setCookie('closedPop',0,1);
+		setTimeout(function(){ jQuery('#cusmodal').show();  }, 4000);
+		
+	} else {
+		if(checkPop != 1) {
+			setTimeout(function(){ jQuery('#cusmodal').show();  }, 6000);
+		} 
+	}
+ 
+});
+function getTodayDate () {
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	var yyyy = today.getFullYear();
+	today = mm + '-' + dd + '-' + yyyy;
+	return today;
+}
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}

@@ -1,0 +1,75 @@
+jQuery( document ).ready( function() {
+	try {
+	var og_title       = encodeURIComponent( document.querySelector( "meta[property='og:title']" ).getAttribute( "content" ) );
+	var og_url         = document.querySelector( "meta[property='og:url']" ).getAttribute( "content" );
+	} catch( err ) {}
+	var nextp = jQuery("#nextbutton").data('href');
+	var s_count_onoff = 0;
+	if( s_count_onoff == 1 ){
+		var sharecount = '<div class="ie-count-container"><div id="sharecount" class="sharecount ie-count">0</div><div class="ie-share-title">Shares</div></div>';
+	} else {
+		var sharecount = '';
+	}
+	var share_button   = sharecount +'<ul class="custom-share"> <li class="facebook"><a target="_blank" rel="nofollow" aria-label="Facebook" href="https://www.facebook.com/sharer.php?u='+ encodeURIComponent( og_url ) +'"><i class="fb"></i><span class="ie-lable">Share</span></a></li><li class="twit"><a title="Share on Twitter" rel="nofollow" target="_blank" aria-label="Twitter" href="https://twitter.com/intent/tweet?url='+ encodeURIComponent( og_url ) +'&via=jansatta &text='+ og_title +'"><i class="twit"></i></a></li><li class="linke"><a rel="nofollow" onClick="ga(&quot;send&quot;, {hitType: &quot;social&quot;, socialNetwork: &quot;LinkedIn&quot;, socialAction: &quot;Share&quot;, socialTarget: &quot;'+ encodeURIComponent( og_url ) +'&quot;, page: &quot;'+ encodeURIComponent( og_url ) +'&quot;})" href="https://www.linkedin.com/shareArticle?url='+ encodeURIComponent( og_url ) +'&utm_source=linkedin&utm_medium=social&utm_campaign=socialsharebuttons" aria-label="Linkedin" target="_blank"><i class="linke"></i></a></li><li class="whatsapp"><a rel="nofollow" data-action="share/whatsapp/share" aria-label="Whatsapp" href="https://api.whatsapp.com//send?text='+og_title+' – '+encodeURIComponent( og_url )+'&utm_source=whatsapp_web&utm_medium=social&utm_campaign=socialsharebuttons" onClick="ga(&quot;send&quot;,{hitType:&quot;social&quot;,socialNetwork:&quot;Whatsapp&quot;,socialAction:&quot;Share&quot;,socialTarget:&quot;'+og_url+'&quot;,page:&quot;'+og_url+'&quot;})" target="_blank"><i class="wapp"></i></a></li></ul><div class="next-button"><a class="click-event" id="ns_mobile" href="'+nextp+'" aria-label="Next">Next</a></div>';
+	jQuery( '.append_social_share' ).html( share_button );
+	if( s_count_onoff == 1 && '' !== s_post_id && 'undefined' !== s_post_id ) {
+		var post_id = parseInt( s_post_id );
+		var tag_id = '';
+		if( ! isNaN( social_share_data.tag_id ) && '' !== social_share_data.tag_id ) {
+			tag_id = parseInt( social_share_data.tag_id );
+		}
+		try {
+			jQuery.ajax({
+				url: "https://graph.facebook.com?id="+og_url+"&fields=og_object{engagement}",
+				type:"get",
+				dataType: "jsonp",
+				cache: true
+			}).done( function( value ) {
+				if( value['og_object'] != undefined && value['og_object'] != null ){
+					jQuery.ajax({
+						url: "/share-count/" + post_id + '/'+parseInt( value['og_object']['engagement']['count'] )+'/update/',
+						data: {
+							"tag_id"    : tag_id,
+						},
+						cache: true
+					}).done(function( countdata ) {
+						jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+					});
+				} else {
+					jQuery.ajax({
+						url: "/share-count/" + post_id + '/getvalue',
+						data: { 
+							"tag_id"    : tag_id,
+						},
+						cache: true
+					}).done(function( countdata ) {
+						jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+					});
+				} 
+			}).fail( function() {
+				jQuery.ajax({
+					url: "/share-count/" + post_id + '/getvalue',
+					data: { 
+						"tag_id" : tag_id,
+					},
+					cache: true
+				}).done(function( countdata ) {
+					jQuery( ".sharecount" ).html( nFormatter( countdata ) );
+				});
+		  });
+		} catch( err ){}
+	}
+});
+
+function nFormatter( num ) {
+	 if ( num >= 1000000000 ) {
+		return (num / 1000000000).toFixed( 1 ).replace( /\.0$/, '' ) + 'G';
+	 }
+	 if ( num >= 1000000 ) {
+		return ( num / 1000000 ).toFixed( 1 ).replace( /\.0$/, '' ) + 'M';
+	 }
+	 if ( num >= 1000 ) {
+		return ( num / 1000 ).toFixed( 1 ).replace( /\.0$/, '' ) + 'K';
+	 }
+	 return num;
+}

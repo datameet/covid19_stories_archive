@@ -1,0 +1,194 @@
+{
+    "title": "Ankur Bhardwaj on Twitter: \"When the first scenes of migrant workers on foot were shown to us, the Union govt should've issued directions to facilitate their movement rather than stop them.\nSo many poor people dying because the administration just doesn't care for them.\u2026 https://t.co/6bPKn9EMmp\"",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.259",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:17:04.918586",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590776217",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 18:16:57.477419",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "twitter.com/Bhayankur/status/1255318671733534723/photo/1.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:17:15.440336",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:17:12.215002",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:16:57.475944",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=twitter.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:16:57.181848",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:17:07.078430",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:17:04.918798",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:17:12.214670",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:17:09.674943",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:17:17.125942",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:17:15.440616",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "https://web.archive.org/web/20200529181716/https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:17:09.674699",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:17:07.078672",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:16:57.181503",
+                "cmd": [
+                    "curl",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:16:55.163932",
+                "pwd": "/data/archive/1590766226.259",
+                "output": "Ankur Bhardwaj on Twitter: &quot;When the first scenes of migrant workers on foot were shown to us, the Union govt should&#39;ve issued directions to facilitate their movement rather than stop them.&#10;So many poor people dying because the administration just doesn&#39;t care for them.\u2026 https://t.co/6bPKn9EMmp&quot;"
+            }
+        ]
+    },
+    "updated": "1590788617.932022",
+    "tags": "",
+    "url": "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
+}

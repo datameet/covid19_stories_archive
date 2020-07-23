@@ -1,0 +1,67 @@
+{
+    "title": null,
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.382",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780776",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://ia801503.us.archive.org/26/items/NonVirusDeaths/hindi-2020-05-01.jpeg"
+                ],
+                "end_ts": "2020-05-29 19:32:59.877153",
+                "start_ts": "2020-05-29 19:32:56.517334",
+                "pwd": "/data/archive/1590766226.382",
+                "output": "ia801503.us.archive.org/26/items/NonVirusDeaths/hindi-2020-05-01.jpeg"
+            }
+        ],
+        "media": [],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=ia801503.us.archive.org"
+                ],
+                "end_ts": "2020-05-29 19:32:56.516212",
+                "start_ts": "2020-05-29 19:32:55.665789",
+                "pwd": "/data/archive/1590766226.382",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [],
+        "dom": [],
+        "archive_org": [],
+        "screenshot": [],
+        "title": []
+    },
+    "updated": "1590789415.212783",
+    "tags": "",
+    "url": "https://ia801503.us.archive.org/26/items/NonVirusDeaths/hindi-2020-05-01.jpeg"
+}

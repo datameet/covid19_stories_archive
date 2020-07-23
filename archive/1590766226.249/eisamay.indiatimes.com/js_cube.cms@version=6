@@ -1,0 +1,115 @@
+
+    var cookieExpireTime = '';
+var cubeconfig = '';
+var cubeDisplayStatus = false;
+const isHome =(location && (location.pathname === "/" || location.pathname === "default.cms")) || false;
+
+function checkGeoStatus(config) {
+    var geoInfo = Get_Ckie("geoInfo");
+    geoInfo = JSON.parse(geoInfo);
+    if (
+        config.country == "all" ||
+        config.country.indexOf(geoInfo.country) !== -1
+    ) {
+        return true;
+    } else if (config.state.indexOf(geoInfo.region) !== -1) {
+        return true;
+    } else if (config.city.indexOf(geoInfo.city) !== -1) {
+        return true;
+    }
+    return false;
+}
+
+function checkPageStatus(pageList) {
+    if (isHome && (pageList.indexOf('/') !== -1 || pageList === 'all')) {
+        return true;
+    } else if (Array.isArray(pageList)) {
+        for (let i = 0; i < pageList.length; i++) {
+            const item = pageList[i].trim();
+            if (location.pathname.indexOf(`/${item}/`) !== -1 && item !== "/") {
+                // $("#cubeFrm").show();
+                return true;
+                // break;
+            }
+        }
+        return false;
+    } else if ((pageList === "all" || pageList === "ros" || location.pathname.indexOf(`/${pageList}/`) !== -1) && !isHome) {
+        // has single keyword: all, ros
+        // $("#cubeFrm").show();
+        return true;
+    }
+
+    return false;
+}
+
+function getDisplayStatus(config) {
+    if (config && config.show == "true") {
+        const pageList =
+            config.pages.indexOf(",") !== -1 ? config.pages.split(",") : config.pages;
+
+        if (checkGeoStatus(config)) {
+            // returns true|false
+            if (checkPageStatus(pageList)) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+
+    return false;
+}
+
+var shouldShow = true;
+
+function showCube(page) {
+    $.ajax({
+        type: 'GET',
+        url: 'https://navbharattimes.indiatimes.com/pwa_campaign.cms?feedtype=json',
+        data: 'data',
+        dataType: 'json',
+        success: function(data) {
+            cubeconfig = data.cubead;
+             
+               shouldShow = cubeconfig.status
+            
+            if (typeof Get_Ckie == 'function' && !Get_Ckie('cubeVisible') && getDisplayStatus(cubeconfig)) {
+                $('#cubeFrmurl').attr('src', '/ad_cube.cms?v=1');
+                $('#cubeFrm').show();
+                shouldShow = false;
+            }
+            cookieExpireTime = cubeconfig.cookie;
+            // $('#cubeFrmurl').attr('data-cookie-expiretime', cookieExpireTime);
+
+        }
+    });
+
+}
+
+
+function closeCube() {
+    $(".cubeElection").remove();
+    $('#cubeFrm').hide();
+    $('#cubeFrm').html('');
+    //sessionStorage.setItem("cubeVisible", "true");
+    Set_Ckie('cubeVisible', true, cookieExpireTime,  '/', location.host);
+}
+
+
+$(function() {
+    //var cubeIfrmUrl=$('#cubeFrmurl').attr('src');
+    $(window).scroll(function() {
+        if (typeof Get_Ckie == 'function' && !Get_Ckie('cubeVisible') && shouldShow) {
+            if (window.pageYOffset >= 500 && !$('#cubeFrmurl').attr('src')) {
+                showCube();
+                
+            }
+        }
+    });
+    
+    if(!isHome) {
+        showCube();
+    }
+    
+})
+

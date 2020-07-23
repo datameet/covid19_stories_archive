@@ -1,0 +1,331 @@
+     function _nw18_holaplayerObj() {
+     var video_id = ""
+     var time_frame = [5, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+     this.player = "";
+     this.sources = [{
+         src: "",
+         type: '',
+         label: '1080p',
+        }];
+     this.src = "";
+     this.controls = true;
+     this.autoplay = true;
+     this.title = '';
+     this.poster = '';
+     this.settings = {
+         quality: true,
+     };
+
+     this.adTag = "";
+     
+     var p = document.location.search.substr(1);
+
+     this.ishls = false;
+
+     this.count = 1;
+     this.play = 1;
+     this.time_duration = 0;
+     var adCount = 1;
+     var playCount = 1;
+     this.video_id = "";
+     var pauseVal = 0;
+     var userclick = 0;
+     var autoplayvalue = true;
+     this.duration = "";
+     this.desc_url = 'test-url';
+     this.playerSize = '';
+     this.showad = true;
+     this.side_autoplay = '';
+     this.encoded_desc_url = encodeURIComponent(this.desc_url);
+     
+     var was_preroll = false;
+     this.ready = function () {
+         //alert("LOADED");
+     };
+
+     this.onreadyforpreroll = function () {
+         play = 0;
+     };
+     this.muted = function(muteval){
+	window["player_"+this.video_id].muted(muteval);
+     };
+     this.onloadedmetadata = function () {
+         duration = this.duration();
+     };
+     this.onplay = function () {
+         /*if (this.adCount == 1 && this.playCount == 1) {
+             ga('send', 'event', 'VP_load_Hola', this.count, 'adplay', '1');
+             ga('send', 'event', 'ad Block', 'count', this.video_id);
+         }
+
+         if (this.playCount == 1 && this.userclick == 0) {
+             ga('send', 'event', 'Video Play', 'Play', this.video_id);
+             ga('send', 'event', 'BTM Video Player', 'Play', this.video_id);
+             this.playCount++;
+         }*/
+	 
+        if(pauseVal == 1)
+        {                                    
+            pauseVal = 0;
+            ga('send', 'event', 'Video Play', 'Resume', this.video_id);
+            ga('send', 'event', 'Hola Video Player', 'Resume',this.video_id);
+        }
+        if(autoplayvalue == true){
+            if(window.location.host == "www.cnbctv18.com"){
+                ga('send', 'event', 'Hola Video Player', 'AutoPlay', this.video_id ,'', {nonInteraction: 1});   
+            }
+            else{
+                ga('send', 'event', 'Hola Video Player', 'AutoPlay', this.video_id);       
+            }
+        }
+            
+          
+        ga('send', 'Video player load Hola', this.count, 'adplay', '1');
+
+        if(adCount == 1 && playCount == 1) {
+            ga('send', 'event', 'VP_load_Hola', this.count, 'adplay', '1');
+            //ga('send', 'event', 'ad Block', 'count', video_id);
+            ga('send', 'event', 'ad Block', 'count', this.video_id);
+        }
+
+        if(playCount == 1 && userclick  == 0) {
+            ga('send', 'event', 'Video Play', 'Play', this.video_id);
+            ga('send', 'event', 'Hola Video Player', 'Play', this.video_id);
+            playCount++;
+        }
+         
+        if(userclick == 0 && autoplayvalue == false)
+         {                                        
+             ga('send', 'event', 'Video Play', 'Start', this.video_id);
+             ga('send', 'event', 'Hola Video Player', 'Start', this.video_id);
+             userclick++;
+         }
+         
+     };
+     this.onpause = function () {
+         
+         pauseVal = 1;
+         ga('send', 'event', 'Video Play', 'Pause', this.video_id);
+         ga('send', 'event', 'Hola Video Player', 'Pause', this.video_id);
+     };
+     
+     
+     
+  
+    this.onclick = function() {
+       if(userclick == 0 && autoplayvalue == false)
+         {                                        
+             ga('send', 'event', 'Video Play', 'Start', this.video_id);
+             ga('send', 'event', 'Hola Video Player', 'Start', this.video_id);
+             userclick++;
+         }
+    };
+     
+     
+     this.onseek = function () {
+         
+         ga('send', 'event', 'Hola Video Player', 'Seek', this.video_id);
+     };
+     this.oncomplete = function () {
+         
+         ga('send', 'event', 'Hola Player Video', 'Complete', this.video_id);
+     };
+     this.onresume = function () {
+         
+         ga('send', 'event', 'Hola Player Video', 'Resume', this.video_id);
+     };
+     this.onadstart = function () {
+        
+         if (adCount == 1) {
+             
+             ga('send', 'event', 'Video Advertisement', 'Play', this.video_id);
+             adCount++;
+         }
+     };
+     this.onadskip = function () {
+         
+         ga('send', 'event', 'Video Advertisement', 'Skip', this.video_id);
+     };
+     
+     this.onadend  = function(){
+         window["player_"+video_id].ima.playAd('https://pubads.g.doubleclick.net/gampad/ads?sz=480x70&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dnonlinear&correlator=');
+     }
+     
+     this.timeupdate = function(){
+        
+        var cur = this.currentTime();
+        var duration = this.duration();
+        var chapter = Math.floor(cur/10);
+
+        if(typeof(time_frame) != "undefined"){
+            for (i = 0; i < time_frame.length; i++) {
+                var completion_time = parseFloat(duration)*time_frame[i]/100;
+               
+                if(Math.round(cur) ==  Math.round(completion_time) && this.time_duration != Math.round(cur) && cur > 0){
+                    
+                    ga('send', 'event', 'Hola Video Player', 'Play - '+time_frame[i]+ '%' , video_id);
+                    this.time_duration = Math.round(cur);
+                }
+
+            }
+        }
+        if(Math.round(cur) ==  10){
+            
+            ga('send', 'event', 'Hola Video Player', 'Time Completion - '+Math.round(cur)+ ' sec ' , video_id);
+        }
+        if(Math.round(cur) ==  30){
+            
+            ga('send', 'event', 'Hola Video Player', 'Time Completion - '+Math.round(cur)+ ' sec ' , video_id);
+        }
+        else if (Math.round(cur) ==  120){
+            
+            ga('send', 'event', 'Hola Video Player', 'Time Completion - '+Math.round(cur)+ ' sec ' , video_id);
+        }
+    };
+
+    this.getUrl = function(url){
+        $.ajax({
+                 url: this.src
+             }).done(function (data) {
+                 
+                 return data.hls;
+        });
+    };
+    
+    this.check_gdpr = function(countrycode){
+                if(countrycode == "EU"){
+                        this.showad = false;
+                }
+        
+    }
+
+     this.initVideo = function () {
+           if(this.midadTag != ''){
+            this.tags = {
+                linear: this.adTag,
+                non_linear: this.midadTag,
+                skippable: this.adTag,
+            };
+	}
+	else{
+	    this.tags = {
+                linear: this.adTag,
+                skippable: this.adTag,
+            };
+	}
+          if (this.showad === false){
+             this.tags = {
+                linear: '',
+                //non_linear: midroll_ad,
+                skippable: ''
+            };
+          }
+          if (this.ishls === true) {
+             //MAKE AJAX CALL THEN INIT VIDEO
+             var self = this;
+             $.ajax({
+                 url: this.src,
+                 dataType: "json"
+             }).done(function (data) {
+                 
+                video_id = self.video_id;
+                autoplayvalue = self.autoplay;
+
+                 var liveConfigObj = {
+                     player: self.player,
+                     sources: [{
+                         src: data.hls,
+                         type: '',
+                         label: '1080p',
+                }],
+                     controls: self.controls,
+                     autoplay: self.autoplay,
+                     title: self.title,
+                     video_id: self.video_id,
+                     poster: self.poster,
+                     ads: {manual: true},
+                     settings: self.settings
+                 };
+                    var was_preroll = false;
+                    
+		    window["player_"+self.video_id] = null;
+                    window.hola_player(liveConfigObj, function (player) {
+			window["player_"+self.video_id] = player;
+                        player.on('ready', self.ready),
+                        player.on('readyforpreroll', self.onreadyforpreroll),
+                        player.on('loadedmetadata', self.onloadedmetadata),
+                        player.on('play', self.onplay),
+                        player.on('pause', self.onpause),
+                        player.on('seek', self.onseek),
+                        player.on('complete', self.oncomplete),
+
+                        player.on('resume', self.onresume),
+
+                        player.on('adstart', self.onadstart),
+                        player.on('adskip', self.onadskip),
+                        //player.on('adend', self.onadend),
+                             player.on('timeupdate', function(){
+	                            if (!player.ima || !player.ima.playAd || was_preroll)
+	                                return;
+	                            was_preroll = true;
+	                            player.ima.playAd(self.tags['linear']);
+	                        });
+	                        player.one('adend', function(){
+				    //alert(self.tags['non_linear']);
+				    if(typeof(self.tags['non_linear']) !== 'undefined'){
+					player.ima.playAd(self.tags['non_linear']);
+				    }
+	                        });
+                                player.on('adserror',function(){
+				     if(typeof(self.tags['non_linear']) !== 'undefined'){
+                                        player.ima.playAd(self.tags['non_linear']);
+				    }
+                                });      
+                        player.on('timeupdate', self.timeupdate)
+                      
+                 });
+                    
+             });
+
+         } else {
+        video_id = this.video_id;
+        autoplayvalue = this.autoplay;
+        var configObj = {
+                  player: this.player,
+                  sources: [{
+                      src: this.src,
+                      type: '',
+                      label: '1080p',
+                     }],
+                  controls: this.controls,
+                  autoplay: this.autoplay,
+                  title: this.title,
+                  video_id : this.video_id,
+                  poster: this.poster,
+                  ads: {
+                      adTagUrl: this.adTag,
+                  },
+                  settings: this.settings
+              };
+              
+        
+             window.hola_player(configObj, function (player) {
+                 player.on('ready', this.ready),
+                     player.on('readyforpreroll', this.onreadyforpreroll),
+                     player.on('loadedmetadata', this.onloadedmetadata),
+                     player.on('play', this.onplay),
+                     player.on('pause', this.onpause),
+                     player.on('seek', this.onseek),
+                     player.on('complete', this.oncomplete),
+
+                     player.on('resume', this.onresume),
+
+                     player.on('adstart', this.onadstart),
+                     player.on('adskip', this.onadskip),
+                     player.on('timeupdate', this.timeupdate)
+             });
+         };
+     };
+ };
+
+ 

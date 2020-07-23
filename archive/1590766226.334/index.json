@@ -1,0 +1,213 @@
+{
+    "title": "Unable to detect page title",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.334",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779418",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:25.903478",
+                "start_ts": "2020-05-29 19:10:18.329790",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:34.563142",
+                "start_ts": "2020-05-29 19:10:33.215277",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=mepaper.livehindustan.com"
+                ],
+                "end_ts": "2020-05-29 19:10:18.328443",
+                "start_ts": "2020-05-29 19:10:17.096641",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:28.296283",
+                "start_ts": "2020-05-29 19:10:25.904048",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 21:55:22.435318",
+                "start_ts": "2020-05-29 21:55:18.813531",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:33.214787",
+                "start_ts": "2020-05-29 19:10:30.803084",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:36.949351",
+                "start_ts": "2020-05-29 19:10:34.563395",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "https://web.archive.org/web/20200529191035/https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+                ],
+                "end_ts": "2020-05-29 19:10:30.802838",
+                "start_ts": "2020-05-29 19:10:28.296513",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "failed",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:10:17.096217",
+                "start_ts": "2020-05-29 19:10:15.209399",
+                "pwd": "/data/archive/1590766226.334",
+                "output": "Unable to detect page title"
+            }
+        ]
+    },
+    "updated": "1590789322.435725",
+    "tags": "",
+    "url": "https://mepaper.livehindustan.com/imageview_90254_115896554_4_127_16-05-2020_4_i_1_sf.html"
+}

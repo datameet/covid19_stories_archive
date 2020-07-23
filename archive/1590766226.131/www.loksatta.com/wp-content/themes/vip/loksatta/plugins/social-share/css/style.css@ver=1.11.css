@@ -1,0 +1,31 @@
+.ie-count-container{border-right:1px solid #dbdbdb;display:table-cell;font-family:'Roboto',sans-serif;padding-right:15px;text-align:center;vertical-align:top;width:90px;}
+.ie-count-container .ie-count{font-size:22px;font-weight:700;line-height:28px;}
+.ie-count-container .ie-share-title{font-size:14px;text-transform:uppercase;}
+.custom-share{display:table-cell;padding-left:15px;padding-top:5px;padding-bottom:5px;}
+.custom-share>li{box-sizing:border-box;float:left;font-size:15px;line-height:14px;padding:0 5px 0 0;margin:0;transition:all .2s ease-in-out;list-style-type:none;}
+.custom-share>li>a{background:#ccc;border-radius:3px;box-sizing:border-box;display:block;font-family:'Roboto',sans-serif;padding:7px;position:relative;text-align:left;height:39px;text-decoration:none;text-transform:uppercase;width:100%;}
+.custom-share>li>a i{display:inline-block;line-height:20px;}
+.custom-share>li>a i img{max-width:100%;}
+.custom-share>li>a i.fb{background-position:0 1px;height:26px;width:14px;}
+.custom-share>li>a i.twit{padding-top:2px;height:24px;width:26px;}
+.custom-share>li>a i.gplus{padding-top:4px;height:24px;width:26px;}
+.custom-share>li>a i.wapp{height:24px;width:26px;}
+.custom-share>li>a i.wapp img{margin-top:-1px;}
+.custom-share>li>a i.reddit{padding-top:1px;height:24px;width:26px;}
+.custom-share>li.facebook a{background:#3b5999;padding:6px 40px;}
+.custom-share>li.twit a{background:#55acef;}
+.custom-share>li.gplus a{background:#e93f2e;}
+.custom-share>li.whatsapp a{background:#29a71a;}
+.custom-share>li.reddit a{background:#ff4500;}
+.custom-share>li>a .ie-lable{display:inline-block;color:#fff;font-size:15px;font-weight:700;line-height:20px;padding-left:12px;padding-top:3px;vertical-align:top;}
+.custom-share>li:hover{-webkit-transform: translateY(-4px);transform: translateY(-4px);}
+/***********************/
+@media (max-width: 767px){
+	.custom-share>li>a .ie-lable,.ie-count-container,.custom-share>li.reddit,.custom-share>li.gplus{display:none;}
+	.custom-share{display:table;padding-left:0;margin:0;width:100%;}
+	.custom-share>li>a{text-align:center;vertical-align: top;}
+	.custom-share>li{display:table-cell;float:none;vertical-align: top;min-width:inherit;width:25%;}
+	.custom-share>li.whatsapp{display:table-cell;}
+	.custom-share>li.facebook a{background:#3b5999;padding:6px 8px;}
+	.custom-share>li.facebook{width:50%;}
+}

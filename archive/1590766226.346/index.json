@@ -1,0 +1,232 @@
+{
+    "title": "\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u091a\u0932\u0940 \u0917\u0908 \u092a\u094d\u0930\u094b\u091c\u0947\u0915\u094d\u091f \u092e\u0948\u0928\u0947\u091c\u0930 \u0915\u0940 \u0928\u094c\u0915\u0930\u0940, \u091f\u0947\u0902\u0936\u0928 \u092e\u0947\u0902 \u0915\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921 - Live Cities",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.346",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779660",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:20.925552",
+                "start_ts": "2020-05-29 19:14:20.915822",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Command 'wget' timed out after 60 seconds"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 9,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:40.803628",
+                "start_ts": "2020-05-29 19:15:31.126994",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=livecities.in"
+                ],
+                "end_ts": "2020-05-29 19:14:20.914062",
+                "start_ts": "2020-05-29 19:14:19.516791",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:24.733677",
+                "start_ts": "2020-05-29 19:15:20.926390",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 21:55:54.576851",
+                "start_ts": "2020-05-29 21:55:50.577451",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:31.126649",
+                "start_ts": "2020-05-29 19:15:28.617505",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:43.750820",
+                "start_ts": "2020-05-29 19:15:40.804012",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "https://web.archive.org/web/20200529191542/https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 19:15:28.616809",
+                "start_ts": "2020-05-29 19:15:24.734541",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+                ],
+                "end_ts": "2020-05-29 21:55:58.058970",
+                "start_ts": "2020-05-29 21:55:54.577644",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:14:19.516509",
+                "start_ts": "2020-05-29 19:14:16.258443",
+                "pwd": "/data/archive/1590766226.346",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u091a\u0932\u0940 \u0917\u0908 \u092a\u094d\u0930\u094b\u091c\u0947\u0915\u094d\u091f \u092e\u0948\u0928\u0947\u091c\u0930 \u0915\u0940 \u0928\u094c\u0915\u0930\u0940, \u091f\u0947\u0902\u0936\u0928 \u092e\u0947\u0902 \u0915\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921 - Live Cities"
+            }
+        ]
+    },
+    "updated": "1590789358.059836",
+    "tags": "",
+    "url": "https://livecities.in/trending/project-manager-lost-job-due-to-lockdown-suicide-done-in-tension-in-patna/"
+}

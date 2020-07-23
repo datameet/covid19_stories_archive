@@ -1,0 +1,72 @@
+ 
+/* ----------------------  Roboto  ---------------------- */ 
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://stfe.latestly.com/css/fonts/Roboto-Regular.eot?') format('embedded-opentype'),  url('https://stfe.latestly.com/css/fonts/Roboto-Regular.woff') format('woff'), url('https://stfe.latestly.com/css/fonts/Roboto-Regular.ttf')  format('truetype'), url('https://stfe.latestly.com/css/fonts/Roboto-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://stfe.latestly.com/css/fonts/Roboto-Medium.eot?') format('embedded-opentype'),  url('https://stfe.latestly.com/css/fonts/Roboto-Medium.woff') format('woff'), url('https://stfe.latestly.com/css/fonts/Roboto-Medium.ttf')  format('truetype'), url('https://stfe.latestly.com/css/fonts/Roboto-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://stfe.latestly.com/css/fonts/Roboto-Bold.eot?') format('embedded-opentype'),  url('https://stfe.latestly.com/css/fonts/Roboto-Bold.woff') format('woff'), url('https://stfe.latestly.com/css/fonts/Roboto-Bold.ttf')  format('truetype'), url('https://stfe.latestly.com/css/fonts/Roboto-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://stfe.latestly.com/css/fonts/Roboto-Black.eot?') format('embedded-opentype'),  url('https://stfe.latestly.com/css/fonts/Roboto-Black.woff') format('woff'), url('https://stfe.latestly.com/css/fonts/Roboto-Black.ttf')  format('truetype'), url('https://stfe.latestly.com/css/fonts/Roboto-Black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+ 
+ 
+ /* ----------------------  Mukta for Hindi/Marathi  ---------------------- */ 
+ 
+ @font-face {
+  font-family: 'Mukta';
+  src: url('https://stfe.latestly.com/css/fonts/Mukta-Regular.eot?') format('embedded-opentype'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Regular.woff') format('woff'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Regular.ttf')  format('truetype'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+
+@font-face {
+  font-family: 'Mukta';
+  src: url('https://stfe.latestly.com/css/fonts/Mukta-Medium.eot?') format('embedded-opentype'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Medium.woff') format('woff'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Medium.ttf')  format('truetype'),
+  url('https://stfe.latestly.com/css/fonts/Mukta-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,212 @@
+{
+    "title": "labor hanged himself suicide in basti - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930 \u092e\u091c\u0926\u0942\u0930 \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e\u0915\u0930 \u0915\u0930 \u0932\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940",
+    "url": "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html",
+    "timestamp": "1590766226.145",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:05:57.843188",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771947",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 17:05:47.861910",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:06:16.237751",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:06:14.747454",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:05:47.860582",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:05:47.576067",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:06:03.954340",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:05:57.843379",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:06:14.747089",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:06:10.042086",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:06:18.186397",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:06:16.238011",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "LiveWebCacheUnavailableException: The URL Failed to index new capture - unavailable for immediate playback is not available"
+            },
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:32:57.401038",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:32:55.631170",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "https://web.archive.org/web/20200529173256/https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:06:10.041693",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:06:03.954602",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:05:47.575645",
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/basti/story-labor-hanged-himself-suicide-in-basti-3221064.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:05:47.310212",
+                "pwd": "/data/archive/1590766226.145",
+                "output": "labor hanged himself suicide in basti - \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930 \u092e\u091c\u0926\u0942\u0930 \u0928\u0947 \u092b\u093e\u0902\u0938\u0940 \u0932\u0917\u093e\u0915\u0930 \u0915\u0930 \u0932\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940"
+            }
+        ]
+    },
+    "updated": "1590788233.17954",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

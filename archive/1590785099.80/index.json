@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.80",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:33:12.966224",
+                "start_ts": "2020-05-29 21:33:12.091747",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "\u091d\u093e\u0930\u0916\u0902\u0921: \u092e\u0941\u0938\u094d\u0932\u093f\u092e\u094b\u0902 \u0926\u094d\u0935\u093e\u0930\u093e \u0925\u0942\u0915\u0915\u0930 \u0915\u094b\u0930\u094b\u0928\u093e \u092b\u0948\u0932\u093e\u0928\u0947 \u0915\u0940 \u0905\u092b\u0935\u093e\u0939 \u0915\u0947 \u092c\u093e\u0926 \u0939\u0941\u0908 \u091d\u0921\u093c\u092a \u092e\u0947\u0902 \u092f\u0941\u0935\u0915 \u0915\u0940 \u092e\u094c\u0924"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:45.147095",
+                "start_ts": "2020-05-29 21:33:40.211230",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thewirehindi.com"
+                ],
+                "end_ts": "2020-05-29 21:33:17.627964",
+                "start_ts": "2020-05-29 21:33:12.966602",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:40.210985",
+                "start_ts": "2020-05-29 21:33:35.469468",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:56.367331",
+                "start_ts": "2020-05-29 21:33:53.337298",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "https://web.archive.org/web/20200529213354/http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 17,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787997",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:35.469307",
+                "start_ts": "2020-05-29 21:33:17.629229",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:50.447795",
+                "start_ts": "2020-05-29 21:33:45.147340",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+                ],
+                "end_ts": "2020-05-29 21:33:53.337055",
+                "start_ts": "2020-05-29 21:33:50.448164",
+                "pwd": "/data/archive/1590785099.80",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590788036.371213",
+    "tags": "",
+    "url": "http://thewirehindi.com/116711/jharkhand-corona-virus-muslim-rumours-mob-lynching/"
+}

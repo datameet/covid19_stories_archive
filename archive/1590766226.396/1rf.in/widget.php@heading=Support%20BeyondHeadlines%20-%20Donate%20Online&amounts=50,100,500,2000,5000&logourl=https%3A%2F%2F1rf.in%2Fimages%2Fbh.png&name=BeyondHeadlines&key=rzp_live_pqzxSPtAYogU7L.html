@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donate Now!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="charset" content="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style type="text/css">
+	.right-amounts {
+		text-align: center;
+	}
+	h1,h2{
+		    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 13pt;
+    font-family: sans-serif;
+	}
+	h2{
+			text-align: center;
+		font-size: 10pt;
+		margin-top: 5px
+	}
+		.right-amounts button{
+
+			    background: #b51111;
+	cursor:pointer;
+	
+	
+    border: 1px solid red;
+    padding: 5px 20px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 5px;
+		}
+	.container{
+		max-width: 900px; margin:0px auto; border:1px solid gray; border-radius: 5px;height: 150px;     overflow: hidden;
+		padding: 0px;
+ 
+	}
+
+	.right-links{
+		    text-align: right;
+    font-size: 8px;
+    margin-top: -25px;
+    margin-right: 0px;
+    background: #eaf9fb;
+    display: inline-block;
+    float: right;
+    padding: 5px;
+    font-family: arial;
+    border-top-left-radius: 12px;
+    border: 1px solid #ececec;
+    border-right: none;
+	}
+
+	<style>
+.paytbn{
+	    background: #cddc39;
+    color: white;
+    display: inline-block;
+    padding: 0px 7px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid #8BC34A;
+cursor:pointer
+}
+
+#pay-wrapper{
+	
+
+}
+#pay-wrapper.show{
+	display:block
+}
+#payform{
+	background:white; 
+	max-width: 100%; 
+
+	padding:5px 20px;
+
+text-align:center; 
+top:50px
+}
+
+#lid{
+	    margin: 20px;
+}
+#closebtn{
+ 	display:block; 
+	color:black;
+	background:white;
+	padding:10px;
+	top:50px
+}
+.pay-wrapper.show{
+	
+}
+
+.left-logo{
+	border-right: 1px solid rgba(0,0,0,0.1)}
+
+
+	@media screen and (max-width:560px ){
+		.container{
+			min-height: 210px !important;
+
+		}
+		.left-logo{
+			display: none !important
+
+		}
+		.left-logo img{
+
+		}
+		h1{
+			text-align:center;
+		}
+	}
+.notes strong{
+	color:gray;
+	text-decoration: italic;
+	font-weight: 100
+}
+
+	</style>
+</head>
+<body>
+<div style="" class="container">
+<div class="left-logo" style="float: left; max-width: 150px; margin-right: 10px;text-align: center;
+    line-height: 150px;
+    vertical-align: middle;">
+<img src="https://1rf.in/images/bh.png" style="width: 100%">
+</div>
+<div class="right-amount">
+<h1 style="    display: inline-block;
+    border-bottom: 1px solid #ececec;
+    font-weight: 100;
+    font-size: 13pt;
+    padding: 3px 5px;
+    font-weight: bold;">Support BeyondHeadlines - Donate Online</h1>
+<h2 style="    text-align: center;
+    font-size: 10pt;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-top: 7px;">Select Amount<h2>
+<div class="right-amounts">
+<button onclick="select_amount(50)">₹ 50 </button> <button onclick="select_amount(100)">₹ 100 </button> <button onclick="select_amount(500)">₹ 500 </button> <button onclick="select_amount(2000)">₹ 2000 </button> <button onclick="select_amount(5000)">₹ 5000 </button>
+</div>
+<h2>OR<h2>
+<div id="pay-wrapper">
+<div id="pay-container">
+<form id="payform">
+<input type="number" id="amt" placeholder="Enter Amount" name="amount" style="width:50%; padding:5px; border-radius:3px">
+<input type="text" id="lid" placeholder="Enter Loan ID" name="amount" value="1" style="display:none">
+<input style="
+    padding: 5px;    border-radius: 0px;" type="submit" value="Donate">
+</form>
+</div>
+</div>
+<div class="right-links">
+<span><a href="https://1rf.in" target="_blank">View on 1RF</a></span>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</style>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+	
+	jQuery('#payform').on('submit', function(e){
+			var amount = $('#amt').val();
+			let newWindow = open('https://1rf.in/widget.php?logourl=https://1rf.in/images/bh.png&name=BeyondHeadlines&key=rzp_live_pqzxSPtAYogU7L&ngoid=&pay='+amount, 'Donate', 'width=550,height=800');
+			newWindow.focus();
+	    	e.preventDefault();
+
+	});
+
+	function select_amount(amt){
+
+			var amount = amt;
+			let newWindow = open('https://1rf.in/widget.php?logourl=https://1rf.in/images/bh.png&name=BeyondHeadlines&key=rzp_live_pqzxSPtAYogU7L&ngoid=&pay='+amount, 'Donate', 'width=550,height=800');
+			newWindow.focus();
+	     	
+	}
+
+
+
+
+function send_fund(amount, name, phone, email, paymentID){
+
+	
+	 var vurl = "https://1rf.in/api/index.php?action=addFund&amount="+amount+"&name="+name+"&phone="+phone+"&paymentID="+paymentID+"&email="+email+"&type=ThirdParty&NGO=BeyondHeadlines&ngoid=";
+	 vurl = encodeURI(vurl);
+	 console.log(vurl);
+		var jqxhr = $.ajax( vurl ).done(function() {
+
+	  }).fail(function() {
+	    console.log( "There was an error sending data to server. However, if the payment was deducted, don't worry it will reach us and we will post it on timeline. " );
+	  }).always(function() {
+	    
+	  });
+ 
+
+}
+
+
+					</script>
+</body>
+</html>

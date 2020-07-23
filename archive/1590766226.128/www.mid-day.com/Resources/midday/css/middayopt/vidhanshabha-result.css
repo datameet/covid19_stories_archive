@@ -1,0 +1,70 @@
+/*Election Landing Start*/
+.mapBox{width:100%; max-width:577px; margin:0 auto; padding-bottom:20px;}
+.stateHd{display:block; clear:both; overflow:hidden;}
+.stateHd h2{float:left;}
+.state-tabbx{float:right;}
+.state-tab{display:inline-block;}
+.state-tab li{display:inline-block; line-height:27px;}
+.state-tab li a{font-size:16px; font-weight:bold; padding:1px 20px 3px; display:inline-block;}
+.state-tab li.active a{background:#fe0137; color:#fff; border-radius:30px; position:relative;}
+	
+/*result day css*/
+.bldBg{background:#f58320;}.aitcBg{background:#ff9900;}.cpmBg{background:#de0000;}.bspBg{background:#22409a;}.incBg{background:#10783b;}.acBg{background:#0471ea;}.agpBg{background:#a20808;}.bjdBg{background:#51c465;}.jkpdpBg{background:#016239;}.jmmBg{background:#008001;}.aaapBg,.aapBg{background:#167d60;}.inldBg{background:#016908;}.indBg{background:#545454;}.dmkBg{background:#f9d050;}.spBg{background:#fe0000;}.tdpBg{background:#ffff01;}.admkBg{background:#ea281f;}.pmkBg{background:#2367c8;}.npfBg{background:#2f4495;}.ljpBg{background:#0094de;}.shsBg{background:#f48124;}.npepBg{background:#68ba32}.sdfBg{background:#010099;}.hjcblBg{background:#95dbfd;}.trsBg{background:#f6adda;}.cpiBg{background:#de0000;}.rjdBg{background:#008001;}.ncpBg{background:#138708;}.tmcBg{background:#009900;}.bjsBg{background:#FF9933;}.swaBg{background:#0000fe;}.jpBg, .jnpBg{background:#fd7110;}.aimimBg{background:#20783b;} .jd(u)Bg, .jduBg, .jdBg{background:#058a06;}.jdBg{background:#058a06;}
+
+.bjp, .bld, .bjp .partyName b, .nda{ color: #ff9933; }.congress, .inc, .inc .partyName b, .upa{ color: #138808; }.other, .other partyName b{ color: #454545; }.bsp, .bsp partyName b {color: #2e52aa;}
+.bjs{ color:#FF9933;}.sp{color:#fe0000;}.swa{color:#0000fe;}.jp, .jnp{color:#fd7110;}.aimim{color:#20783b;}.jd{color:#058a06;}.jdu{color:#058a06;}.rjd{color:#008001;}.ncp{color:#138708;}
+.tmc{color:#009900;}.bjs{color:#FF9933;}.swa{color:#0000fe;}.cpm{color:#de0000;}.ac{color:#0471ea;}.agp{color:#a20808;}.bjd{color:#51c465;}.jkpdp{color:#016239;}.jmm{color:#008001;}.aap{color:#167d60;}.inld{color:#016908;}.ind{color:#545454;}.dmk{color:#f9d050;}.cpi, .cpi .partyName b{ color:#de0000;}.bld, .bld .partyName b{color:#f58320;}
+
+.bjpBg, .ndaBg{ background: #ff9933; }.congressBg, .upaBg{ background: #138808; }.othersBg, .otherBg { background: #454545; }
+.ss { color: #cc3300; }.ssBg { background: #cc3300; }
+.tds { color: #cc3300; }.tdsBg { background: #cc3300; }
+.ljp { color: #3333ff; }.ljgBg { background: #3333ff; }
+.sad { color: #990000; }.sadBg { background: #990000; }
+#state-tally li img { display: none; }
+
+.sheat-details-bg{padding:10px 0 15px 0; width:100%; float:left; -webkit-box-shadow: 0 0 10px #e0e0e6; -moz-box-shadow: 0 0 10px #e0e0e6; box-shadow:0 0 10px #e0e0e6;}
+.sheat-details-bg .sub-heading{ background-color:#393939; color:#fff; padding:0px; margin-top:-10px;}
+.sheat-details-bg .sub-heading h1, .sheat-details-bg .sub-heading h2{ border:none; background:none; font-size:18px;}
+.sheat-details-bg .sub-heading h1 span, .sheat-details-bg .sub-heading h2 span{ float:right; font-size:15px;}
+.sheat-details-bg .sub-heading h1, .sheat-details-bg .sub-heading h1 a, .sheat-details-bg .sub-heading h2, .sheat-details-bg .sub-heading h2 a{ color:#fff;}
+.sheat-details-bg .sub-heading h1{padding: 8px 5% 5px; margin:0px; line-height: 30px; font-weight: 600; clear: both;}
+#consistuency .sub-heading a{ display:inline-block!important;}
+.sheat-details li:first-child { border: 0px; }
+.removegap li:first-child { padding-top: 5px; border-bottom: 1px solid #f1f2f1; position:relative; }
+.sheat-details li { width:92%; float:left; padding: 13px 4% 10px; font-size: 15px; border-top: 1px solid #f1f2f1; clear: left;}
+.sheat-details .heading .partyName, .sheat-details .heading small {font-family:'Ek Mukta',Arial,Sans-Serif; font-size:14px; line-height: 24px; color: #8c8b8b; }
+.sheat-details .partyName { text-align: left; width:18%; font-weight: bold; display:inline-block; }
+.sheat-details .partyName small{ display:block; color:#797979; font-size:15px; font-weight:normal;}
+.sheat-details .partyName .sheets{margin-right: 15px; font-weight: normal;}
+.sheat-details .partyName img { width: 25px; height: 25px; float: left; margin-right: 5px; }
+.sheat-details .ProgressBar { width: 55%; background: url(http://www.jagranimages.com/images/logobg-loksabha.png) repeat-x 100% 100%; height: 12px; margin-top: 6px; display:inline-block; position:relative; }
+.sheat-details .ProgressBar small { display: inline-block; position: relative; vertical-align:top; }
+.sheat-details b { display: block; font-size: 13px; color: #8c8b8b; font-family:'Ek Mukta',Arial,Sans-Serif; line-height: 15px; }
+.sheat-details .partyName:first-child b { color: #000; }
+.sheat-details .partyName b {line-height: 24px;float: right;margin-right: 15px;}
+.votePercentage{float:right;}
+.sheat-details li .votePercentage strong{ color:#000; font-size:12px; font-weight:normal;} 
+.ProgressBar i {  width: 30px; height: 30px; display: inline-block; margin:-14px 0px -4px -10px; border-radius: 50%; position:absolute; /*z-index: 999;*/ -webkit-box-shadow: 0 0 10px #B4B4C2; -moz-box-shadow: 0 0 10px #B4B4C2; box-shadow:0 0 10px #B4B4C2; }
+i.bjpLogo, i.ndaLogo { border: 2px solid #ff9933; background: #fff url(https://m.jagran.com/assets/images/events/partylogos/bjp-logo.png) 1px no-repeat; background-size: 90%; }
+i.incLogo, i.upaLogo { border: 2px solid #138808; background: #fff url(https://m.jagran.com/assets/images/events/partylogos/inc-logo.png) 2px no-repeat; background-size: 90%; }
+i.otherLogo { border: 2px solid #454545; background: #fff url(https://m.jagran.com/assets/images/events/partylogos/others.png) 2px no-repeat; background-size: 90%; }
+.state-sheat .partyName{ width:33%;}.state-sheat .partyName b{ margin-right:15px;}.state-sheat .ProgressBar{ width:67%;}.state-sheat .heading{ color:#2b2a2a; font-weight:bold;}
+#display-tally .ProgressBar:before {   content: "";position: absolute;left: 50%;top: -32px;border-left: 1px dashed #ddd;height: 60px;} 
+.TotalSheetWin { position: absolute; top: 4px; right: 31%; color:#8c8b8b; font-weight:bold; }
+.bahumat-aagepichhe{font-size: 12px; line-height: 16px; margin-top: -6px;}
+.bahumat-aagepichhe > span{ display:block;}
+.newETab { margin-bottom:0; width: auto!important; }.newETab .state-tab { box-shadow: none!important; padding: 0px!important; width: auto!important; }
+.newETab .state-tab li a { padding:0 10px; }
+
+.winnin-marging li{ display:table; width: 92%;}
+.winnin-marging li span, .winnin-marging li.heading small{ display:table-cell; vertical-align: middle;}
+.winnin-marging .positionBar{width: 20%; text-align:center;}
+.winnin-marging .partyName, .winnin-marging .votePercentage{ width:55%;} 
+.winnin-marging .votePercentage{ text-align:right;}
+
+.shareBox{ clear:both; border-top:1px solid #eee; padding:7px 1% 0 4%;}
+.share-link{display:inline-block; font-size:15px; line-height:18px; float:right; padding-right:15px; font-weight:bold;}
+.share-link span{display:inline-block; padding-right:7px;}
+.share-link i{background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABiUlEQVRIx52UTShEURSAvzfTkBipSWEyShEWfhbYWliNJpoSGyUbiSIlS7LSsJKmbPys1OyMn6z8pFGz07CRDaGJosyUUsOzcL2ZZm7NvXPO5vZ633ffPefcBzphY5pLEtywRgXa4eAE08pnGnQFixm4iUkEm57gNUtg0q6D1+bgJmM6giqJYEAd7yKag3/jVt17mx/J/gG11s2REMA1SyQtfIPi/LiXW/H6O1PYATcTBJmnOz/cyKGAUwRx5Qf8rBNmmQ7ASYAvgZ/Rmh8u58g6W4ot4mL9wKBanTclNf5kgRI1vF6Ch/CoD8mQROBGI0YkgjodQYtEsIpTRxGWKOKMYqjftKsM9JRPsYqqTNz/zM+yT4xdfICHkFD8sEM1BUUPMSFJMk9RIQo7k7wJyR0+AAya8NOpchP/wkWQlJAc00dErF/oV/+SNs4lXTLx6hxnmMccwZPeb73UuuDpbNYROKxapLNXryuxHEGlnmAmCz/QnQuDvQz8nhr90TIY54IPYqxQ9vfoF+L2GNkvMos/AAAAAElFTkSuQmCC'); background-repeat:no-repeat; background-position:center; background-size:100%; display:inline-block; width:13px; height:13px; vertical-align:top; margin-top:2px;}
+.centerImg{display:block; background-image:url('https://www.jagranimages.com/images/loading-img.gif'); background-position:center center; background-repeat:no-repeat; height: 31px;
+    width: 50px;  margin: 10px auto 0;}

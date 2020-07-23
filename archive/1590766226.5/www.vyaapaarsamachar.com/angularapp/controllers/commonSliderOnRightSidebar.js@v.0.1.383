@@ -1,0 +1,180 @@
+angular.module('vyaapaarSamachar').controller('photoGallaryController', function($timeout,$rootScope, $scope, photoGalleryData, GENERAL_CONFIG) {
+    $scope.title = 'PHOTO GALLERY';
+    $scope.image = true;
+    $scope.video = false;
+    $scope.photoList = [];
+    $scope.s3_base_url = GENERAL_CONFIG.s3_base_url;
+    $scope.photo_gallery_big_path = GENERAL_CONFIG.photo_gallery_big_path;
+    if (navigator.userAgent.toString().search('Android') >= 0 || navigator.userAgent.toString().search('iPhone') >= 0) {
+        $scope.isMobile = true;
+    } else {
+        $scope.isMobile = false;
+    }
+    $scope.slickConfig = {
+        method: {},
+        prevArrow: false,
+        nextArrow: false,
+        dots: false,
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 60000,
+        pauseOnHover: true,
+        speed: 1000,
+        slidesToShow: 1,
+        lazyLoad: 'ondemand',
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        event: {
+            beforeChange: function(event, slick, currentSlide, nextSlide) {},
+            afterChange: function(event, slick, currentSlide, nextSlide) {}
+        }
+    };
+    var gallaryData = photoGalleryData.get(function() {
+        $scope.photoList = gallaryData.response;
+        $rootScope.counter = $rootScope.counter + 1;
+        $scope.photo_list_loading = false;
+        if($scope.isMobile)
+        {
+            $timeout(function() {
+                    $scope.photo_list_loading = true;
+                }, 10000);
+        }
+        else
+        {
+            $scope.photo_list_loading = true;
+        }
+        //$rootScope.viewLoading = false;
+    });
+});
+angular.module('vyaapaarSamachar').controller('videoGallaryController', function($timeout,$rootScope, $scope, $sce, videoGalleryData) {
+    $scope.title = 'VIDEO';
+    $scope.video = true;
+    $scope.image = false;
+    $scope.videoList = [];
+    if (navigator.userAgent.toString().search('Android') >= 0 || navigator.userAgent.toString().search('iPhone') >= 0) {
+        $scope.isMobile = true;
+    } else {
+        $scope.isMobile = false;
+    }
+    $scope.slickConfig = {
+        method: {},
+        prevArrow: false,
+        autoplay: true,
+        nextArrow: false,
+        dots: false,
+        infinite: true,
+        autoplaySpeed: 60000,
+        speed: 1000,
+        pauseOnHover: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        event: {
+            beforeChange: function(event, slick, currentSlide, nextSlide) {},
+            afterChange: function(event, slick, currentSlide, nextSlide) {}
+        }
+    };
+    var gallaryData = videoGalleryData.get(function() {
+        $scope.videoList = gallaryData.response;
+        //$scope.videoList = [];
+        $rootScope.counter = $rootScope.counter + 1
+        $scope.video_list_loading = false;
+        if($scope.isMobile)
+        {
+            $timeout(function() {
+                    $scope.video_list_loading = true;
+                }, 10000);
+        }
+        else
+        {
+            $scope.video_list_loading = true;
+        }
+    });
+});
+angular.module('vyaapaarSamachar').controller('popularNewsController', function($timeout, $rootScope, $state, $scope, popularNewsData, GENERAL_CONFIG) {
+
+    $scope.s3_base_url = GENERAL_CONFIG.s3_base_url;
+    $scope.s3_article_1612 = GENERAL_CONFIG.s3_article_1612;
+    $scope.$watch(function() { return $state.params.epaperID; }, function(p) {
+        $scope.epaperID = $state.params.epaperID;
+    });
+    $scope.scroll = $rootScope.scroll;
+    var data = popularNewsData.get(function() {
+        var categoryArr = data.response;
+        angular.forEach(categoryArr, function(value, key) {
+         categoryArr[key].created_date = new Date(value.created_date.replace(/-/g, "/")).toISOString();
+        });
+          data.response = categoryArr;
+        if ($state.params && $state.params.articleID) {
+            $scope.popularNewsContent = [];
+            data.response.map(function(item) {
+                if (item.id != $state.params.articleID) {
+                    $scope.popularNewsContent.push(item);
+                }
+            });
+        } else {
+            var currentCategoryUrl = window.location.href;
+            var splitUrl = currentCategoryUrl.split('/');
+            if (splitUrl[2] == 'www.vyaapaarsamachar.com') {
+                if(splitUrl[3] == 'news')
+                    $scope.articleId = splitUrl[6];
+                else
+                    $scope.articleId = splitUrl[7];
+            }else if(splitUrl[3] == 'development'){
+                if(splitUrl[4] == 'news')
+                    $scope.articleId = splitUrl[7];
+                else
+                    $scope.articleId = splitUrl[8];
+            } else {
+                if(splitUrl[4] == 'news')
+                    $scope.articleId = splitUrl[7];
+                else
+                    $scope.articleId = splitUrl[8];
+            }
+            $scope.popularNewsContent = data.response;
+        }
+    });
+});

@@ -1,0 +1,232 @@
+{
+    "title": "Tamil Nadu Returnee 'Commits Suicide' At Quarantine Centre In Odisha - ODISHA BYTES",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.313",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:59:11.515734",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778732",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 18,
+                "start_ts": "2020-05-29 18:58:52.823257",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:59:29.979901",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:59:25.110948",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:58:52.822591",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=odishabytes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:58:52.425901",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:59:16.732459",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 18:59:11.515933",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "end_ts": "2020-05-29 21:53:30.964738",
+                "start_ts": "2020-05-29 21:53:24.950404",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:59:25.110605",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:59:21.973343",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:59:32.395945",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:59:29.980190",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "https://web.archive.org/web/20200529185931/https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:59:21.972688",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 18:59:16.733136",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+                ],
+                "end_ts": "2020-05-29 21:53:35.717771",
+                "start_ts": "2020-05-29 21:53:30.965396",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:58:52.425623",
+                "cmd": [
+                    "curl",
+                    "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:58:51.581907",
+                "pwd": "/data/archive/1590766226.313",
+                "output": "Tamil Nadu Returnee &#039;Commits Suicide&#039; At Quarantine Centre In Odisha - ODISHA BYTES"
+            }
+        ]
+    },
+    "updated": "1590789215.719021",
+    "tags": "",
+    "url": "https://odishabytes.com/tamil-nadu-returnee-commits-suicide-at-quarantine-centre-in-odisha/"
+}

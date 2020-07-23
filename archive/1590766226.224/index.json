@@ -1,0 +1,194 @@
+{
+    "title": "Ranchi News In Hindi : Tempo driver commits suicide due to lockdown | \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0939\u094b \u091f\u0947\u0902\u092a\u094b \u091a\u093e\u0932\u0915 \u0928\u0947 \u0915\u0930 \u0932\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e - Dainik Bhaskar",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.224",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 17,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774801",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:53:38.384105",
+                "start_ts": "2020-05-29 17:53:21.356255",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:53:57.844263",
+                "start_ts": "2020-05-29 17:53:55.972136",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "end_ts": "2020-05-29 17:53:21.355728",
+                "start_ts": "2020-05-29 17:53:21.057552",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:53:40.826455",
+                "start_ts": "2020-05-29 17:53:38.384431",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 11,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:53:55.971063",
+                "start_ts": "2020-05-29 17:53:44.702664",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:54:00.325515",
+                "start_ts": "2020-05-29 17:53:57.844518",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "https://web.archive.org/web/20200529175359/https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+                ],
+                "end_ts": "2020-05-29 17:53:44.702417",
+                "start_ts": "2020-05-29 17:53:40.826695",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:53:21.057234",
+                "start_ts": "2020-05-29 17:53:20.334017",
+                "pwd": "/data/archive/1590766226.224",
+                "output": "Ranchi News In Hindi : Tempo driver commits suicide due to lockdown | \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0938\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0939\u094b \u091f\u0947\u0902\u092a\u094b \u091a\u093e\u0932\u0915 \u0928\u0947 \u0915\u0930 \u0932\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e - Dainik Bhaskar"
+            }
+        ]
+    },
+    "updated": "1590788300.915002",
+    "tags": "",
+    "url": "https://www.bhaskar.com/local/jharkhand/ranchi/sisai/news/tempo-driver-commits-suicide-due-to-lockdown-127308204.html"
+}

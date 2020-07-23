@@ -1,0 +1,320 @@
+function convertedToSlug(Text)
+{
+    return Text
+        .toLowerCase()
+        .replace(/[^\w ]+/g,'')
+        .replace(/ +/g,'-')
+        ;
+}
+
+function getIplWidget(){
+	$.ajax({
+		type: "GET",
+		crossDomain: true,
+		jsonpCallback: 'scores',
+		dataType: "jsonp",
+		jsonp: 'jsonp',
+		url: 'https://cricketnext.nw18.com/json/crosslivescores.json',	
+                cache: true,
+		success: function(response){
+			var matchesDetails = response.matches;	
+			if(matchesDetails.length >0){
+				var stFlag = true;
+				$.each(matchesDetails,function(i, liveMatches){
+					var series 	= convertedToSlug(liveMatches.series);
+					if(series == 'icc-champions-trophy-2017'){ 
+						liveMatchId = liveMatches.matchid;
+						getIplWidgetWithId(liveMatchId,'live');
+						$(".scr-strp").fadeIn();
+						$(".livematch").show();
+						$(".team-ranking").hide();
+						$(".bannerct").hide();
+						stFlag = false;
+						return false;
+					}
+				});
+				if(stFlag){
+					//getIplWidgetWithId('ensa05292017181610');
+					$(".scr-strp").hide();
+					$(".livematch").hide();
+					$(".team-ranking").show();
+					$(".bannerct").show();
+					clearInterval(widgetinterval);
+				}
+			}else{
+				//getIplWidgetWithId('inba05302017183695');
+				$(".scr-strp").hide();
+				$(".livematch").hide();
+				$(".team-ranking").show();
+				$(".bannerct").show();
+				clearInterval(widgetinterval);
+			}
+		},
+	
+		error: function(xhr, ajaxOptions, thrownError){
+			clearInterval(matchInterval);
+			console.log(xhr.status);
+			console.log(thrownError);
+		}
+	});
+	
+	
+}
+function match(){}
+function getIplWidgetWithId(matchid,checkFlag){
+	
+	$.ajax({
+		type: "GET",
+		crossDomain: true,
+		jsonpCallback: 'match',
+		dataType: "jsonp",
+		jsonp: 'jsonp',
+		url: 'https://cricketnext.nw18.com/json/cross_'+matchid+'_fastest.json',
+               // url: 'cross_'+matchid+'_fastest.json',
+                cache: true,
+		success: function(response){
+			//console.log(response);
+			var liveMatchListing='';
+			var countMatch=0;
+            var matchstatus = response.status;
+			var fteamNameA = response.teamfa;
+				var fteamNameB = response.teamfb;
+				var team_short= new Array();
+				team_short[fteamNameA] = response.teama;
+				team_short[fteamNameB] = response.teamb;
+				var fMatchId   =   matchid;
+				var seriesname = convertedToSlug(response.seriesname);
+				var urlTeam    = convertedToSlug(fteamNameA)+'-'+convertedToSlug(fteamNameB);
+				var flscorelink = '/scorecard/full/'+urlTeam+'/'+matchid+'.html';
+				$('a.flscr-btn').attr('href',flscorelink);
+				$(".lvscrbx,#scoreslist,.fullScr").click(function() {
+					window.location = flscorelink;
+				});
+				$(".logo-ct").click(function() {
+					window.location = '/champions-trophy-2017/';
+				});
+				var fInnings =  response.firstInnings; 
+				var sInnings =  response.secondInnings; 
+				var fistinningsscores = '';
+				var secondinningsscores = '';
+				var players1='';
+				var players2='';
+				var fistbattingteam=secondbattingteam='';
+				if(sInnings.status === '1'){
+					var secondfade='rng';
+					var firstfade ='';
+				}else{
+					var secondfade='';
+					var firstfade ='rng';
+				}
+				
+				if(flag_type == 'ct-home'){
+					if(fInnings.status === '1'){
+						secondbattingteam = (fInnings.Battingteam===fteamNameA)?fteamNameB:fteamNameA;
+						fistinningsscores='<div class="lvmatch '+firstfade+'"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[fInnings.Battingteam])+'.png"/> '+team_short[fInnings.Battingteam]+'</div><div class="lvmthscr">'+fInnings.Equation.Total+'/'+fInnings.Equation.Wickets+'<i>OVERS: '+fInnings.Equation.Overs+'  I  R/R:'+fInnings.Equation.Runrate+'</i></div>	</div>';
+					}
+					
+					if(sInnings.status === '1'){
+						secondinningsscores='<div class="lvmatch '+secondfade+'"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[sInnings.Battingteam])+'.png"/> '+team_short[sInnings.Battingteam]+'</div>	<div class="lvmthscr">'+sInnings.Equation.Total+'/'+sInnings.Equation.Wickets+'<i>OVERS: '+sInnings.Equation.Overs+'  I  R/R:'+sInnings.Equation.Runrate+'</i></div></div>';
+					}else{
+						secondinningsscores='<div class="lvmatch"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[secondbattingteam])+'.png"/> '+team_short[secondbattingteam]+'</div>	<div class="lvmthscr">Yet To Play</div></div>';
+					}
+									
+					var inningslist =   '<h2 class="glblhd txtblue"><span class="blnk"></span>लाइव स्कोर</h2><h3 class="tmstamp">'+response.matchnumber+' | '+response.matchdate+'</h3><h3 class="vns">'+response.Venue+'</h3>'+fistinningsscores+'<div class="btmbrdr"></div>'+secondinningsscores+'<div class="flrslt mtch-fnl"></div><div class="btby">फुल स्कोरकार्ड</div>';
+					
+					$('.livematch').html(inningslist);
+					
+					 if(response.matchresult.length >0 && response.matchresult!==''){
+					   $('.mtch-fnl').html(response.matchresult);
+						
+					}else{
+						if(response.matchresult==='' && response.equation===''){
+							if(response.status){
+								$('.mtch-fnl').html(response.status);
+							}else{
+								$('.mtch-fnl').html(response.Toss_mov);
+							}
+							
+						}else if(response.equation!==''){
+						    $('.mtch-fnl').html(response.equation);
+						}
+					}
+					if((response.length==0 || matchstatus==='Match Ended') && typeof matchInterval!='undefined'){
+						 clearInterval(widgetinterval); 
+					 }
+				}else{
+					if(fInnings.status === '1'){
+						secondbattingteam = (fInnings.Battingteam===fteamNameA)?fteamNameB:fteamNameA;
+						if(fInnings.batsmen.list.length>0 && matchstatus!=='Match Ended' && sInnings.status === '0'){
+							$.each(fInnings.batsmen.list,function(i, player){
+								if(player.Striker==='Yes'){
+								players1+='<em>'+player.name+'*  '+player.Runs+'('+player.BallsFaced+')</em>';
+								}else{
+								players1+='<em>'+player.name+' '+player.Runs+'('+player.BallsFaced+')</em>';   
+								}
+							});
+						}
+						
+						fistinningsscores= '<li class="'+firstfade+'"><div class="tm"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[fInnings.Battingteam])+'.png"/>'+team_short[fInnings.Battingteam]+'</div> <div class="scr"><span><b>'+fInnings.Equation.Total+'/'+fInnings.Equation.Wickets+'</b> OVERS: '+fInnings.Equation.Overs+' I  R/R: '+fInnings.Equation.Runrate+'</span><div id="players1">'+players1+'</div></div></li>';
+						
+						
+					}
+					
+					if(sInnings.status === '1'){
+						if(sInnings.batsmen.list.length>0 && matchstatus!=='Match Ended'){
+							$.each(sInnings.batsmen.list,function(i, player){
+								if(player.Striker==='Yes'){
+								players2+='<em>'+player.name+'*  '+player.Runs+'('+player.BallsFaced+')</em>';
+								}else{
+								players2+='<em>'+player.name+' '+player.Runs+'('+player.BallsFaced+')</em>';   
+								}
+							});
+						}
+						
+						secondinningsscores= '<li class="'+secondfade+'"><div class="tm"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[sInnings.Battingteam])+'.png"/>'+team_short[sInnings.Battingteam]+'</div> <div class="scr"><span><b>'+sInnings.Equation.Total+'/'+sInnings.Equation.Wickets+'</b> OVERS: '+sInnings.Equation.Overs+' I  R/R: '+sInnings.Equation.Runrate+'</span><div id="players1">'+players2+'</div></div></li>';
+					}else{
+						
+						secondinningsscores= '<li class="'+secondfade+'"><div class="tm"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[secondbattingteam])+'.png"/>'+team_short[secondbattingteam]+'</div> <div class="scr"><span><b>Yet To Play</b></span><div id="players2"></div></div></li>';
+					}
+					
+					var inningslist =   fistinningsscores+'<li><span  class="vs">VS</span></li>'+secondinningsscores;
+					$('#scoreslist').html(inningslist);
+					
+					if(sInnings.status === '0'){
+							if(fInnings.bowler.list.length>0 && matchstatus!=='Match Ended'){
+							$.each(fInnings.bowler.list,function(i, player){
+								if(player.Bowling==='Yes'){
+								   $('#players2').html('<em>'+player.name+'</em><em>'+player.Over+' -'+player.Maiden+' - '+player.Runs+' - '+player.Wicket+'</em>');
+								}
+							});
+						}
+						}
+					if(sInnings.status === '1'){
+							if(sInnings.bowler.list.length>0 && matchstatus!=='Match Ended'){
+								$.each(sInnings.bowler.list,function(i, player){
+									if(player.Bowling==='Yes'){
+										$('#players1').html('<em>'+player.name+'</em><em>'+player.Over+' -'+player.Maiden+' - '+player.Runs+' - '+player.Wicket+'</em>');
+									}
+								});
+							}
+						}    
+					if(response.matchresult.length >0 && response.matchresult!==''){
+					   $('.mtch-fnl').html(response.matchresult);
+					   
+					}else{
+						if(response.matchresult==='' && response.equation===''){
+							if(response.status){
+							    $('.mtch-fnl').html(response.status);
+							}else{
+								$('.mtch-fnl').html(response.Toss_mov);
+							}
+							
+						}else if(response.equation!==''){
+						    $('.mtch-fnl').html(response.equation);
+						}
+					}
+					if((response.length==0 || matchstatus==='Match Ended') && typeof matchInterval!='undefined'){
+						 clearInterval(widgetinterval); 
+					 }
+                        
+                       
+				}
+		},
+		error: function(xhr, ajaxOptions, thrownError){
+			clearInterval(widgetinterval);
+			console.log(xhr.status);
+			console.log(thrownError);
+		}
+	});
+}
+
+function getIplWidgetWithIdRecent(matchid){console.log('bbb');
+	
+	$.ajax({
+		type: "GET",
+		crossDomain: true,
+		jsonpCallback: 'match',
+		dataType: "jsonp",
+		jsonp: 'jsonp',
+		url: 'https://cricketnext.nw18.com/json/cross_'+matchid+'_fastest.json',
+               // url: 'cross_'+matchid+'_fastest.json',
+                cache: true,
+		success: function(response){
+			//console.log(response);
+			var liveMatchListing='';
+			var countMatch=0;
+            var matchstatus = response.status;
+			var fteamNameA = response.teamfa;
+				var fteamNameB = response.teamfb;
+				var team_short= new Array();
+				team_short[fteamNameA] = response.teama;
+				team_short[fteamNameB] = response.teamb;
+				var fMatchId   =   matchid;
+				var seriesname = convertedToSlug(response.seriesname);
+				var urlTeam    = convertedToSlug(fteamNameA)+'-'+convertedToSlug(fteamNameB);
+				var flscorelink = '/scorecard/full/'+urlTeam+'/'+matchid+'.html';
+				$('a.flscr-btn').attr('href',flscorelink);
+				$(".lvscrbx,#scoreslist,.fullScr").click(function() {
+					window.location = flscorelink;
+				});
+				$(".logo-ct").click(function() {
+					window.location = '/champions-trophy-2017/';
+				});
+				var fInnings =  response.firstInnings; 
+				var sInnings =  response.secondInnings; 
+				var fistinningsscores = '';
+				var secondinningsscores = '';
+				var players1='';
+				var players2='';
+				var fistbattingteam=secondbattingteam='';
+				if(sInnings.status === '1'){
+					var secondfade='rng';
+					var firstfade ='';
+				}else{
+					var secondfade='';
+					var firstfade ='rng';
+				}
+				
+				if(flag_type == 'ct-home'){
+					if(fInnings.status === '1'){
+						secondbattingteam = (fInnings.Battingteam===fteamNameA)?fteamNameB:fteamNameA;
+						fistinningsscores='<div class="lvmatch '+firstfade+'"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[fInnings.Battingteam])+'.png"/> '+team_short[fInnings.Battingteam]+'</div><div class="lvmthscr">'+fInnings.Equation.Total+'/'+fInnings.Equation.Wickets+'<i>OVERS: '+fInnings.Equation.Overs+'  I  R/R:'+fInnings.Equation.Runrate+'</i></div>	</div>';
+					}
+					
+					if(sInnings.status === '1'){
+						secondinningsscores='<div class="lvmatch '+secondfade+'"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[sInnings.Battingteam])+'.png"/> '+team_short[sInnings.Battingteam]+'</div>	<div class="lvmthscr">'+sInnings.Equation.Total+'/'+sInnings.Equation.Wickets+'<i>OVERS: '+sInnings.Equation.Overs+'  I  R/R:'+sInnings.Equation.Runrate+'</i></div></div>';
+					}else{
+						secondinningsscores='<div class="lvmatch"><div class="lvmthimg"><img src="http://static.ibnlive.in.com/ibnlive/pix/ibnhome/cricketnext/microsite/teamsicon/'+convertedToSlug(team_short[secondbattingteam])+'.png"/> '+team_short[secondbattingteam]+'</div>	<div class="lvmthscr">Yet To Play</div></div>';
+					}
+									
+					var inningslist =   '<h2 class="glblhd txtblue">रिजल्ट्स</h2><h3 class="tmstamp">'+response.matchnumber+' | '+response.matchdate+'</h3><h3 class="vns">'+response.Venue+'</h3>'+fistinningsscores+'<div class="btmbrdr"></div>'+secondinningsscores+'<div class="flrslt mtch-fnl1"></div><div class="btby">फुल रिजल्ट्स</div>';
+					
+					$('.team-ranking').html(inningslist);
+					
+					 if(response.matchresult.length >0 && response.matchresult!==''){
+					   $('.mtch-fnl1').html(response.matchresult);
+						
+					}else{
+						if(response.matchresult==='' && response.equation===''){
+							if(response.status){
+								$('.mtch-fnl1').html(response.status);
+							}else{
+								$('.mtch-fnl1').html(response.Toss_mov);
+							}
+							
+						}else if(response.equation!==''){
+						    $('.mtch-fnl1').html(response.equation);
+						}
+					}
+					if((response.length==0 || matchstatus==='Match Ended') && typeof matchInterval!='undefined'){
+						 clearInterval(widgetinterval); 
+					 }
+				}
+		},
+		error: function(xhr, ajaxOptions, thrownError){
+			clearInterval(widgetinterval);
+			console.log(xhr.status);
+			console.log(thrownError);
+		}
+	});
+}

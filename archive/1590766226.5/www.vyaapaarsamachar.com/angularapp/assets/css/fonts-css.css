@@ -1,0 +1,27 @@
+@import url('../../../../fonts.googleapis.com/css@family=Hind+Vadodara%253A300,400,500,600,700&display=swap.css');
+
+@font-face {
+    font-display: swap;
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot@) format("embedded-opentype"),   url(../../../../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg) format("svg")
+}
+@font-face {
+  font-display: swap;
+  font-family: FontAwesome;
+  src: url(../fonts/fontawesome-webfont.eot@v=4.5.0);
+  src: url(../fonts/fontawesome-webfont.eot@) format("embedded-opentype"), 
+  url(../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf) format("truetype"), url(../fonts/fontawesome-webfont.svg@v=4.5.0) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-display: swap;
+  font-family: AvenirNext-Regular;
+  src: url(../fonts/AvenirNext-Regular_gdi.eot);
+  src: url(../fonts/AvenirNext-Regular_gdi.eot@) format("embedded-opentype"),/* url(../fonts/AvenirNext-Regular_gdi.woff) format("woff"),*/ url(../fonts/AvenirNext-Regular_gdi.ttf) format("truetype"), url(../fonts/AvenirNext-Regular_gdi.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+} 

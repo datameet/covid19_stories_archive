@@ -1,0 +1,194 @@
+{
+    "title": "Jodhpur: Man committed suicide during lockdown | News Track Live, NewsTrack English 1",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.393",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:10.459455",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590781075",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 15,
+                "start_ts": "2020-05-29 19:37:55.452461",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:23.823083",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:38:21.556120",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:37:55.451202",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=english.newstracklive.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:37:55.166270",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:13.766698",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:38:10.459782",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:21.555738",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:38:17.896070",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:26.262302",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:38:23.823341",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "https://web.archive.org/web/20200529193825/https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:38:17.895818",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:38:13.766952",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:37:55.165981",
+                "cmd": [
+                    "curl",
+                    "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 19:37:54.511182",
+                "pwd": "/data/archive/1590766226.393",
+                "output": "Jodhpur: Man committed suicide during lockdown | News Track Live, NewsTrack English 1"
+            }
+        ]
+    },
+    "updated": "1590789451.570868",
+    "tags": "",
+    "url": "https://english.newstracklive.com/news/man-committed-suicide-jodhpur-sc103-nu612-ta294-1091140-1.html"
+}

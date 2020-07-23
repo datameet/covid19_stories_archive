@@ -1,0 +1,194 @@
+{
+    "title": "82-Year-Old Quarantined at Home After Returning from Gujarat Dies Lonely Death in UP's Barabanki",
+    "url": "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html",
+    "timestamp": "1590766226.81",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:35:43.898314",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590770136",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:35:36.863147",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:36:13.063581",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:36:11.187354",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:35:36.861804",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:35:36.599878",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:35:58.637948",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 16:35:43.898471",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:36:11.186949",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 16:36:05.352042",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:36:15.057637",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:36:13.064007",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "https://web.archive.org/web/20200529163614/https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:36:05.351723",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 16:35:58.638311",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:35:36.599748",
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/82-year-old-quarantined-at-home-after-returning-from-gujarat-dies-lonely-death-in-ups-barabanki-2574563.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:35:36.035568",
+                "pwd": "/data/archive/1590766226.81",
+                "output": "82-Year-Old Quarantined at Home After Returning from Gujarat Dies Lonely Death in UP's Barabanki"
+            }
+        ]
+    },
+    "updated": "1590788202.7958",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

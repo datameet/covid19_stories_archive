@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.81",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:33:57.504125",
+                "start_ts": "2020-05-29 21:33:56.710732",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "</title"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:12.985533",
+                "start_ts": "2020-05-29 21:34:10.211586",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=sachkiawaz.com"
+                ],
+                "end_ts": "2020-05-29 21:34:02.399899",
+                "start_ts": "2020-05-29 21:33:57.504412",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:10.211337",
+                "start_ts": "2020-05-29 21:34:07.390913",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:19.587061",
+                "start_ts": "2020-05-29 21:34:17.688857",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "https://web.archive.org/web/20200529213418/http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590788042",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:07.390737",
+                "start_ts": "2020-05-29 21:34:02.401216",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "sachkiawaz.com/epaper/view.php@issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:15.340299",
+                "start_ts": "2020-05-29 21:34:12.986382",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+                ],
+                "end_ts": "2020-05-29 21:34:17.688607",
+                "start_ts": "2020-05-29 21:34:15.340668",
+                "pwd": "/data/archive/1590785099.81",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590788059.590397",
+    "tags": "",
+    "url": "http://sachkiawaz.com/epaper/view.php?issueid=436&page=3&coords=50,1678,1112,2351&crop=50,1678,1062,673"
+}

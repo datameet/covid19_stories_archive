@@ -1,0 +1,574 @@
+﻿$(document).ready(function () {
+    //common-functions
+    sendAjaxPost = function (url, formData, resType, successCallback, errorCallback) {
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: formData,
+            dataType: resType,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,   // tell jQuery not to set contentType
+            success: successCallback,
+            error: errorCallback
+        });
+    }
+    sendAjaxGet = function (url, formData, resType, successCallback, errorCallback) {
+        $.ajax({
+            type: 'GET',
+            url: url,
+            data: formData,
+            dataType: resType,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,   // tell jQuery not to set contentType
+            success: successCallback,
+            error: errorCallback
+        });
+    }
+    //Go-to-top
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) { $('#gotop').show(); $(".menu-wrap:first").addClass('fix'); } else { $('#gotop').hide(); $(".menu-wrap:first").removeClass('fix'); }
+    });
+    $('#gotop').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    //ToggleLeftMenu
+    $(".toggle-sections").click(function () {
+        var $slideMenu = $(".slide-menu"),
+            isVisible = $slideMenu.attr("data-isvisible");
+        if (isVisible == 'false') {
+            $slideMenu.attr("data-isvisible", true);
+            $slideMenu.css('width', '300px');
+            $(".slide-menu-bg").show();
+        }
+        else {
+            $slideMenu.attr("data-isvisible", false);
+            $slideMenu.css('width', '0px');
+            $(".slide-menu-bg").hide();
+        }
+    });
+    $(".close-menu, .slide-menu-bg, .more-sections").click(function () {
+        $(".toggle-sections").click();
+    });
+    $("#trigger-search").click(function () {
+        $("#search-wrap").toggleClass("active");
+    });
+    $("[data-target]").click(function () { //side menu child toggle display
+        $($(this).attr("data-target")).toggleClass('hide');
+    });
+
+    //modal popup
+    MODAL = {
+        show: function () {
+            $('.popup-modal-bg').show();
+        },
+        hide: function (audio) {
+            $('.popup-modal-bg').hide();
+        }
+    }
+    $(".popup-modal-header span").click(function () {
+        MODAL.hide();
+    });
+    $("a[data-modal]").click(function () {
+        MODAL.show();
+        $(".popup-modal-body").html("<div class='text-center'><img src='images/loading.gif'/></div>").show();
+        $(".popup-modal-body").load('/info/' + $(this).attr('data-modal') + '.html?v=' + Math.random());
+    });
+
+    //audio-player-options
+    var player = document.getElementById('audio-player');
+    AUDIOPLAYER = {
+        pause: function () {
+            player.pause();
+            $("#audio-player-wrap").hide();
+        },
+        play: function (audio) {
+            $("#audio-player").attr("src", audio);
+            player.play();
+            $("#audio-player-wrap").show();
+        },
+        track: function (id) {
+            if (parseInt(id)) {
+                $("#loader").show();
+                var formData = new FormData();
+                formData.append("id", id);
+                sendAjaxPost('inc/track-audio-play.php', formData, 'json',
+                function (data) {
+                    $("#loader").hide();
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                });
+            }
+        }
+    }
+    //close footer audio player 
+    $("#audio-close").click(function () {
+        AUDIOPLAYER.pause();
+    });
+
+    if (page === 'LATEST') {
+        $("#load-more-latest").click(function () {
+            $("#loader").show();
+            var formData = new FormData(), $this = $(this), offset = $this.attr("data-offset");
+            formData.append("offset", offset);            
+            sendAjaxPost('inc/load-more-latest.php', formData, 'html',
+                function (data) {
+                    if (data) {
+                        if (data === 'no-records-found') {
+                            $this.addClass("disabled");
+                        }
+                        else {
+                            $("#render-news").append(data);
+                            $this.attr("data-offset", parseInt(offset) + 10);
+                        }                        
+                        $("#loader").hide();
+                    }
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                }
+            );
+        });        
+    }
+    else if (page === 'SECTION') {
+        $(".cat-sort td span").click(function () {
+            var $this = $(this),
+                $table = $this.closest('table'),
+                cid = parseInt($table.attr("data-cid")),
+                sid = parseInt($table.attr("data-sid")),
+                limit = parseInt($table.attr("data-limit")),
+                type = parseInt($this.attr("data-type")),
+                formData = new FormData(),
+                latest_div = "#lt-records-" + cid + "-" + sid,
+                mostread_div = "#mr-records-" + cid + "-" + sid;
+
+                $table.find('span').removeClass('active');
+                $this.addClass('active');
+
+            if (type === 0) {
+                $(mostread_div).hide();
+                $(latest_div).show();
+            }
+            else if (cid && sid && limit && type) {
+                var isLoaded = parseInt($(mostread_div).attr("data-isloaded"));
+                if (isLoaded === 1) {
+                    $(mostread_div).show();
+                    $(latest_div).hide();
+                }
+                else if (isLoaded === 0) {
+                    $("#loader").show();                    
+                    formData.append("cid", cid);
+                    formData.append("sid", sid);
+                    formData.append("limit", limit);
+                    formData.append("type", type);
+                    formData.append("trending_interval", trendingInterval);                    
+                    sendAjaxPost('inc/cat-sort-news.php', formData, 'html',
+                        function (data) {
+                            if (data) {
+                                $(mostread_div).append(data);
+                                $(mostread_div).attr("data-isloaded", "1")
+                                $(mostread_div).show();
+                                $(latest_div).hide();
+                                $("#loader").hide();
+                            }
+                        },
+                        function (textStatus, errorThrown) {
+                            $("#loader").hide();
+                        }
+                    );
+                }
+            }
+        });
+    }
+    else if (page === 'SUB-SECTION') {
+        $(".cat-sort td span").click(function () {
+            $("#loader").show();
+            window.location = $(this).attr("data-url");
+        });
+        $("#load-more").click(function () {
+            $("#loader").show();
+            var formData = new FormData(),
+                $this  = $(this),
+                offset = $this.attr("data-offset"),
+                limit = 10,
+                cid = parseInt($this.attr("data-cid")),
+                sid = parseInt($this.attr("data-sid"));
+                formData.append("offset", offset);
+                formData.append("limit", limit);
+                formData.append("cid", cid);
+                formData.append("sid", sid);
+                formData.append("type", type);
+                formData.append("trending_interval", trendingInterval);
+                formData.append("template", template);
+                formData.append("ajx", 1);
+            sendAjaxPost('inc/load-more-sub-section.php', formData, 'html',
+                function (data) {
+                    if (data) {
+                        if (data === 'no-records-found') {
+                            $this.addClass("disabled");
+                        }
+                        else {
+                            $("#render-news").append(data);
+                            $this.attr("data-offset", parseInt(offset) + limit);                            
+                        }
+                        $("#loader").hide();
+                    }
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                }
+            );
+        });
+    }
+    else if (page === 'NEWS') {
+        //remove p tags with empty contents
+        $(".news-body").find('p').each(function () {
+            var $this = $(this);
+            if ($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+                $this.remove();
+        });
+
+        var pLen = $(".news-body").find('p').length,
+            relNewsLen = parseInt($('.related-news-wrap').attr("data-count"));
+        
+        if (pLen >= 2 && relNewsLen) {
+            var $tgtRelNews = $(".rel-news-lists:first"),
+                link = $tgtRelNews.find("a").attr("href"),
+                img = $tgtRelNews.find("img").attr("src"),
+                title = $tgtRelNews.find('.rel-news-text font').text(),
+                lead = $tgtRelNews.find('.lead').text();
+
+            //vertical left template
+            var relTmpl = '<div class="inline-related left">'
+                        + '<a href="' + link + '">'
+                        + '<img src="' + img + '" class="img-responsive">'
+                            + '<b>' + title + '</b><br>'
+                            + '<font class="lead">' + lead + '</font><br>'
+                            + '<font color="red">Read More</font>'
+                            + '</a>'
+                    + '</div>';
+
+            //full width horizontal template
+            var relTmplHorizontal = '<div class="full-width rel-wrap-horiz">'
+                                        + '<a href="' + link + '">'
+                                        + '<img src="' + img + '" onerror="this.remove()" />'
+                                        + '<b>' + title + '</b><br />'
+                                        + '</a>'
+                                    + '</div>';
+
+            $tgtRelNews.remove();
+            $(".news-body p:first").after(relTmplHorizontal);
+        }
+
+        //append-news-audio
+        if (audio) {
+            $(".news-body p:first").before('<p class="news-audio-wrap"><img src="images/audio.png" style="float: left;margin-top: -6px;" />&nbsp;&nbsp; ഈ വാർത്ത കേൾക്കാം</p>');
+            //play audio
+            $(document).on('click', '.news-audio-wrap', function () {
+                AUDIOPLAYER.play(audio);
+                AUDIOPLAYER.track(id);
+            });
+        }
+
+        //font size
+        $(".toggle-font-size").click(function () {
+            var $this = $(this),
+                $target = $(".news-body, .news-body p"),
+                action = $this.attr("data-action"),
+                currentSize = parseInt($target.css('font-size')),
+                lineHeight = parseInt($target.css('line-height'));
+            if (action == 'plus') {
+                if (currentSize <= 30) {
+                    $target.css('font-size', currentSize + parseInt(1) + "px");
+                    $target.css('line-height', lineHeight + parseInt(1) + "px");
+                }
+            }
+            else {
+                if (currentSize > 16) {
+                    $target.css('font-size', currentSize - parseInt(1) + "px");
+                    $target.css('line-height', lineHeight - parseInt(1) + "px");
+                }
+            }
+        });
+    }
+    else if (page === 'TIMELINE') {        
+        $("#load-more-timeline").click(function () {
+            $("#loader").show();
+            var formData = new FormData(),
+                $this = $(this),
+                offset = $this.attr("data-offset"),
+                limit = 10,
+                cid = parseInt($this.attr("data-cid"));
+                formData.append("offset", offset);
+                formData.append("limit", limit);
+                formData.append("cid", cid);
+            sendAjaxPost('inc/load-more-timeline.php', formData, 'html',
+                function (data) {
+                    if (data) {
+                        if (data === 'no-records-found') {
+                            $this.addClass("disabled");
+                        }
+                        else {
+                            $("#render-news").append(data);
+                            $this.attr("data-offset", parseInt(offset) + limit);
+                        }
+                        $("#loader").hide();
+                    }
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                }
+            );
+        });
+    }
+    else if (page === 'TRENDING-NOW') {
+        $("#load-more-trending-now").click(function () {
+            $("#loader").show();
+            var formData = new FormData(),
+                $this = $(this),
+                offset = $this.attr("data-offset"),
+                limit = 10;
+            formData.append("offset", offset);
+            formData.append("limit", limit);
+            formData.append("trend_days", trendDays);
+            sendAjaxPost('inc/load-more-trending-now.php', formData, 'html',
+                function (data) {
+                    if (data) {
+                        if (data === 'no-records-found') {
+                            $this.addClass("disabled");
+                        }
+                        else {
+                            $("#render-news").append(data);
+                            $this.attr("data-offset", parseInt(offset) + limit);
+                        }
+                        $("#loader").hide();
+                    }
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                }
+            );
+        });
+    }
+    else if (page === 'HOME' || page === 'POLL-ARCHIVES') {
+        function renderGraphs($pollContent, records) {
+            var rec = JSON.parse(records), i = 0;
+            $pollContent.find(".progress-bar").each(function () {
+                var $pbar = $(this),
+                    percentage = rec[i];
+                $pbar.css("width", percentage + "%");
+                $pbar.attr("aria-valuenow", percentage);
+                i++;
+            });
+        }
+        $(".vote-now").click(function () {
+            var $this = $(this),
+                $opts = $this.attr("data-tgt"),
+                id = $this.attr("data-id"),
+                tid = $this.attr("data-tid"),
+                sid = $($opts + ":checked").attr("data-slno"),
+                ir = $this.attr("data-ir"),
+                pt = $this.attr("data-pt"),
+                rt = ($this.attr("data-rt") || 0),
+                formData = new FormData();
+            if (id && tid && sid) {
+                $("#loader").show();
+                formData.append("id", id);
+                formData.append("tid", tid);
+                formData.append("sid", sid);
+                formData.append("ir", ir);
+                formData.append("pt", pt);
+                formData.append("rt", rt);
+                sendAjaxPost('inc/poll-vote-now.php', formData, 'html',
+                        function (data) {
+                            var $pollContent = $this.closest(".poll-options");
+                            $pollContent.html(data);
+                            renderGraphs($pollContent, records);
+                            $("#loader").hide();
+                        },
+                        function (textStatus, errorThrown) {
+                            $("#loader").hide();
+                        });
+            }
+        });
+        if (page === 'POLL-ARCHIVES') {
+            $(".load-poll").click(function () {
+                var $this = $(this),
+                    id = $this.attr("data-id"),
+                    pt = $this.attr("data-pt"),
+                    rt = $this.attr("data-rt"),
+                    isLoaded = parseInt($this.attr("data-load")),
+                    formData = new FormData(),
+                    $pollContent = $($this.attr("data-href"));
+                if (isLoaded === 0) {
+                    formData.append("id", id);
+                    formData.append("pt", pt);
+                    formData.append("rt", rt);
+                    $("#loader").show();
+                    sendAjaxPost('inc/poll-vote-details.php', formData, 'html',
+                        function (data) {
+                            $this.attr("data-load", 1);
+                            $pollContent.html(data);
+                            renderGraphs($pollContent, records);
+                            $pollContent.toggleClass('in');
+                            $("#loader").hide();
+                        },
+                        function (textStatus, errorThrown) {
+                            $($pollContent).html("No Records Found!");
+                            $pollContent.toggleClass('in');
+                            $("#loader").hide();
+                        });
+                }
+                else {
+                    $pollContent.toggleClass('in');
+                }
+            });
+        }
+        else if (page === 'HOME') {
+            $(".show-instant-results").click(function () {
+                var $this = $(this),
+                    id = $this.attr("data-id"),
+                    pt = $this.attr("data-pt"),
+                    ir = parseInt($this.attr("data-ir")),
+                    rt = parseInt($this.attr("data-rt")),
+                    formData = new FormData(),
+                    $pollContent = $($this.attr("data-href"));
+                if (ir == 1) {
+                    formData.append("id", id);
+                    formData.append("pt", pt);
+                    formData.append("rt", rt);
+                    $("#loader").show();
+                    sendAjaxPost('inc/poll-vote-details.php', formData, 'html',
+                    function (data) {
+                        $pollContent.html(data);
+                        renderGraphs($pollContent, records);
+                        $("#loader").hide();
+                    },
+                    function (textStatus, errorThrown) {
+                        $($pollContent).html("No Records Found!");
+                        $("#loader").hide();
+                    });
+                }
+                else {
+                    $(".ir-later").show();
+                }
+            });
+
+            //close-alert
+            $(".ir-close").click(function () {
+                $(".ir-later").hide();
+            });
+            //election panel >>
+            $("#elec-res").on('change', "#state-list", function () {
+                $("#loader").show();
+                sendAjaxGet('inc/election/get-election-results.php?const_id=' + $(this).val(), '', 'html',
+                function (cons_html) {
+                    $("#cons_res").html(cons_html);
+                    $("#loader").hide();
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                });
+            });
+
+            $("#elec-res").on('change', "#kerala-district-list", function () {
+                $("#loader").show();
+                sendAjaxGet('inc/election/get-lead-results.php?const_id=' + $(this).val(), '', 'html',
+                function (cons_html) {
+                    $("#dis_cons_res").html(cons_html);
+                    $("#loader").hide();
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                });
+            });
+            $("#elec-res").on('change', '#kerala-dist', function () {
+                $("#loader").show();
+                sendAjaxGet('inc/election/get-kerala-results.php?const_id=' + $(this).val(), '', 'html',
+                function (cons_html) {
+                    $("#ker-main-res").html(cons_html);
+                    $("#loader").hide();
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                });
+            });
+            $("#refresh_res").click(function () {
+                $("#loader").show();
+                sendAjaxGet('inc/election/get-election-panel.php', '', 'html',
+                function (elec_html) {
+                    var today = new Date();
+                    var hours = today.getHours(), minutes = today.getMinutes(), secs = today.getSeconds(), tSuffix = 'AM';
+                    if (hours >= 12) {
+                        if (hours > 12) hours = hours - 12;
+                        tSuffix = 'PM'
+                    } else if (hours < 10) {
+                        hours = '0' + hours;
+                        tSuffix = 'AM';
+                    } else {
+                        tSuffix = 'AM';
+                    }
+                    var time = hours + ":" + (minutes < 10 ? '0' + minutes : minutes) + ":" + (secs < 10 ? '0' + secs : secs) + ' ' + tSuffix;
+                    $("#elec-res").html(elec_html);
+                    $("#eleupdt_time").text(time);
+                    $("#loader").hide();
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                });
+            });
+            //<<election panel
+        }
+    }
+    else if (page === 'NOTIFIED-NEWS') {
+        $("#load-more-notified-news").click(function () {
+            $("#loader").show();
+            var formData = new FormData(), $this = $(this), offset = $this.attr("data-offset");
+            formData.append("offset", offset);
+            sendAjaxPost('inc/load-more-notified-news.php', formData, 'html',
+                function (data) {
+                    if (data) {
+                        if (data === 'no-records-found') {
+                            $this.addClass("disabled");
+                        }
+                        else {
+                            $("#render-news").append(data);
+                            $this.attr("data-offset", parseInt(offset) + 10);
+                        }
+                        $("#loader").hide();
+                    }
+                },
+                function (textStatus, errorThrown) {
+                    $("#loader").hide();
+                }
+            );
+        });
+    }
+
+    //login
+    $("#signin-btn").click(function () {
+        $('body').addClass('modal-open');
+        $('body').append('<div class="modal-backdrop fade in"></div>');
+        $('#loginModal').addClass('in');
+        $('#loginModal').css({ "display": "block" });
+    });
+    $('[data-toggle="tab"]').click(function () {
+        $(".tab-pane").removeClass('active');
+        $($(this).attr('href')).addClass('active');
+        $("#tabs").find('li').removeClass('active');
+        $(this).closest('li').addClass('active');
+    });
+
+    $("#user_info").click(function () {
+        $(this).closest('li').find('.account-box').attr("style", "display:block");
+    });
+    $('body').click(function (e) {
+        var container = $("#user_info,.account-box");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $(".account-box").attr("style", "display:none");
+        }
+    });
+
+
+});

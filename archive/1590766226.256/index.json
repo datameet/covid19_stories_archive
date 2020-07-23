@@ -1,0 +1,194 @@
+{
+    "title": "P Naveen on Twitter: \"Jr doctor assigned with treatment of #COVID19 positive patients in #MadhyaPradesh  commits suicide, it is being alleged that she was under tremendous pressure #CoronavirusOutbreakindia #Covid_19india\"",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.256",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590776131",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:41.788076",
+                "start_ts": "2020-05-29 18:15:31.638354",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "twitter.com/PNaveenTOI/status/1246498613615677445.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:51.210766",
+                "start_ts": "2020-05-29 18:15:48.890939",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=twitter.com"
+                ],
+                "end_ts": "2020-05-29 18:15:31.637097",
+                "start_ts": "2020-05-29 18:15:31.354698",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:44.106588",
+                "start_ts": "2020-05-29 18:15:41.788246",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:48.890605",
+                "start_ts": "2020-05-29 18:15:46.726326",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:55.615732",
+                "start_ts": "2020-05-29 18:15:51.211027",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "https://web.archive.org/web/20200529181552/https://twitter.com/PNaveenTOI/status/1246498613615677445"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+                ],
+                "end_ts": "2020-05-29 18:15:46.725970",
+                "start_ts": "2020-05-29 18:15:44.107302",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://twitter.com/PNaveenTOI/status/1246498613615677445",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:15:31.354401",
+                "start_ts": "2020-05-29 18:15:29.086887",
+                "pwd": "/data/archive/1590766226.256",
+                "output": "P Naveen on Twitter: &quot;Jr doctor assigned with treatment of #COVID19 positive patients in #MadhyaPradesh  commits suicide, it is being alleged that she was under tremendous pressure #CoronavirusOutbreakindia #Covid_19india&quot;"
+            }
+        ]
+    },
+    "updated": "1590788616.949173",
+    "tags": "",
+    "url": "https://twitter.com/PNaveenTOI/status/1246498613615677445"
+}

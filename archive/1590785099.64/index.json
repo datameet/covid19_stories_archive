@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.64",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:25:23.243444",
+                "start_ts": "2020-05-29 21:25:21.662591",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "Our COVID aid not for Tablighis, jihadis, write Assam Foreigners\u2019 Tribunals&#8217; members | coronavirus outbreak News,The Indian Express"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:44.691783",
+                "start_ts": "2020-05-29 21:25:41.319335",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "end_ts": "2020-05-29 21:25:23.585329",
+                "start_ts": "2020-05-29 21:25:23.243566",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:41.319088",
+                "start_ts": "2020-05-29 21:25:38.482465",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:53.112223",
+                "start_ts": "2020-05-29 21:25:51.034524",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "https://web.archive.org/web/20200529212552/https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 14,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787523",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:38.482180",
+                "start_ts": "2020-05-29 21:25:23.586649",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/index.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:46.942492",
+                "start_ts": "2020-05-29 21:25:44.692039",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+                ],
+                "end_ts": "2020-05-29 21:25:51.034230",
+                "start_ts": "2020-05-29 21:25:46.942835",
+                "pwd": "/data/archive/1590785099.64",
+                "output": "Failed to download media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787553.115283",
+    "tags": "",
+    "url": "https://indianexpress.com/article/coronavirus/our-covid-aid-not-for-tablighis-jihadis-write-assam-ft-members-6358438/"
+}

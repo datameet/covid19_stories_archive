@@ -1,0 +1,194 @@
+{
+    "title": "Army Jawan Tested Positive For Covid-19 Coronavirus Commits Suicide In Hospital Delhi | \u0926\u093f\u0932\u094d\u0932\u0940: \u0938\u0947\u0928\u093e \u0915\u0947 \u0915\u094b\u0930\u094b\u0928\u093e \u092a\u0949\u091c\u093f\u091f\u093f\u0935 \u091c\u0935\u093e\u0928 \u0928\u0947 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092e\u0947\u0902 \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e, \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u0915\u094b\u0908 \u0938\u0941\u0938\u093e\u0907\u0921 \u0928\u094b\u091f",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.247",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:13.844753",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775448",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:04:08.932575",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:20.397796",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:04:18.922980",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:08.931061",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.abplive.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:04:08.587133",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:15.714489",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:04:13.845186",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:18.922637",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:04:17.532262",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:22.045350",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:04:20.398043",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "https://web.archive.org/web/20200529180421/https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:17.532000",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:04:15.714731",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:04:08.586785",
+                "cmd": [
+                    "curl",
+                    "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:04:07.900278",
+                "pwd": "/data/archive/1590766226.247",
+                "output": "Army Jawan Tested Positive For Covid-19 Coronavirus Commits Suicide In Hospital Delhi | \u0926\u093f\u0932\u094d\u0932\u0940: \u0938\u0947\u0928\u093e \u0915\u0947 \u0915\u094b\u0930\u094b\u0928\u093e \u092a\u0949\u091c\u093f\u091f\u093f\u0935 \u091c\u0935\u093e\u0928 \u0928\u0947 \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092e\u0947\u0902 \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e, \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e \u0915\u094b\u0908 \u0938\u0941\u0938\u093e\u0907\u0921 \u0928\u094b\u091f"
+            }
+        ]
+    },
+    "updated": "1590788308.59589",
+    "tags": "",
+    "url": "https://www.abplive.com/news/india/army-jawan-tested-positive-for-covid-19-coronavirus-commits-suicide-in-hospital-delhi-1395682"
+}

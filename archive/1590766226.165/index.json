@@ -1,0 +1,194 @@
+{
+    "title": "Telangana: Man commits suicide over fear of Covid-19\u00a0in\u00a0Suryapet - Mail Today News",
+    "url": "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29",
+    "timestamp": "1590766226.165",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:27.485621",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772453",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 13,
+                "start_ts": "2020-05-29 17:14:13.807320",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:39.196022",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:14:37.158411",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:13.805881",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatoday.in"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:14:13.517685",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:30.726485",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:14:27.485770",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:37.157727",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:14:34.250947",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:40.898502",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:14:39.196260",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "https://web.archive.org/web/20200529171440/https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:34.250709",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:14:30.726712",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:14:13.517353",
+                "cmd": [
+                    "curl",
+                    "https://www.indiatoday.in/mail-today/story/telangana-man-commits-suicide-over-fear-of-covid-19-in-suryapet-1660847-2020-03-29",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:14:13.206916",
+                "pwd": "/data/archive/1590766226.165",
+                "output": "Telangana: Man commits suicide over fear of Covid-19\u00a0in\u00a0Suryapet - Mail Today News"
+            }
+        ]
+    },
+    "updated": "1590788239.867497",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,213 @@
+{
+    "title": "\u0c95\u0cca\u0cb0\u0cca\u0ca8\u0cbe \u0cb8\u0ccb\u0c82\u0c95\u0cc1\u200c \u0cad\u0cc0\u0ca4\u0cbf: \u0cb8\u0c82\u0cb6\u0caf\u0c97\u0cca\u0c82\u0ca1 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 | Prajavani",
+    "url": "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html",
+    "timestamp": "1590766226.50",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768084",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:01:33.040125",
+                "start_ts": "2020-05-29 16:01:24.432408",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:02:02.910730",
+                "start_ts": "2020-05-29 16:02:01.143729",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.prajavani.net"
+                ],
+                "end_ts": "2020-05-29 16:01:24.430268",
+                "start_ts": "2020-05-29 16:01:23.564751",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:01:40.825943",
+                "start_ts": "2020-05-29 16:01:33.040344",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 16,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:02:01.142165",
+                "start_ts": "2020-05-29 16:01:44.450239",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:02:05.085384",
+                "start_ts": "2020-05-29 16:02:02.911004",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "https://web.archive.org/web/20200529160204/https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 16:01:44.449181",
+                "start_ts": "2020-05-29 16:01:40.826379",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html"
+                ],
+                "end_ts": "2020-05-29 17:30:44.622494",
+                "start_ts": "2020-05-29 17:30:38.116328",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 12,
+                "cmd": [
+                    "curl",
+                    "https://www.prajavani.net/stories/stateregional/man-hanged-himself-due-to-coronavirus-fear-in-bantwal-dakshina-kannada-715395.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:01:23.564021",
+                "start_ts": "2020-05-29 16:01:11.556103",
+                "pwd": "/data/archive/1590766226.50",
+                "output": "\u0c95\u0cca\u0cb0\u0cca\u0ca8\u0cbe \u0cb8\u0ccb\u0c82\u0c95\u0cc1\u200c \u0cad\u0cc0\u0ca4\u0cbf: \u0cb8\u0c82\u0cb6\u0caf\u0c97\u0cca\u0c82\u0ca1 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 | Prajavani"
+            }
+        ]
+    },
+    "updated": "1590788156.160594",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

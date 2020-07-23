@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Election 2019: Latest News, Schedule, Election Dates Live Result of Lok Sabha and Vidhan Sabha</title>
+<script src="../../../../Resources/midday/js/election-common-header.js@v3.0"></script>
+<link href="../../../../Resources/midday/css/middayopt/commonheadfoot.css" rel="stylesheet">
+<link type="text/css" href="../../../../Resources/midday/css/middayopt/vidhanshabha-result.css" rel="stylesheet">
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"398875",ustr:"",originlat:"0",clientrtt:"4",ghostip:"23.11.215.94",ipv6:false,pct:"10",clientip:"183.82.181.2",requestid:"f3679f7",region:"26813",protocol:"",blver:14,akM:"j",akN:"ae",akTT:"O",akTX:"1",akTI:"f3679f7",ai:"252901",ra:"false",pmgn:"rumMidday",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<body>
+<a href="https://english.jagran.com/elections/maharashtra-assembly-election" target="_blank">
+<br/>
+<div class="mapBox">
+    <div class="stateHd">
+      <h2>Maharashtra Assembly Polls 2019</h2>
+      
+    </div>
+    <div class="sheat-details-bg">
+      <div id="bahumatTab2" class="bahumatLanding">
+        <ul class="sheat-details removegap">
+          <li class="heading"> <small class="partyName fl">Party <!--<span class="fr sheets"></span>--></small><small class="fl"><strong>Seat (Won+Lead)</strong></small><small class="TotalSheetWin">Majority - 145</small><small class="votePercentage fr">
+            <p class="bahumat-aagepichhe" style="font-weight:bold; font-size:14px; margin-top:3px;">Majority Lead/Trail By<!--<span></span>--></p>
+            </small> </li>
+        </ul>
+        <ul id="display-tally2" class="sheat-details loop1">
+          <span class="centerImg"></span>
+        </ul>
+        <div class="shareBox">
+          <div class="fl circle-btn">Total Seats - 288 </div>
+        </div>
+      </div>
+    </div>
+</div>
+</a>
+<script>
+function showTally(id,state,nosheet, totalS){
+var displayResources = $("#"+id);
+ $.ajax({
+  type: "GET",
+ url: "https://images.herzindagi.info/lsef/"+state+".json",
+  dataType: 'json',
+  success: function(result) {
+	var output ='';
+	var leadingValue='';
+    var rs= result;
+	for (var i=0;i<rs.state.party_list.length;i++) {
+	   var needtowin= nosheet-rs.state.party_list[i].party_total_seat;
+		if(needtowin < nosheet){
+		   var ss=rs.state.party_list[i].party_total_seat-nosheet;
+		  leadingValue= ss;
+		}else if(needtowin > nosheet) {
+			  var kk=nosheet-rs.state.party_list[i].party_total_seat;
+					 leadingValue=kk;
+		 }else if(needtowin ==nosheet){
+			 var ss=rs.state.party_list[i].party_total_seat-nosheet;
+			 leadingValue= ss;
+		}
+		output +=
+		"<li class="+rs.state.party_list[i].party_name_en+"> <span class='partyName fl'>"+rs.state.party_list[i].party_name_en.toUpperCase() +"&nbsp;+ <b>"+rs.state.party_list[i].party_total_seat+"</b></span> <span class='ProgressBar fl'><small class='"+rs.state.party_list[i].party_name_en+"Bg inner' style='height: 100%;'></small><i class='"+rs.state.party_list[i].party_name_en+"Logo'></i></span> <span class='votePercentage fr'><strong>"+leadingValue+"</strong></span> </li>";		
+		}
+	output += "";
+	displayResources.html(output);
+	newOne(id, nosheet, totalS);
+  }
+});
+}
+function newOne(id, nosheet, totalS) {
+var firstParty=$('#'+id+' li').eq(0).attr('class');
+
+var firstParty1=$('#'+id+' li').eq(1).attr('class');
+var firstParty2=$('#'+id+' li').eq(2).attr('class');
+var ndaValue = parseInt($('#'+id+' .'+firstParty+' .partyName b').html());
+var upaValue = parseInt($('#'+id+' .'+firstParty1+' .partyName b').html());
+var otherValue = parseInt($('#'+id+' .'+firstParty2+' .partyName b').html());
+var total= totalS;
+if(firstParty) {
+var percent1= Math.round((ndaValue/total)*100);
+var n1 = percent1.toString(); 
+$('#'+id+' .'+firstParty+' .ProgressBar .inner').attr("data-progress",n1+"%");
+}
+if(firstParty1) { 
+var percent2= Math.round((upaValue/total)*100);
+var n2 = percent2.toString(); 
+$('#'+id+' .'+firstParty1+' .ProgressBar .inner').attr("data-progress",n2+"%");
+}                     
+if(firstParty2) { 
+var percent3= Math.round((otherValue/total)*100);
+var n3 = percent3.toString(); 
+
+$('#'+id+' .'+firstParty2+' .ProgressBar .inner').attr("data-progress",n3+"%");
+}
+
+$('.loop li').each(function(){	
+var skillBar = $(this).find('.inner');            
+var skillVal = skillBar.attr("data-progress");			
+$(skillBar).animate({ width: skillVal
+}, 3000);	
+});    
+
+ $('.loop1 li').each(function(){	
+var skillBar = $(this).find('.inner');            
+var skillVal = skillBar.attr("data-progress");			
+$(skillBar).animate({ width: skillVal
+}, 3000);	
+});    
+
+}
+</script> 
+<script>
+$(document).ready(function() {
+	showTally('display-tally2','elec-maharashtra-tally-2019',145 ,288);
+	setInterval(function(){
+		showTally('display-tally2','elec-maharashtra-tally-2019',145 ,288);
+	}, 60000);
+});
+</script> 
+</body>
+</html>

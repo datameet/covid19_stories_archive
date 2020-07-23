@@ -1,0 +1,194 @@
+{
+    "title": "Coronavirus lockdown: Daily-wage labourer found dead in Goalpara",
+    "url": "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385",
+    "timestamp": "1590766226.37",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:34.788797",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590767727",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 15:55:27.725735",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:41.408914",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:55:39.916055",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:27.725121",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.telegraphindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:55:27.349417",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:36.636987",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:55:34.788973",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:39.915715",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:55:38.468024",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:43.728306",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:55:41.409192",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "https://web.archive.org/web/20200529155542/https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:38.467779",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:55:36.637279",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:55:27.349044",
+                "cmd": [
+                    "curl",
+                    "https://www.telegraphindia.com/states/north-east/coronavirus-lockdown-daily-wage-labourer-found-dead-in-goalpara/cid/1762385",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:55:27.109648",
+                "pwd": "/data/archive/1590766226.37",
+                "output": "Coronavirus lockdown: Daily-wage labourer found dead in Goalpara"
+            }
+        ]
+    },
+    "updated": "1590788141.9246",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

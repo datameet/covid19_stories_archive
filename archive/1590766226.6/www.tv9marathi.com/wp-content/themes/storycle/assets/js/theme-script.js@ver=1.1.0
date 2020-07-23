@@ -1,0 +1,485 @@
+(function( $ ) {
+	"use strict";
+
+	CherryJsCore.utilites.namespace( 'theme_script' );
+	CherryJsCore.theme_script = {
+		init: function() {
+			// Document ready event check
+			if ( CherryJsCore.status.is_ready ) {
+				this.document_ready_render();
+			} else {
+				CherryJsCore.variable.$document.on( 'ready', this.document_ready_render.bind( this ) );
+			}
+
+			// Windows load event check
+			if ( CherryJsCore.status.on_load ) {
+				this.window_load_render();
+			} else {
+				CherryJsCore.variable.$window.on( 'load', this.window_load_render.bind( this ) );
+			}
+		},
+
+		document_ready_render: function() {
+			// blog
+			this.post_formats_custom_init( this );
+			this.load_more_blog_listing_posts( this );
+			this.related_posts_init( this );
+			this.scrollToRespondForm( this );
+			this.readingProgressBar( this );
+			this.stickySidebarInit( this );
+			this.videoPopupInit( this );
+			// widgets
+			this.swiper_carousel_init( this );
+			// menus
+			this.main_menu( this, $( '.main-navigation' ) );
+			// misc
+			this.to_top_init( this );
+			this.ofi_init( this );
+		},
+
+		window_load_render: function() {
+			this.page_preloader_init( this );
+		},
+
+		load_more_blog_listing_posts: function( self ) {
+			function loadMoreHandler() {
+				var $button = $( this ),
+					$buttonText = $( '.posts-load-more-btn__text', $button ),
+					$postsWrapper = $( '.site-main > .posts-list' ),
+
+					buttonTexts = storycle.load_more_args.button_texts,
+
+					data = {
+						'action':                   'storycle_get_blog_listing_posts',
+						'storyclePage':             storycle.load_more_args.current_page,
+						'storycleQueryVars':        storycle.load_more_args.query_vars,
+						'storycleQueryObjId':       storycle.load_more_args.queried_object_id,
+						'storycleLdSettings':       storycle.load_more_args.ld_switcher_settings,
+						'storycleIsCategoryOrTag':  storycle.load_more_args.is_category_or_tag,
+						'nonce':                    storycle.load_more_args.blog_ajax_nonce
+					};
+
+				if ( $button.hasClass( 'processing' ) ) {
+					return !1;
+				}
+
+				$button.addClass( 'processing' );
+				$postsWrapper.addClass( 'processing' );
+				$buttonText.text( buttonTexts.loading );
+
+				$.ajax( {
+					url:      storycle.ajaxurl,
+					data:     data,
+					type:     'POST',
+					dataType: 'json',
+					error:    function() {
+						$button.removeClass( 'processing' );
+						$postsWrapper.removeClass( 'processing' );
+
+						$buttonText.text( buttonTexts.default );
+					},
+					success:  function( response ) {
+						$postsWrapper.append( response.data.posts );
+
+						// initialize wp-mediaelement ( video, audio )
+						if ( response.data.has_media && undefined !== window.wp.mediaelement ) {
+							window.wp.mediaelement.initialize();
+						}
+
+						// initialize cherry-post-formats-api for gallery and image post formats
+						var popupInitalize = false;
+
+						if ( response.data.has_gallery_post ) {
+							self.post_formats_initalize( 'slider' );
+							self.post_formats_initalize( 'popup' );
+
+							popupInitalize = true;
+						}
+
+						if ( response.data.has_image_post && !popupInitalize ) {
+							self.post_formats_initalize( 'popup' );
+						}
+
+						$( '.sidebar' ).trigger( 'storycle/sidebar/sticky' );
+
+						$button.removeClass( 'processing' );
+						$postsWrapper.removeClass( 'processing' );
+						$buttonText.text( buttonTexts.default );
+
+						storycle.load_more_args.current_page++;
+
+						if ( storycle.load_more_args.current_page === storycle.load_more_args.max_page ) {
+							$button.attr( 'disabled', 'disabled' );
+							$buttonText.text( buttonTexts.none );
+						}
+					}
+				} );
+			}
+
+			CherryJsCore.variable.$document.on( 'click.postsLoadMore', '.site-main > .posts-load-more-nav .posts-load-more-btn', loadMoreHandler );
+		},
+
+		post_formats_initalize: function( object ) {
+
+			$( '*[data-cherry' + object + '="1"]' ).each( function() {
+
+				var plugin = $( this ).data( object ),
+					init   = $( this ).data( 'init' );
+
+				$( this ).data( 'initalized', false );
+
+				$( this ).trigger({
+					type: 'cherry-post-formats-custom-init',
+					item: $( this ),
+					object: object
+				});
+
+				if ( true === $( this ).data( 'initalized' ) ) {
+					return 1;
+				}
+
+				if ( ! plugin ) {
+					return !1;
+				}
+
+				if ( ! $.isFunction( jQuery.fn[ plugin ] ) ) {
+					return !1;
+				}
+
+				$( this )[ plugin ]( init );
+			});
+		},
+
+		post_formats_custom_init: function( self ) {
+			CherryJsCore.variable.$document.on( 'cherry-post-formats-custom-init', function( event ) {
+				if ( 'slider' === event.object ) {
+					var uniqId = '#' + event.item.attr( 'id' ),
+						settings = event.item.data( 'init' ),
+						swiper = new Swiper( uniqId, {
+							pagination: uniqId + ' .swiper-pagination',
+							paginationClickable: true,
+							nextButton: uniqId + ' .swiper-button-next',
+							prevButton: uniqId + ' .swiper-button-prev',
+							spaceBetween: 0,
+							loop: settings['loop'],
+							onInit: function() {
+								if ( settings['arrows'] ) {
+									$( uniqId + ' .swiper-button-next' ).css( { 'display': 'block' } );
+									$( uniqId + ' .swiper-button-prev' ).css( { 'display': 'block' } );
+								}
+								if ( settings['buttons'] ) {
+									$( uniqId + ' .swiper-pagination' ).css( { 'display': 'block' } );
+								}
+							}
+						} );
+
+					$( uniqId ).magnificPopup( {
+						delegate: '.post-gallery__link',
+						type:     'image',
+						gallery:  {
+							enabled:            true,
+							navigateByImgClick: true,
+							preload:            [0, 1]
+						}
+					} );
+
+					event.item.data( 'initalized', true );
+				}
+
+				if ( 'popup' === event.object ) {
+					if ( $( event.item ).closest( $( '.post-gallery' ) ).length ) {
+						event.item.data( 'initalized', true );
+					}
+				}
+			} );
+		},
+
+		related_posts_init: function( self ) {
+			var $relatedPosts = $( '.related-posts' ),
+				$relatedTab = $( '.related-posts__tab', $relatedPosts ),
+				$relatedNavItem = $( '.related-posts__nav-item', $relatedPosts ),
+				activeClass = 'active',
+
+				clickHandler = function() {
+					var $this = $( this );
+
+					if ( !$this.hasClass( activeClass ) ) {
+						var timeout;
+
+						$relatedPosts.addClass( 'processing' );
+						$relatedNavItem.removeClass( activeClass );
+						$relatedTab.removeClass( activeClass );
+						$this.addClass( activeClass );
+
+						$( '.related-posts__tab[data-tab="' + $this.data( 'tab' ) +'"]', $relatedPosts ).addClass( activeClass );
+
+						if ( timeout ) {
+							clearTimeout( timeout );
+						}
+
+						timeout = setTimeout( function(){
+							$relatedPosts.removeClass( 'processing' );
+						}, 500 );
+					}
+				};
+
+			$relatedNavItem.on( 'click.relatedNavItem', clickHandler );
+		},
+
+		scrollToRespondForm: function( self ) {
+			var $replyLink = $( '.comment-reply-link' ),
+				$respondForm = $( '#respond' ),
+				$postRespondBtn = $( '.post-respond-button' ),
+
+				clickHandler = function() {
+					self.smooth_scroll( $respondForm, 500 );
+				};
+
+			if ( $replyLink[0] && $respondForm[0] ) {
+				$replyLink.each( function() {
+					$( this ).on( 'click.replyLink', clickHandler );
+				} )
+			}
+
+			if ( $postRespondBtn[0] && $respondForm[0] ) {
+				$postRespondBtn.each( function() {
+					$( this ).on( 'click.postRespondBtn', clickHandler );
+				} )
+			}
+		},
+
+		readingProgressBar: function( self ) {
+			var $readingProgressBar = $( '.reading-progress-bar .progress-bar' ),
+				$postContent        = $( '.single-post .hentry.type-post .entry-content' ),
+				contentHeight       = $postContent.height(),
+				windowHeight        = CherryJsCore.variable.$window.height(),
+
+				setProgressBarWidth = function( event ) {
+					var width         = 0,
+						contentOffset = $postContent.offset().top,
+						windowOffset  = CherryJsCore.variable.$window.scrollTop();
+
+					// Recalculating the content height and window height on every resize.
+					if ( 'resize' === event.type ) {
+						contentHeight = $postContent.height();
+						windowHeight  = CherryJsCore.variable.$window.height();
+					}
+
+					if ( windowOffset > contentOffset ) {
+						width = 100 * ( windowOffset - contentOffset ) / ( contentHeight - windowHeight );
+					}
+
+					$readingProgressBar.css( 'width', width + '%' );
+				};
+
+			if ( $readingProgressBar[0] && $postContent[0] ) {
+				CherryJsCore.variable.$window.on( 'load.readingProgressBar resize.readingProgressBar', setProgressBarWidth );
+				CherryJsCore.variable.$document.on( 'scroll.readingProgressBar', setProgressBarWidth );
+			}
+		},
+
+		stickySidebarInit: function( self ) {
+			if ( $.isFunction( jQuery.fn.theiaStickySidebar ) ) {
+
+				var topOffset = 20,
+					$wpAdmin = $( '#wpadminbar' );
+
+				if ( $wpAdmin[0] ) {
+					topOffset += $wpAdmin.height();
+				}
+
+				if ( storycle.sidebar_sticky ) {
+					$( '.sidebar' ).on( 'storycle/sidebar/sticky', function() {
+						$( this ).theiaStickySidebar( {
+							additionalMarginTop:    topOffset,
+							additionalMarginBottom: 30
+						} );
+					} ).trigger( 'storycle/sidebar/sticky' );
+				}
+
+				$( '.post-template-single-layout-7.position-fullwidth .single-author-box-wrapper' ).theiaStickySidebar( {
+					additionalMarginTop: topOffset
+				} );
+			}
+		},
+
+		videoPopupInit: function( self ) {
+			if ( !$.isFunction( jQuery.fn.magnificPopup ) ) {
+				return !1;
+			}
+
+			var $trigger = $( '.video-popup__trigger' );
+
+			$trigger.each( function(){
+				var $this = $( this ),
+					type  = $this.data( 'type' );
+
+				$this.magnificPopup( {
+					type:         type,
+					mainClass:    'mfp-dark-bg mfp-fade',
+					removalDelay: 160,
+					preloader:    false,
+
+					callbacks: {
+						open: function() {
+							// Play video on open:
+							if ( 'inline' === type ) {
+								$( this.content ).find( 'video' )[0].play();
+							}
+						},
+						close: function() {
+							// Pause video on close:
+							if ( 'inline' === type ) {
+								$( this.content ).find( 'video' )[0].pause();
+							}
+						}
+					}
+				} );
+			} );
+		},
+
+		swiper_carousel_init: function( self ) {
+
+			// Enable swiper carousels
+			jQuery( '.storycle-carousel' ).each( function() {
+				var swiper = null,
+					uniqId = jQuery( this ).data( 'uniq-id' ),
+					slidesPerView = parseFloat( jQuery( this ).data( 'slides-per-view' ) ),
+					slidesPerGroup = parseFloat( jQuery( this ).data( 'slides-per-group' ) ),
+					slidesPerColumn = parseFloat( jQuery( this ).data( 'slides-per-column' ) ),
+					spaceBetweenSlides = parseFloat( jQuery( this ).data( 'space-between-slides' ) ),
+					durationSpeed = parseFloat( jQuery( this ).data( 'duration-speed' ) ),
+					swiperLoop = jQuery( this ).data( 'swiper-loop' ),
+					freeMode = jQuery( this ).data( 'free-mode' ),
+					grabCursor = jQuery( this ).data( 'grab-cursor' ),
+					mouseWheel = jQuery( this ).data( 'mouse-wheel' ),
+					breakpointsSettings = {
+						1199: {
+							slidesPerView: Math.floor( slidesPerView * 0.75 ),
+							spaceBetween: Math.floor( spaceBetweenSlides * 0.75 )
+						},
+						991: {
+							slidesPerView: Math.floor( slidesPerView * 0.5 ),
+							spaceBetween: Math.floor( spaceBetweenSlides * 0.5 )
+						},
+						767: {
+							slidesPerView: ( 0 !== Math.floor( slidesPerView * 0.25 ) ) ? Math.floor( slidesPerView * 0.25 ) : 1
+						}
+					};
+
+				if ( 1 == slidesPerView ) {
+					breakpointsSettings = {}
+				}
+
+				var swiper = new Swiper( '#' + uniqId, {
+						slidesPerView: slidesPerView,
+						slidesPerGroup: slidesPerGroup,
+						slidesPerColumn: slidesPerColumn,
+						spaceBetween: spaceBetweenSlides,
+						speed: durationSpeed,
+						loop: swiperLoop,
+						freeMode: freeMode,
+						grabCursor: grabCursor,
+						mousewheelControl: mouseWheel,
+						paginationClickable: true,
+						nextButton: '#' + uniqId + '-next',
+						prevButton: '#' + uniqId + '-prev',
+						pagination: '#' + uniqId + '-pagination',
+						onInit: function() {
+							$( '#' + uniqId + '-next' ).css( { 'display': 'block' } );
+							$( '#' + uniqId + '-prev' ).css( { 'display': 'block' } );
+						},
+						breakpoints: breakpointsSettings
+					}
+				);
+			} );
+		},
+
+		main_menu: function( self, $mainNavigation ) {
+
+			var $menuToggle = $( '.menu-toggle', $mainNavigation );
+
+			$menuToggle.on( 'click', function( $event ) {
+				$event.preventDefault();
+				$mainNavigation.toggleClass( 'toggled' );
+				$( this ).toggleClass( 'toggled' );
+			} );
+		},
+
+		page_preloader_init: function( self ) {
+
+			if ( $( '.page-preloader-cover' )[0] ) {
+				$( '.page-preloader-cover' ).delay( 500 ).fadeTo( 500, 0, function() {
+					$( this ).remove();
+				} );
+			}
+		},
+
+		to_top_init: function( self ) {
+			if ( !$.isFunction( jQuery.fn.UItoTop ) ) {
+				return !1;
+			}
+
+			$().UItoTop( {
+				text: storycle.labels.totop_button,
+				scrollSpeed: 600
+			} );
+
+			function setToTopPosition() {
+				var $page = $( '.site--layout-boxed, .site--layout-framed' ),
+					offset = $page.offset().left;
+
+				$( '#toTop' ).css({
+					'right': offset
+				});
+			}
+
+			if ( $( 'body' ).hasClass( 'page-layout-boxed' ) || $( 'body' ).hasClass( 'page-layout-framed' ) ) {
+				setToTopPosition();
+				CherryJsCore.variable.$window.on( 'resize', setToTopPosition );
+			}
+		},
+
+		ofi_init: function( self ) {
+			if ( $( 'body' ).hasClass( 'ie' ) && 'undefined' !== typeof objectFitImages ) {
+				objectFitImages();
+			}
+		},
+
+		// utility functions
+		smooth_scroll: function( $target, duration ){
+			$( 'html, body' ).animate( {
+				scrollTop: $target.offset().top
+			}, duration )
+		}
+	};
+
+	CherryJsCore.theme_script.init();
+
+
+
+       let i = 0;
+$('.gallery-item').each(function() {
+$(this).attr('id', 'item-' + i++);
+})
+ 
+        // update url on scroll
+$(document).on('scroll',function(e)
+{
+    $('.gallery-columns-1 .gallery-item').each(function()
+    {
+        if ( $(this).offset().top < window.pageYOffset + 10 
+        &&   $(this).offset().top + 
+             $(this).height() > window.pageYOffset + 10
+           ) 
+        {
+          var data = $(this).attr('id');
+          //window.location.hash = data;
+          history.pushState({}, '', '#'+data);
+        }
+    });
+});
+ 
+
+
+}( jQuery ));

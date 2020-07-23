@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.53",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:17:32.837293",
+                "start_ts": "2020-05-29 21:17:32.152322",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "Bhopal: Without Proof, Muslim Sanitation Worker Accused of &#x27;Spitting to Spread COVID-19&#x27;"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:22.683157",
+                "start_ts": "2020-05-29 21:18:12.995355",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thewire.in"
+                ],
+                "end_ts": "2020-05-29 21:17:33.177265",
+                "start_ts": "2020-05-29 21:17:32.837640",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:12.995111",
+                "start_ts": "2020-05-29 21:18:07.270336",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:32.652891",
+                "start_ts": "2020-05-29 21:18:30.041936",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "https://web.archive.org/web/20200529211831/https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 34,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787053",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:07.270156",
+                "start_ts": "2020-05-29 21:17:33.178673",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:27.991280",
+                "start_ts": "2020-05-29 21:18:22.683402",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+                ],
+                "end_ts": "2020-05-29 21:18:30.041684",
+                "start_ts": "2020-05-29 21:18:27.991627",
+                "pwd": "/data/archive/1590785099.53",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787112.656221",
+    "tags": "",
+    "url": "https://thewire.in/communalism/bhopal-muslim-sanitation-worker-covid-19-rumours"
+}

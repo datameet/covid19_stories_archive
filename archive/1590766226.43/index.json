@@ -1,0 +1,194 @@
+{
+    "title": "Coronavirus lockdown claims jobless gardener",
+    "url": "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245",
+    "timestamp": "1590766226.43",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:43.606520",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590767918",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:58:38.777064",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:50.929911",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:58:49.067799",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:38.774387",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.telegraphindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:58:38.478530",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:45.905362",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:58:43.606695",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:49.067469",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:58:47.864086",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:52.955981",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:58:50.930193",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "https://web.archive.org/web/20200529155852/https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:47.863845",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:58:45.905686",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:58:38.478284",
+                "cmd": [
+                    "curl",
+                    "https://www.telegraphindia.com/india/coronavirus-lockdown-claims-jobless-gardener/cid/1767245",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:58:38.104333",
+                "pwd": "/data/archive/1590766226.43",
+                "output": "Coronavirus lockdown claims jobless gardener"
+            }
+        ]
+    },
+    "updated": "1590788143.880816",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

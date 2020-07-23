@@ -1,0 +1,192 @@
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Ek Mukta ExtraLight'), local('EkMukta-ExtraLight'), url(https://fonts.gstatic.com/s/ekmukta/v7/I9kEeiTYrUZc3iQHHEx8Qpd-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Ek Mukta ExtraLight'), local('EkMukta-ExtraLight'), url(https://fonts.gstatic.com/s/ekmukta/v7/I9kEeiTYrUZc3iQHHEx8QiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Ek Mukta ExtraLight'), local('EkMukta-ExtraLight'), url(https://fonts.gstatic.com/s/ekmukta/v7/I9kEeiTYrUZc3iQHHEx8Qo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ek Mukta Light'), local('EkMukta-Light'), url(https://fonts.gstatic.com/s/ekmukta/v7/eZfvCT6XSiuTQmmC8YaT25d-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ek Mukta Light'), local('EkMukta-Light'), url(https://fonts.gstatic.com/s/ekmukta/v7/eZfvCT6XSiuTQmmC8YaT2yYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ek Mukta Light'), local('EkMukta-Light'), url(https://fonts.gstatic.com/s/ekmukta/v7/eZfvCT6XSiuTQmmC8YaT244P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(https://fonts.gstatic.com/s/ekmukta/v7/FweTTEF9SPcBdXv6EK0ziRTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(https://fonts.gstatic.com/s/ekmukta/v7/7JltmOcx0x46ReRfiIAB_hTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta'), local('EkMukta-Regular'), url(https://fonts.gstatic.com/s/ekmukta/v7/bd9w3t1zRrt_-4XQNqfNJPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ek Mukta Medium'), local('EkMukta-Medium'), url(https://fonts.gstatic.com/s/ekmukta/v7/pvLE6r-oabQZ3BzzA9xesJd-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ek Mukta Medium'), local('EkMukta-Medium'), url(https://fonts.gstatic.com/s/ekmukta/v7/pvLE6r-oabQZ3BzzA9xesCYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ek Mukta Medium'), local('EkMukta-Medium'), url(https://fonts.gstatic.com/s/ekmukta/v7/pvLE6r-oabQZ3BzzA9xesI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Ek Mukta SemiBold'), local('EkMukta-SemiBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/9EXaIaG9EisTb0ON7WXvdZd-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Ek Mukta SemiBold'), local('EkMukta-SemiBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/9EXaIaG9EisTb0ON7WXvdSYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Ek Mukta SemiBold'), local('EkMukta-SemiBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/9EXaIaG9EisTb0ON7WXvdY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ek Mukta Bold'), local('EkMukta-Bold'), url(https://fonts.gstatic.com/s/ekmukta/v7/PTj8SjnLMuoZrJLoiRjMXpd-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ek Mukta Bold'), local('EkMukta-Bold'), url(https://fonts.gstatic.com/s/ekmukta/v7/PTj8SjnLMuoZrJLoiRjMXiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ek Mukta Bold'), local('EkMukta-Bold'), url(https://fonts.gstatic.com/s/ekmukta/v7/PTj8SjnLMuoZrJLoiRjMXo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Ek Mukta ExtraBold'), local('EkMukta-ExtraBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/2UQ4ICJih3YLJ7TCrdw9b5d-YqeGZiJEdX0sEGp0JvE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  font-display: swap;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Ek Mukta ExtraBold'), local('EkMukta-ExtraBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/2UQ4ICJih3YLJ7TCrdw9byYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+}
+/* latin */
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Ek Mukta ExtraBold'), local('EkMukta-ExtraBold'), url(https://fonts.gstatic.com/s/ekmukta/v7/2UQ4ICJih3YLJ7TCrdw9b44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+/* font awesome  */
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.3.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;font-display: swap;}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0)}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-video-camera:before {content: "\f03d";}.fa-camera:before {content: "\f030";}.fa-angle-left:before {content: "\f104";}
+.fa-angle-right:before {content: "\f105";}.fa-facebook-f:before,.fa-facebook:before {content: "\f09a";}.fa-twitter:before {content: "\f099";}.fa-search:before {content: "\f002";}.fa-google-plus:before{content: "\f0d5";}.fa-linkedin:before{content: "\f0e1";}.fa-caret-down:before{content: "\f0d7";}.fa-envelope:before{content: "\f0e0";}.fa-phone:before{content: "\f095";}.fa-home:before{content: "\f015";}.fa-play:before{content: "\f04b";}.fa-pause:before{content: "\f04c";}.fa-print:before{content: "\f02f";}

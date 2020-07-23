@@ -1,0 +1,194 @@
+{
+    "title": "\u0ab2\u0acb\u0a95\u0aa1\u0abe\u0a89\u0aa8 \u0aac\u0ac7\u0a95\u0abe\u0ab0\u0ac0 \u0aa4\u0ab0\u0aab \u0aa6\u0acb\u0ab0\u0ac0 \u0a9c\u0aa4\u0abe \u0aa8\u0abf\u0ab0\u0abe\u0ab6 \u0aaf\u0ac1\u0ab5\u0abe\u0aa8\u0ac7 \u0a9c\u0ac0\u0a82\u0aa6\u0a97\u0ac0 \u0a9f\u0ac2\u0a82\u0a95\u0abe\u0ab5\u0ac0 | Vyaapaar Samachar",
+    "url": "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment",
+    "timestamp": "1590766226.5",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:29.428438",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766550",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 38,
+                "start_ts": "2020-05-29 15:35:50.693317",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:48.499701",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:36:43.566018",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:35:50.691471",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.vyaapaarsamachar.com"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:35:46.998845",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:35.030273",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 15:36:29.428724",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:43.565642",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:36:39.444110",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:51.170678",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:36:48.499972",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "https://web.archive.org/web/20200529153650/https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:36:39.443867",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:36:35.030711",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:35:46.998451",
+                "cmd": [
+                    "curl",
+                    "https://www.vyaapaarsamachar.com/current-affairs/gujarat-samachar-news/lockdown-shortened-lives-of-frustrated-youth-leading-to-unemployment",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:35:43.847155",
+                "pwd": "/data/archive/1590766226.5",
+                "output": "\u0ab2\u0acb\u0a95\u0aa1\u0abe\u0a89\u0aa8 \u0aac\u0ac7\u0a95\u0abe\u0ab0\u0ac0 \u0aa4\u0ab0\u0aab \u0aa6\u0acb\u0ab0\u0ac0 \u0a9c\u0aa4\u0abe \u0aa8\u0abf\u0ab0\u0abe\u0ab6 \u0aaf\u0ac1\u0ab5\u0abe\u0aa8\u0ac7 \u0a9c\u0ac0\u0a82\u0aa6\u0a97\u0ac0 \u0a9f\u0ac2\u0a82\u0a95\u0abe\u0ab5\u0ac0 | Vyaapaar Samachar"
+            }
+        ]
+    },
+    "updated": "1590788097.622782",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

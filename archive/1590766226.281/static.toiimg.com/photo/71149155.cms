@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>img</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g transform="translate(-16.000000, -1903.000000)" fill="#000000" fill-rule="nonzero" id="img">
+            <g transform="translate(16.000000, 1903.000000)">
+                <path d="M24,0 L24,16 L0,16 L0,0 L24,0 Z M22.9333333,1.06666667 L1.06666667,1.06666667 L1.06666667,14.9333333 L22.9333333,14.9333333 L22.9333333,1.06666667 Z" id="Combined-Shape"></path>
+                <path d="M17.6,4.4 C17.6,5.50458333 18.4954167,6.4 19.6,6.4 C20.7045833,6.4 21.6,5.50458333 21.6,4.4 C21.6,3.29541667 20.7045833,2.4 19.6,2.4 C18.4954167,2.4 17.6,3.29541667 17.6,4.4 Z" id="Path"></path>
+                <polygon id="Path" points="21.8666667 13.6 2.13333333 13.6 7.06666667 4 13.6444444 10 16.9333333 8.2"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

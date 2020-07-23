@@ -1,0 +1,519 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><title>
+	fullstory
+</title><link rel="stylesheet" href="../javascript/gt.css" type="text/css" />
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+    <script type="text/javascript">
+        google.load('jquery', '1.4.2');
+        google.load('jqueryui', '1.7.2');
+    </script>
+
+
+   
+    
+    
+    <link href="../stylesheet/mycss.css" type="text/css" rel="stylesheet" /><link rel="stylesheet" href="../slider/li-scroller.css" type="text/css" /> 
+     <!--Satrt  JS for home anchor--> 
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+      <!--End JS for home anchor--> 
+
+      
+           
+      
+    <link href="../stylesheet/mainu.css" type="text/css" rel="stylesheet" /><link href="../stylesheet/gallery.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" language="javascript" src="event/AC_RunActiveContent.js"></script>
+       
+    <script type="text/javascript" language="javascript" src="javascript/updatesession.js"></script>
+    
+    <script type="text/javascript" language="javascript" src="javascript/gallery.js"></script> 
+    
+    <link href="../stylesheet/gallery.css" type="text/css" rel="stylesheet" /><link href="../css/lightbox.css" type="text/css" rel="stylesheet" /><link href="../stylesheet/newslisting.css" type="text/css" rel="stylesheet" /><link rel="SHORTCUT ICON" type="text/css" href="http://59.160.110.46/pti/images/pti_sticker.gif" /> 
+     <!--Satrt style sheet for scroller--> 
+    <script type="text/javascript" src="../javascript/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="../javascript/jquery.jscroll.js"></script>
+ <link href="../stylesheet/scroll.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+var $j = jQuery.noConflict(true);
+$j(function($) {
+$j(".scroll").jScroll();
+
+});
+ </script>
+
+ <!-- 0LD gallery js and style sheet start here-->
+    
+    <!-- OLD gallery js and style sheet end here-->
+
+  
+    <script language="javascript" type="text/javascript">    
+    
+    
+    
+     function fotow()
+    {
+    window.location = "ptigallery/photonewuser.aspx"
+    }
+    
+     function close_br_alert()
+     {
+        document.getElementById('ctl00_ContentPlaceHolder1_divbrnews').style.display="none";
+     }
+ 
+     //--------close news alert ---------------
+    function close_news_alert()
+    {
+        document.getElementById('ctl00_divnewsalert').style.display="none";
+    } 
+    function check_top()
+    {
+        var i=document.getElementById('ctl00_txtlogintop').value;
+        var c =parseInt(i);
+        //alert(i);
+        /*if(document.layers)
+        {
+        }*/
+        if(document.all)
+        {        
+          /* remove document.getElementById('ctl00_slidemarginleft').style.top=(document.getElementById('ctl00_txtlogintop').value-3)+"px";*/
+          document.getElementById('ctl00_slidemarginleft').style.top=(document.getElementById('ctl00_txtlogintop').value-158)+"px";
+        }        
+        else
+        {
+           /* remove document.getElementById('ctl00_slidemarginleft').style.top=(c-3)+"px"; */
+           document.getElementById('ctl00_slidemarginleft').style.top=(c-158)+"px";
+        }
+        //document.getElementById('ctl00_slidemarginleft').style.top="456px";
+    } 
+    function next_news_alert(divid)
+    {
+        var i;
+        var temp_arr=divid.split('_');      
+        var j=parseInt(temp_arr[1]);       
+        var k=j+1;       
+        var iddd="divalert_"+k;      
+        document.getElementById(iddd).style.display="block";
+        for(j; j>=0; j--)
+        {           
+            document.getElementById('divalert_'+j).style.display="none";     
+        }        
+    }
+    function back_news_alert(divid)
+    {
+      
+        var i;
+        var temp_arr=divid.split('_');      
+        var j=parseInt(temp_arr[1]);
+        var k=0;     
+        if(j>0)
+        {
+            k=j-1;
+        }  
+        var iddd="divalert_"+k;       
+        for(i=0;i<=j;i++)
+        {
+           document.getElementById('divalert_'+i).style.display="none";           
+        }
+        document.getElementById(iddd).style.display="block";
+        
+    } 
+//--------end close news alert ---------- 
+ </script>
+ 
+    
+<script src="/javascript/jquery-1.2.6.pack.js" type="text/javascript" language="javascript"></script><script src="/javascript/stepcarousel.js" type="text/javascript" language="javascript"></script><script src="/javascript/mainNavigation.js" type="text/javascript" language="javascript"></script><script src="/javascript/topbar.js" type="text/javascript" language="javascript"></script><script src="/javascript/bookmarkscroll.js" type="text/javascript" language="javascript"></script><script src="/javascript/jquery.gallery.js" type="text/javascript" language="javascript"></script><script src="/javascript/careers.js" type="text/javascript" language="javascript"></script></head>
+<body class="masterBody" id='secth'>
+    <form name="aspnetForm" method="post" action="fullnews.aspx?news_id=11361255&amp;catid=1" id="aspnetForm" class="clsform1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2NjIxNzEzMzIPZBYCZg9kFgICAw9kFg4CAQ8WBB4JaW5uZXJodG1sZR4HVmlzaWJsZWhkAgIPZBYGZg8WAh4Kb25rZXlwcmVzcwUlamF2YXNjcmlwdDpyZXR1cm4gc3VibWl0bG9naW4oZXZlbnQpO2QCAQ8WAh8CBSVqYXZhc2NyaXB0OnJldHVybiBzdWJtaXRsb2dpbihldmVudCk7ZAICDxYCHgdvbmNsaWNrBSFqYXZhc2NyaXB0OnJldHVybiBjb25maXJtX3Bhc3MoKTtkAgMPFgIfAAUaMzAgTWF5IDIwMjAsIDAxOjIyIEhSUyBJU1RkAggPFgIfAAWqBzxkaXYgY2xhc3M9ImNsc2RpdnRvcDdkaXZzZWwiPjxhIGhyZWY9Ii9ob21lLmFzcHgiID5Ib21lPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNsc2RpdnRvcDdkaXYiPjxhIGhyZWY9Ii9uZXdzLy1keWFsc3R5I2R2MCI+TmF0aW9uYWw8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgaHJlZj0iL25ld3MvLWR5YWxzdHkjZHYxIj5JbnRlcm5hdGlvbmFsPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImNsc2RpdnRvcDdkaXYiPjxhIGhyZWY9Ii9uZXdzLy1keWFsc3R5I2R2MiI+QnVzaW5lc3M8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgaHJlZj0iL25ld3MvLWR5YWxzdHkjZHYzIj5TcG9ydHM8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgaHJlZj0iL25ld3MvLWR5YWxzdHkjZHY0Ij5MZWdhbDwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjbHNkaXZ0b3A3ZGl2Ij48YSBocmVmPSIvbmV3cy8tZHlhbHN0eSNkdjUiPkVudGVydGFpbm1lbnQ8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgIGhyZWY9Ii9wdGlnYWxsZXJ5L3Bob3RvbmV3dXNlci5hc3B4Ij5QaG90b3M8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgIGhyZWY9Ii9wdGlncmFwaC9ncmFwaGljcy5hc3B4Ij5HcmFwaGljczwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjbHNkaXZ0b3A3ZGl2Ij48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL3d3dy5iaGFzaGEucHRpbmV3cy5jb20iPkJoYXNoYTwvYT48L2Rpdj48ZGl2IGNsYXNzPSJjbHNkaXZ0b3A3ZGl2Ij48YSBocmVmPSIvYWJvdXRwdGkvam9icy5hc3B4IiBpZD0ndG4nPkpvYnM8L2E+PC9kaXY+PGRpdiBjbGFzcz0iY2xzZGl2dG9wN2RpdiI+PGEgaHJlZj0iL2Fib3V0cHRpL3RlbmRlcm5ldy5hc3B4IiAgPlRlbmRlcnM8L2E+PC9kaXY+ZAIJDxYCHwAFHVdlbGNvbWUgR3Vlc3QhIFlvdSBBcmUgSGVyZTogZAILDxYCHwAFnwc8ZGl2IGlkPSdkaXZhbGVydF8wJyBzdHlsZT0nYm9yZGVyOnNvbGlkIDBweCByZWQ7IGZsb2F0OmxlZnQ7IGRpc3BsYXk6YmxvY2s7Jz48ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMwMDRGOEI7IHdpZHRoOjk3NXB4OyBmbG9hdDpsZWZ0OyBtYXJnaW46MHB4IDBweCAwcHggMHB4OyBwYWRkaW5nOjVweCA1cHggMHB4IDBweDsgdGV4dC1hbGlnbjpyaWdodDsgYm9yZGVyOnNvbGlkIDBweCByZWQ7Ij4gPGRpdiBjbGFzcz0nYWxlcnRfZGl2Jz48ZGl2IHN0eWxlPSJib3JkZXI6c29saWQgMHB4IHJlZDsgZmxvYXQ6cmlnaHQ7Ij48aW1nIHNyYz0iaW1hZ2VzL2Nsb3NlYWxlcnQuanBnIiBhbHQ9IkNMT1NFIiBvbmNsaWNrPSJjbG9zZV9uZXdzX2FsZXJ0KCkiIC8+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojMDA0RjhCOyBtYXJnaW46MHB4IDEwcHggMHB4IDBweDsgcGFkZGluZzowcHggMjBweCAwcHggMjBweDsgd2lkdGg6OTMwcHg7IGZsb2F0OmxlZnQ7IGZvbnQtZmFtaWx5OlRpbWVzIE5ldyBSb21hbjsgZm9udC1zaXplOjE3cHg7IGZvbnQtd2VpZ2h0OmJvbGQ7IGNvbG9yOndoaXRlOyB0ZXh0LWFsaWduOmxlZnQ7IiBpZD0ibmV3c2FsZXJ0Y2wiPlRydW1wIHNheXMgVVMgd2lsbCBzdXNwZW5kIGVudHJ5IG9mIGNlcnRhaW4gZm9yZWlnbiBuYXRpb25hbHMgZnJvbSBDaGluYSB3aG8gaGF2ZSBiZWVuIGlkZW50aWZpZWQgYXMgcG90ZW50aWFsIHNlY3VyaXR5IHJpc2tzLiA8L2Rpdj48ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMwMDRGOEI7IHdpZHRoOjk3NXB4OyBmbG9hdDpsZWZ0OyBtYXJnaW46MHB4IDBweCAwcHggMHB4OyBwYWRkaW5nOjVweCA1cHggNXB4IDBweDsgdGV4dC1hbGlnbjpyaWdodDsgYm9yZGVyOnNvbGlkIDBweCByZWQ7Ij48L2Rpdj48L2Rpdj48L2Rpdj5kAgwPZBYIAgMPFgIfAAWaETxkaXYgY2xhc3M9J2Z1bGxzdG9yeWRpdnN0b3J5Y29tbWVudCcgc3R5bGU9J2NsZWFyOmJvdGg7Jz48dWwgY2xhc3M9J2Z1bGxzdG9yeXVsJz48bGkgaWQ9J2xpaGVhZGluZycgcnVuYXQ9J3NlcnZlcicgY2xhc3M9J2Z1bHN0b3J5aGVhZGluZycgPk1haGEgbG9ja2Rvd246IE5vdCBnZXR0aW5nIGxpcXVvciwgTmFncHVyIG1hbiBraWxscyBzZWxmPC9saT48L3VsPjxociBjbGFzcz0nZnVsc3RvcnlkaXZpZGVyJyAvPjwvZGl2PjxkaXYgY2xhc3M9J2Z1bGxzdG9yeWFkZCc+PHVsPjxsaSBzdHlsZT0ndGV4dC1hbGlnbjpjZW50ZXI7JyBjbGFzcz0nYWR2Qm9vdHVtSG9tZSc+QWR2ZXJ0aXNlbWVudDwvbGk+PC91bD48aW1nIHNyYz0nLi4vaW1hZ2VzL2FkLmpwZyc+PC9kaXY+PGRpdiBjbGFzcz0nZnVsbHN0b3J5ZGl2ZW1haWxwcmludCcgPjx1bCBjbGFzcz0nZnVsbHN0b3J5dWxsZWZ0JyBzdHlsZT0nZGlzcGxheTppbmxpbmU7Jz48bGkgY2xhc3M9J2Z1bHN0b3J5c2hhcmVjb21tZW50JyA+PHNjcmlwdCB0eXBlID0idGV4dC9qYXZhc2NyaXB0Ij5hZGR0aGlzX3B1YiAgPSAnc2h3ZXRhdmVybWFANGNwbHVzLmNvbScgOyBhZGR0aGlzX2xhbmd1YWdlID0gJ2ZyJzs8L3NjcmlwdCA+PGEgaHJlZiA9Imh0dHA6Ly93d3cuYWRkdGhpcy5jb20vYm9va21hcmsucGhwIiBvbm1vdXNlb3V0ID0iYWRkdGhpc19jbG9zZSgpIiBvbmNsaWNrID0icmV0dXJuIGFkZHRoaXNfb3Blbih0aGlzLCAnJywgJ1tVUkxdJywgJ1tUSVRMRV0nKSIgIGNsYXNzPSdmdWxzdG9yeXNoYXJlYSc+PGltZyBzcmM9Jy4uL2ltYWdlcy9zaGFyZV9pY29uLmpwZycgYm9yZGVyID0iMCIgYWx0ID0iIiAvPiZuYnNwO1NoYXJlPC9hID48c2NyaXB0IHR5cGUgPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYyA9Imh0dHA6Ly9zNy5hZGR0aGlzLmNvbS9qcy8xNTIvYWRkdGhpc193aWRnZXQuanMiPjwvc2NyaXB0PjwvbGk+PGxpIGNsYXNzPSdmdWxzdG9yeXNoYXJlY29tbWVudCcgb25jbGljaz0ncHJpbnRzdG9yeSgpJz4gPGltZyBzcmM9Jy4uL2ltYWdlcy9wcmludF9pY29uLmpwZycgYWx0PSdQcmludCcvPiZuYnNwO1ByaW50PC9saT48bGkgY2xhc3M9J2Z1bHN0b3J5c2hhcmVjb21tZW50JyBvbmNsaWNrPSdzZW5kbWFpbCgxMTM2MTI1NSknPiA8aW1nIHNyYz0nLi4vaW1hZ2VzL2VtYWlsX2ljb24uanBnJy8+Jm5ic3A7RS1tYWlsPC9saT48bGkgY2xhc3M9J2Z1bHN0b3J5c2hhcmVjb21tZW50JyA+PGEgaHJlZj0nIzInIGNsYXNzPSdmdWxzdG9yeXNoYXJlY29tbWVudCcgPiA8aW1nIHNyYz0nLi4vaW1hZ2VzL2NvbW1lbnRfaWNvbi5qcGcnIGFsdD0nQ29tbWVudHMnIGJvcmRlcj0nMCcgLz4mbmJzcDtDb21tZW50PC9hPjwvbGk+PC91bD48dWwgY2xhc3M9J2Z1bGxzdG9yeXVscmlnaHQnID48bGkgaWQ9J2lmb250Jz48Zm9udCBjb2xvcj0nI2Y0NzYyMicgIG9uY2xpY2s9J2RlY3JlYXNlZm9udCgpJz5bIC0gXTwvZm9udD4gVGV4dCA8Zm9udCBjb2xvcj0nI2Y0NzYyMicgIG9uY2xpY2s9J2luY3JlYXNlZm9udCgpJz5bICsgXTwvZm9udD48L2xpPjwvdWw+PC9kaXY+PGRpdiBjbGFzcz0nZnVsbHN0b3J5ZGl2c3RvcnknPjxmb250IGNsYXNzPSdmdWxsc3Rvcnl0aW1lJyBjb2xvcj0nI2Y0NzYyMic+IDIyOjEyIEhSUyBJU1Q8L2ZvbnQ+PHAgY2xhc3M9J2Z1bHN0b3J5dGV4dCdpZD0ncHN0b3J5Jz48Yj5OYWdwdXIsIEFwciA0IChQVEkpPC9iPiBBIHJpY2tzaGF3IGRyaXZlciBpbiBOYWdwdXIgaW48YnIvPjxici8+IE1haGFyYXNodHJhIHNldCBoaW1zZWxmIGFibGF6ZSBhZnRlciBiZWluZyBkZXByZXNzZWQgb3ZlciBub3QNCmdldHRpbmcgbGlxdW9yIGR1cmluZyB0aGUgbG9ja2Rvd24gaW4gcGxhY2UgZm9yIHRoZSBub3ZlbA0KY29yb25hdmlydXMgb3V0YnJlYWssIHBvbGljZSBzYWlkLjxici8+PGJyLz5WaWthcyBCYXJ2ZSAoMzApIHNldCBoaW1zZWxmIG9uIGZpcmUgb24gTWFyY2ggMjkgaW4NCmhpcyBob3VzZSBhbmQgZGllZCBpbiBob3NwaXRhbCBsYXRlciwgSW5zcGVjdG9yIFZpamF5IEthcmUgb2YNCkFtYmF6YXJpIHBvbGljZSBzdGF0aW9uIHNhaWQgb24gU2F0dXJkYXkuPGJyLz48YnIvPiJJbiBob3NwaXRhbCwgaGUgdG9sZCBwb2xpY2UgaGUgd2FzIGRlcHJlc3NlZCBiZWNhdXNlDQpoZSB3YXMgbm90IGdldHRpbmcgbGlxdW9yIGR1cmluZyB0aGUgbG9ja2Rvd24sIiBLYXJlIHNhaWQuPC9wPjwvZGl2PmQCBQ8WAh8BaBYCAgMPZBYCZg9kFgICAQ8WAh8ABRc8dWwgaWQ9J3JlbGhlYWQnID48L3VsPmQCBw9kFgJmD2QWAgIJD2QWBAIBD2QWAgIBDxYCHwFoZAIFDw9kFgIfAwUgamF2YXNjcmlwdDpyZXR1cm4gdmFsaWRhdGVjb20oKTtkAg0PZBYCZg9kFgICAQ8WAh8ABcUMPHVsIGNsYXNzPSdmdWxsc3Rvcnl1bGxlZnRzZWN0aW9uJz48bGkgaWQ9J2xpcyc+PGEgY2xhc3M9J3JlbGVhdGVkaGVhZCcgaHJlZj0nL25ld3MvMTE1MTY0ODVfRGVsaGktLXMtQ09WSUQtZGVhdGgtdG9sbC1qdW1wcy10by04Mi1pbi1sYXN0LTI0LWhvdXJzJz5EZWxoaScncyBDT1ZJRCBkZWF0aCB0b2xsIGp1bXBzIHRvIDgyIGluIGxhc3QgMjQgaG91cnM8L2E+PC9saT48bGkgaWQ9J2xpcyc+PGEgY2xhc3M9J3JlbGVhdGVkaGVhZCcgaHJlZj0nL25ld3MvMTE1MTYwNDFfT2Rpc2hhLUd1di1jb250cmlidXRlcy1Scy0xMS1sYWtoLXRvLUNNLWZ1bmQtZm9yLUFtcGhhbi1yZWxpZWYtd29yayc+T2Rpc2hhIEd1diBjb250cmlidXRlcyBScyAxMSBsYWtoIHRvIENNIGZ1bmQgZm9yIEFtcGhhbiByZWxpZWYgd29yazwvYT48L2xpPjxsaSBpZD0nbGlzJz48YSBjbGFzcz0ncmVsZWF0ZWRoZWFkJyBocmVmPScvbmV3cy8xMTUxNjAxM19DT1ZJRC0xOS0tSW5kaWEtbm93LW5pbnRoLXdvcnN0LWhpdC1jb3VudHJ5LWluLXdvcmxkLXdpdGgtMS02NS03OTktY2FzZXMnPkNPVklELTE5OiBJbmRpYSBub3cgbmludGgtd29yc3QgaGl0IGNvdW50cnkgaW4gd29ybGQgd2l0aCAxLDY1LDc5OSBjYXNlczwvYT48L2xpPjxsaSBpZD0nbGlzJz48YSBjbGFzcz0ncmVsZWF0ZWRoZWFkJyBocmVmPScvbmV3cy8xMTUxNTg3OF9UaGVyZS13YXMtbm8tcmVjZW50LU1vZGktVHJ1bXAtY29udGFjdC0tR292dC1zb3VyY2VzJz5UaGVyZSB3YXMgbm8gcmVjZW50IE1vZGktVHJ1bXAgY29udGFjdDogR292dCBzb3VyY2VzPC9hPjwvbGk+PC91bD48dWwgY2xhc3M9J2Z1bGxzdG9yeXVscmlnaHRzZWN0aW9uJz48bGkgaWQ9J2xpcyc+PGEgY2xhc3M9J3JlbGVhdGVkaGVhZCcgaHJlZj0nL25ld3MvMTE1MTYwODJfUmVub3duZWQtYXJjaGl0ZWN0LVZhc2FudC1QYW5zYXJlLWRpZXMtYXQtOTMnPlJlbm93bmVkIGFyY2hpdGVjdCBWYXNhbnQgUGFuc2FyZSBkaWVzIGF0IDkzPC9hPjwvbGk+PGxpIGlkPSdsaXMnPjxhIGNsYXNzPSdyZWxlYXRlZGhlYWQnIGhyZWY9Jy9uZXdzLzExNTE2MDI1X1JhaHVsLUdhbmRoaS1jb25kb2xlcy1kZWF0aC1vZi1WZWVyZW5kcmEtS3VtYXInPlJhaHVsIEdhbmRoaSBjb25kb2xlcyBkZWF0aCBvZiBWZWVyZW5kcmEgS3VtYXI8L2E+PC9saT48bGkgaWQ9J2xpcyc+PGEgY2xhc3M9J3JlbGVhdGVkaGVhZCcgaHJlZj0nL25ld3MvMTE1MTU4ODRfVVAtYXNzZW1ibHktc3BlYWtlci1sZXRzLVNhbWFqd2FkaS1QYXJ0eS13aXRoZHJhdy1wbGVhLXRvLWRpc3F1YWxpZnktU2hpdnBhbC1ZYWRhdi1hcy1NTEEnPlVQIGFzc2VtYmx5IHNwZWFrZXIgbGV0cyBTYW1handhZGkgUGFydHkgd2l0aGRyYXcgcGxlYSB0byBkaXNxdWFsaWZ5IFNoaXZwYWwgWWFkYXYgYXMgTUxBPC9hPjwvbGk+PGxpIGlkPSdsaXMnPjxhIGNsYXNzPSdyZWxlYXRlZGhlYWQnIGhyZWY9Jy9uZXdzLzExNTEzMTAyX1BNLXJldmlld3MtcG93ZXItc2VjdG9yLS1zYXlzLXN0YXRlLXNwZWNpZmljLXNvbHV0aW9ucy1uZWVkZWQtJz5QTSByZXZpZXdzIHBvd2VyIHNlY3Rvciwgc2F5cyBzdGF0ZS1zcGVjaWZpYyBzb2x1dGlvbnMgbmVlZGVkIDwvYT48L2xpPjwvdWw+ZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBAUMY3RsMDAkQ2hrYm94BR9jdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNoa2lkBSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGltZ3N1Ym1pdAUhY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRDaGttYWlsJLVha+xGf4ESQAuafY91imlN2PY=" />
+
+
+<script src="/ScriptResource.axd?d=HEPD59m58_SmLAwcZH49ZRSeKkTRd4PO5MbBhpdAjs3GGwJcPXd0Y8E2dd5LKPRWi4an395ZhnKZjIWaO_uhKBO6xJNflOqFCzeVYFKFarY97GolFHSZc3rC2pchWM4cGvmYnzephkYC3ZJ0UrAHYebjd1s1&amp;t=635520082664865152" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BEFFFFE5" />
+    
+     
+   
+    
+    
+    
+     
+   
+    <div id="ctl00_slidemarginleft" class="slide" style="top:295px; border:solid 0px blue; float:left;">  
+    
+    
+      
+     <img alt="login" style="margin-top:35px;float:right;cursor:pointer;position:relative;top:0px" id="imglogin" src="/images/login_btn.gif" />     
+     <div id="overdiv" class="inner" style="margin-top:0px">            
+    <div class="logind2" >
+    <ul>
+    <li class="logind2c1">SUBSCRIBER</li>
+    <li><span class ="logind2c1s">User Name</span><input name="ctl00$txtusrname" type="text" id="ctl00_txtusrname" style="height:14px;width:150px; border:0px; font-size:small;" onkeypress="javascript:return submitlogin(event);" /></li>
+    <li class="logind2c2"><span class="logind2c2s">Password</span><input name="ctl00$txtpwd" type="password" id="ctl00_txtpwd" style="height:14px;width:150px;border:0px; font-size:small;" onkeypress="javascript:return submitlogin(event);" /></li>
+    <li class="logind2c3"><input name="ctl00$Chkbox" type="checkbox" id="ctl00_Chkbox" onclick="javascript:return confirm_pass();" /><span class="logind2c3s">Remember Me</span></li>
+    </ul>
+    </div>
+        <div class="logind3"></div>
+        <div class="logind4"><img alt="ad" src="/images/ad1.jpg" /></div>
+        
+      </div>
+      <input name="ctl00$txtuval" type="hidden" id="ctl00_txtuval" />
+    </div> 
+    <div class="topHolder" id="d1" style="border:solid 1px #ffffff;">
+     
+    <div id="ctl00_lidate" class="clsdivdate" style="border:0px solid red;padding:21px 10px 5px 12px;">30 May 2020, 01:22 HRS IST</div>
+    <div style="float:left;margin-top:15px; color:Gray">|</div>
+    <div class="tickContainer">
+        <marquee id="ctl00_tickpanel" behavior="scroll" scrollamount="3" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+              
+        </marquee>
+    </div>
+      
+   
+    
+   <div class="clsdivtop5" >
+     <ul style="float:right; margin:0px; padding:0px;">
+ <li style="display:inline;  margin:0px 35px 0px 3px; float:right; padding-left:5px "><a href="http://twitter.com/PTI_News" target="_blank"><img  src="/images/twitter11.png"alt="" style="border:0px solid red; float:left"/></a></li>
+           <li style="display:inline;  float:right; margin:0px 0px 0px 0px ; padding-left:0px;"> <a href="http://www.facebook.com/PressTrustofIndia" target="_blank"><img  src="/images/facebook11.png" alt="" style="border:0px solid red;float:left" /></a></li>
+           </ul>
+   </div>
+    <div class="clsdivtop4" id="tdiv4">
+  
+   
+  
+    <div id="divleft" class="cssdivleft" style="border:0px solid red; width:990px">
+    
+    <ul>
+    
+    
+       
+    <li style="padding:0px 0px 0px 20px;display:inline; float:left"><a href="/home.aspx"><img alt="PTI" src="/images/pti.jpg"  style="border:0px;"/></a></li>
+
+    
+        <li id="logoleft" style="padding:0px 0px 0px 0px; float:left; display:inline">
+            <a href="/home.aspx"><img class="lpti_logo" alt="PTI" src="/images/pti_logo.jpg" style="border:0px;" /></a>        
+        </li>
+            
+    </ul>
+    </div>
+    
+    
+     
+     
+     
+       
+    
+  
+   
+          
+
+            <div id="ctl00_MenuDesign" style="text-align:left"></div>
+            <div style="display:none;"><input type="submit" name="ctl00$btnlogin" value="go" id="ctl00_btnlogin" />
+            <input type="submit" name="ctl00$btnlogout" value="logout" id="ctl00_btnlogout" />
+            </div>
+           
+	   
+   
+    </div>
+      
+   
+  
+   
+    <div style="position:absolute;top:40px;left:0;right:0px;display:none;" id="eventg">
+    
+  <OBJECT id="slide2" style="Z-INDEX: 1;" codeBase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+						height="333px" width="1000px" align="middle" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+						VIEWASTEXT>
+						<PARAM NAME="FlashVars" VALUE="">
+						<PARAM NAME="Movie" VALUE="event/slide2.swf">
+						<PARAM NAME="Src" VALUE="event/slide2.swf">
+						<PARAM NAME="WMode" VALUE="transparent">
+						<PARAM NAME="Play" VALUE="-1">
+						<PARAM NAME="Loop" VALUE="-1">
+						<PARAM NAME="Quality" VALUE="High">
+						<PARAM NAME="align" VALUE="center">
+						<PARAM NAME="Menu" VALUE="-1">
+						<PARAM NAME="Base" VALUE="">
+						<PARAM NAME="AllowScriptAccess" VALUE="sameDomain">
+						<PARAM NAME="Scale" VALUE="ShowAll">
+						<PARAM NAME="DeviceFont" VALUE="0">
+						<PARAM NAME="EmbedMovie" VALUE="0">
+						<PARAM NAME="bgcolor" VALUE="#dfdfdf">
+						<PARAM NAME="SWRemote" VALUE="">
+						<PARAM NAME="MovieData" VALUE="">
+						<PARAM NAME="SeamlessTabbing" VALUE="1">
+						<PARAM NAME="Profile" VALUE="0">
+						<PARAM NAME="ProfileAddress" VALUE="">
+						<PARAM NAME="ProfilePort" VALUE="0">
+						<PARAM NAME="AllowNetworking" VALUE="all">
+						<PARAM NAME="AllowFullScreen" VALUE="false">
+						<embed src="event/slide2.swf" wmode="Transparent" quality="high" align="middle"  bgcolor="#ffffff" width="1000px" height="333px" name="slide2"
+							align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"
+							pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</OBJECT>
+    </div>
+      <div style="position:absolute;top:40px;left:0;right:0px;display:none;" id="ram">
+    
+  <OBJECT id="slide2sail" style="Z-INDEX: 1; position:relative" codeBase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+						height="330px" width="1000px" align="middle" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+						VIEWASTEXT>
+						<PARAM NAME="FlashVars" VALUE="">
+						<PARAM NAME="Movie" VALUE="slide2sail.swf">
+						<PARAM NAME="Src" VALUE="slide2sail.swf">
+						<PARAM NAME="WMode" VALUE="transparent">
+						<PARAM NAME="Play" VALUE="-1">
+						<PARAM NAME="Loop" VALUE="-1">
+						<PARAM NAME="Quality" VALUE="High">
+						<PARAM NAME="align" VALUE="center">
+						<PARAM NAME="Menu" VALUE="-1">
+						<PARAM NAME="Base" VALUE="">
+						<PARAM NAME="AllowScriptAccess" VALUE="sameDomain">
+						<PARAM NAME="Scale" VALUE="ShowAll">
+						<PARAM NAME="DeviceFont" VALUE="0">
+						<PARAM NAME="EmbedMovie" VALUE="0">
+						<PARAM NAME="bgcolor" VALUE="#dfdfdf">
+						<PARAM NAME="SWRemote" VALUE="">
+						<PARAM NAME="MovieData" VALUE="">
+						<PARAM NAME="SeamlessTabbing" VALUE="1">
+						<PARAM NAME="Profile" VALUE="0">
+						<PARAM NAME="ProfileAddress" VALUE="">
+						<PARAM NAME="ProfilePort" VALUE="0">
+						<PARAM NAME="AllowNetworking" VALUE="all">
+						<PARAM NAME="AllowFullScreen" VALUE="false">
+						<embed src="slide2sail.swf" wmode="Transparent" quality="high" align="middle"  bgcolor="#ffffff" width="1000px" height="330px" name="slide2sail"
+							align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"
+							pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</OBJECT>
+    </div>
+    
+    
+    
+    
+    
+    <div id="maindivcat" style="float:left;margin:0px;padding:0px;width:1000px;z-index:101; margin-top:5px">
+        <div id="ctl00_divcat" class="clsdivtop7"><div class="clsdivtop7divsel"><a href="/home.aspx" >Home</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv0">National</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv1">International</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv2">Business</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv3">Sports</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv4">Legal</a></div><div class="clsdivtop7div"><a href="/news/-dyalsty#dv5">Entertainment</a></div><div class="clsdivtop7div"><a  href="/ptigallery/photonewuser.aspx">Photos</a></div><div class="clsdivtop7div"><a  href="/ptigraph/graphics.aspx">Graphics</a></div><div class="clsdivtop7div"><a target="_blank" href="http://www.bhasha.ptinews.com">Bhasha</a></div><div class="clsdivtop7div"><a href="/aboutpti/jobs.aspx" id='tn'>Jobs</a></div><div class="clsdivtop7div"><a href="/aboutpti/tendernew.aspx"  >Tenders</a></div></div>
+        <div class="clsdivtop8"><div class="msgCSS"><span id="ctl00_usermsg">Welcome Guest! You Are Here: </span><span id="ctl00_SiteMapPath1"><a href="#ctl00_SiteMapPath1_SkipLink"><img alt="Skip Navigation Links" height="0" width="0" src="/WebResource.axd?d=cmuTMnnGCJbzmxqS15Ie5zDBYFTWycLFbKvJ2B8oDQQ224FZcPWLx9z-vYq5bU40rOw2_XJkhhoQ0vL9tqK_fdMx34c1&amp;t=636271869297880478" border="0" /></a><span><a title="Home" class="pathCSS" href="/home.aspx">Home</a></span><span>
+            <img id="ctl00_SiteMapPath1_ctl01_imgSep" src="../images/arrow.jpg" border="0" />
+        </span><span class="cNodeCSS"><b>National</b></span><a id="ctl00_SiteMapPath1_SkipLink"></a></span></div>
+</div>        
+    </div>
+   
+     <div id="ctl00_divnewsalert" style="float:left;margin:16px 10px 15px 10px;;padding:0px;width:980px;z-index:101; display:block; background-color:#004F8B;"><div id='divalert_0' style='border:solid 0px red; float:left; display:block;'><div style="background-color:#004F8B; width:975px; float:left; margin:0px 0px 0px 0px; padding:5px 5px 0px 0px; text-align:right; border:solid 0px red;"> <div class='alert_div'><div style="border:solid 0px red; float:right;"><img src="images/closealert.jpg" alt="CLOSE" onclick="close_news_alert()" /></div></div></div><div style="background-color:#004F8B; margin:0px 10px 0px 0px; padding:0px 20px 0px 20px; width:930px; float:left; font-family:Times New Roman; font-size:17px; font-weight:bold; color:white; text-align:left;" id="newsalertcl">Trump says US will suspend entry of certain foreign nationals from China who have been identified as potential security risks. </div><div style="background-color:#004F8B; width:975px; float:left; margin:0px 0px 0px 0px; padding:5px 5px 5px 0px; text-align:right; border:solid 0px red;"></div></div></div></div>
+ 
+    
+     
+   
+ 
+           
+    
+    
+    <div class="middleHolder">
+        
+<script type="text/javascript">
+function replycomment(divid)
+{
+    var d="commentdiv"+divid;     
+    document.getElementById(d).style.display="block";
+}
+function showpage()
+{
+    alert('UMANG BANSA:');
+}
+</script>
+
+  
+       
+    <div id="ctl00_ContentPlaceHolder1_divstorym" class="fullstorydivright"><img src="../images/rightimg-.jpg" alt="add" /><br /><img src="../images/rightimg-.jpg" alt="add" /></div>
+    <div id="ctl00_ContentPlaceHolder1_divstory" class="fullstorydivcommentin"><div class='fullstorydivstorycomment' style='clear:both;'><ul class='fullstoryul'><li id='liheading' runat='server' class='fulstoryheading' >Maha lockdown: Not getting liquor, Nagpur man kills self</li></ul><hr class='fulstorydivider' /></div><div class='fullstoryadd'><ul><li style='text-align:center;' class='advBootumHome'>Advertisement</li></ul><img src='../images/ad.jpg'></div><div class='fullstorydivemailprint' ><ul class='fullstoryulleft' style='display:inline;'><li class='fulstorysharecomment' ><script type ="text/javascript">addthis_pub  = 'shwetaverma@4cplus.com' ; addthis_language = 'fr';</script ><a href ="http://www.addthis.com/bookmark.php" onmouseout ="addthis_close()" onclick ="return addthis_open(this, '', '[URL]', '[TITLE]')"  class='fulstorysharea'><img src='../images/share_icon.jpg' border ="0" alt ="" />&nbsp;Share</a ><script type ="text/javascript" src ="http://s7.addthis.com/js/152/addthis_widget.js"></script></li><li class='fulstorysharecomment' onclick='printstory()'> <img src='../images/print_icon.jpg' alt='Print'/>&nbsp;Print</li><li class='fulstorysharecomment' onclick='sendmail(11361255)'> <img src='../images/email_icon.jpg'/>&nbsp;E-mail</li><li class='fulstorysharecomment' ><a href='#2' class='fulstorysharecomment' > <img src='../images/comment_icon.jpg' alt='Comments' border='0' />&nbsp;Comment</a></li></ul><ul class='fullstoryulright' ><li id='ifont'><font color='#f47622'  onclick='decreasefont()'>[ - ]</font> Text <font color='#f47622'  onclick='increasefont()'>[ + ]</font></li></ul></div><div class='fullstorydivstory'><font class='fullstorytime' color='#f47622'> 22:12 HRS IST</font><p class='fulstorytext'id='pstory'><b>Nagpur, Apr 4 (PTI)</b> A rickshaw driver in Nagpur in<br/><br/> Maharashtra set himself ablaze after being depressed over not
+getting liquor during the lockdown in place for the novel
+coronavirus outbreak, police said.<br/><br/>Vikas Barve (30) set himself on fire on March 29 in
+his house and died in hospital later, Inspector Vijay Kare of
+Ambazari police station said on Saturday.<br/><br/>"In hospital, he told police he was depressed because
+he was not getting liquor during the lockdown," Kare said.</p></div></div>     
+    
+    
+    
+    
+     <a id="2" >
+        <div class="fullstorydivcomment">
+           <ul class="fullstoryulleft" ><li class="blockhead">Post your comments</li></ul>    
+            <div id="ctl00_ContentPlaceHolder1_upcomment">
+	
+     
+    <div class="fulstorycommetfield">
+        <ul class="fullstoryulleftname">
+            <li class="fullsoryliname">
+                <label class="lblval">Name</label>
+            </li>
+            <li class="fullsorylie" >
+                <input name="ctl00$ContentPlaceHolder1$txtname" type="text" id="ctl00_ContentPlaceHolder1_txtname" class="txtcss" />
+            </li>
+        </ul>
+        <ul class="fullstoryulrightname">
+            <li class="fullsoryliname">
+                <label class="lblval">Email-ID</label>
+            </li>
+            <li class="fullsoryli">
+                <input name="ctl00$ContentPlaceHolder1$txtemail" type="text" id="ctl00_ContentPlaceHolder1_txtemail" class="txtcss" />
+            </li>
+        </ul>
+    </div>
+    <div class="fulstorycommetfield" style="border:0px;">
+        <ul class="fullstoryulleftclear">
+            <li class="fullsoryli">
+                <label class="lblval">Subject</label>
+            </li>
+            <li class="fullsoryli">
+                <input name="ctl00$ContentPlaceHolder1$txtsubject" type="text" id="ctl00_ContentPlaceHolder1_txtsubject" class="subjectc" />
+            </li>
+        </ul>
+    </div>
+    <div class="fulstorydivchk">
+        <ul class="fullstoryulleftclear">
+            <li class="fullsoryli">
+                  <textarea name="ctl00$ContentPlaceHolder1$txtdescription" id="ctl00_ContentPlaceHolder1_txtdescription" class="txtareaval"></textarea>
+            </li>
+        </ul>
+    </div>
+    <div id="ctl00_ContentPlaceHolder1_divsublitcomment" class="fulstorydivchk">
+        <ul id="ctl00_ContentPlaceHolder1_ulthanks" class="fullstoryulleftcomm">
+            <li>
+             
+            </li>
+        </ul>
+        <ul class="fullstoryulleft">
+            <li class="fullsoryli">
+                <input name="ctl00$ContentPlaceHolder1$chkid" type="checkbox" id="ctl00_ContentPlaceHolder1_chkid" />
+                <label class="chkval">Check,if you do not want your ID displayed on the site.</label>
+            </li>
+        </ul>
+        <ul class="fullstoryulright">
+            <li>
+                <input type="image" name="ctl00$ContentPlaceHolder1$imgsubmit" id="ctl00_ContentPlaceHolder1_imgsubmit" src="../images/submit.jpg" onclick="javascript:return validatecom();" border="0" /> 
+            </li>
+        </ul>
+        <ul class="fullstoryulleftclear" >
+            <li class="fullsoryli">
+                <input name="ctl00$ContentPlaceHolder1$Chkmail" type="checkbox" id="ctl00_ContentPlaceHolder1_Chkmail" />
+                    <label id="Label1" class="chkval">Check,If you want us to mail similar stories.</label>
+            </li>
+        </ul>
+        <ul class="fullstoryulleftclear">
+            <li>
+                <label class="ptext">PTI has a zero tolerance policy towards offensive or abusive comments.Help us maintain the dignity and decorum of the forum.</label> 
+            </li>
+        </ul>
+   </div>
+   
+
+</div>           
+        </div>
+     </a>  
+   
+     
+   
+    
+    
+   
+        <div id="ctl00_ContentPlaceHolder1_idcommentrep" class="fulstorydivr">
+               
+        </div>             
+  
+    
+    
+    
+   
+    
+     <div class="fulstorydivr">
+      
+            <div class="divsections">
+                <ul class="fullstoryulleft" style="display:inline;"><li class="blockhead">Also in This Section</li></ul>
+                <ul class="fullstoryulright"><li id="ctl00_ContentPlaceHolder1_Li2" class="blockrhead"><a id="ctl00_ContentPlaceHolder1_lnksection" class="blockrhead" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lnksection','')">Read with synopsis</a>    </li></ul>
+            </div>
+           <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+	
+                 <div id="ctl00_ContentPlaceHolder1_divsections" class="fulstorydivr"><ul class='fullstoryulleftsection'><li id='lis'><a class='releatedhead' href='/news/11516485_Delhi--s-COVID-death-toll-jumps-to-82-in-last-24-hours'>Delhi''s COVID death toll jumps to 82 in last 24 hours</a></li><li id='lis'><a class='releatedhead' href='/news/11516041_Odisha-Guv-contributes-Rs-11-lakh-to-CM-fund-for-Amphan-relief-work'>Odisha Guv contributes Rs 11 lakh to CM fund for Amphan relief work</a></li><li id='lis'><a class='releatedhead' href='/news/11516013_COVID-19--India-now-ninth-worst-hit-country-in-world-with-1-65-799-cases'>COVID-19: India now ninth-worst hit country in world with 1,65,799 cases</a></li><li id='lis'><a class='releatedhead' href='/news/11515878_There-was-no-recent-Modi-Trump-contact--Govt-sources'>There was no recent Modi-Trump contact: Govt sources</a></li></ul><ul class='fullstoryulrightsection'><li id='lis'><a class='releatedhead' href='/news/11516082_Renowned-architect-Vasant-Pansare-dies-at-93'>Renowned architect Vasant Pansare dies at 93</a></li><li id='lis'><a class='releatedhead' href='/news/11516025_Rahul-Gandhi-condoles-death-of-Veerendra-Kumar'>Rahul Gandhi condoles death of Veerendra Kumar</a></li><li id='lis'><a class='releatedhead' href='/news/11515884_UP-assembly-speaker-lets-Samajwadi-Party-withdraw-plea-to-disqualify-Shivpal-Yadav-as-MLA'>UP assembly speaker lets Samajwadi Party withdraw plea to disqualify Shivpal Yadav as MLA</a></li><li id='lis'><a class='releatedhead' href='/news/11513102_PM-reviews-power-sector--says-state-specific-solutions-needed-'>PM reviews power sector, says state-specific solutions needed </a></li></ul></div>               
+                
+                
+</div>
+        </div>     
+    
+    
+    
+    <input name="ctl00$ContentPlaceHolder1$hdnewsid" type="hidden" id="ctl00_ContentPlaceHolder1_hdnewsid" value="11361255" />
+
+    </div>
+   <div class="footer_bg">
+      <ul>
+        <li><a href="/home.aspx" >Home</a></li>
+        <li class="footer_divider_color">|</li>
+        <li><a target="_blank" href="http://bhasha.ptinews.com" >Bhasha</a></li>
+        <li class="footer_divider_color">|</li>
+        <li><a href="/aboutpti/aboutus.aspx" >About PTI</a></li>
+        <li class="footer_divider_color">|</li>
+        
+        <li><a href="/aboutpti/advertising.aspx" >Advertising</a> </li>
+        
+        <li class="footer_divider_color">|</li>
+          <li><a href="/aboutpti/feedback.aspx" >Feedback</a> </li>
+                  <li class="footer_divider_color">|</li>
+        <li><a href="/aboutpti/Contactus.aspx" >Contact us</a> </li>
+        
+         <li class="footer_divider_color">|</li>
+        <li><a href="/aboutpti/termsofuse.aspx" >Terms Of Use</a> </li>
+         
+        
+       
+        <li id="copyPTI" style=" padding-left:350px">© PTI 2014</li>
+      </ul>
+      <ul style="margin:20px 0px 0px 10px;">  
+        <li id="design4c"> Designed &amp; Devloped By:<a href="http://www.4cplus.com" target="_blank">4C Plus</a></li>
+      </ul>
+        
+      </div>
+      <input name="ctl00$txtlogintop" type="hidden" id="ctl00_txtlogintop" value="298" />
+     
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+     <script type="text/javascript" language="javascript">
+ window.onload=blinkOn;
+ window.onload=blinktender;
+ 
+function blinkOn()
+{
+  document.getElementById("blink").style.color="#004F8B"
+  setTimeout("blinkOff()",1000)
+}
+ 
+function blinkOff()
+{
+  document.getElementById("blink").style.color=""
+  setTimeout("blinkOn()",1000)
+}
+
+function blinktender()
+{
+  document.getElementById("tn").style.color="#004F8B"
+  setTimeout("blinkra()",500)
+}
+ 
+function blinkra()
+{
+  document.getElementById("tn").style.color=""
+  setTimeout("blinktender()",500)
+
+}
+ 
+ 
+</script>
+</body>
+</html>

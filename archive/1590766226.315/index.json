@@ -1,0 +1,232 @@
+{
+    "title": "Unable to get liquor, head constable commits suicide in Hyderabad",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.315",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:44.215195",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778823",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 20,
+                "start_ts": "2020-05-29 19:00:23.600265",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:57.508311",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:00:55.247644",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:23.598770",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=newsmeter.in"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 19:00:21.383077",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:00:47.372423",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:00:44.215354",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "end_ts": "2020-05-29 21:53:48.000797",
+                "start_ts": "2020-05-29 21:53:43.922040",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:55.247274",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 19:00:51.069088",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:59.297495",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 19:00:57.508554",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "https://web.archive.org/web/20200529190058/https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 19:00:51.068411",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:00:47.373077",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+                ],
+                "end_ts": "2020-05-29 21:53:52.618717",
+                "start_ts": "2020-05-29 21:53:48.001074",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 19:00:21.382761",
+                "cmd": [
+                    "curl",
+                    "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 19:00:17.605370",
+                "pwd": "/data/archive/1590766226.315",
+                "output": "Unable to get liquor, head constable commits suicide in Hyderabad"
+            }
+        ]
+    },
+    "updated": "1590789232.619356",
+    "tags": "",
+    "url": "https://newsmeter.in/unable-to-get-liquor-head-constable-commits-suicide-in-hyderabad/"
+}

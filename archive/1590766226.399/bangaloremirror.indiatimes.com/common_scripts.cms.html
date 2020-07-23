@@ -1,0 +1,58 @@
+
+                
+                (function(){
+				  function loadAaJs() {
+				    window._sf_endpt=(new Date()).getTime();
+				    var e = document.createElement('script');
+				    e.setAttribute('language', 'javascript');
+				    e.setAttribute('type', 'text/javascript');
+				    e.setAttribute('src',"https://static.clmbtech.com/ase/8358/27/aa.js");
+				    document.body.appendChild(e);
+				  }
+				  
+				function checkUser(){
+				     if (window.TimesGDPR  && TimesGDPR.common.consentModule.gdprCallback){
+                            TimesGDPR.common.consentModule.gdprCallback(function(dataObj){
+                               if (dataObj.isEUuser){
+                                 if(TimesGDPR.common.consentModule.isPersonalizedConsentGiven()){
+                                     loadAaJs();
+                                 }
+                               }else{
+                                 loadAaJs();
+                               }
+                            });
+                        }
+                    else{
+                       loadAaJs();
+                    }
+	            }
+				  var oldonload = window.onload;
+				  var onloadFunc =  (typeof window.onload != 'function') ? checkUser : function() {  checkUser();oldonload(); };
+				  if (window.attachEvent) {window.attachEvent('onload', onloadFunc);}
+                  else if (window.addEventListener) {window.addEventListener('load', onloadFunc, false);}
+                  else {document.addEventListener('load', onloadFunc, false);}
+				})();
+				
+    
+        
+                    
+                function callIbeat(){
+                    try{
+                        var ele = document.createElement('script');
+                        ele.setAttribute('language', 'javascript');
+                        ele.setAttribute('type', 'text/javascript');
+                        ele.setAttribute('src'," https://agi-static.indiatimes.com/cms-common/ibeat.min.js");
+                        document.body.appendChild(ele);
+                    }catch(e){}    
+                };
+                
+                if ( window.TimesGDPR && TimesGDPR.common.consentModule.gdprCallback){
+                    TimesGDPR.common.consentModule.gdprCallback(function(data){
+                        if(!data.isEUuser){
+                            callIbeat();
+                        }
+                    });
+                }
+        
+        
+    

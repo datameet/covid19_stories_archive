@@ -1,0 +1,232 @@
+{
+    "title": "Migrant ends life at quarantine centre in Rajasthan | Jaipur News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.280",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590776850",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:27:43.809345",
+                "start_ts": "2020-05-29 18:27:30.514139",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:28:02.521937",
+                "start_ts": "2020-05-29 18:27:59.490548",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 18:27:30.512734",
+                "start_ts": "2020-05-29 18:27:30.228208",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:27:47.745089",
+                "start_ts": "2020-05-29 18:27:43.809492",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 21:46:02.327287",
+                "start_ts": "2020-05-29 21:45:58.173123",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:27:59.489493",
+                "start_ts": "2020-05-29 18:27:53.278335",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:28:04.205956",
+                "start_ts": "2020-05-29 18:28:02.522189",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "https://web.archive.org/web/20200529182803/https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 18:27:53.277490",
+                "start_ts": "2020-05-29 18:27:47.745851",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+                ],
+                "end_ts": "2020-05-29 21:46:07.131239",
+                "start_ts": "2020-05-29 21:46:02.327536",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:27:30.227848",
+                "start_ts": "2020-05-29 18:27:29.803605",
+                "pwd": "/data/archive/1590766226.280",
+                "output": "Migrant ends life at quarantine centre in Rajasthan | Jaipur News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788767.1358",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/migrant-ends-life-at-quarantine-centre/articleshow/75611885.cms"
+}

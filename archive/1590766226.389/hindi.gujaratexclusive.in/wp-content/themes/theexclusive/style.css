@@ -1,0 +1,189 @@
+/*-----------------------------------------------------------------------------------
+Theme Name:The Exclusive
+Theme URI: #
+Description:The Exclusive is a Responsive Wordpress Theme with a multitude of amazing CMS features.
+Author: The Exclusive
+Author URI: #
+Version:1.0
+Tags:theme-options,custom-menu,responsive,html5
+----------------------------------------------------------------------------------*/
+body, p, body *, p, h1,h2,h3,h4,h5,h6,div, ul, li, ol{
+    font-family: 'Noto Sans', sans-serif;
+}
+.td-theme-wrap *{
+    font-family: 'Noto Sans', sans-serif !Important;
+}
+[class^=td-icon-]:before, [class*=" td-icon-"]:before {
+    font-family: newspaper !important;
+}
+.sf-menu .td-icon-menu-down {
+    right: 15px;
+}
+.td-footer-wrapper ul.menu{
+	list-style:none;
+}
+.td-footer-wrapper ul.menu ul{
+	list-style:none;
+	padding-left:20px;
+	    font-size: 12px;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    background: none;
+    margin: 0;
+}
+.td-trending-now-wrapper .bx-wrapper {
+    width: calc(100% - 135px);
+    display: inline-block;
+	    vertical-align: top;
+}
+.td-trending-now-post{ opacity:1;}
+.td_block_trending_now{ margin-bottom:20px;}
+.td_block_big_grid_3{ margin-top:0;}
+.td_block_big_grid_3 .td-big-grid-post-0 {
+    width: calc(50% - 3px);
+}
+.td-subcat-filter{ opacity:1;}
+.td-crumb-container {
+    font-family: open sans,arial,sans-serif;
+    font-size: 12px;
+    color: #c3c3c3;
+    line-height: 18px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+.td-crumb-container a{color: #c3c3c3;}
+.tdc-row{ max-width:100%;}
+.td_module_flex_1.td_module_wrap{ width:20%; float:left;padding-left: 20px;padding-right: 20px;}
+.td_module_flex_1.td_module_wrap .entry-thumb{ border-radius: 100%;}
+.post header .entry-title,
+.td-big-grid-post .entry-title a{
+    font-weight: bold;
+}
+.td_block_wrap {
+    margin-bottom: 25px;
+}
+.block-title > span, .block-title > a, .block-title > label, .widgettitle, .widgettitle:after, .td-trending-now-title, .td-trending-now-wrapper:hover .td-trending-now-title, .wpb_tabs li.ui-tabs-active a, .wpb_tabs li:hover a, .woocommerce .product .products h2:not(.woocommerce-loop-product__title), .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more {
+    background-color: #000;
+}
+.block-title, .wpb_tabs .wpb_tabs_nav, .woocommerce div.product .woocommerce-tabs ul.tabs:before {
+    border-color: #000;
+}
+.block-title a, .block-title span, .block-title label {
+    padding: 10px 12px 10px;
+	font-size:18px;
+	font-weight:bold;
+}
+.td-subcat-filter .td-subcat-list a {
+    font-size: 15px;
+    font-weight: bold;
+}
+.td-post-content p {
+    font: 500 17px/29px Noto Sans,sans-serif;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 15px;
+}
+.bx-wrapper .bx-pager {
+    text-align: right;
+    right: 0;
+    left: auto;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #fff;
+}
+.heateor_sss_horizontal_sharing{ margin:15px 0;}
+.td-paragraph-padding-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.td-post-category{ font-weight:bold !Important;}
+.td-trending-now-title{ font-size:16px; font-weight:bold;}
+.entry-title {
+    font-weight: 500;
+}
+.td-block-title-wrap h4 a{ padding:0; background:none;}
+.td-block-row .td-block-span6:nth-child(2n+1){ clear:left;}
+.td-block-row .td-block-span4:nth-child(3n+1){ clear:left;}
+.td_block_wrap:hover .block-title span{ background:#AE3335;}
+.td_block_wrap:hover .block-title{ border-color:#AE3335;}
+.td-header-style-1 .td-header-sp-logo img {
+     max-height: none; 
+}
+.td-pb-span8 .td-paragraph-padding-1, .mceContentBody-max-width-small .td-paragraph-padding-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.td-main-page-wrap {
+    padding-top: 20px;
+}
+.td-crumb-container {
+    min-height: 0;
+}
+.td-tags {
+    margin: 0 0 10px 0;
+}
+.td-crumb-container a:hover{ color:#AE3335;}
+.td-main-page-wrap {
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+.td-search-background{ display:none;}
+@media (max-width: 767px){
+	.td_block_big_grid_3 .td-big-grid-post-0 {
+		width: 100%;
+	}
+	/*.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-big-grid-post {
+		width: 33%;
+	}*/
+	.td-trending-now-wrapper .bx-viewport{ height:auto !Important;}
+	.td-trending-now-post {
+		height: auto;
+	}
+	.td-trending-now-display-area .td_module_trending_now .entry-title{ line-height:normal;    font-size: 13px;}
+	.td-trending-now-display-area {
+		height: auto;
+		top: 0;
+		width: calc(100% - 82px);
+		display:inline-block;
+	}
+	.td-trending-now-wrapper {
+		overflow: hidden;
+	}
+	.td-trending-now-wrapper .bx-wrapper {
+		width: calc(100% - 85px);
+		top: 5px;
+	}
+	.td-main-content-wrap .tdc-column > .tdc-row{
+		padding-left:0;
+		padding-right:0;
+	}
+	.td_block_19 .td-block-span6, .td_block_19 .td-block-span4 {
+		margin-bottom: 20px;
+	}
+	.td-trending-now-post {
+		width: auto !important;
+	}
+	.td-trending-now-post {
+		height: auto;
+		position: relative;
+		top: 5px;
+	}
+	.td-pulldown-syle-default.td-subcat-filter{ display:none}
+	.td-menu-mob-open-menu #td-mobile-nav {
+		visibility: visible;
+		background: #000;
+	}
+	.td-subcat-dropdown{ display:none !important;}
+}
+@media (max-width: 420px){
+.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-module-thumb{
+    height: 160px !important;
+}
+.td_block_wrap .td-big-grid-wrapper .td-big-grid-scroll .td-module-thumb img{
+    height: 160px !important;
+}
+}

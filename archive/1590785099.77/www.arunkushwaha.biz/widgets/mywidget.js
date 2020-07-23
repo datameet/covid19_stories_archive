@@ -1,0 +1,1 @@
+document.getElementById("AeyKayWidgetContainer").innerHTML = "<iframe src='http://www.arunkushwaha.biz/widgets/widget.html' width='35' height='35' allowtransparency='true' scrolling='no' frameborder='0'></iframe>";

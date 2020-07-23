@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.49",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:13:40.792385",
+                "start_ts": "2020-05-29 21:13:40.237086",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "Nizamuddin: Minorities Panel Reports DU Teachers for Hate Speech Against Muslims"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:28.668247",
+                "start_ts": "2020-05-29 21:14:21.619682",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=thewire.in"
+                ],
+                "end_ts": "2020-05-29 21:13:41.107050",
+                "start_ts": "2020-05-29 21:13:40.792663",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:21.619432",
+                "start_ts": "2020-05-29 21:14:14.609566",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:39.525673",
+                "start_ts": "2020-05-29 21:14:37.306070",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "https://web.archive.org/web/20200529211438/https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 33,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786821",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:14.609398",
+                "start_ts": "2020-05-29 21:13:41.108313",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:34.955504",
+                "start_ts": "2020-05-29 21:14:28.668505",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+                ],
+                "end_ts": "2020-05-29 21:14:37.305755",
+                "start_ts": "2020-05-29 21:14:34.955848",
+                "pwd": "/data/archive/1590785099.49",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590786879.5341",
+    "tags": "",
+    "url": "https://thewire.in/communalism/nizamuddin-coronavirus-muslims-hate-speech"
+}

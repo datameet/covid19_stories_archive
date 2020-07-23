@@ -1,0 +1,194 @@
+{
+    "title": "Depressed over postponement of exams, pharmacy student commits suicide - cities - Hindustan Times",
+    "url": "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html",
+    "timestamp": "1590766226.190",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590773085",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:24:54.686187",
+                "start_ts": "2020-05-29 17:24:45.970694",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:25:16.483604",
+                "start_ts": "2020-05-29 17:25:15.019063",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.hindustantimes.com"
+                ],
+                "end_ts": "2020-05-29 17:24:45.969309",
+                "start_ts": "2020-05-29 17:24:45.651491",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:25:01.798998",
+                "start_ts": "2020-05-29 17:24:54.686658",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:25:15.018702",
+                "start_ts": "2020-05-29 17:25:09.102876",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:25:18.329852",
+                "start_ts": "2020-05-29 17:25:16.483902",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "https://web.archive.org/web/20200529172517/https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html"
+                ],
+                "end_ts": "2020-05-29 17:25:09.102620",
+                "start_ts": "2020-05-29 17:25:01.799261",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.hindustantimes.com/cities/depressed-over-postponement-of-exams-pharmacy-student-commits-suicide/story-ejSer78AUxKn4ntjPxqwDL.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:24:45.651208",
+                "start_ts": "2020-05-29 17:24:45.126507",
+                "pwd": "/data/archive/1590766226.190",
+                "output": "Depressed over postponement of exams, pharmacy student commits suicide - cities - Hindustan Times"
+            }
+        ]
+    },
+    "updated": "1590788248.164401",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

@@ -1,0 +1,4225 @@
+
+
+
+
+/* Copy to clipboard code for URL*/
+(function(){try{var d=document,b=d.body,de=d.documentElement,C=eval("/*@cc_on!@*/false"),_ga_utm='utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst',AE,RE,sp=function(a,b){for(var c in a)
+if(a.hasOwnProperty(c))
+b[c]=a[c]},bo=function(a,b,c){a=d.createElement(a);sp(b,a);sp(c,a.style);return a},tc=function(){var so,st='',reg1=/\w+/ig,linkFlg=false;if(_gaq){_gaq.push(['_trackEvent','cppst','select','cntntcp']);}
+if(d.selection&&d.selection.createRange){so=d.selection.createRange();var st=so.htmlText;if(st != '' && st.match(reg1) && st.match(reg1).length>4){linkFlg=true;st=st.replace(/(<a([^>]+)>)/ig,"");st=st.replace(/(<([^>]+)a>)/ig,"");st=(st.length>500)?st.substring(0,500)+'&nbsp;..':st;st=st.replace(/\n/ig,"<br />");st+="<br />";}}else{var so=window.getSelection();var st=so.toString();if(st != '' && st.match(reg1) && st.match(reg1).length>4){if(so.rangeCount){var container=bo('div',{'id':'copiedTextClone'},{'display':'none'});linkFlg=true;var len=so.rangeCount;for(var i=0;i<len;++i){container.appendChild(so.getRangeAt(i).cloneContents());}
+st=container.innerHTML;st=st.replace(/(<a([^>]+)>)/ig,"");st=st.replace(/(<([^>]+)a>)/ig,"");st=(st.length>500)?st.substring(0,500)+'&nbsp;..':st;}}}
+var lnkurl=window.location.href;var indx2=lnkurl.indexOf('/articleshow');lnkurl=sharer.url;lnkurl=(lnkurl.indexOf('?')==-1)?(lnkurl+'?'+_ga_utm):((lnkurl.indexOf(_ga_utm)==-1)?(lnkurl+'&'+_ga_utm):lnkurl);if(linkFlg){var lnk="<br /><br /><div style='font-siae:12px;font-family:arial'>Read more at:<br /><a href='"+lnkurl+"'>"+lnkurl+"</a></div>";st=st+" "+lnk;}
+var e=bo('div',{},{'position':'fixed','top':0,'left':'-99999px','background':'#fff'});b.appendChild(e);e.innerHTML=st;if(so.selectAllChildren){so.selectAllChildren(e);}else{var m=b.createTextRange();m.moveToElementText(e);m.select();}
+window.setTimeout(function(){b.removeChild(e);},0);},ca=function(a){SE();d.readyState=="complete"?a():AE(window,"load",function(){setTimeout(function(){if(typeof d.readyState=="undefined"&&!C)
+d.readyState="complete";a();},10)})},SE=function(){if(window.addEventListener){AE=function(a,b,c){a.addEventListener(b,c,false)};RE=function(a,b,c){a.removeEventListener(b,c,false)}}else{AE=function(a,b,c){a.attachEvent("on"+b,c)};RE=function(a,b,c){a.detachEvent("on"+b,c)}}},init=function(){ try {if(window.addEventListener){b.addEventListener("copy",tc);}else{b.attachEvent("oncopy",tc);}} catch (e) {console.log('Error:', e);}}
+return ca(init);} catch (e) {console.log('Error:', e)} } )();
+/* Copy to clipboard code Ends*/
+
+function primewidget(){
+ try{
+    var primW = -1;
+    primW = $.cookie('pfuuid');
+    if(primWi != "undefined"){
+        var primWi = primW%1;
+        if(primWi == 0){
+          $('.prime_block').show();  
+        }else {
+            $('.prime_block').hide();  
+        }
+    }  
+    } catch (e) {
+        console.log("Error in Peime widget show", e);
+    }
+}
+//code for insurance widget
+
+
+// ga impression code
+   $(window).scroll(function(){
+      $('[data-visible-ga]').each(function(){
+          var $this = $(this);
+          if($this.visible(true) && $this.attr('data-visible-ga') != ''){
+              var gaData = $this.attr('data-visible-ga').split('#');
+              if(gaData.length > 2){ga('send', 'event', gaData[0], gaData[1], gaData[2]);}
+              $this.removeAttr('data-visible-ga');
+   	   }
+      });
+   });
+   
+var objExchange = {
+    currentExchange: 'nse',
+    currentExchangeId: function () {
+        return objExchange.currentExchange == 'bse' ? 47 : 50;
+    }
+}
+var vpath = '';
+var etArt = {
+    openPopup: function (target) {
+        if (target) {
+
+            if (!$(target).hasClass("popup")) {
+                $(target).addClass("popup");
+            }
+
+            if (!$(".close", target).length) {
+                $(target).append("<div class='close' />");
+            }
+
+            // While Saving the Article
+            if (target == "#saveArt") {
+                if (_tp_data.isLogged) {
+                    $("> .hidden", target).hide();
+                    $("iframe", target).attr("src", "/insertclipping_new.cms?msid=" + page.msid + "&random=" + new Date().getTime().toString().substring(0, 5)).parent().show();
+                } else {
+                    $("> .hidden", target).show();
+                    $("iframe", target).parent().hide();
+                    $("button", target).bind("click", function () {
+                        $(target).fadeOut(200);
+                    });
+                }
+            } /*else if (target == "#shareEmail") {
+                if(objLang.currentLang() == 'HIN'){
+            	    $("iframe", target).attr("src", "/mail.cms?msid=" + page.msid+"&language=HIN");
+            	}else{
+            	    $("iframe", target).attr("src", "/mail.cms?msid=" + page.msid);
+            	}
+            }*/
+
+            $("#backgroundPopup").fadeTo(500, 0.7);
+            $(target).css({ top: 110 }).fadeTo(500, 1, function () {
+                $(target).animate({
+                    top: 100
+                }, 300);
+            });
+
+            $('body').off("click",'.close,'+ target).on("click", '.close,'+ target, function () {
+                $('#backgroundPopup,' + target).fadeOut(200);
+                $('body').removeClass('divovernone');
+            });
+        }
+    },
+    fontSizeclick:function (ele) {
+        if ($(ele).hasClass("fontLarge")) {
+            etArt.fontSize(ele, "+");
+            $(ele).removeClass("fontLarge").addClass("fontSmall");
+            $(ele).attr("data-ga-onclick","Articleshow#Font Size#Increase");
+            // $(".shareVert .fontSize, .shareHorz .fontSize").removeClass("fontLarge").addClass("fontSmall");
+        } else {
+            etArt.fontSize(ele, "-");
+            $(ele).removeClass("fontSmall").addClass("fontLarge");
+            $(ele).attr("data-ga-onclick","Articleshow#Font Size#Decrease");
+            // $(".shareVert .fontSize, .shareHorz .fontSize").removeClass("fontSmall").addClass("fontLarge");
+        }  
+    },
+    fontSize: function (ele, way) {
+        var target = $(ele).parents('.pageContent article').find('.artText');
+        if (way == "-") {
+             target.css('font-size', "16px");
+        } else {
+            target.css('font-size', "18px");
+        }
+    },
+    showCmtBox: function () {
+        
+    },
+    setSharer: function () {
+        if (skinningExist) {
+            $("#shareHorz").show();
+            $("#shareVertHolder").hide();
+        } else {
+            if ($(window).width() < 1125) {
+                $("#shareVertHolder").hide();
+                $("#shareHorz").slideDown();
+            } else {
+                $("#shareVertHolder").show();
+                $("#shareHorz").hide();
+            }
+        }
+    },
+    showVideo: function (videoId,vol) {
+        var volume = "";
+        if (vol !== undefined) {
+            volume = "&audio=" + vol;
+        }
+        var adSkip = (objAd.type == 'adfree') ? '&skipad=true' : '';
+        //&hpauto=1&stxt='+ $.cookie("autoPlayStatus") +'
+        $(".videoHolder").append('<iframe frameborder="0" height="360" width="640" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="/videodash.cms?channel=10002&videosection=articleshow&autoplay=1&fallBackMute=true' + volume + '&kalstream=PROGRESSIVE&msid=' + videoId + adSkip +'"></iframe>').promise().done(function(){
+            $(".relatedvideo iframe").on('load', function(){
+                vpath = $(".relatedvideo iframe")[0].contentWindow.vplayer; 
+            });
+        });
+        $(".videoHolder, .relatedvideo", ".artVideo").show("fast");
+        $(".artVideo figure").hide("fast");
+    },
+    showVideo2: function (element, vol) {
+        var videoId = element.attr("data-videoId");
+        var hostId = typeof element.attr("data-hostid") != 'undefined'?element.attr("data-hostid"):153;
+        var sizeRef = element.find('img'), height = sizeRef.height(), width = sizeRef.width();
+        var minheight = Math.ceil((width / 16) * 9);
+        height = (height < minheight) ? minheight : height;
+        var volume = "";
+        if (vol !== undefined) {
+            volume = "&audio=" + vol;
+        }
+        //&hpauto=1&stxt='+ $.cookie("autoPlayStatus") +'
+        var adSkip = (objAd.type == 'adfree') ? '&skipad=true' : '';
+        element.siblings('.videoHolder').append('<iframe frameborder="0" height="' + height + '" width="' + width + '" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="/videodash.cms?channel=10002&videosection=articleshow&autoplay=1' + volume + '&kalstream=PROGRESSIVE&msid=' + videoId + '&hostid='+hostId+adSkip+'"></iframe>').promise().done(function(){
+            element.siblings('.videoHolder').find('iframe').on('load', function(){
+                vpath = element.siblings('.videoHolder').find('iframe')[0].contentWindow.vplayer; 
+            });
+        });
+        element.parent().find(".videoHolder").show();
+        element.hide();
+    }
+}
+
+// Vars
+var _tp_async_data;
+
+function logonmyt(m_activity,m_msid,m_msg){
+	/*mytimes._M_act(m_activity,m_msid,m_msg);*/
+}
+
+function logLinkedShare(){
+	// loggin on MyTimes on Linkedin Share
+/*	if(_tp_data.isLogged){
+		logonmyt("Shared", page.msid, "Linkedin");
+	}*/
+}
+/***** ADOPTED *****/
+
+function shareFB(msg) {
+    //$(":input[name=link]", "#fbPost").val(document.location.href);
+    $(":input[name=message ]", "#fbPost").val(document.title);
+    if (msg && $.trim(msg).length) {
+        $(":input[name=message ]", "#fbPost").val(msg);
+    }
+    $("#fbPost").submit();
+    $(":input[name=message ]", "#fbPost").val(document.title);
+}
+
+function shareTW(msg) {
+    //$(":input[name=link]", "#twPost").val(document.location.href);
+    $(":input[name=message ]", "#twPost").val(document.title);
+    if (msg && $.trim(msg).length) {
+        $(":input[name=message ]", "#twPost").val(msg);
+    }
+    $("#twPost").submit();
+    $(":input[name=message ]", "#twPost").val(document.title);
+}
+
+function logaction(action) {
+    if (typeof iBeatPgTrend != "undefined") {
+        iBeatPgTrend.logaction(action);
+    }
+}
+
+
+function addtoWin(addtoFullURL, addsite) {
+	if(addsite == 2){
+		window.open(addtoFullURL, 'FB', 'height=350,width=550,left=400,top=200');
+	} else if (!popupWin.closed && popupWin.location) {
+		popupWin.location.href = addtoFullURL;
+		intervalMgr()
+	} else {
+		popupWin = window.open(addtoFullURL);
+		if (!popupWin.opener)
+			popupWin.opener = self;
+		intervalMgr()
+	}
+	if (window.focus)
+		popupWin.focus();
+	return false
+}
+
+function intervalMgr() {
+	if (/Safari/i.test(navigator.userAgent))
+		var addtoInterval = setInterval(function () {
+				if (/loaded|complete/.test(document.readyState)) {
+					clearInterval(addtoInterval);
+					closeAddTo()
+				}
+			}, 1E3);
+	else
+		var addtoInterval = setInterval("closeAddTo();", 1E3)
+}
+
+function closeAddTo() {
+	if (!popupWin.closed && popupWin.location) {
+		if (popupWin.location.href == AddURL)
+			popupWin.close()
+	} else {
+		clearInterval(addtoInterval);
+		return true
+	}
+}
+
+function relatedVideo() {
+    try{
+        var totalBr = $('article .artText .section1 .Normal').find('br').length;
+        var ctnPos;
+        if (totalBr > 12) {
+            ctnPos = $("article .artText .section1 .Normal").find('br')[7];
+        }
+        else {
+            ctnPos = $("article .artText .section1 .Normal").find('br')[totalBr - 2];
+        }
+        
+        var vElement = $('.artVideo');
+        $(ctnPos).before(vElement.html());
+        vElement.remove();
+        // $(ctnPos).before('<div id="div-clmb-ctn-208630-1" data-slot="208630" data-position="1" data-section= "0" data-cb="adwidgetBelly" class="colombia colombiaBelly colombiaAd"></div><br/>');
+        
+        
+    } catch (e) {
+        console.log("Error in belly CTN ad", e);
+    }
+}
+
+function bindEvents() {
+    
+    $(".article_wrap").on("click",'article .video[data-id]', function () {
+        var videoId = $(this).attr("data-id"),
+            width = $(this).width();
+        var height = (width / 4) * 3;
+        var hostId = typeof $(this).attr("data-hostid") != 'undefined'?$(this).attr("data-hostid"):153;
+        var adSkip = (objAd.type == 'adfree') ? '&skipad=true' : '';
+        $(this).html('<iframe frameborder="0" height="' + height + '" width="' + width + '" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="/videodash.cms?channel=10002&videosection=articleshow&autoplay=1&audio=&kalstream=PROGRESSIVE&msid=' + videoId + '&hostid='+hostId+adSkip+'"></iframe>');
+    });
+    
+    
+    // For related videos
+    $(".article_wrap").on("click", '.inlineVideo.playVideo', function () {
+        $('.close_video, .relatedvideo').removeClass('hide');
+        if($('.relatedvideo').is(':empty')){
+            etArt.showVideo($(this).attr("data-videoId"), 1);
+        }
+        else
+        {vpath.playVideo();}
+    });
+    
+    $(".article_wrap").on("click", '.topVideo .playVideo', function () {
+        var $this = $(this);
+        if($this.siblings('.videoHolder').is(':empty')){
+            etArt.showVideo2($(this), 1);
+        }
+    });
+    
+    
+    
+    
+    $(document).on('click', '.close_video', function(){
+        $(this).addClass('hide');
+        $(this).prev().addClass('hide');
+        vpath.pauseVideo();
+    });
+    
+    	
+	// Offensive Box
+	$("input[type=radio]", "#abuseForm").bind("change", function () {
+		if ($(this).val() == "Others") {
+			$("textarea", "#abuseForm").show();
+		} else {
+			$("textarea", "#abuseForm").hide();
+		}
+		$("#ofreason").val($(this).val());
+	});
+	$(".closeBtn", "#abuseForm").bind("click", function(){
+	   $('#backgroundPopup, #reportAbuseDiv').fadeOut(200);
+	});
+    
+    // New Comment Box
+    $(".pageContent").on("click",'.postComment, #commentCountBtn',function (event) {
+        event.preventDefault();
+        etArt.showCmtBox();
+    });
+    $("textarea", "form.cmtForm").bind("keyup", function () {
+        var thisForm = $(this).parents("form");
+        if ($(this).val().length > 2) {
+            if ($(this).val().length == 3) {
+                $(this).animate({ height: 70 });
+            }
+            if (_tp_data.isLogged) {
+                $(".hidden", thisForm).not(".nonLogged").slideDown();
+            } else {
+                $(".hidden", thisForm).slideDown();
+            }
+        }
+    });
+    
+     // Most Shared and Most Commented Loads
+    $("li", "#sideBar .mostPopular").click(function () {
+        var idx = $(this).index(), target = $(">li", "#sideBar .mostPopular + .tabsContent > ul").eq(idx), loadURL = $(this).attr("data-url");
+        if (target.is(":empty")) {
+            target.append("<div class='loading'><img src='/photo/19819991.cms' alt='Loading'>Loading</div>")
+				.find(".loading").slideDown().parent().load(loadURL);
+        }
+    });
+
+    // hide watchlist / portfolio popup if click on doucment outside of popup
+    $(document).bind("click", function (e) {
+    	if(!$(e.target).is('.watch, .watch *')){
+    		$('.watchlistPopup').hide();
+    	}
+    	if(!$(e.target).is('.port, .port *, .add_to_portfolio, .add_to_portfolio *')){
+    		$('.add_to_portfolio').hide();
+    	}
+    	//Commented handled by CSS
+    	/*if(!$(e.target).is('.author_box, .author_box *')){
+    		$('.author_box').hide();
+    	}*/
+    });
+    
+    // Open Pop-up on clicking Share More button
+    $('.article_wrap').on('click', '.shareVert .shareMore', function () {
+        var shareMsid = $(this).parent().attr('data-share_msid');
+        etArt.openPopup('.article_block[data-article_id="' + shareMsid + '"] .shareIcons');
+        $('body').addClass('divovernone');
+    });
+    
+    // On clicking outside the Share More Button
+    $('#backgroundPopup').on('click', function() {
+        $('.shareIcons').hide();
+        $('body').removeClass('divovernone');
+    });
+    
+} // bind event end
+
+
+
+
+
+var is_interval_running = false;
+
+// Articleshowsp code start
+lazyLoadColombiaVideo = {
+    showAdDivVideo: function (data,ele) {
+        var $this = $(ele);
+        var container = $this.attr('id');
+        var frameCont = container+'_video_box';
+        if($('#' + frameCont).html() == '') {
+            //$('#' + container).parent().slideUp(700);
+            $.ajax({
+				url: "/ctn_video_player.cms",
+				dataType: 'text',
+				success: function(snippet){ 
+					var iframe = document.createElement('iframe');
+					iframe.style.width = '640px';
+					iframe.style.height = '360px';
+					iframe.style.border = '0';
+					iframe.setAttribute("scrolling","no");
+					iframe.setAttribute("frameBorder",'0');
+					iframe.style.overflow = "hidden";
+					iframe.id = 'ifr_' + frameCont;
+					iframe.name = 'ifr_' + frameCont;
+					document.getElementById(frameCont).innerHTML = '';
+					document.getElementById(frameCont).appendChild(iframe);
+					document.getElementById(frameCont).style.display = '';
+					document.getElementById(iframe.id).onload = function() {
+						iframe.contentWindow.colombiaVideoAd(data,container);
+					}
+                    
+					iframe.contentWindow.document.write(snippet);
+					iframe.contentWindow.document.close();
+					//$('#' + container).parent().slideDown('slow');
+				},
+				    error:function(a,b,c){
+				}
+			});	
+        }
+    },
+}
+function adwidgetVideo(data,container){
+    if(data!=null) {
+        if(data.paidAds[0].itemType == 4) {
+            $('#'+container).css('display','none');
+            var conObj = document.getElementById(container);
+            var context='<div id="'+container+'_cons"><div data-adheight="360" data-adwidth="640" id="' + container + '_video_box" class="ctn_video_box"></div>';
+            context=context+'<div class="colombialogo"></div><span class="spText">Recommended By Colombia</span></div>';
+			conObj.innerHTML = context;
+		   // var contextBox= $('#'+container+'_video_box');
+		    var contextBox= $('#'+container);
+			lazyLoadColombiaVideo.showAdDivVideo(data,contextBox);
+			var c = conObj.className;
+			c = c.replace('all_zero', '').replace('hidden', '');
+			conObj.className = c;
+        }
+        else{
+            var conObj = document.getElementById(container);
+            $('#'+container).css('display','');
+            var context='<ul>';
+            for(var i = 0; i < data.paidAds.length; i++){
+				context= context+'<li> <a target="_blank" href="'+data.paidAds[i].clk[0]+'"><img height="75" width="100" src="' + data.paidAds[i].mainimage + '"/></a><p><a target="_blank" href="'+data.paidAds[i].clk[0]+'">'+data.paidAds[i].title.replace("'","")+'</a></p><span class="sponsored">'+data.paidAds[i].brandtext+'</span> </li>';
+		        /*if(i==0){
+		            context =context+'<span class="seperator"></span>';
+		        }*/
+            }
+            context=context+'<div class="colombialogo"></div><span class="spText">Recommended By Colombia</span> </ul>';
+			conObj.innerHTML = context ;
+			var c = conObj.className;
+			c = c.replace('all_zero', '').replace('hidden', '');
+			conObj.className = c;
+        }
+    }
+}
+
+function bellyCTNAd(pos, msid) {
+    
+    if($('.article_block[data-article_id="' + msid + '"][data-content_type="200"]').length == 0) {
+        bellyCTNAdProcess(pos, msid)
+    } else {
+        objUser.afterLoginCall(function () {
+            if(_tp_data.isLogged == 1) {
+                bellyCTNAdProcess(pos, msid);
+            }
+        });
+    }
+    
+}
+
+function bellyCTNAdProcess(pos, msid) {
+    try{
+        var ps = (typeof pos === 'undefined') ? 0 : pos;
+        var msid = (typeof msid !== 'undefined') ? msid : page.msid;
+        //For MF Widgets in Articlebody
+        if($('.article_block[data-article_id="' + msid + '"] .mfMiniWidget.hidden')) {
+            var arBr =  $('.article_block[data-article_id="' + msid + '"] article .artText .section1 .Normal').find('>br');
+            var mfMiniWidget = $('.article_block[data-article_id="' + msid + '"] article').find('.mfMiniWidget').html();
+            if(mfMiniWidget){
+                $(arBr[6]).after('<div class="mfMiniWidget">'+mfMiniWidget+'</div>');
+            }
+        }
+        
+        var agency = $('.article_block[data-article_id="' + msid + '"]').attr('data-agency').toLowerCase();
+        if(agency != 'brandwire' && agency != 'colombia' && agency != 'mediawire') {
+            
+            var videoAdDiv = "";
+             if(typeof geolocation !="undefined" && geolocation != "2"){ //US location
+                    videoAdDiv = '<div id="div-clmb-ctn-208630-'+ ps +'" data-slot="208630" data-position="'+ ps +'" data-section= "0" class="colombia colombiaVideo colombiaAd" style="margin-top:10px;clear:both;"/>';
+             }
+            
+            var elemNormal = $('.article_block[data-article_id="' + msid + '"] article .artText .section1 .Normal');
+            var totalBr = elemNormal.find('>br').length,
+                ctnPos = elemNormal.find('>br')[totalBr - 2];
+            
+            if (totalBr > 12) {
+                ctnPos = elemNormal.find('>br')[11];
+            }
+            
+            if($('.article_block[data-article_id="' + msid + '"] .etMoneySlot').length) {
+                var elem = $('.article_block[data-article_id="' + msid + '"] .etMoneySlot');
+                elem.show();
+                $(ctnPos).before(elem);
+            } else if (!$("article").hasClass('listicles')) {
+                if (totalBr < 7) {
+                    $('.article_block[data-article_id="' + msid + '"] .artText .Normal').eq(0).append(videoAdDiv);
+                } else {
+                    $(ctnPos).before(videoAdDiv);
+                }
+            }
+        }
+        
+    } catch (e) {
+        console.log("Error in belly CTN ad", e);
+    }
+}
+
+function amazon_widget(msid){
+ try{
+    //var msid = (typeof msid !== 'undefined') ? msid : page.msid;
+    var totalBr = $('.article_block[data-article_id="' + msid + '"] article .artText .section1 .Normal').find('br').length;
+    
+    if (totalBr > 4){
+        $('.article_block[data-article_id="' + msid + '"] .artText .Normal').find('br').eq(3).after($('.article_block[data-article_id="' + msid + '"] .a_widget'));
+        }
+    } catch (e) {
+        console.log("Error in Peime widget show", e);
+    }
+}
+
+//multiplex
+ function attachBottomAds(msid,site){
+     try{
+        var msid = (typeof msid !== 'undefined') ? msid : page.msid;
+    	var et_dfp = {
+    		"slots" : {
+    			"MULTIPLEX" : {
+    				"id":"div-gpt-ad-1568880351259-0",
+    				"name":"/7176/Economictimes/ET_ROS_NW/ET_ROS_Bottomwidget",
+    				"size":["fluid"],
+    				"multipleAds":"true"
+    			}
+    		}
+    	}
+    	var gaSent = false;
+    	if(geolocation != '1') {
+    		var myAdCodeObject = et_dfp.slots.MULTIPLEX;
+    		var  adSlot = myAdCodeObject.name;
+    		var listened = false;
+    		window.googletag = window.googletag || {};
+    		window.googletag.cmd = window.googletag.cmd || [];
+    		window.googletag.cmd.push(() => {
+    		  window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+    		     // console.log("vvvvv-------"+ JSON.stringify(event));
+    			if (
+    			  event &&
+    			  event.slot &&
+    			  typeof event.slot.getAdUnitPath === 'function' &&
+    			  event.slot.getAdUnitPath() === adSlot
+    			  && !listened
+    			) {
+    				if (event.isEmpty === true) {
+    					renderCTNAd();
+    					console.log('renderCTNAd render',listened);
+    				  }
+    				listened = true;
+    			}
+    		  });
+    		});
+    		renderDFPAd();
+    		console.log('renderDFPAd');
+    	} else {
+    		renderCTNAd()
+    	}
+    	
+          function renderDFPAd(){
+              try{
+        	  var myAdCodeObject = et_dfp.slots.MULTIPLEX;
+        	  var  adSlot = myAdCodeObject.name;
+        	  var size = myAdCodeObject.size;
+        	  var divId = myAdCodeObject.id + '-' + msid;
+        
+        	  var dfpAdContainer = document.createElement('div');
+        	  dfpAdContainer.setAttribute('id',divId);
+        	  dfpAdContainer.setAttribute('class','multiplexad')
+        	  $('#aroundwebshow-'+ msid).append(dfpAdContainer);
+        
+        	  window.googletag = window.googletag || {cmd: []};
+        	  googletag.cmd.push(function() {
+        	  googletag.defineSlot(adSlot, size, divId).addService(googletag.pubads());
+        	  googletag.enableServices();
+        		
+        	  });
+        	  setTimeout(function(){
+        		  googletag.cmd.push(function() { googletag.display(divId); });
+        	  }, 1000);
+            } catch (e) {
+                console.log("Error in DFPAd not load", e);
+            }
+          }
+          function renderCTNAd() {
+        	  var ctnAdHtml = '<div class="colombiaAd colombia" data-slot="210766" data-position="'+ msid +'" data-section="0" id="div-clmb-ctn-210766-'+ msid +'"></div>'
+        	
+        	$('#aroundwebshow-'+ msid).append(ctnAdHtml);
+          } 
+         } catch (e) {
+            console.log("Error in multiplex widget show", e);
+        }
+     
+    }
+// main object
+articleShow = {
+    currentMsid: '',
+    initMsid:null,
+    pushStateInterval: 0,
+    trackSeo: '',
+    trackSeoInterval: 30000,// 30 sec default timeout
+    articleTrackFlag: 0, // Flag 0/1
+    trackSeoCurrent: 0,
+    init: function () {
+        try {
+            $('.news_cont.list').not('.news_cont.list:visible').remove();  
+            $('.article_block[data-article_id="'+page.msid+'"] .promo_box').html('<a target="_blank" href="/etwealth_questionnaire.cms?utm_source=ETWEALTHARTICLESHOW&utm_medium=ETSITE&utm_campaign=Etwealthsurvey"><img alt="Wealth RICS Survey" height="60" width="640" src="//img.etimg.com/photo/50559538.cms" class="gwt-Image"/></a>');
+            articleShow.documentScrollBind();
+            
+            //articleShow.commentCount(page.msid);
+            //articleShow.mostRead(1,page.msid);
+            //$('.article_block[data-article_id="' + page.msid + '"] .article_separator').html("<div id='div-clmb-ctn-129220-1' class='list colombia colombiaAd' data-slot='129220' data-cb='adwidgetArticleShow' data-position='1' data-section='0'></div>");
+            if(showFullWidthArticle != '0' && $('.article_block[data-article_id="' + page.msid + '"]').attr('data-noads') != 'true') {
+                bellyCTNAd(1, page.msid);
+            }
+            
+            // articleShow.morepartner(1,page.msid);
+            articleShow.nextStoryClickBind();
+            articleShow.initMsid = page.msid;
+            
+        } catch (e) {
+            console.log('Error init:', e);
+        }
+    },
+    loadScripts : function() {
+        var loagcmtflag = 1;
+        return function() {
+            if(loagcmtflag){
+                loagcmtflag = 0;
+                var jsDomain = (location.href.indexOf("8243") > -1) ? '' : objDomain.js,
+                    minify = (location.port.length) ? 0 : 1;
+                $.ajax({
+                	url : jsDomain + '/js_comments/v-'+((typeof objJsVer !== 'undefined' && typeof objJsVer.js_comments_v !== 'undefined') ? objJsVer.js_comments_v : 94)+',minify-' + minify + '.cms',
+                	dataType : 'script',
+                	cache : true
+                });
+                $.ajax({
+                	url : jsDomain + '/js_articleshowsp_slider/v-'+ ((typeof objJsVer !== 'undefined' && typeof objJsVer.js_articleshowsp_slider_v !== 'undefined') ? objJsVer.js_articleshowsp_slider_v : 8) +',minify-' + minify + '.cms',
+                	dataType : 'script',
+                	cache : true
+                });
+                $.ajax({
+                	url : jsDomain + '/js_wealthcommon/v-'+ ((typeof objJsVer !== 'undefined' && typeof objJsVer.js_wealthcommon_v !== 'undefined') ? objJsVer.js_wealthcommon_v : 21) +',minify-' + minify + '.cms',
+                	dataType : 'script',
+                	cache : true
+                });
+                $.ajax({
+                	url : '//platform.instagram.com/en_US/embeds.js',
+                	dataType : 'script',
+                	cache : true,
+                	success: function (data){
+                	   // window.instgrm.Embeds.process();
+                	}
+                });
+                $.ajax({
+                	url : '//platform.twitter.com/widgets.js',
+                	dataType : 'script',
+                	cache : true,
+                	success: function (data){
+                	   //twttr.widgets.load();
+                	}
+                });
+            }
+        }
+    }(),
+    removeBlank:function(val){
+        if(val.length <1){
+            return " ";
+        }
+        else{ return val;}
+    },
+    iBeatHit:function(){
+        $('article').each(function (){
+            var $this = $('article[data-articleid="'+page.msid+'"]');
+            if($this.visible(true) && (!$this.hasClass("bindDone"))) {
+                //console.log('in ibeat'+ $this.attr('data-articleid'))
+                $this.addClass("bindDone");
+        		_page_config = {
+            		host: 'economictimes.indiatimes.com', 
+            		key: 'f66e70a45a565c9c76a526c5e9e99df',
+            		domain: 'economictimes.indiatimes.com',
+            		channel:  articleShow.removeBlank($this.attr('data-ibeat_channel')),
+            		action :"1",
+            		articleId: articleShow.removeBlank($this.attr('data-articleid')),
+            		contentType: 1,
+            		location : 1,
+            		cat : (typeof objIbeatVar !== 'undefined') ? objIbeatVar.catnameibeat_com : _iBeat_cat,
+            		subcat: (typeof objIbeatVar !== 'undefined') ? objIbeatVar.subcatnameibeat_com : _iBeat_subcat,
+            		contenttag: articleShow.removeBlank($this.attr('data-ibeat_tag')),
+            		catIds: (typeof objIbeatVar !== 'undefined') ? objIbeatVar.catidsibeat_com : catids,
+            		author: articleShow.removeBlank($this.attr('data-ibeat_author')),
+            		articledt: articleShow.removeBlank($this.attr('data-artidate')),
+            		iBeatField : 'title=' + $this.find('h1.title').text()
+                };
+               iBeatPgTrend.init();
+            };
+            if($('.loadPrimeWidget[data-msid="'+ page.msid +'"]').length && !$('.loadPrimeWidget[data-msid="'+ page.msid +'"]').hasClass('loaded')) {
+                $('.loadPrimeWidget[data-msid="'+ page.msid +'"]').addClass('loaded');
+                objPrimeWidget.loadWidget(page.msid);
+            }
+            
+            if($('.stock_screener_widget').not('.active').length) {
+                loadScreenerWidget.load();
+            }
+            if($('.mf_screener_widget').not('.active').length) {
+                $(".mf_screener_widget").etSlider({
+                    visible: 1,
+                    perSlide: 1,
+                    auto: false,
+                    pagination: ".mf_nav_dots",
+                    interval: 5000,
+                    nextprevBtn: true
+                });
+                $('.mf_screener_widget').addClass('active');
+            }
+        });
+		
+    },
+    fixedRightNew : function() {
+        var sideBar = $(".sideBar");
+        var sticky = sideBar.offset().top;
+        function checkStickyAd() {
+          if (window.pageYOffset >= sticky && (!$('.bottomBar').visible(true) && !$('.newfooter').visible(true))) {
+            $('.sideBar .adsbg300').eq(0).addClass('fixadv');
+          } else {
+            $('.sideBar .adsbg300').eq(0).removeClass('fixadv');
+          }
+        }
+        $(document).scroll(function () {
+            checkStickyAd();
+        });
+    },
+    getArticleInfo: function (msid) {
+        var PROTOCOL = PROTOCOL || window.location.protocol;
+        var response = {};
+        response.url = $('.articlelist_container ul li[data-msid="' + msid + '"] a').attr('href');
+        response.url = response.url.indexOf('//economictimes.indiatimes.com') == -1 && response.url.indexOf('//etdev8243.indiatimes.com') == -1 ? PROTOCOL + '//' + window.location.host + response.url : response.url;
+        
+        response.title = $('.articlelist_container ul li[data-msid="' + msid + '"] a').contents().get(1).textContent;
+        return response;
+    },
+    documentScrollBind: function () {
+       // var scrollcount=0;
+        $(document).scroll(function () {
+            //articleShow.socialSharingFix();
+            objComment.fixCommentCount();
+        });
+        
+        
+    },
+    loadTemplate:function(name, msid){
+        // console.log('loadTemplate', '$("div[next_art_msid="' + msid + '"])', name, msid);
+        try{
+        $.ajax({
+            url: '/'+name+'.cms',
+            async:false,
+            success:function(res){
+                /*if(page.subsec1 =='837555174'){
+                     $('div[next_art_msid="'+msid+'"]').prepend(res);
+                }
+                else{
+                     $('div[data-article_id="'+msid+'"]').append(res);
+                }*/
+                $('.article_block[data-article_id="'+msid+'"] .pageContent').append(res);
+            },
+            error:function(e){
+                console.log(e);
+            }
+        });
+        }
+        catch(e){
+            console.log("temp error");
+        }
+    },
+
+    socialSharingFix: function () {
+        try {
+            var winTop = $(window).scrollTop(), winBottom = (winTop + window.innerHeight), navHeight = $('#topNavFixed').outerHeight(), margin = 0;
+            var  a = $('.sharingBox').eq(0).offset().top +  $('.sharingBox').eq(0).height();
+            $('.sharingBox').each(function (i, j) {
+                var $this = $(this), parentArticle = $this.parents('.article_block'), articleContainer = parentArticle.find('article'), winTop = $(window).scrollTop();
+                if(articleContainer) {
+                    //margin = $this.parents('.article_block').find('.adv_block').outerHeight() + $this.parents('.article_block').find('.article_grid').outerHeight();
+                    var myTop = $this.parents('.shareVert').offset().top, articleBottom = articleContainer.offset().top + articleContainer.outerHeight();
+                    
+                    var sharingHeight = $this.height();
+                    
+                    $this.removeClass('fixed fixAtBottom');
+                    
+                    if ((articleBottom - winTop) < sharingHeight) {
+                        $this.removeClass('fixed').addClass('fixAtBottom');
+                    } else if (myTop <= (winTop + navHeight)) {
+                        $this.addClass('fixed');
+                    }
+                    
+                }
+            });
+        } catch (e) {
+            console.log('Error: ', e);
+        }
+    },
+    commentCount: function (msid) {
+        if(objGdpr.allow()){
+            window.commentCountCB = function (data) {
+                try{
+                    if(typeof data != "undefined" && typeof data[0] != "undefined" && typeof data[0].count !="undefined"){
+                        var count = data[0].count;
+                        count = count ? count : 0;
+                        // console.log('count', msid, '--->', count);
+                        $('.comment_count[data-msid=' + msid + '] span').html(count);
+                       // if(count > 1) {
+                            $('.btn[data-cmtmsid=' + msid + ']').html('Comments (' + count + ')');
+                       // }
+                    }
+                    $('.comment_count[data-msid=' + msid + ']').addClass('cmtDone');
+                }
+                catch(e){console.log("error in comment count", e)}
+            }
+            $.ajax({
+                url: 'https://myt.indiatimes.com/mytimes/sharedEntityV2?appKey=ET&activityName=Commented&isMovieReviewArticle=false',
+                dataType: 'script',
+                cache: true,
+                data: {
+                    msids: msid,
+                    'callback':'commentCountCB'
+                }
+            });    
+        }
+    },
+    mostRead:function(curid,msid){
+        window.setTimeout(function(){
+           $('#most_read_'+msid).load('/articleshow_panache.cms?curpg='+curid); 
+        },1000);
+    },
+    morepartner:function(curid,msid){
+        var seq = curid%2==0 ? 2 :"";
+        window.setTimeout(function(){
+           $('#morepartners_'+msid).load('/more_partners'+seq+'.cms') 
+        },1000);
+    },
+    articleTracker: function(id){
+        var selectorTrack = $('.article_block[data-article_id="'+id+'"]');
+        //selectorTrack.find('.pageContent article h1.title').visible()
+        if( !(selectorTrack.find('.pageContent article h1.title').hasClass('visitedTracker')) && ($('.articlelist_container .articles li.active > a').attr('data-track') != 1) ){
+            selectorTrack.find('.pageContent article h1.title').addClass('visitedTracker');
+            var activeLi = $('.articlelist_container .articles li.active > a'),gaCat = 'Scroll Depth';
+            if(activeLi.hasClass( "etpersonalised" ))
+            {gaCat= 'MN_Scroll Depth';}
+            //ga("send", "event", "Articleshow", gaCat, "level" + (activeLi.attr('data-depth').split(' ')[1] - 1) );
+        }
+    },
+    articleTrackerInterval: function(title, interval){
+        articleShow.trackSeo = setInterval(function(){ 
+            articleShow.articleTrackFlag == 0 ? articleShow.trackSeoCurrent += 30 : articleShow.trackSeoCurrent += 60 ; // 30 sec or 60 sec(1Min)
+
+            var minutes = Math.floor(articleShow.trackSeoCurrent / 60);
+            var seconds = articleShow.trackSeoCurrent - minutes * 60;
+            var currentTime = '>' + minutes + 'Min' + ':' + seconds + 'Sec';
+            
+        	ga('send', 'event', 'ICICIDP', currentTime, title);
+        	if(articleShow.trackSeoCurrent >= 300 && articleShow.articleTrackFlag == 0){ // After 5 Minutes
+        	    articleShow.articleTrackFlag = 1;
+        	    articleShow.articleTrackerClearInterval();//Clear previous Timeout of 30 sec
+        	    articleShow.articleTrackerInterval(title, 60000); // After 5 Minutes SetTimeout changes to GA hit per 1 Minute
+        	}
+        }, interval);// GA hit per interval // 30sec
+    },
+    articleTrackerClearInterval: function(){
+        clearInterval(articleShow.trackSeo);
+        articleShow.articleTrackFlag == 0 ? articleShow.trackSeoCurrent = 0 : '';// clear main Interval
+    },
+    pushState: function (article_id) {
+        try {
+            // console.log('pushState', article_id);
+            //logonmyt("Read",page.msid,"");
+            commentBox.hide();
+            page.msid = article_id;
+            
+            articleInfo = articleShow.getArticleInfo(article_id);
+            
+            // commentsTrackAdder(article_id);
+            
+            var url =articleInfo.url, 
+            title = articleInfo.title;
+            if (typeof window.history.pushState != 'undefined') {
+                window.history.pushState({}, '', url);
+                document.title = title;
+                $(".rtAdContainer iframe").parent().css("height", ""); //removed height of ad div on every refresh of ad
+                
+                if(typeof googletag !== 'undefined'){
+                    // objAd.lazyArticleAds(page.msid);
+                    objAd.loadAds($(".article_block[data-article_id = '" + page.msid + "']"));
+                }
+                
+                $(".rtAdContainer > div").removeClass("fixed").css({"left":"", "top": "", "width": ""});
+                sharer.url = PROTOCOL + '//economictimes.indiatimes.com/' + url;
+                //console.log('push state hit, ad refresh hit'); 
+                if(!$('.comment_count[data-msid=' + page.msid + ']').hasClass('cmtDone')){
+                    articleShow.commentCount(page.msid);    
+                }
+                // Scroll Depth Tracker
+                articleShow.articleTracker(page.msid);
+                
+                // ICICI Seo Keyword tracker GA Hit
+                articleShow.articleTrackerClearInterval();// clear main Interval
+                
+                if($(".article_block[data-article_id = '" + page.msid + "']").attr('data-seokeywords')){
+                    var pageSeoTitle = $(".article_block[data-article_id = '" + page.msid + "'] #article_title").val();
+                    page.seoTitle = pageSeoTitle;
+                    articleShow.articleTrackerInterval(pageSeoTitle, articleShow.trackSeoInterval);
+                }
+                //-- for Article change --//
+                if(articleShow.initMsid !== page.msid){
+                    articleShow.articleChange(page.msid);
+                }
+            }
+            $(".article_block[data-article_id = '" + article_id + "'] article figure.midImg").each(function (i, v) {
+                if ($(this).attr("data-align") == 'left') {
+                    $(this).addClass("flt");
+                } else if ($(this).attr("data-align") == 'right') {
+                    $(this).addClass("flr");
+                } else if($(this).find("> img").outerWidth() < 420 && !$(this).hasClass("flt")){
+                    $(this).addClass("flt");
+                }
+            });
+            objFollow.checkBookmark(article_id, 0);
+            if(!$(".article_block[data-article_id = '" + page.msid + "']").hasClass('gaDone')){
+                if(typeof googletag !== 'undefined'){
+                    _BL_pg = $('.article_block[data-article_id="'+page.msid+'"]').attr('data-blacklist');
+                    var _Bl = (typeof _BL_pg !== 'undefined' && _BL_pg.length > 0) ? 1 :0;
+                    googletag.pubads().setTargeting('BL', _Bl+'');
+                    googletag.pubads().setTargeting('Hyp1', spHyp1);
+                    
+                    objAd.reloadAds($('.article_block[data-article_id="'+page.msid+'"]'));
+                    
+                    var nonOopAdsRef = $("div[data-size*='[125, 600]'], div[data-size*='[120,600]']"),
+                    nonOopAdsId = nonOopAdsRef.length > 0 ? nonOopAdsRef.attr("id") : "";
+                    objAd.refreshAd(nonOopAdsId);
+                    
+                    /*
+                    if(typeof objAd.steamingAd['ads_'+ page.msid] !== 'undefined' && objAd.steamingAd['ads_'+ page.msid].length > 0){
+                        googletag.pubads().refresh(objAd.steamingAd['ads_'+ page.msid]);
+                    } else {
+                        if (typeof objAd.nonOopAds !== 'undefined' && objAd.nonOopAds.length > 0) {
+                            googletag.pubads().refresh(objAd.nonOopAds);
+                        }
+                    }
+                    if(typeof objAd.oopAds !== 'undefined' && objAd.oopAds.length > 0){
+                        googletag.pubads().refresh(objAd.oopAds);
+                    }
+                    */
+                }
+                
+                if (typeof iBeatPgTrend != "undefined") {
+                    articleShow.iBeatHit();
+                }
+                
+                
+                var curArticleInfoElement = $('.article_block[data-article_id="'+page.msid+'"]');
+                var authors = curArticleInfoElement.attr('data-authors');
+                var articleDate = $('.article_block[data-article_id="'+page.msid+'"] article').attr('data-artidate');
+                var article_title_D = $('.article_block[data-article_id="'+page.msid+'"] #article_title').val();
+                var contentType = curArticleInfoElement.attr('data-content_type');
+                var curArticleInfo;
+                if($('.article_block[data-article_id="'+page.msid+'"] article').attr('data-dimension')){
+                    curArticleInfo = JSON.parse($('.article_block[data-article_id="'+page.msid+'"] article').attr('data-dimension'));
+                }
+                
+                var budgetKeyWord = curArticleInfoElement.attr('data-keywords');
+                var budgetArray = budgetKeyWord.toLowerCase().split(',');
+                budget_2019_banner=0;
+                
+                customDimention.dimension4 = curArticleInfoElement.attr('data-agency');
+                customDimention.dimension5 = (authors) ? authors : '';
+                customDimention.dimension8 = articleDate.split(',')[0] + ',' + articleDate.split(',')[1];
+                customDimention.dimension9 = curArticleInfo.subsec2;
+                customDimention.dimension12 = curArticleInfoElement.attr('data-keywords');
+                customDimention.dimension13 = articleDate.split(',')[2].split(' ')[1];
+                customDimention.dimension48 = curArticleInfoElement.attr('data-article_id');
+                customDimention.dimension26 = curArticleInfo.subsec1;
+                customDimention.dimension38 = _tp_data.isPrime?'Subscribed User':'Not Subscribed user';
+                customDimention.dimension107 = new Date;
+                customDimention.dimension7 = getParameterByName('utm_source') == 'ETMyNews' ? 'personalised' : 'non-personalised';
+                // if(curArticleInfoElement.attr('data-special_coverage') && curArticleInfoElement.attr('data-special_coverage') != '') {
+                //     customDimention.dimension14 = curArticleInfoElement.attr('data-special_coverage');
+                // } else {
+                //     delete(customDimention.dimension14);
+                // }
+                if($.inArray('budget', budgetArray) > -1 || $.inArray('budget 2020', budgetArray) > -1 || $.inArray('budget2020', budgetArray) > -1 || $.inArray('union budget 2020', budgetArray) > -1){
+                    customDimention.dimension18 = 'Budget 2020 | ' + article_title_D;
+                } else {
+                    delete(customDimention.dimension18);
+                }
+                if(contentType == 200){
+                    customDimention.dimension19 = article_title_D;    
+                }else{
+                    delete(customDimention.dimension19);
+                }
+                customDimention.page = url;
+                ga('send', 'pageview', customDimention);
+                $.ajax({
+                    url: "/getcomscore.cms",
+                cache: true
+                }).done(function (html) {
+                    $("#comscore").html(html);
+                    
+                });
+                //=====
+                
+                
+               
+               // article_title_D = $('.article_block[data-article_id="'+page.msid+'"] #article_title').val();
+                //if($.inArray('budget 2019', budgetArray) ==0){
+                    //ga('set', 'dimension18', article_title_D);
+                //}
+                //=====
+                //loadSpecialComments();
+                
+                $(".article_block[data-article_id = '" + page.msid + "']").addClass('gaDone');
+                var storyIndex1 = $('.articlelist_container ul.articles li[data-msid="' + page.msid + '"]').index();
+                // Depth scroll
+                ga('set','dimension38',customDimention.dimension38);
+                ga('set','dimension48',customDimention.dimension48);
+                ga('set','dimension26',customDimention.dimension26);
+                ga('set','dimension9',customDimention.dimension9);
+                ga('set','dimension4',customDimention.dimension4);
+                ga('set','dimension107',customDimention.dimension107);
+                ga('set','dimension41',_tp_data.email);
+                ga('set','dimension5',customDimention.dimension5);
+                ga('set','dimension12',customDimention.dimension12);
+                ga('set','dimension7',customDimention.dimension7);
+                ga('send', 'event', 'Articleshow Next Story', 'scroll', 'Depth - ' + (storyIndex1 + 1));
+                if(page.subsec2 =='2647163'){
+                    ga('send', 'event', 'Articleshow Headline Width Experiment', 'scroll', 'Full width Headline');
+                }  
+                //-- for user activity capture --//
+                if(typeof socialDataCapture != "undefined"){
+                    socialDataCapture.personalisationHit(page.msid);
+                }
+                
+                if(typeof hidePremiumContentBox !== 'undefined' && $(".article_block[data-article_id = '" + page.msid + "']").hasClass('exclusive-print')) {
+                    hidePremiumContentBox(); //premium content
+                }
+                
+            }
+        } catch (e) {
+            console.log('pushState Error: ', e);
+        }
+        
+    },
+    articleChange: function(article_id) {
+        articleShow.initMsid = article_id;
+        //for Page timespent
+        if(typeof socialDataCapture != "undefined" && socialDataCapture.timeSpent) {
+            socialDataCapture.timeSpent(article_id);
+        }
+    },
+    companyData: {},
+    
+    watchListData: {},
+    fillWatchList:function () {
+        if(Object.keys(articleShow.watchListData).length == 0) {
+            $.ajax({
+                url:objPfs.getWatchlist,
+                data:{callback:'articleShow.fillWatchListCallback'},
+                dataType:'script'
+            });
+        } else {
+            articleShow.fillWatchListCallback(articleShow.watchListData);
+        }
+    },
+    fillWatchListCallback:function (data) {
+        $('.loadprog').hide();
+        if(typeof data.watchListList != 'undefined') {
+            var options = '', createWL = '<option class="related_createWL" value="createWL">Create Watchlist</option>';
+            $.each(data.watchListList, function (i, v) {
+                options += '<option value="' + v.watchListId + '">' + v.watchListName + '</option>';
+            });
+            if(options != '') {
+                $('.watchlist').html(options+createWL);
+            }
+            else{$('.watchlist').html(createWL);}
+            articleShow.watchListData = data;
+        }
+    },
+    getPrice:function() {
+        $.ajax({
+            url: objPfs.getClosePrice,
+            dataType: 'jsonp',
+            data: {
+                companyId: atp_company_id,
+                priceDate: $('#curDate').val().replace(/\//g, '-'),
+                exchange: $("#exchangeType").val()
+            },
+            success: function (data) {
+                if (typeof data.historicalPrice != 'undefined') {
+                    $('#idPortfolio [name="price"]').val(data.historicalPrice.closePrice);
+                }
+            }
+        });
+    },
+    setPortfolioListResponse : function(data) {
+        var wlCount = 0;
+        wlCount = data.dashBoard.portfolios.length;
+        $("select.portfolio_list option").remove();
+        $("select.portfolio_list").append('<option value="0">Select Portfolio</option><option value="-1">Create New Portfolio</option>');
+        $.each(data.dashBoard.portfolios, function (c, obj) {
+            $("select.portfolio_list option", "#idPortfolio").last().before("<option value='" + obj.portfolio.portfolioId + "'>" + obj.portfolio.name + "</option>");
+        });
+        $('.portfolio_list').attr('disabled',false);
+        $('#inload').addClass('hidden');
+    },
+    setPortfolioList : function() {
+        if (_tp_data.isLogged) {
+            $.ajax({
+                url: objPfs.getPortfolioList+"&callback=articleShow.setPortfolioListResponse",
+                dataType: "script",
+                cache: true,
+                success: function (data) { }
+            });
+        }
+    },
+    datepickerAdd :function() {
+        //ets.addToPortfolio();
+            $.getScript('/js_datepicker.cms', function () {
+                var today = new Date();
+                today = today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear();
+    
+                $('#curDate').jdPicker({
+                    date_format: "dd/mm/YYYY",
+                    date_max: today
+                });
+                // calender auto close on change of year and month
+                $('.date_selector').click(function () {
+                    return false;
+                });
+            });
+    },
+    createWatchlist: function(){
+        if ($('.watchlist option:selected').val()=='createWL'){
+            $('.watchlistPopup').append('<input type="text" id="addNewWL" /><input type="button" id="addlist" name="createSave" value="Create" class="btn"/>');
+            $("#addlist").bind("click", function(event) {
+                var name = $.trim($('#addNewWL').val());
+                articleShow.addWatchList(name);
+            });
+        }
+        $('.msg').hide();
+          
+    },
+    addWatchList: function(name){
+         if (name.length == 0) {
+              $('.msg').hide().html("<span class='red'>Name of the new watchlist is mandatory </span>").slideDown();
+                $("#addNewWL").focus();
+            } else {
+                $.ajax({
+                    url: objPfs.createWatchlist,
+                    dataType: "jsonp",
+                    data: {
+                        // event: "addWatchList",
+                        // login: etm.userId,
+                        // responseType: "json"
+                        watchListName: name,
+                        assetClass: "STOCK",
+                        isDefault: ($("b", "#myzone_watchlist").text() > 0) ? "N" : "Y"
+                    },
+                    success: function(data) {
+                        if (!data.watchList.watchListId) {
+                              $('.msg').hide().html("<span class='red'>Watch List with name \"" + name + "\" Already Exists!</span>").slideDown().delay(1000).slideUp();
+                                //$(".message", "#addNewWL").text("Watch List with name \"" + name + "\" Already Exists!").addClass("red").slideDown();
+                            $(":input[type='text']", "#addNewWL").focus();
+                           
+                        }
+                        else{
+                        // } else if (data.message == "SUCCESS") {
+                            $('.msg').hide().html("<span class='green'>Watch List with name \"" + name + "\" added successfully!</span>").slideDown().delay(1000).slideUp();
+                            $('.watchlist').append($("<option></option>").attr("value",name).text(name)); 
+                             $.ajax({
+                                url:objPfs.getWatchlist,
+                                data:{callback:'articleShow.fillWatchListCallback'},
+                                dataType:'script'
+                            });
+                          //  $("#myzone_watchlist").siblings("ul").empty();
+                           // etm.getWatchList();
+
+                           /* etm.myZone.timeout = setTimeout(function() {
+                                $(".close", "#addNewWL").trigger("click");
+                            }, 5000);*/
+                        }
+                        
+                        $('#addNewWL').remove();
+                        $('#addlist').remove();
+                    }
+                });
+            }
+        
+    },
+    saveWatchList:function(ele) {
+        try {
+        // console.log(ele);
+        var watchListId = $(ele).siblings('select').val(), company_id = $(ele).attr('data-company_id');
+         $('.msg').hide();
+        $.ajax({
+                url: objPfs.addCompanyToWatchlist,
+                data: {watchListId:watchListId, masterDataKey:company_id},
+                dataType: 'jsonp',
+                success:function (data) {
+                    // console.log(data);
+                    if (data.watchListAsset.watchListAssetsId > 0) {
+                        $(ele).siblings('.msg').hide().html("<span class='green'>Company added to your selected watchlist</span>").slideDown();
+                        
+                    } else if (data.watchListAsset.watchListAssetsId == 0) {
+                        $(ele).siblings('.msg').hide().html("<span class='red'>Company already exists in the selected watchlist </span>").slideDown();
+                    }
+                    clearTimeout(objSti.saveWli);
+                    objSti.saveWli = setTimeout(function () {
+                        $('.msg').slideUp();
+                    }, 5000);
+                }
+            });
+        } catch (e) {
+            console.log('Error saveWatchList:', e);
+        }
+    },
+    savePortfolio:function(ele) {
+        try {
+        
+        var watchListId = $(ele).siblings('select').val(), company_id = $(ele).attr('data-company_id');
+         $('.msg').hide();
+        $.ajax({
+                url: objPfs.addCompanyToWatchlist,
+                data: {watchListId:watchListId, masterDataKey:company_id},
+                dataType: 'jsonp',
+                success:function (data) {
+                    if (data.watchListAsset.watchListAssetsId > 0) {
+                        $(ele).siblings('.msg').hide().html("<span class='green'>Company added to your selected watchlist</span>").slideDown();
+                    } else if (data.watchListAsset.watchListAssetsId == 0) {
+                        $(ele).siblings('.msg').hide().html("<span class='red'>Company already exists in the selected watchlist </span>").slideDown();
+                    }
+                    clearTimeout(objSti.saveWli);
+                    objSti.saveWli = setTimeout(function () {
+                        $('.msg').slideUp();
+                    }, 5000);
+                }
+            });
+        } catch (e) {
+            console.log('Error saveWatchList:', e);
+        }
+    },
+    nextStoryClickBind:function () {
+        $('.article_wrap').on('click', '.nextstory', function () {
+            var $this = $(this), msid = $this.attr('data-nextarticleid');
+            var scrollTo = $('[data-article_id="' + msid + '"]').offset().top - 60; 
+            $('html, body').animate({scrollTop: scrollTo}, '500');
+        });
+    },
+    scrollControlNavList : function(){
+        var prevSc = 0,
+            curSc = 0,
+            loadstoryflag = 1;
+        return function() {
+            var _objTopBar = _objTopBar || $('#topNavFixed'),
+            _objBtmBar = _objBtmBar || $('.articlelist_container'),
+            topNavPos = _objTopBar.length > 0 ? _objTopBar.offset().top : 200,
+			curSc = $(window).scrollTop();
+			//console.log('Botm',_objTopBar,_objBtmBar,topNavPos,curSc)
+            if (curSc <= prevSc  && !$('.articlelist_container:hover').length) {
+                // Scroll up
+                    _objBtmBar.removeClass('showBtmBar');
+                if($(window).scrollTop() > topNavPos && !_objTopBar.hasClass('fixNavBar'))    {
+                    _objTopBar.addClass('fixNavBar');
+                }
+            }
+            else {
+                // 'Scroll down'
+                _objTopBar.removeClass('fixNavBar');
+                var scrollTop = $(window).scrollTop();
+                if(scrollTop > 300 && $('.articlelist_container:visible').length == 0) {
+                    $('.articlelist_container').addClass('showBtmBar');
+                    $('.articlelist_container span.num').each(function (i, j) { $(this).text(i+1);});
+                    if(loadstoryflag){
+                        loadstoryflag = 0;
+                        objScroll.loadStory();
+                    }
+                }
+            }
+	        prevSc = curSc;
+        }
+    }()
+};
+
+// objSetTimoutInvterval, saveWli-> saveWatchlistInterval
+objSti = {saveWli:0}
+
+
+
+commentBox = {
+    init: function () {
+        $(document).bind("click", function (e) {
+            if(!$(e.target).is('.commentBoxContainer , .commentBoxContainer  *, #commentCountBtn, .comment_count, .comment_count *, .comment_box .btn')){
+                 commentBox.hide();
+            }
+        });
+    },
+    show: function (msid) {
+        commentBox.loadCss();
+        msid = typeof msid != 'undefined' ? msid : 0;
+
+        if (msid && msid != $('#id[name=id]').val()) {
+            if ($(".article_block[data-article_id = '" + msid + "'] .comment_count span").html() != '0') {
+                allCommentedLoaded = 0;
+                // loadSpecialComments();
+                loadComment(msid);
+            } else {
+                $('#populatecomment').empty();
+            }
+            
+        }
+        // var title = $('li.news_cont[data-msid="' + msid + '"] a .news_info').contents().get(0).textContent;
+        
+        var articleInfo = articleShow.getArticleInfo(msid);
+        var title = articleInfo.title;
+        $('.commentBoxContainer .articleTitle').html(title);
+		$('.commentBoxContainer').finish();
+        // var t = $('#topNavFixed.fixedNav').length ? $('#topNavFixed.fixedNav').outerHeight() : 0,
+		if($('.commentBoxContainer').not('.show').length) {
+			var t = $('#topNavFixed').outerHeight(),
+			height = $(window).height() - $('#topNavFixed').outerHeight(true),
+// 			commentBox = $('.comment').eq(0),
+			commentContentBox = $('.commentBoxContainer').width();
+			//left = commentBox.offset().left + commentBox.outerWidth() - 2;
+			
+			if(0) {
+			    animation = {scrollTop: 0, 'opacity':1, 'right': 0};
+				$('.commentBoxContainer').css({'left':'auto'});;
+			} else {
+			    //var left = $('[data-commentbox_msid="' + msid + '"]').offset().left + 55;
+			    if(page.subsec2 =='2647163'){
+                    var left = $('[data-commentbox_msid="' + msid + '"]').offset().left + -300;
+                }else{
+    			    var left = $('[data-commentbox_msid="' + msid + '"]').offset().left + 55;
+    			 }
+			    animation = {scrollTop: 0, 'opacity':1, 'left': left};
+				$('.commentBoxContainer').css({'right':'auto'});;
+			}
+			
+		    
+			$('.commentBoxContainer').finish().css({'top': t, 'height': height, scrollTop: 0}).addClass('show').animate(animation, function () {
+			    if(0) {
+				 //$('.close_btn').css({'left' : $('.commentBoxContainer').offset().left - $('.close_btn').width(), 'right' : 'auto'}).fadeIn();
+			    } else {
+			       // $('.close_btn').css({'left' : $('.commentBoxContainer').outerWidth(), 'right' : 'auto'}).fadeIn();
+			    }
+			});
+		}
+				
+        $('#defaultCommentForm form.cmtForm textarea[name="cmtMsg"]').val('');
+        $('#defaultCommentForm form.cmtForm').show().siblings('div.cmtMsg').hide();
+        $('.uInfo' ).removeAttr('style');
+        
+    },
+    hide: function () {
+        //if (!$('.comment:hover, .commentBoxContainer:hover').length) {
+            var commentBox = $('.comment').eq(0),
+                    commentContentBox = $('.commentBoxContainer').width();
+                    //left = commentBox.offset().left + commentBox.outerWidth() - 2;
+                    if(0) {
+                        animation = {scrollTop: 0, 'opacity':0, 'left': 'auto', 'right':  -100};
+                    } else {
+                        animation = {scrollTop: 0, 'opacity':0, 'right': 'auto', 'left':  -100};
+                    }
+                    
+            $('.commentBoxContainer').css({scrollTop: 0}).animate(animation, function () {$('.commentBoxContainer').removeClass('show');/*$('.close_btn').hide()*/});
+			//$('.close_btn').fadeOut('fast');
+        //}
+    },
+    loadCss: function(){
+        var cssId = 'commentsCss';  // you could encode the css path itself to generate id..
+        if (!document.getElementById(cssId)) {
+                var head  = document.getElementsByTagName('head')[0];
+                var link  = document.createElement('link');
+                link.id   = cssId;
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'https://css.etimg.com/css_comments/v-1,minify-1.cms';
+                link.media = 'all';
+                head.appendChild(link);
+            }
+    }
+};
+
+
+
+
+
+
+
+// mobile popup plugin start
+objPopupAdon = {
+    bindMenuClick: function () {
+        // tab bind
+        $('#hovercartObj .menu td').click(function () {
+            var $this = $(this), i = $this.index();
+            
+            if(i<2) {
+                $('#hovercartObj .content tr').eq(i).show().siblings().hide();
+                $this.addClass("active").siblings().removeClass("active");
+            }
+            if (i == 1 && $('#hovercartObj .news').html() == '') {
+                var $cart = $('#hovercartObj'),
+                        compID = $cart.data('companyInfo').id;
+                $('#hovercartObj .news').html('<img src="/photo/19819991.cms"/>');
+                $.ajax({
+                    url: "/feed_stocknews.cms",
+                    data: {
+                        companyid: compID,
+                        feedtype: 'sjson',
+                        startdate: new Date().toJSON().slice(0, 10),
+                        numofdays: 10,
+                        period: 6,
+                        callback: 'objPopupAdon.stocksNewsCallback'
+                    },
+                    dataType: 'script',
+                    cache: false,
+                    success: function (data) {
+                    }
+                });
+            }
+        });
+    },
+    stocksNewsCallback: function (data) {
+        var html = '<ul>';
+        if (data && data.length) {
+            $.each(data, function (i, v) {
+                if (i <= 5) {
+                    var data = v.NewsLines, title = data.Title;
+                    title = title.length > 70 ? title.substr(0, 70) + '...' : title;
+                    html += '<li> <a href="' + data.WebURL + '">' + title + '</a> <div> <span class="dt">' + data.DateTime + '</span> </div> </li>';
+                }
+            });
+        } else {
+            html += '<li><span class="no_data">No News</span></li>';
+        }
+        html += '</ul>';
+        $('#hovercartObj .news').html(html);
+    }
+};
+(function ($) {
+    //_debug('mpopup_plugin init');
+    $.expr[':'].poppable = function (obj, index, meta, stack) {
+        // _debug('mpopup_plugin : poppable');
+        // obj - is a current DOM element; // index - the current loop index in stack; // meta - meta data about your selector; // stack - stack of all elements to loop; // Return true to include current element; // Return false to explude current element
+        var $obj = $(obj);
+        if (!$obj.is('a[href]') || $obj.text().match(/^bank\sof\sindia/gi)) {
+            return false;
+        }
+        if($obj.parents('.skip_company_hover').length > 0) {
+            return false;
+        }
+        var qualified = $obj.attr('href').match(/companyid-\d*/) ? true : false;
+        return qualified;
+    };
+
+    $.getDevice = function () {
+        //_debug('mpopup_plugin : $.getDevice');
+        return {
+            isAndroid: (/android/gi).test(navigator.appVersion),
+            isIDevice: (/iphone|ipad/gi).test(navigator.appVersion),
+            isPlaybook: (/playbook/gi).test(navigator.appVersion),
+            isTouchPad: (/hp-tablet/gi).test(navigator.appVersion)
+        }
+    };
+
+    $.fn.etArticlePopup = function (method, callbackFnk) {
+        //_debug('mpopup_plugin : etArticlePopup');
+        if (this.length) {
+            if ($.fn.etArticlePopup.methods[method]) {
+                return $.fn.etArticlePopup.methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+            } else if (typeof method === 'object' || !method) {
+                return $.fn.etArticlePopup.methods.init.apply(this, arguments);
+            } else {
+                //$.error('Method ' + method + ' does not exist on jQuery.etArticlePopup');
+            }
+        } else {
+            //$.error('No link present to create popup for!');
+            //_debug('No JSON present to draw hero');
+        }
+    };
+
+    //Initial tasks
+    $.fn.etArticlePopup.methods = {
+        init: function (options) {
+            //_debug('mpopup_plugin : init');
+            if (options) {
+                var opts = $.extend({}, $.fn.etArticlePopup.defaults, options);
+                $.fn.etArticlePopup.defaults.debugMode = options.debugMode;
+                if (typeof callbackFnk === 'function') {
+                    opts.callBack = callbackFnk;
+                }
+            } else {
+                var opts = $.extend({}, $.fn.etArticlePopup.defaults, {});
+            }
+
+            if (!opts.popUpDetailURL) {
+                //$.error('No popup details URL found!');
+                return false;
+            }
+
+            //Initial property settings for plugin
+            opts.anchors = this;
+            if ($.getDevice().isIDevice) {
+                opts.showOn = 'click' || opts.showOn;
+                opts.hideOn = 'touchend' || 'touchmove' || 'changedTouches' || opts.hideOn;
+                opts.waitToPop = 0;
+            }
+
+            //find unique company id's
+            var ids = [];
+            opts.anchors.each(function (i) {
+                var $this = $(this);
+                ids.push($this.attr('href').match(/companyid-\d*/)[0].replace(/companyid-/, ''));
+            });
+            opts.companies = $.unique(ids).join(',');
+            opts.sensexService.bse.ids = opts.sensexService.nse.ids = opts.companies;
+            $.fn.etArticlePopup.methods.createHelperLink(opts);
+            $.fn.etArticlePopup.fullOptions = opts;
+            //Plugin's main function and return the chain
+            return this.each(function (i) {
+                var $this = $(this),
+                        compID = $this.attr('href').split('companyid-')[1].replace('.cms', ''),
+                        pluginData = {
+                            companyID: compID,
+                            detailURL: opts.popUpDetailURL.replace(/\{\{compid\}\}/, compID).replace(/\{\{callback\}\}/, '$.fn.etArticlePopup.methods.' + opts.jsonpCallback)
+                        };
+                $this.data('etArticlePopup', pluginData);
+            });
+        },
+        createHelperLink: function (opts) {
+            //_debug('mpopup_plugin : createHelperLink');
+            $.ajax({
+                url: opts.sensexService.nse.url,
+                data: {
+                    companies: opts.sensexService.bse.ids,
+                    callback: '$.fn.etArticlePopup.methods.bseMulti',
+                    cache: true
+                },
+                type: 'GET',
+                cache: true,
+                dataType: 'script',
+                contentType: 'application/json; charset=utf-8'
+            });
+            if (!opts.sensexService.intervalID) {
+                opts.sensexService.intervalID = window.setInterval(function () {
+                    $.fn.etArticlePopup.methods.createHelperLink(opts);
+                }, opts.sensexService.interval);
+            }
+        },
+        bseMulti: function (data) {
+            //_debug('mpopup_plugin : bseMulti');
+            var obj = this,
+                    opts = $.fn.etArticlePopup.fullOptions,
+                    dataSet = data.NewDataSet;
+            opts.anchors.each(function () {
+                var $this = $(this),
+                        $hoverLink = $this.next('a[class^="hover_"]'),
+                        $data = $this.data('etArticlePopup'),
+                        marketObj = obj.peekJSON(dataSet, 'companyid', $data.companyID),
+                        colorClass = (parseFloat(marketObj.PercentChange) > 0) ? 'pos' : 'neg';
+                
+                if(!marketObj) {
+                    // of no marketObj nothing to do
+                } else if ($hoverLink.length) {
+                    $hoverLink.text($hoverLink.text().replace(/(\+|-)?([0-9]+(\.[0-9]+))/, marketObj.PercentChange ? marketObj.PercentChange : '0.00')).addClass(colorClass);
+                } else {
+                    var helperA = opts.helperElement.replace(/\{\{compid\}\}/, $data.companyID).replace(/\{\{changetype\}\}/, '').replace(/\{\{url\}\}/, $this.attr('href')).replace(/\{\{change\}\}/, marketObj.PercentChange ? marketObj.PercentChange : '0.00'),
+                            $helperA = $(helperA).addClass(colorClass).unbind(opts.showOn + '.etArticlePopup').bind(opts.showOn + '.etArticlePopup', function () {
+                        var helperAPos = $(this).offset(),
+                                helperAWid = Number($(this).width()),
+                                helperAHite = Number($(this).height()),
+                                viewPortLimit = {
+                                    top: $(document).scrollTop(),
+                                    right: $(window).width(),
+                                    bottom: $(document).scrollTop() + $(window).height(),
+                                    left: 0
+                                },
+                        linkOffsetX = helperAPos.left,
+                                linkOffsetY = helperAPos.top,
+                                popupHeight = $('#hovercartObj').height() || 410,
+                                popupWidth = $('#hovercartObj').width() || 335,
+                                popupEndPos = linkOffsetY + popupHeight,
+                                popupXStart = (linkOffsetX + (helperAWid / 2)) - (popupWidth / 2),
+                                popupXEnd = (linkOffsetX + (helperAWid / 2)) + (popupWidth / 2),
+                                collision = {
+                                    right: (popupXEnd > viewPortLimit.right) ? true : false,
+                                    bottom: (popupEndPos > viewPortLimit.bottom) ? true : false,
+                                    left: (popupXStart < viewPortLimit.left) ? true : false
+                                },
+                        scrollToYOffset = 160,
+                                scrollToY = collision.bottom ? ((popupEndPos - viewPortLimit.bottom) + $(document).scrollTop() + scrollToYOffset) : false,
+                                popupOffset = {
+                                    x: 0
+                                };
+
+                        if (collision.left) {
+                            popupOffset.x = Math.abs(popupXStart) + 5;
+                        } else if (collision.right) {
+                            popupOffset.x = -(popupXEnd);
+                        }
+
+                        if ($.fn.etArticlePopup.fullOptions.intentTimeout)
+                            window.clearTimeout($.fn.etArticlePopup.fullOptions.intentTimeout);
+                        if ($.fn.etArticlePopup.fullOptions.timeout)
+                            window.clearTimeout($.fn.etArticlePopup.fullOptions.timeout);
+
+                        $.fn.etArticlePopup.fullOptions.intentTimeout = window.setTimeout(function () {
+                            var $cart = $('#hovercartObj');
+
+                            if (!$cart.length) {
+                                $cart = $(opts.popUpTemplate).appendTo(document.body);
+                                objPopupAdon.bindMenuClick();
+                            }
+                            //Positioning the popup
+                            var cartCalcPos = {
+                                left: ((Number(helperAPos.left)) - ($cart.width() / 2)) + (helperAWid / 2) + (popupOffset.x),
+                                top: (Number(helperAPos.top) + helperAHite) + 2
+                            },
+                            scrollPos = {
+                                x: 0,
+                                y: scrollToY
+                            },
+                            imgMargin = 0;
+
+                            if (collision.left) {
+                                imgMargin = (Math.abs(popupXStart) + helperAWid) * -1;
+                            } else if (collision.right) {
+                                imgMargin = Math.abs(popupXEnd) + helperAWid;
+                            }
+
+                            $cart.find('.arrow>img').css({
+                                'margin-left': imgMargin
+                            }).end()
+                                    .css({
+                                        left: cartCalcPos.left,
+                                        top: cartCalcPos.top
+                                    });
+                            //Finally show it
+                            obj.showPopup(opts, scrollPos, data.NewDataSet[0].CompanyName2);
+
+                            $cart.find('.refreshable').hide().siblings().show();
+
+                            var $bindOn = ($.getDevice().isIDevice) ? $(document) : $cart.find('.hoverdivbox');
+
+                            if ($.getDevice().isIDevice) {
+                                $bindOn.unbind(opts.hideOn + '.etArticlePopup')
+                                        .bind(opts.hideOn + '.etArticlePopup', function () {
+                                            obj.hidePopup(opts);
+                                        });
+                            } else {
+                                $bindOn.unbind(opts.showOn + '.etArticlePopup')
+                                        .bind(opts.showOn + '.etArticlePopup', function () {
+                                            obj.showPopup(opts,scrollPos, data.NewDataSet[0].CompanyName2);
+                                        })
+                                        .unbind(opts.hideOn + '.etArticlePopup')
+                                        .bind(opts.hideOn + '.etArticlePopup', function () {
+                                            $.fn.etArticlePopup.fullOptions.timeout = window.setTimeout(function () {
+                                                obj.hidePopup(opts)
+                                            }, opts.popupTimeout);
+                                        });
+                            }
+
+                            $cart.find('.closePop').unbind('click.etArticlePopup').bind('click.etArticlePopup', function (e) {
+                                e.preventDefault();
+                                obj.hidePopup(opts, false);
+                            });
+
+                            $(document.body).unbind('click.etArticlePopup').bind('click.etArticlePopup', function (e) {
+                                //var outOfPop = $(e.target).closest('#hovercartObj').length? false : true;
+                                if (!$(e.target).closest('#hovercartObj').length || $(e.target).is('#hovercartObj'))
+                                    obj.hidePopup(opts, false);
+                            });
+
+                           // console.log("$cart.data('companyInfo'", $cart.data('companyInfo'));
+                            if (typeof $cart.data('companyInfo') == 'undefined' || $cart.data('companyInfo').id != $data.companyID) {
+                                $('.top .menu td').eq(0).trigger('click');
+                                $('#hovercartObj .news').html('');
+                            }
+
+                            $cart.data('companyInfo', {
+                                id: $data.companyID,
+                                element: $(this)
+                            });
+
+                            //Let's save some unnecessary JSONP hits
+                            if (opts.companyInfoXHR && opts.companyInfoXHR.readyState < 4) {
+                                opts.companyInfoXHR.abort();
+                            }
+                            opts.companyInfoXHR = $.fn.etArticlePopup.fullOptions.companyInfoXHR = $.ajax({
+                                cache: true,
+                                url: $data.detailURL,
+                                type: 'GET',
+                                dataType: 'script',
+                                contentType: 'application/json; charset=utf-8',
+                                data: {'callback': '$.fn.etArticlePopup.methods.' + opts.jsonpCallback}
+                            });
+                        }, opts.waitToPop);
+                        if ($.getDevice().isIDevice) {
+                            return false;
+                        }
+                    }).bind(opts.hideOn + '.etArticlePopup', function () {
+                        if ($.fn.etArticlePopup.fullOptions.intentTimeout) {
+                            window.clearTimeout($.fn.etArticlePopup.fullOptions.intentTimeout);
+                            $.fn.etArticlePopup.fullOptions.timeout = window.setTimeout(function () {
+                                obj.hidePopup(opts)
+                            }, opts.popupTimeout);
+                        }
+                    });
+                    $this.css({
+                        'margin-right': 5
+                    }).after($helperA);
+                }
+            });
+            opts.anchors.next('[class^="hover_"]').fadeTo(500, 0.25, function () {
+                $(this).fadeTo(1000, 1);
+            });
+        },
+        hidePopup: function (opts, animate) {
+            //_debug('mpopup_plugin : hidePopup');
+            var $cart = $('#hovercartObj'),
+                    fade = (typeof animate === 'undefined') ? true : animate,
+                    fadeTime = fade ? 500 : 0;
+            if ($.fn.etArticlePopup.fullOptions.timeout)
+                window.clearTimeout($.fn.etArticlePopup.fullOptions.timeout);
+            $cart.stop().animate({
+                opacity: 0
+            }, fadeTime, function () {
+                $(this).css({
+                    left: -9999
+                });
+            });
+        },
+        showPopup: function (opts, scrollPos, compName) {
+            //_debug('mpopup_plugin : showPopup');
+            var $cart = $('#hovercartObj');
+            if (!Number($('#hovercartObj').css('opacity'))) {
+                // $('.top .menu td').eq(0).trigger('click');
+            }
+            if ($.fn.etArticlePopup.fullOptions.timeout)
+                window.clearTimeout($.fn.etArticlePopup.fullOptions.timeout);
+            $cart.stop().height($cart.find('.wid').height()).animate({
+                opacity: 1
+            }, 500, function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'Popup1']); //Tracking when popup is opened
+                ga('send','event','Company Mobile Widget Impression', compName, window.location.href);
+                if (scrollPos && scrollPos.y) {
+                    $('html,body').animate({
+                        scrollTop: scrollPos.y - 150
+                    }, 500);
+                }
+            });
+        },
+        refreshPopup: function (data) {
+            //_debug('mpopup_plugin : refreshPopup', data);
+            var obj = this,
+                    opts = $.fn.etArticlePopup.fullOptions,
+                    dataSet = data.NewDataSet,
+                    $cart = $('#hovercartObj'),
+                    NSEObj = obj.peekJSON(dataSet, 'Segment', 'NSE');
+                    //BSEObj = obj.peekJSON(dataSet, 'Segment', 'BSE'),
+                    
+                    if(NSEObj) {
+                        var compName = NSEObj.CompanyName2,
+                        seoName = NSEObj.seoname,
+                        compID = $cart.data('companyInfo').id,
+                        notations = opts.sensexService.notations,
+                        receivedCompID = NSEObj.companyid,
+                        netChange = NSEObj.NetChange,
+                        percentChange = NSEObj.PercentChange,
+                        price = NSEObj.LastTradedPrice,
+                        vol = NSEObj.Volume,
+                        netMode = ((NSEObj.NetChange >= 0) ? 'up' : 'down') || false,
+                        perMode = ((NSEObj.PercentChange >= 0) ? 'up' : 'down') || false,
+                        exchangeName = NSEObj ? 'NSE' : 'BSE';
+                    }
+            if (!NSEObj || parseInt(NSEObj.companyid) !== parseInt(compID)) {
+                $('#hovercartObj .company_data .info a').html('').attr('href', '#');
+                $('#hovercartObj .company_data .info .data').removeClass('up down').addClass(perMode).html('');
+                $('#hovercartObj .company_data .spark .today_trands').attr('style', 'background:none repeat scroll -19px 0px transparent;');
+            } else {
+                var companyLink = '/' + seoName + '/stocks/companyid-' + compID + '.cms';
+                $('#hovercartObj .company_data .info a').html(compName).attr('href', companyLink).attr('onclick','ga("send","event","Company Mobile Widget Click","'+compName+'","'+window.location.href+'")');
+                $('#hovercartObj .company_data .info .data').removeClass('up down').addClass(perMode).html('<span style="color:#FFF">' + exchangeName + ' <span style="font-weight:700;">' + price + '</span></span><span class="arrow"></span> (' + percentChange + '%)');
+                $('#hovercartObj .company_data .spark .today_trands').attr('style', 'background:url(https://marketgraphs.economictimes.indiatimes.com/charting/CompanySparkLine1.aspx?companyid=' + compID + '&exchange=50&width=100&height=50&chartmode=intraday) repeat scroll -19px 0px transparent;');
+            }
+
+//            $("#popupTabContent .tabData").css({background: "url(/photo/16753788.cms) center center no-repeat"});
+            $('#hovercartObj .rec_data ul').html('<li> <img src="/photo/19819991.cms"/> </li>');
+            $.ajax({
+                url: "/stocks_newsrecos_json.cms",
+                data: {
+                    companyid: compID,
+                    feedtype: 'sjson'
+                },
+                dataType: 'json',
+                cache: true,
+                success: function (data) {
+                    var html = '';
+                    if (data.NewsItem.length) {
+                        $.each(data.NewsItem, function (i, v) {
+                            if (i < 3) {
+                                var cls = v.RecosData.Recommendation;
+                                cls = cls ? cls.toLowerCase() : '';
+                                
+                                html += '<li> <a href="' + v.WebURL + '">' + v.HeadLine + '</a> <div class="clearfix"> <span class="dt">' + v.DateLine + '</span> <span class="reco ' + cls + '">' + v.RecosData.Recommendation + '</span> </div> </li>';
+                            }
+                        });
+                    } else {
+                        html += '<li><span class="no_data">No Recommendation</span></li>';
+                    }
+                    if(companyLink) {
+                        html += '<li class="moreOnComp"><a target="_blank" href="' + companyLink + '">More on ' + compName + '</a><li>';
+                    }
+                    $('#hovercartObj .rec_data ul').html(html);
+                }
+            });
+            /* End of Tabs */
+
+            $('#prices').attr('href', '/' + seoName + '/frequency-daily/arc-0/prices/companyid-' + compID + ',exchangeid-50,numberofdmw-30,pagenumber-1,pagesize-25.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink6']);
+            });
+            $('#financials').attr('href', '/' + seoName + '/profitandlose/companyid-' + compID + '.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink7']);
+            });
+            $('#companyInfo').attr('href', '/' + seoName + '/infocompanymanagement/companyid-' + compID + '.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink8']);
+            });
+            $('#reports').attr('href', '/' + seoName + '/directorsreport/companyid-' + compID + '.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink9']);
+            });
+            $('#news').attr('href', '/' + seoName + '/stocknews/companyid-' + compID + '.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink10']);
+            });
+            $('#comparativeAnalysis').attr('href', '/' + seoName + '/quotecompare/companyid-' + compID + '.cms')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink11']);
+            });
+            $('#pe').attr('href', '/' + seoName + '/stocks/companyid-' + compID + '.cms#mc')
+                    .unbind('click.etArticlePopup').bind('click.etArticlePopup', function () {
+                _gaq.push(['_trackEvent', 'Popup', 'select', 'PopupLink12']);
+            });
+
+            //Now when refresh of popup content is completed, hide the wait animation and show the content
+            $cart.find('.wait').hide().siblings().show();
+
+            setTimeout(function () {
+                var notations = $.fn.etArticlePopup.fullOptions.sensexService.notations;
+                $('#bsepoint, #nsepoint').css({
+                    color: notations.auto.textColor,
+                    'background-color': notations.auto.BGColor
+                });
+            }, 3000);
+
+        },
+        peekJSON: function (jsonObj, key, value) {
+            //_debug('mpopup_plugin : peekJSON', jsonObj, key, value);
+            var found = false;
+            $.each(jsonObj, function (i, v) {
+                if (v[key].search(new RegExp(value, 'i')) != -1) {
+                    found = v;
+                    return;
+                }
+            });
+            return found ? found : false;
+        }
+
+    };
+
+    $.fn.etArticlePopup.fullOptions = {};
+    var clk = ' onClick = _gaq.push(["_trackEvent","ETport","Select","AddtoPort"]) ';
+
+    $.fn.etArticlePopup.defaults = {
+        anchors: null,
+        popUpTemplate: '<div id="hovercartObj" class="skinned">\n\
+                        <div class="close_mobile" onclick="$(\'#hovercartObj\').css({\'opacity\':0, \'left\':-9999});"></div>\n\
+                        <div class="wid">\n\
+                        <div class="arrow">\n\
+                        <img src="/photo/16235967.cms" />\n\
+                        </div><div class="hoverdivbox"> \n\
+                        <div class="skin-body1"> \n\
+                        <table class="top"> \n\
+                        <tr class="head"> <td colspan="3"><img src="/photo/47229797.cms"/></td> </tr> \n\
+                        <tr class="menu"> <td class="active">Markets</td> <td>News</td> <td><a href="//etportfolio.indiatimes.com/" target="_blank">Portfolio</a></td> </tr> </table> \n\
+                        <table class="content"> \n\
+                        <tr> <td> \n\
+                        <!-- <div class="mobileApp"> <input type="text" class="txt" name="mobile_no" value="" placeholder="Enter mobile number"/> <input type="button" class="btn" name="mobile_no" value="Download ET App"/> </div> --> <div class="company_data"> <div class="info"> <a target="_blank"></a> <div class="data up"><span class="arrow"></span> </div> </div> <div class="spark"> <div class="today_trands" title="" style=""></div> </div> </div> <div class="clr"></div> \n\
+                        <div class="rec_head">Recommendation</div> \n\
+                        <div class="rec_data"> <ul> <li> <img src="/photo/19819991.cms"/> </li> </ul> </div> \n\
+                        </td> </tr> \n\
+                        <tr class="hidden"><td class="news"></td></tr>\n\
+                        <tr class="hidden"><td class="portfolio">\n\
+                        <div>\n\
+                        <input type="button" name="add_to_portfoli" class="btn" value="Add to Portfolio"/>\n\
+                        </div>\n\
+                        </td></tr>\n\
+                        </table> \n\
+                        </div> </div></div></div>',
+        helperElement: '<a class="hover_{{compid}} {{changetype}}" href="{{url}}" target="_blank">NSE {{change}} %</a>',
+        popUpDetailURL: null,
+        jsonpCallback: null,
+        waitToPop: 500,
+        popupTimeout: 2000,
+        sensexService: {
+            interval: 180000,
+            intervalID: false,
+            nse: {
+                url: PROTOCOL + '//json.bselivefeeds.indiatimes.com/ET_Community/multicompanyNSE',
+                ids: false,
+                callback: 'nseMulti'
+            },
+            bse: {
+                url: PROTOCOL + '//json.bselivefeeds.indiatimes.com/ET_Community/multicompany',
+                ids: false,
+                callback: 'bseMulti'
+            },
+            notations: {
+                up: {
+                    img: '/photo/15489916.cms',
+                    BGcolor: '#00b300',
+                    textColor: '#fff'
+                },
+                down: {
+                    img: '/photo/15427655.cms',
+                    BGcolor: '#a60a10',
+                    textColor: '#fff'
+                },
+                auto: {
+                    BGColor: '#fff',
+                    textColor: '#030303'
+                }
+            }
+        },
+        bseid: 47,
+        nseid: 50,
+        showOn: 'mouseenter',
+        hideOn: 'mouseleave'
+    }
+    
+    $.fn.imageShare = function(){
+    	if($('.zoom_image_show').length == 0){
+    		$('body').append('<div class="zoom_image_show hidden" onmouseleave="$(this).fadeOut(\'slow\');" style="position:absolute"></div>');
+    	}	
+    	return this.each(function(){
+    		var scope = $(this),
+    		article_title = scope.parents('.article_block').find('#article_title').val().replace(/'/g, "\\'"),
+    		article_syn = scope.parents('.article_block').find('#article_syn').val().replace(/'/g, "\\'"),
+    		article_image = scope.attr('src'),
+    		sub1 = article_image.substr(article_image.indexOf('photo/') + 6),
+    		imageMsid = sub1.substring(0, sub1.indexOf('/')),
+    		imageLink = objDomain.img+"/photo/"+ imageMsid +".cms",
+    		article_seo = scope.parents('.article_block').find('#article_seo').val(),
+    		msid = scope.parents('.article_block').attr("data-article_id"),
+    		urlPath =  objDomain.et + '/' + article_seo +"/articleshow/"+ msid +".cms",
+    		twHref= "//twitter.com/intent/tweet?text=" + article_title.replace(/[%–|‘’]/g,'') + "&via=economictimes&url="+ urlPath,
+    		createTwLink = function(textVal, href, dataUrl){
+    			return '<a onmouseover="setTinyUrl(this);" class="TwitterBtn tw sharetwt ImgshareSprite gwt-ImageIcons" data-text="'+ article_title.replace(/[%–|‘’]/g,'') +'" href="'+ twHref.replace(/#/g, "").replace("’","") +'" data-url="'+ urlPath +'"></a>'
+    		},
+    		createFblink = function(){
+    // 			var fbLink = function(){
+    // 				return "window.open(PROTOCOL + '//www.facebook.com/sharer.php?s=100&amp;p[title]="+ article_title +"&amp;p[summary]="+ article_syn +"&amp;p[url]="+ urlPath +"&amp;p[images][0]="+ imageLink +"','sharer','toolbar=0,status=0,width=548,height=325')";
+    // 			};
+    			return '<a class="fb sharefb ImgshareSprite imageFbShare gwt-ImageIcons" href="javascript:void(0);" data-title="'+ article_title +'" data-desc="'+ article_syn +'" data-url="'+ urlPath +'" data-image="'+ imageLink +'"></a>'
+    		},
+    		fbShare = function(method,name,link,picture,caption,description){
+    		    FB.ui({
+                    method: method,
+                    name: name,
+                    link: link,
+                    picture: picture,
+                    caption: caption,
+                    description: description
+                });
+    		},
+    // 		createPinterestLink = function(){
+    // 			var pinterestLink = function(){
+    // 				return "window.open(&quot;http://pinterest.com/pin/create/button/?url="+ urlPath +"&amp;media="+ imageLink +"&amp;description="+ article_syn +"&quot;,&quot;pinitsharer&quot;,&quot;toolbar=0,status=0,width=600,height=450&quot;)"
+    // 			};
+    // 			return '<a title="Share on Pinterest" href="javascript:void()" class="shareSprite pint pin_bottom" onclick="'+ pinterestLink() +'"></a>';
+    // 		},
+    		showImage = function (img) {
+    			try {
+    				var url = $(img).attr('src'), sub1 = url.substr(url.indexOf('photo/') + 6),
+    				imgWidth = $(img).width(),
+    				newWidth = parseInt(imgWidth * 1.5),
+    				msid = sub1.substring(0, sub1.indexOf('/')), 
+    				title = sub1.substring(sub1.indexOf('/') + 1, sub1.length),
+    				newUrl = PROTOCOL + '//img.etimg.com/thumb/' + msid + ',width-' + newWidth + ',resizemode-4/' + title,
+    				offset = $(img).offset(),
+    				height = $(img).height(),
+    				width = $(img).width(),
+    				right = $(window).width() - imgWidth - offset.left - 10;
+    				$('.zoom_image_show').html('<img src="' + newUrl + '"/>').css({'right': right, 'top' : offset.top}).fadeIn('slow');
+    			} catch (e) {
+    				console.log('Error objImageZoom.init', e);
+    			}
+    		};
+    		
+    		$(document).click(function(e){
+            	if(!$(e.target).hasClass('zoomIcon')) {
+                    $('.zoom_image_show').fadeOut('slow');
+                }
+            });
+    		
+    		if(!scope.parent().hasClass('gwt-imageWrapper')){
+    			scope.wrap( "<div class='gwt-imageWrapper posRel'></div>");
+    		    //$('.gwt-imageWrapper').siblings('em').wrap( "<div class='imgSys'></div>" );
+    		  //$('.gwt-imageWrapper').siblings('em').addClass('active1');
+    			scope.parent().append('<span class="zoomIcon ImgshareSprite gwt-ImageIcons"> </span>');
+    			scope.each(function () {
+    				var img = this, url = $(img).attr('src'), sub1 = url.substr(url.indexOf('photo/') + 6),
+    				imgWidth = $(img).width(),
+    				newWidth = parseInt(imgWidth * 1.5),
+    				msid = sub1.substring(0, sub1.indexOf('/')), 
+    				title = sub1.substring(sub1.indexOf('/') + 1, sub1.length),
+    				newUrl = PROTOCOL + '//img.etimg.com/thumb/msid-' + msid + ',width-' + newWidth + ',resizemode-4/' + title + '.jpg',
+    				imgfloat = $(img).css('float');
+    				$(img).parent('.gwt-imageWrapper').css('float', imgfloat);
+    			});	
+    			scope.siblings('.zoomIcon').click(function(){
+    				console.log('fn hit');
+        			showImage($(this).siblings('.gwt-Image'));
+        		});
+        		scope.siblings('.imageFbShare').click(function(){
+        		    var title = $(this).attr('data-title'),
+        		    desc = $(this).attr('data-desc'),
+        		    url = $(this).attr('data-url'),
+        		    image = $(this).attr('data-image');
+        			fbShare('feed',title,url,image,'economictimes.indiatimes.com',desc)
+        		});
+    		}
+    	});
+    }
+})(jQuery);
+
+if(page.subsec1 !='837555174' && page.subsec1 !='1466318837' && page.subsec1 != '5575607'){
+    $(function () {
+        var poppableLinks = $('.Normal a:poppable, .storydiv > div:last a:poppable');
+        poppableLinks.etArticlePopup({
+            popUpDetailURL: PROTOCOL + '//json.bselivefeeds.indiatimes.com/ET_Community/bsensejson?companyid={{compid}}&callback={{callback}}',
+            //popUpDetailURL: PROTOCOL + '//qc.bselivefeeds.indiatimes.com/ET_Community/bsensejson?companyid={{compid}}&callback={{callback}}',
+            jsonpCallback: 'refreshPopup',
+            waitToPop: 700
+        });
+    });
+}
+
+// mobile popup plugin end
+
+
+
+
+// to be check 
+objEtSpeedService = {
+    submitPost: PROTOCOL + '//etspeedapi.indiatimes.com/etspeeds/submitPost.ep',
+    saveData: PROTOCOL + '//etspeedapi.indiatimes.com/etspeeds/outlook.ep',
+    result: PROTOCOL + '//etspeedapicache.indiatimes.com/etspeeds/outlookresultJSON.ep',
+    etSpeedCompanyName: PROTOCOL + '//etspeedapicache.indiatimes.com/etspeeds/csn.ep?outputtype=json',
+    etspeed_update: PROTOCOL + '//etspeedapicache.indiatimes.com/etspeeds/search.ep?outputtype=json&site=markets&category=Analyst%20Posts,Journalist%20Posts,Community&truncate=true&mustHaveCompany=true',
+    loginRegisterCheck: PROTOCOL + '//etspeedapi.indiatimes.com/etspeeds/loginAndRegister.ep'
+};
+// to be check 
+// page = {msid: $('#commentCountBtn').attr("data-commentbox_msid")}
+
+// to be check 
+objComment = {
+    fixCommentCount: function () {
+        var winTop = $(window).scrollTop(), winBottom = (winTop + window.innerHeight), navHeight = $('#topNavFixed').outerHeight(), margin = 0;
+        $('.comment').each(function (i, j) {
+            var $this = $(this), parentArticle = $this.parents('.article_block');
+            margin = $this.parents('.article_block').find('.adv_block').outerHeight(); // + $this.parents('.article_block').find('.article_grid').outerHeight();
+            var titleBottom = $this.siblings('h1.title').offset().top + $this.siblings('h1.title').outerHeight()
+            var myTop = titleBottom, articleBottom = parentArticle.offset().top + parentArticle.outerHeight();
+            var fixForPixel = 300;
+            $this.css({'left': 'auto'}).removeClass('fixed fixAtBottom');
+            if ((articleBottom - margin) < winBottom || (parentArticle.offset().top + fixForPixel) < winTop) {
+                $this.removeClass('fixed').addClass('fixAtBottom');
+            } else if (myTop <= (winTop + navHeight)) {
+                var left = $this.offset().left;
+                $this.css({'left': left}).addClass('fixed');
+            } else {
+            }
+        });
+    }
+};
+
+// Twitter Share
+
+function tsMouseEnter(ele) {
+    var viashare = (page.subsec1 == '1466318837') ? 'ETPanache' : 'economictimes';
+    var $this = $(ele), msid = $this.parent('.sharingBox').attr('data-share_msid'), articleInfo = articleShow.getArticleInfo(msid);
+    if(!$this.hasClass('shortUrlDone')) {
+        $this.addClass('shortUrlDone');
+        var ttl = (articleInfo.title.length > 116) ? articleInfo.title.substring(0,113) + "..." : articleInfo.title;
+        //ttl = ttl.replace(/([%-/|/‘/’/'])/g,'');
+        ttl = ttl.replace(/’/g, '\'');
+        ttl = ttl.replace(/&/g, ' ');
+        ttl = escape(ttl);
+        var waText = $this.attr('data-watext');
+        if(typeof waText == 'undefined'){
+            waText = '';
+        }
+        if($this.parent().attr('data-shorturl') == null) {
+            $.getJSON(objService.tinyUrl + '?outputtype=json&url=' + articleInfo.url + '&callback=?', function (data) {
+                page.shortenUrl = data.output;
+                $this.parent().attr('data-shorturl',data.output);
+                if($this.hasClass('wa')) {
+                    $this.attr('href', 'https://web.whatsapp.com//send?text=' + waText + ttl + ' - ' + page.shortenUrl);
+                } else {
+                    $this.attr("href", "https://twitter.com/intent/tweet?text=" + ttl + "&via=" + viashare + "&url=" + page.shortenUrl + "&counturl=" + escape(sharer.url));
+                }
+            });
+        } else {
+            var shortUrl = $this.parent().attr('data-shorturl');
+            if($this.hasClass('wa')) {
+                $this.attr('href', 'https://web.whatsapp.com//send?text=' + waText + ttl + ' - ' + shortUrl);
+            } else {
+                $this.attr("href", "https://twitter.com/intent/tweet?text=" + ttl + "&via=" + viashare + "&url=" + shortUrl + "&counturl=" + escape(sharer.url));    
+            }
+        }
+    }
+}
+
+function tsClick(ele) {
+    var $this = $(ele), msid = $this.parent('.sharingBox').attr('data-share_msid');
+    // $(ele).preventDefault();
+    // $(ele).stopPropagation();
+  //  console.log('tsClick');
+    setTimeout(function () {
+      //  console.log('tsClick after timeout');
+        console.log('response url', $this.attr('href'));
+        window.open($this.attr("href"), "Twitter", "menubar=no,width=550,height=350,top=50,left=200");
+        /*logonmyt("Shared", msid, "Twitter");
+        log('sh_tw', msid);*/
+
+    }, 500);
+}
+
+var loadSideWidgets = {
+    flag: 1,
+    widgetDesc:{},
+ 
+    callbackdata: function(target, fromexist){
+        target.find('.splightMain.notDone').etSpotlight({
+            speed: 300,
+            easing: "easeOutQuad",
+            interval: 15000
+        });
+        target.find('.splightMain.notDone').removeClass('notDone');
+        
+        target.find('img.lazy').lazyload({effect: "fadeIn"});
+        
+        if($.fn.budgetslider && $('.byd-spotli').length){
+            $('.byd-spotli').each(function(){
+    	        $(this).budgetslider({
+            		autoslide : true,
+            		autoslideInterval : 3000,
+            		slideInterval : 500
+            	});	
+    	    });
+        }
+        
+        if (typeof showAd != 'undefined' && typeof removeAds != 'undefined' && typeof removeAds == 'function' && !showAd) {
+            removeAds(target);
+        }
+        
+        target.addClass("reqDone");
+        loadSideWidgets.flag = 1;
+    },
+    getHtml : function (url, target, widgetType)    {
+        if(!loadSideWidgets.widgetDesc[widgetType]){
+            $.get(url,function(data) {
+                loadSideWidgets.widgetDesc[widgetType] = data;
+                target.html(data).promise().done(function(){
+                    loadSideWidgets.callbackdata(target);
+                });
+                //target.find('.thumbs li').eq(1).addClass('active');
+                target.find('.thumbs img').each(function() {
+                    var dataOriginal = $(this).attr('data-original');
+                    $(this).attr('src', dataOriginal);
+                });
+                
+               /* setTimeout(function(){
+                    loadSideWidgets.callbackdata(target);
+                },1000);*/
+            });
+        }else{
+            if(widgetType == 'notToBeMissed'){
+                var ntmHTML = $("<div class='ntmremove hide'/>").html(loadSideWidgets.widgetDesc[widgetType]),
+                artID = target.parents(".article_block").attr("data-article_id") ? target.parents(".article_block").attr("data-article_id") : page.msid;
+                ntmHTML.find(".colombia").attr({
+                    'id' : 'div-clmb-ctn-129117-'+ artID,
+                    'data-position' : artID
+                });
+                loadSideWidgets.widgetDesc[widgetType] = ntmHTML.html();
+            }
+            target.html(loadSideWidgets.widgetDesc[widgetType]);
+            loadSideWidgets.callbackdata(target, 1);
+        }
+    },
+    load: function() {
+        if(loadSideWidgets.flag) {
+            $(".sideBar .sideWidgets:empty").each(function() {
+                var target = $(this),
+                    getEstimatedHeight = parseInt(target.attr('data-estimatedheight')) || 300,
+                    widgetType = target.attr('data-widgetname');
+                if ((target.visible(true) || $(window).scrollTop() >= target.offset().top) && !$(this).hasClass("reqDone")) {
+                    var _parent = target.parent().parent();
+                    var spaceAvailable = _parent.find('.pageContent').outerHeight() -  _parent.find('.sideBar').outerHeight();
+                    if(spaceAvailable > getEstimatedHeight) {
+                        loadSideWidgets.flag = 0;
+                        loadSideWidgets.getHtml(target.attr("data-url"), target, widgetType);
+                    }
+                }
+            });
+        }
+    },
+    init : function () {
+        this.load();
+    }
+}
+
+var fixStickyAd = function() { // Sticky Ad fixed when scroll more than it's position
+	var sel = $('#div-gpt-ad-1477391859570-0');
+	if(sel.length > 0) {
+    	var adPosition = sel.offset().top;
+    	return function() {
+    		var navHeight = $("#topNavFixed.fixedNav").outerHeight() + 5;
+    		if ($(window).scrollTop() > (adPosition + navHeight)) {
+    			var left = ($(window).width() - $('.pageHolder').width()) / 2 - sel.width();
+    			sel.css({
+    				'position' : 'fixed',
+    				'left' : left,
+    				'top' : navHeight
+    			})
+    		} else {
+    			sel.css({
+    				'position' : 'absolute',
+    				'left' : '-160px',
+    				'top' : 350
+    			});
+    		}
+    	}
+	}
+}();
+
+
+
+$(document).ready(function () {
+    hideCANadsExperiment(page.msid);
+    //ipad app experiment popup start
+    
+        //objiPadApp.iPadExperiment();
+    //ipad app experiment end
+    if(page.subsec2 =='2647163'){
+        ga('send', 'event', 'Articleshow Headline Width Experiment', 'click', 'Full width Headline');
+    }  
+    if($('.a_widget').length) {
+        amazon_widget(page.msid);
+    }
+    attachBottomAds(page.msid,'et');
+    if(typeof objsmeWidget != 'undefined' && typeof objsmeWidget.loadsmewidget != 'undefined' && $('[data-id="bizListingWrapper_'+page.msid+'"]').length >0){
+        objsmeWidget.loadsmewidget(page.msid);
+    }
+    //$(document).scrollTop(0);
+    //$('html, body').animate({scrollTop: 0}, 10);
+    
+    // Karnataka Election Widget Clicks
+    $('.election_widget .elec_tabsBtn > ul > li > a').on('click', function(){
+    	var divHolder = $(this).attr('data-class');
+    	$(this).addClass('active').parents('li').siblings().find('a').removeClass('active')
+    	$('.tabsViewContainer .tabsViewData.' + divHolder).show().siblings().hide();
+    });
+    
+    $(".article_block[data-article_id = '" + page.msid + "']").addClass('gaDone');
+    
+    (function(){
+        //var moveflag = 1;
+        $(window).on('mousemove.lazyload scroll.lazyload', function(event) {
+            //if(moveflag) {
+                moveflag = 0;
+                loadSideWidgets.init();
+                articleShow.loadScripts();
+                articleShow.commentCount(page.msid);
+                $(window).off('mousemove.lazyload scroll.lazyload');
+            //}
+        });
+    })();
+    
+        if(typeof recommendedNews !== 'undefined' && typeof recommendedNews === 'object' && objCommon.isLive == 1 && page.subsec1 != '837555174') {
+            recommendedNews.init();
+        } else {
+            objScroll.init();
+        }
+    
+    $(".article_wrap").on("click", ".gwt-imageWrapper .sharetwt", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        window.open($(this).attr("href"), "Twitter", "menubar=no,width=550,height=350,top=50,left=200");
+    });
+    
+    $(window).on('scroll', function(event) {
+        articleShow.scrollControlNavList();
+        objCommodityWidget.getData();
+    });
+    
+    $(document).on('scroll resize',function (e) {
+        if($('#div-gpt-ad-1477391859570-0').length && typeof fixStickyAd !== 'undefined' && typeof fixStickyAd === 'function'){
+		    fixStickyAd();
+        }
+	});
+	
+	$(".article_wrap").on("click", '.sideBar .mostPopular li', function (e) {
+	    e.preventDefault();
+    	var _this = $(this);
+    	var idx = _this.index(),
+    		target = _this.parent().parent().next().find('> ul > li').eq(idx),
+    		loadURL = _this.attr("data-url");
+    	if (target.is(":empty")) {
+    		target.append("<div class='loading'><img src='/photo/19819991.cms' alt='Loading'>Loading</div>")
+    		.find(".loading").slideDown().parent().load(loadURL);
+    	}
+    });
+        
+    $("#subSecNav a[href*='" + page.cfseopath + "']").addClass('current');
+    bindEvents()
+    //logonmyt("Read",page.msid,"");
+    articleShow.init();
+    commentBox.init();
+    etFeedback.init('Articleshow_SP');
+    objAuthor.bindAuthorHover();
+
+    $('.gwt-Image').imageShare();
+    
+    $("article figure.midImg").each(function (i, v) {
+        if ($(this).attr("data-align") == 'left') {
+            $(this).addClass("flt");
+        } else if ($(this).attr("data-align") == 'right') {
+            $(this).addClass("flr");
+        } else if($(this).find(">img").outerWidth() < 420 && $(this).find(">img").length){
+            $(this).addClass("flt");
+        }
+    });
+    
+    relatedVideo();
+    
+    $("#subSecNav a[href*='" + page.cfmid + "']").addClass('current');
+    
+
+
+    if (typeof _tp_data != 'undefined' && _tp_data.isLogged) {
+        $("input[name=chkfb]").prop('checked', true);
+        $(".nonLogged").hide();
+        setTimeout(function () {
+            if (_tp_data.city != "") {
+                $("form.cmtForm .shareCmt").css({ padding: 0 });
+                $("form.cmtForm input[name=location]").val(_tp_data.city).parent().parent().addClass("nonLogged").hide();
+            } else {
+                $("form.cmtForm input[name=location]").parent().css({ margin: 0 });
+            }
+        }, 3000);
+    }
+
+    // Auto Refresh code
+	try { 
+	    objRefreshPage.init({'refreshTime':78e4});
+	} catch (e) {
+	    console.log('Error ', e)
+	}
+	//objCommodityWidget.getData();
+	setTimeout(function () {
+        if((page.subsec1 == "837555174" || page.subsec1 == "13357270") && typeof _ain != 'undefined') {
+    	    try{
+    	        if(typeof _ain != 'undefined' && typeof _ain.track == 'function') {
+                    _ain.track();
+                }
+    	    }catch(e){console.log("errror", e)}
+    	}
+    }, 5000);
+    
+    $(".article_block").each(function(i,v){
+    	var lt = $(this).find("#pageContent"),
+    		rt = $(this).find("#sideBar"),
+    		cd = $(this).find("#sideBar .list.hidden"),
+    		cd1 = $(this).find("#sideBar div.hidden");
+    	if(objLang.currentLang() == 'HIN'){
+    	    balanceSecHight.init(lt,rt,cd1,40);
+    	}else{
+    	    balanceSecHight.init(lt,rt,cd,40);
+    	}
+    });
+   // primewidget();
+   objEmbed.init();
+   objGC.init();
+   objContentType.init();
+  objContentType.experiment();
+   if(page.meta_SpecialID == 'icici-pru_advt') {
+       specialMetaBaseEvent(1);
+   }
+    $('.tabsView').each(function(index){
+            var liIndex = index;
+            var thisIndex = this;
+            if($(this).find('.list1 li').length == 0){
+              $(this).find('.mostPopular > ul > li').eq(liIndex).addClass('hide');
+              $('.mostPopular.tabsBtn').addClass('half');
+              setTimeout(function(){ $(thisIndex).find('.mostPopular > ul > li').eq(liIndex).next().trigger('click'); }, 100);
+            }
+        });
+        
+    if(location.href.indexOf('backto=1') > 0) {
+        $('.backToBrand').removeClass('hidden');
+    }    
+});
+
+function specialMetaBaseEvent(counter) {
+    if(counter < 4) {
+        setTimeout(function () {
+            ga('send', 'event', 'ICICI DP', 30 * counter + ' Sec', window.location.href);
+            specialMetaBaseEvent(counter + 1);
+        }, 30000);
+    }
+}
+objCommodityWidget = {
+    getData: function(){
+        var el = $(".mcx_table"), symbol = [], elemVisible;
+        el.each(function(i, j){
+            if($(j).visible()){
+                $(j).find(".rt_name").not('.processed').each(function(k, l){
+                    var elem = $(l).siblings(".rt_ltp");
+                    if(elem.text() == "") {
+                        symbol.push($(l).text());
+                    }
+                    $(this).addClass('processed');
+                });
+                if(symbol.length) {
+                    objCommodityWidget.fetchData(symbol);
+                    
+                }
+            }
+        });
+        
+    },
+    fetchData: function(symbol){
+        $.ajax({
+            url: PROTOCOL+"//mcxlivefeeds.indiatimes.com/ET_MCX/mcxetmobile?type=fando&symbol="+symbol.join(),
+            dataType: "script",
+            cache: true,
+            data: {'callback': 'objCommodityWidget.fetchDataCB'}
+        });
+    },
+    fetchDataCB: function (data) {
+        var d = data.commodities;
+        if(d.length > 0){
+            try{
+                var cls = 'green';
+                $.each(d, function(i, v){
+                    if(v.percentChange <= 0){
+                        cls = 'red';
+                    }
+                    $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_change").removeClass("green red").addClass(cls);
+                    $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_lh_icon").removeClass("green red").addClass(cls+ ' arrow');
+                   $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_ltp").text(v.lastTradedPrice); 
+                   $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_abschange").text(v.netChange); 
+                   $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_expirydate").text(v.expiryDate2); 
+                   $(".mcx_table tr[data-name='"+v.symbol+"'] .rt_perchange").html("("+v.percentChange+"%)"); 
+                });
+            }catch(e){console.log("error in objCommodityWidget", e)}
+        }
+    }
+
+}
+objsmeWidget ={
+    widgetsmejson :{
+        "overall" : [
+            {
+                "status" :"inactive",
+                "text" :"Reach out to Top Generator Dealers near you and get free quotes",
+                "btntext" : "Get Quote",
+                "link" :"https://economictimes.indiatimes.com/smelistings/power-generators/?utm_source=widget&utm_medium=story&utm_campaign=ProductLine",
+                "ga": "SMEwebsearch"
+            }
+        ],
+        "auto" : [
+            {
+                "status" :"inactive",
+                "text" :"Looking for Auto loan? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-four-wheeler-loans/serviceid-90",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you an auto loan provider? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "banking" : [
+            {
+                "status" :"inactive",
+                "text" :"Are you Looking for Loan providers? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-home-loans/serviceid-89",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a loan provider? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for Investment Advisor? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-investment-advisory/serviceid-146",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Investment Advisor? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "finance" : [
+            {
+                "status" : "inactive",
+                "text" :"Are you looking for GST Consultant? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-gst-consultant/serviceid-864",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a GST Consultant? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for Income tax consultant? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-income-tax-consultants/serviceid-161",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you Income tax consultant? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for Taxation Auditors? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-taxation-audit/serviceid-193",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a Taxation Auditor? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for an Income tax Planners? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-income-tax-planning/serviceid-375",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Income Tax Planner? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for a Corporate Lawyer? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-corporate-lawyer/serviceid-425",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a Corporate Lawyer? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "insure":[
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for an Insurance provider? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-insurance-services/serviceid-2",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Insurance provider? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "healthcare":[
+            {
+                "status" :"inactive",
+                "text" :"Looking for health Insurance? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-health-insurance/serviceid-24",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a Health Insurance provider? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "consultancy / audit":[
+            {
+                "status" :"inactive",
+                "text" :"Looking for Auditing &amp; Assurance Services? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-auditing-assurance/serviceid-167",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Auditing &amp; Assurance Services Provider? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "tax":[
+            {
+                "status" :"inactive",
+                "text" :"Looking for GST Consultant? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-gst-consultant/serviceid-864",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a GST Consultant? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Looking for Income Tax consultant? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-income-tax-consultants/serviceid-161",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you Income tax consultant? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "save":[
+            {
+                "status" :"inactive",
+                "text" :"Looking for Income Tax Planners? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-income-tax-planning/serviceid-375",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Income Tax Planner? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Looking for Investment Advisor? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-investment-advisory/serviceid-146",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Investment Advisor? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Looking for Mutual Fund Advisor? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-mutual-fund-investments/serviceid-406",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a Mutual Fund Advisor? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ],
+        "others":[
+            {
+                "status" :"inactive",
+                "text" :"Are you looking for Investment Advisor? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-investment-advisory/serviceid-146",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you an Investment Advisor? List your business for free &amp; grow",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            },
+            {
+                "status" :"inactive",
+                "text" :"Looking for GST Consultant? Click here to find now",
+                "btntext" : "Search",
+                "link" :"/params/smelisting/category-gst-consultant/serviceid-864",
+                "ga": "SMEwebsearch"
+            },
+            {
+                "status" :"inactive",
+                 "text" :"Are you a GST Consultant? Get Your Free Business Listing on Economic Times.",
+                "btntext" : "Create free listing",
+                "link" :"/bizlist.cms",
+                "ga": "SMEweblist"
+            }
+        ]
+    },
+    loadsmewidget : function(msid){
+        //RHS chrome banner switch
+        var currSec = $('.bizListingWrapper').attr('data-sec');
+        if((currSec == 837555174 || currSec == 359241701) && Math.ceil(Math.random() * 10) % 2 == 0) {
+            var chromeBanner = '<div class="et-chromeext-banner"><a target="_blank" data-impression-ga="ET_Chromebanner_Rhs#Impression#Articleshow/'+window.location.href+'" onclick="ga(\'send\', \'event\', \'ET_Chromebanner_Rhs\', \'click\', \'Articleshow/'+window.location.href+'\')" href="https://chrome.google.com/webstore/detail/economic-times/dnolibcblolabdcgbhlgklkapabfihbo"><img align="center" width="317" src="' + objDomain.img + '/photo/66649568.cms" alt="Download ET for chrome"/></a></div>';
+            $(chromeBanner).insertAfter('[data-id="bizListingWrapper_'+msid+'"]');
+            $('[data-id="bizListingWrapper_'+msid+'"]').remove();
+        } else {
+            var type = $('.bizListingWrapper').attr('data-source');
+            var destn = $('[data-id="bizListingWrapper_'+msid+'"]');
+            if(objsmeWidget.widgetsmejson[type] == undefined){
+                type ='others';
+            }
+            // Manish Jaiswal Changes Overall Same text
+            type = 'overall';
+            
+            var sectlength = objsmeWidget.widgetsmejson[type].length;
+            var dateT= new Date();
+            if(sectlength < 3){
+                var sect = dateT.getSeconds();
+                /*if(sect > 30){*/
+                    $('.leftdiv h2').html(objsmeWidget.widgetsmejson[type][0].text);
+                    $('.leftdiv a').html(objsmeWidget.widgetsmejson[type][0].btntext);
+                    $('.leftdiv a').attr({"href":objsmeWidget.widgetsmejson[type][0].link, "target":"_blank"});
+                /*}
+                else{
+                    $('.leftdiv h2').html(objsmeWidget.widgetsmejson[type][1].text);
+                    $('.leftdiv a').html(objsmeWidget.widgetsmejson[type][1].btntext);
+                    $('.leftdiv a').attr({"href":objsmeWidget.widgetsmejson[type][1].link, "target":"_blank"});
+                }*/
+                destn.removeClass('hidden');
+                //ga('send', 'event', 'articleshow', 'Click', objsmeWidget.widgetsmejson[type][0].ga);
+            }
+            else{
+                var sect = dateT.getMinutes();
+                var widgetsec = 60 / sectlength;
+                for(var i=0; i< sectlength;i++){
+                    if(sect <= (widgetsec * (i+1))){
+                        $('.leftdiv h2').html(objsmeWidget.widgetsmejson[type][i].text);
+                        $('.leftdiv a').html(objsmeWidget.widgetsmejson[type][i].btntext);
+                        $('.leftdiv a').attr({"href":objsmeWidget.widgetsmejson[type][i].link, "target":"_blank"});
+                        destn.removeClass('hidden');
+                        //ga('send', 'event', 'articleshow', 'Click', objsmeWidget.widgetsmejson[type][i].ga);
+                        return false;
+                    }
+                }
+            }
+        }
+    },
+    gaHit : function(){
+        if($('.bizListingWrapper[data-id="bizListingWrapper_'+page.msid+'"]').visible()){
+            if (!$('.bizListingWrapper[data-id="bizListingWrapper_'+page.msid+'"]').hasClass('done')) {
+                ga('send', 'event', 'SMEWebWidget', 'Show', $('.bizListingWrapper').data('url'));
+                $('.bizListingWrapper').addClass('done');
+            }
+        }
+    }
+}
+objScroll = {
+    lazyMsid:'',
+    intervalToActive:0,
+    init:function () {
+        objScroll.bindEvent();
+        objScroll.setWidth();
+    },
+    bindEvent:function () {
+
+        $('.articlelist_container ul.articles li a').click(function (e) {
+            e.returnValue = false;
+            e.preventDefault();
+
+            var i = $(this).parent('li').index();
+            //console.log(i);
+            if($('.article_block').eq(i).length) {
+                var topScroll = $('.article_block').eq(i).offset().top - 60;
+                $('html, body').animate({scrollTop: topScroll}, '500');
+            }
+        });
+        $('.article_nav_wrapper .article_nav').click(function () {
+            var direction = $(this).attr('data-type');
+            objScroll.scrollBottomList(direction);
+        });
+        
+        $(document).scroll(function () {
+            loadSideWidgets.init();
+            if($('.gainerData').visible())    {
+                gainerBlockDefault ? gainerBlockDefault.init() : $('.gainerData').hide();
+            }
+            balanceSecHight.init(".article_block[data-article_id='"+ page.msid +"'] .pageContent",".article_block[data-article_id='"+ page.msid +"'] .sideBar",".article_block[data-article_id='"+ page.msid +"'] .notToBeMissed > div.hidden",100);
+            // console.log('win scroll');
+            /*
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop > 300 && $('.articlelist_container:visible').length == 0) {
+                $('.articlelist_container').slideDown();
+                $('.articlelist_container span.num').each(function (i, j) { $(this).text(i+1);});
+                objScroll.loadStory();
+            }
+            */
+            
+            clearTimeout(objScroll.intervalToActive);
+            objScroll.intervalToActive = setTimeout(function () {
+                objScroll.scrollBottomListToActive();
+            }, 100);
+            // articleShow.fixedRightNew();
+            
+            
+            $('.pageHolder .article_block').each(function (i, j) {
+                var objCur = $(this);
+                // var i = objCur.index();
+                var winTop = $(window).scrollTop(), articleTop = objCur.offset().top - $('#topNavFixed').outerHeight() - parseInt($(window).height() * 1/2), 
+                articleHeight = objCur.outerHeight();
+                var per = (((winTop - articleTop) / articleHeight) * 100).toFixed(2);
+                per = per < 0 ? 0 : (per > 100 ? 100 : per);
+                
+                var curLi = $('.articlelist_container ul.articles li').eq(i);
+                if(per >= 100) {
+                    curLi.addClass('scrolled');
+                } else {
+                    curLi.removeClass('scrolled');
+                }
+                
+                if (per > 0 && per < 100) {
+                    // console.log('curLi', i, per);
+                    /*var adElement = $('.rtAdContainer').eq(i).find('>div');
+                    if(adElement.html() == '') {
+                        adLoad(adElement.attr('id'));
+                    }*/
+                    
+
+                    curLi.addClass('active').siblings('li').removeClass('active');
+
+                    var msid = curLi.attr('data-msid');
+                    if (articleShow.currentMsid && articleShow.currentMsid != msid) {
+                        clearTimeout(articleShow.pushStateInterval);
+                        articleShow.pushStateInterval = setTimeout("articleShow.pushState(" + msid + ")", 800);
+                    }
+                    articleShow.currentMsid = curLi.attr('data-msid');
+                }
+                
+                /*
+                per = 100 - per;
+                curLi.find('.scroll-progress').css('height', per + '%');
+                */
+
+            });
+
+                /*var $this = $("#sideBar"), $thisTop = $this.offset().top, $thisHeight = $this.outerHeight(), adDiv = $this.find('.rtAdContainer')
+                bottomTop = $('.bottomBar').offset().top;
+                //if($this.visible(true)) {
+                    var winTop = $(window).scrollTop(), winHeight = $(window).outerHeight();
+                    var adTop = adDiv.offset.top, adHeight = adDiv.outerHeight();
+                    if($thisTop < winTop) {
+                        if(bottomTop < (winTop + winHeight)) {
+                            adDiv.removeClass('asideAdFix').addClass('asideAdBottom');
+                        } else {
+                            adDiv.removeClass('asideAdBottom').addClass('asideAdFix');
+                        }
+                    } else {
+                        adDiv.removeClass('asideAdFix asideAdBottom');
+                    }
+                    
+                //}*/
+                if(_tp_data.isLogged)
+                    objScroll.timesPointStrike();
+
+                if(typeof objsmeWidget != 'undefined' && typeof objsmeWidget.gaHit != 'undefined' && $('[data-id="bizListingWrapper_'+page.msid+'"]').length >0){
+                    objsmeWidget.gaHit();
+                }
+                
+                // MF banner Impression track
+                $('.etMoneySlot').not('.imp_done').each(function() {
+                    var $this = $(this);
+                    if($this.visible() == true) {
+                        $this.addClass('imp_done');
+                        ga('send', 'event', 'ET Money - Can Slot_AS', 'Impression', window.location.href)
+                    }
+                });
+        });
+    },
+    scrollBottomList:function(direction) {
+        $('ul.articles').finish();
+        var ulWidth = $('ul.articles').width(),
+        scrollWidth = $('ul.articles li').eq(0).outerWidth();
+        var left = $('ul.articles').css('margin-left').replace('px', '');
+        var newLeft = parseFloat(left);
+        newLeft += direction == 'prev' ?  scrollWidth : -1 * scrollWidth;
+        $('ul.articles').animate({'margin-left': newLeft});
+        
+        if(newLeft < -10) {
+            $('.article_nav.prev').show();
+        } else {
+            $('.article_nav.prev').hide();
+        }
+
+        if(Math.abs(newLeft) + (scrollWidth * 5) + 100 > ulWidth) {
+             $('.article_nav.next').hide();
+        } else {
+            $('.article_nav.next').show();
+        }
+    },
+    scrollBottomListToActive:function () {
+        
+        $('ul.articles').finish();
+        var activeLiLeft = $('.articlelist_container li.active').offset().left, windowWidth = $(window).width();
+        if(activeLiLeft < -15 || (windowWidth - activeLiLeft) < 15) {
+            var ele = $('.articlelist_container li.active'); 
+            liWidth = $('ul.articles li').eq(0).outerWidth(), 
+            liCount = $('ul.articles li').length, 
+            ind = ele.index(), 
+            winWidth = $(window).width(), 
+            ulHalf = $('.articlelist_container ul').width() / 2;
+
+            if(liWidth * ind < ulHalf) {
+                $('ul.articles').animate({'margin-left': -1 * liWidth*(ind)});
+            } else {
+                $('ul.articles').animate({'margin-left': -1 * liWidth*(ind + 1) + winWidth});
+            }
+
+            if(ind == 0) {
+                $('.article_nav.prev').hide();
+            } else {
+                $('.article_nav.prev').show();
+            }
+
+            if(ind == liCount - 1) {
+                $('.article_nav.next').hide();
+            } else {
+                $('.article_nav.next').show();
+            }
+        }
+        /*
+        var activeLiLeft = $('.articlelist_container li.active').offset().left, windowWidth = $(window).width();
+        windowWidth - activeLiLeft;
+        if(activeLiLeft < -5) {
+            objScroll.scrollBottomList('prev');
+            setTimeout(objScroll.scrollBottomListToActive, 500);
+        } else if((windowWidth - activeLiLeft) < 5) {
+            objScroll.scrollBottomList('next');
+            setTimeout(objScroll.scrollBottomListToActive, 500);
+        }
+        */
+        
+    },
+    setWidth:function () {
+        var liCount = $('.articlelist_container ul.articles li').length;
+        var width = ($(document).width()) / 5;
+        $('.articlelist_container ul.articles li a').outerWidth(width);
+        $('.articlelist_container .articles').width($('.articlelist_container ul.articles li a').eq(0).outerWidth() * liCount);
+    },
+    videoResetAutoPlay: function(msid){ // Remove Autostart from videodash Videos
+        $('.article_wrap .article_block[data-article_id="'+ msid +'"] iframe').each(function(i, v){
+        	var iframeUrl = $(v).attr('src');
+        	if(typeof(iframeUrl)!= 'undefined' && iframeUrl != undefined && (iframeUrl.indexOf('videodash.cms') >= 0 || iframeUrl.indexOf('slikeplayer.cms') >= 0)){
+        		iframeUrl = iframeUrl.replace('autostart=1', 'autostart=0');
+        		iframeUrl = changeParamInUrl(iframeUrl, {"rlvideo" : 0});
+        		$(v).attr('src', iframeUrl);
+        	}
+        });
+    },
+    videoStartAutoPlay: function(msid, flag){ // Start Autostart for videodash Videos(to be used with viewport on scroll)
+        var iframe = $('.article_wrap .article_block[data-article_id="'+ msid +'"] iframe');
+    	var iframeUrl = $(v).attr('src');
+    	if(typeof(iframeUrl)!= 'undefined' && iframeUrl != undefined){
+            iframeUrl = iframeUrl.replace('autostart=' + !flag, 'autostart=' + flag)
+		    $(v).attr('src', iframeUrl);
+    	}
+    },
+    loadStory:function () {
+        var loaderflag = 1;
+        return function() {
+            var msid = $('.articlelist_container ul.articles li.disable a').eq(0).parent('li').attr('data-msid');
+            var storyIndex = $('.articlelist_container ul.articles li[data-msid="' + msid + '"]').index();
+            var pos = storyIndex == 1 ? '&pos=1' : '';
+            objScroll.lazyMsid = msid;
+            if(msid && loaderflag) {
+                loaderflag = 0;
+                var  url =  '/article_view2.cms?msid=' + msid + '&nextstry=1&subsec1=' + page.subsec1 + pos;
+                if(objLang.currentLang() == 'HIN'){
+                     url= '/article_lang.cms?msid=' + msid + '&nextstry=1&subsec1=' + page.subsec1;   
+                    }
+                $.ajax({
+                    url: url,
+                    success: function (response) {
+                        $('.articlelist_container ul.articles li.disable[data-msid="' + msid + '"]').removeClass('disable');
+                        objScroll.loadStoryCallback(response, msid);
+                        
+                        // Market Data Widget(on articleshowp) Check and call Company Data on Scroll
+                        if(subsec1_common && subsec1_common == '1977021501') {
+                            if($('.article_block[data-article_id="' + msid + '"]').find('.stocks_widget .stockExchange').length) {
+                                objStocksSlide.getCompanyData('nse', $('.article_block[data-article_id="' + msid + '"]').find('.stocks_widget .stockExchange'));
+                            }
+                            objEtBuzz2.init();
+                        }
+                        if (typeof showAd != 'undefined' && typeof removeAds != 'undefined' && typeof removeAds == 'function' && !showAd) {
+                            removeAds('.article_block');
+                        }
+                        if(typeof twttr !== 'undefined') {
+                            twttr.widgets.load();
+                        }
+                        
+                        $('.article_block[data-article_id="' + msid + '"').find('.tabsView').etTabs();
+                        
+                        loaderflag = 1;
+                        
+                        if(typeof objsmeWidget != 'undefined' && typeof objsmeWidget.loadsmewidget != 'undefined' && $('[data-id="bizListingWrapper_'+msid+'"]').length >0){
+                            objsmeWidget.loadsmewidget(msid);    
+                        }
+                        
+                        $(".sideBar #newsInPics, #newsInDefence").not('.bindDone').etGallery({
+                           interval: 10000
+                        }).addClass('bindDone');
+                        
+                        //----------- ET discover slider ---------//
+                        if(typeof discoverETSlider !== 'undefined' && typeof discoverETSlider === 'object' && window.location.href.indexOf('etdev') != -1) {
+                            discoverETSlider.init();
+                        }
+                        
+                        // Lazy widget calling function
+                        objLazyWidget.init();
+                        
+                        
+                    },
+                    error:function () {
+                        
+                    }
+                });    
+            }
+        }
+    }(),
+    loadStoryCallback:function (response, msid) {
+        try {
+            setTimeout(function () {
+                objScroll.loadStory();
+            }, 1000);
+            var msid = msid ? msid : objScroll.lazyMsid;
+            
+            $('.article_wrap').append(response);
+            
+            $(".article_block").each(function(i,v){
+            	var lt = $(this).find("#pageContent"),
+            		rt = $(this).find("#sideBar"),
+            		cd = $(this).find("#sideBar .list.hidden"),
+            		cd1 = $(this).find("#sideBar div.hidden");
+            		if(objLang.currentLang() == 'HIN'){
+    	                balanceSecHight.init(lt,rt,cd1,40);
+                	}else{
+                	    balanceSecHight.init(lt,rt,cd,40);
+                	}
+            });
+            
+            if(objGdpr.allow() == 0){
+                $('.cmt-gdpr-hide').remove();
+            }else{
+                $('#commentCountBtn, .comment_count, .comment_box').removeClass('cmt-gdpr-hide');
+            }
+            
+            var seq = $('.articles [data-msid="' + msid + '"]').index();
+            if(typeof objAd.checkAd == 'function') {
+                objAd.checkAd($('.article_block[data-article_id="' + msid + '"]'));
+            }
+            
+            
+            if(page.subsec1 =='837555174'){
+                    if(seq % 2==1){
+                        $('div[data-article_id="'+msid+'"] .promo_box').html('<a href="/surveys?utm_source=ETWEALTHARTICLESHOW&utm_medium=ETSITE&utm_campaign=ETRICS" target="_blank"><img src="//img.etimg.com/photo/50640900.cms" width="640" height="74" alt="Wealth RICS Survey" class="gwt-Image"/></a>');
+                    }
+                    if(seq % 2==0){
+                        $('div[data-article_id="'+msid+'"] .promo_box').html('<a target="_blank" href="/etwealth_questionnaire.cms?utm_source=ETWEALTHARTICLESHOW&utm_medium=ETSITE&utm_campaign=Etwealthsurvey"><img alt="Wealth RICS Survey" height="60" width="640" src="//img.etimg.com/photo/50559538.cms" class="gwt-Image" /></a>');
+                    }
+                  
+                // if((seq + 1) % 3 == 0){
+                //     articleShow.loadTemplate('topmutualfunds',msid);
+                // }
+                if((seq + 1) % 3 == 1){
+                    articleShow.loadTemplate('wealthcalculator',msid);
+                }
+                // if((seq + 1) % 3 == 2){
+                //     articleShow.loadTemplate('wealthdefinitions',msid);
+                // }
+                // else 
+                if((seq + 1) % 3 == 4 ){
+                    // articleShow.loadTemplate('wealthsubsc',msid);
+                     $('div[next_art_msid="'+msid+'"]').prepend('<div id="newsLetterWidgetSection" class="clr"></div>');
+                }
+            }
+            objAuthor.bindAuthorHover();
+            var i = $('.article_block[data-article_id="' + msid + '"]').index() + 1;
+            //$('.article_block[data-article_id="' + msid + '"] .article_separator').html("<div id='div-clmb-ctn-129220-" + i + "' class='list colombia colombiaAd' data-slot='129220' data-cb='adwidgetArticleShow' data-position='"+ i +"' data-section= '0'></div>");
+            
+            if(showFullWidthArticle != '0' && $('.article_block[data-article_id="' + msid + '"]').attr('data-noads') != 'true') {
+                bellyCTNAd(i, msid);
+            }
+            
+            
+            if($('.article_block[data-article_id="' + msid + '"] blockquote').hasClass('instagram-media') && (typeof instgrm !== 'undefined') && (typeof instgrm === 'object')) {
+                instgrm.Embeds.process(); // To render instagram post on lazy articles
+            }
+            // articleShow.shareCount.fb(msid);
+            //articleShow.mostRead(i,msid);
+            articleShow.morepartner(i, msid);
+            i++;
+            //objEmbedVideo.setVideoHtml5();
+            renderTitle(msid);
+            $('.gwt-Image').imageShare();
+            
+            if(typeof objSlider !== 'undefined' && typeof objSlider === 'object'){
+                objSlider.init();
+            }
+            // Remove Autostart from videodash Videos
+            objScroll.videoResetAutoPlay(msid);
+            
+            // load Special Comments by default
+            if($(".article_block[data-article_id='"+msid+"'][data-brandwire]").length > 0){
+                loadSpecialComments();
+            }
+            objScroll.lazyImageBind();
+            objEmbed.setAudioPlayer();
+            attachBottomAds(msid,'et');
+            hideCANadsExperiment(msid);
+            setTimeout(function(){
+                //content signin calling
+                objContentType.init();
+            }, 10);
+            
+        } catch (e) {
+            console.log('Error loadStoryCallback : ', e);
+        }
+        
+    },
+    lazyImageBind:function() {
+        $("img.lazy").not('.lazyDone').each(function () {
+            var $this = $(this);
+            if($this.visible(true)) {
+                $this.attr('src', $this.attr('data-original')).removeClass('lazy');
+            } else {
+                $this.lazyload({effect: "fadeIn"});
+            }
+            $this.addClass('lazyDone');
+        });
+        
+    },
+    msidArr:[],
+    timesPointStrike: function(){
+        var _this = $('.article_block');
+        var _winHeight = $(window).height();
+        _this.each(function(){
+            var _winScrollTop = $(window).scrollTop() || 0;
+            var _thisMsid = parseInt($(this).attr('data-article_id'));
+            var _isInViewport = ($(this).find('.artText').offset().top) <= ( _winHeight +  _winScrollTop);
+            if(_thisMsid && ((objScroll.msidArr.indexOf(_thisMsid)==-1) && _isInViewport)){
+                // timespoint hit while reading article
+                objPoints.add("act201774");
+                objScroll.msidArr.push(_thisMsid);
+            }
+        });
+        
+    }
+}
+
+
+// author box on hover of author name
+objAuthor = {
+    bindAuthorHover: function () {
+        $('.split .a_d').not('.eventDone').addClass('eventDone').on('mouseover mouseenter', function () {
+            var $this = $(this), 
+            author_name = $.trim($this.find('span a').attr('data-auname')), 
+            author_box = $this.find('.author_box');
+            if(author_box.html() == "") {
+                author_box.html('<img src="//img.etimg.com/photo/19819991.cms" alt="Loading..."/>');
+                $.ajax({
+                    url: '/article_reporter.cms',
+                    data: {author: author_name},
+                    cache: true,
+                    success: function (response) {
+                        author_box.html(response);
+                    }
+                });
+            }
+        });
+        // author box commented, handled by CSS
+        
+    }
+};
+
+renderTitle = function(msid){
+    
+    var currElement = $('.articles [data-msid="' + msid + '"]');
+    var prevElement = currElement.prev();
+    var prevMsId = prevElement.attr('data-msid');
+    
+    var title = currElement.find('a').clone().children().remove().end().text();
+    $('.article_block[data-article_id="' + prevMsId + '"] .nextstory .title').text(title);
+    $('.article_block[data-article_id="' + prevMsId + '"] .nextstory').show().attr('data-nextarticleid', msid);
+    $('.article_block[data-article_id="' + prevMsId + '"] .nextref').show();
+}
+
+// Articleshow Bottom slider GA Tracking Tracker
+
+function evtCap(ee) {
+	try {
+		if (window.event && window.event.srcElement) {
+			if (window.event.srcElement.getAttribute("data-track") != null) {
+				pgtrack(window.event.srcElement.getAttribute("data-track"));
+			}
+		} else if (ee && ee.stopPropagation && !window.opera) {
+			if (ee.target.getAttribute("data-track") != null) {
+				pgtrack(ee.target.getAttribute("data-track"));
+			}
+		}
+	} catch (ex) {}
+}
+
+try {
+	if (document.addEventListener){
+		document.addEventListener("click", evtCap, true);
+	} else {
+		document.attachEvent("onclick", evtCap);
+	}
+} catch (ee) {}
+
+var pgid = {};
+var articleSlider = ['Article1','Article2', 'Article3', 'Article4', 'Article5', 'Article6', 'Article7', 'Article8', 'Article9', 'Article10'];
+var readMore = ['ReadMore1','ReadMore2', 'ReadMore3', 'ReadMore4', 'ReadMore5', 'ReadMore6', 'ReadMore7', 'ReadMore8', 'ReadMore9', 'ReadMore10'];
+var alsoRead = ['AlsoRead1','AlsoRead2', 'AlsoRead3', 'AlsoRead4', 'AlsoRead5', 'AlsoRead6', 'AlsoRead7', 'AlsoRead8', 'AlsoRead9', 'AlsoRead10'];
+var ntMissed = ['NTM1','NTM2', 'NTM3', 'NTM4', 'NTM5', 'NTM6', 'NTM7', 'NTM8', 'NTM9', 'NTM10'];
+var spotlight = ['spotImage', 'spotText'];
+var commentIds = ['commentArticle1','commentArticle2', 'commentArticle3', 'commentArticle4', 'commentArticle5', 'commentArticle6', 'commentArticle7', 'commentArticle8', 'commentArticle9', 'commentArticle10'];
+
+var newIds = [articleSlider, readMore, alsoRead, ntMissed, spotlight, commentIds];
+var pdidSecNew = ['Articleband', 'Read more on', 'Also Read', 'Ntmissed', 'Spotlight', 'Comments'];
+var pgNewId = {};
+for (var i = 0; i < newIds.length; i++) {
+	for (var j = 0; j < newIds[i].length; j++){
+		pgNewId[newIds[i][j]] = pdidSecNew[i];
+	}
+}
+function pgtrack(pgatt) { //alert(pgid);
+    //pgatt = 'Article' + pgatt;
+	if (pgatt != null) {
+		var pgat = pgatt.split(' ');
+		var trcode = null;
+		
+		if (pgat.length == 1) {
+		    if(pgNewId[pgat[0]] != undefined) {
+		        var gaCat = pgNewId[pgat[0]];
+		        if(window.event && window.event.srcElement && window.event.srcElement.getAttribute("class") == 'etpersonalised')
+		        {
+		            gaCat = 'MN_Articleband';
+		        }
+		        trcode = "ga('send', 'event', 'Articleshow', '" + gaCat + "', '" + pgat[0] + "')";
+		    }
+			else {
+			    trcode = "ga('send', 'event','" + pgid[pgat[0]] + "','select','" + pgat[0] + "')";
+			}
+		} else {
+			trcode = "ga('send', 'event','" + pgid[pgat[0]] + "','select','" + pgat[0] + pgat[1] + "')";
+		}
+		eval(trcode);
+	}
+}
+
+function dataTrackAdder(){
+    if($('.articlelist_container').length != 0){
+        //Addn of Data Track on SLider Articles
+        $('.articlelist_container ul.articles li').each(function(i, v){
+            $(this).find('span.num, a').attr('data-track', 'Article' + (i + 1));
+            $(this).find('a > div').last().attr('data-track', 'Article' + (i + 1));
+            // To Be used for Minus operation scroll depth
+            $(this).find('a').attr('data-depth', 'Article ' + (i + 1));
+        });
+    }
+}
+// function commentsTrackAdder(id){
+//     var selectorTrack = $('.article_block[data-article_id="'+id+'"]');
+//     if( !(selectorTrack.find('.comment_box .btn').eq(0).attr('data-track')) ){
+//         selectorTrack.find('.comment_box .btn').attr('data-track', 'commentArticle' + $('ul.articles li.active').find('.num').text());   
+//     }
+// }
+
+// Articleshow Bottom slider GA Tracking, Comments Tracker ends
+
+$(document).ready(function () {
+    if(_tp_data.isLogged){
+            objPoints.add("act201774");
+            objScroll.msidArr.push(parseInt($('.article_block').eq(0).attr('data-article_id')));
+    }
+    // Remove Autostart from videodash Videos On start articleshow
+    objScroll.videoResetAutoPlay(page.msid);
+    
+    // GA hit ICICI DP first load
+    if($(".article_block[data-article_id = '" + page.msid + "']").attr('data-seokeywords')){
+        var pageSeoTitle = $(".article_block[data-article_id = '" + page.msid + "'] #article_title").val();
+        articleShow.articleTrackerInterval(pageSeoTitle, articleShow.trackSeoInterval);
+    }
+    
+    // Adding data-track attr to li elements bottom slider
+    dataTrackAdder();
+    // Adding data-track attr to First page Comments button
+    // commentsTrackAdder(page.msid);
+    
+    if(objGdpr.allow() == 0){
+        $('.cmt-gdpr-hide').remove();
+    }else{
+        $('#commentCountBtn, .comment_count, .comment_box').removeClass('cmt-gdpr-hide');
+    }
+    if(objGdpr.allow() && typeof objPage.loadLinkedinScript != 'undefined') {
+        objPage.loadLinkedinScript();
+    }
+    // Ga customDimention code fire here
+    article_title_D = $('.article_block[data-article_id="'+page.msid+'"] #article_title').val();
+    /*if(budget_2019_banner == '1'){
+        ga('set', 'dimension18', article_title_D);
+    }*/
+});
+
+
+
+
+/* Personalised My News tab */
+var recommendedNews = (function(){
+	var recommendationList = function(peuuid,mode) {
+		try {
+		    var isConsent=1;
+		    if(objGdpr.allow()!==1){isConsent = 0;}
+			var pageNo = new Date().getTime()%3+1;
+		    var URL = '//etprecos.economictimes.indiatimes.com/personaliseduserfiltering/personalizedContent/?page=1&perpage=82&prefix=WR:sk1:&sorton=0&shuffleon=0&isconsent='+isConsent,tckAlgo = 'srv1';
+		    
+			if(typeof $.jStorage != 'undefined')
+			{
+				var data = $.jStorage.get('etprecos');
+				var lastDataUpdateTime = $.jStorage.get("etprecoslastupdatetime");
+				if(typeof data != 'undefined' && data !== null && lastDataUpdateTime !='undefined' && (new Date().getTime() -lastDataUpdateTime) < 10*60*1000 )
+				{
+				    datalisting(data,tckAlgo,peuuid,mode);
+				}	
+				else{
+					$.ajax({
+						url : URL,
+						type : 'GET',
+						dataType : 'json',
+						contentType : "application/json",
+						headers: {'Authorization': peuuid},
+						timeout : 5000,
+						success : function (data) {
+						   if(typeof data.recosList != 'undefined' && data.recosList !== null && data.recosList != '' && data.recosList.length)
+						   {
+                                var recosTemp = data.recosList;
+                                var recosTest = [];
+                                $.each(recosTemp, function (index, value){
+                                    if(value["webUrl"] && value["subject"])
+                                    {
+                                        recosTest.push(value);
+                                    }
+                                })
+                                data.recosList = recosTest;
+                                if(data.recosList.length>0){
+                                    $.jStorage.set("etprecos", data,{TTL: 10*60*1000});
+                                    //last update time
+                                    $.jStorage.set("etprecoslastupdatetime", new Date().getTime(),{TTL: 10*60*1000});
+                                }else{
+                                    data =  $.jStorage.get("etprecos");
+                                }
+    							datalisting(data,tckAlgo,peuuid,mode);
+						    }
+							else{objScroll.init();}
+							
+						},
+						error : function (x, status, error) {
+							if(status === "timeout") {ga('send', 'event', 'ETP_log', 'Timeout');} 
+							else {ga('send', 'event', 'ETP_log', 'Error');}
+							objScroll.init();
+						}
+					});
+				}
+			}else{objScroll.init();}	
+		} catch (e) {
+			console.log("something went wrong in recommended stories" + e);
+			objScroll.init();
+			
+		}
+	},
+	shuffle = function(arra1) {
+		var ctr = arra1.length, temp, index;
+		while (ctr > 0) {
+			index = Math.floor(Math.random() * ctr);
+			ctr--;
+			temp = arra1[ctr];
+			arra1[ctr] = arra1[index];
+			arra1[index] = temp;
+		}
+		return arra1;
+	},
+	gatracking = function(){
+        $(".newsTab .tabsContent > ul > li:eq(2) > ul>li>a").on('click',function(){ 
+        	var gaCode = $(this).attr('data-pr-track'), 
+        	pgac = gaCode.split('#'), trgacode;
+			if(typeof pgac[2] != 'undefined'){
+			    trgacode = "ga('send', 'event', '" + pgac[0] + "', 'Click', '" + pgac[1] + "', '" + pgac[2] + "')";
+			}
+			else{
+			    trgacode = "ga('send', 'event', '" + pgac[0] + "', 'Click', '" + pgac[1] + "')";
+			}
+        	
+        	eval(trgacode);
+        });
+	},
+	getParameterByName = function(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    },
+	datalisting = function (data,tckAlgo,peuuid,mode){
+    	try {
+    	    //set -1 if field does not exists in cache
+	        var dataLS = $.jStorage.get('etprecosLastPageShown'),lastPageShown;
+			if(typeof dataLS != 'undefined' && dataLS !== null)
+			{
+			    lastPageShown = dataLS;
+			}
+			else{
+			    lastPageShown = -1;
+			}
+
+            var totalItems = data.recosList.length;
+            var pageSize = 20;
+            var totalPages = Math.floor(totalItems / pageSize);
+            
+            var timeVal = new Date().getTime();
+            if(lastPageShown>=totalPages){lastPageShown = 0;}
+            
+            if(typeof dataLS == 'undefined' || dataLS == null || (window.location.href).indexOf('utm_medium=HPMN')==-1)
+            {
+                var currentPage = lastPageShown+1;
+                $.jStorage.set('etprecosLastPageShown',currentPage);
+            }
+            else{
+                var currentPage = lastPageShown;
+            }
+            var skipIndex = currentPage * pageSize;
+
+            
+            var artListLen =  $('.articlelist_container > ul li').length < 1 ? 10 : $('.articlelist_container > ul li').length;
+    	    var recosArr = shuffle((data.recosList).slice(skipIndex,skipIndex+10));
+    	    if(recosArr.length<3 && currentPage > 1){recosArr = shuffle((data.recosList).slice(0,10));}
+			var rli=$('.articlelist_container > ul li:eq(0)')[0].outerHTML;
+			var dataS = recosArr.length, loadStory=1;
+			if(dataS > (artListLen-2)){dataS = (artListLen-1);}
+			var happd = ''; 
+			if((window.location.href).indexOf('utm_medium') > -1 && getParameterByName('utm_medium') == 'HPMN'){
+			   happd = 'utm_source=ETMyNews&utm_medium=HPMN&utm_campaign=AL1';  
+			}
+			else{
+			   happd = 'utm_source=ETMyNews&utm_medium=ASMN&utm_campaign=AL1'; 
+			}
+			$.each(recosArr, function (index, value) {
+				if(index<(artListLen-1) && value["webUrl"] && value["subject"]){
+					var uPath = value["webUrl"].replace('https://economictimes.indiatimes.com', ''),
+					titleS = ((value["shortTitle"]!=='') ? value["shortTitle"] : value["subject"]);
+					var startsWithPage = titleS.startsWith('Page');
+					if(startsWithPage){
+					  titleS = titleS.substring(titleS.indexOf('|')+1,titleS.length).trim();
+					}
+					var storyDate = value["storyDate"].split(" ")[0].split("-")[2];
+					rli +=  '<li class="disable" data-msid="'+value["msid"]+'">';
+					rli +=  '<a class="etpersonalised" href="' + uPath + '?'+happd+'&utm_content='+dataS+'" data-track="Article'+(index+2)+'" data-depth="Article '+(index+2)+'" title="'+titleS+'">';
+					rli +=  '<div><span class="num" data-track="Article'+(index+2)+'">'+(index+2)+'</span></div>';
+					rli +=  '<div class="etpersonalised" data-track="Article'+(index+2)+'">'+titleS+'</div>';
+					rli +=  '</a>';
+					rli +=  '</li>';
+					loadStory++;
+				}
+				else{return false;}
+			});
+			var RemLoadStory = artListLen-loadStory;  
+			if(RemLoadStory != 0){
+			   for(var i=1; i<=RemLoadStory;i++){
+			     rli += $('.articlelist_container > ul li:eq('+i+')')[0].outerHTML;  
+			   }
+			}
+            if($('.articlelist_container:visible').length !== 1)
+			{
+    			$('.articlelist_container > ul li').remove();
+    			$(".articlelist_container > ul").append(rli);
+			}
+			
+			objScroll.init();
+// 			objScroll.loadStory();
+	    } catch (e) {
+			console.log("something went wrong in datalisting function" + e);
+			objScroll.init();
+		}
+	}
+    return {
+    	init:function(){
+    	    if(objGdpr.allow()) {
+    	        var peuuid = -1;
+    			if (typeof $.cookie('peuuid') !== 'undefined') {
+    				peuuid = $.cookie('peuuid');
+    			} else if (typeof $.cookie('pfuuid') !== 'undefined') {
+    				peuuid = $.cookie('pfuuid');
+    			}
+    			var mode = peuuid % 20;
+    			//var modeArr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+    			//var puri = window.location.href;
+    			//if (peuuid != 0 && ((modeArr.indexOf(mode)!=-1) || puri.indexOf('utm_source=ETMyNews')>-1 || puri.indexOf('utm_campaign=etpdaily')>-1) && typeof objLang !== 'undefined' && (objLang.currentLang() == 'ENG' || objLang.currentLang() == '')) {
+    			if (peuuid != 0 && (objLang.currentLang() == 'ENG' || objLang.currentLang() == '')){
+        	        recommendationList(peuuid,mode);
+    			}
+				else{objScroll.init();}
+    	    } else {
+    	        objScroll.init();
+    	    }
+            
+    	}
+    }
+})();
+
+var objEmbed = {
+    api: objService.podcast,
+    init: function () {
+        objEmbed.setAudioPlayer();
+    },
+    setAudioPlayer: function () {
+        if($('div.audio').length) {
+            objEmbed.loadApi(objEmbed.prepareAudioPlayer);
+        }
+    },
+    loadApi: function (callback) {
+        if($('script[src*="' + objEmbed.api + '"]').length == 0) {
+            window.SPL = {
+                config: {
+                  sdk: {
+                    apikey: "etweb75sb26l69w5cyc21zpi8hbp6t",
+                    referrer: "document.referrer"
+                  }
+                }
+              };
+            loadScript(objEmbed.api, callback);
+        } else {
+            if(typeof callback == 'function') {
+                callback();
+            }
+        }
+    },
+    prepareAudioPlayer: function () {
+        $('div.audio:empty').each(function () {
+            var audio_player_id = 'audio_player' + new Date().getTime() + '-' + parseInt(Math.random() * 100000);
+            var $this = $(this);
+            $this.attr('id', audio_player_id).addClass('showPlayer');
+            
+            var playerConfig = $.extend(true, {}, objEmbed.audioConfig);
+            playerConfig.video.id = $this.attr('video_id');
+            playerConfig.video.title = $this.attr('data-title');
+            playerConfig.controls.duration = $this.attr('data-duration');
+            
+            S.load(audio_player_id, playerConfig, function(inst) {
+              console.log("Player load Completed");
+              player = inst; //player is lnitialized now...       
+            });
+        });
+    },
+    audioConfig: {
+      page:{
+        origin: window.location.href,
+      },
+      player:{
+        skipAd: true,
+        pageSection: '', // page section
+        autoPlay: true,
+        autoPlayAudio: false,
+        startFromSec: "0", //startFrom        
+        pauseOnHide:false,// pauseOnHide        
+        forceWA: true,
+        audioMode: true,
+        audioPrime:true
+      },
+      controls:{
+        controlsType:"custom",
+        showDimIcon:false,
+        showFullScreen:true,
+        showAutoPlayNext:true,
+        showNextButton:false,
+        showPrevButton: false,
+        showFwdSeek: true,
+        showBackSeek: true,
+        showShare:false,
+        volume:70,
+        mute:false,
+        autoPlayNext:false,
+        showSpeedMenu:false,
+        showWave : true,
+        duration:'00:00' // hh:mm:ss
+      },
+      video:{
+        id: ""
+      },
+      events: {}
+    }
+}
+/* Load Discover ET Slider */
+// if(window.location.href.indexOf('etdev') != -1) {
+//     loadModule({'module_name': 'js_discover_slider', 'v': '1'});
+// }
+
+if(window.subsec2_common && subsec2_common == '68888444') {
+    loadModule({'module_name': 'sme_js_enquirywidget'});
+}
+
+
+objGC = {
+    init: function () {
+        if(getParameterByName('gc')) {
+            objGC.showPopup();
+        }
+    },
+    bindEvents: function () {
+        
+    },
+    showPopup: function (elem) {
+        if(!$('.guess_company').length) {
+            
+            
+            $('.guess_company').remove()
+            $('body').append('\
+            <style>\
+            .guess_company {position: absolute; top: 20px; display: inline-block; border: 1px solid #B5B5B5; left: 45px; padding: 25px;font-size: 16px;background: #FFF; z-index: 9;height: 200px;width: 315px;}\
+            .guess_company label {display: block;margin-bottom:2px;}\
+            .guess_company .gc_btn {background: #000; color: #FFF;padding: 7px 30px;border-radius: 3px;cursor:pointer;font-size: 14px;}\
+            .guess_company .gc_close {float: right; position: absolute; top: 5px; right: 10px; cursor: pointer;}\
+            .guess_company input[type="text"], textarea {border-radius: 0; margin-bottom: 10px;width: 300px;background-color:#F1F5F8; border:1px solid #E0E8EB; padding: 8px 5px;}\
+            .guess_company textarea {min-height: 50px;resize: none;}\
+            .guess_company:after, .guess_company:before { top: 100%; left: 20%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; } \
+            .guess_company:after { border-color: rgba(255, 255, 255, 0); border-top-color: #FFF; border-width: 20px; margin-left: -20px; } \
+            .guess_company:before { border-color: rgba(181, 181, 181, 0); border-top-color: #B5B5B5; border-width: 21px; margin-left: -21px; }\
+            .guess_company span.err { float: right; width: 240px; font-size: 14px; color: #af0000; }\
+            .guess_company .gc_result {text-align: center;padding: 80px 0px;font-size: 18px;display:none;}\
+            </style>\
+            <div class="guess_company">\
+            <span class="gc_close" onclick="$(\'.guess_company\').hide();">X</span>\
+            <div class="gc_cont">\
+                <label>Email<span class="err e_error"></span></label>\
+                <input type="text" class="gc_emailid"/>\
+                <label>Answer<span class="err a_error"></span></label>\
+                <textarea type="text" class="gc_answer"></textarea>\
+                <label/>\
+                <input type="button" class="gc_btn" value="Submit" onclick="objGC.saveData();"/><span class="err a_error"></span>\
+            </div>\
+            <div class="gc_result">\
+                <div class="result_text">Result saved successfully.</div>\
+            </div>\
+            </div>');
+            
+           
+            
+        }
+        $('.guess_company').show();
+        $('.guess_company .gc_emailid').val(_tp_data.email ? _tp_data.email : '');
+        if(elem) {
+            var offset = $(elem).offset(), popup_h = $('.guess_company').outerHeight();
+            $('.guess_company').css({top:offset.top - popup_h - 20, left: offset.left})
+        }
+    
+    },
+    saveData: function () {
+        var emailid = $.trim($('.guess_company .gc_emailid').val()), 
+            answer = $.trim($('.guess_company .gc_answer').val()), error = 0 ;
+        $('.err').hide();
+        if(!answer) {
+            $('.a_error').text('Please enter answer').fadeIn();
+            error = 1;
+            $('.guess_company .gc_answer').focus();
+        }
+        if(!emailid) {
+            $('.e_error').text('Please enter email id').fadeIn();
+            error = 1;
+            $('.guess_company .gc_emailid').focus();
+        }
+        
+        setTimeout(function () {
+            $('.err').fadeOut();
+        }, 5000);
+        
+        if(!error) {
+            var s_url = 'https://qcbselivefeeds.indiatimes.com/ET_Calculators/guesscompany.htm';
+            objCdp.post(s_url, {msid:page.msid, emailid: emailid, answer: answer, callback: 'parent.objGC.saveDataCB'});
+        }
+    },
+    saveDataCB: function (data) {
+        //_log(data);
+        if(data.result == "SUCCESS") {
+            $('.gc_cont').slideUp();
+            $('.gc_result').slideDown();
+        }
+    }
+}
+
+// content behind signin
+objContentType = {
+    init: function () {
+        objUser.afterLoginCall(function () {
+            var msid = objScroll.lazyMsid ? objScroll.lazyMsid : page.msid;
+            objContentType.check(msid);
+        });
+    },
+    check: function (msid) {
+        try{
+            if(!_tp_data.isLogged) {
+                var elem = $('.article_block[data-article_id="' + msid + '"]'), cType = elem.attr('data-content_type'), contentHeight = elem.find('.section1').outerHeight(true), topMargin = elem.find('.articleImg img').outerHeight(true);
+                topMargin = topMargin ? topMargin : 0;
+                
+                //var posTop = topMargin ? elem.find('.articleImg img').position().top : elem.find('.artText').position().top,
+                var posTop = elem.find('.artText').length > 0 ? elem.find('.artText').position().top : 0,
+                newHeight = posTop + topMargin + 500;
+                if(cType == 200) {
+                    if(elem.find('.section1 .content_type_layer').length == 0) {
+                        elem.find("article").css({
+                            height : newHeight +'px',
+                            overflow : "hidden",
+                            marginBottom : "10px" 
+                        });
+                        elem.find('.section1').append(objContentType.layer());
+                        elem.find('.publish_info').append(objContentType.topSignInCta());
+                        objContentType.showLayer2(msid);
+                    }
+                }
+                setTimeout(function () {
+                    if(topMargin) {
+                        elem.find('.content_type_layer').css('top', topMargin + 250);
+                    }
+                }, 10);
+                
+                window.addEventListener("keydown", function(e) {
+                  // space and arrow keys
+                    if(e.shiftKey == true && [32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                        _log("Shift Key active");
+                        e.preventDefault();
+                    }
+                }, false);
+            }    
+        }catch(e){
+            console.log("Error - "+ e);
+        }
+    },
+    experiment: function () {
+        objUser.afterLoginCall(function () {
+            var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+            var referrerGoogle = document.referrer.indexOf('google') != -1 ? 1 : 0;
+            var oneTapInit = $('script[src*="js_googleslock"]').length;
+            _log('experiment', 'login - ' + _tp_data.isLogged , 'isBot - ' + isBot, 'oneTapInit - ' + oneTapInit);
+            if(!_tp_data.isLogged && window.page && !isBot && !oneTapInit && !referrerGoogle) { // && !oneTapInit
+                $(window).one('scroll', function(event) {
+                    _log('experiment scroll done');
+                    var experimentCookie = $.cookie('_gaexp');
+                    
+                    function valCheck(val) {
+                        var flag = 0;
+                        experimentCookie.split('!').forEach(function (name, j) {
+                            if(name.indexOf(val) != -1 && name.substr(-1) == 1) {
+                                flag = 1;
+                            }
+                        });
+                        return flag;
+                    }
+                    
+                    if(experimentCookie && window.objExp) {
+                        _log('experimentCookie', experimentCookie);
+                        var active = 0;
+                        if(valCheck(objExp.mkt) == 1 && page.subsec1 == '1977021501') {
+                            active = 1;
+                            _log('exp markets active');
+                        } else if(valCheck(objExp.old) == 1 && page.age >= 2 ) {
+                            active = 1;
+                            _log('exp 48 hr active');
+                        } else if(valCheck(objExp.agen) == 1 && page.agency == 'et bureau') {
+                            active = 1;
+                            _log('exp agency active');
+                        }
+                        
+                        if(active) {
+                            ga('set', 'dimension26', page.subsec1Name);
+                            ga('set', 'dimension34', page.age >= 2 ? '> 48 hr' : '0 - 48hr');
+                            ga('set', 'dimension4', page.agency);
+                            
+                            objContentType.showLayer2(page.msid);
+                        }
+                        
+
+                        /*
+                        function implementManyExperiments(value, name) {
+                            var active = 0;
+                            if(value == 1) {
+                                if(name == 'pscAqGQ2SZmS2Tvtt27MjQ' && page.subsec1 == '1977021501') {
+                                    active = 1;
+                                    _log('experiment markets active');
+                                } else if(name == '6TTP9oBfR9e9JLk8TKYYig' && page.age >= 2 ) {
+                                    active = 1;
+                                    _log('experiment 48 hr active');
+                                } else if(name == 'FkqeeiYFSRqL3C4I3sWQ3w' && page.agency == 'et bureau') {
+                                    active = 1;
+                                    _log('experiment agency active');
+                                }
+                                if(active) {
+                                    ga('set', 'dimension26', page.subsec1Name);
+                                    ga('set', 'dimension34', page.age >= 2 ? '> 48 hr' : '0 - 48hr');
+                                    ga('set', 'dimension4', page.agency);
+                                    
+                                    objContentType.showLayer2(page.msid);
+                                }
+                            }
+                        }
+                        // function implementManyExperiments(value, name) {console.log(value, name)}
+                        function gtag() {dataLayer.push(arguments)};
+                        gtag('event', 'optimize.callback', {
+                            callback: implementManyExperiments
+                        });
+                        */
+                        
+                        
+                    }
+                });
+            }
+        });
+        
+        
+        
+    },
+    topSignInCta: function() {
+      var html = '<div class="topSignInCta signInForFullStory" data-impression-ga="ET Login#Content_Banner_top_Impression#url">\
+                        <span class="btn" onclick="sso.login(\'CBS Top CTA\',\'\',\'Sign in Top\');">Sign-in to Read the  Full Story</span>\
+                    </div>';
+        return html;  
+    },
+    layer: function () {
+        var html = '<div class="content_type_layer" data-impression-ga="ET Login#Content_Banner_Impression#url">\
+                        <div class="content_type_bg">\
+                            <div class="content_type_box">\
+                                <p>Full Story Exclusively for Signed-in Readers.</p>\
+                                <span class="btn" onclick="sso.login(\'CBS_Banner\',\'\',\'Sign In\');">Read Full Story</span>\
+                                <div class="cont_signup">New user? <a href="javascript:;" onclick="sso.login(\'CBS_Banner\',\'\',\'Sign Up\');">Sign-up here</a></div>\
+                            </div>\
+                        </div>\
+                    </div>';
+        return html;
+    },
+    showLayer2: function (pgaeMsid) {
+        var msid = pgaeMsid ? pgaeMsid : page.msid;
+        var html  = '<style>\
+            body {z-index: 1; overflow: hidden !important;}\
+            .login_layer2 {position: fixed; bottom: 0; padding: 60px 0 70px; background: #FFF; width: 100%;z-index: 2;}\
+            .layer2_cont {position: fixed; bottom: 0; padding: 60px 0 70px; background: #FFF; width: 100%;z-index: 3;}\
+            .heading{font-size: 32px;font-weight: bold;margin-bottom: 45px;}\
+            .l2_cont{width: 1003px;margin:0 auto;}\
+            .lg_obtn {width: 300px; color: #FFF; border: 0; font-size: 16px; border-radius: 9px; cursor: pointer;}\
+            .lg_gp { background-color: #4285f4; border: solid 2px #4285f4; }\
+            .lg_sprite { background: url(https://img.etimg.com/photo/72381365.cms) no-repeat 0 0; }\
+            .lg_obtn span { display: inline-block; float: left; padding: 5px 0 5px 30px; line-height: 30px; }\
+            .lg_obtn .lg_icon { width: 45px; left: 45px; height: 40px; padding: 0; background-color: #fff; border-radius: 8px 0 0 8px;}\
+            .lg_obtn.lg_gp span { background-position: 14px -198px; }\
+            .lg_fb { background-color: #3664a2; border: solid 2px #3664a2; }\
+            .lg_obtn.lg_fb span { background-position: 16px -166px; }\
+            .lg_obtn+.lg_obtn { margin-left: 30px; }\
+            .lg_sso { color: #000;}\
+            .article_wrap, .newfooter, .login_layer2 ~ .hook-section{position:relative; z-index: 1}\
+            .layer2_bg {top: 0; left: 0; bottom: 0; right: 0; position: fixed; background: #000; background: rgb(255,255,255); background: -moz-linear-gradient(180deg, rgba(255,255,255,0.30015756302521013) 26%, rgba(0,0,0,0.4682247899159664) 85%); background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.30015756302521013) 26%, rgba(0,0,0,0.4682247899159664) 85%); background: linear-gradient(180deg, rgba(255,255,255,0.30015756302521013) 26%, rgba(0,0,0,0.4682247899159664) 85%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1); z-index: 2;}\
+            .login_layer2 ~ section .articlelist_container, .login_layer2 ~ section #scrollTop, .login_layer2 ~ .budgetBlock{ display:none !important; }\
+            .heading{text-align: center;}\
+            .btn_cont{width: 640px; margin: 0 auto;}\
+        </style>\
+            <div class="login_layer2"><div class="layer2_bg"></div><div class="layer2_cont"><div class="l2_cont">\
+            <div class="heading">Sign-in to read this & more such interesting stories</div>\
+            <div class="clearfix no_onetaplogin btn_cont">\
+                <div class="lg_obtn flt lg_gp"><span class="lg_sprite lg_icon"></span><span>Sign in with Google</span></div>\
+                <div class="lg_obtn flt lg_fb"><span class="lg_sprite lg_icon"></span><span>Continue with Facebook</span></div>\
+            </div></div></div>\
+        </div>';
+        // <div class="lg_obtn flt lg_sso" onclick="sso.directSSOLogin()"><span>Sign in with Email or Mobile &nbsp;»</span></div>\
+        $('body .login_layer2').remove();
+        $('body').prepend(html);
+        ga('send', 'event', 'ET Login', 'Content_Banner_Impression', window.location.href);
+        
+        var hAdjust = $('#topNavFixed').height();
+        hAdjust += 200; // masthead and top ad
+        $(window).scrollTop($('.article_block[data-article_id="' + msid + '"]').offset().top - hAdjust);
+        
+        $('.lg_obtn').click(function () {
+            var $this = $(this), type = '';
+            objUserLogin.gaLabel = 'CBS';
+        });
+        
+        
+        sso.directSSOLogin = function () {
+            $.jStorage.set('userlogin_directsso', 1);
+            sso.login('CBS', '', 'SSO Sign in');
+        }
+        ga('send', 'event', 'ET Login', 'Content_Banner_Impression', window.location.href);
+        objUser.loadSsoApi(function () {loadModule({'module_name':'js_login'})});
+        
+    }
+}
+
+function arroundTheWeb(data,container){
+        if(data!=null && typeof data.paidAds != 'undefined' && typeof data.paidAds[0] != 'undefined'){
+        	var hh='';
+        	for(var i=0;i<3;i++){
+        	    hh=hh+'<div class="spotlightBox"><a target="_blank" href="'+data.paidAds[i].clk[0]+'"><img width="210" height="150" src="'+data.paidAds[i].mainimage+'" alt="'+data.paidAds[i].mainimage +'"></a><p><a target="_blank" href="'+ data.paidAds[i].clk[0] +'" title="' + data.paidAds[i].mainimage + '">'+data.paidAds[i].title+'</a><br/><span class="sponsored">'+data.paidAds[i].brandtext+'</span></p></div>';
+        	}
+        	document.getElementById(container).innerHTML =hh;
+        	$('#aroundwebheading').removeClass('hidden');
+        }
+        else{
+            document.getElementById('aroundweb').style.display = "none";
+        }
+    }
+    
+//ipad app experiment popup object start   
+objiPadApp = {
+    init: function () {
+            objiPadApp.showOverlay();
+    },
+    check: function(){
+        var ipadAppPopup=$.jStorage.get("ipadAppPopup");
+            return ipadAppPopup;
+    },
+    flagSet: function (popupTime) {
+	           // OneTapLogins.logGA("popup show flag done");
+	            
+	            $.jStorage.set('ipadAppPopup', 1);
+	            
+	            var currentDate = new Date();
+                currentDate.addDays(1);
+                var a = new Date();
+                var b  = new Date(currentDate.toDateString());
+                if(popupTime=="day"){
+                    
+                    var pendingTo12Pm = (b.getTime() - a.getTime());
+                    //var thresholdDaySec = 4 * 24 * 3600 * 1000; // 4 days
+                    var thresholdDaySec = 0;
+                    
+                    //  current date 12 PM.
+                    $.jStorage.setTTL('ipadAppPopup', (pendingTo12Pm + thresholdDaySec));
+                }else{
+                    
+                    var thresholdDaySec = 365 * 24 * 3600 * 1000;;
+                    
+                    $.jStorage.setTTL('ipadAppPopup', thresholdDaySec );
+                }
+	            
+	        },
+    closePopup: function() {
+        var objBody = document.getElementsByTagName("body")[0];
+            $( objBody ).removeClass("overlayFixPosition");
+        var otiElem = document.getElementsByClassName('ipad-app-sec');
+          if(otiElem.length > 0){
+               otiElem[0].remove();
+          }
+        //$('.ontap-background').remove();
+    },
+    showOverlay: function () {
+        var _body = document.getElementsByTagName('body') [0];
+        $( _body ).addClass( "overlayFixPosition no_onetaplogin" );
+        var overlayHtml = '<style>\
+            .ipad-app-sec .bg-layer{opacity:0.6;background:black;height:100%;width:100%;z-index:9991;position:fixed;top:0}\
+	        .ipad-app-sec .popup-text{position:fixed;bottom:0;background:white;opacity:1;width:100%;z-index: 9992;text-align:center;color: #221e1f;}\
+	        .ipad-app-sec h2{font-size: 24px;font-weight: 900;margin-top: 20px;margin-bottom: 12px;}\
+	        .ipad-app-sec  p{font-size: 16px;line-height: 1.5;font-weight:500}\
+	        .ipad-app-sec .et-logo{background: url(https://img.etimg.com/photo/74687821.cms) no-repeat 0 0; cursor: pointer;width:42px;height:42px;display:inline-block;background-size: cover;}\
+	        .ipad-app-sec .close{background: url(https://img.etimg.com/photo/74687820.cms) no-repeat 0 0; cursor: pointer;width:18px;height:18px;position:absolute;display:inline-block;right:10%;top:0;background-size: cover;}\
+	        .ipad-app-sec .ipad-app-sec-btn{border: #ec1a3a 1px solid;border-radius: 3px;padding: 12px 22px;margin: 10px;margin-top:20px;font-size: 14px;font-weight: bold;margin-bottom:24px;cursor:pointer;}\
+	        .ipad-app-sec .ipad-app-sec-btn.interested{background: #ec1a3a;color: #fff;}\
+	        .ipad-app-sec .ipad-app-sec-btn.not-interested{color: #ec1a3a;}\
+	    </style>\
+	   <section class="ipad-app-sec">\
+	        <div class="bg-layer"></div>\
+	        <div class="popup-text">\
+                <div style="position:relative;margin-top:24px">\
+                    <div class="et-logo"></div>\
+                    <div class="close" id="ipad_app_close"></div>\
+                </div>\
+                <h2>iPad App coming your way</h2>\
+                <p>Be the first to experience the awesomeness.</p>\
+                <button class="ipad-app-sec-btn interested" id="ipad_app_interested">PRE-REGISTER NOW</button>\
+                <button class="ipad-app-sec-btn not-interested" id="ipad_app_not_interested">I M NOT INTERESTED</button>\
+	        </div>\
+	    </section>'
+            
+		    $('body').append(overlayHtml);
+		    $('.ipad-app-sec').show();
+		    
+    },
+    interested: function(){
+        var _body = document.getElementsByTagName('body') [0];
+        $( _body ).addClass( "overlayFixPosition no_onetaplogin" );
+        var otiElem = document.getElementsByClassName('ipad-app-sec');
+          if(otiElem.length > 0){
+               otiElem[0].remove();
+          }
+        var overlayHtml = '<style>\
+            .ipad-app-sec .bg-layer{opacity:0.6;background:black;height:100%;width:100%;z-index:9991;position:fixed;top:0;cursor:pointer}\
+	        .ipad-app-sec .popup-text{position:fixed;bottom:0;background:white;opacity:1;width:100%;z-index: 9992;text-align:center;color: #221e1f;}\
+	        .ipad-app-sec h2{font-size: 24px;font-weight: 900;margin-top: 20px;margin-bottom: 12px;}\
+	        .ipad-app-sec  p{font-size: 16px;line-height: 1.5;font-weight:500}\
+	        .ipad-app-sec .et-logo{background: url(https://img.etimg.com/photo/74687821.cms) no-repeat 0 0; cursor: pointer;width:42px;height:42px;display:inline-block;background-size: cover;}\
+	        .ipad-app-sec .close{background: url(https://img.etimg.com/photo/74687820.cms) no-repeat 0 0; cursor: pointer;width:18px;height:18px;position:absolute;display:inline-block;right:10%;top:0;background-size: cover;}\
+	    </style>\
+	   <section class="ipad-app-sec">\
+	        <div class="interested bg-layer"></div>\
+	        <div class="popup-text" style="height:244px">\
+	            <div style="top: 50%;position: relative;transform: translate(0 , -50%);">\
+                    <div style="position:relative;">\
+                        <div class="et-logo"></div>\
+                        <div class="close" id="ipad_app_close_interested"></div>\
+                    </div>\
+                    <h2>Thank You</h2>\
+                    <p>We will get back to you soon.</p>\
+                </div>\
+	        </div>\
+	    </section>'
+            
+		    $('body').append(overlayHtml);
+		    $('.ipad-app-sec').show();
+    },
+    displayIpad: function(displayType){
+        
+        if(displayType){
+            if(objiPadApp.check()!=1){
+                objiPadApp.init(); //call ipad app object.
+            
+                $(document).on('click touchstart','#ipad_app_close',function(){
+                    objiPadApp.closePopup();
+                    objiPadApp.flagSet('day');
+                    ga('send','event','iPad App Popup','click','removed_'+displayType);
+                });
+                $(document).on('click touchstart','#ipad_app_interested',function(){
+                    objiPadApp.interested();
+                    objiPadApp.flagSet('year');
+                    ga('send','event','iPad App Popup','click','Interested_'+displayType);
+                });
+                $(document).on('click touchstart','#ipad_app_not_interested',function(){
+                    objiPadApp.closePopup();
+                    objiPadApp.flagSet('year');
+                    ga('send','event','iPad App Popup','click','not_interested_'+displayType);
+                });
+                $(document).on('click touchstart','.interested.bg-layer',function(){
+                    objiPadApp.closePopup();
+                });
+                $(document).on('click touchstart','#ipad_app_close_interested',function(){
+                    objiPadApp.closePopup();
+                });
+            }
+        }
+    },
+    iPadExperiment: function(){
+        let displayType = /(Mac)/i.test(navigator.platform)?'Mac':(/(iPad)/i.test(navigator.platform)?'iPad':false);
+        var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+        var referrerGoogle = document.referrer.indexOf('google') != -1 ? 1 : 0
+        _log('experimentiPad', 'isBot - ' + isBot, 'referrerGoogle - ' + referrerGoogle, 'displayType - ' + displayType);
+        if(window.page && !isBot && !referrerGoogle && displayType=='Mac') {
+                var experimentCookie = $.cookie('_gaexp');
+                function valCheck(val) {
+                    var flag = 0;
+                    experimentCookie.split('!').forEach(function (name, j) {
+                        if(name.indexOf(val) != -1 && name.substr(-1) == 1) {
+                            flag = 1;
+                        }
+                    });
+                    return flag;
+                }
+                
+                if(experimentCookie && window.objExp) {
+                    _log('experimentCookie-', experimentCookie);
+                    var active = 0;
+                    if(valCheck(objExp.ipad) == 1) {
+                        active = 1;
+                        _log('exp ipad active');
+                    }
+                    
+                    if(active) {
+                        objiPadApp.displayIpad(displayType);
+                    }
+                }
+            }else{
+                objiPadApp.displayIpad(displayType);
+            }
+    }
+            
+}
+//ipad app experiment popup object end
+
+// Corona widget    
+function corona_tracker_chkbox(msid){
+    if(document.getElementById("togBtn_"+msid).checked == true){
+        document.getElementById("india_data_"+msid).style.display = "none";
+        document.getElementById("world_data_"+msid).style.display = "flex";
+    }
+    else if(document.getElementById("togBtn_"+msid).checked == false){
+        document.getElementById("india_data_"+msid).style.display = "flex";
+        document.getElementById("world_data_"+msid).style.display = "none";
+    }
+};  
+
+// experiment to remove CAN Ads
+function hideCANadsExperiment(msid){
+    
+    if(window.page) {
+        var experimentCookie = $.cookie('_gaexp');
+        function valCheck(val) {
+            var flag = 0;
+            experimentCookie.split('!').forEach(function (name, j) {
+                if(name.indexOf(val) != -1 && name.substr(-1) == 1) {
+                    flag = 1;
+                }
+            });
+            return flag;
+        }
+        
+        if(experimentCookie && window.objExp) {
+            if(valCheck(objExp.canAds) == 1) {
+                _log('exp canAds active');
+                if($('#aroundwebshow-'+msid).length>0){
+                    $('#aroundwebshow-'+msid).remove();
+                }else if($('#div-clmb-ctn-298867-'+msid).length>0){
+                    $('#div-clmb-ctn-298867-'+msid).remove();
+                }
+                $( 'article[data-articleid='+msid+']' ).append( "<div data-ga-impression='Articleshow experiment#Dont Show Ads#CAN Ads'></div>" )
+                return;
+            }else{
+                _log('exp canAds inactive');
+                return;
+            }
+        }
+    }
+}
+    
+    
+	

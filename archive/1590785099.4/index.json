@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.4",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 20:48:24.285545",
+                "start_ts": "2020-05-29 20:48:22.093776",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "Delhi Police On Azan Banned in Masjids Twitter Video: \u2018No Ban\u2019 Clarifies Delhi Police After Cops Claim LG Banned Azaan"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:49:07.875081",
+                "start_ts": "2020-05-29 20:49:02.516448",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thequint.com"
+                ],
+                "end_ts": "2020-05-29 20:48:24.612815",
+                "start_ts": "2020-05-29 20:48:24.285918",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:49:02.516198",
+                "start_ts": "2020-05-29 20:48:56.354384",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:49:17.412113",
+                "start_ts": "2020-05-29 20:49:15.349234",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "https://web.archive.org/web/20200529204916/https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 31,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785304",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:48:56.354237",
+                "start_ts": "2020-05-29 20:48:24.614086",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:49:13.227836",
+                "start_ts": "2020-05-29 20:49:07.875318",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+                ],
+                "end_ts": "2020-05-29 20:49:15.348980",
+                "start_ts": "2020-05-29 20:49:13.228614",
+                "pwd": "/data/archive/1590785099.4",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590785357.419804",
+    "tags": "",
+    "url": "https://www.thequint.com/news/india/delhi-police-azaan-twitter-video-inquiry-launched"
+}

@@ -1,0 +1,194 @@
+{
+    "title": "Marriage postponed in lockdown, youth commits suicide in Bhilai",
+    "url": "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/",
+    "timestamp": "1590766226.59",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:19.963359",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768422",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 17,
+                "start_ts": "2020-05-29 16:07:02.820756",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 16:07:42.188041",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:07:34.777651",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:02.820106",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.patrika.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:07:02.201308",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:27.360575",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:07:19.963518",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:34.777303",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:07:31.451927",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:46.475401",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:07:42.188330",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "https://web.archive.org/web/20200529160743/https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:31.451601",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:07:27.360825",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:07:02.201144",
+                "cmd": [
+                    "curl",
+                    "https://www.patrika.com/bhilai-news/marriage-postponed-in-lockdown-youth-commits-suicide-in-bhilai-6098128/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:06:59.905222",
+                "pwd": "/data/archive/1590766226.59",
+                "output": "Marriage postponed in lockdown, youth commits suicide in Bhilai"
+            }
+        ]
+    },
+    "updated": "1590788177.897289",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

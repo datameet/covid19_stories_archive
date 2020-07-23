@@ -1,0 +1,194 @@
+{
+    "title": "Coronavirus lockdown: Financial problems drive elderly couple to commit suicide in Khammam",
+    "url": "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983",
+    "timestamp": "1590766226.33",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:27.488240",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590767660",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 15:54:20.165734",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:35.351103",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:54:33.256314",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:20.164861",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thehansindia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:54:19.770180",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:29.651678",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:54:27.488653",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:33.255302",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:54:32.472752",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:37.741908",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:54:35.351421",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "https://web.archive.org/web/20200529155436/https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:32.472408",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:54:29.651911",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:54:19.769604",
+                "cmd": [
+                    "curl",
+                    "https://www.thehansindia.com/telangana/coronavirus-lockdown-financial-problems-drive-elderly-couple-to-commit-suicide-in-khammam-622983",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 15:54:19.111782",
+                "pwd": "/data/archive/1590766226.33",
+                "output": "Coronavirus lockdown: Financial problems drive elderly couple to commit suicide in Khammam"
+            }
+        ]
+    },
+    "updated": "1590788140.611666",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

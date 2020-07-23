@@ -1,0 +1,19 @@
+jQuery(window).scroll(function (event) {
+        var y = jQuery(this).scrollTop();
+        if (y >= 800) {
+            jQuery('#nextstory').addClass('js-bottom-story');
+            jQuery("#nextstory").fadeIn();
+            jQuery(".match-score-widget").css("bottom", "90px");
+            jQuery(".world-cup-logo").css("bottom", "90px");
+            jQuery(".white-bg").css("padding-bottom", "90px");
+        } else if(y < 800){
+            jQuery('#nextstory').removeClass('js-bottom-story');  
+            jQuery(".match-score-widget").css("bottom", "0"); 
+            jQuery(".world-cup-logo").css("bottom", "10px");
+            jQuery(".white-bg").css("padding-bottom", "0");
+        }
+    });
+   
+    if( jQuery(window).scrollTop() >= 500 ){
+        jQuery(window).trigger('scroll');
+    }

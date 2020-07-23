@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.72",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "curl",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:28:48.978377",
+                "start_ts": "2020-05-29 21:28:45.635350",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "Government assures help as J&amp;K Gujjars face bocyott - The Economic Times"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:07.423244",
+                "start_ts": "2020-05-29 21:29:04.271587",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=economictimes.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 21:28:49.267870",
+                "start_ts": "2020-05-29 21:28:48.978846",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:04.271338",
+                "start_ts": "2020-05-29 21:29:01.008236",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:13.149158",
+                "start_ts": "2020-05-29 21:29:11.227200",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "https://web.archive.org/web/20200529212912/https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 11,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787729",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:01.007967",
+                "start_ts": "2020-05-29 21:28:49.269678",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms@from=mdr.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:09.747155",
+                "start_ts": "2020-05-29 21:29:07.423486",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:29:11.226948",
+                "start_ts": "2020-05-29 21:29:09.747735",
+                "pwd": "/data/archive/1590785099.72",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787753.152333",
+    "tags": "",
+    "url": "https://economictimes.indiatimes.com/news/politics-and-nation/government-assures-help-as-jk-gujjars-face-bocyott/articleshow/75191827.cms?from=mdr"
+}

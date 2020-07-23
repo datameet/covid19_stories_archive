@@ -1,0 +1,194 @@
+{
+    "title": "In desperation to drink alcohol Jumping from the bridge Worker suicide || \u0bae\u0ba4\u0bc1\u0baa\u0bbe\u0ba9\u0bae\u0bcd \u0b95\u0bc1\u0b9f\u0bbf\u0b95\u0bcd\u0b95 \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bbe\u0ba4 \u0bb5\u0bbf\u0bb0\u0b95\u0bcd\u0ba4\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b95\u0bc1\u0ba4\u0bbf\u0ba4\u0bcd\u0ba4\u0bc1 \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.218",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774615",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:20.912875",
+                "start_ts": "2020-05-29 17:50:15.020590",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:34.007948",
+                "start_ts": "2020-05-29 17:50:32.627816",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.dailythanthi.com"
+                ],
+                "end_ts": "2020-05-29 17:50:15.019263",
+                "start_ts": "2020-05-29 17:50:14.215917",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:26.614261",
+                "start_ts": "2020-05-29 17:50:20.913032",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:32.627026",
+                "start_ts": "2020-05-29 17:50:30.174660",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:35.797871",
+                "start_ts": "2020-05-29 17:50:34.008212",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "https://web.archive.org/web/20200529175035/https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+                ],
+                "end_ts": "2020-05-29 17:50:30.174402",
+                "start_ts": "2020-05-29 17:50:26.614510",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:50:14.215643",
+                "start_ts": "2020-05-29 17:50:13.568305",
+                "pwd": "/data/archive/1590766226.218",
+                "output": "In desperation to drink alcohol Jumping from the bridge Worker suicide || \u0bae\u0ba4\u0bc1\u0baa\u0bbe\u0ba9\u0bae\u0bcd \u0b95\u0bc1\u0b9f\u0bbf\u0b95\u0bcd\u0b95 \u0bae\u0bc1\u0b9f\u0bbf\u0baf\u0bbe\u0ba4 \u0bb5\u0bbf\u0bb0\u0b95\u0bcd\u0ba4\u0bbf\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0b87\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b95\u0bc1\u0ba4\u0bbf\u0ba4\u0bcd\u0ba4\u0bc1 \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8"
+            }
+        ]
+    },
+    "updated": "1590788298.911685",
+    "tags": "",
+    "url": "https://www.dailythanthi.com/Districts/Chennai/2020/04/01044008/In-desperation-to-drink-alcohol-Jumping-from-the-bridge.vpf"
+}

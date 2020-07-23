@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Common Tracking Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39249489-14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-39249489-14');
+</script>    <meta name="atdlayout" content="home" /> <!--Automatad-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Latest News | Breaking News | Audio News | Kerala News | India News | World News | Politics | Movies | Travel | Cartoons | Photogallery | Kerala Kaumudi Online</title>
+    <meta name="description" content="Latest News, Breaking News, Audio News, Kerala News, India News, World News, Politics, Cinema, Travel, Cartoons, Photogallery. Kerala Kaumudi is a Prominent Malayalam language daily newspaper published from Kerala, India with the latest news on Kerala, India, World, Politics, Current Affairs, Travel, Cinema, Food, Latest Kerala News, Malayalam News, Kerala Politics, India Politics, Malayalam Cinema, Cinema Reviews, Audio News" />
+    <meta name="keywords" content="Latest News,Audio News,Kerala,Kerala Politics,Local,National,World,Gulf,Europe,Social Media,America,Sports,Business,Case Diary,Editorial,Interviews,Photos,Videos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="ACAP allow-index" />
+    <meta name="author" content="Kerala Kaumudi Online" />
+    <meta name="title" content="Kerala Kaumudi Online" />
+    <meta name="DC.title" content="Kerala Kaumudi Online" />
+    <link rel="alternate" type="application/rss+xml" title="keralakaumudi.topstories.rssfeed" href="https://keralakaumudi.com/rss/topstories"/>
+    <link rel="alternate" type="application/rss+xml" title="keralakaumudi.topstories.appsfeed" href="https://keralakaumudi.com/rss/topstories"/>
+    <meta name="theme-color" content="#616161" />
+<meta name="msapplication-navbutton-color" content="#616161" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#616161" />
+<style>
+    @font-face {
+        font-family: 'kfont';
+        src: url("fonts/Kaumudi.eot");
+        src: url("fonts/Kaumudi.eot") format("embedded-opentype"), url("fonts/Kaumudi.ttf") format("truetype"), url("fonts/Kaumudi.woff") format("woff"), url("fonts/Kaumudi.svg") format("svg");
+    }
+    .bullet { background-position: top 1px left!important; }
+</style>
+<link href="https://keralakaumudi.com/news/mobile/css/custom.css?v=3.5" rel="stylesheet">
+<style> 
+                .menu-wrap ul li a.active { background: #ff4e01; } 
+                .menu-child ul li a.active { background: #ff4e01; } 
+                .menu-child ul li a { background: #ff4e0140; } 
+                .head-section-title font { color: #ff4e01!important; }                
+          </style><!--google login-->
+<meta name="google-signin-client_id" content="770574095765-mg38hv12gean5anll4jm8jko1n7cj0l5.apps.googleusercontent.com" />
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+      <!--Automatad--> 
+      <script type="text/javascript" src="https://go.automatad.com/geo/PXfvBq/afihbs.js" async></script>
+      <!--Taboola-->
+      <script type="text/javascript">
+          window._taboola = window._taboola || [];
+          _taboola.push({home:'auto'});
+          !function (e, f, u, i) {
+            if (!document.getElementById(i)){
+              e.async = 1;
+              e.src = u;
+              e.id = i;
+              f.parentNode.insertBefore(e, f);
+            }
+          }(document.createElement('script'),
+          document.getElementsByTagName('script')[0],
+          '//cdn.taboola.com/libtrc/keralakaumudi-network/loader.js',
+          'tb_loader_script');
+          if(window.performance && typeof window.performance.mark == 'function')
+            {window.performance.mark('tbl_ic');}
+      </script>
+      <!--DATAWRKZ-->
+      <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+      <script>
+         var googletag = googletag || {};
+         googletag.cmd = googletag.cmd || [];
+      </script>
+      <script>
+          googletag.cmd.push(function () {
+           //googletag.defineSlot('/229445249/DWTag-DFPNew_RS70_KeralaKaumudi_Banner_300x250_2_140220', [300, 250], 'div-gpt-ad-1581675410939-0').addService(googletag.pubads());
+           googletag.defineSlot('/1027999/KK_Matrimony_Homepage', [300, 300], 'div-gpt-ad-1590379377521-0').addService(googletag.pubads());
+           googletag.defineSlot('/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_728x90_290617', [728, 90], 'div-gpt-ad-1538730035888-0').addService(googletag.pubads());
+	       googletag.defineSlot('/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_300x250_290617', [300, 250], 'div-gpt-ad-1538730145130-0').addService(googletag.pubads());
+	       googletag.defineSlot('/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_300x250_2_290617', [300, 250], 'div-gpt-ad-1538730222282-0').addService(googletag.pubads());
+	       googletag.defineSlot('/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_300x250_3_290617', [300, 250], 'div-gpt-ad-1538730306298-0').addService(googletag.pubads());
+	       googletag.defineSlot('/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_300x250_300x600_051018', [[300, 250], [300, 600]], 'div-gpt-ad-1538730463028-0').addService(googletag.pubads());
+           googletag.defineOutOfPageSlot('/36888185/DWTag-DFPOld_Keralakaumudi_InFooter_OOP', 'div-gpt-ad-1538730361771-0').addService(googletag.pubads());
+           googletag.pubads().enableSingleRequest();
+           googletag.pubads().collapseEmptyDivs();
+           googletag.enableServices();
+         });
+      </script>
+      <script>
+	    !function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+	    apstag.init({
+	         pubID: '8ad2aae8-3f86-43e5-ba8d-47d42f48959d',
+	         adServer: 'googletag'
+	    });
+	    apstag.fetchBids({
+	         slots: [{
+	             slotID: 'div-gpt-ad-1538730035888-0',
+	             slotName: '/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_728x90_290617',
+	             sizes: [[728,90]]
+	         },
+	         {
+	             slotID: 'div-gpt-ad-1538730145130-0',
+	             slotName: '/36888185/DWTag-DFPOld_RS70_KeralaKaumudi_Banner_300x250_290617',
+	             sizes: [[300,250]]
+	         }],
+	         timeout: 2e3
+	    }, function(bids) {
+	         googletag.cmd.push(function(){
+	             apstag.setDisplayBids();
+	             googletag.pubads().refresh();
+	         });
+	    });
+      </script>
+      <script type="text/javascript" src="https://adunits.datawrkz.com/tms/data/placement/placement_403.min.js"></script>
+      <script type="text/javascript" src="https://adunits.datawrkz.com/tms/data/placement/placement_445.min.js"></script>   
+</head>
+  <body> 
+      <!--Leftside Menu-->
+<div class="slide-menu" data-isvisible="false" style="width:0px;">
+    <div class="nav-side-menu">
+        <div class="brand">SECTIONS <span class="close-menu">✖ CLOSE</span></div>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                    <a href="/news/mobile/"><img style="width:13px;margin-top:-2px;" src="images/home.png"> HOME</a>
+                </li>
+                <li>
+                    <a href="latest.php"><img style="width:13px;margin-top:-2px;" src="images/latest.png"> LATEST</a>
+                </li>
+                <li>
+                    <a href="audio.php"><img style="width:13px;margin-top:-2px;" src="images/audio-icon.png"> AUDIO</a>
+                </li>
+                <li>
+                    <a href="notified-news.php"><img style="width:13px;margin-top:-2px;" src="images/bell.png"> NOTIFIED NEWS</a>
+                </li>
+                <li>
+                    <a href="poll-archives.php"><img style="width:13px;margin-top:-2px;" src="images/poll.png"> POLL</a>
+                </li>
+                                    <li data-target="#1">
+                        <a href="section.php?cid=9">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/9/111249.jpeg">
+                            KERALA                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="1">                              
+                                                        <li><a href="timeline.php?cid=9">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=9&sid=75">❱ GENERAL</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=9&sid=76">❱ POLITICS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=9&sid=77">❱ SPECIAL</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=9&sid=79">❱ INFORMATION</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=9&sid=107">❱ SOCIAL MEDIA</a></li>
+                                            </ul>
+                                    <li data-target="#2">
+                        <a href="section.php?cid=11">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/11/111817.jpeg">
+                            LOCAL                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="2">                              
+                                                        <li><a href="timeline.php?cid=11">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=30">❱ THIRUVANANTHAPURAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=31">❱ KOLLAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=33">❱ PATHANAMTHITTA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=32">❱ ALAPPUZHA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=34">❱ KOTTAYAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=35">❱ IDUKKI</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=36">❱ ERNAKULAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=37">❱ THRISSUR</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=38">❱ PALAKKAD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=39">❱ MALAPPURAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=40">❱ KOZHIKODE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=41">❱ WAYANAD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=42">❱ KANNUR</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=11&sid=43">❱ KASARGOD</a></li>
+                                            </ul>
+                                    <li data-target="#3">
+                        <a href="section.php?cid=40">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/40/195403.png">
+                            NEWS 360                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="3">                              
+                                                        <li><a href="timeline.php?cid=40">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=153">❱ NATIONAL</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=154">❱ WORLD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=155">❱ GULF</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=156">❱ EUROPE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=157">❱ AMERICA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=158">❱ SPORTS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=40&sid=180">❱ BUSINESS</a></li>
+                                            </ul>
+                                    <li data-target="#4">
+                        <a href="section.php?cid=41">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/41/201356.png">
+                            CASE DIARY                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="4">                              
+                                                        <li><a href="timeline.php?cid=41">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=41&sid=159">❱ KERALA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=41&sid=160">❱ INDIA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=41&sid=161">❱ WORLD</a></li>
+                                            </ul>
+                                    <li data-target="#5">
+                        <a href="section.php?cid=4">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/4/110255.jpeg">
+                            CINEMA                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="5">                              
+                                                        <li><a href="timeline.php?cid=4">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=4&sid=1">❱ NEWS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=4&sid=2">❱ REVIEW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=4&sid=3">❱ INTERVIEW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=4&sid=208">❱ MOHANLAL@60</a></li>
+                                            </ul>
+                                    <li data-target="#6">
+                        <a href="section.php?cid=6">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/6/110541.jpeg">
+                            OPINION                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="6">                              
+                                                        <li><a href="timeline.php?cid=6">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=4">❱ EDITORIAL</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=5">❱ COLUMNS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=6">❱ FEATURE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=7">❱ INTERVIEW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=9">❱ VARAVISHESHAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=115">❱ SAMY'S CORNER</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=6&sid=8">❱ LETTERS</a></li>
+                                            </ul>
+                                    <li data-target="#7">
+                        <a href="https://keralakaumudi.com/news/mobile/covid-tracker.php?cid=51">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/51/053014.png">
+                            COVID-19                        </a>
+                                                      
+                    </li>
+                                        <li data-target="#8">
+                        <a href="https://keralakaumudi.com/photogallery/?t=452901035">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/16/133132.png">
+                            PHOTOS                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="8">                              
+                                               
+                        <li><a href="https://keralakaumudi.com/photogallery/day-in-pics?t=1517243663">❱ DAY IN PICS</a></li>
+                                               
+                        <li><a href="https://keralakaumudi.com/photogallery/arts-and-culture?t=1283266043">❱ ARTS & CULTURE</a></li>
+                                               
+                        <li><a href="https://keralakaumudi.com/photogallery/shoot-at-sight?t=1140295282">❱ SHOOT @ SIGHT</a></li>
+                                               
+                        <li><a href="https://keralakaumudi.com/photogallery/sports?t=876592500">❱ SPORTS</a></li>
+                                               
+                        <li><a href="https://keralakaumudi.com/photogallery/specials?t=1363477777">❱ SPECIALS</a></li>
+                                            </ul>
+                                    <li data-target="#9">
+                        <a href="section.php?cid=1">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/1/100626.png">
+                            VIDEOS                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="9">                              
+                                                        <li><a href="timeline.php?cid=1">❱ TIMELINE</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=109">❱ DAY WITH A STAR</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=108">❱ OH MY GOD</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=45">❱ SNAKE MASTER</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=129">❱ HEADLINES</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=123">❱ FILM REVIEW</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=131">❱ FILM FDFS</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=111">❱ NERKKANNU</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=120">❱ KERALA 360</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=112">❱ DREAM DRIVE</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=149">❱ MAHAGURU</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=205">❱ MAKEOVER</a></li>
+                                                                   <li>
+                        <a href="video.php?cid=1">❱ ePAPER VIDEO</a>
+                    </li>
+                    
+                        <li><a href="sub-section.php?cid=1&sid=206">❱ POTTAS SERIES</a></li>
+                                            </ul>
+                                    <li data-target="#10">
+                        <a href="section.php?cid=8">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/8/110954.jpeg">
+                            LIFESTYLE                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="10">                              
+                                                        <li><a href="timeline.php?cid=8">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=181">❱ HEALTH</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=60">❱ KAUTHUKAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=185">❱ FINANCE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=62">❱ FOOD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=65">❱ TRAVEL</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=64">❱ TECH</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=61">❱ MY HOME</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=66">❱ SHE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=63">❱ BEAUTY</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=163">❱ AUTO</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=70">❱ AGRICULTURE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=8&sid=182">❱ KIDS CORNER</a></li>
+                                            </ul>
+                                    <li data-target="#11">
+                        <a href="section.php?cid=42">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/42/203520.png">
+                            SPIRITUAL                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="11">                              
+                                                        <li><a href="timeline.php?cid=42">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=164">❱ MAHAGURU</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=165">❱ MAYILPEELI</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=166">❱ GURUPRAKASHAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=167">❱ GURUMARGAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=168">❱ MANAVADARSHANAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=169">❱ AKAMARIVU</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=170">❱ NERVAZHI</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=171">❱ TEMPLE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=42&sid=172">❱ RITUALS</a></li>
+                                            </ul>
+                                    <li data-target="#12">
+                        <a href="section.php?cid=43">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/43/204643.png">
+                            INFO+                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="12">                              
+                                                        <li><a href="timeline.php?cid=43">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=43&sid=173">❱ CAREER</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=43&sid=174">❱ GK</a></li>
+                                            </ul>
+                                    <li data-target="#13">
+                        <a href="section.php?cid=47">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/47/114433.jpeg">
+                            WORLD CUP 2019                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="13">                              
+                                                        <li><a href="timeline.php?cid=47">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=47&sid=184">❱ NEWS</a></li>
+                                            </ul>
+                                    <li data-target="#14">
+                        <a href="section.php?cid=48">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/48/032553.jpeg">
+                            GENERAL BUDGET 2019                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="14">                              
+                                                        <li><a href="timeline.php?cid=48">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=48&sid=190">❱ NEWS</a></li>
+                                            </ul>
+                                    <li data-target="#15">
+                        <a href="section.php?cid=44">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/44/205311.png">
+                            NOVEL                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="15">                              
+                                                        <li><a href="timeline.php?cid=44">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=44&sid=177">❱ RED</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=44&sid=178">❱ PINK POLICE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=44&sid=203">❱ NIGRAHAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=44&sid=204">❱ AMMA ARIYATHE</a></li>
+                                            </ul>
+                                    <li data-target="#16">
+                        <a href="section.php?cid=49">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/49/035827.jpeg">
+                            KALOLSAVAM 2019                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="16">                              
+                                                        <li><a href="timeline.php?cid=49">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=49&sid=191">❱ NEWS</a></li>
+                                            </ul>
+                                    <li data-target="#17">
+                        <a href="section.php?cid=45">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/45/205723.png">
+                            ART                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="17">                              
+                                                        <li><a href="timeline.php?cid=45">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=45&sid=179">❱ NEWS</a></li>
+                                            </ul>
+                                    <li data-target="#18">
+                        <a href="javascript:void(0);">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/10/111656.jpeg">
+                            OBIT                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="18">                              
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=16">❱ THIRUVANANTHAPURAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=17">❱ KOLLAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=18">❱ ALAPPUZHA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=19">❱ PATHANAMTHITTA</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=20">❱ KOTTAYAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=21">❱ IDUKKI</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=22">❱ ERNAKULAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=23">❱ THRISSUR</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=24">❱ PALAKKAD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=25">❱ MALAPPURAM</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=26">❱ KOZHIKODE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=27">❱ WAYANAD</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=28">❱ KANNUR</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=10&sid=29">❱ KASARGOD</a></li>
+                                            </ul>
+                                    <li data-target="#19">
+                        <a href="section.php?cid=2">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/2/105906.jpeg">
+                            ASTRO                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="19">                              
+                                                        <li><a href="timeline.php?cid=2">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=2&sid=47">❱ WEEKLY PREDICTIONS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=2&sid=48">❱ YOURS TOMORROW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=2&sid=49">❱ YOURS TODAY</a></li>
+                                            </ul>
+                                    <li data-target="#20">
+                        <a href="https://keralakaumudi.com/cartoon/?t=2002310975">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/31/091314.png">
+                            CARTOONS                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="20">                              
+                                               
+                        <li><a href="https://keralakaumudi.com/cartoon/political-cartoon?t=619233231">❱ POLITICAL CARTOON</a></li>
+                                               
+                        <li><a href="https://keralakaumudi.com/cartoon/pocket-cartoon?t=211943505">❱ POCKET CARTOON</a></li>
+                                            </ul>
+                                    <li data-target="#21">
+                        <a href="section.php?cid=46">
+                            <img style="width:13px;margin-top:-2px;" src="../../static/category/46/102751.png">
+                            LITERATURE                        </a>
+                        <span class="arrow"></span>                              
+                    </li>
+                                      
+                    <ul class="sub-menu hide" id="21">                              
+                                                        <li><a href="timeline.php?cid=46">❱ TIMELINE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=186">❱ BOOK RELEASE</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=187">❱ BOOK REVIEW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=188">❱ NEWS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=189">❱ CREATIVE WORKS</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=192">❱ INTERVIEW</a></li>
+                                               
+                        <li><a href="sub-section.php?cid=46&sid=193">❱ FEATURE</a></li>
+                                            </ul>
+                            </ul>
+        </div>
+    </div>
+</div>
+<div class="slide-menu-bg" style="display:none">&nbsp;</div>
+<!--Leftside Menu Ends--><!-- Header Strip -->
+<div class="container-fluid bg-blue header-strip">
+    <div class="container" style="overflow: visible;">
+        <div class="head-left no-padding">
+            <ul class="header-strip-list">
+                <li><a class="header-strip-btn toggle-sections" href="javascript:void(0);"><img src="images/section-ico.png" title="Kerala Kaumudi Online" alt="Kerala Kaumudi Online" width="24" height="15" /></a></li>                
+            </ul>
+        </div>
+        <div class="head-right no-padding">
+            <ul class="header-strip-list pull-right"> 
+                 <li>
+                    <a href="https://keralakaumudi.com/en/news/">
+                        <span style="background: #f00;color: #FFF;padding: 4px 5px 4px 5px;">ENGLISH </span>
+                    </a>
+                </li>
+                <li><a href="https://keralakaumudi.com/epaper/article"><span style="background: #068dd4;color: #FFF;padding: 4px 5px 4px 5px;">E-PAPER</span> </a></li>	 
+                <li><a href=""><span style="background: #068dd4;color: #FFF;padding: 4px 5px 4px 5px;">CAL 2020</span> </a></li>           
+                <li><a class="header-strip-btn" href="javascript:void(0);" id="trigger-search" style="margin-right:0;"><img src="images/search-ico.png" title="Kerala Kaumudi Online" alt="Kerala Kaumudi Online" width="16" height="15" /></a></li>
+                <li style="display:none;">
+                                       
+                    <a class="header-strip-btn" href="javascript:void(0);" id="signin-btn" style="margin-left:5px; margin-right:0; padding-right:2px; padding-left:2px;">
+
+                        <img class="user-image" src="images/user-icon.png" onerror="this.src = 'images/user-icon.png'" />
+                    </a>
+                                    </li>
+             </ul>                        
+        </div>
+    </div>
+    <div id="search-wrap">
+        <gcse:search></gcse:search>
+    </div>
+</div>
+<!--Login model-->
+<div class="modal fade in" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="tabs" class="login-box">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a href="#1b" data-toggle="tab" style="padding-bottom: 2px;" aria-expanded="true">LOGIN</a>
+                    </li>
+                    <li class="">
+                        <a href="#2b" data-toggle="tab" style="padding-bottom: 2px;" aria-expanded="false">REGISTER FREE</a>
+                    </li>
+                </ul>
+                <div class="tab-content clearfix">
+                    <!--Tab #1 - Register-->
+                    <div class="tab-pane active" id="1b">
+                        <div class="full-width">
+                            <div class="alert alert-success hidden" id="login_success_msg"></div>
+                        </div>
+                        <div class="full-width">
+                            <div class="alert alert-warning hidden" id="error_msg"></div>
+                        </div>
+                        <form action="/" name="login_form" id="login_form" autocomplete="off" novalidate="" style="padding:18px;" method="post" accept-charset="utf-8">
+                            <div class="row" style="margin-top: 7px;">
+                                <span class="inp-label">Email</span>
+                                <span class="inp-box">
+                                    <input type="email" class="form-control" minlength="3" maxlength="150" name="profile_name" id="user_mail" value="" required />
+                                </span>
+                            </div>
+                            <div class="row" style="margin-top: 7px;">
+                                <span class="inp-label">Password</span>
+                                <span class="inp-box">
+                                    <input type="password" class="form-control" minlength="3" maxlength="150" name="profile_name" id="user_pass" value="" required />
+                                </span>
+                            </div>
+                            <div class="row btn-row text-center">
+                                <button type="button" class="btn btn-reg ladda-button" id="login_btn" data-style="zoom-in">
+                                    <span class="ladda-label">
+                                        <b>LOGIN</b>
+                                    </span>
+                                    <span class="ladda-spinner"></span>
+                                </button>
+                                <a href="javascript:void(0)" class="forgot-pass" data-toggle="modal" id="forgotPopup">Forgot your password ?</a>
+                                <p class="separator">OR</p>
+                                <a class="btn btn-fb 2" id="fblogin-btn" onclick="fbLogin()" style="margin-top: 16px;">
+                                    <i class="fa fa-facebook"></i>
+                                    &nbsp;Login With Facebook
+                                </a>
+                                <a class="btn btn-gplus" id="googLogin">
+                                    <i class="fa fa-google"></i>
+                                    Login With Google
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Tab #2 - Search Matches-->
+                    <div class="tab-pane" id="2b">
+                        <form action="/" name="register_form" id="register_form" autocomplete="off" novalidate="" style="padding:18px;" method="post" accept-charset="utf-8">
+                            <div class="full-width">
+                                <div class="alert alert-success hidden" id="reg_msg"></div>
+                            </div>
+                            <div class="full-width">
+                                <div class="alert alert-warning hidden" id="rgerr_msg"></div>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Name</span>
+                                <span class="reginp-box">
+                                    <input type="text" class="form-control" minlength="3" maxlength="150" name="profile_name" id="reg_name" value="" required />
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Email</span>
+                                <span class="reginp-box">
+                                    <input type="email" class="form-control" minlength="3" maxlength="150" name="profile_name" id="reg_email" value="" required />
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Mobile</span>
+                                <span class="reginp-box">
+                                    <input type="text" class="form-control" minlength="3" maxlength="150" name="profile_name" id="reg_mobile" value="" required />
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Password</span>
+                                <span class="reginp-box">
+                                    <input type="password" class="form-control" minlength="3" maxlength="150" name="profile_name" id="reg_pass" value="" required />
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Confirm Password</span>
+                                <span class="reginp-box">
+                                    <input type="password" class="form-control" minlength="3" maxlength="150" name="profile_name" id="reg_confm_pass" value="" required />
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="reginp-label">Profile Photo</span>
+                                <span class="reginp-box">
+                                    <input type="file" class="form-control" name="profile_name" id="profile_img" value="" required />
+                                </span>
+                            </div>
+                            <div class="row btn-row">
+
+                                <button type="button" class="btn btn-reg ladda-button" id="reg_btn" data-style="zoom-in">
+                                    <span class="ladda-label">
+                                        <b>REGISTER</b>
+                                    </span>
+                                    <span class="ladda-spinner"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--forgot password-->
+<div class="modal fade" id="forgotModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="padding:5px;background:#013a6d;border-radius:4px 4px 0 0;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="ploader" style="width: 200px;margin: 0 auto;"></div>
+                <p style="display:none;" id="info-body"></p>
+                <div class="width-100 pull-left">
+                    <input type="text" class="form-control" placeholder="Registered mobile no. / Registered email ID" name="forgot_password" id="forgot_password" value="" />
+                </div>
+                <div class="width-100 pull-left" style="padding-top:5px;">
+                    <!--<div class="modal-footer">
+                            <button type="button" class="btn btn-default" name="reset-btn" id="reset_password">RESET</button>
+                        </div>-->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <style>
+                        .close {
+                            color: #FFF !important;
+                            opacity: 1 !important;
+                        }
+                </style>
+                <button type="button" class="btn btn-default" name="reset-btn" id="reset_password">RESET</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<<login model-->
+<a class="g-signin2" data-onsuccess="onSignIn" style="top:-40px;position:absolute;">SignIn</a>
+      
+      <!-- Logo Part -->
+      <div class="container logo-wrap">
+          <div class="row">
+              <div class="logo-part">
+                  <img src="images/logo.png" alt="Kerala Kaumudi Online" title="Kerala Kaumudi Online" />
+                  <div class="head-time-deta">Saturday, 30 May 2020 12.47 AM IST</div>
+              </div>              
+          </div>
+      </div>
+    
+    <!--Main Container-->
+    <div class="container">
+        <!--<div class="full-width">
+            <a href="https://keralakaumudi.com/news/sub-section.php?cid=4&sid=208" target="_blank">
+                <img src="/static/web-slug/mohanlal-at-60-kerala-kaumudi-online.jpeg" alt="Kerala Kaumudi Online Mohanlal Birthday Mohanlal at 60" title="Kerala Kaumudi Online Mohanlal Birthday Mohanlal at 60" width="100%" />
+            </a>
+        </div>-->
+
+                		
+                         
+        <!--[P1]-->   
+<div class="full-width no-padding mar-btm-10">
+    <!--BOX 1 + 2-->
+    <div class="full-width mar-btm-10">
+        <!--BOX-1-->
+                <div class="no-padding lg-mainstory-box1">
+            <!--mainstory-image-->
+            <div class="full-width no-padding">
+                <div class="full-width no-padding mar-btm-10">
+                    <a href="news.php?id=313917&u=national"><img src="../../web-news/2020/05/NMAN0149031/image/covid.1590773536.jpg" class="img-responsive" onerror="this.src='images/default.gif'" /></a>
+                    <span class="label" style="border-radius: 0;">NATIONAL NEWS</span>
+                </div>
+                <!--mainstory-contents-->
+                <div class="full-width no-padding">
+                    <div class="full-width no-padding">
+                        <div class="ms-mr-news-info">
+                            <font color="#F1452A">national</font>
+                             | 47 MIN  AGO                        </div>
+                        <div class="full-width main-story-title l3-big no-padding">
+                            <a href="news.php?id=313917&u=national">
+                                ഇന്ത്യ അഞ്ചാം ലോക് ഡൗണിലേക്ക്: കുതിച്ചുയർന്ന് കൊവിഡ്                            </a>
+                        </div>
+                        <div class="full-width main-story-desc no-padding l3">
+                            <a href="news.php?id=313917&u=national">
+                                ന്യൂഡൽഹി: നാലാംഘട്ട ലോക് ഡൗൺ നാളെ അവസാനിക്കാനിരിക്കെ ഇന്ത്യ കൊവിഡ് കേസുകളുടെ എണ്ണത്തിൽ തുർക്കിയെയും മരണത്തിൽ ചൈനയെയും മറികടന്നത് രാജ്യത്ത് രോഗവ്യാപനം രൂക്ഷമാകുന്നതിന്റെ തെളിവാണ്.                            </a>
+                        </div>
+                    </div>
+                    <!--PANEL-NEWS-SECTION = 1-->
+                                        <div class="full-width main-story-most-read no-padding">
+                        <div class="full-width ms-mr-title"></div>
+                        <!--news -1-->
+                                                <div style="margin-bottom: 10px;margin-top: 20px;" class="full-width ms-mr-wrap no-padding">
+                            <div class="no-padding ms-mr-news-img">
+                                <a href="news.php?id=313757&u=indian-economy-in-crisis">
+                                    <img src="../../web-news/2020/05/NMAN0149026/image/thumb-sm/indian-economy.1.617929.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="ms-mr-news-title left">
+                                <div class="ms-mr-news-info">
+                                    <font color="#F1452A">national</font> | May 29                                </div>
+                                <a href="news.php?id=313757&u=indian-economy-in-crisis" class="l3-sm">
+                                    രാജ്യത്തിന്റെ ജി.ഡി.പി വളർച്ച പതിനൊന്ന് വർഷത്തെ ഏറ്റവും താഴ്ന്ന നിരക്കിൽ: എന്നാൽ കൊവിഡിനെയോ ലോക്ക്ഡൗണിനെയോ കുറ്റപ്പെടുത്താനാകില്ല, വരാനിരിക്കുന്നത് വൻ സാമ്പത്തിക പ്രതിസന്ധിയെന്ന് സൂചന                                </a>
+                            </div>
+                        </div>
+                                                <div style="margin-bottom: 10px;margin-top: 20px;" class="full-width ms-mr-wrap no-padding">
+                            <div class="no-padding ms-mr-news-img">
+                                <a href="news.php?id=313652&u=man-files-plea-in-supreme-court-to-change-the-name-of-the-country">
+                                    <img src="../../web-news/2020/05/NMAN0149005/image/thumb-sm/india.1.617782.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="ms-mr-news-title left">
+                                <div class="ms-mr-news-info">
+                                    <font color="#F1452A">national</font> | May 29                                </div>
+                                <a href="news.php?id=313652&u=man-files-plea-in-supreme-court-to-change-the-name-of-the-country" class="l3-sm">
+                                    'ഇന്ത്യയെന്നല്ല, 'ഭാരതം' അല്ലെങ്കിൽ 'ഹിന്ദുസ്ഥാൻ', അങ്ങനെ വേണം പറയാൻ': രാജ്യസ്നേഹത്തിനായി ഇന്ത്യൻ ഭരണഘടനയിൽ കേന്ദ്രം തിരുത്ത് വരുത്തണം, സുപ്രീം കോടതിയിൽ ഹർജി                                </a>
+                            </div>
+                        </div>
+                                           
+                    </div>                       
+                </div>
+            </div>
+        </div>
+        <!--BOX-2-->
+        <div class="no-padding full-width">
+            <div class="full-width ms-newslists-heading" style="margin-bottom:5px;">
+                TOP STORIES
+            </div>
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=313897&u=sivagiri">
+                        <img src="../../web-news/2020/05/NTVM0227506/image/thumb-sm/sivagiri.1590772629.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 30                    </div>
+                    <a href="news.php?id=313897&u=sivagiri" class="l3-sm">
+                        ശിവഗിരി ടൂറിസം സർക്യൂട്ട് 
+പദ്ധതി കേന്ദ്രസർക്കാർ റദ്ദാക്കി                    </a>
+                </div>
+            </div>
+
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=313881&u=covid-death-in-alappuzha">
+                        <img src="../../web-news/2020/05/NMAN0149040/image/thumb-sm/covid-death.1.618023.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 29                    </div>
+                    <a href="news.php?id=313881&u=covid-death-in-alappuzha" class="l3-sm">
+                        സംസ്ഥാനത്ത് വീണ്ടും കൊവിഡ് മരണം: മരിച്ചത് അബുദാബിയിൽ നിന്നുമെത്തിയ ആലപ്പുഴ സ്വദേശി                    </a>
+                </div>
+            </div>
+
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=313771&u=security-killed">
+                        <img src="../../web-news/2020/05/NPKD0020828/image/thumb-sm/murder.1.618139.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 30                    </div>
+                    <a href="news.php?id=313771&u=security-killed" class="l3-sm">
+                        വനിതാ ഹോസ്റ്റലിലെ കാവൽക്കാരനെ
+അജ്ഞാതൻ തലയ്ക്കടിച്ച് കൊന്നു                    </a>
+                </div>
+            </div>
+
+                        <!--300*250 AD-->
+            <div class="full-width no-padding a-300-250" style="margin:10px 0;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300x250, created 31/10/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-6893276202082753"
+     data-ad-slot="9379448668"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>            </div>
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=313671&u=national">
+                        <img src="../../web-news/2020/05/NDLH0001565/image/thumb-sm/ajith-jogi.1590763931.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">national</font> | May 30                    </div>
+                    <a href="news.php?id=313671&u=national" class="l3-sm">
+                        അജിത് ജോഗി അന്തരിച്ചു                    </a>
+                </div>
+            </div>
+
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=313638&u=rain">
+                        <img src="../../web-news/2020/05/NTVM0227416/image/thumb-sm/rain.1590760469.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 30                    </div>
+                    <a href="news.php?id=313638&u=rain" class="l3-sm">
+                        ജൂൺ ഒന്നു വരെ ശക്തമായ മഴ                    </a>
+                </div>
+            </div>
+
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=314008&u=kerala">
+                        <img src="../../web-news/2020/05/NMLP0025308/image/thumb-sm/acccident.1590776959.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 29                    </div>
+                    <a href="news.php?id=314008&u=kerala" class="l3-sm">
+                        താനൂരിൽ കിണറിടിഞ്ഞ്  രണ്ട്
+തൊഴിലാളികൾക്ക്  ദാരുണാന്ത്യം                    </a>
+                </div>
+            </div>
+
+            
+                        <div class="full-width ms-newslists no-padding">
+                <div class="lg-ms-box2-img ">
+                    <a href="news.php?id=314004&u=online-class">
+                        <img src="../../web-news/2020/05/NTVM0227454/image/thumb-sm/online-class.1.618158.jpg" onerror="this.src='images/default.gif'" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title ">
+                    <div class="ms-mr-news-info ">
+                        <font color="#F1452A">general</font> | May 29                    </div>
+                    <a href="news.php?id=314004&u=online-class" class="l3-sm">
+                        ഓൺലൈൻ സൗകര്യമില്ലാത്ത
+കുട്ടികൾക്കും ക്ലാസ് ഉറപ്പാക്കണം                    </a>
+                </div>
+            </div>
+
+                        <!--300*250 AD-->
+            <div class="full-width no-padding a-300-250" style="margin:10px 0;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 300x250, created 31/10/09 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-6893276202082753"
+     data-ad-slot="9379448668"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>            </div>
+            
+                        
+        </div>
+        <!--Specials-->
+        <div class="full-width ms-newslists-heading ">
+            SPECIALS
+        </div>
+        <div class="full-width mar-btm-10 no-padding wdth-px specials">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 lg-frame-3-box first-child ms-mr-news-title frame-3-boxes">
+                <div class="full-width no-padding img-div">
+                    <a href="news.php?id=314037&u=yours-today">
+                        <img src="../../web-news/2020/05/NMAN0149049/image/thumb-sm/astrology.1.618201.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="full-width no-padding frame-3-box-desc text-div" color="#F1452A">
+                    <div class="ms-mr-news-info"><font color="#F1452A">yours-today</font> | May 30</div>
+                    <a href="news.php?id=314037&u=yours-today" class="l3-sm">ഈ നാളുകാർ നിലപാടിൽ മാറ്റങ്ങൾ വരുത്തും, ആത്മീയ ചിന്തകൾ വർദ്ധിക്കും: നിങ്ങളുടെ ഈ ദിനം</a>
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 lg-frame-3-box first-child ms-mr-news-title frame-3-boxes">
+                <div class="full-width no-padding img-div">
+                    <a href="news.php?id=314027&u=health-prunes">
+                        <img src="../../web-news/2020/05/NMAN0149048/image/thumb-sm/prunes.1.618191.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="full-width no-padding frame-3-box-desc text-div" color="#F1452A">
+                    <div class="ms-mr-news-info"><font color="#F1452A">health</font> | May 30</div>
+                    <a href="news.php?id=314027&u=health-prunes" class="l3-sm">പ്രൂൺസ് കഴിച്ചാൽ മതി, രോഗത്തെ തടയാം</a>
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 lg-frame-3-box first-child ms-mr-news-title frame-3-boxes">
+                <div class="full-width no-padding img-div">
+                    <a href="news.php?id=313768&u=veerendrakumar">
+                        <img src="../../web-news/2020/05/NTVM0227364/image/thumb-sm/veerendrakumar.1.618213.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="full-width no-padding frame-3-box-desc text-div" color="#F1452A">
+                    <div class="ms-mr-news-info"><font color="#F1452A">general</font> | May 30</div>
+                    <a href="news.php?id=313768&u=veerendrakumar" class="l3-sm">ഇടതുപക്ഷത്ത് മനസ്സുറപ്പിച്ച് 
+എന്നും വീരേന്ദ്രകുമാർ</a>
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 lg-frame-3-box first-child ms-mr-news-title frame-3-boxes">
+                <div class="full-width no-padding img-div">
+                    <a href="news.php?id=313492&u=google-gives-employees-$1000-work-from-home-allowance">
+                        <img src="../../web-news/2020/05/NEKM0110105/image/thumb-sm/google.1.617331.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="full-width no-padding frame-3-box-desc text-div" color="#F1452A">
+                    <div class="ms-mr-news-info"><font color="#F1452A">tech</font> | May 29</div>
+                    <a href="news.php?id=313492&u=google-gives-employees-$1000-work-from-home-allowance" class="l3-sm">വീട്ടിലിരുന്നുള്ള ജോലി ഗൂഗിളിന് നന്നേ ബോധിച്ചു, വർഷം മുഴുവനും ജീവനക്കാർക്ക് 75000 രൂപ അലവൻസ് പ്രഖ്യാപിച്ച് സെർച്ച് എഞ്ചിൻ ഭീമൻ</a>
+                </div>
+            </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 lg-frame-3-box first-child ms-mr-news-title frame-3-boxes">
+                <div class="full-width no-padding img-div">
+                    <a href="news.php?id=313501&u=devils-jump-in-spain">
+                        <img src="../../web-news/2020/05/NQLN0144477/image/thumb-sm/devils-jump.1.617359.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                    </a>
+                </div>
+                <div class="full-width no-padding frame-3-box-desc text-div" color="#F1452A">
+                    <div class="ms-mr-news-info"><font color="#F1452A">kauthukam</font> | May 29</div>
+                    <a href="news.php?id=313501&u=devils-jump-in-spain" class="l3-sm">കൊച്ചുകുട്ടികളെ നിരത്തിക്കിടത്തും, മുഖം മൂടി ധരിച്ച ആളുകൾ അവർക്ക് മുകളിലൂടെ ചാടും.. ഈ വിചിത്ര ആചാരം എവിടെയാണെന്ന് അറിയാമോ..?</a>
+                </div>
+            </div>
+                    </div>
+
+        <!-- Frame-2 -->
+        <div class="no-padding lg-frame2-box1 text-center a-728-90 mar-btm-10" style="margin:2px 0px 10px 0px!important;">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- KK_Mobile_Version -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6893276202082753"
+             data-ad-slot="2889889289"
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>        </div>
+    </div>
+
+    <!--BOX-3-->
+    <div class="no-padding full-width mar-btm-10">
+        <!--ePaper-->
+        <div class="full-width no-padding epaper-wrap mar-btm-10">
+            <div class="no-padding lg-epaper-preview">
+                <span class="r-titles">EPAPER</span>
+                                <a href="https://keralakaumudi.com/epaper/article">
+                    <img src="../../static/epaper/DLY/2020/05/29/EPR/01_FRONT PAGE_PGDF0147220/image.jpg" onerror="this.src='images/default.gif'"  class="img-responsive"/>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2 lg-epaper-thumbs">
+                <span class="r-titles">ASTROLOGY</span>
+                <a href="section.php?cid=2" style="float: left;background: #f5f5f5;width: 100%;">
+                                        <img src="../../static/panels/astrology/1590723276.jpg" onerror="this.src='images/default.gif'" class="img-responsive" style="margin-bottom:4px;" />                            
+                </a>
+                <span class="r-titles">CARTOONS</span>
+                <a href="https://keralakaumudi.com/cartoon/" style="float: left;background: #f5f5f5;width: 100%;">
+                                        <img src="../../static/panels/cartoon/1590723252.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />                            
+                </a>
+            </div>
+        </div>        
+        <div class="full-width ms-newslists-heading">
+            TRENDING NOW
+        </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title dashed-border-bottom border-line" style="width:100%;padding-bottom:10px;padding-top:10px;">
+            <a href="news.php?id=313314&u=sports" class="l3-sm bullet no-mar">
+                പര്യടനം പ്രഖ്യാപി​ച്ച് ആസ്ട്രേലി​യ            </a>
+                    </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title dashed-border-bottom border-line" style="width:100%;padding-bottom:10px;padding-top:10px;">
+            <a href="news.php?id=313322&u=sports" class="l3-sm bullet no-mar">
+                റെയ്ന കരി​യർ ഗ്രാഫ്            </a>
+                    </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title dashed-border-bottom border-line" style="width:100%;padding-bottom:10px;padding-top:10px;">
+            <a href="news.php?id=313342&u=national" class="l3-sm bullet no-mar">
+                അന്യസംസ്ഥാനത്തൊഴിലാളികളിൽ നിന്ന് 
+യാത്രാക്കൂലി ഈടാക്കരുത്: സുപ്രീംകോടതി            </a>
+                    </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title dashed-border-bottom border-line" style="width:100%;padding-bottom:10px;padding-top:10px;">
+            <a href="news.php?id=313358&u=ration" class="l3-sm bullet no-mar">
+                പുതിയ കാർ‌ഡുകൾക്കും സൗജന്യകിറ്റ്            </a>
+                    </div>
+                <div class="pad-5 ms-mr-news-title lg-ms-box2-title  border-line" style="width:100%;padding-bottom:10px;padding-top:10px;">
+            <a href="news.php?id=313363&u=mullappally" class="l3-sm bullet no-mar">
+                തൊഴിലാളി പ്രശ്നങ്ങൾക്ക് പരിഹാരമില്ല: മുല്ലപ്പള്ളി            </a>
+            <span class="readmore"><a href="trending-now.php?g_fe=1">READ MORE</a></span>        </div>
+                <!--<div class="full-width">
+            <a href="http://www.keralacm.gov.in/mal/?page_id=10165" target="_blank">
+                <img src="images/300x250-we-are-one-malayalam.jpg" alt="Kerala Kaumudi Online" title="LOKA KERALA SABHA" />
+            </a>
+        </div>-->
+    </div>
+
+    <!-- taboola mobile-widget -->
+    <div class="full-width mar-btm-10">
+        <div class="cs-sec-feat-title">SPONSORED<font color="#ff4e01"> AD</font></div>
+        <div class="no-padding lg-frame2-box1 text-center a-300-250 t-special">
+            <div id="taboola-1x1-widget---mobile"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-e',
+    container: 'taboola-1x1-widget---mobile',
+    placement: '1x1 Widget - Mobile',
+    target_type: 'mix'
+  });
+</script>        </div>
+    </div> 
+</div><!--Section Kerala [P2]-->   
+<div class="full-width no-padding">
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width sec-box-1 no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=9">KERALA</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">
+                    <li><a href="section.php?cid=9">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -1-->
+        <div class="full-width no-padding sec-box-mstory">
+            <div class="full-width no-padding">
+                <img src="../../web-news/2020/05/NTVM0227574/image/thumb/kpcc.1552851287.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                <span class="label">KPCC</span>
+            </div>
+            <div class="full-width no-padding bg-sc-gray">
+                <a style="margin-bottom:5px;" href="news.php?id=313998&u=kpcc">
+                    <h5 class="l3">സംഘടനാകാര്യം അനിൽകുമാറിനു തന്നെ 
+കെ.പി.സി.സി ഭാരവാഹികൾക്ക് 
+ഒടുവിൽ ചുമതലയായി</h5>                            
+                </a>
+                <a class="l3-sm" href="news.php?id=313998&u=kpcc">                            
+                    തിരുവനന്തപുരം: കെ.പി.സി.സി വൈസ് പ്രസിഡന്റുമാരുടെയും ജനറൽസെക്രട്ടറിമാരുടെയും സംഘടനാ ചുമതലക്കാര്യത്തിൽ ഒടുവിൽ തീരുമാനമായി.                </a>
+            </div>
+        </div>
+
+        <!--Box -2-->
+        <div class="full-width sec-box-mid">
+                        <img src="../../web-news/2020/05/NTVM0227035/image/thumb/sabarimala-harthal-.1548772072.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />            <div class="ms-mr-news-info"><font color="#F1452A">general</font> | May 30</div>
+            <a href="news.php?id=313308&u=bevco" class="l3-sm">കാത്ത് കാത്ത് ആപ്പിലായി,​
+കലിപ്പ് മൂത്ത് 'പൊങ്കാല'</a>
+                                    <div class="ms-mr-news-info"><font color="#F1452A">general</font> | May 30</div>
+            <a href="news.php?id=313298&u=uthra" class="l3-sm">കൊലയ്ക്കുപിന്നിലെ ഗൂഢാലോചനയും 
+ഒത്താശയും അന്വേഷിക്കുന്നു</a>
+                                    <div class="ms-mr-news-info"><font color="#F1452A">politics</font> | May 27</div>
+            <a href="news.php?id=312231&u=v-muraleedharan-criticise-pinarayi-vijayan" class="l3-sm">'ചക്ക തലയിൽ വീഴുമ്പോൾ കൊവിഡ് കണ്ടെത്തുന്നതിനെ താങ്കൾ കേരള മോഡൽ എന്ന് വിശേഷിപ്പിക്കുമോ?':മുഖ്യമന്ത്രിയോട് ചോദ്യശരവുമായി വി.മുരളീധരൻ​</a>
+                    </div>
+
+        <!--Box -3-->
+        <div class="full-width sec-box-mid no-pad-left-lg">   
+                             
+            <span class="bullet l3-sm">
+                <a href="news.php?id=313975&u=wedding">മന്ത്രി കടകംപള്ളി സുരേന്ദ്രന്റെ  മകൻ അനൂപ് വിവാഹിതനായി</a>
+            </span>
+                             
+            <span class="bullet l3-sm">
+                <a href="news.php?id=313753&u=modi">എം.പി. വീരേന്ദ്ര കുമാർ അനുശോചനം</a>
+            </span>
+                             
+            <span class="bullet l3-sm">
+                <a href="news.php?id=304681&u=syro-malabar-diocese-writes-to-cm-pinarayi-vijayan">'50 പേർ പങ്കെടുക്കുന്ന ആരാധനാശുശ്രൂഷകള്‍ അനുവദിക്കണം,  ഈശ്വര വിശ്വാസികളുടെ മാനസിക പിരിമുറുക്കം കുറയ്ക്കണം': രോഗവർദ്ധന 'നേരിയ തോതി'ലെന്ന് മുഖ്യമന്ത്രിയോട് സീറോ മലബാർ സഭ</a>
+            </span>
+                             
+            <span class="bullet l3-sm">
+                <a href="news.php?id=313857&u=online-class">ഓൺലൈൻ ക്ലാസുകൾ രാവിലെ എട്ടരമുതൽ വൈകിട്ട് അഞ്ചര വരെ,​ പത്താംക്ലാസുകാർക്ക് 11ന്,​ മാർ‌ഗനിർദ്ദേശങ്ങൾ പുറത്തിറക്കി</a>
+            </span>
+                             
+            <span class="bullet l3-sm">
+                <a href="news.php?id=313649&u=covid-kerala">നൂറുപേരിൽ 1.7 ശതമാനം പേർക്ക് മാത്രം കൊവിഡ്,​ കേരളം ലോകരാജ്യങ്ങൾ ലക്ഷ്യംവയ്ക്കുന്ന നിലവാരത്തിൽ,​ ദേശീയ ശരാശരിക്കും താഴെ</a>
+            </span>
+                               
+        </div>             
+    </div>
+    <div class="full-width sec-box-2 no-padding">
+
+        <div class="full-width no-padding sec-box-header mar-btm-10">
+                    <div class="full-width sec-box-2 no-padding">
+                <div class="full-width no-padding">
+                                    </div>
+            </div>
+        </div>
+
+
+                <div class="a-300-250">
+            <!-- /229445249/DWTag-DFPNew_RS70_KeralaKaumudi_Banner_300x250_2_140220 -->
+<div id='div-gpt-ad-1581675410939-0' style='width: 300px; height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1581675410939-0'); });
+  </script>
+</div>        </div> 
+            </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=9">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section CINEMA [P3]-->
+<div class="full-width no-padding">
+    <div style="border-top:none;" class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=4">CINEMA</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=4">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -2-->
+        <div class="full-width sec-box-mid opn no-pad-left-lg">       
+                        <a href="news.php?id=313984&u=santhosh-pandit-on-bev-q" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NMAN0149045/image/thumb-sm/santhosh-pandit-.1590775604.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">news</font> | May 29</div>
+                <span class="l3-sm">മദ്യവിതരണത്തിന് തുടങ്ങിയത് പോലെ ആരാധനാലയങ്ങൾക്കായും     ആപ്പ് കൊണ്ടുവരണം,​ ഭക്തർ ആപ്പ് കൊടുക്കുന്ന സമയം നോക്കി പോയി പ്രാ൪ത്ഥിക്കട്ടെ..​ കുറിപ്പുമായി സന്തോഷ് പണ്ഡിറ്റ്</span>
+            </a>
+                        <a href="news.php?id=313405&u=akshay-kumar-helped-1500-daily-wage-workers-by-donating-rs-45-lakh" >
+                <img src="../../web-news/2020/05/NQLN0144463/image/thumb-sm/akshay.1.617160.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">news</font> | May 29</div>
+                <span class="l3-sm">സാമ്പത്തിക പ്രയാസമാണെന്ന് അറിയിച്ചു , സിനിമാ-സീരിയൽ കലാകാരന്മാർക്ക് 45 ലക്ഷം രൂപ സഹായധനം നൽകി അക്ഷയ്‌ കുമാർ</span>
+            </a>
+                                            
+        </div>
+
+        <!--Box -1-->
+                <div class="full-width sec-box-mstory no-padding">
+            <div class="full-width no-padding mar-btm-10">
+                <a href="news.php?id=313465&u=ponmagal-vanthal-movie">
+                    <img src="../../web-news/2020/05/NTVM0227259/image/thumb/ponmagal-vanthal.1.617270.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />
+                </a>
+            </div>
+            <div class="full-width no-padding">
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">news</font> | May 29</div>
+                <a class="mar-btm-5 l3-big" href="news.php?id=313465&u=ponmagal-vanthal-movie">
+                    <h5>ഒ.ടി.ടി റിലീസിന് മണിക്കൂറുകൾ മാത്രം ബാക്കി നിൽക്കെ 'പൊൻമകൾ വന്താൽ' ഓൺലൈനിൽ ചോർന്നു</h5>
+                </a>
+                <a href="news.php?id=313465&u=ponmagal-vanthal-movie" style="height: 95px;overflow: hidden;">
+                    ജ്യോതികയുടെ പുതിയ ചിത്രം പൊൻമകൾ വന്താൽ ആമസോൺ പ്രൈമിൽ ഒ.ടി.ടി റിലീസ് ചെയ്യുന്നതിന് മണിക്കൂറുകൾക്ക് മുമ്പേ ഓൺലൈനിൽ ചോർന്നു.                </a>
+            </div>
+        </div>
+
+        <!--Box -3-->
+        <div class="full-width sec-box-mid">
+                        <a href="news.php?id=313584&u=pooja-badra-about-her-marriage" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NQLN0144493/image/thumb-sm/pooja.1.617380.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />                <div class="ms-mr-news-info"><font color="#F1452A">news</font> | May 29</div>
+                <span class="l3-sm">'ഞാനൊരു ഒഴുക്കിനൊപ്പം പോകുകയായിരുന്നു, പെട്ടെന്നാണ് അത് തിരിച്ചറിഞ്ഞത്', വിവാഹത്തെക്കുറിച്ച് നടിയുടെ വെളിപ്പെടുത്തൽ</span>
+            </a>
+                        <a href="news.php?id=313599&u=bahubali-2" class="mar-btm-10">
+                                <div class="ms-mr-news-info"><font color="#F1452A">news</font> | May 29</div>
+                <span class="l3-sm">ഇന്ത്യയിൽ മാത്രമല്ല അങ്ങ് റഷ്യയിലും കയ്യടി നേടി ബാഹുബലി 2; റഷ്യൻ എംബസിയുടെ ട്വീറ്റ് ഉത്സവമാക്കി ചലച്ചിത്ര പ്രേമികൾ</span>
+            </a>
+                        <a href="news.php?id=312687&u=kamal-hassan-with-poojakumar" >
+                                <div class="ms-mr-news-info"><font color="#F1452A">news</font> | May 28</div>
+                <span class="l3-sm">അമേരിക്കൻ നടിയുമായി കമലഹാസൻ പ്രണയത്തിലോ? തുറന്നുപറഞ്ഞ് താരം</span>
+            </a>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">        
+        <table class="kfont mtbl" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>                
+                <td style="padding:0;">
+                    <div class="cs-sec-feat-title">SPONSORED<font color="#ff4e01"> AD</font></div>
+                                        <div class="a-300-250" style="max-height:unset;">
+                        <div id="taboola-cinema-home-1x1"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-e',
+    container: 'taboola-cinema-home-1x1',
+    placement: 'Cinema Home 1x1',
+    target_type: 'mix'
+  });
+</script>                    </div>
+                                    </td>
+            </tr>
+                        <tr>
+                <td >
+                    <div class="ms-mr-news-info"><font color="#F1452A">news</font> | May 27</div>
+                    <a href="news.php?id=312013&u=transgender-anjali" class="l3-sm">
+                        ''ഒറ്റയ്ക്ക് തുഴഞ്ഞ് മടുത്തു,  ഒരു തുഴക്കാരനെ കൂടെ കൂട്ടാൻ  മോഹമായി തുടങ്ങി' ജീവിത യാത്രയിൽ കൂടെക്കൂട്ടാൻ ധൈര്യമുളളവരുണ്ടോയെന്ന് നടി അഞ്ജലി അമീർ‌                    </a>
+                </td>
+            </tr>            
+                        <tr>
+                <td style="padding:0">
+                    <div class="ms-mr-news-info"><font color="#F1452A">news</font> | May 28</div>
+                    <a href="news.php?id=312696&u=bipasha-basu-latest" class="l3-sm">
+                        മേക്കപ്പില്ലാത്ത ചിത്രവുമായി ഏഷ്യയിലെ ഏറ്റവും സെക്‌സിയാണെന്ന് ഒരു കാലത്ത് ബോളിവുഡ് വാഴ്‌ത്തിയിരുന്ന നടി                    </a>
+                </td>
+            </tr>            
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=4">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section OPINIONS [P6]-->
+<div class="full-width no-padding">
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=41">CASE DIARY</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=41">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- taboola mobile-widget -->
+    <!--<div class="full-width mar-btm-10">
+        <div class="cs-sec-feat-title">SPONSORED <font color="#ff4e01">AD</font>
+        </div>
+        <div class="no-padding lg-frame2-box1 text-center a-300-250 t-special">
+                        
+        </div>
+    </div>-->
+
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -2-->
+        <div class="full-width sec-box-mid no-padding">
+                        <div class="full-width sub-box-1">
+                <img src="../../web-news/2020/05/NQLN0144465/image/thumb/photo.1590724241.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            </div>
+            <div class="full-width sub-box-2">
+                <div class="ms-mr-news-info"><font color="#F1452A">kerala</font> | May 29</div>
+                <a href="news.php?id=313399&u=uthra-murder" class="mar-btm-10"><b>ഉത്ര കൊലക്കേസ്: ഒരു പഴുതും ഉണ്ടാവരുത് , എല്ലാ ഇനം പാമ്പുകളുടെ വിവരവും വിഷ വീര്യവും കുറ്റപത്രത്തിൽ ഉൾപ്പെടുത്താൻ ഒരുങ്ങി പൊലീസ്</b></a>
+                <a style="max-height: 75px;overflow: hidden;" href="news.php?id=313399&u=uthra-murder">ഉത്ര കൊലക്കേസിൽ പൊലീസിന്റേത് സമാനതകളില്ലാത്ത തെളിവെടുപ്പ്. ഉത്രയെ കൊത്തിയത് മൂർഖൻ പാമ്പാണെന്ന് വ്യക്തമാണെങ്കിലും സംസ്ഥാനത്തുള്ള എല്ലാ ഇനം പാമ്പുകളുടെയും വിഷവുമായി.</a>
+            </div>
+            <div class="full-width no-padding" style="margin:26px 0;border-bottom: solid 1px #CCC;"></div>                        <div class="full-width sub-box-1">
+                <img src="../../web-news/2020/05/NQLN0144467/image/thumb/pampu-suresh.1.617206.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            </div>
+            <div class="full-width sub-box-2">
+                <div class="ms-mr-news-info"><font color="#F1452A">kerala</font> | May 29</div>
+                <a href="news.php?id=313429&u=uthra-murder-pampu-suresh" class="mar-btm-10"><b>ഉത്ര കൊലക്കേസ്: പാമ്പ് സുരേഷ് കോടതിയിൽ സൂരജിനെതിരെയുള്ള പ്രധാന ആയുധമാകും, മാപ്പുസാക്ഷിയാക്കാൻ പൊലീസ്</b></a>
+                <a style="max-height: 75px;overflow: hidden;" href="news.php?id=313429&u=uthra-murder-pampu-suresh">ഉത്രയെ കൊലപ്പെടുത്തിയ കേസിൽ റിമാൻഡിലുള്ള രണ്ടാം പ്രതി പാരിപ്പള്ളി കുളത്തൂർക്കോണം കെ.എസ്.ഭവനിൽ സുരേഷിനെ മാപ്പ് സാക്ഷിയാക്കിയേക്കും. സൂരജിന് അണലിയെയും മൂർഖനെയും.</a>
+            </div>
+                                </div>
+
+        <!--Box -2-->
+        <div class="full-width sec-box-mid">
+                        <img src="../../web-news/2020/05/NMAN0148919/image/thumb-sm/youths.1.617355.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            <div class="ms-mr-news-info"><font color="#F1452A">india</font> | May 29</div>
+            <a style="margin-bottom: 15px;" class="l2" href="news.php?id=313502&u=house-wife-suicide-for-smart-phone">കുട്ടികൾക്ക് ഓൺലൈൻ ക്ളാസിന് ഭർത്താവ് സ്മാർട്ട് ഫോൺ വാങ്ങി നൽകിയില്ല; യുവതി ആത്മഹത്യചെയ്തു</a>
+                        <img src="../../web-news/2020/05/NTVM0227245/image/thumb-sm/sex-chat.1.617288.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            <div class="ms-mr-news-info"><font color="#F1452A">india</font> | May 29</div>
+            <a  class="l2" href="news.php?id=313474&u=complaint-against-six-syd-student">'ഞാനുമായി സെക്സ് ചാറ്റിംഗ് നടത്തണം, അല്ലെങ്കിൽ ഞാൻ ചാേദിക്കുന്ന പണം തരണം', ഭീഷണി ആരുടേതെന്ന് അറിഞ്ഞപ്പോൾ യുവതി മാത്രമല്ല, പൊലീസും ഞെട്ടി</a>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">
+        <table class="kfont mtbl" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="padding:0;">
+                    <div class="a-300-250">
+                        <div id="taboola-case-diary-1x1-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-e',
+    container: 'taboola-case-diary-1x1-thumbnails',
+    placement: 'Case Diary 1x1 Thumbnails',
+    target_type: 'mix'
+  });
+</script>                    </div>                    
+                </td>
+            </tr>
+                        <tr>
+                <td style="border-bottom:solid 1px #ccc;">
+                    <div class="ms-mr-news-info"><font color="#F1452A">india</font> | May 29</div>
+                    <a href="news.php?id=313406&u=murder-case---police-arrest-youth" class="l2">ബിയർ വാങ്ങി നൽകാൻ വിസമ്മതിച്ചതിന് സുഹൃത്തിനെ കൊലപ്പെടുത്തിയ യുവാവ് അറസ്റ്റിൽ</a>
+                </td>
+            </tr>
+                        <tr>
+                <td style="padding:10px 0 0 0;">
+                    <div class="ms-mr-news-info"><font color="#F1452A">india</font> | May 29</div>
+                    <a href="news.php?id=313338&u=india" class="l2">കൊവിഡിനെ തുരത്താൻ മനുഷ്യക്കുരുതി :
+ പുരോഹിതൻ അറസ്റ്റിൽ</a>
+                </td>
+            </tr>
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=41">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section JILLAKALILOODE [P4]-->
+<div class="full-width no-padding jilla">
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width sec-box-1 no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=11">LOCAL</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=11">☰</a></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <!--PANEL-NEWS-SECTION = 0-->
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -1-->
+        <div class="full-width no-padding sec-box-mstory">
+            <div class="full-width no-padding">
+                <img src="../../web-news/2020/05/NTVM0227365/image/thumb/pic.1.617511.jpg" class="img-responsive" onerror="this.src='images/default.gif'">
+                <span class="label">DAM OPEN</span>
+            </div>
+            <div class="full-width no-padding bg-sc-gray">
+                <a style="margin-bottom:5px;" class="l3-big" href="news.php?id=313554&u=aruvikkara-dam-open-heavy-rain">
+                    <h5>അരുവിക്കര   ഡാമിന്‍റെ   മൂന്നും  നാലും  ഷട്ടറുകൾ  തുറന്നു;  സംസ്ഥാനത്ത്  അടുത്ത  മൂന്ന് ദിവസം  ശക്തമായ  മഴക്ക്  സാദ്ധ്യത</h5>
+                </a>
+                <a style="height:94px; overflow:hidden;" href="news.php?id=313554&u=aruvikkara-dam-open-heavy-rain">
+                    തിരുവനന്തപുരം: അരുവിക്കര ഡാമിന്‍റെ മൂന്നും നാലും ഷട്ടറുകൾ തുറന്നു. കരമനയാറിന്‍റെ ഇരുകരകളിലുമുള്ളവർ ജാഗ്രത പുലർത്തണമെന്ന് തിരുവനന്തപുരം ജില്ല ഭരണകൂടം അറിയിച്ചിച്ചുണ്ട്. തലസ്ഥാനത്ത് രണ്ടുദിവസം കനത്ത മഴയാണ് പ്രതീക്ഷിക്കുന്നത്.സംസ്ഥാനത്ത് അടുത്ത മൂന്ന് ദിവസം ശക്തമായ മഴക്ക് സാദ്ധ്യതയുണ്ടെന്നാണ് കാലാവസ്ഥ നിരീക്ഷണ കേന്ദ്രത്തിന്‍റെ അറിയിപ്പ്. ഇടുക്കി ജില്ലയില്‍ ഇന്നും നാളയും ഓറ‍ഞ്ച് അലര്‍ട്ട് പ്രഖ്യാപിച്ചു. തിരുവനന്തപുരം, ആലപ്പുഴ, എറണാകുളം, തൃശൂർ, മലപ്പുറം ജില്ലകളില്‍ യെല്ലോ അലര്‍ട്ടും പ്രഖ്യാപിച്ചു.                </a>
+            </div>
+        </div>
+        <!--Box -2-->
+        <div class="full-width sec-box-mid">
+                            <img src="../../web-news/2020/05/NTVM0227293/image/thumb-sm/pic.1590744715.jpg" class="img-responsive" onerror="this.src='images/default.gif'">
+                            <div class="ms-mr-news-info"><font color="#F1452A">kollam</font> | May 29</div>
+            <a href="news.php?id=313490&u=local-news" class="l3-sm">കൊട്ടിയത്തെ   കത്തിക്കരിഞ്ഞ   മൃതദേഹം,​  ആത്മഹത്യയെന്ന്  പൊലീസ്  നിഗമനം,  സിസി ടിവി  ദൃശ്യങ്ങൾ   നിർണായകം</a>
+                            <div class="ms-mr-news-info"><font color="#F1452A">general</font> | May 29</div>
+            <a href="news.php?id=313431&u=two-more-covid-cases-reported-in-venjaramoodu" class="l3-sm">രണ്ട് പ്രതികൾക്ക് കൊവിഡ്, ആശങ്കയിൽ വെഞ്ഞാറമൂട് പൊലീസ്, നെയ്യാറ്റിൻകര സ്പെഷ്യൽ സബ് ജയിലിൽ 16 ജീവനക്കാരുൾപ്പെടെ 50 പേർ നിരീക്ഷണത്തിൽ</a>
+                            <div class="ms-mr-news-info"><font color="#F1452A">ernakulam</font> | May 29</div>
+            <a href="news.php?id=313531&u=local-news-ernakulam" class="l3-sm">കൊവിഡ്  പിടികൂടാതിരിക്കാൻ    ആളുകൾ    തമ്മിൽ   എത്ര   മീറ്റർ   അകലം   പാലിക്കണം? പുതിയ   പഠന   റിപ്പോർട്ട്   പുറത്ത്</a>
+                    </div>
+        <!--Box -3-->
+        <div class="full-width sec-box-mid no-pad-left-lg">
+                        <span class="bullet l3-sm">
+                <a href="news.php?id=313462&u=local-news--kasargod">രോഗബാധിതർ  കൂടുന്നു,  സമൂഹവ്യാപന  ആശങ്കയിൽ  കാസർകോട്,  കനത്ത ജാഗ്രതയിൽ ആരോഗ്യ   പ്രവർത്തകർ</a>
+            </span>
+                        <span class="bullet l3-sm">
+                <a href="news.php?id=313469&u=local-news--kasargod">മദ്യഷാപ്പുകളിൽ   സ്റ്റോക്ക്    കുറവ്,  ആപ്പ്  സജീവമാകുമ്പോൾ   മദ്യം   കിട്ടാക്കനിയാകുമോ?    ആശങ്കയിലായി   കുടിയന്മാർ</a>
+            </span>
+                        <span class="bullet l3-sm">
+                <a href="news.php?id=313466&u=local-news--kasargod">അഞ്ജനയുടെ  ദുരൂഹ  മരണം അന്വേഷിക്കാൻ   ഗോവയിൽ  ഐ.പി.എസുകാരന്  ചുമതല</a>
+            </span>
+                        <span class="bullet l3-sm">
+                <a href="news.php?id=313435&u=local-news-kottayam">കൊവിഡ് : കോട്ടയം  ജില്ല   അതീവ ജാഗ്രതയിൽ  തുടരുന്നു,   ചങ്ങനാശേരി  ഹോട്ട്സ്പോട്ടായി</a>
+            </span>
+                        <span class="bullet l3-sm">
+                <a href="news.php?id=313441&u=local-news-kannur">കണ്ണൂരിൽ   കൊവിഡ്    രോഗികൾ   നൂറിനോട്   അടുക്കുന്നു, 
+നിരീക്ഷണത്തിലുളളവർ    പന്ത്രണ്ടായിരം   കടന്നു</a>
+            </span>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">
+
+
+        <div class="full-width no-padding sec-box-header mar-btm-10">           
+            <div class="full-width sec-box-2 no-padding">
+                <div class="full-width no-padding">
+                    <ul style="margin-top: 9px;float: left;width: 100px;">
+                        <li><a class="cat-name" href="#">OBITUARY</a></li>
+                    </ul>
+                    <div id="drp">
+                        <ul>
+                            <li>
+                                <a style="border: solid 1px #000;padding: 2px 5px 1px 5px;" href="sub-section.php?cid=10&sid=16">THIRUVANANTHAPURAM &#9662;</a>
+                                <ul>
+                                                                        <li><a href="sub-section.php?cid=10&sid=17">KOLLAM</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=18">ALAPPUZHA</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=19">PATHANAMTHITTA</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=20">KOTTAYAM</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=21">IDUKKI</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=22">ERNAKULAM</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=23">THRISSUR</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=24">PALAKKAD</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=25">MALAPPURAM</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=26">KOZHIKODE</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=27">WAYANAD</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=28">KANNUR</a></li>
+                                                                        <li><a href="sub-section.php?cid=10&sid=29">KASARGOD</a></li>
+                                                                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--PANEL-NEWS-SECTION = 1-->
+                <table class="kfont mtbl obituary" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                <td style="padding-top:0;" valign="middle">       
+                    <div style="float:left;height: 75px; width: 60px; background:url('../../web-news/2020/05/NTVM0226975/image/thumb-sm/hameed.1.616290.jpg') #f5f5f5 no-repeat center;background-size: cover;"></div>             
+                    <!--<img src="../../web-news/2020/05/NTVM0226975/image/thumb-sm/hameed.1.616290.jpg" onerror="this.src='images/default.gif'" />-->                                 
+                </td>
+                <td style="padding-left:5px;padding-top:0;" valign="top">
+                    <a href="javascript:void(0);" style="height: 75px;overflow: hidden;">
+                        തിരുവനന്തപുരം എസ്.സി.ടി മൂൻ മെഡിക്കൽ സൂപ്രണ്ടായിരുന്ന പട്ടം നസീലാ മൻസിലിൽ ഡോ. കെ.എ. ഹമീദ് (83) നി​ര്യാ​ത​നായി.                    </a>
+                </td>
+            </tr>
+                                    <tr>
+                <td valign="middle">
+                    <div style="float:left;height: 75px; width: 60px; background:url('../../web-news/2020/05/NQLN0144410/image/thumb-sm/dr-n-vijayamma-76.1.616565.jpg') #f5f5f5 no-repeat center;background-size: cover;;"></div>                    
+                    <!--<img src="../../web-news/2020/05/NQLN0144410/image/thumb-sm/dr-n-vijayamma-76.1.616565.jpg" onerror="this.src='images/default.gif'" />-->                  
+                </td>
+                <td style="padding-left:5px;" valign="top">
+                    <a href="javascript:void(0);" style="height: 75px;overflow: hidden;">
+                        കൊല്ലം ഗ​വ. വി​ക്ടോറിയ ഹോ​സ്​പി​റ്റൽ റി​ട്ട. സൂ​പ്ര​ണ്ട് ല​ക്ഷ്​മിയിൽ ഡോ. എൻ. വി​ജ​യ​മ്മ (76) ഷാർ​ജയിൽ നി​ര്യാ​ത​യായി.                    </a>
+                </td>
+            </tr>
+                                    <tr>
+                <td class="pad-tb-5" colspan="2">
+                    <span class="bullet l3-sm">
+                        <a href="javascript:void(0);">യാക്കോബായ സഭ മലബാർ ഭദ്രാസനത്തിലെ വൈദികൻ ഫാദർ കന്നുകുഴിയിൽ ഗീവർഗീസ് (86) നിര്യാതനായി.</a>
+                    </span>
+                </td>
+            </tr>
+                                    <tr>
+                <td class="pad-tb-5" colspan="2">
+                    <span class="bullet l3-sm">
+                        <a href="javascript:void(0);">കണ്ണൂർ ശ്രീകണ്ഠപുരം കാവുമ്പായിലെ കിഴക്കേ വീട്ടിൽ പ്രകാശന്റെയും അജിതയുടെയും മകൾ സ്വാതിക (9) നിര്യാതയായി.</a>
+                    </span>
+                </td>
+            </tr>
+                                    <tr>
+                <td class="pad-tb-5" colspan="2">
+                    <span class="bullet l3-sm">
+                        <a href="javascript:void(0);">പറവൂർ പട്ടടം വടക്കേക്കര കണ്ണാറഹൗസിൽ കാർത്തികേയൻ (76) നിര്യാതനായി.</a>
+                    </span>
+                </td>
+            </tr>
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=11">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:1px;"></div><!--Section CINEMA [P3]-->
+<div class="full-width no-padding">
+    <div style="border-top:none;" class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=8">LIFESTYLE</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=8">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -2-->
+        <div class="full-width sec-box-mid opn no-pad-left-lg">       
+                        <a href="news.php?id=313416&u=aleksandra-kiedrowicz" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NQLN0144466/image/thumb-sm/alexandra.1.617192.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">kauthukam</font> | May 29</div>
+                <span class="l3-sm">നിങ്ങളുടെ ശരീരത്തിൽ എല്ലുകൾ ഒന്നുമില്ല റബ്ബർ കൊണ്ട് ഉണ്ടാക്കിയതാണോ? വീഡിയോ കണ്ടാൽ യുവതിയോട് നിങ്ങളും ഈ ചോദ്യം ചോദിച്ചേക്കാം</span>
+            </a>
+                        <a href="news.php?id=312932&u=book-release-new-books" >
+                <img src="../../web-news/2020/05/NMAN0148824/image/thumb-sm/modi-.1590676924.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">book-release</font> | May 28</div>
+                <span class="l3-sm">"അമ്മയ്ക്കുള്ള കത്തുകൾ" നരേന്ദ്രമോദിയുടെ പുസ്തകം ജൂണിൽ പുറത്തിറങ്ങുന്നു</span>
+            </a>
+                                            
+        </div>
+
+        <!--Box -1-->
+                <div class="full-width sec-box-mstory no-padding">
+            <div class="full-width no-padding mar-btm-10">
+                <a href="news.php?id=313617&u=agafia-karpovna-lykova">
+                    <img src="../../web-news/2020/05/NTVM0227287/image/thumb/agafya-lykova.1590757042.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />
+                </a>
+            </div>
+            <div class="full-width no-padding">
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">she</font> | May 29</div>
+                <a class="mar-btm-5 l3-big" href="news.php?id=313617&u=agafia-karpovna-lykova">
+                    <h5>ലോകമെമ്പാടും കൊവിഡ് താണ്ഡവമാടുമ്പോൾ രോഗത്തെക്കുറിച്ച് ഇതുവരെ കേട്ടുകേൾവിയില്ലാതെ ഒരു സ്ത്രീ, അവർ എവിടെയാണ് താമസിക്കുന്നതെന്നറിയേണ്ടേ..?</h5>
+                </a>
+                <a href="news.php?id=313617&u=agafia-karpovna-lykova" style="height: 95px;overflow: hidden;">
+                    കൊച്ചു കുട്ടികൾക്ക് പോലും ഇപ്പോൾ കൊറോണ വൈറസിനെ പരിചയമായി കഴിഞ്ഞു. ലോക ജനത മുഴുവൻ ഈ വൈറസിന്റെ ഭീതിയിലാണ് ഇന്ന്. എന്നാൽ ഈ വൈറസ് എന്താണന്നോ.                </a>
+            </div>
+        </div>
+
+        <!--Box -3-->
+        <div class="full-width sec-box-mid">
+                        <a href="news.php?id=313604&u=kauthukam" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NTVM0227348/image/thumb-sm/harry-cole.1590756129.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />                <div class="ms-mr-news-info"><font color="#F1452A">kauthukam</font> | May 29</div>
+                <span class="l3-sm">ഒടുവിൽ 80 വർഷങ്ങൾക്ക് ശേഷം ആ കത്ത് അവരുടെ കൈകളിലെത്തി, വായിക്കാൻ അമ്മയില്ല...</span>
+            </a>
+                        <a href="news.php?id=313542&u=indian-consumers-check-these-facts-of-a-packed-product" class="mar-btm-10">
+                                <div class="ms-mr-news-info"><font color="#F1452A">health</font> | May 29</div>
+                <span class="l3-sm">സൂപ്പർമാർക്കറ്റുകളിൽ കയറി സാധനം എടുത്താൽ ഇന്ത്യക്കാർ കൂടുതൽ പേരും വിലയും, കാലാവധിയും അല്ല നോക്കുന്നത്,  പിന്നെയോ ?</span>
+            </a>
+                        <a href="news.php?id=313568&u=tikrtok" >
+                                <div class="ms-mr-news-info"><font color="#F1452A">tech</font> | May 29</div>
+                <span class="l3-sm">യു ട്യൂബുമായുള്ള പോരിൽ റേറ്റിംഗിൽ കൂപ്പുകുത്തി, ടിക് ടോക്കിനെ കൈപിടിച്ച് ഗൂഗിൾ</span>
+            </a>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">        
+        <table class="kfont mtbl" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>                
+                <td style="padding:0;">
+                    <div class="cs-sec-feat-title">SPONSORED<font color="#ff4e01"> AD</font></div>
+                                        <div class="a-300-250" style="background:#FFFFFF;text-align:center;">
+                        <!--<a href="https://kaumudymatrimony.com"><img src="/static/ads/imgs/kaumudy-matrimony-free-registration.jpg" /></a>-->
+                        <!-- /1027999/KK_Matrimony_Homepage -->
+<div id='div-gpt-ad-1590379377521-0' style='width: 300px; height: 300px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1590379377521-0'); });
+  </script>
+</div>                    </div>
+                                    </td>
+            </tr>
+                        <tr>
+                <td >
+                    <div class="ms-mr-news-info"><font color="#F1452A">food</font> | May 29</div>
+                    <a href="news.php?id=313565&u=milk-shake" class="l3-sm">
+                        ഡേയ്റ്റ്സും കോഫിയുമുണ്ടോ എങ്കിൽ ഇപ്പോൾ തന്നെ അടിപ്പൊളി മില്‍ക്ക് ഷേയ്ക്ക് ഉണ്ടാക്കാം                    </a>
+                </td>
+            </tr>            
+                        <tr>
+                <td style="padding:0">
+                    <div class="ms-mr-news-info"><font color="#F1452A">she</font> | May 29</div>
+                    <a href="news.php?id=313438&u=polish-grandmother-beats-covid-like-a-boss-celebrates-win-by-downing-some-chilled-beer" class="l3-sm">
+                        ചിൽ അമ്മൂമ്മ ചിൽ... 103 വയസ്സുള്ള മുത്തശ്ശി ആശുപത്രി കിടക്കയിൽ കൊവിഡിനെ തോൽപ്പിച്ചത്  ആഘോഷിച്ചത് ബിയർ കുടിച്ച്                    </a>
+                </td>
+            </tr>            
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=8">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section VIDEOS [P10]-->
+<div class="full-width no-padding">
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="https://youtube.com/kaumudy">VIDEO WALL</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li>
+                        <script src="https://apis.google.com/js/platform.js"></script>
+                        <style>#___ytsubscribe_1{width: 111px!important;}</style>
+                        <div class="g-ytsubscribe" data-channel="Kaumudy" data-layout="default" data-theme="dark" data-count="default"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Box1-->
+    
+        <div class="yt-main-video">
+        <div class="full-width no-padding">
+            <iframe width="100%" height="230" src="https://www.youtube.com/embed/4r3r_CVUVvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <!--Box3-->
+    <div class="yt-video-lists no-pad-xs">
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=tQKRJYs5nQo">
+                    <img src="https://img.youtube.com/vi/tQKRJYs5nQo/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=tQKRJYs5nQo">
+                    Exclusive | Uthra’s Parents, Brother Vishu talks about their sufferings | Uthra Snake Bite issue                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=1hRZEg_Qyww">
+                    <img src="https://img.youtube.com/vi/1hRZEg_Qyww/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=1hRZEg_Qyww">
+                    Dhruv taken from Sooraj's house, to be given to Uthra's Relatives | Uthra Snake bite issue | Anchal                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=c20wM6lOMkY">
+                    <img src="https://img.youtube.com/vi/c20wM6lOMkY/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=c20wM6lOMkY">
+                    Grandmother Manimeghala cajoling Dhruv | Uthra Snakebite issue | Kollam, Kerala                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=bPf3BuU43PE">
+                    <img src="https://img.youtube.com/vi/bPf3BuU43PE/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=bPf3BuU43PE">
+                    Snakemaster Vava Suresh’s words come true ? | Uthra Snake bite issue | Kollam, Kerala | Exclusive                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=K6pelraNoKM">
+                    <img src="https://img.youtube.com/vi/K6pelraNoKM/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=K6pelraNoKM">
+                    Local residents and neighbours respond to Uthra Snake Bite issue | Anchal                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=sFhHFEGjFpI">
+                    <img src="https://img.youtube.com/vi/sFhHFEGjFpI/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=sFhHFEGjFpI">
+                    അളിയൻസ് ടീമിന്റെ റംസാൻ വിരുന്ന്  | EP 270 | Manju Pathrose | Riyas | #Aliyans                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=gtK2gKwxeso">
+                    <img src="https://img.youtube.com/vi/gtK2gKwxeso/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=gtK2gKwxeso">
+                    മാരുതി പൊളിച്ച് ! പുത്തൻ ബ്രെസ്സ കിടിലൻ | 2020 Maruti Suzuki Vitara Brezza Review | Dreamdrive EP339                </a>
+            </div>
+        </div>
+                <div class="full-width yt-videos">
+            <div class="yt-videos-thumb">
+                <a href="https://www.youtube.com/watch?v=QuLd28O9mTU">
+                    <img src="https://img.youtube.com/vi/QuLd28O9mTU/mqdefault.jpg" onerror="this.src='images/default.gif'" width="100%">
+                </a>
+            </div>
+            <div class="yt-videos-title">
+                <a href="https://www.youtube.com/watch?v=QuLd28O9mTU">
+                    What Actress Archana did when she got chased by a dog | Fun Episode | #OhMyGod | EP 196                </a>
+            </div>
+        </div>
+            </div>
+
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="https://youtube.com/kaumudy">LOAD MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section OPINIONS [P6]-->
+<div class="full-width no-padding">
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=6">OPINION</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=6">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- taboola mobile-widget -->
+    <!--<div class="full-width mar-btm-10">
+        <div class="cs-sec-feat-title">SPONSORED <font color="#ff4e01">AD</font>
+        </div>
+        <div class="no-padding lg-frame2-box1 text-center a-300-250 t-special">
+                        
+        </div>
+    </div>-->
+
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -2-->
+        <div class="full-width sec-box-mid no-padding">
+                        <div class="full-width sub-box-1">
+                <img src="../../web-news/2020/05/NTVM0227282/image/thumb/m.1590778778.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            </div>
+            <div class="full-width sub-box-2">
+                <div class="ms-mr-news-info"><font color="#F1452A">editorial</font> | May 30</div>
+                <a href="news.php?id=314086&u=editorial" class="mar-btm-10"><b>എം.പി വീരേന്ദ്രകുമാർ വിടപറയുമ്പോൾ</b></a>
+                <a style="max-height: 75px;overflow: hidden;" href="news.php?id=314086&u=editorial">രാഷ്ട്രീയം പ്രധാന കർമ്മമണ്ഡലമായപ്പോഴും സാഹിത്യ - സാംസ്കാരിക, പത്രപ്രവർത്തന മേഖലകളിൽ അമൂല്യമായ സംഭാവ</a>
+            </div>
+            <div class="full-width no-padding" style="margin:26px 0;border-bottom: solid 1px #CCC;"></div>                        <div class="full-width sub-box-1">
+                <img src="../../web-news/2020/05/NMAN0148684/image/thumb/oommenchandi-.1590694927.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            </div>
+            <div class="full-width sub-box-2">
+                <div class="ms-mr-news-info"><font color="#F1452A">feature</font> | May 29</div>
+                <a href="news.php?id=313332&u=ldf-vs-udf" class="mar-btm-10"><b>നാലു വർഷങ്ങൾ: ഞങ്ങളും അവരും ചെയ്തതിന്റെ
+ വ്യത്യാസം നോക്കുക</b></a>
+                <a style="max-height: 75px;overflow: hidden;" href="news.php?id=313332&u=ldf-vs-udf">കടുത്ത സാമ്പത്തിക ഞെരുക്കംമൂലം നാലാം വാർഷികത്തിന് ആഘോഷമില്ലെന്ന് മുഖ്യമന്ത്രി ഒരു വശത്ത് പറയുമ്പോ</a>
+            </div>
+                                </div>
+
+        <!--Box -2-->
+        <div class="full-width sec-box-mid">
+                        <img src="../../web-news/2020/05/NMAN0148110/image/thumb-sm/covid-.1590695202.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            <div class="ms-mr-news-info"><font color="#F1452A">feature</font> | May 29</div>
+            <a style="margin-bottom: 15px;" class="l2" href="news.php?id=313335&u=covid">കൊവിഡ് സമേത ജീവിതത്തിലേക്ക്</a>
+                        <img src="../../web-news/2020/05/NMAN0148108/image/thumb-sm/onv.1.614533.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+            <div class="ms-mr-news-info"><font color="#F1452A">feature</font> | May 27</div>
+            <a  class="l2" href="news.php?id=311848&u=onv-kurup">മധുരിമയുടെ  സംഗീതം</a>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">
+        <table class="kfont mtbl" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="padding:0;">
+                    <div class="a-300-250">
+                        <div id="taboola-opinion-1x1-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-e',
+    container: 'taboola-opinion-1x1-thumbnails',
+    placement: 'Opinion 1x1 Thumbnails',
+    target_type: 'mix'
+  });
+</script>                    </div>                    
+                </td>
+            </tr>
+                        <tr>
+                <td style="border-bottom:solid 1px #ccc;">
+                    <div class="ms-mr-news-info"><font color="#F1452A">feature</font> | May 28</div>
+                    <a href="news.php?id=312529&u=privatisation" class="l2">സ്വകാര്യവത്കരണവും യാഥാർത്ഥ്യവും</a>
+                </td>
+            </tr>
+                        <tr>
+                <td style="padding:10px 0 0 0;">
+                    <div class="ms-mr-news-info"><font color="#F1452A">columns</font> | May 28</div>
+                    <a href="news.php?id=312532&u=nirakathir" class="l2">വിമാനത്താവളത്തിലെ കർഷകന്റെ ദാഹം</a>
+                </td>
+            </tr>
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=6">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Section CINEMA [P3]-->
+<div class="full-width no-padding">
+    <div style="border-top:none;" class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="section.php?cid=40">NEWS 360</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">                    
+                    <li><a href="section.php?cid=40">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="full-width sec-box-1 no-padding">
+        <!--Box -2-->
+        <div class="full-width sec-box-mid opn no-pad-left-lg">       
+                        <a href="news.php?id=313748&u=national" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NMAN0148996/image/thumb-sm/mamata-banerjee.1590767625.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">national</font> | May 30</div>
+                <span class="l3-sm">ജൂൺ ഒന്ന് മുതൽ ബംഗാളിൽ ആരാധനാലയങ്ങൾ തുറക്കും</span>
+            </a>
+                        <a href="news.php?id=313694&u=vodafone-denies-getting-a-stake-call-from-google" >
+                <img src="../../web-news/2020/05/NEPR0000639/image/thumb-sm/vodafone-idea.1590765889.jpg" class="img-responsive mar-btm-5" onerror="this.src='images/default.gif'" />
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">business</font> | May 30</div>
+                <span class="l3-sm">ഗൂഗിൾ നിക്ഷേപ താത്പര്യം
+അറിയിച്ചിട്ടില്ല: വൊഡാഫോൺ</span>
+            </a>
+                                            
+        </div>
+
+        <!--Box -1-->
+                <div class="full-width sec-box-mstory no-padding">
+            <div class="full-width no-padding mar-btm-10">
+                <a href="news.php?id=313945&u=covid-status-in-uae">
+                    <img src="../../web-news/2020/05/NMAN0149042/image/thumb/uae.1.618094.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />
+                </a>
+            </div>
+            <div class="full-width no-padding">
+                <div class="ms-mr-news-info no-mar"><font color="#F1452A">gulf</font> | May 29</div>
+                <a class="mar-btm-5 l3-big" href="news.php?id=313945&u=covid-status-in-uae">
+                    <h5>യു.എ.ഇയിൽ 638 പേർക്കുകൂടി കൊവിഡ്: രോഗം ബാധിച്ച് ഇതുവരെ മരിച്ചത് 260 പേർ</h5>
+                </a>
+                <a href="news.php?id=313945&u=covid-status-in-uae" style="height: 95px;overflow: hidden;">
+                    ദുബായ്: യു.എ.ഇയിൽ 638 പേർക്ക് കൂടി കൊവിഡ് രോഗം ബാധിച്ചതായി സ്ഥിരീകരിച്ചു. ഒപ്പം ആകെ മരണസംഖ്യ 260 ആയി ഉയർന്നിട്ടുണ്ട്.                </a>
+            </div>
+        </div>
+
+        <!--Box -3-->
+        <div class="full-width sec-box-mid">
+                        <a href="news.php?id=313827&u=maharashtra-registers-most-covid-deaths-crisis-in-gujarat-too" class="mar-btm-10">
+                <img src="../../web-news/2020/05/NMAN0149032/image/thumb-sm/maharashtra.1.617968.jpg" class="img-responsive" onerror="this.src='images/default.gif'" />                <div class="ms-mr-news-info"><font color="#F1452A">national</font> | May 29</div>
+                <span class="l3-sm">മഹാരാഷ്ട്രയിൽ ഇന്ന് ഏറ്റവുമധികം പേർ കൊവിഡ് ബാധിച്ച് മരിച്ച ദിനം: ഗുജറാത്തിൽ രോഗബാധിതർ പതിനാറായിരത്തിനടുത്ത്</span>
+            </a>
+                        <a href="news.php?id=313883&u=national" class="mar-btm-10">
+                                <div class="ms-mr-news-info"><font color="#F1452A">national</font> | May 29</div>
+                <span class="l3-sm">യെദ്യൂരപ്പ വീഴുമോ?​ കൊവിഡ് പ്രതിസന്ധിക്കിടെ കർണാടകയിൽ വിമത നീക്കവുമായി 20 എം.എൽ.എമാർ</span>
+            </a>
+                        <a href="news.php?id=313544&u=world" >
+                                <div class="ms-mr-news-info"><font color="#F1452A">world</font> | May 30</div>
+                <span class="l3-sm">ജോർജ് ഫ്ലോയിഡ് കൊലപാതകം
+ അമേരിക്കയിൽ സ്ഥിതി കലാപ സമാനം</span>
+            </a>
+                    </div>
+    </div>
+    <div class="full-width sec-box-2 no-padding">        
+        <table class="kfont mtbl" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>                
+                <td style="padding:0;">
+                    <div class="cs-sec-feat-title">SPONSORED<font color="#ff4e01"> AD</font></div>
+                                        <div class="a-300-250">
+                        <a href="https://www.youtube.com/channel/UCakQcBIYmlb6hq0I4pXgHNA"><img src="/static/ads/imgs/saltandpepper300x250.gif" /></a>
+                    </div>
+                                    </td>
+            </tr>
+                        <tr>
+                <td >
+                    <div class="ms-mr-news-info"><font color="#F1452A">world</font> | May 30</div>
+                    <a href="news.php?id=313571&u=world" class="l3-sm">
+                        സോഷ്യൽമീഡിയ നിയന്ത്രിക്കാനുള്ള ഉത്തരവിൽ ഒപ്പുവച്ച് ട്രംപ്                    </a>
+                </td>
+            </tr>            
+                        <tr>
+                <td style="padding:0">
+                    <div class="ms-mr-news-info"><font color="#F1452A">world</font> | May 30</div>
+                    <a href="news.php?id=313578&u=world" class="l3-sm">
+                        സിഡ്നിയിൽ മൃഗശാല ജീവനക്കാരിയെ സിംഹം ആക്രമിച്ചു                    </a>
+                </td>
+            </tr>            
+                    </table>
+    </div>
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=40">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:30px;"></div><!--Photogallery [P7]-->
+<div class="full-width no-padding mar-btm-10">
+    <!--Heading Wrap-->
+    <div class="full-width no-padding sec-box-header mar-btm-10">
+        <div class="full-width no-padding">
+            <div class="full-width no-padding">
+                <ul>
+                    <li><a class="cat-name" href="https://keralakaumudi.com/photogallery/">PHOTOS</a></li>
+                </ul>
+                <ul style="margin-top:8px;" class="pull-right">
+                    <li><a href="https://keralakaumudi.com/photogallery/">☰</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="cine-boxes" >
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/subhiksha-keralam-313541">
+                <img src="../../web-news/2020/05/NMAN0148946/image/thumb/1.1.617456.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                <div class="ph-label">SUBHIKSHA KERALAM</div>
+                <div class="p-num"><span><img src="img/cam.png"> 1</span><font>PHOTO</font></div>
+            </a>
+        </div>
+        <div class="full-width cboxes-desc no-padding">
+            <div class="ms-mr-news-info"><font color="#F1452A">day-in-pics</font> | May 29</div>
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/subhiksha-keralam-313541" class="l3-big">
+                സുഭിക്ഷ കേരളം പദ്ധതിയുടെ ഭാഗമായി കവടിയാർ കൊട്ടാരവളപ്പിൽ ആരംഭിച്ച പച്ചക്കറി കൃഷി പൂയം തിരുന്നാൾ ഗൗരി പാർവതി ബായി ഉദ്‌ഘാടനം ചെയ്യുന്നു.            </a>
+        </div>
+    </div>
+        <div class="cine-boxes" >
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/rain-flood---trivandrum-313582">
+                <img src="../../web-news/2020/05/NMAN0148955/image/thumb/1.1.617510.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                <div class="ph-label">RAIN FLOOD - TRIVANDRUM</div>
+                <div class="p-num"><span><img src="img/cam.png"> 1</span><font>PHOTO</font></div>
+            </a>
+        </div>
+        <div class="full-width cboxes-desc no-padding">
+            <div class="ms-mr-news-info"><font color="#F1452A">day-in-pics</font> | May 29</div>
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/rain-flood---trivandrum-313582" class="l3-big">
+                ഇന്നലെ നഗരത്തിൽ പെയ്ത മഴയിൽ വെള്ളകെട്ടിലൂടെ വാഹനം ഓടിച്ചുപോകുന്നയാൾ. പ്രെസ്സ് ക്ലബിന് മുന്നിൽ നിന്നുള്ള ദൃശ്യം            </a>
+        </div>
+    </div>
+        <div class="cine-boxes" >
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/mp-veerendrakumar-313548">
+                <img src="../../web-news/2020/05/NTVM0227390/image/thumb/1.1.617496.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                <div class="ph-label">MP VEERENDRAKUMAR</div>
+                <div class="p-num"><span><img src="img/cam.png"> 1</span><font>PHOTO</font></div>
+            </a>
+        </div>
+        <div class="full-width cboxes-desc no-padding">
+            <div class="ms-mr-news-info"><font color="#F1452A">day-in-pics</font> | May 29</div>
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/mp-veerendrakumar-313548" class="l3-big">
+                തിരുവനന്തപുരം മാതൃഭൂമി ഓഫീസിലെത്തി അന്തരിച്ച എം. പി. വീരേന്ദ്രകുമാറിന്റെ ഛായാചിത്രത്തിന് മുന്നിൽ മന്ത്രി ഇ. ചന്ദ്രശേഖരൻ അന്തിമോപചാരം അർപ്പിക്കുന്നു            </a>
+        </div>
+    </div>
+        <div class="cine-boxes" style="margin-right:0">
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/two-workers-died-313509">
+                <img src="../../web-news/2020/05/NMAN0148924/image/thumb/01.1.617363.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                <div class="ph-label">TWO WORKERS DIED</div>
+                <div class="p-num"><span><img src="img/cam.png"> 1</span><font>PHOTO</font></div>
+            </a>
+        </div>
+        <div class="full-width cboxes-desc no-padding">
+            <div class="ms-mr-news-info"><font color="#F1452A">day-in-pics</font> | May 29</div>
+            <a href="https://keralakaumudi.com/photogallery/day-in-pics/two-workers-died-313509" class="l3-big">
+                മലപ്പുറം താനൂർ മൂലക്കലിൽ കിണര്‍ ഇടിഞ്ഞ് മരണപ്പെട്ട രണ്ടു തൊഴിലാളികളുടെ മൃതദേഹങ്ങൾ പുറത്തെടുത്തപ്പോൾ.            </a>
+        </div>
+    </div>
+        <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="section.php?cid=16">READ MORE</a></span>
+        </div>
+    </div>
+</div>
+<div class="full-width no-padding" style="margin-bottom:0px;"></div> 
+        <!--Section English-->
+<div class="full-width english-section engg">
+    <!--Eng-Menu-->
+    <div class="full-width sec-box-header" style="border-top:none;">
+        <ul>
+            <li><a class="cat-name" href="//keralakaumudi.com/en">ENGLISH EDITION</a></li>
+        </ul>
+        <ul style="margin-top:8px;" class="pull-right">
+            <li><a href="//keralakaumudi.com/en">☰</a></li>
+        </ul>                
+    </div>
+
+        <!--Box1-->
+    <div class="eng-box">
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/en/news/news.php?id=314040&u="><img src="../../web-news/en/2020/05/NMAN0149047/image/thumb-sm/lockdown.1.618205.jpg" onerror="this.src='images/default.gif'" class="img-responsive" /></a>
+            <div class="label nl-ms">LOCKDOWN</div>
+        </div>
+        <div class="full-width eng-title">
+            <a href="https://keralakaumudi.com/en/news/news.php?id=314040&u=">Centre likely to retain limited role and allow states have more say after Lockdown 4.0</a>
+        </div>
+    </div>
+        <!--Box1-->
+    <div class="eng-box">
+        <div class="full-width no-padding mar-btm-10">
+            <a href="https://keralakaumudi.com/en/news/news.php?id=313999&u="><img src="../../web-news/en/2020/05/NMAN0149046/image/thumb-sm/bob-weighton.1.617539.jpg" onerror="this.src='images/default.gif'" class="img-responsive" /></a>
+            <div class="label nl-ms">WORLD'S OLDEST MAN</div>
+        </div>
+        <div class="full-width eng-title">
+            <a href="https://keralakaumudi.com/en/news/news.php?id=313999&u=">World's oldest man dies at 112 from cancer in UK</a>
+        </div>
+    </div>
+    
+    <!--Box3-->
+    <div class="eng-box">
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313963&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0149044/image/thumb-sm/covid-death.1.618023.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class="eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313963&u=">Alappuzha native dies of COVID-19 as death toll in Kerala rises to nine</a>
+                <div class="full-width cs-list-info">May 29, 2020 23:22 IST</div>
+            </div>
+        </div>
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313874&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0149038/image/thumb-sm/locust.1.614653.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class="eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313874&u=">DGCA says locust swarms pose threat to aircraft during landing and takeoff phase, issues guidelines</a>
+                <div class="full-width cs-list-info">May 29, 2020 22:26 IST</div>
+            </div>
+        </div>
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313797&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0149030/image/thumb-sm/indian-economy.1.617929.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class="eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313797&u=">India GDP growth dips to 3.1 pc in Jan-Mar; 4.2 pc in 2019-20</a>
+                <div class="full-width cs-list-info">May 29, 2020 21:47 IST</div>
+            </div>
+        </div>
+            </div>
+
+    <!--Box4-->
+    <div class="eng-box last">
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313684&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0149019/image/thumb-sm/india.1.617782.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class=" eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313684&u=">SC to hear on June 2 plea seeking replacement of word India with 'Bharat'</a>
+                <div class="full-width cs-list-info">May 29, 2020 20:44 IST</div>
+            </div>
+        </div>
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313639&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0149002/image/thumb-sm/mamata.1.595890.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class=" eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313639&u=">Religious places to be opened from June 1; Mamata announces relaxations
+    </a>
+                <div class="full-width cs-list-info">May 29, 2020 19:28 IST</div>
+            </div>
+        </div>
+                <div class="full-width eng-news-lists" style="border-bottom:none">
+            <div class="e-n-l-img no-padding">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313628&u=">
+                    <img src="../../web-news/en/2020/05/NMAN0148997/image/thumb-sm/pic.1.617511.jpg" onerror="this.src='images/default.gif'" class="img-responsive" />
+                </a>
+            </div>
+            <div class=" eng-sub-title">
+                <a href="https://keralakaumudi.com/en/news/news.php?id=313628&u=">Shutters three, four of Aruvikkara Dam raised; Possibility of heavy rain in state for next three days</a>
+                <div class="full-width cs-list-info">May 29, 2020 19:13 IST</div>
+            </div>
+        </div>
+               
+    </div>
+
+    <div class="full-width no-padding rm-wrap">
+        <div class="rm-white">
+            <span><a href="//keralakaumudi.com/en">READ MORE</a></span>
+        </div>
+    </div>
+</div>        <!-- Frame-13 - Taboola AD-->
+        <div class="full-width no-padding mar-btm-10" style="margin-top:10px;">
+            <!--<img src="img/ad-taboola-fullpg.jpg" class="img-responsive" />-->
+            <div id="taboola-mid-home-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-d',
+    container: 'taboola-mid-home-thumbnails',
+    placement: 'Mid Home Thumbnails',
+    target_type: 'mix'
+  });
+</script>        </div>
+                        
+        <!-- Footer-->
+<div class="full-width footer-wrap">
+    <div class="full-width footer-main-title">KERALA KAUMUDI</div>
+    <div class="col-lg-11 col-md-10 col-sm-12 col-xs-12 footer-section-box">
+        <!--box-1-->
+        <div class="fbox">
+            <!--Section1-->
+            <div class="full-width footer-section-title no-padding">GENERAL</div>
+            <div class="full-width no-padding footer-section-menus">
+                <ul>
+                    <li><a data-modal="about-us" href="javascript:void(0);">ABOUT US</a></li>
+                    <li><a data-modal="corporate-office" href="javascript:void(0);">CORPORATE OFFICE</a></li>
+                    <li><a data-modal="privacy-policy" href="javascript:void(0);">PRIVACY POLICY</a></li>
+                    <li><a data-modal="copyright-policy" href="javascript:void(0);">COPYRIGHT POLICY</a></li>
+                    <li><a data-modal="advt-disclaimer" href="javascript:void(0);">ADVERTISEMENT DISCLAIMER</a></li>
+                    <li><a data-modal="print-ad-rates" href="javascript:void(0);">PRINT AD RATES</a></li>
+                    <li><a data-modal="our-offices" href="javascript:void(0);">OUR OFFICES</a></li>
+                </ul>
+            </div>
+
+            <!--Section2-->
+            <div class="full-width footer-section-title no-padding">ONLINE DIVISION</div>
+            <div class="full-width no-padding footer-section-menus">
+                <ul>
+                    <li><a data-modal="editorial-desk" href="javascript:void(0);">EDITORIAL DESK</a></li>
+                    <li><a data-modal="marketing-desk" href="javascript:void(0);">MARKETING DESK</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--box-2-->
+        <div class="fbox">
+            <!--Section1-->
+            <div class="full-width footer-section-title no-padding">SECTIONS</div>
+            <div class="full-width no-padding footer-section-menus">
+                <ul>
+                    <li><a href="latest.php">LATEST</a></li>
+                                        <li><a href="section.php?cid=9">KERALA</a></li>
+                                        <li><a href="section.php?cid=11">LOCAL</a></li>
+                                        <li><a href="section.php?cid=40">NEWS 360</a></li>
+                                        <li><a href="section.php?cid=41">CASE DIARY</a></li>
+                                        <li><a href="section.php?cid=4">CINEMA</a></li>
+                                        <li><a href="section.php?cid=6">OPINION</a></li>
+                                        <li><a href="section.php?cid=51">COVID-19</a></li>
+                                        <li><a href="section.php?cid=16">PHOTOS</a></li>
+                                        <li><a href="section.php?cid=1">VIDEOS</a></li>
+                                        <li><a href="section.php?cid=8">LIFESTYLE</a></li>
+                                        <li><a href="section.php?cid=42">SPIRITUAL</a></li>
+                                        <li><a href="section.php?cid=43">INFO+</a></li>
+                                        <li><a href="section.php?cid=47">WORLD CUP 2019</a></li>
+                                    </ul>
+            </div>
+        </div>
+
+        <!--box-3-->
+        <div class="fbox">
+            <!--Section1-->
+            <div class="full-width footer-section-title no-padding">CONTACT US</div>
+            <div class="full-width no-padding footer-section-menus">
+                <ul>
+                    <li><a data-modal="print-editorial" href="javascript:void(0);">EDITORIAL</a></li>
+                    <li><a data-modal="print-advertisements" href="javascript:void(0);">ADVERTISMENTS</a></li>
+                    <li><a data-modal="print-circulation" href="javascript:void(0);">CIRCULATION</a></li>
+                    <li><a data-modal="broadcasting" href="javascript:void(0);">BROADCASTING</a></li>
+                    <li><a data-modal="kaumudy-tv-ads" href="javascript:void(0);">KAUMUDY TV ADS</a></li>
+                    <li><a data-modal="magazine-department" href="javascript:void(0);">PERIODICALS</a></li>
+                    <li><a data-modal="flash-movies" href="javascript:void(0);">FLASH MOVIES</a></li>
+                    <li><a data-modal="crm-department" href="javascript:void(0);">CRM DEPT</a></li>
+                    <!--<li><a data-modal="suggestions" href="javascript:void(0);">SUGGESTIONS</a></li>
+                    <li><a data-modal="complaints" href="javascript:void(0);">COMPLAINTS</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--box-4-->
+        <div class="fbox">
+            <!--Section1-->
+            <div class="full-width footer-section-title no-padding">KAUMUDI GROUP</div>
+            <div class="full-width no-padding footer-section-menus">
+                <ul>
+                    <li><a href="javascript:void(0);">KERALAKAUMUDI DAILY</a></li>
+                    <li><a href="javascript:void(0);">KERALAKAUMUDI FLASH MIDDAY</a></li>
+                    <li><a href="javascript:void(0);">KERALAKAUMUDI WEEEKLY</a></li>
+                    <li><a href="javascript:void(0);">FLASH MOVIES</a></li>
+                    <li><a href="//kaumudy.com">KAUMUDY TV</a></li>
+                    <li><a href="//keralakaumudi.com">KERALAKAUMUDI.COM</a></li>
+                    <li><a href="//kaumudi.com">KAUMUDI.COM</a></li>
+                    <li><a href="//kaumudymatrimony.com">KAUMUDYMATRIMONY.COM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-logo-wrap no-padding">
+        <!--Logo-->
+        <img src="images/logo-gray.png" />
+        <div class="full-width no-padding footer-section-menus footer-logo-part">
+            <ul>
+                <li><a href="javascript:void(0);">COPYRIGHT KERALAKAUMUDI ONLINE</a></li>
+                <li><a href="javascript:void(0);">CHIEF EDITOR - DEEPU RAVI</a></li>
+                <li><a href="javascript:void(0);">Online Queries call Deepu Sasidharan, + 91 98472 38959</a></li>
+                <li><a href="javascript:void(0);">Reproduction in whole or in part without permission is prohibitted</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--GoTop-->
+    <div id="gotop" style="display:none;"></div>
+
+    <div id="audio-player-wrap" style="display:none;">
+        <div id="audio-close">X</div>
+        <audio controls id="audio-player">
+            <source src="" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+
+<div id="loader" style="width:100%;position: fixed;top:0;left:0;height:100%;background: rgba(0, 0, 0, 0.05);z-index: 99;display:none;">
+    <img src="images/loading.gif" style="position: fixed;left: 0;right: 0;margin: 0 auto;top: 45%;z-index: 999;" />
+</div>
+
+<div class="popup-modal-bg">
+    <div class="popup-modal">
+        <div class="popup-modal-header"><span>X</span></div>
+        <div class="popup-modal-body"></div>
+    </div>
+</div>
+<script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1279111118934245',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.2'
+            });
+
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        function fbLogin() {
+            FB.login(function (response) {
+                if (response.status === 'connected') {
+                    getFbUserData();
+                }// else {
+                //    document.getElementById('status').innerHTML = 'User cancelled login or did not fully authorize.';
+                //}
+            }, { scope: 'email' });
+
+        }
+        function getFbUserData() {
+            FB.api('/me', { locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture' },
+            function (response) {
+                var userData = { "username": response.first_name + ' ' + response.last_name, "emailid": response.email, "imgurl": response.picture.data.url };
+                KAUMUDI.AUTH.saveUserData(userData);
+            });
+        }
+        function onSignIn(googleUser) {
+            KAUMUDI.AUTH.googleSignIn(googleUser);
+        }
+</script>
+        
+    </div>
+    <!--End Of Main Container-->
+    <script>var page = 'HOME';</script>
+    <script src="https://keralakaumudi.com/news/mobile/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://keralakaumudi.com/news/mobile/js/spin.min.js"></script>
+<script type="text/javascript" src="https://keralakaumudi.com/news/mobile/js/ladda.min.js"></script>
+<script type="text/javascript" src="https://keralakaumudi.com/news/mobile/js/custom.js?v=1.4"></script>
+<script type="text/javascript" src="https://keralakaumudi.com/news/mobile/js/auth.js?v=1.1"></script>
+<script>
+  (function() {
+    var cx = 'partner-pub-6893276202082753:5622844380';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({flush: true});
+    </script>
+</body>
+</html>

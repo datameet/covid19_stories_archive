@@ -1,0 +1,194 @@
+{
+    "title": "Unable to Reach Hospital Due to Lockdown, Kashmiri Woman Dies Hours after Delivering Stillborn",
+    "url": "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html",
+    "timestamp": "1590766226.75",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:15.322794",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768787",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 7,
+                "start_ts": "2020-05-29 16:13:07.575171",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:47.491940",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:13:45.737504",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:07.574681",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:13:07.293601",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:25.917203",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 16:13:15.322975",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:45.737092",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 16:13:36.480998",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:50.286791",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:13:47.492278",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "https://web.archive.org/web/20200529161349/https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:36.480732",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 16:13:25.917463",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:13:07.293460",
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/unable-to-reach-hospital-due-to-lockdown-kashmiri-woman-dies-hours-after-delivering-stillborn-2614001.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:13:06.544794",
+                "pwd": "/data/archive/1590766226.75",
+                "output": "Unable to Reach Hospital Due to Lockdown, Kashmiri Woman Dies Hours after Delivering Stillborn"
+            }
+        ]
+    },
+    "updated": "1590788191.49484",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

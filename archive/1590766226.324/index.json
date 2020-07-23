@@ -1,0 +1,194 @@
+{
+    "title": "noida woman suicide: Lockdown in Noida: \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092b\u0902\u0938\u0947 \u092a\u0924\u093f \u0915\u0947 \u0928\u0939\u0940\u0902 \u0932\u094c\u091f\u0928\u0947 \u092a\u0930 \u0916\u0941\u0926\u0915\u0941\u0936\u0940 - lockdown in noida husband starnded in bareilly women commits suicide | Navbharat Times",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.324",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 15,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590779067",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:04:42.911155",
+                "start_ts": "2020-05-29 19:04:27.007030",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:05:00.753581",
+                "start_ts": "2020-05-29 19:04:58.239228",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=navbharattimes.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 19:04:27.005277",
+                "start_ts": "2020-05-29 19:04:26.715823",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:04:48.202737",
+                "start_ts": "2020-05-29 19:04:42.911344",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:04:58.238872",
+                "start_ts": "2020-05-29 19:04:53.322317",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:05:03.551376",
+                "start_ts": "2020-05-29 19:05:00.753846",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "https://web.archive.org/web/20200529190501/https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+                ],
+                "end_ts": "2020-05-29 19:04:53.322069",
+                "start_ts": "2020-05-29 19:04:48.203010",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "curl",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:04:26.715539",
+                "start_ts": "2020-05-29 19:04:18.758659",
+                "pwd": "/data/archive/1590766226.324",
+                "output": "noida woman suicide: Lockdown in Noida: \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u092b\u0902\u0938\u0947 \u092a\u0924\u093f \u0915\u0947 \u0928\u0939\u0940\u0902 \u0932\u094c\u091f\u0928\u0947 \u092a\u0930 \u0916\u0941\u0926\u0915\u0941\u0936\u0940 - lockdown in noida husband starnded in bareilly women commits suicide | Navbharat Times"
+            }
+        ]
+    },
+    "updated": "1590789304.707201",
+    "tags": "",
+    "url": "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/lockdown-in-noida-husband-starnded-in-bareilly-women-commits-suicide/articleshow/75469125.cms"
+}

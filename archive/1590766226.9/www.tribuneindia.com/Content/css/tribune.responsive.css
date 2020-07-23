@@ -1,0 +1,1693 @@
+﻿div [title='Punjab'] iframe, div [title='Chandigarh'] iframe, div [title='Nation'] iframe {
+    width: 100%;
+    height: 300px;
+}
+@media(max-width:1399px) {
+    section.horoscope-area .horoscope-block .horoscope-tabs .tab-content.horoscope-content .horoscope-area .horoscope-img img.img-fluid {
+        width: 75px;
+        height: 75px;
+    }
+    div [title='Features'] .row-2 .news-img-hor-container img, div [title='Health'] .news-img-container img, div [title='Ludhiana'] .news-img-container img, div [title='Punjab'] .news-img-container img, div [title='Lifestyle'] .news-img-container img, div [title='Movie Review'] .news-img-container img, div [title='Entertainment'] .news-img-container img, div [title='Features'] .features-col .news-img-container img, div [title='Chandigarh'] .news-img-container img, div [title='Nation'] .news-img-container img, div [title='World'] .news-img-container img, div [title='Sports'] .news-img-container img, .dont-miss-cards .news-img-container img.img-fluid.card-img-top, .row.entertainment-xs-img.entertainment-bottom-section .news-img-hor-container-detail img, .entertainment-sm-img .movie-detail.card-movie-detail .news-img-hor-container-detail img {
+        max-height: 120px;
+    }
+    .opinion-writers-img .news-img-hor-container-detail img.img-fluid, .sports-sm-img .news-img-hor-container-detail img.img-fluid {
+        height: 150px;        
+    }
+    .thought_head {
+        width: 16%;
+    }
+    .follow-list ul li {        
+        height: 65px !important;
+    }
+
+        .follow-list ul li a {
+            font-size: 24px !important;
+        }
+
+    .opinion-news-block img.img-fluid {
+        width: 100px;
+        height: auto;
+    }
+    
+    .TDTY-Subs {
+        font-size: 18px;
+    }
+
+    .horoscope-img {
+        margin-bottom: 12px;
+    }
+
+    div[title="This day, that year"] .pad-top-btm-10 {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+
+    .opinion-tab-block .nav > li > a {
+        padding: 17px 10px;
+    }
+    
+    .horoscope-img {        
+        width: 115px;        
+    }
+        .horoscope-img p {
+            font-size: 20px;           
+        }
+    .horo-block .horoscope-img img {
+        width: auto;
+        height: auto;
+    }
+}
+@media(max-width:1299px) {
+    .dont-miss-cards .card {
+        width: 22%;
+    }
+    .dropdown-content {       
+        padding: 10px 30px;
+    }
+}
+    @media(max-width:1199px) {
+        span.mb0.flex {
+            width: 100%;
+            display: block;
+        }
+        .form-control:disabled, .form-control[readonly] {           
+            width: 75% !important;
+        }
+        .horizontal-ads img {
+            width: 100%;
+        }
+
+        button.btn.btn-bg.btnad.float-none.letter-btn {
+            margin-top: 22px !important;
+        }
+        .metadata {
+            line-height: 14px;
+        }
+        /*Homepage css starts here*/
+        .movie-detail .detail {
+            height: auto;
+        }
+
+        .rss-block .row.submenu-categories.rss-cat.top-categories li.list-col {
+            width: 17% !important;
+        }
+
+        .rss-block ul.row.submenu-categories.top-categories.menu-categories li.list-col {
+            width: 17% !important;
+        }
+
+        .rss-block ul.row.submenu-categories.rss-cat.top-categories.menu-categories {
+            flex-flow: wrap !important;
+        }
+
+        .breadcrumb li.breadcrumb-item {
+            height: 30px;
+        }
+
+        .follow-list ul li {
+            width: 100px !important;
+        }
+
+        ul.row.submenu-categories.top-categories.menu-categories li.list-col {
+            width: 17% !important;
+        }
+
+        ul.row.submenu-categories.top-categories li.list-col {
+            width: 17% !important;
+        }
+
+        ul.row.submenu-categories.top-categories.menu-categories.tab-menu li.list-col {
+            width: 25% !important;
+        }
+
+        .container {
+            width: calc(100% - 35px);
+            max-width: 100%;
+        }
+
+        .sub-categories.tab-menu {
+            display: block !important;
+        }
+
+        .list-col {
+            width: 17% !important;
+            margin-right: 15px !important;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        div[title="Opinions"] h4.font-14 {
+            font-size: 13px;
+        }
+
+        div[title="Opinions"] p.opn-desc.font-14 {
+            font-size: 12px;
+        }
+
+        .ts-letter-viewall {
+            font-size: 14px;
+        }
+
+        div [title="This day, that year"] .sec-title {
+            font-size: 18px;
+            line-height: normal;
+        }
+
+        .TDTY-title {
+            font-size: 22px;
+            line-height: normal;
+        }
+
+        .TDTY-News {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        .TDTY-Subs {
+            font-size: 17px;
+        }
+
+        div [title="This day, that year"] .margin-top-20 {
+            margin-top: 10px;
+        }
+
+        .horo-block {
+            padding: 20px 0 6px;
+        }
+
+        .horoscope-img {
+            margin-bottom: 12px;
+            padding-right: 2px !important;
+            padding-left: 2px;
+        }
+
+        div[title="Chandigarh"] h4.card-title, div [title='Nation'] h4.card-title, div [title='Sports'] h4.card-title,
+        div [title='Features'] h4.card-title, div [title='Health'] h4.card-title, div [title='Lifestyle'] h4.card-title {
+            font-size: 14px;
+        }
+
+        .card-text {
+            line-height: 20px;
+        }
+
+        div [title='Chandigarh'] .card-body, div [title='Punjab'] .card-body {
+            min-height: inherit;
+        }
+
+        div[title="Health"] .card-body {
+            height: inherit;
+        }
+
+        div[title="Features"] .card-body {
+            height: inherit;
+        }
+
+        .View-All {
+            font-size: 14px;
+        }
+
+        .sec-title {
+            font-size: 18px;
+            line-height: normal;
+        }
+
+        div[title="Lifestyle"] li.sec-title, div[title="Arts"] li.sec-title, div[title="Books Reviews"] li.sec-title {
+            font-size: 18px !important;
+        }
+
+        /*Homepage css starts here*/
+        /*NEws Detail page  css starts here */
+        .follow .heading h2 {
+            position: relative;
+            top: -5px;
+        }
+        /*News Detail page  css ends here */
+        .list-col.tab-col, li.list-col.tab-res {
+            display: none;
+        }
+
+        .sub-categories.tab-menu li.list-col, .sub-categories.tab-menu .list-col {
+            width: 25% !important;
+        }
+
+            .sub-categories.tab-menu .list-col:last-child {
+                width: 45% !important;
+            }
+
+        div [title='Sports'] .news-img-big-container, div[title="Lifestyle"] .news-img-big-container, div [title='Punjab'] .news-img-big-container, div [title='Chandigarh'] .news-img-big-container, div [title='Nation'] .news-img-big-container {
+            height: 200px;
+        }
+
+        .Horoscope-sign-title {
+            font-size: 13px;
+        }
+
+        .img-container-detail img {
+            height: 300px;
+        }
+
+        .horoscope-img {
+            text-align: center;
+        }
+
+        .search-container button {
+            height: 50px;
+        }
+
+        .search-container input {
+            height: 50px;
+            width: 80%;
+        }
+
+        .hdrdate {
+            padding-bottom: 5px;
+        }
+
+        form.city_form input#city {
+            height: 30px;
+            position: relative;
+            top: -10px;
+        }
+
+        .astro-days table.table td .astro-desc {
+            flex-direction: column;
+        }
+
+        .horoscope-img, .horoscope-text {
+            padding-right: 0;
+            padding-top: 10px;
+        }
+
+        .tab-content.horoscope-content {
+            padding: 25px 0px;
+        }
+
+        .horoscope-text {
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        ul.nav.nav-tabs.inner-tab {
+            justify-content: center;
+        }
+
+        .nav-tabs li.nav-item.col {
+            padding: 5px 30px;
+            flex-grow: inherit;
+            flex-basis: auto;
+            width: 16%;
+        }
+
+        .columnist-block .writer-info {
+            width: 50%;
+        }
+
+            .columnist-block .writer-info span {
+                color: #838792;
+                word-break: break-all;
+            }
+
+        li.dropdown.small-dropdown ul.submenu-categories li a {
+            font-size: 10px;
+        }
+
+        .news-detail-page-header li.breadcrumb-item:after {
+            top: 8px;
+            font-size: 60px;
+            right: -18px;
+        }
+        .entertainment-big-img .news-img-hor-container img {
+            max-height: 220px;
+        }
+        .article-block.state-city-block {
+            padding: 0;
+        }
+        .movie-detail-page-imgs .news-img-hor-container img {
+            max-height: 300px;
+        }
+        .review-img {
+            max-width: 100%;           
+        }
+        div [title='Health'] .news-img-container img
+        {
+            max-height: 300px;
+        }
+        .pagination .page-link {           
+            font-size: 13px;          
+            padding: 3px 8px !important;
+        }
+        li.page-item {
+            margin: 0 3px 10px;            
+        }
+    }
+
+@media(max-width:1024px) {
+    div[title='Coronavirus'] div#features .col-md-12 {
+        display: none;
+    }
+    .news-body .headline a {
+        color: #000000;
+        font-size: 14px;
+    }
+    img.img-fluid.video-icon {
+        position: relative;
+        top: -2px;
+    }
+    div[title='Coronavirus'] .features-col img.img-fluid.video-icon {
+        top: -1px;
+    }
+    .adv {        
+        text-align: center;
+    }
+    .adv ins.adsbygoogle {
+        width: initial !important;
+    }
+
+   #related-news p a {
+    padding: 0 !important;
+}
+.news-detail-page .story-desc p .col-md-12.news-wrap-block {
+    padding: 0;
+    clear: both;
+}
+   div#related-news {
+    width: 100% !important;
+    margin-left: 0 !important;
+    float: none !important;
+    clear: both;
+}
+    .entertainment-block .entertainment-sm-img .detail h3 {        
+        max-height: 50px;
+        display: block;        
+    }
+    span.solid-span-small.deck-red:empty , .news-detail-page .story-desc p:empty , .news-detail-page .story-desc p.p-ignore {
+        display: none;
+    }
+
+    /* figure.image figcaption {       
+        width: 100% !important;
+    } */
+    .col-sm-3.quote-image {
+        padding-left: 0;
+        flex: 0 0 115px;
+    }
+    div#quote-news-block {
+        margin-bottom: 20px !important;
+        padding: 10px 20px!important;
+        width: 100% !important;
+    }
+    footer.footer .ftr-left .tribune-desc p {       
+        text-align: left;        
+    }
+    .rate-block>h3 {
+        font-size: 20px;       
+    }
+    .astro-days.rate-card table.table.table-bordered th, .astro-days.rate-card table.table.table-bordered td {
+        padding: 10px;
+        font-size: 13px;       
+    }
+    .horizontal-ads ins.adsbygoogle {
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .movie-detail.img-banner-height.movie-detail-page-imgs {
+        height: 300px;
+    }
+    .classified p.advt-blk-para-des {
+        font-size: 20px;
+    }
+    section.horoscope-area .horoscope-block .horoscope-tabs .tab-content.horoscope-content .horoscope-area .horoscope-img img.img-fluid {
+        width: 115px;
+        height: 115px;
+    }
+    section.horoscope-area .horoscope-block .horoscope-tabs .tab-content.horoscope-content .horoscope-area {
+        flex-flow: wrap;
+    }
+    .L2-opinion-tab-block .tab-content.opn-font .tab-pane .L2-opinion-news-container .L2-opinion-news-block .news-img-container img.img-fluid.card-img-top {
+        width: 100%;
+        height: 50px;
+    }
+
+    div[title='Opinions'] .opinion-news-block .news-img-container {       
+        width: 100%;
+    }
+
+    .opinion.full-layout-home .opinion-news-block .col-md-8 .opn-card .card-body {
+        padding-top: 0;
+    }
+
+    div [title='Health'] .news-img-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    div [title='Features'] .row-1 .news-img-hor-container img {
+        height: 165px;
+    }
+
+    .L2-opinion-tab-block .topstory-addsection {
+        border-bottom: none;
+    }
+
+    .L2-opinion-tab-block ul.nav.nav-tabs.opn-border-radius.opn-font li a {
+        padding: 23px 10px;
+    }
+
+    ul.L2-letter-block-container .letter-sec {
+        padding-left: 5px;
+    }
+
+    ul.L2-letter-block-container .opinion-letter-area a.ts-letter-viewall {
+        padding-left: 12px;
+    }
+
+    .L2-opinion-tab-block li.active ::after {
+        top: 39px;
+    }
+
+    .advertise_page .advert-form .form_heading {
+        font-size: 24px;
+    }
+
+    p.no-of-section {
+        font-size: 15px;
+    }
+
+    .advertise_page .imp_section {
+        margin-bottom: 20px;
+    }
+
+    .comment-news {
+        flex-direction: column;
+    }
+    /* css for the header starts here*/
+    .movie-detail-page-header .share-info .share-icons {
+        display: none;
+    }
+
+    .movie-detail-page-header .share-info .fb_iframe_widget_fluid {
+        width: 0 !important;
+        display: inline-block;
+        position: relative;
+    }
+
+    .movie-detail-page-header .share-info .col-lg-6.col-md-12.col-sm-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .card.city-page-poster .card-body .metadata.clearfix {
+        margin-bottom: 3px;
+    }
+
+    .card.city-page-poster .card-body h4.card-title {
+        margin-bottom: 4px;
+    }
+
+    .ftr-left {
+        padding: 25px 0px;
+    }
+
+    .other-logo {
+        display: flex;
+    }
+
+    .thought_head {
+        width: 17%;
+    }
+
+    .like-news.side-borders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dislike-news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .birtday-heading h3 {
+        font-size: 24px;
+    }
+
+    .birtday-subheading p {
+        font-size: 20px;
+    }
+
+    .article-block .global-tab li.nav-item.cities a {
+        font-size: 15px;
+        padding: 10px 13px;
+    }
+
+    .breaking-news-block .breaking-news .bn-Btn {
+        padding: 12px 23px 12px 23px;
+    }
+
+    ul.nav-right {
+        justify-content: space-around;
+        list-style: none;
+        display: none;
+        margin: 10px 20px 15px 10px;
+    }
+
+    .list-col {
+        width: 15%;
+        margin-right: 10px;
+    }
+
+    .dropdown .dropbtn {
+        padding: 10px;
+        font-size: 14px !important;
+    }
+
+    .nav-menu {
+        display: inline;
+    }
+
+    .dropdown-content {
+        padding: 10px 35px;
+    }
+
+        .dropdown-content .header {
+            padding: 10px 0 25px;
+        }
+
+    .sub-categories {
+        padding-top: 10px;
+    }
+
+    ul.submenu-categories li {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .dropdown.small-dropdown .dropdown-content {
+        padding: 15px 5px;
+    }
+
+    ul.submenu-categories li h3 {
+        font-size: 16px;
+    }
+
+    .opinion-tab-block .opn-font {
+        font-size: 12px;
+    }
+
+    .opinion-tab-block .nav > li > a {
+        padding: 17px 0;
+        line-height: 1.71;
+    }
+
+    .opinion-news-block {
+        padding: 15px 0 10px;
+    }
+
+    .letter-sec {
+        padding: 0px 0px 0px 13px;
+    }
+
+    .opinion-letter-area {
+        padding: 5px;
+    }
+
+    .add-sec {
+        padding: 20px;
+    }
+
+    h1.card-title a {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .article-block.state-city-block h4.ts-card-title {
+        padding-top: 0;
+        line-height: 18px;
+    }
+
+    .ts-news-content .ts-card-title {
+        margin-bottom: 0px;
+        font-size: 14px;
+        padding-top: 0px;
+    }
+
+    span.red-font-small {
+        display: block;
+        line-height: 14px;
+    }
+
+    .news-content p.card-text a {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    ul.sectiontitle li a {
+        padding-top: 2px;
+    }
+
+    .TDTY-btn-subs {
+        font-size: 14px;
+        padding: 8px 9px;
+    }
+
+    .world-container .card-title {
+        margin-bottom: 25px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    /* css for the header ends here*/
+    .tribune-video-blk.tv-padding {
+        width: 25%;
+        margin: 0;
+        padding: 10px 15px;
+    }
+    /*NEws Detail page  css starts here */
+    .follow-list ul li {
+        margin: 0px 22px 0 0 !important;
+        width: 21%
+    }
+
+    .dont-miss-cards > .card > .card-body > .share-time {
+        padding-right: 21px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .dont-miss-cards > .card > .card-body {
+        height: inherit;
+    }
+
+    .dont-miss-cards .card {
+        width: 33.33%;
+        padding-right: 21px;
+        margin-right: 0;
+    }
+
+    .glb-heading h1 {
+        font-size: 36px;
+    }
+
+    .nav-menu .nav > li > a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /*NEws Detail page  css Ends here */
+    /***news-detail page starts***/
+    .news-detail-page .story-desc p {
+        font-size: 16px;
+        width: 100%;        
+    }
+
+    .news-detail-page .most-read-sec-carousel .card-title a {
+        font-size: 15px;
+    }
+
+    .news-detail-page .like-dislike-area .like-news, .news-detail-page .like-dislike-area .dislike-news {
+        white-space: nowrap;
+        padding: 1em 0;
+    }
+
+    .news-detail-page-header .share-info .row .col-lg-7.col-md-12.col-sm-12 {
+        display: none;
+    }
+
+    .news-detail-page-header .share-info .row .col-lg-5.col-md-12.col-sm-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+        .news-detail-page-header .share-info .row .col-lg-5.col-md-12.col-sm-12 .fb_iframe_widget_fluid {
+            width: 0 !important;
+            display: inline-block;
+            position: relative;
+        }
+    /***news-detail page starts***/
+
+
+    section.entertainment-news {
+        padding-top: 30px;
+    }
+
+    .detail h3 a.news-link {
+        font-size: 18px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .inner-tab a.nav-link.active:before {
+        display: none;
+    }
+
+    .inner-tab a.nav-link.active:after {
+        display: none;
+    }
+
+    .entertainment-block .entertainment-sm-img .image-blk-area {
+        width: 33.333% !important;
+        margin: 10px 0 15px;
+        padding: 0 15px;
+    }
+
+    .horoscope-area .horoscope-block .horoscope-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .horoscope-area .horoscope-block .horoscope-img {
+        margin: auto;
+        padding: 0 !important;
+    }
+
+    .horoscope-area .horoscope-block .horoscope-text p.birth-date-range {
+        text-align: center;
+    }
+
+    .horoscope-area .horoscope-block .horoscope-text p {
+        padding-right: 0;
+    }
+
+    .address p {
+        font-size: 18px;
+    }
+
+    .contact-gallery .follow-list ul li {
+        margin-right: 10px !important;
+        width: 77px !important;
+        height: 70px !important;
+    }
+
+        .contact-gallery .follow-list ul li:last-child {
+            margin-right: 0 !important;
+        }
+
+    .entertainment-xs-img .card-body {
+        height: inherit;
+    }
+
+    .opinion-writers-img .news-img-hor-container-detail {
+        height: 150px;
+    }
+
+    .news-link-black img.img-fluid.card-img-top {
+        height: 130px;
+    }
+
+    .movie-review-blk {
+        width: 33.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+    }
+    
+        .movie-review-blk .card-title a {
+            font-size: 15px;
+        }
+
+        .movie-review-blk .cast-detail {
+            font-size: 13px;
+        }
+
+        .movie-review-blk .news-link-black {
+            font-size: 15px;
+        }
+
+    .editorial-musing-poster .news-img-big-container {
+        height: 250px;
+    }
+    /**sports css starts**/
+    .sports_page .sports-sm-img.sports_page_sm_img_sec .card-body .card-title {
+        font-size: 16px;
+    }
+
+    .sports_page .sports-sm-img.sports_page_sm_img_sec .card-body .card-text {
+        font-size: 13px;
+    }
+    /**sports css ends**/
+    
+    .entertainment-block .entertainment-big-img .news-img-hor-container-detail {
+        height: 300px !important;
+    }
+
+    .hdr-txt-right.wdh-40.hdr-login {
+        width: 63%;
+    }
+
+    .horoscope-tabs .tab-content a.nav-link img.img-fluid {
+        width: 50px;
+    }
+
+    .birtday-heading {
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-flow: row;
+    }
+
+        .birtday-heading span.bdr {
+            width: 50%;
+        }
+
+    span.font-14 {
+        font-size: 14px;
+    }
+
+    .col-lg-12.col-md-6.col-sm-12.editorial-musing-img {
+        padding-right: 15px;
+    }
+
+    .l3-ts-poster-news {
+        width: 100%;
+        margin-bottom: 20px;
+        border-right: 0;
+    }
+
+    .l3-ts-side-news {
+        width: 100%;
+        padding: 0;
+    }
+
+    .l3-ts-top-container {
+        flex-direction: column;
+    }
+
+    .l3-ts-side-news .card-share.tooltip {
+        line-height: 30px;
+    }
+
+    .ts-opinion-box {
+        margin: 5px;
+    }
+
+    li.active ::after {
+        top: 29px;
+    }
+
+    .column-name {
+        margin-right: 10px;
+    }
+
+    .L2-opinion-tab-block .nav.nav-tabs.opn-border-radius.opn-font a {
+        font-size: 12px;
+    }
+
+    .article-block.state-city-block .ts-news {
+        flex-direction: row;
+        border-bottom: none;
+    }
+
+    .state-city-block .red-font-small {
+        margin-bottom: 5px;
+        padding-top: 0px;
+        display: block;
+        line-height: 10px;
+    }
+
+    .article-block.state-city-block p.card-text {
+        padding-bottom: 3px;
+    }
+
+    .most-read-card {
+        width: 78%;
+    }
+
+    div[title='Most Read'] .most-read-card {
+        width: 80%;
+    }
+
+    .ts-news-content {
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 15px !important;
+    }
+
+    .article-block.state-city-block .ts-news-content {
+        padding-left: 15px !important;
+        padding-top: 0;
+    }
+
+    .ts-news {
+        flex-direction: row;
+    }
+
+    .entertainment-block .entertainment-sm-img {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .article-block.dont-miss-page span.solid-span-small {
+        padding: 2px 6px;
+    }
+
+    div[title='Top Stories'] .card-body {
+        padding: 10px 0 5px;
+    }
+
+    .L2-Container {
+        padding: 25px;
+    }
+
+    .row.nomargin.l2-top-story .ts-news {
+        flex-direction: column;
+    }
+
+    .row.nomargin.l2-top-story .ts-news-content {
+        padding-left: 0 !important;
+        padding-top: 10px;
+    }
+
+    div [title='Top Stories'] .row.nomargin.l2-top-story .ts-news .ts-img {
+        overflow: hidden;
+    }
+
+    .row.nomargin.l2-top-story .col-md-4.border-bottom:nth-child(3n) {
+        border-right: none !important;
+    }
+
+    .l3-ts-poster-news .metadata.clearfix span.solid-span-small {
+        margin-bottom: 5px;
+    }
+
+    .l3-ts-poster-news h1.card-title {
+        margin: 0 !important;
+    }
+
+    .l3-ts-poster-news .metadata.clearfix {
+        margin: 0;
+    }
+
+    .l3-ts-news-container .l3-ts-top-container .l3-ts-poster-news p.card-text.font-16 {
+        padding-top: 0px;
+    }
+
+    .L2-opinion-tab-block #myTab .L2-letter-block a.ts-letter-viewall {
+        display: none;
+    }
+
+    .col-md-3.horoscope-img {
+        max-width: 33.33%;
+        flex: 0 0 33.33%;
+    }
+
+    .tribune-vid-bg-color .col-md-12.col-sm-12.col-lg-8.mgr-btm-top-10 {
+        max-width: 100%;
+    }
+
+    .tribune-vid-bg-color {
+        flex-direction: column;
+    }
+
+    .videos-page {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .tribune-vid-imgs {
+        height: 150px;
+    }
+
+    li.flex-active-slide iframe {
+        width: 100%;
+    }
+    .home-album-right img {
+        max-height: 200px;
+    }
+    .comment-news-content {
+        padding-left: 0;        
+    }
+    .comment-border-blk .card-img-top {        
+        width: auto;
+        max-height: 150px;
+    }
+}
+
+
+    @media(max-width:768px) {
+        iframe {           
+            width: 100% !important;
+        }
+        div [title='Features'] .row-2 .news-img-hor-container img, div [title='Health'] .news-img-container img, div [title='Ludhiana'] .news-img-container img, div [title='Punjab'] .news-img-container img, div [title='Lifestyle'] .news-img-container img, div [title='Movie Review'] .news-img-container img, div [title='Entertainment'] .news-img-container img, div [title='Features'] .features-col .news-img-container img, div [title='Chandigarh'] .news-img-container img, div [title='Nation'] .news-img-container img, div [title='World'] .news-img-container img, div [title='Sports'] .news-img-container img, .row.entertainment-xs-img.entertainment-bottom-section .news-img-hor-container-detail img {
+            height:auto;
+        }
+        .tribune-vid-imgs {
+            height: 150px;           
+        }
+        .movie-detail-content-page .most-read-area .ms-card{
+            width: 100% !important;
+        }        
+        .l3-ts-poster-news .card-body .solid-span {
+            margin: 0px 0 13px;
+        }
+
+        div[title='Top Stories'] .L2-Container .metadata {
+            margin-bottom: -3px;
+        }
+
+        .hot-topic-news-content .card {
+            margin-top: 10px;
+        }
+
+        .columnist-block .writer-info {
+            width: 33.33%;
+        }
+
+        .l3-ts-top-container .nopad-left {
+            padding-left: 15px;
+            margin-top: 0px;
+        }
+
+        .col-lg-6.col-md-12:last-child .movie-detail.img-banner-height {
+            margin-top: 25px;
+        }
+
+        .thought_content:before, .thought_content:after {
+            font-size: 28px;
+        }
+
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:last-child {
+            border-right: none;
+            border-top: 1px solid #ddd !important;
+        }
+
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:last-child {
+            border-right: 1px solid #ddd;
+        }
+
+        .comment-top-img.comment-top-img-res .news-img-big-container {
+            height: 300px;
+            margin-top: 10px;
+        }
+
+        .contact .contact-gallery {
+            height: 80%;
+        }
+       
+        .movie .movie-detail.img-banner-height .news-img-hor-container-detail img {
+            height: 300px !important;
+        }
+
+        .thought_head {
+            width: 19%;
+        }
+
+        .astro-guide {
+            padding-bottom: 20px;
+        }
+
+        .hdrdate {
+            font-size: 13px;
+        }
+
+        .birtday-heading h3 {
+            font-size: 21px;
+        }
+
+        .birtday-subheading p {
+            font-size: 18px;
+        }
+        /**********Header responsive***********/
+        div[title='Health'] .border-left {
+            border-left: none !important;
+        }
+
+        .breaking-news-block .breaking-news .bn-Btn {
+            padding: 12px 15px 12px 15px;
+        }
+
+        .most-read-sec-carousel .ms-card {
+            width: 100% !important;
+        }
+
+        .main-logo img {
+            width: 100%;
+        }
+
+        .nav-menu, .global-headings {
+            flex-direction: column;
+        }
+
+        .other-logo {
+            display: flex;
+            flex-wrap: nowrap;            
+        }
+
+            .other-logo img {
+                width: 100%;
+            }
+
+        ul.social-link {
+            list-style: none;
+            display: flex;
+            float: left;
+            margin-top: 0px;
+            padding-top: 5px !important;
+        }
+        header.header.margin-top-20 .hdr-fx-width {
+            float: left;
+            width: 100%;
+        }
+        .hdr-fx-width {
+            float: left;
+        }
+
+        ul.social-link li {
+            margin: 0 10px;
+        }
+
+        .solid-span {
+            padding: 8px 10px;
+            font-size: 12px;
+        }
+
+        h1.card-title a {
+            font-size: 18px;
+        }
+
+        .card-title {
+            margin-bottom: 7px;
+        }
+
+        .font-16 {
+            font-size: 14px !important;
+        }
+
+        /**********Header responsive end***********/        
+
+        .bn-Btn {
+            font-size: 13px !important;
+        }
+
+        .breaking-news, .curent-news {
+            height: auto;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+
+        .opn-font {
+            text-align: left;
+        }
+
+        .ts-opinion-box {
+            padding: 15px 0px;
+        }
+
+        .ms-card {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .wdh-39, .wdh-22 {
+            width: 100%;
+        }
+
+        .ftr-icon {
+            padding: 20px 0px;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .ftr-left {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .footer-links {
+            padding: 0px 20px;
+        }
+
+        .subscriber-block form {
+            justify-content: flex-start;
+        }
+
+        .world-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+        }
+
+            .world-container .card {
+                width: 50%;
+            }
+
+        .patiala-block {
+            padding-left: 0;
+            border: none !important;
+        }
+
+        .horizontal-ads {
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+            .horizontal-ads img {
+                width: 100%;
+            }
+
+        .add-sec {
+            padding: 25px;
+        }
+
+        .add-block-img, .add-block-imgsecond {
+            width: auto;
+        }
+
+        .ts-letter-viewall {
+            text-align: left;
+        }
+
+        .most-read-container {
+            flex-direction: column;
+        }
+
+        .most-read-card, .most-read-card h4.card-title {
+            height: auto;
+        }
+
+            .most-read-card .share-time {
+                position: relative;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+        .tribune-vid-bg-color {
+            flex-direction: column;
+        }
+
+        .tv-video-height {
+            height: 300px;
+        }
+
+        .tribune-vid-hdg {
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 18px;
+        }
+
+        .sec-title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .View-All {
+            font-size: 16px;
+        }
+
+        div [title='Top Stories'] img.wdh-100 {
+            width: 66px;
+            height: 55px;
+        }
+
+        .ts-card-title {
+            margin-bottom: 5px;
+        }
+
+        .opinion-news-block {
+            padding: 10px 0;
+        }
+        .columnist-block .opinion-writers-block {
+            border-bottom: none;
+        }
+        .L2-letter-block .topstory-addsection {
+            margin-top: 0;
+        }
+        .most-read-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .ms-card {
+            padding: 10px 5px 10px;
+            width: 50% !important;
+        }
+
+        p.card-text.ta-main-desc {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card-title a, h1.card-title a {
+            font-size: 14px !important;
+            line-height: 14px;
+        }
+        
+        .sec-title {
+            margin-bottom: 0 !important;
+        }
+
+        .red-font-small {
+            margin-bottom: 0px;
+            padding-top: 3px;
+            font-size:10px;
+        }
+        .solid-span-small {            
+            font-size: 10px;            
+        }
+
+        div [title="Haryana"] .metadata {
+            padding: 8px 0 0;
+        }
+
+        .card-title-large {
+            margin-bottom: 5px !important;
+            margin-top: 5px;
+        }
+        
+        .border-left.patiala-block {
+            border-left: 0 !important;
+        }
+
+        .card-title {
+            margin-bottom: 5px !important;
+        }
+
+        div [title='Punjab'] .card-body {
+            margin-bottom: 5px;
+        }
+
+        .View-All {
+            padding-top: 0px;
+        }
+       
+        .add-sec {
+            padding: 20px !important;
+        }
+
+        div [title='Patiala'] .card-body, div [title='Business'] h4.card-title, div [title='Diaspora'] .card-body {
+            min-height: inherit;
+            margin-bottom: 0px;
+        }
+        /*cs for header starts here*/
+
+        .search-container button {
+            margin-left: 10px;
+        }
+
+        .search-container form {
+            display: flex;
+        }
+
+        .nav-menu, .global-headings {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-content: space-between;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+        }
+
+        ul.nav-right {
+            list-style: none;
+            padding: 0;
+            margin: 0 !Important;
+        }
+
+        .dropdown-content .header {
+            padding: 10px 0 15px;
+        }
+
+        ul.submenu-categories.top-categories {
+            flex-flow: initial !important;
+        }
+
+        ul.row.submenu-categories.top-categories {
+            flex-flow: wrap !important;
+        }
+
+        .sub-categories {
+            padding-top: 7px;
+            padding-bottom: 0;
+            display: block !important;
+        }
+
+        ul.submenu-categories li {
+            font-size: 12px;
+            line-height: 22px !important;
+        }
+
+        .ftr-text {
+            text-align: left;
+            line-height: normal;
+        }
+
+        /* css for the header ends here*/
+
+        /*Css For homepage Starts */
+        #myTab li a {
+            text-align: center;
+        }
+
+        .ts-news-content .card {
+            min-height: auto;
+        }
+
+        
+
+        div [title='Opinions'] .opn-card {
+            margin-top: 0px;
+        }
+
+        div [title='Dont Miss'] .card-title {
+            margin-bottom: 5px !important;
+            min-height: inherit;
+            overflow: inherit;
+        }
+
+        .TDTY-Container {
+            background-size: cover;
+        }
+
+        .Hot-topic-news-block {
+            flex-direction: column;
+        }
+
+        .hot-topic-news-content {
+            padding-left: 0;
+        }
+
+        .hot-topic-news-img {
+            max-height: 75px;
+        }
+
+        div [title="This day, that year"] label.sec-title {
+            padding-top: 20px;
+        }
+
+        div[title='Diaspora'] .card-body, div[title='Haryana'] .card-body, div[title='Himachal'] .card-body {
+            padding: 5px 0;
+        }
+
+            div [title='Diaspora'] .card-body p {
+                margin-bottom: 5px;
+            }
+
+        .tribune-video-blk.tv-padding {
+            width: 33.33%;
+        }
+
+        div[title='Ludhiana'] .ludhiana-col-block {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        div[title="Business"] .card-body {
+            height: 70px;
+        }
+
+        div[title='Ludhiana'] .View-All {
+            padding-top: 0px;
+        }
+
+        ul.sectiontitle {
+            padding-top: 10px;
+        }
+        
+        div [title='Haryana'] .news-img-container.himachal-img {
+            height: 300px;
+        }
+
+        div [title='Haryana'] .news-img-container.himachal-img {
+            height: 300px;
+        }
+
+        div [title='Haryana'] .news-img-container.jammu-img {
+            height: 300px;
+        }
+
+        div [title='Chandigarh'] .news-img-container.chandigarh-poster-img {
+            height: 300px;
+        }
+        
+        div [title='Nation'] .news-img-container.nation-poster-img {
+            height: 300px;
+        }
+
+        div [title="Jobs And Careers"] .news-img-container img {
+            width: 100%;
+            height: auto;
+        }
+        .col-md-12.border-right-gray.border-left[title="Jobs And Careers"] {
+            border: none !important;
+        }
+
+        div [title='Sports'] .news-img-big-container.sports-poster-img {
+            height: 300px;
+        }
+
+        div[title='Features'] .features-col , div[title='Coronavirus'] .features-col{
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        div[title="Features"] .share-time {
+            margin-bottom: 10px;
+        }
+        /*Css For homepage Ends */
+
+        /*new css*/
+        .follow-list ul li {
+            margin-right: 30px !important;
+            height: 75px !important;
+        }
+        /*Css For homepage Ends */
+        
+        div [title="This day, that year"] .margin-top-20 {
+            margin-top: 20px;
+        }
+
+        .TDTY-Subs {
+            padding-bottom: 5px;
+        }
+
+        div[title='This day, that year'] .col-md-12.margin-top-20.align-center.bg-black.pad-20 {
+            padding: 20px 85px;
+        }
+        /*Css For homepage Ends */
+
+        /*css For News Detail Page Starts Here*/
+        .glb-heading h1 {
+            font-size: 32px;
+        }
+
+        .image-blk-area {
+            width: 33.333%;
+            padding: 0 15px;
+            margin: 10px 0;
+        }
+
+        .entertainment-xs-img .card-body {
+            height: inherit;
+        }
+
+        .nav-tabs li.nav-item.col {
+            padding: 5px 20px;
+        }
+
+        .contact-gallery .follow-list .contact-social-ul li {
+            margin-right: 8px !important;
+            width: 58px !important;
+            height: 50px !important;
+        }
+
+            .contact-gallery .follow-list .contact-social-ul li:last-child {
+                margin: 0 !important;
+            }
+
+        .editorial-musing-poster .news-img-big-container {
+            height: 200px;
+        }
+        
+        /*entertainment css starts*/
+        
+        .entertainment-block .entertainment-sm-img .image-blk-area {
+            width: 33.333% !important;
+        }
+
+        .entertainment-block .entertainment-big-img .news-img-hor-container-detail {
+            height: 250px !important;
+        }
+
+        .entertainment-block .entertainment-sm-img .image-blk-area:nth-child(even) {
+            padding-right: 15px;
+        }
+
+        .entertainment-block .entertainment-sm-img .movie-detail.card-movie-detail h3 a.news-link {
+            font-size: 15px;
+            line-height: 14px;
+        }
+        /*entertainment css ends*/
+
+        /**sports css starts**/
+        .sports_page .sports_page_banner .card-body .card-title a {
+            font-size: 16px !important;
+        }
+
+        .sports_page .sports-sm-img.sports_page_sm_img_sec .card-body .card-title {
+            font-size: 15px;
+        }
+
+        .sports_page .sports-sm-img.sports_page_sm_img_sec .card-body .card-text {
+            font-size: 13px;
+        }
+
+        .sports_page .sports_page_banner .card-body .card-text {
+            font-size: 14px;
+        }
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:nth-child(even) {           
+            border-right: none;         
+        }
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:nth-child(3) {
+            border-right: 1px solid #ddd;
+        }
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:nth-child(4) {
+            border-bottom: none;
+        }
+        .col-lg-4.col-md-6.col-sm-12.comment-border-blk:nth-child(5) {
+            border-bottom: 1px solid #ddd;
+        }
+        div#poster-news h4.card-title a, div#poster-news h4.card-title, .editorial-musing-poster h4.card-title a {
+            font-size: 20px !important;
+        }
+        .opinion.full-layout-home .opinion-news-block .col-md-4.nopad-right {
+            max-width: 100px;
+        }
+        .opinion.full-layout-home .opinion-news-block .col-md-8 {
+            max-width: 90% !important;
+            flex: 0 0 85%;
+        }
+        div[title='Top Stories'] .l3-ts-news-container .l3-ts-top-container .l3-ts-poster-news .metadata.clearfix {
+            padding-top: 10px;
+            margin-bottom: 0;
+        }
+        
+        /**sports css ends**/
+        .most-read-container.border-top .ms-card.border-bottom:nth-child(2n) {
+            border-right: none !important;
+        }
+        .most-read-container.border-top .ms-card.border-bottom:nth-child(5) {
+            border-right: 1px solid #ddd !important;
+        }
+        .world-container img.img-fluid.card-img-top {
+            height: 245px;
+        }
+        div [title='Lifestyle'] .col-sm-12.col-md-12.col-lg-7.border-right-gray, div[title="Entertainment"] .col-sm-12.col-md-12.col-lg-6.border-right {
+            border: none !important;
+        }
+        
+        div[title='Opinions'] .opinion-news-block .news-img-container {
+            height: auto !important;            
+        }
+        .album div#mostReadSection ul.sectiontitle li.sec-title {
+            font-size: 28px;
+        }
+        figure.image figcaption {
+            font-size: 12px;           
+            padding: 5px;           
+        }
+
+    }
+    /*css For News Detail Page Ends Here*/

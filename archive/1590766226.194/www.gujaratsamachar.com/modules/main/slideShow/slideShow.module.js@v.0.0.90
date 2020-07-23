@@ -1,0 +1,77 @@
+(function () {
+    'use strict';
+    angular
+        .module('gujaratSamachar.slideShow', [
+            'ui.router',
+            'ngResource',
+            'gujaratSamachar.config',
+            'angularUtils.directives.dirPagination'
+        ])
+        .config(config)
+        .run(run)
+    config.$inject = ['GENERAL_CONFIG', '$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
+    function config(GENERAL_CONFIG, $urlRouterProvider, $stateProvider, $locationProvider) {
+        $locationProvider.html5Mode({ enabled: true, requireBase: true }).hashPrefix('!');
+        $urlRouterProvider.otherwise('/404');
+        var version = GENERAL_CONFIG.file_version;
+        $stateProvider
+            .state('root.mainSidebar.slideShow', {
+                url: '/photo/:pageIndex?date',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/slideShow/slideShowHome.view.html',
+                        controller: 'SlideShowController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/slideShow/slideShowHome.controller.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: 'Slide Show | ' }
+            })
+            .state('root.mainSidebar.slideShowDetails', {
+                url: '/photo_slide_show/:url/:Id/:slideId',
+                views: {
+                    '': {
+                        templateUrl: 'modules/main/slideShow/slideShowDetails.view.html',
+                        controller: 'SlideShowDetailsController as vm'
+                    },
+                    'articlesByCity@root.mainSidebar.slideShowDetails': {
+                        templateUrl: 'modules/main/home/articlesByCity/articlesByCity.view.html',
+                        controller: 'ArticlesByCityController as vm'
+                    },
+                    'articlesByCategory@root.mainSidebar.slideShowDetails': {
+                        templateUrl: 'modules/main/home/articlesByCategory/articlesByCategory.view.html',
+                        controller: 'ArticlesByCategoryController as vm'
+                    }
+                },
+                resolve: {
+                    deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            files: [
+                                "modules/main/slideShow/slideShowDetails.controller.js" + version,
+                                "directives/windowResize.directive.js" + version,
+                                "modules/main/home/articlesByCity/articlesByCity.controller.js" + version,
+                                "modules/main/home/articlesByCategory/articlesByCategory.controller.js" + version,
+                                "bower_components/angular-socialshare/dist/angular-socialshare.min.js" + version
+                            ]
+                        });
+                    }]
+                },
+                data: { pageTitle: '' }
+            });
+    }
+
+    function run($state, $transitions, $trace, $rootScope) {
+        $rootScope.loading = true;
+        $state.defaultErrorHandler(function () {
+            $state.go('root.404');
+        });
+    };
+})();

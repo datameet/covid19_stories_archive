@@ -1,0 +1,194 @@
+{
+    "title": "jharkhand girl allegedly died from starvation in Latehar Manika | \u092a\u093e\u0902\u091a \u0938\u093e\u0932 \u0915\u0940 \u092c\u091a\u094d\u091a\u0940 \u0915\u0940 \u092e\u094c\u0924, \u092e\u093e\u0902 \u092c\u094b\u0932\u0940- \u0926\u094b \u0926\u093f\u0928 \u0938\u0947 \u091a\u0942\u0932\u094d\u0939\u093e \u0928\u0939\u0940\u0902 \u091c\u0932\u093e \u0925\u093e, \u092d\u0942\u0916 \u0938\u0947 \u0917\u0908 \u092c\u0947\u091f\u0940 \u0915\u0940 \u091c\u093e\u0928 - Dainik Bhaskar",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.225",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:28.103055",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774841",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 26,
+                "start_ts": "2020-05-29 17:54:01.442875",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html@utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:39.658125",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:54:37.771320",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:01.441537",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:54:01.133105",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:32.382355",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:54:28.103476",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:37.770957",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:54:35.435753",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:42.054891",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:54:39.658410",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "https://web.archive.org/web/20200529175440/https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:35.435418",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:54:32.382604",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:54:01.132819",
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:54:00.500886",
+                "pwd": "/data/archive/1590766226.225",
+                "output": "jharkhand girl allegedly died from starvation in Latehar Manika | \u092a\u093e\u0902\u091a \u0938\u093e\u0932 \u0915\u0940 \u092c\u091a\u094d\u091a\u0940 \u0915\u0940 \u092e\u094c\u0924, \u092e\u093e\u0902 \u092c\u094b\u0932\u0940- \u0926\u094b \u0926\u093f\u0928 \u0938\u0947 \u091a\u0942\u0932\u094d\u0939\u093e \u0928\u0939\u0940\u0902 \u091c\u0932\u093e \u0925\u093e, \u092d\u0942\u0916 \u0938\u0947 \u0917\u0908 \u092c\u0947\u091f\u0940 \u0915\u0940 \u091c\u093e\u0928 - Dainik Bhaskar"
+            }
+        ]
+    },
+    "updated": "1590788301.256606",
+    "tags": "",
+    "url": "https://www.bhaskar.com/local/jharkhand/news/jharkhand-girl-allegedly-died-from-starvation-in-latehar-manika-127311205.html?utm_campaign=social_share&utm_source=whatsapp.com&utm_medium=browser"
+}

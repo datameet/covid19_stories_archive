@@ -1,0 +1,1752 @@
+ 
+        var pageConfig = {
+        text_writecomment  : 'ಕಾಮೆಂಟ್‌ ಮಾಡಿ',
+        text_see_all_comments :  'ಎಲ್ಲ ಕಾಮೆಂಟ್‌ ನೋಡಿ',
+        text_topcomment :  'ಟಾಪ್‌ ಕಾಮೆಂಟ್‌ ',
+        text_latestcomment :  'ಇತ್ತೀಚಿನ ಕಾಮೆಂಟ್',
+        text_rating_bad :  'वााईट',
+        text_rating_belowaverage :  'सुमार',
+        text_rating_average :  'साधारण',
+        text_rating_good :  'उत्कृष्ट',
+        text_rating_verygood :  'सर्वोत्कृष्ट',
+        text_next_story :  'ಮುಂದಿನ ಸ್ಟೋರಿ',
+        word_thanks : 'ಧನ್ಯವಾದ!',
+        text_article_via_email : ' ನಿಮಗೆ ಇಷ್ಟವಾದ ಸುದ್ದಿಯನ್ನು ಈ ಮೇಲ್‌ ಮೂಲಕ ಕಳುಹಿಸಲಾಗಿದೆ. ',
+        text_author_comment : ' ಲೇಖಕರ ಕಾಮೆಂಟ್‌',
+        text_write_comment : 'ಕಾಮೆಂಟ್‌ ಮಾಡಿ',
+        text_view_comment : 'ಕಾಮೆಂಟ್ಸ್‌ ನೋಡಿ',
+        text_reply : 'ಉತ್ತರಿಸಿ',
+        
+        siteurl :  'https://vijaykarnataka.com',
+        domainpath: 'vijaykarnataka.com',
+        twitterhandler :  'Vijaykarnataka',
+        sitelang :  'my',
+        eventlabel :  'nbthmv2a',
+        appKey :  'IV',
+        userPicDefault : 'https://mytimes.indiatimes.com/image/thumb/0/default',
+        comscoreId : '6036484',
+        is_enable_topstory : '0',
+        utm_source_fb : 'facebook.com',
+        utm_source_tw : 'tw',
+        utm_source_gplus : 'plus.google.com'
+        
+    } 
+     
+        //home page load variable
+        var adrefreshCount =0;
+        var homepageposition=1;
+        var currentArticleId = getArticleIdFromUrl(0);
+        var adClose= $('#ads_'+currentArticleId).attr('data-adclose');
+        //var articlesViewed = [];
+        var articleBeingViewed;
+        var jsdomain = document.location.hostname.search('langdev') == 0 ? '' : pageConfig.siteurl;
+        var articleidsArr = [];
+        var isLoaded = false;//used for loading commentsPlugin Js
+        var articleidsAll = [];
+        var d2 = new Date();
+        var timeStamp2 = d2.getTime();
+        var articlesGettingLoad = false;
+        var articlesLoaded = [];
+        var ispollsubmited = 0;
+        var facebooklink = document.location.href;
+        var _M_mode = 1;
+        var _M_url = window.location.href;
+        var _M_baseEntityType = "ARTICLE";
+        var _M_objType = "B";
+        var quillPadDone = [];
+        /* for Bootm slider */
+        var Slider_TotalLiPerPage =5;
+        var btmSliderTotalLI = 0;
+        if(screen) {
+            var screenWidth = (screen.width-6);    
+        }
+        
+        var active_section_id = $("div[id^='pagedata_']:first").attr('active_section_id');
+        var articlePosition = 1;
+        
+         /*Times Internet - US - RTA script  */
+         var crtg_nid = '4306';
+         var crtg_cookiename = 'crtg_rta';
+         var crtg_varname = 'crtg_content';
+         var crtg_content = crtg_getCookie(crtg_cookiename);
+         var crtg_rnd = Math.floor(Math.random() * 99999999999);
+        /*Times Internet - US - RTA script  */
+    window.twttr = (function(d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0],
+               t = window.twttr || {};
+             if (d.getElementById(id)) return t;
+             js = d.createElement(s);
+             js.id = id;
+             js.src = "https://platform.twitter.com/widgets.js";
+             fjs.parentNode.insertBefore(js, fjs);
+             t._e = [];
+             t.ready = function(f) {
+               t._e.push(f);
+             };
+            return t;
+        }(document, "script", "twitter-wjs"));
+    
+    function redirectShowPage() {
+            try {
+                if($('div[data-canonical-url]').attr('data-canonical-url')) {
+                    var gourl = document.location.href;
+              var canurl = $('div[data-canonical-url]').attr('data-canonical-url');
+              var otherchannelstory = 0;
+              var canurlSCase = canurl.toLowerCase();
+              var gourlSCase = gourl.toLowerCase();
+              if ((canurlSCase.indexOf('https://') != -1 || canurlSCase.indexOf('http://') != -1) && canurlSCase.indexOf(pageConfig.domainpath) == -1) {
+                otherchannelstory = 1;
+              } 
+              else if (canurlSCase.indexOf(pageConfig.domainpath) == -1) {
+                canurl = pageConfig.siteurl + canurl;
+                canurlSCase =  pageConfig.siteurl + canurlSCase;
+              }
+
+             if (gourlSCase != canurlSCase && gourl.indexOf('?') == -1 && gourlSCase.indexOf(pageConfig.siteurl) >= 0) {
+                if (otherchannelstory == 0) {
+                  document.location.href = canurl;  
+                } 
+             } 
+                }
+              
+            } catch (e) {}
+        }
+        
+    function verifyUser() {
+            if(typeof getUrlParameter == 'function') {
+                var cmtid = getUrlParameter('messageid');
+                var referenceNo = getUrlParameter('r');
+                if(cmtid && referenceNo) {
+                   $.ajax({
+                        method:'get',
+                        data:{msid : currentArticleId, cmtid : cmtid, r : referenceNo},
+                        url:'/cmtverified.cms',
+                        success: function(data) {
+                            
+                        },
+                        error: function(err) {
+                          console.log("topcmtdata:"+err);
+                        }
+                    }); 
+                }
+            }
+        }
+    
+    function Set_Ckie(name, value, expires, path, domain, secure) {
+        if(typeof detectContinent=="function" && detectContinent()) {
+            return detectContinent();
+        }
+        var today = new Date()
+        today.setTime(today.getTime())
+        if (expires) {
+            expires = expires * 1000 * 60 * 60 * 24
+        }
+        var expires_date = new Date(today.getTime() + (expires))
+        document.cookie = name + "=" + escape(value) + ((expires) ? ";expires=" + expires_date.toGMTString() : "") + ((path) ? ";path=" + path : "") + ((domain) ? ";domain=" + domain : "") + ((secure) ? ";secure" : "")
+    }
+    
+    function Delete_Ckie(name, path, domain) {
+        if (Get_Ckie(name)) document.cookie = name + "=" + ((path) ? ";path=" + path : "") + ((domain) ? ";domain=" + domain : "") + ";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+    } 
+
+    function createSubscriptionBox() {
+        $('.TB_overlayBG, #subscriptionbox').show();
+        $('#subscriptionbox').load('/subscriptionform.cms', function() {
+            var scrt7 = document.createElement('script');
+            scrt7.type = 'text/javascript';
+            scrt7.src = '/jsnewsletter.cms?version=4&amp;minify=1';
+            document.getElementsByTagName("head")[0].appendChild(scrt7);
+        });
+    }  
+
+
+    function createTwitterButton(divId, msid, shortUrl) {
+    var headingFrameId = '#art_' + msid;
+    var imageFrameId = '#videowithSlider_' + msid;
+    var thumburl = $(imageFrameId + ' .thumbImage img').attr('src');
+    var sharedurl = shortUrl + "/bca";
+    sharetext = $(headingFrameId + " .leftmain h1").text();
+    twttr.ready(function(twttr) {
+        if(typeof twttr.widgets != 'undefined') {
+           twttr.widgets.createShareButton(sharedurl, document.getElementById(divId), {
+            count: 'none',
+            lang: pageconfig.sitelang,
+            via: pageconfig.twitterhandler,
+            text: sharetext
+        }).then(function(el) { }); 
+        }
+        
+    });
+}
+
+    function videosticky(articleid, nextArticleId) {
+       try {
+           var scrolltopvalue=$(window).scrollTop();
+           var videoStickyFlag = sessionStorage.getItem("videoSticky_"+articleid);
+            
+           //var videoStickyclosed = sessionStorage.getItem("videoSticky_"+articleid);
+           var videoOffset = document.getElementById('topoffset_'+articleid);
+           var videoPlceaholder = document.getElementById('videofixed_'+articleid);
+           var articlePlceaholder = document.getElementById('contentarea_'+articleid).getBoundingClientRect().top;
+           var nextArticlePlceaholder = document.getElementById('nextArtarrow_'+nextArticleId).getBoundingClientRect().top;
+             //if(typeof videoStickyclosed=='object' && !videoStickyclosed){
+               if(scrolltopvalue > 600 && videoOffset && !videoStickyFlag && $('#videofixed_'+articleid+ ' iframe').length==1 && $('#videofixed_'+articleid+ ' iframe').attr('src')!=undefined && !isVisible(videoPlceaholder)){
+                    
+                    $('#videofixed_'+articleid).addClass('videofixed');
+                    $('#videofixed_'+articleid + ' .newclose').show();
+                    //$('#gaanaplayer').css('right','485px');  
+                      createSessionStorage('videofixed', articleid);  
+                    }
+                    else {
+                        $('#videofixed_'+articleid).removeClass('videofixed');
+                        $('#videofixed_'+articleid + ' .newclose').hide();
+                    }
+             //}  
+                    
+                }catch(ex){ //console.log("Error:videosticky "+ ex);
+       }
+        
+    }
+
+    function getUrlParameter(parameter) {
+    var queryString = window.location.search.substring(1);
+    var paramArray = queryString.split("&");
+    var found = false;
+    for (i=0;i<paramArray.length;i++) {
+     var currentParameter = paramArray[i].split("=");
+     if(currentParameter[0] == parameter)
+    	return currentParameter[1];
+    }
+    return false; //params not found   
+}
+
+    function performAction(starvalue) {
+        var shareurl = document.location.href;
+        if (starvalue <= 3) {
+            $('.sendNewjoke').show("slow");
+            $('.jokesharing').hide("slow");
+        } else {
+            $('.jokesharing').show("slow");
+            $('.sendNewjoke').hide("slow");
+            $('#fbData').html('<fb:like id="fbshare" action="like" send="false" layout="button_count" width="55" show_faces="false" font="arial"></fb:like>');
+            FB.XFBML.parse();
+            $('#fbshare').attr('href', shareurl);
+        }
+    }
+
+    
+
+    
+    function subscribeNewsletter(msid) {
+    $('.TB_overlayBG, #subscriptionbox_' + msid).show();
+    $('#subscriptionbox_' + msid).load('/subscriptionform.cms', function() {
+        var scrt7 = document.createElement('script');
+        scrt7.type = 'text/javascript';
+        scrt7.src = '/jsnewsletter.cms?version=3&amp;minify=1';
+        document.getElementsByTagName("head")[0].appendChild(scrt7);
+    });
+
+}
+
+    function inlineSharing(msid) {
+       var getinlineshare = $('#art_' + msid + ' .article a.inlineshare');
+       getinlineshare.attr('href', 'javascript:void(0);');
+       getinlineshare.removeAttr('target');
+       $.each(getinlineshare, function(key, value) {
+            if ($('#art_' + msid + ' .article a.inlineshare').length > 0) {
+                // alert( key + ": " + value );
+                var sourcehtml = $(this).text().replace(/'/g, "\\'");
+                var fbtxt = "'facebook'";
+                var twtxt = "'twitter'";
+                var sharetext = "'" + sourcehtml + "'";
+                var image = "'" + $('#art_' + msid + ' .article #masterimg').attr('src') + "'";
+    
+                $(this).html('<span class="inlineshare"><span style="padding-right:5px">' + sourcehtml + '</span>' + '<span class="nbtsprite fbk" onclick="fbs_click(' + msid + ',' + sharetext + ', ' + 1 + ')" style="padding-right:2px;cursor:pointer;"></span><span class="nbtsprite twitr" onclick="shareInlinetxt(' + sharetext + ',' + image + ',' + twtxt + ', ' + msid + ')"></span></span>');
+            }
+        });
+    } 
+
+      function socialShare(type, urltoshare, title) {
+        var articleid = getArticleIdFromUrl(0);
+        try {
+            if (type == 'facebook') {
+                var urltoshare_fb = urltoshare + '?utm_source='+pageConfig.utm_source_fb+'&utm_medium=referral&utm_campaign=web';
+                var fbParams = title ?  {method:'share', href: urltoshare_fb, quote : title} : {method:'share', href: urltoshare_fb};
+                FB.ui(fbParams, function(response) {
+                        if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+                            if (articleid) {
+                                set_activity_log(TIMESPOINTCONFIG.get('FACEBOOK_SHARE'), articleid);
+                            } else {
+                                console.log("fbs_click::failed to set activity");
+                            }
+                        }
+                         
+                        eventTrack('', 'social', 'facebook', 'share', '');
+    
+                });
+            }
+            if (type == 'twitter') {
+                urltoshare = urltoshare;//kce is default value used for utm params "?utm_source=tw&utm_medium=Twitter&utm_campaign=web"
+                window.open('https://twitter.com/share?url=' + urltoshare + '&amp;text=' + encodeURIComponent(title) + '&via='+pageConfig.twitterhandler, 'sharer', 'toolbar=0,status=0,width=626,height=436,scrollbars=1');
+                 
+                if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+                    set_activity_log(TIMESPOINTCONFIG.get('TWITTER_SHARE'), articleid);
+                }
+            }
+            if (type == 'gplus') {
+                var urltoshare_gplus = encodeURIComponent(urltoshare+'?utm_source='+pageConfig.utm_source_gplus+'&utm_medium=referral&utm_campaign=web');
+                window.open('https://plus.google.com/share?url=' + urltoshare_gplus, 'sharer', 'toolbar=0,status=0,width=626,height=436,scrollbars=1');
+            }
+        }
+        catch (ex) {
+            console.log("EX." + ex)
+        }
+
+    }
+
+    function getSocialIconsSticky(currentArticleId) {
+        $(".socialsharing").hide();
+        var objUpperSocialTool = document.getElementById('upperSocialtool_'+currentArticleId);
+        if(!isVisible(objUpperSocialTool)) {
+            $(".socialsharing").hide();
+            $('#social_share_left_'+currentArticleId).addClass('sticky').show();
+            $('#widget-two').show();
+        }
+    }
+
+    function getNextArticleId(currentArticleId) {
+        try {
+            var currentArticleId = currentArticleId.toString();
+            var indexOfCurrentId = articleidsAll.indexOf(currentArticleId); //articleidsArr, a global array that contains all the articles ids.
+            if(indexOfCurrentId < articleidsAll.length-1){
+                var nextArticleId = articleidsAll[indexOfCurrentId + 1];
+                return nextArticleId;
+            } else {
+                return false;
+            }
+        } 
+        catch(err) {
+            console.log("getNextArticleId::"+err);
+        }
+    }
+
+    function getPreviousArticleId(currentArticleId){
+        try {
+        var currentArticleId = currentArticleId.toString();
+        var indexOfCurrentId = articleidsAll.indexOf(currentArticleId);
+        if(indexOfCurrentId > 0){
+             var previousArticleId = articleidsAll[indexOfCurrentId - 1];
+        }else{
+             var previousArticleId = articleidsAll[indexOfCurrentId];
+        }
+         return previousArticleId;
+        }catch(err){
+            console.log("getPreviousArticleId::"+err);
+        }
+    }
+
+    // check bottomSlider's position and auto scroll to set position  
+    function manageBottomSliderPosition(articleid) {
+        if($("#outerTabContainer").is(":visible")){ // execute when only slider is visible  
+            var positionOfCurrentArticle = articleidsAll.indexOf(articleid);
+            var appliedDiv = $("#outerTabContainer");
+            if(positionOfCurrentArticle <= Slider_TotalLiPerPage-1){ // right arrow click
+                //$('#outerTabContainer ul li').animate({left: 0});
+                btmSliderSlideClick=1;
+                btmSliderCurrentLastLi=Slider_TotalLiPerPage;
+                //$("#leftArrow").hide();
+                //$("#rightArrow").attr("style", "");
+          
+            } else { // left arrow click
+                //$('#outerTabContainer ul li').animate({left: -screenWidth});
+                btmSliderSlideClick = Slider_TotalLiPerPage+1;
+                btmSliderCurrentLastLi = btmSliderTotalLI;
+                //$("#rightArrow").hide();
+                //$("#leftArrow").attr("style", "");
+            }
+        }
+    } 
+ 
+    function commentRebuild(comment) {
+		var comment = comment.replace(/&amp;nbsp;/g, " ").replace(/&quot;/g, '"').replace(/&lt;br\/&gt;/g, "\n").replace(/&lt;BR\/&gt;/g, "\n").replace(/&amp;zwj;/g, "&#8205;").replace(/&amp;zwnj;/g, "&#8204;");
+	    return comment;
+    }
+
+ 
+function topcmtdata(articleId) {
+    if(typeof detectContinent=="function" && detectContinent()) {
+        return detectContinent();
+    }
+    var characterLimit = 180;
+    if(!$('#topcommentdata_'+articleId).html()) {
+        var topcmtparams = {
+        appkey : pageConfig.appKey,
+        msid :  articleId,
+        sortcriteria : "AgreeCount",
+        order : "desc",
+        size : 1,
+        lastdeenid : 0,
+        after : true,
+        withReward : false,  //set this to true if reward details required.
+        pagenum : 1
+    };
+        $.ajax({
+        dataType: "json",
+        data:topcmtparams,
+        url:'/commentsdata.cms',
+        success: function(data) {
+            if(typeof data == 'object' && data.length > 0) {
+                var items='';
+                $('#topcommentdata_'+articleId).show();
+                if(data[0] && data[0].authorsComment && data[0].authorsComment.length > 0) {
+                   var authorData = data[0];
+                   if(authorData.authorsComment) {
+                     for(var i = 0; i < 1; i++) { //first level only
+                        if(authorData.authorsComment[i].C_A_ID) {
+                            var commentText = commentRebuild(authorData.authorsComment[i].C_T);
+                            var authorName = authorData.authorsComment[i].A_D_N;
+                            items+='<div class="topcmthead">'+ pageConfig.text_author_comment +'</div>';
+                        }
+                        else if(typeof authorData.authorsComment[i].CHILD == 'object') { //child nodes till level 2
+                            for(var j = 0; j < 2; j++) {
+                                if(authorData.authorsComment[i].CHILD[j].C_A_ID) {
+                                    var commentText = commentRebuild(authorData.authorsComment[i].CHILD[j].C_T);
+                                    var authorName = authorData.authorsComment[i].CHILD[j].A_D_N;
+                                    items+='<div class="topcmthead">'+ pageConfig.text_author_comment +'</div>';
+                                    break;
+                                }
+                            }
+                        }
+                        
+                     }  
+                   }
+                
+                }
+                else if (typeof data[1] == 'object') { 
+                    var userData = data[1];
+                    if(userData.AC_A_C > 0) {
+                         var commentText = commentRebuild(userData.C_T);
+                         var authorName = userData.A_D_N;
+                          items+='<div class="topcmthead">'+pageConfig.text_topcomment +'</div>';
+                    }
+                    else{
+                         var commentText = commentRebuild(data[1].C_T);
+                         var authorName=data[1].A_D_N;
+                         items+='<div class="topcmthead">'+pageConfig.text_latestcomment +'</div>';
+                    }
+                }
+                if(commentText && commentText.length > characterLimit) {
+                    items+='<div class="comt topcomment_container">'+commentText.substr(0, characterLimit)+ '...<small  onclick="displayMoreText(\''+commentText+'\', \'more\', '+characterLimit+', '+articleId+')">+</small></div>';
+                    items+='<div class="comtname">'+authorName+'</div>';
+                }
+                else {
+                    items+='<div class="comt">'+commentText+'</div>';
+                    items+='<div class="comtname">'+authorName+'</div>';
+                 }
+                 
+                items+='<div class="allcomment"><a href="javascript:showComments('+articleId+')">'+pageConfig.text_see_all_comments +'</a></div><div class="wrcomment"><a href="javascript:showComments('+articleId+')">'+ pageConfig.text_writecomment +'</a></div>';
+                $('#topcommentdata_'+articleId).html(items);
+            }
+        },
+        error: function(err) {
+          console.log("topcmtdata:"+err);
+        }
+    });
+    }
+}
+
+function displayMoreText(data, id, limit, articleId) {
+    var obj = $('#topcommentdata_'+articleId + ' .topcomment_container');
+    if(id == 'more') {
+        $(obj).html('<div class="comt" >'+data+'<small onclick="displayMoreText(\''+data+'\', \'less\', '+limit+', '+articleId+')" >-</small></div>');
+    } else if(id == 'less') {
+        $(obj).html('<div class="comt">'+data.substr(0, limit)+'...<small  onclick="displayMoreText(\''+data+'\', \'more\', '+limit+', '+articleId+')" >+</small></div>');
+    } else {
+        $(obj).html('<div class="comt" >'+data+'<small onclick="displayMoreText(\''+data+'\', \'less\', '+limit+', '+articleId+')" >-</samll></div>');
+    }
+}
+
+function loadArticles(articleIds) {
+   try {
+    if(articleIds.length > 0) {
+        $('.ajaxcontent').append('<div class="loadimage"></div>');
+    }
+    if(articleIds.length > 0) {
+        var articleId = articleIds.shift();
+        var data_rhs = $('.ajaxcontent .rightnav').html();
+        //initializeAd(articleId);
+        initializeAd(active_section_id, 'AS', articleId);
+        
+        var urlNextArticle = $('span[data-id="'+articleId+'"]').attr('data-url');
+        $.ajax({
+        'url': '/wdt_articledata.cms?firstarticle=0&msid=' + articleId + '&url=' + urlNextArticle,
+         success: function(data) {
+            $('.loadimage').remove();
+        // var htmlcontent= '<div id="homepageload_'+articlePosition+'"></div>';
+            var htmlcontent= '<div class="nextArtarrow" id="nextArtarrow_'+articleId+'">';
+            htmlcontent+= '<div class="articleposs" id="id_'+articlePosition+'"></div>';
+            htmlcontent+= '<div style="padding:10px;" class="ATF_728_'+articleId+'"></div>';
+            htmlcontent+= '<span class="ar"></span>';
+            htmlcontent+= '</div>'; 
+            htmlcontent+= '<span class="artext">'+pageConfig.text_next_story+'</span>'; 
+            htmlcontent+= data;
+            $('.ajaxcontent').append(htmlcontent);
+            if(articleIds.length > 0) {
+                articlesLoaded.push(articleId);
+            }
+     
+            //for home page load function
+             //homePageLoad(articlePosition)
+            
+            
+            $('#disable_'+articleId).removeClass("disableClick");
+            
+            if(typeof twttr.widgets != 'undefined') {
+               twttr.widgets.load(); 
+            }
+        
+            loadArticles(articleIds);
+            if(typeof instgrm != 'undefined') {
+                window.instgrm.Embeds.process();
+            }
+           articlePosition++; 
+         },
+         error: function(xhr, error) {
+            console.log('Error in article loading: ');
+            console.log(error);
+         }
+    });
+    }
+   }catch(ex){}
+} 
+
+
+ 
+function parseComment(textToParse) { //reomves html tags(&lt;br/&gt; for eg) 
+    return $("<span />", { html: textToParse }).text().replace(/<\/?[^>]+(>|$)/g, "");
+}
+
+function embedComments(articleId) {
+    if(typeof detectContinent=="function" && detectContinent()){
+        return detectContinent();
+    }
+    var commentsBtn = $('#comments-wrapper-'+articleId + ' .bottom-comments-btns').html();
+    var commentsBottom = $('#comments-wrapper-'+articleId + ' .bottom-comments').html(); 
+    var commentsHTML = '';
+    if(!commentsBtn) {
+        var commentsParams = {
+        appkey : pageConfig.appKey,
+        msid :  articleId,
+        sortcriteria : "CreationDate",//CreationDate
+        order : "asc",
+        size : 6,
+        lastdeenid : 0,
+        after : true,
+        withReward : false,  //set this to false if reward details not required.
+        pagenum : 1
+    }; 
+    $.getJSON('/commentsdata.cms', commentsParams, function(commentsData) {
+        //console.log(commentsData) ;
+        var btnHTML = '<div class="cmtbtn-wrapper" data-id="'+articleId+'">';
+        if(commentsData.length > 0) {
+	           btnHTML+='<span class="cmtbtn view" data-plugin="show-comments" pg="">'+pageConfig.text_view_comment+ ' ('+commentsData[0].cmt_c +')</span>';
+	           btnHTML+='<span class="cmtbtn add" data-showtype="autofocus" data-plugin="show-comments">';
+	           btnHTML+='<span class="icon"></span>';
+		       btnHTML+='<span>'+ pageConfig.text_write_comment +'</span>';
+	           btnHTML+='</span>';
+        }
+        else {
+	           btnHTML+='<span class="cmtbtn add" data-showtype="autofocus" data-plugin="show-comments" style="width:100%;">';
+	           btnHTML+='<span class="icon"></span>';
+		       btnHTML+='<span>'+ pageConfig.text_write_comment +'</span>';
+	           btnHTML+='</span>';
+        }
+        btnHTML+='</div>';
+        
+        $('#comments-wrapper-'+articleId + ' .bottom-comments-btns').html(btnHTML);
+        commentsData.shift(); //removes first entry contains commentcount
+        
+    	
+    	if(!commentsBottom) {
+    	    $.each(commentsData, function(index, commentObg) {
+    	    var authorClass = commentObg.C_A_ID ? ' authorComment' : '';
+    	    commentsHTML+='<div class="comment-box'+ authorClass + '" data-id="'+commentObg.A_U_I+'">';
+    		commentsHTML+='<div class="user-thumbnail">';
+    			if(commentObg.user_detail && commentObg.user_detail.thumb) {
+    				commentsHTML+='<img class="userimg flL" src="'+commentObg.user_detail.thumb+'"/>';
+    			}
+    			else {
+    				commentsHTML+='<img class="userimg flL" src="'+pageConfig.userPicDefault+'"/>';
+    			}
+    		commentsHTML+='</div>';
+    		if(commentObg.user_detail && commentObg.user_detail.FL_N) {
+    			commentsHTML+='<a href="http://mytimes.indiatimes.com/profile/'+commentObg.user_detail._id+'" class="name" target="_blank">'+commentObg.user_detail.FL_N+'</a>';
+    		}
+    		else {
+    		  	commentsHTML+='<a href="javascript:void(0);" class="name">'+commentObg.A_D_N+'</a>';  
+    		}
+    		
+    		commentsHTML+='<p class="short_comment">'+parseComment(commentObg.C_T)+'</p>';
+    		commentsHTML+='<div class="footbar clearfix">';
+    		commentsHTML+='<span data-action="comment-reply" class="cpointer comment-reply">'+pageConfig.text_reply+'</span>';
+    		commentsHTML+='<span class="up cpointer" data-action="comment-agree" title="Up Vote">';
+    		commentsHTML+='<i class="icon-uparrow"></i>';
+    		commentsHTML+='</span>';
+    		commentsHTML+='<span class="down cpointer" data-action="comment-disagree" title="Down Vote">';
+    		commentsHTML+='<i class="icon-downarrow"></i>';
+    		commentsHTML+='</span>';
+    		commentsHTML+='</div>';
+    	    commentsHTML+='</div>'; 
+        });
+        $('#comments-wrapper-'+articleId + ' .bottom-comments').html(commentsHTML); 
+    	}
+        
+    });  
+    }
+    
+    
+}
+function comscore() {
+    invokeComscore();
+}
+
+function invokePageViewCandidate(articleId){
+           var pageCandidateFired = $("[data-articlemsid="+ articleId +"]").data('pageview_candidate_fired');
+           if(pageCandidateFired != 'yes' && pageCandidateFired != 'inprogress'){
+                   $("[data-articlemsid="+ articleId +"]").data('pageview_candidate_fired', 'inprogress');
+                   $.ajax({
+                          url: "/pageview_candidate.cms",
+                          cache: false,
+                          dataType: "xml",
+                          success: function(data) {
+                              if (typeof(COMSCORE) !="undefined" && typeof(COMSCORE.beacon) == "function") {
+                                    if(typeof Get_Ckie == 'function' && Get_Ckie('optout') && typeof objComScore == 'object') {
+                                        if (Get_Ckie('ckns_policy')) {
+                                           objComScore['cs_ucfr'] = 1;
+                                        }else{ 
+                                           objComScore['cs_ucfr'] = 0;
+                                        }
+                                        self.COMSCORE && COMSCORE.beacon(objComScore);
+                                    }
+                                    else {
+                                        self.COMSCORE && COMSCORE.beacon({ c1: "2", c2: "6036484" });
+                                    }
+                                    
+                                    $("[data-articlemsid="+ articleId +"]").data('pageview_candidate_fired', 'yes');
+                              }
+                          },
+                          error : function(error){
+                             $("[data-articlemsid="+ articleId +"]").data('pageview_candidate_fired', 'error'); 
+                          }
+                               
+                        }); 
+           }
+   }
+    
+
+    function logonmyt(m_activity,m_msid,m_msg){  
+        _M_act(m_activity,m_msid,m_msg);
+    }
+    function _M_isLoggedIn() {
+        var _m_getlogCook= Get_Ckie("MSCSAuth");
+        if(_m_getlogCook == null || _m_getlogCook == "" || _m_getlogCook ==undefined){
+            return 0;
+        }else{			
+            return 1;
+        }
+    }	
+    function _M_actType(actT){		
+        switch(actT){
+            case "100" : actT = "Agreed";_M_objType="A";_M_url="";break;
+            case "101" : actT = "Disagreed";_M_objType="A";_M_url="";break;
+            case "102" : actT = "Reccomended";_M_objType="A";_M_url="";break;			
+        }
+        return actT;
+    }
+   function _M_act(activityType,_m_msid,_m_msg) {
+        if(active_section_id != 3041664 ) { 
+            if(_M_mode==1 && (_M_isLoggedIn() == 1 || (activityType == 100 || activityType == 101 || activityType == 102)) && (_m_msid != undefined || _m_msid != null)){			
+                var src = "https://myt.indiatimes.com/mytimes/addActivity?";
+                src = src + "activityType="+_M_actType(activityType);
+                src = src + "&appKey="+pageConfig.appKey;
+                if(activityType == "100" || activityType == "101" || activityType == "102"){
+                    src = src + "&parentCommentId="+_m_msid;
+                }else{
+                    src = src + "&uniqueAppID="+_m_msid;
+                }
+                src = src + "&baseEntityType="+_M_baseEntityType;
+                src = src + "&objectType="+_M_objType;
+                src = src + "&url="+_M_url;
+                 if(_m_msg != null && _m_msg != undefined && _m_msg != ""){	
+                    src = src + "&via="+_m_msg;
+                }	 
+                //alert("SRC"+src);			
+                var img = new Image(1,1);					
+                img.src=src;			
+            }
+        }
+    }	
+    function _M_done(){		
+    }	
+
+
+    
+
+function getArticleIdFromUrl(articleScrollCount) {
+        var articleId;
+        var articlePath =window.location.pathname;
+        var arrPath = articlePath.split("/");
+        var articleName = arrPath[arrPath.length-1];
+        var getArticleId = articleName.split(".");
+        if(getArticleId[0]){
+          var articleId =  getArticleId[0];
+        }else{
+          //var articleId =  allArticles[articleScrollCount-1];
+        }
+        return articleId;
+    }
+    
+    function closevid(msid, event){
+		if(event=="click") {	
+		    $('#videofixed_'+msid).removeClass('videofixed');
+		    $('#videofixed_'+msid + ' .newclose').hide();
+            createSessionStorage('videoSticky_'+msid, false);
+            if(document.getElementById('relvdo_'+msid) != null && typeof document.getElementById('relvdo_'+msid).contentWindow!="undefined")             {
+                if(document.getElementById('relvdo_'+msid).contentWindow.TimesApps) {
+                  document.getElementById('relvdo_'+msid).contentWindow.TimesApps.VideoPlayer2.getPlayer("VOD").pause();   
+                }
+            }
+		} else if(event=="scroll") {
+		    $('div[id^="videofixed"]').removeClass('videofixed');
+		} else {
+		     $('div[id^="videofixed"]').removeClass('videofixed');
+		}
+    }	
+ 
+ 
+ 
+function initializePageElements(articleUrl, articleId, scrollDirection, creater) {
+    
+    var adClose= $('#ads_'+articleId).attr('data-adclose');
+    articleBeingViewed = articleId;
+    var active_section_id = $("div[id^='pagedata_']:first").attr('active_section_id');
+    var originLocation='';
+    /*if(typeof initGoogleAds == "function" && 'wapads_'+articleId) {
+        initGoogleAds(eval('wapads_'+articleId),articleId);
+    }*/
+    //getNewsSticky(articleId);
+   
+    embedComments(articleId); 
+    topcmtdata(articleId);
+    embedComments(articleId)
+     
+     //updated cricket widget
+    if(!$('#matchsummary_'+articleId).html()) {
+        $('#matchsummary_'+articleId).html($('#cricketContainer').html());
+    }
+   
+   
+    
+    //Initialize Most viewed Video Block
+    
+    if(!$('#mostviewedvideo_'+articleId).html()) {
+        $('#mostviewedvideo_'+articleId).html($('.wdt-most-viewed-video .sectionlst').html());    
+    }
+    
+   
+    
+     if(!$('#rightvideoblock_' + articleId).html()) {
+            $('#rightvideoblock_' + articleId).html($('div[data-val="videoblock"]').html());     
+        }
+        
+    
+        
+        $('.articles-colombia-nextpage').load('/wdt_colombia.cms?msid='+currentArticleId);
+        $('.trending-articles-nextpage').html($('.trending-articles').html());
+        //var mostviewedArticles = $('.article-most-viewed .rightNewssticky .sectionlst').html();
+        var mostviewedArticlesDom = '<div style="position:relative"><div class="rightNewssticky" id="rightNewssticky_'+articleId+'"><div style="margin:0 !important" class="sectionlst">';
+        //mostviewedArticlesDom+=mostviewedArticles;
+        mostviewedArticlesDom+='</div><div  class="stickyAd" style="display:none;overflow: hidden;height: 0;"><div style="width:300px; height:250px;" class="RHS_300x250_'+articleId+'"></div></div>';
+        mostviewedArticlesDom+='</div></div></div>';
+        if(!$('#article-most-viewed-nextpage-'+articleId).html()) {
+           $('#article-most-viewed-nextpage-'+articleId).html(mostviewedArticlesDom); 
+        }
+        
+        
+        if(!$('#related-articles-'+articleId).html()) {
+            $('#related-articles-'+articleId).load('/wdt_related_articles.cms?msid='+articleId);    
+        }
+        
+        if($('.news-popular-2')) {
+           $('div[data-val="news-from-other-section"]').html($('.news-popular-1').html()); 
+        }
+        
+        if($('.topheadlines')) {
+           $('div[data-val="topheadlines"]').html($('.topheadlines').html()); 
+        }
+        
+        if($('.news-popular-1')) {
+           $('div[data-val="news-from-section"]').html($('.news-popular-2').html()); 
+        }
+        
+       
+       
+        if (!window.location.origin) {
+             originLocation =window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+        }else{
+             originLocation = document.location.origin
+        }
+	    
+	    //set_activity_log('read', articleId);
+	    var nextArticleUrl = originLocation +"/"+articleUrl+"/articleshow/"+articleId+".cms";
+	    var gaUrl = "/"+articleUrl+"/articleshow/"+articleId+".cms";
+	    //var nextArticleUrl = document.location.origin +"/"+articleUrl;
+	    history.pushState({}, '', nextArticleUrl);
+	    pageTitle(articleUrl); // change page title
+	    $("#outerTabContainer ul li").removeClass("active"); // remove active class
+	    $("a#a_"+articleId).parent().addClass( "active" ); // add active class on current li
+	   
+	    if (adClose!='true'){
+	    if(typeof initGoogleAds == "function") {
+	        initGoogleAds(eval('wapads_'+articleId), articleId);
+	        multiplexAd(articleId);
+	    }
+	     
+	    refreshRightStickyGoogleAd();
+	    }
+	    
+	    if(currentArticleId && currentArticleId != articleId) {//avoid hit for first article on scroll
+	        if(scrollDirection == 'downward') {
+	           invokePageViewCandidate(articleId);
+	        }
+	        if(creater){
+                ga('set', 'dimension2', creater);
+            }
+	        eventTrack(); 
+	        
+	        //DMP Pixel code call
+    	    if(typeof $cr.cll == "function") {
+                $cr.cll();
+            }
+        
+	    }
+	   
+	    logonmyt('Read', articleId, '');
+	    if(typeof colombia.clearData != 'undefined'){colombia.clearData();}
+	    //createQuillPadIfNotExist(articleId);
+	    
+	    // fnInitIBeat(articleId);
+	   
+	    //Render FB Like Button
+    if(typeof FB == 'object') {
+     FB.XFBML.parse();   
+    }
+     
+      //initialized incontent sliders
+    if ($().rkslider) {
+        $("div[id^='phototabslide_']").each(function(index, val) {
+            var divid = $(this).attr('id');
+            //$('#' + divid).rkslider('#' + divid + ' .btnNext', '#' + divid + ' .btnprev');
+        });
+        
+        $("div[id^='phototab_']").each(function(index, val) {
+            var divid = $(this).attr('id');
+            $('#' + divid).rkslider('#' + divid + ' .btnNext', '#' + divid + ' .btnprev' ,'false','600','600','1','NA','NA');
+        }); 
+        
+        
+    }
+	    
+	  if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+            var id = getArticleIdFromUrl(0);
+            if (id) {
+                set_activity_log(TIMESPOINTCONFIG.get('ARTICLE_READ'), id);
+            } else {
+                console.log("window.onload::failed to set activity");
+            }
+    
+        }  
+	    
+	}
+	
+	function fnInitIBeat(msid){
+        _page_config.cat = $('#iBeat_'+msid).attr('data-ibeat-cat');
+        _page_config.subcat = $('#iBeat_'+msid).attr('data-ibeat-subcat');
+        _page_config.articledt = $('#iBeat_'+msid).attr('data-ibeat-articledt');
+        _page_config.pubt = $('#iBeat_'+msid).attr('data-ibeat-articleLongdt');
+        _page_config.author = $('#iBeat_'+msid).attr('data-ibeat-author');
+        _page_config.channel = $('#iBeat_'+msid).attr('data-ibeat-channel');
+        _page_config.contenttag = $('#iBeat_'+msid).attr('data-ibeat-tag');
+        _page_config.catIds = $('#iBeat_'+msid).attr('data-ibeat_catids');
+        _page_config.articleId = msid;
+        _page_config.action =1;
+        _page_config.contentType = 1;
+        _page_config.location = 1;
+        _iBeat_articleid    = msid;
+        _iBeat_channel = $('#iBeat_'+msid).attr('data-ibeat-channel');
+        _iBeat_tag = $('#iBeat_'+msid).attr('data-ibeat-tag');
+        _iBeat_catIds = $('#iBeat_'+msid).attr('data-ibeat_catids');
+        _page_config.contenttag= _iBeat_tag;
+        _page_config.channel= _iBeat_channel;
+        _iBeat_url = $('#iBeat_'+msid).attr('data-ibeat-url');
+        _page_config.url =  $('#iBeat_'+msid).attr('data-ibeat-url');
+        _page_config.iBeatField =  $('#iBeat_'+msid).attr('data-ibeat-print');
+        _iBeat_type = 1; //1 for articleshow, 2 for videshow & 3 for others
+        _iBeat_action=1;
+        if(typeof iBeatPgTrend != 'undefined') {
+            iBeatPgTrend.init(_page_config);   
+        }
+      
+    }
+
+     
+                        
+    function showEmailBox(artId, title, syn){
+        $("#TB_overlay").show();										
+        $("#emaillayer").show();						
+        $("#emailframe").load("/article_via_email/"+artId+".cms", {title : title, syn : syn}); 
+    }
+
+    function createSessionStorage(attr, val){
+    	try{
+    		if(sessionStorage){
+    			sessionStorage.setItem(attr, val);
+    		}else{
+    			console.log("Session storage is not supported");
+    		}
+    	}catch(err){
+    		console.log("createSessionStorage::"+err);
+    	}
+    }
+
+    function pageTitle(seoUrl) {
+        if(seoUrl) {
+            var arrseoUrls = seoUrl.split("/");
+            var pageTitle = arrseoUrls[arrseoUrls.length-1].replace(/\-/g, ' ');
+            document.title = pageTitle; 
+        }
+    }
+    
+    function eventTrack(trackingId, domain,  eventName, eventVal) {
+        var eventName  = eventName || null;
+        var eventVal  = eventVal || null;
+        trackingId = !trackingId ?  'pageview':  trackingId;
+        domain = !domain ?  pageConfig.eventlabel :  location.pathname;
+        if (eventName && eventVal) {
+            ga('send', trackingId , domain , eventName, eventVal);
+        }
+        else {
+           ga('send', trackingId , domain); 
+        }
+    }
+    
+	function loadArticleOnclickEvent(articleUrl, articleId, event,utm) {
+        event.preventDefault();
+         var adClose= $('#ads_'+articleId).attr('data-adclose');
+        //createSessionStorage('currentArticleId', articleId);
+        var nextArticleUrl = document.location.origin + "/" + articleUrl + "/articleshow/" + articleId + ".cms"+utm;
+        var gaUrl = "/" + articleUrl + "/articleshow/" + articleId + ".cms"+utm;
+        var target = $("#nextArtarrow_" + articleId);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 800, function() {
+            setTimeout(function() {
+                $(target)[0].scrollIntoView(true);
+                pageTitle(articleUrl); // change page title
+        history.pushState({}, '', nextArticleUrl);
+        $("#outerTabContainer ul li").removeClass("active"); // remove active class
+        $("a#a_"+articleId).parent('li').addClass("active"); // add active class on current li
+            }, 600);
+        });
+        
+    
+        // fnInitIBeat(articleId);
+        if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+            var id = getArticleIdFromUrl(0);
+            if (id) {
+                set_activity_log(TIMESPOINTCONFIG.get('ARTICLE_READ'), id);
+            } else {
+                console.log("window.onload::failed to set activity");
+            }
+    
+        }
+        //getSocialIconsSticky(articleId);
+        refreshRightStickyGoogleAd();
+        closevid(articleId, 'close');
+        
+        
+        ga('send','pageview', nextArticleUrl); //Count page view */
+        //eventTrack();
+        comscore();
+        //DMP Pixel code call
+	    if(typeof $cr.cll == "function") {
+            $cr.cll();
+        }
+        
+        logonmyt('Read', articleId, '');
+        if ($('#Newestcmntdata_' + articleId).html() == "") {
+            $('#Newesttab_' + articleId).trigger("click");
+        }
+    
+    if(adClose!='true'){
+        if (typeof initGoogleAds == "function") {
+            initGoogleAds(eval('wapads_' + articleId), articleId);
+            multiplexAd(articleId);
+        }
+        if (typeof colombia.clearData != 'undefined') {
+            colombia.clearData();
+        }
+     }    
+    }
+	
+
+	
+	function refreshcapcha() {
+        var captchaSrc = $('#capcha_ave').attr('src');
+        $('#capcha_ave').attr('src', captchaSrc+'&amp;timesstamp='+Date.now());
+    }
+                    
+    function validateMail(emailId) { 
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        return filter.test(emailId);
+    }
+    
+    function ismaxlength(obj) {						
+        var mlength = obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
+        if (obj.getAttribute && obj.value.length>mlength)
+        obj.value=obj.value.substring(0,mlength)
+    }
+    
+    function makeBlank(obj,defMsg) {
+	    if(obj.value == defMsg) {
+	        obj.value = "";
+	    }
+	}
+	
+	function fillDefValue(obj,defMsg) {
+	    if(obj.value == "") {
+	        obj.value = defMsg;
+	    }
+	}
+	
+	function refreshRightStickyGoogleAd(){
+        googletag.cmd.push(function () {
+            if(typeof WSK_AS_Right_Sticky !="undefined") {
+                googletag.pubads().refresh([WSK_AS_Right_Sticky]);
+            }
+            if(typeof adSlot_innov1_AS !="undefined") {
+                googletag.pubads().refresh([adSlot_innov1_AS]);
+            }
+            
+        });
+    }
+    
+     
+    
+    function submitpoll(formobj) {
+        var flag = true; 
+        var radiobtn = document.getElementsByName("PRadio");
+        var captcha_ans = document.getElementById("mathans").innerHTML;
+        var captch_user_ans= document.getElementById("mathuserans2").value;
+        if(ispollsubmited == 1) {
+             document.getElementById("errormsg").innerHTML = "You have already voted"; 
+             flag = false;
+        }
+        else if(parseInt(captcha_ans) != captch_user_ans) {
+            document.getElementById("errormsg").innerHTML = "Incorrect captcha value."; 
+            flag = false;   
+        }
+        else {
+            ispollsubmited = 1;
+            document.getElementById("errormsg").innerHTML = "";
+            window.open('', 'formpopup', 'width=400,height=400,resizeable,scrollbars');
+            formobj.target = 'formpopup';
+            flag = true; 
+            
+        }
+        return flag;
+    }
+    
+    
+    function closeNicElm() {
+        eventTrack('niccontentclose');
+        $(".nicwrapper").removeClass('animateLeft');
+        $('.newsincontext').removeClass('nicactive');
+        $('body').removeClass('disable-scroll');
+    }
+    
+    function crtg_getCookie(c_name) {
+     var i, x, y, ARRCookies = document.cookie.split(";");
+     for (i = 0; i < ARRCookies.length; i++) {
+         x = ARRCookies[i].substr(0, ARRCookies[i].indexOf("="));
+         y = ARRCookies[i].substr(ARRCookies[i].indexOf("=") + 1);
+         x = x.replace(/^\s+|\s+$/g, "");
+         if (x == c_name) {
+             return unescape(y);
+         }
+     }
+     return '';
+    }
+     
+    
+    /* removes content for EU Users*/
+    function removeData(type) {
+        if(type == "comment") {
+            setTimeout(function() {
+                if(detectContinent()) { //detectContinent() returns true for EU user.
+                    $('.comments-wrapper').remove();        
+                }
+            }, 2000);  
+        }
+        
+    }
+    
+    function isBrowserIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) { // If Internet Explorer, return version number
+            return true;
+        }
+        else { // If another browser, return 0
+            return false;
+        }
+    }
+
+ $(window).load(function(){  
+       setTimeout(function(){
+          // fnInitIBeat(currentArticleId);
+       }, 1000); 
+    });
+    
+    $(document).ready(function() {
+        //redirectShowPage();
+        //$('.contentarea.firstarticle').after('<div id="first-article"></div>');
+        $(".socialsharing").hide();
+        //gadgetsnowwidget(3); //pass no of item shown in one screen
+        
+        verifyUser();
+        $('.inlineread').parent().attr('class','inlineheading');
+          
+        //disable comment section for EU Users
+        removeData('comment');
+        
+        
+         
+        if ($().rkslider) {
+            $("div[id^='phototab_']").each(function(index, val) {
+                var divid = $(this).attr('id');
+                $('#' + divid).rkslider('#' + divid + ' .btnNext', '#' + divid + ' .btnprev' ,'false','600','600','1','NA','NA');
+            });
+        }
+        
+          
+        $(document).on("submit", "#form-article-via-mail", function(e) {
+		    var form = $(this);
+		    $('#errormsg').html('');
+            var trimtomail = $.trim($('#form-article-via-mail input[name="toaddress"]').val());
+            var trimfrommail = $.trim($('#form-article-via-mail input[name="replyto"]').val());
+            var captchaVal = $.trim($('#form-article-via-mail input[name="captchaText"]').val());
+            var fromName = $.trim($('#form-article-via-mail input[name="fromname1"]').val());
+            var comment = $.trim($('#form-article-via-mail textarea[name="body"]').val());
+            
+        	if (!trimtomail) { 	 
+        		$('#errormsg').show().html('Please enter recipient email id');
+        		return false;
+        	}
+        	else if(!fromName || fromName == "Your Name") {
+        	    $('#errormsg').show().html('Please enter Your name');
+        		return false;
+        	}
+        	else if (!validateMail(trimfrommail)) {
+        		$('#errormsg').show().html('Please enter your valid email id');
+        		return false;
+        	}
+        	else if(!comment || comment == "Your Comment") {
+        	 	$('#errormsg').show().html('Please enter Your comment');
+        		return false;
+        	}
+        	 
+        	else if(!captchaVal) {
+        		$('#errormsg').show().html('Please enter captcha');
+        		return false;
+        	} 
+        	
+            $.ajax({
+              type: form.attr('method'),
+              url: form.attr('action'),
+              dataType: "json",
+              data: form.serialize(),
+              success: function(msg) {
+               	if(msg.postmail.error) {
+               	    $('#errormsg').html(msg.postmail.error.xmlns).show();
+               	}
+    			else {  
+    			    $('#thanksmsg').show();
+    			    $('#mailtofrnd').hide();
+    			}
+              },
+              error: function(){
+                $('#errormsg').html('Some Technical error occured, please try after some time').show();
+              }
+            });
+        });
+        
+        embedComments(currentArticleId) // update comment counts in div and bottom comments
+        topcmtdata(currentArticleId); // update top comments in article
+        
+       /* $(document).on("click", ".comments-wrapper .comment-box, .comments-wrapper .cmtbtn-wrapper", function() {
+            var ArticleInview = $(this).closest('.comments-wrapper').attr('data-id');
+            showComments(ArticleInview);
+        }); */
+        var selectors = Array(".comments-wrapper .user-thumbnail",
+                              ".comments-wrapper .short_comment",
+                              ".comments-wrapper .footbar.clearfix .up",
+                              ".comments-wrapper .footbar.clearfix .down",
+                              " .comments-wrapper .cmtbtn-wrapper",
+                              ".comments-wrapper .footbar.clearfix .comment-reply"
+                            );
+         $(document).on("click", selectors.join(', '), function() {
+            var ArticleInview = $(this).closest('.comments-wrapper').attr('data-id');
+            var commentId = $(this).closest('.comment-box').attr('data-id');
+            showComments(ArticleInview);
+            
+            if($(this).attr('data-action') == 'comment-reply') {
+                setTimeout(function(){
+                    $("#cmnt_"+ commentId + " .comment-form.full.reply").show();
+                if(typeof Get_Ckie == 'function' && Get_Ckie('ssoid')) {
+			       $("#cmnt_"+ commentId + " .comment-form.full.reply").closest('.comment-box').find('.comment-form .social-post').show() ; 
+			    } 
+			    else {
+                    $("#cmnt_"+ commentId + " .comment-form.full.reply").closest('.comment-box').find('.comment-form .login-input').show() ;
+                 } 
+                }, 2000); 
+            }
+            
+            
+              if($(this).attr('data-action') == 'comment-agree') {
+                setTimeout(function(){
+                    $("#cmnt_"+ commentId +" i[data-action='icon-uparrow']").trigger( "click" );
+                }, 2000); 
+            }
+            
+            if($(this).attr('data-action') == 'comment-disagree') {
+                setTimeout(function(){
+                    $("#cmnt_"+ commentId +" i[data-action='icon-downarrow']").trigger( "click" );
+                }, 2000); 
+            }
+             
+        }); 
+        
+        /*$(document).on("click", ".comments-wrapper .user-thumbnail, .comments-wrapper .short_comment, .comments-wrapper .footbar.clearfix .comment-reply, .comments-wrapper .footbar.clearfix .up, .comments-wrapper .footbar.clearfix .down, .comments-wrapper .cmtbtn-wrapper", function() {
+            var ArticleInview = $(this).closest('.comments-wrapper').attr('data-id');
+            showComments(ArticleInview);
+        });*/
+        
+        
+        /*cmnt_2407923130 .comment-form.full.reply*/
+        
+         
+        $(document).on('click', 'span[data-val="newsincontext"]', function(){
+            var winheight = $(window).height();
+            if(!$(this).hasClass('nicactive')) {
+                if($('.nicwrapper').length == 0) {
+                  $('body').append('<div class="nicwrapper"></div>');   
+                }
+                $('.nicwrapper').html('<img src="/photo/42715392.cms" alt="Loading" id="loader"/>');
+                $(".nicwrapper").addClass('animateLeft');
+                $('.newsincontext').removeClass('nicactive');
+                $(this).addClass('nicactive');
+                $('body').addClass('disable-scroll');
+                var nic_msid=$(this).attr('data-msid');
+                $.ajax({
+                    url: "/wdt_articledata/"+nic_msid+".cms?type=nic",
+                    success:function(data){
+                        $('.nicwrapper').html(data);
+                         //if(!$('#related-articles-nic_'+nic_msid).html()) {
+                        $('.related-articles-nic').load('/wdt_related_articles.cms?msid='+articleId);    
+                         //}
+                        var thisArticleUrl = pageConfig.siteurl + "/articleshow/"+nic_msid+".cms";
+                        $('.nicwrapper').css('height',winheight);
+                        $('.nicscroll').css('height',winheight-50);
+                        comscore();
+                    	// ga('send','pageview', thisArticleUrl); //Count page view */  
+                    	 eventTrack();
+                         //eventTrack('niccontent');
+                         eventTrack('event' , '' , 'select', 'niccontent');
+                         
+                         //DMP Pixel code call
+                	    if(typeof $cr.cll == "function") {
+                            $cr.cll();
+                        }
+        
+                         if(typeof twttr.widgets != 'undefined') {
+                            twttr.widgets.load(); 
+                         }
+                         if(typeof window.instgrm != 'undefined') {
+                             window.instgrm.Embeds.process();
+                         }
+                         removeData('comment');
+                         
+                    }
+                });
+            }
+            else if($(this).hasClass('nicactive')) {
+                closeNicElm(); 
+            }
+        });
+        
+        $(document).on('click','.nic_close', function() {
+            closeNicElm();
+        });
+        
+        $('.newsincontext.nicactive').click(function() {
+            closeNicElm();
+        });
+        
+       $("#closeemaillayer").click(function () {
+            $("#emaillayer").hide();
+            $("#mailtofrnd #errormsg").hide();
+            $("#TB_overlay").hide();
+            $("#emailframe").attr(""); 
+        });
+        
+    $(document).on("click", ".social_tools a, .socialsharing.sticky a, .nbtsprite.fbk, .nbtsprite.twitr", function() {
+            var title = '';
+            if($(this).attr('data-url')) {
+              var urltoshare = $(this).attr('data-url');
+            }
+            else {
+                var urltoshare = pageConfig.siteurl + window.location.pathname.replace('articleshow', 'articleshow');
+            }
+            if($(this).attr('pg')) {
+                var type = $(this).attr('pg').toLowerCase();
+            }
+            if($(this).attr('data-title')) {
+                 title = $(this).attr('data-title');    
+            } 
+            
+            socialShare(type, urltoshare, title);
+        });
+
+$(document).on("click", ".articleImage small", function() {
+    var videoid = $(this).attr('data-videoid');
+    var videotitle = $(this).attr('data-videotitle');
+    var videoskipAds = $(this).attr('data-skipAds');
+    //var videoarticleID= $(this).parent().parent('.videofixedtop').attr('id');
+    var videoPlaySticky = typeof sessionStorage.getItem('videofixed')=='string' ? sessionStorage.getItem('videofixed'): null;
+    //var videoartID = $(this).parent().parent('.videofixedtop').attr('id').split('videofixed')[1];
+    //$('.articleImage .nextdiv iframe').attr('src','');
+    //$('.newclose').trigger('click');
+    $(this).parent('.nextdiv').find('iframe').attr('src', '/feeds/vod_player.cms?msid=' + videoid + '&videosection=article-show&dim=0&autoplay=1&userInitiated=1&source=abovearticle&version=4&skipAds='+videoskipAds).show();
+     // $(".videofixedtop").removeClass("videofixed");
+    //$(".newclose").trigger("click");
+   
+    $(this).parent('.nextdiv').find('img').hide();
+    $(this).parent('.nextdiv').find('.typeicon').hide();
+    eventTrack('event', '_trackEvent', 'ArtSowVdo', 'Play', escape(videotitle));
+    window.articleVidStatus = 'play';
+    
+    if($('#container-minitv #streaming_box').length == 1) {
+         $('#streaming_box,.liveS_container').hide();
+         $('#streaming_box iframe').attr('src','');
+    }
+    if(typeof videoPlaySticky=='string' && videoPlaySticky){
+        //$('#videofixed_'+videoPlaySticky).removeClass('videofixed');
+        $('#videofixed_'+videoPlaySticky+' .newclose').trigger('click');
+    }
+});
+
+    $(document).on("click", ".video-incontent", function() {
+        var videoid = $(this).attr('data-videoid');
+        var videotype = $(this).attr('data-videotype');
+        var videoskipAds = $(this).attr('data-skipAds');
+        if (videotype == 'youtube') {
+            var videopath = 'https://www.youtube.com/embed/' + videoid + '?autoplay=1';
+        } else {
+            var videopath = '/feeds/vod_player.cms?msid=' + videoid + '&videosection=article-show&dim=0&autoplay=1&userInitiated=1&source=abovearticle&version=4&skipAds='+videoskipAds;
+        }
+        $(this).closest('#articlevideo_'+videoid).next('#videocontainer_' + videoid).find('#vid_' + videoid).attr('src', videopath);
+        $(this).closest('#articlevideo_'+videoid).hide();
+        $(this).closest('#articlevideo_'+videoid).next('#videocontainer_' + videoid).show();
+        
+    });
+    
+    $(document).on('click','.topStoriespopup .close',function() {
+        $('.topStoriespopup').hide();
+        $('body').removeClass('disable-scroll');
+        Set_Ckie("tpstoryPopup",'closed','0.04166667',"/",".indiatimes.com","");
+    });
+    
+    $(document).on("click", ".close-btn", function() {
+        var videoid = $(this).attr('data-videoid');
+        $(this).closest('#videocontainer_' + videoid).find('#vid_' + videoid).attr('src', '');
+        $(this).closest('#videocontainer_' + videoid).prev('#articlevideo_' + videoid).show();
+        $(this).closest('#videocontainer_' + videoid).hide();
+    });
+    
+    $("#subscriptionbox").on('click', '.closeicon', function() {
+            $("#subscriptionbox").hide();
+            $('.TB_overlayBG').hide();
+    });
+    
+    
+    twttr.ready(function(twttr) {
+        var twtText = $(".leftmain h1").text();
+        var url = document.location.href;
+        url1 = encodeURIComponent(url);
+    });
+    
+    
+    try {
+        if(typeof FB) {
+         FB.Event.subscribe('edge.create',
+            function(response) {
+                eventTrack('', 'social', 'facebook', 'like', response);
+                if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+                    var id = getArticleIdFromUrl(0);
+                    if (id) {
+                        set_activity_log(TIMESPOINTCONFIG.get('FACEBOOK_SHARE'), id);
+                    } else {
+                        console.log("fbs_click::failed to set activity");
+                    }
+                }
+                
+                logonmyt('Shared', currentArticleId, 'facebook');
+            }
+        );   
+        }
+        
+    } catch (ex) {
+        console.log("exfb:" + ex)
+    }
+
+    try {
+        twttr.ready(function(twttr) {
+            twttr.events.bind('tweet', function(event) {
+                //ga('send', 'social', 'Twitter', 'Twit', '');
+                eventTrack('', 'social', 'Twitter', 'Twit', '');
+                 
+                if (TIMESPOINTCONFIG.get('isEnableTimesPoints') === true) {
+                    var id = getArticleIdFromUrl(0);
+                    set_activity_log(TIMESPOINTCONFIG.get('TWITTER_SHARE'), id);
+                }
+                logonmyt('Shared', currentArticleId , 'tweet');
+            });
+        });
+    } catch (ex) {
+        console.log("extw:" + ex)
+    }
+     
+if(adClose!='true'){
+    initializeAd(active_section_id, 'AS', currentArticleId, 1); //for first article
+    setTimeout(function(){
+        if(typeof initGoogleAds == "function") {
+            initGoogleAds(eval('wapads_'+currentArticleId), currentArticleId); 
+            multiplexAd(currentArticleId);
+        }
+       
+    }, 2000);
+}
+     
+   
+    
+    var position = $(window).scrollTop();
+     var slideLastViewed = '';
+    var slideInView = '';
+     var photoLastViewed = '';
+     var photoInView = '';
+     
+     var isArticle = false;
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var scrollDirection = scroll > position ? 'downward' : 'upward';
+        
+        //console.log(slideInView);
+         
+        // $(".data-pf").each(function() {
+        //     var elmId = $(this).attr('id');
+        //     if(elmId) {
+        //         var photoId = elmId.split('data-pf-')[1];
+        //         var elm = document.getElementById(elmId);
+        //         if (isVisible(elm)) {
+        //             if(photoLastViewed !== photoId) {
+        //                      photoInView = photoId;
+        //                      // seoPhoto = $(this).attr('data-url');
+        //                      // alert(photoId);
+        //             }
+                   
+                     
+        //         }    
+        //     }
+            
+            
+        // });
+        
+        // if (photoLastViewed != photoInView) {
+        //     console.log('photoInView', photoInView);
+        //     var seoPhoto = $(`#data-pf-${photoInView}`).attr('data-url');
+        //     var seoPath = $(`#data-pf-${photoInView}`).closest('.photosection').attr('data-seo');
+        //     photoLastViewed = photoInView;
+        //     var seoUrl =  `${seoPath}?${seoPhoto}`;
+        //     // console.log('slideInView'+slideInView);
+        //     history.pushState({}, '', seoUrl);
+            
+        // }
+        
+       
+      /* if($(window).scrollTop() < 600){
+            $('#widget-two').hide();
+        }*/
+        if($('.colombiaonesuccess').html()) {
+        	$('.rhs-from-around-header').show();
+        }
+        var secondId = getNextArticleId(currentArticleId);
+        
+        var placeHoldersecond = document.getElementById('nextArtarrow_'+secondId);
+        if(isVisible(placeHoldersecond) && $('#first-article').length == 0) {
+           $('.contentarea.firstarticle').after('<div id="first-article"></div>'); 
+        }
+        
+        if(articleidsArr.length == 0 && articleidsAll.length == 0) {
+                if ($('#articleids').length > 0) {
+                    $('#articleids').attr('data-article-ids')
+                    var articleIds = $('#articleids').attr('data-article-ids');
+                    articleIds = articleIds.split(',');
+                    articleIds.pop(-1);
+                    articleidsArr = articleIds;
+                    articleidsAll.push(currentArticleId);
+                    articleidsAll = articleidsAll.concat(articleidsArr);
+                }
+            }
+            
+        if(!articlesGettingLoad && $(window).scrollTop() >= 500) {
+                articlesGettingLoad = true;
+                loadArticles(articleidsArr);
+                setTimeout(function(){ $("#outerTabContainer" ).show( "slow"); }, 500);
+                //Invokes bottom slider
+                
+            }
+        var articleId = getArticleIdFromUrl(0);
+        //getSocialIconsSticky(articleId); 
+       $("div[id^='contentarea_']").each(function() {
+            var elmId = $(this).attr('id');
+           
+             if(elmId) {
+                var slideId = elmId.split('contentarea_')[1];
+                
+                var elm = document.getElementById(elmId);
+                var elmNextArrow = document.getElementById('nextArtarrow_'+slideId);
+                if (isVisible(elm) || (elmNextArrow && isVisible(elmNextArrow))) {
+                     
+                   
+                    slideInView = slideId;
+                    return false;
+                }  
+             }
+             
+            var type = $('#contentarea_' + slideInView).attr('data-type');
+            var endPfObject = document.getElementById('endPhotofeature_'+articleId);
+
+            if(type == 'pf' && endPfObject.getBoundingClientRect().top > 0) {
+                var inViwePhoto = $('#contentarea_'+ slideInView).parent().attr('data-id');
+                getNewSticky(inViwePhoto); 
+            }else{
+               getNewSticky(slideInView); 
+            }
+        });
+        
+       
+         //ad call for
+         $("div[id^='nextArtarrow_']").each(function() {
+            var nxtelmId = $(this).attr('id');
+            var nxtslideId = nxtelmId.split('nextArtarrow_')[1];
+            var nxtelm = document.getElementById(nxtelmId);
+            var adClose= $('#ads_'+nxtslideId).attr('data-adclose');
+
+            if (isVisible(nxtelm) && adClose!='true') {
+              if(typeof initGoogleAds == "function" && 'wapads_'+nxtslideId) {
+                     initGoogleAds(eval('wapads_'+nxtslideId),nxtslideId);
+                      multiplexAd(initGoogleAds);
+                 }  
+            }
+        });
+        
+       if (slideLastViewed != slideInView) {
+            console.log(slideInView);
+            slideLastViewed = slideInView;
+             var type = $('#contentarea_' + slideInView).attr('data-type');
+              // console.log('slideInView'+slideInView);
+            if(type == 'pf') {
+                var inViwePhoto = $('#contentarea_'+ slideInView).parent().attr('data-id');
+
+                var seoTag =  $('#contentarea_' + slideInView).attr('data-url'); 
+                var seoPath = $('#contentarea_' + slideInView).closest('.photosection').attr('data-seo');
+                var finalseoPath =`${seoPath}?${seoTag}`;
+                if(seoTag){
+                    history.pushState({}, '', finalseoPath);
+                 }else{ history.pushState({}, '', seoPath);
+                }
+                if(seoTag){
+                   var gaurl = finalseoPath;
+                 }else{ 
+                     var gaurl= seoPath;
+                }
+                //eventTrack();
+                ga('send', 'pageview',document.location.origin+gaurl);
+                comscore();
+                
+               // fnInitIBeat(inViwePhoto);
+                
+                if(typeof initGoogleAds == "function" && 'wapads_'+inViwePhoto) {
+                    initGoogleAds(eval('wapads_'+inViwePhoto),inViwePhoto);
+                }
+                
+                adrefreshCount++;
+                
+                if (adrefreshCount % 3 == 0) {
+                    googletag.cmd.push(function() {
+                            // if (typeof DEFSLOT_ATF_300 != "undefined") {
+                                // googletag.pubads().refresh([DEFSLOT_ATF_300]);
+                            // }
+                      googletag.pubads().refresh();
+                    });
+                    adrefreshCount=0;
+                }
+                
+                $("#outerTabContainer ul li").removeClass("active"); // remove active class
+	            $("a#a_"+inViwePhoto).parent().addClass( "active" ); // add active class on current li
+	            embedComments(inViwePhoto);
+            }
+            else {
+               var finalseoPath =$('#pagedata_' + slideInView).attr('data-url');
+                //writer for GA
+               var creater =$('#pagedata_' + slideInView).attr('data-creater');
+               initializePageElements(finalseoPath, slideInView, scrollDirection, creater);
+               
+            }
+            
+             //console.log(slideInView);
+        }
+        
+        
+        
+        $("div[id^='videotopoffset_']").each(function() {
+            if($(this).attr('id')) {
+              var articleid = $(this).attr('id').split('videotopoffset_')[1]; 
+                var nextId = getNextArticleId(articleid);
+                videosticky(articleid, nextId);
+                //console.log($(this).attr('id')); 
+            }
+        });
+        
+        position = scroll;
+
+    });
+   
+}); 
+
+
+ // function to check if any element is present in current view				
+ function isVisible(elm) {
+    if(elm){
+        var rect = elm.getBoundingClientRect();
+        return (
+            (rect.height > 0 || rect.width > 0) &&
+            rect.bottom >= 0 &&
+            rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }else{
+        return false;
+    }
+}
+
+function isVisibleDom(domObject) {
+    var top_of_element = domObject.offset().top;
+    var bottom_of_element = domObject.offset().top + domObject.outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+
+    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// fixed right business sticky if space available while scrolling.
+ function getNewSticky(curArticle) {
+    var current_ArticleId = curArticle;
+    var nextArticleId =  getNextArticleId(current_ArticleId);
+    var objNextArticle = document.getElementById('nextArtarrow_'+nextArticleId);
+    var objFooter = document.getElementById('footerTopofset');
+    var endPfObject = document.getElementById('endPhotofeature_'+curArticle);
+    var breakPoint = document.getElementById('breakPoint_'+current_ArticleId);
+    
+    if((breakPoint) 
+    && (breakPoint.getBoundingClientRect().top <=0) 
+    && !isVisible(objNextArticle) 
+    && !isVisible(objFooter)
+    && (objFooter.getBoundingClientRect().top >0)
+    && !isVisible(endPfObject)){
+        $('.ATF_300_'+current_ArticleId).addClass('stick');
+    }else {
+	     $(".ads").removeClass('stick');
+    }
+    
+    if(isVisible(objNextArticle)){
+	      $(".ads").removeClass('stick');
+     }
+ }
+ 
+ 
+
+
+    /*Times Internet - US - RTA script  */
+    (function() {
+     var crtg_url = location.protocol + '//rtax.criteo.com/delivery/rta/rta.js?netId=' + escape(crtg_nid);
+     crtg_url += '&cookieName=' + escape(crtg_cookiename);
+     crtg_url += '&rnd=' + crtg_rnd;
+     crtg_url += '&varName=' + escape(crtg_varname);
+     var crtg_script = document.createElement('script');
+     crtg_script.type = 'text/javascript';
+     crtg_script.src = crtg_url;
+     crtg_script.async = true;
+     if (document.getElementsByTagName("head").length > 0) document.getElementsByTagName("head")[0].appendChild(crtg_script);
+     else if (document.getElementsByTagName("body").length > 0) document.getElementsByTagName("body")[0].appendChild(crtg_script);
+    })();
+ /*Times Internet - US - RTA script  */
+ 
+// callfunctiononload();	
+//$("div[id^='contentarea']").each(function() { var articleid = $(this).attr('id').split('_')[1];alert(articleid); });
+
+function multiplexAd(articleId){
+   var geoInfo=JSON.parse(Get_Ckie('geoInfo'));
+   var divElm = document.getElementById(`#fromAllAround_${articleId}`);
+    geoInfo=geoInfo.country;
+    if(typeof geoInfo!='undefined' && geoInfo != "IN"){
+    var adSlot = eval('multiples_'+articleId+'.Multiples_'+articleId).id
+        window.googletag = window.googletag || {};
+            window.googletag.cmd = window.googletag.cmd || [];
+            window.googletag.cmd.push(() => {
+              window.googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                if (event.slot.getSlotElementId() === adSlot) {
+                    if (event.isEmpty === true) {
+                        document.querySelector("#fromAllAround_"+articleId).style.display='block';
+                      }
+                 
+                }
+              });
+            });
+            initGoogleAds(eval('multiples_'+articleId), articleId);
+            //document.querySelector("#fromAllAround_"+articleId).style.display='none';
+        }
+        else if(divElm){
+            divElm.style.display='block';
+        }
+ };    
+   
+   
+    

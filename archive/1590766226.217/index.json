@@ -1,0 +1,194 @@
+{
+    "title": "Wife and relatives are opposite the eye The freight train collides Building worker kills || \u0bae\u0ba9\u0bc8\u0bb5\u0bbf, \u0b89\u0bb1\u0bb5\u0bbf\u0ba9\u0bb0\u0bcd\u0b95\u0bb3\u0bcd \u0b95\u0ba3\u0bcd \u0b8e\u0ba4\u0bbf\u0bb0\u0bc7 \u0b9a\u0bb0\u0b95\u0bcd\u0b95\u0bc1 \u0bb0\u0bc6\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0bcb\u0ba4\u0bbf \u0b95\u0b9f\u0bcd\u0b9f\u0bbf\u0b9f\u0ba4\u0bcd \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf \u0baa\u0bb2\u0bbf",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.217",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:49:58.511415",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774584",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 17:49:44.015089",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:50:11.791248",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:50:10.310994",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:49:44.014534",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.dailythanthi.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:49:43.279028",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:50:03.246336",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 17:49:58.511565",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:50:10.310632",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:50:06.746643",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:50:13.375319",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:50:11.791498",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "https://web.archive.org/web/20200529175012/https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:50:06.746395",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:50:03.246586",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:49:43.278736",
+                "cmd": [
+                    "curl",
+                    "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:49:42.528120",
+                "pwd": "/data/archive/1590766226.217",
+                "output": "Wife and relatives are opposite the eye The freight train collides Building worker kills || \u0bae\u0ba9\u0bc8\u0bb5\u0bbf, \u0b89\u0bb1\u0bb5\u0bbf\u0ba9\u0bb0\u0bcd\u0b95\u0bb3\u0bcd \u0b95\u0ba3\u0bcd \u0b8e\u0ba4\u0bbf\u0bb0\u0bc7 \u0b9a\u0bb0\u0b95\u0bcd\u0b95\u0bc1 \u0bb0\u0bc6\u0baf\u0bbf\u0bb2\u0bcd \u0bae\u0bcb\u0ba4\u0bbf \u0b95\u0b9f\u0bcd\u0b9f\u0bbf\u0b9f\u0ba4\u0bcd \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf \u0baa\u0bb2\u0bbf"
+            }
+        ]
+    },
+    "updated": "1590788298.561139",
+    "tags": "",
+    "url": "https://www.dailythanthi.com/News/Districts/2020/04/14041447/Wife-and-relatives-are-opposite-the-eye-The-freight.vpf"
+}

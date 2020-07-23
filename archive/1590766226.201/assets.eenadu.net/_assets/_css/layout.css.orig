@@ -1,0 +1,657 @@
+/*Designer: Madan Mohan Yadlapati*/
+@font-face {font-family: "EenaduUH"; font-display: auto; src: url("https://api.eenadu.net/assests/eenadu-fonts/EenaduUH.ttf");}
+@font-face {font-family: "EenaduU"; font-display: auto; src: url("https://api.eenadu.net/assests/eenadu-fonts/EenaduU.ttf");}
+@charset "utf-8";img, object, embed, video{max-width:100%;}
+/*.ie6 img{width:100%;}*/
+header figure figcaption{letter-spacing:1px;padding-left:5px;font-family:EenaduUH;font-size:17px;padding-top:5px;}
+.menu{display:block;margin-bottom:6px;background:#02599C;background:-moz-linear-gradient(top, #02599C 0%, #012D4A 100%);background:-webkit-linear-gradient(top, #02599C 0%, #012D4A 100%);background:linear-gradient(to bottom, #02599C 0%, #012D4A 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#02599C', endColorstr='#012D4A', GradientType=0);border-radius:3px;font-family:'EenaduUH', sans-serif;height:38px;font-weight:normal;}
+.menu ul{list-style-type:none;margin:0px;padding:0px;}
+.menu li{list-style-type:none;margin:0px;display:inline-block;position:relative;font-size:17px;color:#FFF;border-right:1px solid;height:33px;padding-top:5px;padding-right:2px;padding-bottom:0px;padding-left:0px;line-height:30px;font-weight:normal;}
+.menu .active a{color:#FFAC1E;}
+.menu li a{margin-right:9px;margin-left:4px;font-size:18px;color:#fff;display:inline-block;outline:0px;font-weight:normal;}
+.menu li a:hover{color:#FFAC1E;}
+ menu ul li:last-child{border-right:none;color:Red;}
+.menu ul li:nth-last-child(4){border-right:none;color:#D4341A;font-weight:bold;} /* added 09/02/17*/
+.menu li:hover ul.dropdown{display:block;}
+.menu li ul.dropdown{position:absolute;display:none;width:150px;background:#012e4b;*/padding-top:0;z-index:1000000;}
+.menu li ul.dropdown li{display:block;list-style-type:none;font-weight:normal;border:0;}
+.menu li ul.dropdown li a{font-size:17px;color:#fff;display:block;font-weight:normal;padding-top:4px;padding-right:7px;padding-bottom:4px;padding-left:7px;}
+.menu li ul.dropdown li a:hover{color:#FFAC1E;}
+.eenaduhome{background-image:url(https://assets.eenadu.net/_assets/_images/hm-icon.png);width:20px;height:17px;position:relative;top:2px;margin-right:-5px !important;}
+.eenaduhome:hover{background-image:url(https://assets.eenadu.net/_assets/_images/hm-iconhover.png);}
+.active .eenaduhome{background-image:url(https://assets.eenadu.net/_assets/_images/hm-iconhover.png);}
+.menu li ul.dropdown1 , ul.dropdown1 li ul.sub-dropdown{position:absolute;display:none;width:170px;background:#012e4b;*/padding-top:0;z-index:1000000;left:-111px;}
+.menu li:hover ul.dropdown1{display:block;}
+.menu li ul.dropdown1 li{display:block;list-style-type:none;font-weight:normal;border:0;}
+.menu li ul.dropdown1 li a{font-size:17px;color:#fff;display:block;font-weight:normal;padding-top:4px;padding-right:7px;padding-bottom:4px;padding-left:7px;}
+.menu li ul.dropdown1 li a:hover{color:#FFAC1E;}
+.menu li:hover .arrow-down{border-top:0px solid #fff;}
+.arrow-down{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #ffac1e;position:absolute;top:15px;right:0px;content:'';}
+.menu li ul.dropdown1 li:hover .arrow-down1{border-top:5px solid #fff;}
+.arrow-down1{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #ffac1e;position:absolute;top:18px;right:90px;content:'';}
+#home{background:rgba(0, 0, 0, 0) url("https://assets.eenadu.net/_assets/_images/sprites.png") repeat scroll -88px -12px;padding:5px 8px;height:28px;width:17px;}
+#home:hover a{background:none;}
+.menu li ul.dropdown1 li ul.sub-dropdown{/*display:none;*/}
+.menu li ul.dropdown1 li:hover ul.sub-dropdown{display:block;position:absolute;left:-85%;width:150px;right:0;top:32px;background:#012e4b;color:inherit;}
+ul.sub-dropdown li a{font-size:17px;color:#fff;display:block;font-weight:normal;padding-top:4px;padding-right:7px;padding-bottom:4px;padding-left:7px;}
+.two-col-left-by-three .by-row ul li{width:210px;list-style:none;padding-left:13px;float:left;height:30px;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;list-style:none;overflow:hidden;background-position:left 9px;margin-bottom:5px;}
+.box-shadow{box-shadow:0px 0px 2px #a5a5a5;padding:1% 0%;-moz-box-shadow:0px 0px 2px #a5a5a5;-webkit-box-shadow:0px 0px 2px #a5a5a5;-o-box-shadow:0px 0px 2px #a5a5a5;-ms-box-shadow:0px 0px 2px #a5a5a5;display:table;width:100%;height:100%;}
+.no-space{margin:0 !important;padding:0 !important;}
+.no-space-r{margin-right:0 !important;padding-right:0 !important;}
+.no-space-l{margin-left:0 !important;padding-left:0 !important;}
+.no-space-t{margin-top:0 !important;padding-top:0 !important;}
+.no-space-b{margin-bottom:0 !important;padding-bottom:0 !important;}
+.no-border{border:none!important;}
+.no-border-b{border-bottom:none!important;}
+.no-border-t{border-top:none!important;}
+.no-border-r{border-right:none!important;}
+.no-border-l{border-left:none!important;}
+.ad-block-300{margin:5% auto;text-align: center;}
+.ad-block-300 img{max-width:1000px!important;}
+.offset-l{margin-left:5%;}
+.offset-l1{margin-left:3%;}
+.offset-l2{margin-left:7.5%;}
+.offset-t{margin-top:3%;}
+.offset-t1{margin-top:4.5%;}
+.offset-t2{margin-top:10%;}
+.offset-t3{margin-top:4.4%;}
+.offset-t4{margin-top:1%;}
+.offset-r{margin-right:5%;display:block;}
+.offset-r2{margin-right:10%;}
+.offset-b{margin-bottom:5%;}
+.offset-b1{margin-bottom:4%;}
+.offset-b2{margin-bottom:10%;}
+.offset-b3{margin-bottom:1%;}
+.offset-b4{margin-bottom:1.5%;}
+.offset-b5{margin-bottom:3%;}
+.offset-b6{margin-bottom:2.5%;}
+.right{float:right !important;}
+.left{float:left !important;}
+.center{float:none;text-align:center;}
+.left-text{text-align:left !important;padding-left:5px;}
+.right-text{text-align:right !important;padding-right:5px;}
+.border-l{border-left:1px solid #efefef;}
+.border-r{border-right:1px solid #efefef;}
+.border-t{border-top:1px solid #efefef;}
+.border-b{border-bottom:1px solid #efefef;}
+/*button{padding:0%;min-width:65px;color:#fff;border:none;}*/
+/*button{font-family: EenaduUH; font-size: 18px; font-weight: normal; background: #013458; border-radius: 5px; float: right; height: 32px; line-height: 26pt; text-align: center; margin: 1% 2%; color: #FFF;}*/
+.more2{background:#fff none repeat scroll 0 0;border:1px solid #ddd;color:#000;float:right;font-family:EenaduUH;font-size:16px;font-weight:normal;height:10px;margin:0 20px -19px 0;padding:0px 5px 15px 6px;position:relative;text-align:center;width:auto;z-index:1;}
+.more5{background:#fff none repeat scroll 0 0;border:1px solid #ddd;color:#000;float:right;font-family:EenaduUH;font-size:16px;font-weight:normal;height:10px;margin:0 7px -19px 0;padding:0px 5px 15px 6px;position:relative;text-align:center;width:auto;z-index:1;}
+.more3{background:#fff none repeat scroll 0 0;border:1px solid #ddd;color:#000;float:right;font-family:EenaduUH;font-size:16px;font-weight:normal;height:10px;margin:-12px 15px -19px 0;padding:5px 5px 10px 6px;position:relative;text-align:center;width:auto;z-index:1;}
+.more{background:#fff none repeat scroll 0 0;border:1px solid #ddd;color:#000;float:right;font-family:EenaduUH;font-size:16px;font-weight:normal;height:10px;margin:0 20px -19px 0;padding:5px 5px 10px 6px;position:relative;text-align:center;width:auto;z-index:1;}
+.more1{margin-top:15px;padding-top:16px;display:block;border-top-width:1px;border-top-style:solid;border-top-color:#d8d7d7;font-family:EenaduUH;font-weight:normal;}
+.more4{text-align: center;background-color: #dadada;font-family: EenaduUH;font-size: 16px;font-weight: normal;line-height: 23px;padding-top: 3px;}
+.sports-poll{width:100%;height:auto;padding:5px 5px 12px 5px;}
+.sports-poll p{display:block;margin:5px;}
+.sports-poll p label{vertical-align:text-bottom;padding:5px;line-height:20px;font-family:EenaduU;font-size:26px;}
+.submit_poll{background:#2691F3;padding:5px 10px;color:#fff;font-weight:bold;border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px;margin:1% auto;}
+.sports-poll div{width:100%;display:block;margin:5px auto;}
+.sports-poll legend{width:30%;display:block;float:left;}
+.sports-poll #progress{background:#ddd;border:none;}
+#progress::-webkit-progress-bar{background-color:#eee;border-radius:2px;box-shadow:0 2px 5px rgba(0, 0, 0, 0.25) inset;}
+.two-col-left-block{float:left;display:block;width:100%;}
+.two-col-left-block ul{list-style:none;}
+.two-col-left-by-three h4, .two-col-left-by-three figure{text-align:center;}
+.two-col-left-by-three .by-row ul{margin:0;padding:0 2%;}
+.two-col-left-by-three .by-row ul li{list-style:none;}
+.showmore{float:right;display:block;font-size:16px;}
+.offset-tp{margin-top:1%;}
+.offset-tp1{margin-top:2%;}
+.offset-tp3{margin-top:3%;}
+.offset-tb1{margin:2% 0;}
+.offset-bt1{margin-bottom:2%;}
+.offset-bt2{margin-bottom:4%;}
+.offset-l{margin-left:5px;}
+.offset-lt1{margin-left:1.5%;}
+.offset-lr1{margin-left:2px;margin-right:2px;}
+.offset-lr2{margin:0 1%;}
+.offset-rt1{margin-right:5px;}
+.pad-lr{padding-left:5px;padding-right:5px;}
+.pad-tb{padding: 1% 0%!important;}
+.thumb{width:100px;margin:2%;float:left;}
+.thumb-vid{width:100%;margin:2%;float:left;}
+aside.thumb-content1{width:100%;height:119px;overflow:hidden;margin-top:1.3px;margin-bottom:3px;}
+.thumb-content-more{width:49.3%;height:113px;overflow:hidden;margin-top:3px;margin-bottom:3px;margin-right:3px;float:left;}
+.feature{display:table;margin-left:1%;margin-bottom:3%;margin-top: 6.1%;}
+.btn1{font-family:EenaduUH;font-size:16px;font-weight:normal;background:#d4eefb none repeat scroll 0 0;border-radius:5px;color:inherit;float:left;height:32px;line-height:27pt;text-align:center;margin:1.2%;width:22.5%;}
+.article-box-list li{list-style:none;border-bottom:1px solid #efefef;padding-left:10px;line-height:45px;margin-right:8px;width:96%;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;background-position:left 16px;}
+.article-box-list li:first-child{border-top:none;}
+.article-box-list li:last-child{border-bottom:none;}
+.two-col-by-two{width:100%;float:left; margin:0;}
+.archives-box-list li {list-style: none;line-height: 45px;margin-right: -4px;width: 48.9%;float: left;margin-left: 1%;}
+.archives-box-list li:nth-child(even) {border-right: 0px;}
+ul.archives-box-list li p {width: 88%;overflow: hidden;height: 40px;border-bottom: 1px solid #efefef;background-image: url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat: no-repeat;background-position: left 16px;padding: 0 15px;}
+ul.archives-box-list li span {font-family: arial;font-size: 10px;margin-left: 7px;line-height: 15px;color: #000;}
+p{margin-left:5px!important;margin-right:5px!important;}
+ul.article-box-list li p{width:99%;overflow:hidden;height:40px;}
+/*ul.article-box-list li span{font-family:arial;font-size:10px;line-height:15px;color:#000;}*/
+.two-col-left-by-three{width:31%;margin-right:2.7%;margin-bottom:1%;float:left;height:295px;}
+.two-col-left-by-three .by-row{height:140px;margin-bottom:9%;width:220px;}
+.push-fixed{/*height:195px;*/height:168px;overflow:hidden;padding:0 2%;margin:1% 0;}
+.push-fixed-vid{height:84px;overflow:hidden;padding:1% 2%;}
+.push-fixed1{height:86px;overflow:hidden;padding:0 2%;}
+.push-fixed2{height:84px;overflow:hidden;padding:0 2%;}
+#magzine-pic{width:80px;height:95px;display:inline-block;padding:1%;margin:4% 1% 4% 4%;box-shadow:0px 5px 10px #ccc;text-align:center;}
+.gallery-thumbs-list{max-width:100%;}
+.gallery-thumbs-list li figcaption{text-align:center;line-height:100%;height:50px;overflow:hidden;}
+.gallery-thumbs-list li{padding:5px;margin-right:14px;display:inline-block;width:205px;height:100%;text-align:center;vertical-align:top;padding-top:7px;}
+.gallery-thumbs-list li:last-child{margin-right:0%;}
+.photos-caption{text-align:center;height:100px;overflow:hidden;width:100%;}
+.cal-thumbs-list{padding:5px;margin-right:14px;display:inline-block;width:200px;height:100%;text-align:center;vertical-align:top;padding-top:7px;}
+.inn-gal-thumbs-list{max-width:100%;float:left;}
+.inn-gal-thumbs-list li figcaption{text-align:center;line-height:100%;height:50px;overflow:hidden;}
+.inn-gal-thumbs-list li{padding:4px;margin-right:5px;display:inline-block;width:150px;height:100%;text-align:center;}
+.inn-gal-thumbs-list li:last-child{margin-right:12px;}
+.showmore1{float:right;display:block;font-size:16px;padding-right:15px;}
+.col-right{width:30%;height:auto;float:left;display:block;}
+.two-col-right-block{width:98%;display:block;padding:1% 0%;}
+#dist{height:33px;padding-left:40px;padding-right:10px;padding-top:5px;display:block;background:url(https://assets.eenadu.net/_assets/_images/sprites.png) no-repeat -5px -47px;font-family:EenaduU;font-size:16px;line-height:35px;}
+#dist-option{float:right;width:54%;font-size:26px;font-weight:bold;height: 30px;}
+#dist-option option {font-family:EenaduU;font-size:26px!important;color: #222;}
+#dist-option select{width:100%;}
+#dist-option optgroup {font-family:EenaduU;font-size:26px!important;color: #f00 !important;font-weight: normal;}
+.select-style{padding:0;margin:0;border:1px solid #ccc;width:120px;border-radius:3px;overflow:hidden;background-color:#fff;font-family:eenaduU;font-size:15px;}
+.select-style select{padding:5px 8px;width:130%;border:none;box-shadow:none;background-color:transparent;background-image:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-family:eenaduU;font-size:15px;}
+.select-style select:focus{outline:none;}
+.dist-name{font-family:EenaduUH;font-size:20px;color:#fff;background:#013358 none repeat scroll 0 0;margin-top:1%;padding:1% 3%;font-weight:normal;}
+button.dist-name{width:115px;margin:2% 30%;padding-top:2%;font-weight:normal;}
+.dist-names{font-family: EenaduUH;font-size: 20px;color: #fff;background: #013358 none repeat scroll 0 0;width: 115px;margin: 0 auto;padding: 7px 0px 0px 0px;display: block; text-align: center;font-weight: normal;line-height: 28px;}
+.dist-names a{padding-top:2px;font-weight:normal;}
+.ad-block-thumb-content{width:100%;overflow:hidden;}
+.ad-block-article-title{width:180px;font-family:EenaduUH;color:#2691F3;font-weight:normal;font-size:20px;}
+.dist h6{width:180px;overflow:hidden;}
+.ad-block-mid-thumb{padding:1% 2% 2% 2%;}
+.ad720-top{float:right;vertical-align:bottom;}
+.special-pg-home, .special-e-home{background:url("https://assets.eenadu.net/_assets/_images/sprites.png") repeat scroll -88px -12px;padding-left:30px !important;}
+.push-height{height:100%;}
+.large-thumb{width:100%;height:auto;padding-left:5px;}
+.large-thumb-description{height:178px;overflow:hidden;}
+.two-col-left-block-by-four{width:22.463768115942027%;margin-right:10px;margin-bottom:10px;float:left;}
+.top-nav{width:100%;font-family:tahoma,Helvetica, Sans-Serif;}
+.top-nav ul{background:#d4eefb;margin:0;padding:0;}
+.top-nav ul li{display:inline;list-style:none;padding:0 2.5px;text-transform:uppercase;font-weight:bold;font-size:10px;border-right:2px solid #ccc;line-height:30px;}
+.ep{font-weight:bold;font-size:11px;color:#C00;}
+.tweek{font-family:EenaduU;font-size:18px;}
+.top-nav ul li:last-child{border:none;float:right;}
+.mid-thumb-description{height:110px;overflow:hidden;}
+aside.thumb-content{width:100%;height:113px;overflow:hidden;margin-top:4px;margin-bottom:5px;}
+aside.thumb-content-vid{width:100%;height:202px;overflow:hidden;margin-top:3px;margin-bottom:3px;}
+.ad-block-thumb-description{width:172px;float:left;padding-top:1px;/*height:90px;*/height:111px; overflow:hidden;}
+footer{text-align:center;font-size:14px;margin:2% auto;border:1px solid #ccc;padding:1%;}
+footer span{font-size:9px;}
+.footplusminus {float: right;font-family: arial;font-size: 20px;text-align: center;width: 20px;padding-top: 5px;cursor:pointer;}
+.foot_body{display:none;}
+.foot_l, .foot_r{width:100%;}
+.fullstory{padding: 7px;width: 97.9%; line-height:32px!important;}
+.fullstory img{margin-bottom:7px;}
+.fullstory h{font-family:EenaduUH;font-size:20px;color:#000;}
+.fullstory p{padding:5px 0;}
+.fullstory1{padding:10px 5px 10px 27px; line-height:32px!important;}
+.two-col-full-txt{height:264px;overflow:hidden;}
+.two-col-full-txt img{margin-right:7px;margin-bottom:7px;float:left;}
+.cgal-block{width:50%;float:left;}
+.vgal-block{width:98%;float:left;}
+.vgal-block img{padding:0.5% 1%;float:left;width:31.3%;}
+.inn-gallery-more-thumbs-list{max-width:100%;padding:1.0%;margin-right:1.2%;margin-bottom:2%;width:30%;height:100%;float:left;}
+.inn-gallery-more-thumbs-list figcaption{text-align:center;line-height:100%;height:50px;overflow:hidden;}
+aside.inn-gallery-more-thumbs-list {text-align:center;margin-bottom: 15px;}
+.magaz button{background:#d4eefb none repeat scroll 0 0;border-radius:3px;color:inherit;float:left;line-height:20px;margin:1.18%;padding:1.3%;width:auto;font-family:EenaduUH;font-size:17px!important;}
+.magaz p{width:70%;height:35px;float:left;margin-top:7px;margin-right:auto;margin-left:auto;display:block;}
+.arti img{float:left;width:auto;margin-right:15px;}
+.rasi{float:left;height:65px;margin:1.87%;width:145px;font-family:EenaduUH;font-size:19px!important;}
+.rasi p{height:32px;line-height:30px;border-radius:3px;margin-top:11px;margin-left:10px;padding-top:10px;padding-left:64px!important;}
+.rasiimg{border-radius:50%;float:left;width: 44.75%;}
+.rasi-t{float:right;height:65px;width:310px;font-family:EenaduUH;font-size:19px!important;margin:1.87%;}
+.rasi-t p{height:26px;line-height:37px;border-radius:3px;/*margin-top:11px;*/margin-left:-30px;padding-top:10px;padding-left:16px;margin-bottom: 5px;}
+.rasi-t span{padding-left: 18px;background-image: url(https://assets.eenadu.net/_assets/_images/cont.png);background-repeat: no-repeat;background-position: left;margin-left: 23px;height:25px;}
+.rasi-timg{border-radius:50%;float:right;}
+.three-col-article-box-list li{list-style:none;padding-left:13px;line-height:45px;margin:0 8px;width:29%;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;background-position:left 16px;float:left;}
+.three-col-article-box-list li:first-child{border-top:none;}
+.three-col-article-box-list li:last-child{border-bottom:none;}
+ul.three-col-article-box-list{width:100%;/*height:40px;*/text-align:left;}
+.three-col-article-box-list-sp li{list-style:none;padding-left:13px;line-height:45px;margin:0 8px;width:45%;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;background-position:left 16px;float:left;}
+.three-col-article-box-list-sp li:first-child{border-top:none;}
+.three-col-article-box-list-sp li:last-child{border-bottom:none;}
+ul.three-col-article-box-list-sp{width:100%;/*height:40px;*/text-align:left;}
+.videoplay{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;}
+.videoplay iframe, .videoplay object, .videoplay embed{position:absolute;top:0;left:0;padding:8px 5px 25px 5px;width:98%;height:100%; border:none;}
+#slider1_container{width:100%;height:658px;}
+.slidershow{cursor:move;position:absolute;left:0px;top:0px;width:468px;height:320px;overflow:hidden;}
+.two-col-left-by-three{width:31%;margin-right:0;margin-bottom:1%;float:left;height:295px;margin-top:1px;}
+.two-col-left-by-three-slider .by-row ul li{width:210px;list-style:none;padding-left:13px;float:left;height:30px;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;list-style:none;overflow:hidden;background-position:left 9px;margin-bottom:5px;}
+.two-col-left-by-three-slider h4, .two-col-left-by-three figure{text-align:center;}
+.two-col-left-by-three-slider .by-row ul{margin:0;padding:0 2%;}
+.two-col-left-by-three-slider .by-row ul li{list-style:none;}
+.two-col-left-by-three-slider{width:52%;margin-right:3.2%;margin-bottom:1%;float:left;height:295px;padding-top:1px;padding-left:1px;}
+.two-col-left-by-three-slider .by-row{height:135px;margin-bottom:6%;width:245px;}
+.two-col-left-by-three-slider .by-row2 ul li{width:100px;list-style:none;padding-left:13px;float:left;height:30px;background-image:url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat:no-repeat;overflow:hidden;background-position:left 9px;margin-bottom:5px;}
+.two-col-left-by-three-slider .by-row2 ul li:first-child{width:210px;}
+.two-col-left-by-three-slider .by-row2 ul{margin:0;padding:0 2%;}
+.two-col-left-by-three-slider .by-row2{height:111px;margin-bottom:8%;width:245px;}
+.two-col-left-by-three-slider .by-row3{height:32px;width:245px;}
+.ntime{font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#003aa6!important;margin-left: 4px;line-height: 15px;}
+.nvid{margin-left:5px;}
+#content-smart {width:97.9%;}
+.socio {width:40px;height:100%;opacity:1;position:fixed;display:block;text-indent:-9999px;/*background: url('social.jpg') no-repeat;  */z-index:1000;}
+.social-g1 {margin:5px 0;display:block;}
+.lbsocial-g1 {display:block;}
+.hm-gallery-thumbs-list{max-width:100%;/*height:219px;*/height:212px;overflow:hidden;}
+.hm-gallery-thumbs-list li figcaption{text-align:center;line-height:100%;height:48px;overflow:hidden;}
+.hm-gallery-thumbs-list li{padding:3px;margin-right:3px;display:inline-block;/*width: 196.4px!important;*/height:100%;text-align:center;vertical-align:top;padding-top:7px;}
+.hm-gallery-thumbs-list li:last-child{margin-right:0%;}
+.TickerNews{width: 85%;height: 30px;line-height: 35px;margin-left: 0.3%;float: left;overflow:hidden;}
+.ti_wrapper{width: 100%;position: relative;overflow: hidden;}
+.ti_slide{width: 100%;position: relative;left: 0;top: 0;}
+.ti_content{/*background:#900;*/width: 100%;position: relative;float:left;}
+.ti_news{float:left;}
+.ti_news a{font-family: EenaduUH;font-size: 17px;display: block;margin-right: 10px;background-image:url(https://assets.eenadu.net/_assets/_images/bullet-r.gif); background-repeat: no-repeat; background-position: left 12px; padding-left:18px; margin-right:18px;}
+.tickertitle {width: 13%;background: #f00; float: left;text-align: -webkit-center;color: #fff;font-family: EenaduUH;font-size: 22px;padding: 0 5px;height:30px;line-height: 31px;}
+.txt-e{text-align: left; font-size: 14px; font-family: Arial, Helvetica, sans-serif;background-repeat: repeat; border: 1px solid #b5b5b5; margin-bottom: 4px;padding: 0 3px; color: white; background-color: #9c27b0;font-weight:bold;}
+.txt-t{text-align: left;font-family: EenaduU;font-size: 26px;background-repeat: repeat;border: 1px solid #b5b5b5;margin-bottom: 4px;padding: 3px 3px;color: white;background-color: #9c27b0;line-height: 22px;}
+.rcol-block{width:300px; margin:0 auto;}
+.promo-block-thumb{padding:1% 2%;     position: relative;float:left;}
+.promobutton{width:30px;height:30px;position:absolute;z-index:100;/*margin-top:120px;*/background:url(https://assets.eenadu.net/_assets/_images/play-icon1.png);cursor:pointer;top: 4%;right: 5%;}
+.tags {list-style: none;margin: 0;overflow: hidden; padding: 0;}
+.tags li {float: left; }
+.tag {border-radius: 9px;border: 1px solid #eee;color: #797979; display: inline-block; height: 26px; padding: 0 10px 0 10px; position: relative; margin: 0 10px 10px 0; text-decoration: none; -webkit-transition: color 0.2s;}
+.tag:hover {background-color: #2691f3;color: white;}
+.related-box-list {margin-top:0; }
+.related-box-list li{list-style:none; width:99%; float:left; margin-left:5px;}
+.related-box-list p{background-image: url(https://assets.eenadu.net/_assets/_images/bullet.gif);background-repeat: no-repeat;background-position: left 16px;padding: 6px 0 0 12px; margin-right:5px;}
+.related-box-shadow {border: 1px solid #eee;padding: 1% 0%;display: table;width: 100%;height: 100%;}
+.fs-bor{border-bottom:1px solid #efefef; width:100%;letter-spacing: .65px; margin-bottom:10px;}
+/*Videoplayer Script*/
+.video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden; border:none;}
+.player{position:absolute;top:0;left:0;width:99%;height:100%}
+.jw-breakpoint-4 .jw-display .jw-icon,.jw-breakpoint-5 .jw-display.jw-icon,.jw-breakpoint-6 .jw-display .jw-icon,.jw-breakpoint-7.jw-display .jw-icon{height:38px !important;line-height:38px !important;width:38px !important}
+.jw-breakpoint-4 .jw-display .jw-icon:before,.jw-breakpoint-5 .jw-display .jw-icon:before,.jw-breakpoint-6 .jw-display .jw-icon:before,.jw-breakpoint-7 .jw-display .jw-icon:before{font-size:20px !important}
+.jw-display-icon-container{background-color:rgba(0,0,0,0.1) !important;background-size:100% 100% !important;border-radius:.3em !important;border:1px solid #02599C !important}
+/*Videoplayer Script end*/
+.dsk-disp{display:none}
+.mob-disp{display:block}
+/*District Slider*/
+.dist-news{height: 305px;overflow: hidden;}
+.dist-title {font-family: EenaduUH;font-size: 23px;color: #fff;background: #f00 none repeat scroll 0 0;/* width: 115px; */margin: 0 auto;padding: 5px 0px 0px 7px;display: block;text-align: left;font-weight: normal;line-height: 34px;}
+.distslider {width: auto;margin: 7px;height: 257px;/*overflow: hidden;*/}
+.distslider span{
+    font-family: EenaduUH;
+    /*color: #2691F3;*/
+    font-weight: normal;
+    font-size: 19px;
+    margin-top: 7px;
+    display: block;
+    height: 55px;
+    overflow: hidden;
+    line-height: 27px;
+}
+
+.slick1-prev:before, 
+.slick1-next:before {
+    color: white;    
+}
+.pagingInfo{
+font-size: 17px;
+    margin-right: 26px;
+    font-family: arial;
+	float:right;
+	width:60px;
+	text-align:center;
+	}
+/*District Slider End*/
+ nav.spmenu
+        {
+            font-family: EenaduUH;
+            font-size: 18px;
+            height: 33px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+            background: #02599C; /* Old browsers */
+            background: -moz-linear-gradient(top, #02599C 0%, #012D4A 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #02599C 0%, #012D4A 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #02599C 0%, #012D4A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#02599C' , endColorstr= '#012D4A' , GradientType=0 ); /* IE6-9 */
+        }
+        .spmenu ul li
+        {
+            float: left;
+            color: #fff;
+            padding: 0.2em; /*line-height: 20px;*/
+            border-right: 1px solid #fff;
+            padding: 1.1%;
+            line-height: 20px;
+            position: relative;
+        }
+        .spmenu ul li:last-child
+        {
+            border: none;
+        }
+        .spmenu ul li a:hover
+        {
+            color: #ffac1e;
+        }
+        .special-pg-home, .special-e-home
+        {
+            background: url( "https://assets.eenadu.net/_assets/_images/sprites.png" ) repeat scroll -88px -27px;
+            padding-left: 30px !important;
+        }
+        a.special-pg-home:hover, a.special-e-home:hover
+        {
+            background: url( "https://assets.eenadu.net/_assets/_images/sprites.png" ) repeat scroll -88px -2px;
+            padding-left: 30px !important;
+        }
+		
+.feature1 {
+	display: table;
+	/*padding: 1.5% 0 1.5% 2.5%;*/
+	margin-left: 2%;
+	/*margin-bottom: 3%;*/
+}
+.feature1 .btn1 {
+	border-radius: 3px;
+	float: left;
+	height: 18px;
+	line-height: 8pt;
+	width: 27.2%;
+	font-family: EenaduUH;
+	font-weight: normal;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	margin: 3px 4px 3px 0px;
+	padding: 14px 2px 2px 11px;
+}
+.arch{border-radius: 10px 10px 0 0;background: #ffd9ed;padding: 12px; font-family: EenaduUH;font-size: 22px;color: #222;text-align: center;}
+.arch img{ padding-left: 4px;}
+.archblk1 { height: 240px; overflow:hidden;}
+.push-fixed-inn{height:113px;overflow:hidden;margin-bottom:7px;padding:1% 2% 0% 2%;}
+.two-col-left-by-three-inn{width:100%;margin-right:1%;margin-bottom:1%;float:left;}
+.two-col-left-by-three-inn ul li{line-height:30px;}
+.two-col-left-by-three-inn ul{margin:0;padding-left:10px;overflow:hidden;height:117px;}
+.two-col-left-by-three-inn h4, .two-col-left-by-three-inn figure{text-align:center;}
+.two-col-left-by-three-inn .by-row1{height:145px;margin-bottom:8%;}
+.magzine-thumb-description, .feature-thumb-description{padding:1% 2%;text-align:center;height:82px;overflow:hidden;/*width:100%;*/}
+.cartoon-thumb-list{float:left;padding:10px;width:44%;text-align:center;}
+.cartoon-thumb-list:last-child{margin-right:0%;}
+.hedstick{position: fixed;top: 0;width: 1003px; z-index:100000000;}
+/*spcl share*/
+.sshare{/*padding: 0 20px;*/ float:right;padding: 0px;}
+.sshare a{height: 20px;/*margin-right: 15px;*/margin-left: 7px;transition: all .5s ease-in-out;}
+.fb{display: inline-block;background-position: -95px -92px !important;width: 11px;background-image: url(https://assets.eenadu.net/_assets/_images/sprites.png);background-repeat: no-repeat;}
+.fb:hover{background-position:-95px -112px !important;}
+.twt{display: inline-block;background-position: -106px -92px !important;width: 20px;background-image: url(https://assets.eenadu.net/_assets/_images/sprites.png);background-repeat: no-repeat;}
+.twt:hover{background-position:-106px -111px !important;}
+.gplus{display: inline-block;background-position: -126px -92px !important;width: 20px;background-image: url(https://assets.eenadu.net/_assets/_images/sprites.png);background-repeat: no-repeat;}
+.gplus:hover{background-position:-126px -111px !important;}
+.telg{display: inline-block;background-position: -147px -92px !important;width: 20px;background-image: url(https://assets.eenadu.net/_assets/_images/sprites.png);background-repeat: no-repeat;}
+.telg:hover{background-position:-147px -111px !important;}
+.lbbox{padding: 0px 10px;}
+.lbbox h1{color: #ee1b24;font-weight: bold;font-family: sans-serif; font-size:13px; width: 100%; /*border-bottom:1px solid #efefef;*/ padding-bottom:8px;margin-left: 5px;}
+.lbbox p{padding: 0; font-size: 26px;}
+.lbbox p span{font-family:EenaduUH;font-size:22px;color:#2691f3;font-weight:normal; display:block; padding: 6px 0;}
+.lbbox span{font-family:EenaduUH;font-size:19px;color:#000;font-weight:normal; display:block; padding: 6px 0;}
+.lbbox p img{padding: 10px 10px 10px 0;}
+/*.lbbox{padding: 0 5px;}
+.lbbox h1{color: #ee1b24;font-weight: bold;font-family: arial; font-size:12px;margin-left: 5px;}
+.lbbox p{padding: 0;height: 59px;overflow: hidden;}
+.lbbox iframe{width:100%;}*/
+.box-shadow1{box-shadow:0px 0px 2px #a5a5a5;padding:1% 0%;-moz-box-shadow:0px 0px 2px #a5a5a5;-webkit-box-shadow:0px 0px 2px #a5a5a5;-o-box-shadow:0px 0px 2px #a5a5a5;-ms-box-shadow:0px 0px 2px #a5a5a5;width:100%;height:100%;}
+.lbbox1{margin: 12px 5px; border-bottom:1px solid #efefef;}
+.lbbox1 h1{color: #ee1b24;font-weight: bold;font-family: arial; font-size:12px;margin-left: 5px;}
+.lbbox1 p{padding: 0;height: 59px;overflow: hidden;}
+.lbbox1 iframe{width:100%;}
+.lbbox1:nth-child(3n) {border:none;}
+.lbbox2{margin: 5px 5px 12px 5px; border-bottom:1px solid #efefef;}
+.lbbox2 h1{color: #ee1b24;font-weight: bold;font-family: arial; font-size:12px;margin-left: 5px;padding-bottom: 5px;}
+.lbbox2 p{padding: 0;height: 90px;overflow: hidden;}
+.lbbox2 p span{font-family:EenaduUH;font-size:19px;color:#000000;font-weight:normal; display:block;}
+.lbbox2 iframe{width:100%;}
+.lbbox2:nth-child(2n) {border:none;}
+.lbbox3{margin: 5px 5px 12px 5px; border-bottom:1px solid #efefef;}
+.lbbox3 h1{color: #ee1b24;font-weight: bold;font-family: arial; font-size:12px;margin-left: 5px;padding-bottom: 5px;}
+.lbbox3 p{padding: 0;height: 85px;overflow: hidden;margin-bottom: 10px;}
+.lbbox3 p span{font-family:EenaduUH;font-size:19px;color:#000000;font-weight:normal; display:block;}
+.lbbox3 iframe{width:100%;}
+.lbbox3:nth-child(3n) {border:none;}
+#vertical-adticker li{list-style: none;}
+.flashn-lcol{width: 13%;background: #f00; float: left;text-align:center;padding: 0 5px;height:54px;line-height: 27px;color: #fff;font-family: EenaduUH;font-size: 26px;padding-top: 7px;}
+.flashn-lcol img{padding-top: 3px;}
+.flashn-lcol1{width: 13%;background: #f00; float: left;text-align:center;padding: 0 5px;height:61px;line-height: 57px;}
+.flashn-lcol1 img{padding-top: 3px;}
+.flashn-rcol{width: 83.5%;line-height: 35px;margin-left: 1%;float: left;}
+.flashn-rcol li{float:left; height:59px; overflow:hidden;}
+.flashn-title{font-family:EenaduUH;color:#000;font-weight:normal;font-size:18px;line-height:29px; padding-top:3px;}
+/*.lazy{-webkit-animation: fade-in 0.4s ease-in;-moz-animation: fade-in 0.4s ease-in;-o-animation: fade-in 0.4s ease-in;animation: fade-in 0.4s ease-in;}
+img.lazy {display: block;}*/
+/*--blockquote start--*/
+p.blockquote1{font-weight: 100;max-width: 600px;line-height: 1.4;position: relative;}
+p.blockquote1:before,p.blockquote1:after {position: absolute;color: #ee1b24;font-size: 6rem;width: 4rem;height: 4rem;}
+p.blockquote1:before {content: '“';left: -1rem;top: -1.7rem;}
+p.blockquote1:after {content: '”';/*right: -5rem;*/bottom: 0.7rem;}
+
+q{font-weight: 100;max-width: 530px;line-height: 1.4;position: relative;}
+q:before,q:after {position: absolute;color: #ee1b24;font-size: 5rem;width: 4rem;height: 4rem;}
+q:before {content: '“';left: -1rem;top: -2.2rem;}
+q:after {content: '”';/*right: -5rem;*/bottom: -0.5rem;}
+.qspan{display: flex;align-items: center;justify-content: center;}
+.hr1{display:block;height:1px;border:0;border-top:1px solid #a8a8a8;margin:1em 0;padding:0;}
+/*--blockquote End--*/
+
+/*--blockquote-1 start--*/
+blockquote {background: #f5f5f5;padding: 9px 7px 8px !important;border-left: 3.5pt solid #CC1218;}
+/*--blockquote-1 End--*/
+.tag-srch {height: 33px;padding-left: 0px;padding-right: 00px;padding-top: 5px;padding-bottom: 5px;display: block;font-size: 16px;line-height: 35px;}
+.button {background-color: #02599C;border: none;color: white;padding: 3px 5px;text-align: center;text-decoration: none;font-size: 14px;}
+.news-item-list1 li {background: #f5f5f5;margin-bottom: 17px;border-radius: 8px;list-style-position: inside;width: 86%;padding: 2% 7%;position: relative;counter-increment: step-counter;display: flex;}
+.news-item-list1 li:before{content: counter(step-counter);margin-right: 42px;font-size: 38px;color: #ee1b24;font-weight: 700;/*display: inline-block;letter-spacing: -.4px;line-height: 24px;*/padding: 0 8px 1px 8px;border-radius: 3px;margin-top: 5px;position: absolute;right: calc(100% - 80px);/*top: 10px;*/}
+.indent1{padding: 0 45px;display: block;}
+.r-bull1{padding: 0 9px 0 0;font-size: 40px;float: left;margin-top: 8px;height: 20px;color: #ee1b24;}
+/*--search start--*/
+.search-box {}
+.cf:before, .cf:after{content:"";display:table;}
+.cf:after{clear:both;}
+.cf{zoom:1;}
+.s-form {width: 296px;border: 2px solid #e3e3e3;margin:0 auto;}
+.s-form input {width: 191px;height: 20px;padding: 10px 5px;float: left;font-size: 15px;font-weight: normal;border: 0;}
+.s-form input:focus {outline: 0;background: #fff;}
+.s-form button {float: right;border: 0;padding: 0;cursor: pointer;height: 40px;width: 95px;font: bold 15px sans-serif;color: #000;text-transform: uppercase;background: #e5e9e8;margin: 0%;border-radius: 0;padding-left: 20px;background-image: url(https://assets.eenadu.net/_assets/_images/ser.png);background-repeat: no-repeat;background-position: left center;}
+/*.s-form button:active,.s-form button:hover{background: #e5e9e8; color: #000;}*/
+/*--search end--*/
+.morelist li span{position: relative;left: -5px;}
+/*--Article Count Start--*/
+.tbox {}
+span.t-tip {display: none;min-width: 92px;background-color: #f1f1f1;color: #f00;text-align: center;border-radius: 6px;padding: 1px 0;position: absolute!important;z-index: 2;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+/*--Article Count end--*/
+/*--also read start--*/
+.ar-cont {background: #f5f5f5;width: 200px;/*height: 360px;*/float: left;position: relative;margin: 5px 15px;/*padding: 0 10px 10px 10px;*/overflow: hidden;}
+.ttl {background: #02599C;height: 30px;text-align: center;color: #FFF!important;padding: 0;margin: 0;line-height: 36px;filter: drop-shadow(5px 3px 2px #b4b4b4);}
+.ar-thumbs-list{max-width:100%;border: 1px solid #dedede;}
+.ar-thumbs-list .nvid img{padding-top: 2px;}
+.ar-thumbs-list li figcaption{text-align:center;line-height: 28px;/*height:50px;overflow:hidden;*/}
+.ar-thumbs-list li{padding:7px;/*width:173px;*/height:100%;text-align:center;vertical-align:top;}
+/*--also read end--*/
+/*content list start*/
+.contlist-cont {background: #f5f5f5;border: 1px solid #dedede;padding: 15px 25px;margin: 20px 0;width: auto;}
+.contlist-cont h1{border-bottom: 1px solid #ccc;padding: 10px 0;}
+.contlist-cont h2, .contlist-cont h3{padding:8px 0;}
+.contlist-cont ul{display: block;list-style-type: disc;}
+.contlist-cont ul li{margin-left: 5%;line-height: 40px;}
+/*content list end*/
+/*** NEWS FLASH START ***/
+.box-shadowf{box-shadow:0px 0px 2px #a5a5a5;padding:0.3% 0%;-moz-box-shadow:0px 0px 2px #a5a5a5;-webkit-box-shadow:0px 0px 2px #a5a5a5;-o-box-shadow:0px 0px 2px #a5a5a5;-ms-box-shadow:0px 0px 2px #a5a5a5;display:table;width:100%;height:100%;}
+#myDiv {width: 450px;height: 113px;background: #fff;border: 0;top: 20%;position: fixed;right:-452px;z-index: 999;overflow: hidden;transition:1.5s;box-shadow:0px 0px 0px 2px #a5a5a5; border-radius:5px;}
+/*#myDiv:hover{box-shadow:0px 0px 5px 5px #a5a5a5}*/
+.flash-news {text-align: center;height: 35px;background: #fee650;line-height: 40px;margin: 0px 30px 0px 30px;border-radius: 9px;}
+#close {float: right;display: inline-block;padding: 0px 5px;/*background: #ccc;*/cursor: pointer;margin: 5px;font-size: 1.5em; font-weight:bold; color:#f00;}
+.marquee {overflow: hidden;position: relative;}
+.marquee div {display: block;width: 150%;height: 30px;position: absolute;overflow: hidden;animation: marquee 4s linear infinite;}
+.flashmore {float: right;padding: 1px 11px 0px 15px;text-align: center;background: #f1f1f1;margin: 0px 30px 0px 0px;line-height: 25px;font-family: EenaduUH;font-size: 18px;border-radius: 11px;}
+@keyframes marquee {0% { left: 0; }100% { left: -100%; }}
+/*** NEWS FLASH END'S ***/
+
+p.nri_covida {
+    background:#e5f4fd /*#d3edfd*/;
+    font-size: 22px;
+    font-family: EenaduUH;
+    padding: 16px;
+	line-height:36px;
+    /* padding: 2px; */
+}
+@media only screen and (max-width:767px){.menu{width:200px;height:100%;display:block;position:fixed;left:-200px;top:0px;transition:left 0.3s linear;margin:0;border:0;border-radius:0;overflow-y:auto;overflow-x:hidden;height:100%;font-family:'EenaduUH', sans-serif;}
+.menu.visible{left:0px;transition:left 0.3s linear;z-index:999999;}
+.nav_bg{display:inline-block;vertical-align:middle;width:30px;height:35px;margin:0;position:fixed;opacity:0.9;top:0px;right:0px;background:#025595;padding:5px;box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.26);z-index:7;}
+.nav_bar{display:inline-block;vertical-align:middle;height:50px;cursor:pointer;margin:0;}
+.nav_bar span{height:2px;background:#fff;margin:5px;display:block;width:20px;}
+.nav_bar span:nth-child(2){width:20px;}
+.nav_bar span:nth-child(3){width:20px;}
+.nav_bg1{display: block;margin-bottom: 6px;background: #02599C;background: -moz-linear-gradient(top,#02599C 0%,#012D4A 100%);
+    background: -webkit-linear-gradient(top,#02599C 0%,#012D4A 100%);
+    background: linear-gradient(to bottom,#02599C 0%,#012D4A 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02599C',endColorstr='#012D4A',GradientType=0);
+    border-radius: 3px;
+    font-family: 'EenaduUH',sans-serif;
+    height: 38px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF;
+    vertical-align: middle;}
+.nav_bar1{display:inline-block;vertical-align:middle;height:26px;cursor:pointer;margin:0;float: right;margin: 5px 5px 3px 0;border: 1px solid #fff; border-radius: 5px;}
+.nav_bar1 span{height:2px;background:#fff;margin:5px;display:block;width:20px;}
+.nav_bar1 span:nth-child(2){width:20px;}
+.nav_bar1 span:nth-child(3){width:20px;}
+.hm-tp-home{background:url("https://assets.eenadu.net/_assets/_images/sprites.png") repeat scroll -88px -3px;display:block;width: 23px;height: 19px;padding-top: 8px;margin: 7px 20px 0 5px;float:left;text-indent:-9999px;}
+.hm-tp-date{line-height:40px;float:left;}
+.menu ul{padding-top:5px;}
+.menu li{display:block;}
+.menu li a{display:block;color:#fff;font-size:16px;}
+.menu li:first-child:hover a{border-radius:0;}
+.menu li ul.dropdown{position:relative;}
+.menu li ul.dropdown li a{border-bottom:none;color:#fff !important;font-size:14px;}
+.menu li:hover a{color:#FFAC1E;}
+.menu li ul.dropdown li:hover a{color:#FFAC1E !important;}
+.menu li ul.dropdown li a{padding:10px 10px 10px 30px;}
+.menu li:hover .arrow-down{border-top:5px solid #fff;}
+.arrow-down{border-top:5px solid #fff;position:absolute;top:20px;right:10px;}
+.opacity{top:0;bottom:0;left:0;right:0;}
+#home{background:#025595 url("https://assets.eenadu.net/_assets/_images/sprites.png") repeat scroll -88px -15px;padding:5px 8px;height:25px;width:21px;background:;}
+#home:hover a{background:none;}
+header figure figcaption{display:none;}
+}
+@media only screen and (min-width:1003px){.gridContainer{width:1003px;margin:auto;}
+#wrapper{clear:both;float:left;width:1003px;display:block;}
+.logo{width:auto;float:left;padding:1.35% 0%;}
+.ear-ads{float:right;padding:1.4% 0.5%;}
+.ear-panel-left{float:left;width:250px;height:90px;margin:0 20px 0 0;padding:0!important;}
+.ear-panel-right{float:left;width:250px;height:90px;margin:0!important;padding:0!important;}
+.col-left{width:68%;height:auto;float:left;margin-right:2%;}
+.taja{font-family:EenaduUH;background:#013358;padding-top:5px;height:32px;font-size:19px!important;}
+#taja-fixed-more{background:rgba(0, 0, 0, 0) url("https://assets.eenadu.net/_assets/_images/marinni-fixed-img.png") no-repeat scroll center bottom;bottom:-410px;height:88px;position:relative;width:682px;}
+.two-col-left-by-two{width:49%;float:left;}
+.two-col-left-by-two{margin-right:1.7%;}
+.two-col-left-by-two:nth-child(even){margin-right:0%;}
+.two-col-left-by-two-vid{width:70%;float:left;}
+.two-col-left-by-two-vid{margin-right:1.3%;}
+.two-col-left-by-two-vid:nth-child(even){margin-right:0%;}
+.two-col-left-by-two-vid-r{width:27%;float:left;}
+.two-col-left-by-two-vid-r:nth-child(even){margin-right:0%;}
+.mid-thumb-vid{padding:1% 2%;width:453px;height:315px;}
+.thumb-description-vid{font-size:26px;float:left;width:180px;/*height:60px;*/}
+.article-title-rgt{float:left;}
+.article-title{text-align:center;}
+.vertical-border{background:url(https://assets.eenadu.net/_assets/_images/sprites.png) 311px -52px;width:1px;}
+.taja-news{position:relative;z-index:36;}
+.wide{width:340px;height:115px;overflow:hidden;}
+.cartoon-txt{height:0px;width:195px;overflow:hidden;display:none}
+.cartoon-hm{width:195px;}
+.cartoon-inn-caption{width:250px;padding:3px;margin:0 auto;}
+.cartoon-thumb-list{float:left;padding:10px;width:145px;text-align:center;}
+.cartoon-thumb-list:last-child{margin-right:0%;}
+.two-col-left-by-two-tab{float:left;}
+.two-col-left-by-three aside .more{margin:15px 20px -20px 0;}
+
+/*.fullstory1 img{margin-bottom:7px;}
+.fullstory1 h{font-family:EenaduUH;font-size:20px;color:#000;}
+.fullstory1 p{padding:5px;}*/
+.push-vertical{height:100%;}
+.magzine-thumb-description, .feature-thumb-description{padding:1% 2%;text-align:left;height:52px;overflow:hidden;/*width:100%;*/}
+.feature button{background:#d4eefb none repeat scroll 0 0;border-radius:3px;color:inherit;float:left;height:32px;line-height:12pt;margin:1.2%;padding:1%;width:100px;}
+#playbutton{width:32px;height:32px;position:absolute;z-index:100;margin-top:109px;background:url(https://assets.eenadu.net/_assets/_images/play-icon.png);cursor:pointer;}
+.frame{position:relative;margin-bottom:10px;width:196px;}
+.thumb-description{font-size:26px;float:left;width:210px;height:60px;}
+.thumb-description strong{font-weight:normal!important;}
+.ad728-top{float:right;margin:1.4% auto;width:728px;}
+.lcol-ad-block{float:left;display:block;}
+.ads680-30 li{list-style-type:none;margin-bottom:5px;}
+.ads220-50 li{list-style-type:none;display:inline-block;margin-bottom:5px;margin-right:10px;float:left;}
+.ads220-50 li:last-child{margin-right:0;float:right;}
+.ads330-50 li{list-style-type:none;display:inline-block;margin-bottom:5px;margin-right:8px;float:left;}
+.ads330-50 li:last-child{margin-right:0;float:right;}
+.ads468-60-raja{position:absolute;display:block;z-index:1;margin-left:213px;margin-top:29px;}
+.Push1003-ad{margin-bottom:6px;}
+#right{width:130px;height:768px;position:fixed;margin-left:1013px;cursor:pointer;}
+#left{width:130px;height:768px;position:fixed;margin-left:-140px;cursor:pointer;float:right;}
+#left div:first-child{float: right;}
+#close1{width:24px;height:24px;position:absolute;top:15px;left:100px;z-index:10000;}
+#closetest{width:24px;height:24px;position:absolute;top:130px;left:100px;z-index:10000;}
+#closered{width:24px;height:24px;position:absolute;top:15px;left:100px;z-index:10000;}
+.owl-carousel{height:365px;/*padding-bottom:30px;*/}
+.mid-sub-thumb{padding:1% 1.8%;width:154px;height:160px;float: left;}
+.mid-thumb{padding:1% 2% 2% 2%;width:320px;height:160px;}
+.scrollup{width:40px;height:40px;opacity:0.6;position:fixed;bottom:10px;right:10px;display:none;text-indent:-9999px;background:url('https://assets.eenadu.net/_assets/_images/icon_top.png') no-repeat;}
+.social-box{float:left;width:100%;}
+.social-b1{float:left;margin:0 5px;}
+.social-b2{display:none;}
+.bor-t{float:left;width:100%;border-top-width:1px;border-top-style:solid;border-top-color:#edebeb;padding-top:5px;}
+/*.tags{float:left;width:100%;padding-top:1px;font-family:Verdana, Geneva, sans-serif;font-size:11px;font-weight:normal;color:#666;background-color:#F5F5F5;padding-bottom:1px;letter-spacing:0.55px;}*/
+.menu ul li:last-child{display:none;color:Red;}
+.menu ul li:nth-last-child(2){display:none;}
+.menu ul li:nth-last-child(3){display:none;}
+.comments{background-color: #eef6ff;}
+.comments-top{font-size:23px!important; text-align: center; margin-bottom: 10px;     padding-top: 7px;}
+#comments textarea {width: 95%; resize: none; margin: 2%; height:100px; font-size: 14px;}
+#comments-pop input[type="text"],
+#comments-pop input[type="email"] 
+{width: 80%;/* border: 1px solid #ccc; */background: #FFF; margin: 0 0 5px; padding: 10px; font-size: 14px; margin: 2%;}
+.commentscontainer{width:50%;margin:auto; background-color:#3C0;}
+.comment-l{width:30%;float:left;}
+.comment-l img{margin:10px 0;}
+.comment-r{width: 69.8%;float: left;}
+.comment-disp {margin:10px 0; background-color: #fbfbfb;}
+.comment-disp-l{width:17%;float:left;}
+.comment-disp-l img{margin:7px; width:85%;}
+.comment-disp-r{width: 81.8%;float: left;}
+.comment-name{float: left;font-family: Verdana, Geneva, sans-serif;font-size: 12px;font-weight: bold;color: #2691f3;}
+.comment-date{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #3E3E3E;
+}
+.comment-rate{float:right;font-family: Verdana, Geneva, sans-serif;font-size: 11px;color: #3E3E3E; }
+.comment-rate a.comment-like{background-image: url(https://assets.eenadu.net/_assets/_images/like.png);background-repeat: no-repeat;padding: 6px 0 0 21px;}
+.comment-rate a.comment-dislike{background-image: url(https://assets.eenadu.net/_assets/_images/dislike.png);background-repeat: no-repeat;padding: 0 0 15px 21px;}
+.b-r1{border-right:1px solid #efefef;/*margin-left:1%;*/}
+.archives-box-list li:nth-child(n+7) p{border-bottom: 0;}
+.dsk-disp{display:block}
+.mob-disp{display:none}
+#slider1_container{position:relative;width:69% !important;height:320px;float:left}
+}
+/*hm-Tabs*/
+*::after, *::before{}
+.cd-tabs{position:relative;width:100%;max-width:960px;}
+.cd-tabs nav{-webkit-overflow-scrolling:touch;}
+.cd-tabs-navigation:after{content:"";display:table;clear:both;}
+.cd-tabs-navigation li{float:left;}
+.cd-tabs-navigation a{background-color:#e1e1e1;border-top-left-radius:10px;border-top-right-radius:10px;position:relative;display:block;text-align:center;font-weight:normal;margin-right:3px;}
+.no-touch .cd-tabs-navigation a:hover{background-color:#8ECCFF;border-top-left-radius:10px;border-top-right-radius:10px;margin-right:3px;}
+.cd-tabs-navigation a.selected{background-color:#e1e1e1 !important;border-top-left-radius:10px;border-top-right-radius:10px;}
+@media only screen and (min-width:960px){.cd-tabs nav{position:relative;float:none;background:transparent;box-shadow:none;}
+}
+@media only screen and (min-width:960px){.cd-tabs-navigation{width:auto;}
+.cd-tabs-navigation a{height:45px;line-height:50px;padding:0 0.8em 0 0.4em;text-align:left;width:auto;}
+.cd-tabs-navigation a.selected{color:#2691F3;}
+.cd-tabs-navigation a::before{top:50%;margin-top:0px;margin-left:0;left:38px;}
+}
+.cd-tabs-content{background:#ffffff;}
+.cd-tabs-content li{display:none;}
+.cd-tabs-content li.selected{display:block;}
+@media only screen and (min-width:960px){.cd-tabs-content{min-height:0;}
+}

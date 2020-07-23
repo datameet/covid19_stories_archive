@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.40",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://twocircles.net/2020may07/436538.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:06:25.805435",
+                "start_ts": "2020-05-29 21:06:25.184699",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "Patna hospital sent legal notice for refusing to admit Muslim patient &#8211; TwoCircles.net"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:51.912305",
+                "start_ts": "2020-05-29 21:06:49.059423",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=twocircles.net"
+                ],
+                "end_ts": "2020-05-29 21:06:26.080668",
+                "start_ts": "2020-05-29 21:06:25.805771",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:49.059172",
+                "start_ts": "2020-05-29 21:06:45.928991",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:58.403696",
+                "start_ts": "2020-05-29 21:06:56.596430",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "https://web.archive.org/web/20200529210657/https://twocircles.net/2020may07/436538.html"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 19,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786386",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:45.928799",
+                "start_ts": "2020-05-29 21:06:26.082014",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "twocircles.net/2020may07/436538.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:54.387290",
+                "start_ts": "2020-05-29 21:06:51.912555",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://twocircles.net/2020may07/436538.html"
+                ],
+                "end_ts": "2020-05-29 21:06:56.596107",
+                "start_ts": "2020-05-29 21:06:54.387649",
+                "pwd": "/data/archive/1590785099.40",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590786418.411858",
+    "tags": "",
+    "url": "https://twocircles.net/2020may07/436538.html"
+}

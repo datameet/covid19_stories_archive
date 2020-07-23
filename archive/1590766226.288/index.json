@@ -1,0 +1,232 @@
+{
+    "title": "Gurugram: Jobless mason hangs himself in Aravalis | Gurgaon News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.288",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590777112",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:02.475802",
+                "start_ts": "2020-05-29 18:31:52.299462",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms@from=mdr.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:19.578943",
+                "start_ts": "2020-05-29 18:32:16.460425",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 18:31:52.298165",
+                "start_ts": "2020-05-29 18:31:52.008770",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:08.164792",
+                "start_ts": "2020-05-29 18:32:02.475950",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:47:25.498483",
+                "start_ts": "2020-05-29 21:47:19.819448",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:16.457664",
+                "start_ts": "2020-05-29 18:32:12.257346",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:21.748270",
+                "start_ts": "2020-05-29 18:32:19.579206",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "https://web.archive.org/web/20200529183221/https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 18:32:12.256588",
+                "start_ts": "2020-05-29 18:32:08.165475",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+                ],
+                "end_ts": "2020-05-29 21:47:29.686320",
+                "start_ts": "2020-05-29 21:47:25.498735",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:31:52.008474",
+                "start_ts": "2020-05-29 18:31:51.779378",
+                "pwd": "/data/archive/1590766226.288",
+                "output": "Gurugram: Jobless mason hangs himself in Aravalis | Gurgaon News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788849.690662",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
+}

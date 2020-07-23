@@ -1,0 +1,85 @@
+function img_rand_adcode() {
+	img_ad_html = '';
+		if ( jQuery(window).width() <= 767 ) {
+			var adsize  = '[[300, 50], [320, 50]]';
+			img_ad_html = '<div id="inhouseimg" class="imghalder" style="background:#f8f8f8;padding:0; display: block; width: 320px; z-index: 1; margin: 0 auto; top:-8px;margin-bottom:5px;position: relative;text-align:center;">';
+		} else {
+			var adsize  = '[[300, 50], [320, 50], [468, 60], [300, 100]]';
+			img_ad_html = '<div id="inhouseimg" class="imghalder" style="min-width: 300px;padding: 0px;display: block;z-index: 1;position: relative;width: 640px;text-align:center;">';
+		}
+		io_css = '';
+		if( jQuery(window).width() <= 330 ) {
+			io_css = 'margin:0 -20px';
+		}
+		//ad300x250
+		if ( jQuery(window).width() <= 767 ) {
+			img_ad_html += '<div class="aside visible-md visible-lg io-code-box" id="div-gpt-ad-1568102619354-0" style="'+io_css+'"></div><scr'+'ipt type="text/javascript">var googletag = googletag || {};googletag.cmd = googletag.cmd || [];googletag.cmd.push(function() {slot = googletag.defineSlot("/1050432/www.Loksatta.com/LS_MOBILE_IMAGE_OVERLAY", '+ adsize +', "div-gpt-ad-1568102619354-0").addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs(); googletag.enableServices();googletag.display("div-gpt-ad-1568102619354-0");googletag.pubads().refresh([slot]);});</scr'+'ipt></div>';
+
+		}	else {
+			img_ad_html += '<div class="aside visible-md visible-lg io-code-box" id="div-gpt-ad-1568102550339-0" style="'+io_css+'"></div><scr'+'ipt type="text/javascript">var googletag = googletag || {};googletag.cmd = googletag.cmd || [];googletag.cmd.push(function() {slot = googletag.defineSlot("/1050432/www.Loksatta.com/LS_Desktop_IMAGE_OVERLAY", '+ adsize +', "div-gpt-ad-1568102550339-0").addService(googletag.pubads());googletag.pubads().enableSingleRequest();googletag.pubads().collapseEmptyDivs(); googletag.enableServices();googletag.display("div-gpt-ad-1568102550339-0");googletag.pubads().refresh([slot]);});</scr'+'ipt></div>';
+		}
+	return img_ad_html;
+}
+function img_generate_ad( afterad ) {
+	try{
+		var cmnter = 0;
+		jQuery( 'section.imgsection > div' ).each( function() {
+				if ( 1 == cmnter ) {
+					return false;
+				}
+				jQuery( this ).find( 'img' ).each( function() {
+					if ( jQuery( this ).next( '.imghalder' ).html() == undefined ) {
+						getadcode = img_rand_adcode();
+						jQuery( getadcode ).insertAfter( this );
+						jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+						if( jQuery( '.io-code-box' ).html() != undefined && ! jQuery( '.io-code-box' ).attr( 'style' ).match( 'none' ) ) {
+							var tu = setTimeout( function() {
+								var imgclose = '1px';
+								if( jQuery( document ).width() <= 330 ) {
+									imgclose = '0';
+								}
+								jQuery( '.io-code-box > div' ).prepend( '<span class="imgclose" style="left: ' + imgclose + '; top: -16px;position:absolute;background: #000;color:#fff;width: 20px;height: 20px;cursor: pointer;border-radius: 20px;padding: 0; font-size: 12px;text-align: center;line-height: 18px;box-sizing:border-box;z-index: 9999999;">X</span>' );
+								var ti = setTimeout( function() {
+									jQuery( '.imgclose' ).on( 'click', function() {
+										jQuery( '#inhouseimg' ).remove();
+									});
+								},1000);
+							}, 4000 );
+						}
+						cmnter++;
+					}
+				});
+		});
+		
+		jQuery(window).on("orientationchange",function(){
+			var tu = setTimeout( function(){
+				jQuery( 'section.imgsection > div >img' ).each( function() {
+					jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+				});
+			}, 1000 );
+		});
+		
+		jQuery( 'section.imgsection > div' ).each( function() {
+			if ( jQuery( this ).attr( 'itemprop' ) == 'articleBody' || jQuery( this ).hasClass( 'imgholder' ) ) {
+				jQuery( this ).find( 'img' ).each( function() {
+					//alert(jQuery( this ).next( '.imghalder' ).html());
+					if ( jQuery( this ).next( '.imghalder' ).html() == undefined ) {
+						getadcode = img_rand_adcode();
+						jQuery( getadcode ).insertAfter( this );
+						jQuery( '#inhouseimg' ).css( "width", jQuery( this ).width() );
+						cmnter++;
+					}
+				});
+			}
+		});
+	} catch(err) {}
+}
+
+
+jQuery(window).load(function(){
+	img_generate_ad();
+	if(jQuery(this).width() <= 767){
+		jQuery('.article-image .size-full, .main-story-content .size-full').css('float', 'none');
+	}					
+	
+});

@@ -1,0 +1,232 @@
+{
+    "title": "Gangamma Sindhanur : \u0cb2\u0cbe\u0c95\u0ccd\u200c\u0ca1\u0ccc\u0ca8\u0ccd\u200c: \u0cac\u0cc6\u0c82\u0c97\u0ccd\u0cb3\u0cc2\u0cb0\u0cbf\u0c82\u0ca6 \u0cb8\u0cbf\u0c82\u0ca7\u0ca8\u0cc2\u0cb0\u0cbf\u0c97\u0cc6 \u0ca8\u0ca1\u0cc6\u0ca6\u0cc2 \u0ca8\u0ca1\u0cc6\u0ca6\u0cc2 \u0c95\u0ca3\u0ccd\u0ca3\u0cc1\u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf\u0ca6 29 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0c97\u0c82\u0c97\u0cae\u0ccd\u0cae! - lockdown in karnataka 29 year old sindhanur woman dies after try to reach home by walk from bengaluru | Vijaya Karnataka",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.250",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 19,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590775844",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:11:03.969004",
+                "start_ts": "2020-05-29 18:10:44.267052",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:13:11.837720",
+                "start_ts": "2020-05-29 18:13:09.648923",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=vijaykarnataka.com"
+                ],
+                "end_ts": "2020-05-29 18:10:44.265802",
+                "start_ts": "2020-05-29 18:10:43.923573",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:12:04.055955",
+                "start_ts": "2020-05-29 18:11:03.969180",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 21:42:34.884041",
+                "start_ts": "2020-05-29 21:41:34.780222",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "dom": [
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:13:09.646443",
+                "start_ts": "2020-05-29 18:12:09.562026",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:13:13.922703",
+                "start_ts": "2020-05-29 18:13:11.837961",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "https://web.archive.org/web/20200529181313/https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "duration": 5,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 18:12:09.561235",
+                "start_ts": "2020-05-29 18:12:04.056260",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 60,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+                ],
+                "end_ts": "2020-05-29 21:43:34.970961",
+                "start_ts": "2020-05-29 21:42:34.884813",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "curl",
+                    "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 18:10:43.923164",
+                "start_ts": "2020-05-29 18:10:37.365997",
+                "pwd": "/data/archive/1590766226.250",
+                "output": "Gangamma Sindhanur : \u0cb2\u0cbe\u0c95\u0ccd&zwnj;\u0ca1\u0ccc\u0ca8\u0ccd&zwnj;: \u0cac\u0cc6\u0c82\u0c97\u0ccd\u0cb3\u0cc2\u0cb0\u0cbf\u0c82\u0ca6 \u0cb8\u0cbf\u0c82\u0ca7\u0ca8\u0cc2\u0cb0\u0cbf\u0c97\u0cc6 \u0ca8\u0ca1\u0cc6\u0ca6\u0cc2 \u0ca8\u0ca1\u0cc6\u0ca6\u0cc2 \u0c95\u0ca3\u0ccd\u0ca3\u0cc1\u0cae\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf\u0ca6 29 \u0cb5\u0cb0\u0ccd\u0cb7\u0ca6 \u0c97\u0c82\u0c97\u0cae\u0ccd\u0cae! - lockdown in karnataka 29 year old sindhanur woman dies after try to reach home by walk from bengaluru | Vijaya Karnataka"
+            }
+        ]
+    },
+    "updated": "1590788614.971399",
+    "tags": "",
+    "url": "https://vijaykarnataka.com/news/bellary/lockdown-in-karnataka-29-year-old-sindhanur-woman-dies-after-try-to-reach-home-by-walk-from-bengaluru/articleshow/75020447.cms"
+}

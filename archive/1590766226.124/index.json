@@ -1,0 +1,213 @@
+{
+    "title": "COVID-19: Diabetic man dies of lack of food, medicine at Delhi quarantine centre",
+    "url": "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre",
+    "timestamp": "1590766226.124",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771163",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:52:57.570467",
+                "start_ts": "2020-05-29 16:52:43.643774",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 3,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:53:28.368709",
+                "start_ts": "2020-05-29 16:53:24.620036",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.nationalheraldindia.com"
+                ],
+                "end_ts": "2020-05-29 16:52:43.643367",
+                "start_ts": "2020-05-29 16:52:42.751509",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:53:05.768208",
+                "start_ts": "2020-05-29 16:52:57.570642",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 7,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 17:32:31.850448",
+                "start_ts": "2020-05-29 17:32:24.537134",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:53:24.619651",
+                "start_ts": "2020-05-29 16:53:14.150874",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:53:30.384693",
+                "start_ts": "2020-05-29 16:53:28.368984",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "https://web.archive.org/web/20200529165329/https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre"
+                ],
+                "end_ts": "2020-05-29 16:53:14.150637",
+                "start_ts": "2020-05-29 16:53:05.768818",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "https://www.nationalheraldindia.com/india/covid-19-diabetic-man-dies-of-lack-of-food-medicine-at-delhi-quarantine-centre",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 16:52:42.751221",
+                "start_ts": "2020-05-29 16:52:40.344311",
+                "pwd": "/data/archive/1590766226.124",
+                "output": "COVID-19: Diabetic man dies of lack of food, medicine at Delhi quarantine centre"
+            }
+        ]
+    },
+    "updated": "1590788226.175126",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

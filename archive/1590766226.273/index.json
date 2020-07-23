@@ -1,0 +1,232 @@
+{
+    "title": "Darbhanga man commits suicide in isolation camp | Patna News - Times of India",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.273",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:24:03.726734",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590776634",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 18:23:54.426793",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:24:22.926119",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:24:19.892024",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:23:54.425468",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:23:54.141011",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:24:07.908566",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 18:24:03.726896",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "end_ts": "2020-05-29 21:44:43.039501",
+                "start_ts": "2020-05-29 21:44:38.261516",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:24:19.890907",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 18:24:13.529515",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:24:25.578805",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:24:22.926382",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "https://web.archive.org/web/20200529182424/https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:24:13.528857",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 18:24:07.909241",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+                ],
+                "end_ts": "2020-05-29 21:44:46.819254",
+                "start_ts": "2020-05-29 21:44:43.039756",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:23:54.140727",
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 18:23:53.856977",
+                "pwd": "/data/archive/1590766226.273",
+                "output": "Darbhanga man commits suicide in isolation camp | Patna News - Times of India"
+            }
+        ]
+    },
+    "updated": "1590788686.819568",
+    "tags": "",
+    "url": "https://timesofindia.indiatimes.com/city/patna/darbhanga-man-commits-suicide-in-isolation-camp/articleshow/75147761.cms"
+}

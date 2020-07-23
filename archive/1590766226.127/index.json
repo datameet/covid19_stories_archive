@@ -1,0 +1,213 @@
+{
+    "title": "Gwalior News: \u0926\u093f\u0932\u094d\u0932\u0940 \u0938\u0947 \u092a\u0924\u094d\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0948\u0926\u0932 \u0917\u094d\u0935\u093e\u0932\u093f\u092f\u0930 \u0906\u092f\u093e \u0939\u093e\u0907\u0935\u0947 \u092a\u0930 \u0915\u093e\u0930 \u0928\u0947 \u0915\u0941\u091a\u0932\u093e \u092e\u094c\u0924 - Naidunia.com",
+    "url": "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895",
+    "timestamp": "1590766226.127",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:55:43.553325",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590771338",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 16:55:38.568158",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "www.naidunia.com/madhya-pradesh/gwalior-he-5444895.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:56:08.056284",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:56:06.599415",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:55:38.566913",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.naidunia.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:55:38.255098",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 16:55:53.941804",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 16:55:43.553549",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:32:40.498525",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:32:37.596786",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:56:06.598412",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 16:55:57.066697",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:56:11.465041",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:56:08.056523",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "https://web.archive.org/web/20200529165609/https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:55:57.066458",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:55:53.942601",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:55:38.254724",
+                "cmd": [
+                    "curl",
+                    "https://www.naidunia.com/madhya-pradesh/gwalior-he-5444895",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:55:37.491801",
+                "pwd": "/data/archive/1590766226.127",
+                "output": "Gwalior News: \u0926\u093f\u0932\u094d\u0932\u0940 \u0938\u0947 \u092a\u0924\u094d\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0948\u0926\u0932 \u0917\u094d\u0935\u093e\u0932\u093f\u092f\u0930 \u0906\u092f\u093e \u0939\u093e\u0907\u0935\u0947 \u092a\u0930 \u0915\u093e\u0930 \u0928\u0947 \u0915\u0941\u091a\u0932\u093e \u092e\u094c\u0924 - Naidunia.com"
+            }
+        ]
+    },
+    "updated": "1590788227.193054",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

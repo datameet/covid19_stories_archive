@@ -1,0 +1,67 @@
+body {
+	font-family:'Noto Sans Kannada' !important;
+}
+.latest-stories-and-live-tv {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+.widget-post-content p {
+	line-height: 22px;
+}
+.widget-post-content {
+	padding: 20px 30px 22px 30px;
+}
+.widget01-three-txt h3 {
+	min-height: 46px;
+}
+
+.flex-box .row {
+	float: none !important;
+	width: auto !important;
+}
+.category-posts .tab-section {
+	margin-top: 20px;
+}
+.category-posts .tab-section .trend {
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.wid07-post-txt {
+	min-height: auto
+}
+.left-side .top-8 .three-articles .widget07.marg-t30,
+.left-side .top-9 .three-articles .widget07.marg-t30,
+.left-side .top-10 .three-articles .widget07.marg-t30 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.liveTV {
+	margin-bottom: 12px;
+}
+span.byline-tag {
+	margin-bottom: 5px;
+}
+.sports-rel-post-txt h2 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+@media (max-width: 767px) {
+	.sticky-menu.affix img.img-responsive.sticky-logo {
+	    padding: 13px 0 !important;
+	}
+	.aside .aside-header .close {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 200;
+    color: #000;
+    opacity: 1;
+    line-height: 34px;
+    margin-top: -4px;
+	}
+	ul.nav.navbar-nav.navbar-right > li:last-child > a {
+    padding: 5px 10px !important;
+	}
+}

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Corona Data</title><meta http-equiv="Access-Control-Allow-Origin" content="*" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link data-brackets-id="117" rel="stylesheet" type="text/css" href="../fonts.googleapis.com/css@family=Roboto%253A400,500,900.css">
+ <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+ <style>
+* {margin: 0;padding: 0 } body{font: bold 12px/15px 'Roboto', sans-serif;} ul li {list-style: none } .swiper-container .swiper-wrapper li {border-radius: 5px;background: #fff } .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active {box-shadow: 0 3px 15px #666;border: 1px solid #ffffff;} .swiper-container {padding: 5px;width: 130px; height:135px;position: absolute;box-sizing: border-box;} .swiper-slide {background-position: center;background-size: cover;} .elecbox-center {width: 100%;margin: 0 auto;} .elecbox ul,.keycandbox ul {list-style: none;margin: 0;padding: 0;min-height: 75px } .keycandbox,.elecbox{min-height: 116px;} .topHead{border-radius: 4px 4px 0px 0px;padding: 0px 4px;} .topHead,.zoneName{font-weight:300;background: #fff;color:#fff;font-size: 9px;font-weight: 600;} .partydetail{display: inline-block;width: 100%;background: #e9e9e9;margin-bottom: 2px;border-radius: 3px;} .partydetail h4,.partydetail span{display: inline-block;} .zoneName{font-size:12px;text-align: center} .seatsno{width: 45%;} .leadwin{width: 19%;text-align: center;padding: 0px 3px;background: #fff;border-radius: 4px 4px 0px 0px;color: #000;font-size: 13px;line-height: 16px;display: inline-block;} .seats span:first-child,.seats span:nth-child(2){margin-right:3px;} .partydetail .partyname{width: 35%;font-size: 13px;color: #fff;padding-left: 3px;margin-left: 2px;border-radius: 3px 0px 0px 3px;line-height: 18px} .partydetail .winseat,.partydetail .lostseat{width: 27%;text-align: center;} .partylistupdate li:first-child div.partydetail{margin-top: 3px;} .congcol{background: #0090ff;} .bjpcol{background: #ff6c00 } .jdscol{background:#027f29;} .othcol{background: #0018ff;} .elecbox{border-radius: 4px;box-shadow: 0 4px 0px #cf000f;} .keycandbox{border-radius: 4px;box-shadow: 0 4px 0px #cf000f;} .partylistupdate li:last-child .partydetail{margin-bottom: 2px } .txtcenter{text-align: center;} .keycandidat{text-transform: uppercase;text-align: center;font-size: 12px;} .leftimg{border: 1px solid #000;border-radius: 50%;margin: 1px 3px 0px;width:51px} .rightimg{max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top: -3px;bottom: 0;right: 7px;margin: auto } .keycand-inform{margin: -4px 0px 0px 0px;display: table;width:100%;height:32px;overflow: hidden;table-layout: fixed} div.winner-candidate{display: inline-block;} .candi-name{font-weight: 500;line-height: 12px;display: table-cell;text-align: center;padding-top:6px;vertical-align: middle;/*position: absolute;*/overflow: hidden;    height: 25px;width: 130px} .party-name{font-weight: 300;display: block;max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;bottom: 29px;right: 10px;margin: auto} .svgcenter{text-align: center;margin:0 auto;} .svgcenter img{width: 100%;height: 77px;} .electionstat{font-size: 10px;padding: 5px 0px;font-weight: 300;}.topHead{background: #fff; padding:0;}
+.zoneName.zon1{font-size: 11px; color:#cf000f !important}
+.zoneName{color:#000 !important; font-size: 10px}
+.seats{background-color:#cf000f;}
+.screen-3 { font-size: 16px;width: 100%;text-align: center;line-height:20px;}
+.seatsno{color:#fff;font-size: 11px; margin-left: 2px; font-weight:normal}
+.leadwin{background:#cf000f; color:#fff;}
+.partydetail{background:#fff;}
+.swiper-container .swiper-wrapper li{border-bottom:1px solid #ebebeb; border-radius:0;}
+.leadwin { font-size:11px; font-weight:500px!Important; }
+.seats span:first-child, .seats span:nth-child(2) { padding-left:3px;}
+.partydetail .partyname { width:41%;}
+
+.swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active { border-radius:3px}
+.elecbox { border-radius:none; box-shadow:none; }
+.swiper-container .swiper-wrapper li:last-child{ border-bottom:none}
+.swiper-container {margin:0 auto; position: relative;}
+.swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active {border: 1px solid #989797;}
+
+.swiper-wrapper{height: auto !important}
+    
+    
+    .covid-19{
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .covid-19.theme-red{
+        border:1px solid #ce3826;
+    }
+     .covid-19.theme-green{
+        border:1px solid #ce3826;
+    }
+    .covid-19 .covid-head {
+        color:#fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     .covid-19.theme-red .covid-head{
+        background-color: #ce3826; 
+     }
+     .covid-19.theme-green .covid-head{
+        background-color: #02ab50; 
+     }
+    .covid-body{
+      height: 90px; 
+      display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .covid-title, .covid-value{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+    .covid-title{
+      margin-bottom: 6px;  
+    }
+     .cube-ad{
+         background-color: #fff;
+         padding: 3px;
+     }
+     .cube-ad img{
+         max-width: 100%;
+         height: auto;
+     }
+	 
+	 .ckey{
+		font-size: 11px;
+       padding: 2px 0;
+    border-bottom: 1px solid #eae8e8;
+	font-weight: normal;
+	 }
+     .ckey b {     width: 49px;
+    display: inline-block;
+    float: right;
+    font-weight: normal;
+    /* border: 1px solid red; */
+    margin-left: 3px;}
+
+
+</style></head>
+<body>
+<a href="https://covid19.thefederal.com/main.html" style="text-decoration: none;color: #000;" target="_blank"><div class="swiper-container" id="flip3dSlider">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide front">
+          <div class="covid-19 theme-red">
+                <div class="covid-head">Covid-19</div>
+                <div class="covid-body">
+                    <div class="covid-body-inner">
+                      <div class="covid-title">INDIA</div>
+					  <!--<div class="covid-value india_confirm" id="india_confirm"></div>-->
+					  <div class="ckey b">DETECTED: <span class="india_confirm"></span></div>
+                      <!--<div class="ckey">Recovered<b>: <span class="india_recover"></span></b></div>-->
+                      <div class="ckey b">DEATHS: <span class="india_death"></span></div>
+                    </div>
+                </div>
+            </div>
+      </li>
+	  <li class="swiper-slide front">
+          <div class="covid-19 theme-red">
+                <div class="covid-head">Covid-19</div>
+                <div class="covid-body">
+                    <div class="covid-body-inner">
+                      <div class="covid-title">GLOBAL</div>
+                      <!--<div class="covid-value world_confirm" id="world_confirm"></div>-->
+					  <div class="ckey b">DETECTED: <span class="world_confirm"></span></div>
+                      <!--<div class="ckey">Recovered<b>: <span class="world_recover"></span></b></div>-->
+                      <div class="ckey b">DEATHS: <span class="world_death"></span></div>
+                    </div>
+                </div>
+            </div>
+      </li>
+      <li class="swiper-slide front">
+          <div class="covid-19 theme-red">
+                <div class="covid-head">Covid-19</div>
+                <div class="covid-body">
+                    <div class="covid-body-inner">
+                      <div class="screen-3" onclick="window.open('https://covid19.thefederal.com/main.html', '_blank');">Click to open<br> full dashboard</div>
+                    </div>
+                </div>
+            </div>
+      </li>
+    </ul>
+</div>	</a>
+    <script src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+      var MEDIA_PATH = 'https://covid19.thefederal.com/js/swiper.min.js';
+      var swiper = new Swiper('#flip3dSlider.swiper-container', {
+			effect: 'cube',
+			grabCursor: true,
+			autoplay: true,
+			speed: 1000,
+			loop: true,
+			observer: false,
+			cubeEffect: {
+				shadow: true,
+				slideShadows: true,
+				shadowOffset: 8,
+				shadowScale: 0.65,
+			},
+
+		});
+		
+	  function loadJSON(path, success, error)
+		{
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function()
+			{
+				if (xhr.readyState === XMLHttpRequest.DONE) {
+					if (xhr.status === 200) {
+						if (success)
+							success(JSON.parse(xhr.responseText));
+					} else {
+						if (error)
+							error(xhr);
+					}
+				}
+			};
+			xhr.open("GET", path, true);
+			xhr.send();
+		}
+		
+		function loadCoronaData() {
+			var now = new Date();
+			current_time_stamp = now.getFullYear().toString(); // 2011
+			current_time_stamp += (now.getMonth() < 9 ? '0' : '') + (now.getMonth() + 1).toString(); // JS months are 0-based, so +1 and pad with 0's
+			current_time_stamp += ((now.getDate() < 10) ? '0' : '') + now.getDate().toString(); // pad with a 0
+			current_time_stamp += ((now.getHours() < 10) ? '0' : '') + now.getHours().toString(); // pad with a 0
+			current_time_stamp += ((now.getMinutes() < 10) ? '0' : '') + now.getMinutes().toString(); // pad with a 0
+			
+			console.log('timestamp=>' + current_time_stamp);
+			
+			//... etc... with .getHours(), getMinutes(), getSeconds(), getMilliseconds()
+			
+			loadJSON('https://thefederal.com/api/scraper.php?m=Corona&t=totalCases',
+				function(data) {
+				    var rc = 0;
+					data.totals.forEach(function(key,value) { console.log('Test');
+					console.log(key);
+					if(rc==0) {
+					
+						totalCases = numberWithCommas(key["Total Cases"]);
+						totalDeaths = numberWithCommas(key["Total Deaths"]);
+					}
+					rc++;
+					});
+					document.getElementsByClassName("world_confirm")[0].innerHTML = totalCases;
+					if (document.getElementsByClassName("world_confirm")[1]) {
+					document.getElementsByClassName("world_confirm")[1].innerHTML = totalCases;
+					}
+					document.getElementsByClassName("world_death")[0].innerHTML = totalDeaths;
+					if (document.getElementsByClassName("world_death")[1]) {
+					document.getElementsByClassName("world_death")[1].innerHTML = totalDeaths;
+					}
+			},
+			 function(xhr) { console.error(xhr); }
+			);
+			var ind = 0;
+			loadJSON('https://thefederal.com/api/scraper.php?m=Corona&t=StateWise',
+				function(data) {
+					data.totals.forEach(function(key,value) {
+					    if(ind==0) {
+						totalIndianCases = key.totalIndians;
+						totalIndianCases = totalIndianCases.replace(" ","");
+						totalIndianCases = totalIndianCases.replace("#","");
+						totalIndianCases = totalIndianCases.replace("*","");
+						totalIndianCases = numberWithCommas(totalIndianCases);
+						totalIndianDeaths = numberWithCommas(key.totalDeaths);
+						totalIndianCases = totalIndianCases.replace("*", "");
+					    }
+						ind++;
+					});
+					document.getElementsByClassName("india_confirm")[0].innerHTML = totalIndianCases;
+					if (document.getElementsByClassName("india_confirm")[1]) {
+					document.getElementsByClassName("india_confirm")[1].innerHTML = totalIndianCases;
+					}
+					document.getElementsByClassName("india_death")[0].innerHTML = totalIndianDeaths;
+					if (document.getElementsByClassName("india_death")[1]) {
+					document.getElementsByClassName("india_death")[1].innerHTML = totalIndianDeaths;
+					}
+			},
+			 function(xhr) { console.error(xhr); }
+			);
+			
+			/*loadJSON('https://akm-img-a-in.tosshub.com/sites/common/jsons/corona_total.json?'+'rand='+ current_time_stamp,
+				function(data) {
+					
+					document.getElementsByClassName("india_confirm")[0].innerHTML = data.india.confirmed;
+					document.getElementsByClassName("india_confirm")[1].innerHTML = data.india.confirmed;
+					document.getElementsByClassName("india_death")[0].innerHTML = data.india.deaths ;
+					document.getElementsByClassName("india_death")[1].innerHTML = data.india.deaths ;
+            
+					document.getElementsByClassName("world_confirm")[0].innerHTML = data.world.confirmed;
+					document.getElementsByClassName("world_confirm")[1].innerHTML = data.world.confirmed;
+					document.getElementsByClassName("world_death")[0].innerHTML = data.world.deaths;
+					document.getElementsByClassName("world_death")[1].innerHTML = data.world.deaths;
+				},
+			 function(xhr) { console.error(xhr); }
+			);*/
+		}
+		
+		loadCoronaData();
+		
+		setInterval(function(){
+			loadCoronaData();
+		}, 160000);
+		function numberWithCommas(x) {
+            x=x.toString();
+            x = x.replace(" ", "");
+            lastThree = x.substring(x.length-3);
+            otherNumbers = x.substring(0,x.length-3);
+            if(otherNumbers != '')
+                lastThree = ',' + lastThree;
+            res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+            return res;
+		}
+	</script>
+</body></html>

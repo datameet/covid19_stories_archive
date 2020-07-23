@@ -1,0 +1,270 @@
+{
+    "title": "\u0c9a\u0ca8\u0ccd\u0ca8\u0cb0\u0cbe\u0caf\u0caa\u0c9f\u0ccd\u0c9f\u0ca3: \u0c95\u0ccd\u0cb5\u0cbe\u0cb0\u0c82\u0c9f\u0cc8\u0ca8\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0ccd\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0ca8\u0cc7\u0ca3\u0cc1 \u0cac\u0cbf\u0c97\u0cbf\u0ca6\u0cc1\u0c95\u0cca\u0c82\u0ca1\u0cc1 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 | Prajavani",
+    "url": "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html",
+    "timestamp": "1590766226.51",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:19.251054",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590768128",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 10,
+                "start_ts": "2020-05-29 16:02:08.343914",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:31.296690",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:02:29.789066",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:08.343272",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.prajavani.net"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 16:02:07.667455",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 16:02:22.931354",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:02:19.251204",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:30:50.764602",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 6,
+                "start_ts": "2020-05-29 17:30:44.697880",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "end_ts": "2020-05-29 21:36:01.037316",
+                "start_ts": "2020-05-29 21:35:56.491387",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:29.787976",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:02:26.503891",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:32.817083",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 16:02:31.296965",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "https://web.archive.org/web/20200529160232/https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 16:02:26.503034",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 16:02:22.931947",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 17:30:54.656820",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:30:50.765349",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 6,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html"
+                ],
+                "end_ts": "2020-05-29 21:36:07.069931",
+                "start_ts": "2020-05-29 21:36:01.038183",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 16:02:07.667163",
+                "cmd": [
+                    "curl",
+                    "https://www.prajavani.net/stories/stateregional/channarayapatnam-a-man-in-quarantine-commits-suicide-715891.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 16:02:05.156868",
+                "pwd": "/data/archive/1590766226.51",
+                "output": "\u0c9a\u0ca8\u0ccd\u0ca8\u0cb0\u0cbe\u0caf\u0caa\u0c9f\u0ccd\u0c9f\u0ca3: \u0c95\u0ccd\u0cb5\u0cbe\u0cb0\u0c82\u0c9f\u0cc8\u0ca8\u0ccd\u200c\u0ca8\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0ccd\u0ca6 \u0cb5\u0ccd\u0caf\u0c95\u0ccd\u0ca4\u0cbf \u0ca8\u0cc7\u0ca3\u0cc1 \u0cac\u0cbf\u0c97\u0cbf\u0ca6\u0cc1\u0c95\u0cca\u0c82\u0ca1\u0cc1 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 | Prajavani"
+            }
+        ]
+    },
+    "updated": "1590788167.070627",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

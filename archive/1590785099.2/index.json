@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.2",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 20:46:45.523868",
+                "start_ts": "2020-05-29 20:46:45.241816",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "Video of vegetable vendor refusing to sell to Muslim women goes viral - The Week"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:47:06.115090",
+                "start_ts": "2020-05-29 20:47:03.543438",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.theweek.in"
+                ],
+                "end_ts": "2020-05-29 20:46:45.834731",
+                "start_ts": "2020-05-29 20:46:45.524130",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:47:03.543181",
+                "start_ts": "2020-05-29 20:46:59.314506",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "output.pdf"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:47:12.190438",
+                "start_ts": "2020-05-29 20:47:09.343701",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "https://web.archive.org/web/20200529204711/https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785205",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:46:59.314353",
+                "start_ts": "2020-05-29 20:46:45.835988",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:47:07.878976",
+                "start_ts": "2020-05-29 20:47:06.115340",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+                ],
+                "end_ts": "2020-05-29 20:47:09.343435",
+                "start_ts": "2020-05-29 20:47:07.879339",
+                "pwd": "/data/archive/1590785099.2",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590785232.193355",
+    "tags": "",
+    "url": "https://www.theweek.in/news/india/2020/04/16/video-of-vegetable-vendor-refusing-to-sell-to-muslim-women-goes-viral.html"
+}

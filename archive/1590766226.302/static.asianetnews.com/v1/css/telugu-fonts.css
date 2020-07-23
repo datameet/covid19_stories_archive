@@ -1,0 +1,68 @@
+body {
+ font-family:'Noto Sans Telugu';
+}
+.widget04 .related-post-txt {
+	min-height: auto;
+}
+.sports-rel-post-txt h2 {
+	min-height: auto;
+	line-height: normal;
+}
+.related-post-txt h3 {
+	min-height: auto;
+}
+.left-side .top-8 .three-articles .widget07.marg-t30,
+.left-side .top-9 .three-articles .widget07.marg-t30,
+.left-side .top-10 .three-articles .widget07.marg-t30 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.wid07-post-txt {
+	min-height: auto;
+}
+.related-posts {
+	margin-top: 30px;
+}
+.related-post-txt h3 {
+	min-height: 75px;
+}
+#search .main-box {
+	padding-top: 15px;
+}
+span.byline-tag {
+	margin-bottom: 5px !important;
+}
+.sports-rel-post-txt h2 {
+	font-size: 15px;
+}
+
+@media (max-width: 992px) {
+	.related-post-txt h3 {
+		min-height: 60px;
+	}
+	.widget11 {
+		margin-top: 20px;
+	}
+}
+@media (max-width: 767px) {
+	.related-post-txt h3 {
+		min-height: 80px;
+	}
+	.sticky-menu.affix img.img-responsive.sticky-logo {
+    padding: 12px 0 !important;
+	}
+}
+@media (max-width: 576px) {
+	.ind_logo {
+		left: 152px !important;
+	}
+	.related-post-txt h3 {
+		min-height: 100px;
+	}
+}
+
+@media (min-width: 720px) {
+	.telugu_logo {
+			width: 200px !important;
+	}
+}

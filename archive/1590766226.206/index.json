@@ -1,0 +1,194 @@
+{
+    "title": "Tamil Nadu man hangs self in isolation ward; later tests negative for COVID-19 | Deccan Herald",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.206",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774213",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:40.519837",
+                "start_ts": "2020-05-29 17:43:33.719790",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:49.651269",
+                "start_ts": "2020-05-29 17:43:48.166882",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.deccanherald.com"
+                ],
+                "end_ts": "2020-05-29 17:43:33.718510",
+                "start_ts": "2020-05-29 17:43:33.330379",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:43.934689",
+                "start_ts": "2020-05-29 17:43:40.520077",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:48.166536",
+                "start_ts": "2020-05-29 17:43:45.806817",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:52.187698",
+                "start_ts": "2020-05-29 17:43:49.651522",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "https://web.archive.org/web/20200529174350/https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+                ],
+                "end_ts": "2020-05-29 17:43:45.806526",
+                "start_ts": "2020-05-29 17:43:43.935020",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:43:33.330052",
+                "start_ts": "2020-05-29 17:43:33.070429",
+                "pwd": "/data/archive/1590766226.206",
+                "output": "Tamil Nadu man hangs self in isolation ward; later tests negative for COVID-19 | Deccan Herald"
+            }
+        ]
+    },
+    "updated": "1590788268.768989",
+    "tags": "",
+    "url": "https://www.deccanherald.com/national/south/tamil-nadu-man-hangs-self-in-isolation-ward-later-tests-negative-for-covid-19-823884.html"
+}

@@ -1,0 +1,194 @@
+{
+    "title": "Person commits suicide due to work shutdown in lockdown",
+    "url": "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html",
+    "timestamp": "1590766226.160",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772355",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:36.073747",
+                "start_ts": "2020-05-29 17:12:35.042131",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:41.136396",
+                "start_ts": "2020-05-29 17:12:39.631074",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.jagran.com"
+                ],
+                "end_ts": "2020-05-29 17:12:35.040742",
+                "start_ts": "2020-05-29 17:12:34.788101",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:37.838788",
+                "start_ts": "2020-05-29 17:12:36.074060",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:39.630717",
+                "start_ts": "2020-05-29 17:12:38.986924",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:43.338507",
+                "start_ts": "2020-05-29 17:12:41.136648",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "https://web.archive.org/web/20200529171242/https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html"
+                ],
+                "end_ts": "2020-05-29 17:12:38.986671",
+                "start_ts": "2020-05-29 17:12:37.839036",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "https://www.jagran.com/punjab/ludhiana-person-commits-suicide-due-to-work-shutdown-in-lockdown-20287688.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 17:12:34.787975",
+                "start_ts": "2020-05-29 17:12:34.384054",
+                "pwd": "/data/archive/1590766226.160",
+                "output": "Person commits suicide due to work shutdown in lockdown"
+            }
+        ]
+    },
+    "updated": "1590788238.164642",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

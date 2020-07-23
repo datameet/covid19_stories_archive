@@ -1,0 +1,193 @@
+{
+    "title": null,
+    "timestamp": "1590785099.59",
+    "history": {
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 4,
+                "cmd": [
+                    "curl",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 21:22:58.130965",
+                "start_ts": "2020-05-29 21:22:53.367538",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "Tablighi Jamaat: \u091c\u092e\u093e\u0924\u0940 \u0915\u094b \u091b\u0941\u092a\u093e\u0928\u0947 \u0915\u0947 \u0936\u0915 \u092e\u0947\u0902 \u0918\u0930 \u092e\u0947\u0902 \u0918\u0941\u0938\u0915\u0930 \u0939\u092e\u0932\u093e, \u092e\u093e\u0930\u092a\u0940\u091f \u0915\u0947 \u092c\u093e\u0926 \u0915\u093e\u0930 \u0915\u0947 \u0936\u0940\u0936\u0947 \u0924\u094b\u0921\u0947\u093c - mob attacked a family in doubt of hiding alleged jamati in greater noida glasses of car was vandalised | Navbharat Times"
+            }
+        ],
+        "git": [],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 15,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:43.291279",
+                "start_ts": "2020-05-29 21:23:27.549201",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "screenshot.png"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=navbharattimes.indiatimes.com"
+                ],
+                "end_ts": "2020-05-29 21:22:58.401839",
+                "start_ts": "2020-05-29 21:22:58.131297",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "duration": 14,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:27.548512",
+                "start_ts": "2020-05-29 21:23:12.622949",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:51.633964",
+                "start_ts": "2020-05-29 21:23:48.736784",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "https://web.archive.org/web/20200529212350/https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+            }
+        ],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 14,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787378",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:12.622743",
+                "start_ts": "2020-05-29 21:22:58.403158",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms.html"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:46.703277",
+                "start_ts": "2020-05-29 21:23:43.291534",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "output.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+                ],
+                "end_ts": "2020-05-29 21:23:48.736513",
+                "start_ts": "2020-05-29 21:23:46.703642",
+                "pwd": "/data/archive/1590785099.59",
+                "output": "media"
+            }
+        ]
+    },
+    "sources": [
+        "/data/sources/stdin-1590785099.txt"
+    ],
+    "updated": "1590787431.639779",
+    "tags": "",
+    "url": "https://navbharattimes.indiatimes.com/state/uttar-pradesh/noida/mob-attacked-a-family-in-doubt-of-hiding-alleged-jamati-in-greater-noida-glasses-of-car-was-vandalised/articleshow/75124669.cms"
+}

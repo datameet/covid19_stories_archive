@@ -1,0 +1,194 @@
+{
+    "title": "Maharashtra: Man kills self over coronavirus scare in Nashik | India News \u2013 India TV",
+    "url": "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648",
+    "timestamp": "1590766226.163",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:17.100849",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590772384",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 12,
+                "start_ts": "2020-05-29 17:13:04.445925",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:28.374708",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:13:26.865144",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:04.444574",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatvnews.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:13:04.162762",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:20.546811",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:13:17.100992",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:26.862755",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:13:23.686683",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:31.269371",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:13:28.374955",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "https://web.archive.org/web/20200529171329/https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:23.686446",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:13:20.547053",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:13:04.162472",
+                "cmd": [
+                    "curl",
+                    "https://www.indiatvnews.com/news/india/maharashtra-man-kills-self-over-coronavirus-scare-in-nashik-covid-19-606648",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:13:03.783823",
+                "pwd": "/data/archive/1590766226.163",
+                "output": "Maharashtra: Man kills self over coronavirus scare in Nashik | India News \u2013 India TV"
+            }
+        ]
+    },
+    "updated": "1590788239.210269",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

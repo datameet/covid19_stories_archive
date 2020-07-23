@@ -1,0 +1,194 @@
+{
+    "title": "Jammu and Kashmir: Tunnel blocked, migrants die of cold on mountain route | India News,The Indian Express",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.364",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590780252",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:25.461046",
+                "start_ts": "2020-05-29 19:24:12.175019",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/index.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "failed",
+                "duration": 4,
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:39.428662",
+                "start_ts": "2020-05-29 19:24:35.122973",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "Failed to download media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "duration": 0,
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "end_ts": "2020-05-29 19:24:12.173722",
+                "start_ts": "2020-05-29 19:24:11.899778",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:29.434558",
+                "start_ts": "2020-05-29 19:24:25.461280",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:35.122650",
+                "start_ts": "2020-05-29 19:24:32.659164",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "duration": 2,
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:41.545519",
+                "start_ts": "2020-05-29 19:24:39.428920",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "https://web.archive.org/web/20200529192440/https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "duration": 3,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+                ],
+                "end_ts": "2020-05-29 19:24:32.658926",
+                "start_ts": "2020-05-29 19:24:29.434791",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "end_ts": "2020-05-29 19:24:11.899500",
+                "start_ts": "2020-05-29 19:24:10.775886",
+                "pwd": "/data/archive/1590766226.364",
+                "output": "Jammu and Kashmir: Tunnel blocked, migrants die of cold on mountain route | India News,The Indian Express"
+            }
+        ]
+    },
+    "updated": "1590789393.26769",
+    "tags": "",
+    "url": "https://indianexpress.com/article/india/jammu-and-kashmir-tunnel-blocked-migrants-die-of-cold-on-mountain-route/"
+}

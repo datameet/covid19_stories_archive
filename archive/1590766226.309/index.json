@@ -1,0 +1,213 @@
+{
+    "title": "\u0c95\u0cc1\u0ca1\u0cbf\u0caf\u0cb2\u0cc1 \u0cae\u0ca6\u0ccd\u0caf \u0cb8\u0cbf\u0c97\u0ca6\u0cc7 \u0ca8\u0cbe\u0cb2\u0ccd\u0cb5\u0cb0\u0cc1 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 - Public Tv",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.309",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:55:52.671677",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590778542",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 9,
+                "start_ts": "2020-05-29 18:55:42.826275",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:56:06.299149",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 18:56:04.366830",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:55:42.824992",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=publictv.in"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:55:39.922528",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "failed",
+                "end_ts": "2020-05-29 18:55:58.136128",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 18:55:52.671848",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "status": "failed",
+                "duration": 8,
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "end_ts": "2020-05-29 21:53:07.361964",
+                "start_ts": "2020-05-29 21:52:59.114529",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:56:04.366498",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:56:01.878768",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:56:09.340084",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:56:06.299444",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "https://web.archive.org/web/20200529185607/https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:56:01.878527",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 18:55:58.136714",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 18:55:39.922245",
+                "cmd": [
+                    "curl",
+                    "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 18:55:37.022487",
+                "pwd": "/data/archive/1590766226.309",
+                "output": "\u0c95\u0cc1\u0ca1\u0cbf\u0caf\u0cb2\u0cc1 \u0cae\u0ca6\u0ccd\u0caf \u0cb8\u0cbf\u0c97\u0ca6\u0cc7 \u0ca8\u0cbe\u0cb2\u0ccd\u0cb5\u0cb0\u0cc1 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 - Public Tv"
+            }
+        ]
+    },
+    "updated": "1590789187.362606",
+    "tags": "",
+    "url": "https://publictv.in/corona-virus-police-alcohol-bidar-mangaluru/amp"
+}

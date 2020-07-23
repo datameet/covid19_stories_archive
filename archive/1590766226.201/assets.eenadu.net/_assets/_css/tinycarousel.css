@@ -1,0 +1,8 @@
+@chartset-'utf-8';#slider1{height:100%;overflow:hidden;position:relative;}
+#slider1 .viewport{height:280px;overflow:hidden;position:relative;}
+#slider1 .buttons{background:#C01313;border-radius:35px;display:block;position:absolute;top:50%;left:0;width:35px;height:35px;color:#fff;font-weight:bold;text-align:center;line-height:35px;text-decoration:none;font-size:22px;}
+#slider1 .next{right:0;left:auto;top:50%;}
+#slider1 .buttons:hover{color:#C01313;background:#fff;}
+#slider1 .disable{visibility:hidden;}
+#slider1 .overview{list-style:none;position:absolute;padding:0;width:294px;left:0;top:0;margin:0px;}
+#slider1 .overview li{float:left;margin-left:6px;height:100%;width:294px;margin-right:-9px;overflow:hidden;}

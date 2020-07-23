@@ -1,0 +1,194 @@
+{
+    "title": "\u0baa\u0b9a\u0bbf \u0b95\u0bca\u0b9f\u0bc1\u0bae\u0bc8... \u0b85\u0bae\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bbf\u0bb2\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bc1\u0baa\u0bcd\u0baa\u0bcb\u0b9f\u0bcd\u0b9f\u0bc1 \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8 \u0b9a\u0bc6\u0baf\u0bcd\u0ba4\u0bc1\u0b95\u0bca\u0ba3\u0bcd\u0b9f \u0baa\u0bc0\u0b95\u0bbe\u0bb0\u0bcd \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf - TopTamilNews",
+    "url": "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger",
+    "timestamp": "1590766226.15",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:28.250265",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590766993",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 14,
+                "start_ts": "2020-05-29 15:43:13.875526",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:45.339205",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:43:40.655953",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:13.875079",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.toptamilnews.com"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 15:43:10.103831",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:32.268000",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 4,
+                "start_ts": "2020-05-29 15:43:28.250397",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:40.655619",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 15:43:37.681622",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:54.118749",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 8,
+                "start_ts": "2020-05-29 15:43:45.339454",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "https://web.archive.org/web/20200529154348/https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:37.680674",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger"
+                ],
+                "duration": 5,
+                "start_ts": "2020-05-29 15:43:32.268228",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 15:43:10.103472",
+                "cmd": [
+                    "curl",
+                    "https://www.toptamilnews.com/bihari-worker-commits-suicide-chennai-due-hunger",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 15:43:08.690943",
+                "pwd": "/data/archive/1590766226.15",
+                "output": "\u0baa\u0b9a\u0bbf \u0b95\u0bca\u0b9f\u0bc1\u0bae\u0bc8... \u0b85\u0bae\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bbf\u0bb2\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bc1\u0baa\u0bcd\u0baa\u0bcb\u0b9f\u0bcd\u0b9f\u0bc1 \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8 \u0b9a\u0bc6\u0baf\u0bcd\u0ba4\u0bc1\u0b95\u0bca\u0ba3\u0bcd\u0b9f \u0baa\u0bc0\u0b95\u0bbe\u0bb0\u0bcd \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bbe\u0bb3\u0bbf - TopTamilNews"
+            }
+        ]
+    },
+    "updated": "1590788115.310824",
+    "tags": "",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ]
+}

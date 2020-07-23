@@ -1,0 +1,114 @@
+jQuery(document).ready(function(){var iecookieval=ie_cubebox_getCookie("ie_election_cube_click");if("ie_election_cube"===iecookieval&&null!==iecookieval&&"undefined"!==typeof iecookieval){jQuery(".electioncubeiframe").hide()}jQuery(document).scroll(function(){if(jQuery(window).scrollTop()>600){jQuery(".elec-cube").fadeIn()}else{jQuery(".elec-cube").fadeOut()}});jQuery(document).on("click","#cube-box-close-btn",function(){ie_cubebox_createCookie("ie_election_cube_click","ie_election_cube",6e4*10);jQuery(".electioncubeiframe").hide()})});function ie_cubebox_createCookie(name,value,exTime){var date=new Date;date.setTime(date.getTime()+exTime);var expires=date.toGMTString();var offset=-date.getTimezoneOffset()/60;document.cookie=name+"="+value+";timezone="+offset+";expires="+expires+";path=/"}function ie_cubebox_getCookie(c_name){var i,x,y,ARRcookies=document.cookie.split(";");var arr_length=ARRcookies.length;for(i=0;i<arr_length;i++){x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x===c_name){return unescape(y)}}}
+;
+function com_set_Cookie(name,value,days){var expires="";if(days){var date=new Date;date.setTime(date.getTime()+days*24*60*60*1e3);expires="; expires="+date.toUTCString()}document.cookie=name+"="+(value||"")+expires+"; path=/"}function com_get_Cookie(name){var nameEQ=name+"=";var ca=document.cookie.split(";");var new_ca=ca.length;for(var i=0;i<new_ca;i++){var c=ca[i];while(" "===c.charAt(0)){c=c.substring(1,c.length)}if(0===c.indexOf(nameEQ)){return c.substring(nameEQ.length,c.length)}}return null}function addScriptJs(fileName){var head=document.head;var link=document.createElement("script");link.type="text/javascript";link.src=fileName;head.appendChild(link)}if(onscroll_script.device_type==="mobile"){var touch_scrool_event=true;jQuery(document).on({touchmove:function(e){if(touch_scrool_event){addScriptJs(onscroll_script.live_blog_script);addScriptJs(onscroll_script.twitter_script);addScriptJs(onscroll_script.insta_script);addScriptJs(onscroll_script.andbeyond_lib);addScriptJs(onscroll_script.andbeyond_lib_home);addScriptJs(onscroll_script.andbeyond_lib_liveblog);addScriptJs(onscroll_script.crazy_egg_script);addScriptJs(onscroll_script.adsbygooglejs);addScriptJs(onscroll_script.image_overlay_js)}touch_scrool_event=false}})}else{scroolFlag=false;jQuery(window).scroll(function(){if(typeof onscroll_script!=="undefined"){if(!scroolFlag&&window.scrollY>150){addScriptJs(onscroll_script.live_blog_script);addScriptJs(onscroll_script.twitter_script);addScriptJs(onscroll_script.insta_script);addScriptJs(onscroll_script.andbeyond_lib);addScriptJs(onscroll_script.andbeyond_lib_home);addScriptJs(onscroll_script.andbeyond_lib_liveblog);addScriptJs(onscroll_script.crazy_egg_script);addScriptJs(onscroll_script.adsbygooglejs);addScriptJs(onscroll_script.image_overlay_js);scroolFlag=true}}})}
+;
+/**
+ * Newsletter script.
+ *
+ * @package indian-express
+ */
+
+var nLvid = 2;
+if ( undefined !== newsletter_page && 'yes' === newsletter_page.page ) {
+	(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName( s )[0];
+		if ( ! d.getElementById( id )) {
+			return;
+		}
+		js     = d.createElement( s );
+		js.src = "https://media-central.indianexpress.com/static/subscription/js/newsletter.js";
+		fjs.parentNode.insertBefore( js, fjs );
+	}(document, "script", "id_newsletter_subscription_page"));
+} else {
+	var media_central = false;
+	jQuery( window ).scroll(
+		function () {
+			if ( ! media_central && window.scrollY > 150) {
+				media_central = true;
+				(function (d, s, id) {
+					var js, fjs = d.getElementsByTagName( s )[0];
+					if ( ! d.getElementById( id )) {
+						return;
+					}
+					js     = d.createElement( s );
+					js.src = "https://media-central.indianexpress.com/static/subscription/js/newsletter.js";
+					fjs.parentNode.insertBefore( js, fjs );
+				}(document, "script", "id_newsletter_subscription"));
+			}
+		}
+	);
+}
+;
+var board_result_widget=false;jQuery(window).scroll(function(){if(!board_result_widget&&window.scrollY>150){board_result_widget=true;(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){return}var link=document.createElement("link");link.setAttribute("rel","stylesheet");link.setAttribute("type","text/css");link.setAttribute("href","https://media-central.indianexpress.com/static/results/css/cbr-style.css");fjs.parentNode.insertBefore(link,fjs);js=d.createElement(s);js.setAttribute("type","text/javascript");js.setAttribute("charset","utf-8");var board=d.getElementById(id).getAttribute("data-cbrBoard");var lang=d.getElementById(id).getAttribute("data-cbrLang");var standard=d.getElementById(id).getAttribute("data-cbrStandard");var year=d.getElementById(id).getAttribute("data-cbrYear");var js_src="https://results.indianexpress.com/api/board?board=";if(standard!=null){js.src=js_src.concat(board).concat("&lang=").concat(lang).concat("&year=").concat(year).concat("&standard=").concat(standard)}else{js.src=js_src.concat(board).concat("&lang=").concat(lang).concat("&year=").concat(year)}fjs.parentNode.insertBefore(js,fjs)})(document,"script","cbr-base-register-div")}});
+;
+jQuery(document).ready(function(){if(0!==jQuery("#append_fifa_scorecard_on_story").length){var a=jQuery("#fifa-2018-matchid").val();if("undefined"!=typeof a&&""!==a)try{setInterval(function(){jQuery.ajax({type:"post",url:ajax_object.ajaxurl,data:{action:"display_scorecard_from_shortcode",security:jQuery("#fifa-scorecard-ajax-nonce").val(),matchid:a},success:function(a){jQuery("#append_fifa_scorecard_on_story").text(""),jQuery("#append_fifa_scorecard_on_story").append(a)}})},6e4)}catch(b){}}}),jQuery(document).ready(function(a){jQuery(document).on("click",".fifa-tabs ul li a",function(a){jQuery(this).parent().siblings().removeClass("active"),jQuery(this).parent().addClass("active");var b=jQuery(this).attr("href").split("-");jQuery("div[id^='"+b[0]+"']").hide(),jQuery("div[id='"+b[0]+"-"+b[1]+"']").show(),a.preventDefault()}),setInterval(function(){if(a("#fifa_match_center_id").length>0){var b=a("#fifa_match_center_id").val(),c=a(".fifa-tabs li.active"),d=a(".fifa-tabs ul").html();a.ajax({type:"post",url:ajax_object.ajaxurl,data:{action:"update_fifa_match_center",fifasecurity:a("#fifa-match-center-ajax-nonce").val(),fifa_match_center_id:b},success:function(b){if(""!==b.trim()){jQuery("#update_fifa_match").html(b),a(".fifa-tabs ul").html(d);var e=c.find("a").attr("href").split("-");Array.isArray(e)&&(jQuery("div[id^='"+e[0]+"']").hide(),jQuery("div[id='"+e[0]+"-"+e[1]+"']").show())}}})}},6e4)});;
+
+if ( 'undefined' !== typeof taboolaExports ) {
+
+	if (
+		'undefined' !== typeof taboolaExports.mode
+		&& 'undefined' !== typeof taboolaExports.container
+		&& 'undefined' !== typeof taboolaExports.placement
+		&& 'undefined' !== typeof taboolaExports.target_type
+	) {
+
+		window._taboola = window._taboola || [];
+
+		_taboola.push( {
+			mode: taboolaExports.mode, // Like 'alternating-thumbnails-a',
+			container: taboolaExports.container, // Element's id
+			placement: taboolaExports.placement, // Like 'below article'
+			target_type: taboolaExports.target_type // Type like 'mix'
+		} );
+
+	}
+}
+;
+window._taboola = window._taboola || [];
+_taboola.push( {flush: true} );
+;
+(function(e,h,l,c){e.fn.sonar=function(o,n){if(typeof o==="boolean"){n=o;o=c}return e.sonar(this[0],o,n)};var f=l.body,a="scrollin",m="scrollout",b=function(r,n,t){if(r){f||(f=l.body);var s=r,u=0,v=f.offsetHeight,o=h.innerHeight||l.documentElement.clientHeight||f.clientHeight||0,q=l.documentElement.scrollTop||h.pageYOffset||f.scrollTop||0,p=r.offsetHeight||0;if(!r.sonarElemTop||r.sonarBodyHeight!==v){if(s.offsetParent){do{u+=s.offsetTop}while(s=s.offsetParent)}r.sonarElemTop=u;r.sonarBodyHeight=v}n=n===c?0:n;return(!(r.sonarElemTop+(t?0:p)<q-n)&&!(r.sonarElemTop+(t?p:0)>q+o+n))}},d={},j=0,i=function(){setTimeout(function(){var s,o,t,q,p,r,n;for(t in d){o=d[t];for(r=0,n=o.length;r<n;r++){q=o[r];s=q.elem;p=b(s,q.px,q.full);if(t===m?!p:p){if(!q.tr){if(s[t]){e(s).trigger(t);q.tr=1}else{o.splice(r,1);r--;n--}}}else{q.tr=0}}}},25)},k=function(n,o){n[o]=0},g=function(r,p){var t=p.px,q=p.full,s=p.evt,o=b(r,t,q),n=0;r[s]=1;if(s===m?!o:o){setTimeout(function(){e(r).trigger(s===m?m:a)},0);n=1}d[s].push({elem:r,px:t,full:q,tr:n});if(!j){e(h).bind("scroll",i);j=1}};e.sonar=b;d[a]=[];e.event.special[a]={add:function(n){var p=n.data||{},o=this;if(!o[a]){g(this,{px:p.distance,full:p.full,evt:a})}},remove:function(n){k(this,a)}};d[m]=[];e.event.special[m]={add:function(n){var p=n.data||{},o=this;if(!o[m]){g(o,{px:p.distance,full:p.full,evt:m})}},remove:function(n){k(this,m)}}})(jQuery,window,document);;
+(function($) {
+	lazy_load_init();
+	$( 'body' ).bind( 'post-load', lazy_load_init ); // Work with WP.com infinite scroll
+
+	function lazy_load_init() {
+		$( 'img[data-lazy-src]' ).bind( 'scrollin', { distance: 200 }, function() {
+			lazy_load_image( this );
+		});
+
+		// We need to force load gallery images in Jetpack Carousel and give up lazy-loading otherwise images don't show up correctly
+		$( '[data-carousel-extra]' ).each( function() {
+			$( this ).find( 'img[data-lazy-src]' ).each( function() {
+				lazy_load_image( this );
+			} );
+		} );
+	}
+
+	function lazy_load_image( img ) {
+		var $img = jQuery( img ),
+			src = $img.attr( 'data-lazy-src' ),
+			srcset = $img.attr( 'data-lazy-srcset' ),
+			sizes = $img.attr( 'data-lazy-sizes' );
+
+		if ( ! src || 'undefined' === typeof( src ) )
+			return;
+
+		$img.unbind( 'scrollin' ) // remove event binding
+			.hide()
+			.removeAttr( 'data-lazy-src' )
+			.removeAttr( 'data-lazy-srcset' )
+			.removeAttr( 'data-lazy-sizes' )
+			.attr( 'data-lazy-loaded', 'true' );
+
+		img.src = src;
+		if ( srcset ) {
+			img.srcset = srcset;
+		}
+		if ( sizes ) {
+			img.sizes = sizes;
+		}
+		$img.fadeIn();
+	}
+})(jQuery);
+;

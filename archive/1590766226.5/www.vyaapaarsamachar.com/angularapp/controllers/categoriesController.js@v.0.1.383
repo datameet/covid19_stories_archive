@@ -1,0 +1,232 @@
+'use strict';
+angular.module('vyaapaarSamachar')
+.controller('categoriesController', function($rootScope, $sce, $q, MetaService, $scope, articleDetailData, $state, menuData, $stateParams, categoryListData, GENERAL_CONFIG, googleConvertUrl, $http, $timeout, opinionArticlesData) {
+    var currentStateName = $state.current.name;
+    $rootScope.showBreadcrumb = true;
+    $scope.s3_base_url = GENERAL_CONFIG.s3_base_url;
+    $scope.s3_article_167 = GENERAL_CONFIG.s3_article_167;
+    $scope.s3_article_1612 = GENERAL_CONFIG.s3_article_1612;
+    $scope.s3_article_1610 = GENERAL_CONFIG.s3_article_1610;
+    $scope.baseUrl = GENERAL_CONFIG.app_base_url;
+    $scope.scroll = $rootScope.scroll;
+    $scope.viewLoading = $rootScope.viewLoading;
+    $scope.deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    $scope.categoryList = [];
+    $scope.totalItem = 0;
+    $scope.isOpinionState = false;
+    if(!$rootScope.isArticlePage){
+       $scope.viewLoading = true; 
+    }
+    $scope.scroll();
+    if (navigator.userAgent.toString().search('Android') >= 0 || navigator.userAgent.toString().search('iPhone') >= 0) {
+        $scope.isMobile = true;
+    } else {
+        $scope.isMobile = false;
+    }
+    var googleCode1 = '\
+    <ins class="adsbygoogle"\
+         style="display:block"\
+         data-ad-client="ca-pub-8319278784249076"\
+         data-ad-slot="2857551371"\
+         data-ad-format="auto"\
+         data-full-width-responsive="true"></ins>';
+    var googleCode2 = '\
+    <ins class="adsbygoogle"\
+         style="display:block"\
+         data-ad-client="ca-pub-8319278784249076"\
+         data-ad-slot="4711145363"\
+         data-ad-format="auto"\
+         data-full-width-responsive="true"></ins>';
+    $scope.leftAdv1 = {imageUrl:'angularapp/assets/images/728x90.png',adLink:'https://www.sv-projects.org/adinathabodes',description:googleCode2};
+    $scope.rightAdv1 = {imageUrl:'angularapp/assets/images/300x250.png',adLink:'https://www.sv-projects.org/adinathabodes',description:googleCode1};
+    $scope.toggle = false;
+    if($state.params.articleID) {
+        $scope.articleId = $state.params.articleID;
+    }
+    var categoryName = $state.params.categoryName;
+    if(categoryName == '' || categoryName == null)
+    categoryName = 'null';
+    $rootScope.metaService = MetaService;
+    $scope.category_id = $stateParams.categoryID;
+    if (typeof($stateParams.categoryID) == 'undefined' && !$state.is('root.opinion')) {
+        var currentCategoryUrl = window.location.href;
+        var splitUrl = currentCategoryUrl.split('/');
+        if (splitUrl[2] == 'www.vyaapaarsamachar.com' && splitUrl[3] != 'development' && splitUrl[3] != 'testing') {
+            if(splitUrl[3] == 'news'){
+                $scope.category_id = splitUrl[4];
+                $scope.articleId = splitUrl[5];
+            }else{
+                $scope.category_id = splitUrl[4];
+                $scope.articleId = splitUrl[5];
+            }
+        }else if(splitUrl[3] == 'development'){
+            if(splitUrl[4] == 'news'){
+                $scope.category_id = splitUrl[5];
+                $scope.articleId = splitUrl[6];
+                $scope.categoryName = splitUrl[5];
+                $scope.articleName = splitUrl[6];
+            }else{
+                $scope.category_id = splitUrl[5];
+                $scope.articleId = splitUrl[6];
+                $scope.categoryName = splitUrl[5];
+                $scope.articleName = splitUrl[6];
+            }
+        } else {
+            if(splitUrl[4] == 'news'){
+                $scope.category_id = splitUrl[5];
+                $scope.articleId = splitUrl[6];
+                $scope.categoryName = splitUrl[5];
+                $scope.articleName = splitUrl[6];
+            }else{
+                $scope.category_id = splitUrl[5];
+                $scope.articleId = splitUrl[6];
+                $scope.categoryName = splitUrl[5];
+                categoryName= splitUrl[5];
+                $scope.articleName = splitUrl[6];
+            }
+        }
+    }
+    $scope.$watch(function() { return $state.params.articleID; }, function(p) {
+        $scope.article_id = $state.params.articleID;
+    });
+    $scope.$watch(function() { return $rootScope.counter }, function(p) {
+        $scope.loading = $rootScope.loading;
+        if ($rootScope.counter >= 1) {
+            $scope.loading = false;
+        }
+    });
+
+    // because of static Article detail we have to put this con dition to call this function for perticullar states because this controller is defined globally.
+    if ($state.current.url == '/news/:category/:title/:id' ||  $state.current.url == '/:share/categories/:categoryID/:categoryName' || currentStateName == '' || $state.is('root.opinion')) {
+        getResultsPage();
+    }
+    $scope.pagination = {
+        current: 1
+    };
+    $scope.pageChanged = function(newPage) {
+        getResultsPage(newPage - 1);
+    };
+    
+    function getResultsPage(pageNumber) {
+        if(!$state.is('root.opinion')) {
+            if(typeof pageNumber === "undefined" || pageNumber == 0)
+                var catObj = { id: $scope.category_id, category_name:categoryName, pageID: pageNumber  };
+            else
+                var catObj = { id: $scope.category_id, pageID: pageNumber  };
+            // this is just an example, in reality this stuff should be in a service
+            var categoryData = categoryListData.get(catObj, function() {
+                var currentActiveUrl = window.location.href;
+                if(!categoryData.matched_pattern)
+                {
+                    $state.go('not-found');
+                }
+                //if((categoryData.category_name == '' || categoryData.category_name == null || !categoryData.matched_pattern) && !currentActiveUrl.includes('/news/')){
+                if((categoryData.category_name == '' || categoryData.category_name == null 
+                    || !categoryData.matched_pattern) && !currentActiveUrl.includes('/news/') && !currentActiveUrl.includes('/current-affairs/') && !currentActiveUrl.includes('/commodities/') && 
+                    !currentActiveUrl.includes('/forex/') && !currentActiveUrl.includes('/mandi-bhav/') && !currentActiveUrl.includes('/mutual-funds/') && 
+                    !currentActiveUrl.includes('/personal-finance/') && !currentActiveUrl.includes('/share-market/') && !currentActiveUrl.includes('/small-business/')
+                    && !currentActiveUrl.includes('/trends/') && !currentActiveUrl.includes('/vs-investigation-series/') && !currentActiveUrl.includes('/top-head/') ){
+                    if(typeof pageNumber === "undefined" || pageNumber == 0  )
+                        $state.go('not-found');
+                    else
+                        getCategoryData(categoryData,pageNumber);
+                }else{
+                    getCategoryData(categoryData,pageNumber);
+                }
+            });
+        } else {
+            var params = {'blogger': 1, 'page': pageNumber};
+            opinionArticlesData.get(params, function(response) {
+                if(response.result === 'success') {
+                    getCategoryData(response, pageNumber);
+                }
+            });
+        }
+    }
+
+    function getCategoryData(categoryData, thisPageNumber){
+        $scope.result = categoryData.result;
+            $scope.articlePerPage = categoryData.per_page;
+            if (typeof thisPageNumber === "undefined" || thisPageNumber == 0) {
+                $(".cat-banner-section").removeClass("hidden");
+                $(".cat-detailPage").removeClass("hidden");
+                if (categoryData.response && categoryData.response.length > 0) {
+                    var categoryArr = categoryData.response;
+                    angular.forEach(categoryArr, function(value, key) {
+                     categoryArr[key].created_date = new Date(value.created_date.replace(/-/g, "/")).toISOString();
+                    });
+                    categoryData.response = categoryArr;
+                    $scope.catBannerItem = categoryData.response[0];
+                    /* Make category_name capitalize to set as page <title>*/
+                    if (categoryData.category_name) {
+                        var title = categoryData.category_name;
+                        var metaTitle = title.replace(/\w+/g, function(txt) {
+                            // Replace '-' from string with space and capitalize each word
+                            return txt.charAt(0).toUpperCase() + txt.substr(1);
+                        }).replace(/-/g, " ");
+                        $scope.metaTitle = metaTitle;
+                        if ($state.current.name == "categories") {
+                            if (metaTitle == 'News' || metaTitle == 'Stock News')
+                                $state.current.data.pageTitle = metaTitle + ' | ';
+                            else
+                                $state.current.data.pageTitle = metaTitle + ' News | ';
+                        }
+                    }
+                    $scope.categoryList = categoryData.response;
+                    $rootScope.counter = $rootScope.counter + 1;
+                }
+            } else {
+                var categoryArr = categoryData.response;
+                angular.forEach(categoryArr, function(value, key) {
+                    categoryArr[key].created_date = new Date(value.created_date.replace(/-/g, "/")).toISOString();
+                });
+                categoryData.response = categoryArr;
+                $(".cat-banner-section").addClass("hidden");
+                $(".cat-detailPage").addClass("hidden");
+                $scope.categoryList = categoryData.response;
+                $rootScope.counter = $rootScope.counter + 1
+            }
+            var commonHeader = $http.defaults.headers.common;
+            var post = $http.defaults.headers.post;
+            if ($scope.categoryList) {
+                $scope.categoryList = $scope.categoryList.map(function(item) {
+
+                    /*Pass main share url .*/
+                    var url = $scope.baseUrl + item.parent_category_name + '/'  + item.category_name + '/' + item.url;
+
+                    /*Image url*/
+                    item.imageUrl = $scope.s3_base_url + $scope.s3_article_167 + '/' + item.image;
+
+                    /*Remove auth param from header because, google not support auth param in header, set only application/json*/
+                    $http.defaults.headers.common = { Accept: "application/json, text/plain, */*" };
+                    $http.defaults.headers.post['Content-Type'] = "application/json";
+                    var data = JSON.stringify({
+                        "longUrl": url
+                    });
+                    //var urlData = googleConvertUrl.save(data, function(res) {
+                        /*Set auth param in header*/
+                        /*$http.defaults.headers.common = commonHeader;
+                        $http.defaults.headers.post = post;
+                        item.linkUrl = res.id;
+                    });*/
+                    /*Set auth param in header*/
+                    $http.defaults.headers.common = commonHeader;
+                    $http.defaults.headers.post = post;
+                    item.facebookLinkUrl = url;
+                    item.linkUrl = url;
+                    return item;
+                });
+            }
+
+            $scope.totalItem = categoryData.total_records - 1;
+            if ($scope.categoryList) {
+                $scope.itemNum = categoryData.total_records;
+            }
+            //$scope.scroll();
+            $scope.viewLoading = false;
+    }
+    // $scope.scroll();
+});
+ 
+angular.module('vyaapaarSamachar').controller('articleDetailController', function($scope, $stateParams, MetaService, articleDetailData, $rootScope, $sanitize, GENERAL_CONFIG, googleConvertUrl, $http, $timeout, $state) {
+});

@@ -1,0 +1,194 @@
+{
+    "title": "Three workers hanged, no one had any food and no one was worried about going home | \u0924\u0940\u0928 \u0936\u094d\u0930\u092e\u093f\u0915\u094b\u0902 \u0928\u0947 \u0932\u0917\u093e\u0908 \u092b\u093e\u0902\u0938\u0940, \u0915\u093f\u0938\u0940 \u0915\u0947 \u092a\u093e\u0938 \u0916\u093e\u0928\u093e \u0928\u0939\u0940\u0902 \u0924\u094b \u0915\u094b\u0908 \u0918\u0930 \u091c\u093e\u0928\u0947 \u0915\u094b \u092a\u0930\u0947\u0936\u093e\u0928 \u0925\u093e - Dainik Bhaskar",
+    "sources": [
+        "/data/sources/stdin-1590766226.txt",
+        "/data/sources/stdin-1590773363.txt"
+    ],
+    "timestamp": "1590766226.227",
+    "history": {
+        "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:38.567405",
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590774920",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 18,
+                "start_ts": "2020-05-29 17:55:20.236376",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+            }
+        ],
+        "media": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:48.005430",
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--user-agent",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 1,
+                "start_ts": "2020-05-29 17:55:46.198900",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "media"
+            }
+        ],
+        "favicon": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:20.235092",
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:55:19.883811",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "favicon.ico"
+            }
+        ],
+        "pdf": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:42.054553",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 3,
+                "start_ts": "2020-05-29 17:55:38.567701",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "output.pdf"
+            }
+        ],
+        "dom": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:46.198545",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:55:44.135067",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "output.html"
+            }
+        ],
+        "archive_org": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:50.756945",
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/c79ce2b1f5c24ac30185c9e430fb3ea197d2a9f1 (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:55:48.005698",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "https://web.archive.org/web/20200529175549/https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+            }
+        ],
+        "screenshot": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:44.134787",
+                "cmd": [
+                    "google-chrome-unstable",
+                    "--headless",
+                    "--no-sandbox",
+                    "--disable-gpu",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+                ],
+                "duration": 2,
+                "start_ts": "2020-05-29 17:55:42.054803",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "screenshot.png"
+            }
+        ],
+        "title": [
+            {
+                "status": "succeeded",
+                "end_ts": "2020-05-29 17:55:19.883531",
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "duration": 0,
+                "start_ts": "2020-05-29 17:55:19.192853",
+                "pwd": "/data/archive/1590766226.227",
+                "output": "Three workers hanged, no one had any food and no one was worried about going home | \u0924\u0940\u0928 \u0936\u094d\u0930\u092e\u093f\u0915\u094b\u0902 \u0928\u0947 \u0932\u0917\u093e\u0908 \u092b\u093e\u0902\u0938\u0940, \u0915\u093f\u0938\u0940 \u0915\u0947 \u092a\u093e\u0938 \u0916\u093e\u0928\u093e \u0928\u0939\u0940\u0902 \u0924\u094b \u0915\u094b\u0908 \u0918\u0930 \u091c\u093e\u0928\u0947 \u0915\u094b \u092a\u0930\u0947\u0936\u093e\u0928 \u0925\u093e - Dainik Bhaskar"
+            }
+        ]
+    },
+    "updated": "1590788301.92483",
+    "tags": "",
+    "url": "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
+}
