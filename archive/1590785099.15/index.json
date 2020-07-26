@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Police officer suspended for assaulting citizen in Humnabad - The Hindu",
     "timestamp": "1590785099.15",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785719",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece"
+                ],
+                "end_ts": "2020-05-29 20:55:28.705276",
+                "start_ts": "2020-05-29 20:55:19.265398",
+                "pwd": "/data/archive/1590785099.15",
+                "output": "www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529205545/https://www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 9,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590785719",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece"
-                ],
-                "end_ts": "2020-05-29 20:55:28.705276",
-                "start_ts": "2020-05-29 20:55:19.265398",
-                "pwd": "/data/archive/1590785099.15",
-                "output": "www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785747.615897",
+    "updated": "1595622184.976831",
     "tags": "",
     "url": "https://www.thehindu.com/news/national/karnataka/police-officer-suspended-for-assaulting-citizen-in-humnabad/article31298628.ece"
 }

@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "'Beaten, abused, spat on': People from Northeast endure racist slurs amid coronavirus panic",
     "timestamp": "1590785099.54",
     "history": {
         "title": [
@@ -39,6 +39,24 @@
                 "start_ts": "2020-05-29 21:19:36.995929",
                 "pwd": "/data/archive/1590785099.54",
                 "output": "Command 'google-chrome-unstable' timed out after 60 seconds"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.54",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:54:25.904490",
+                "end_ts": "2020-07-25 01:54:34.658641",
+                "duration": 8
             }
         ],
         "favicon": [
@@ -187,7 +205,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787250.716586",
+    "updated": "1595622274.659909",
     "tags": "",
     "url": "https://theprint.in/india/beaten-abused-spat-on-people-from-northeast-endure-racist-slurs-amid-coronavirus-panic/387716/"
 }

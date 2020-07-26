@@ -1,0 +1,192 @@
+{
+    "url": "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html",
+    "timestamp": "1595519884.77",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "\u0b95\u0bc1\u0bae\u0bcd\u0baa\u0b95\u0bcb\u0ba3\u0ba4\u0bcd\u0ba4\u0bbf\u0bb2\u0bcd \u0b8a\u0bb0\u0b9f\u0b99\u0bcd\u0b95\u0bbe\u0bb2\u0bcd \u0bb5\u0bbe\u0bb4\u0bcd\u0bb5\u0bbe\u0ba4\u0bbe\u0bb0\u0ba4\u0bcd\u0ba4\u0bc8 \u0b87\u0bb4\u0ba8\u0bcd\u0ba4 \u0b86\u0b9f\u0bcd\u0b9f\u0bcb \u0b93\u0b9f\u0bcd\u0b9f\u0bc1\u0ba8\u0bb0\u0bcd \u0b95\u0b9f\u0ba9\u0bcd \u0b9a\u0bc1\u0bae\u0bc8\u0baf\u0bbe\u0bb2\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1\u0ba4\u0bcd \u0ba4\u0bb1\u0bcd\u0b95\u0bc6\u0bbe\u0bb2\u0bc8; \u0b89\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bae\u0bbe\u0ba9 \u0b95\u0b9f\u0bbf\u0ba4\u0bae\u0bcd \u0b9a\u0bbf\u0b95\u0bcd\u0b95\u0bbf\u0baf\u0ba4\u0bc1 | Auto driver suicide due to lockdown - hindutamil.in",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:03:55.595241",
+                "end_ts": "2020-07-24 23:03:57.961511",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.hindutamil.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:03:57.964809",
+                "end_ts": "2020-07-24 23:03:58.247397",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595612038",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:03:58.252986",
+                "end_ts": "2020-07-24 23:04:24.830876",
+                "duration": 26
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:04:24.832443",
+                "end_ts": "2020-07-24 23:05:24.986401",
+                "duration": 60
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:05:24.989152",
+                "end_ts": "2020-07-24 23:06:00.356070",
+                "duration": 35
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:06:00.359465",
+                "end_ts": "2020-07-24 23:06:07.504653",
+                "duration": 7
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:06:07.506157",
+                "end_ts": "2020-07-24 23:06:13.561963",
+                "duration": 6
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.hindutamil.in/news/crime/558582-auto-driver-suicide-due-to-lockdown.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.77",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:06:13.564461",
+                "end_ts": "2020-07-24 23:07:13.612393",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595612233.613074"
+}

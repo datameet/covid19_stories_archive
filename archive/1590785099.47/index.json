@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "'We Weren't Even Tested': Mystery Over Saharanpur Police's List of COVID-19 Patients Deepens",
     "timestamp": "1590785099.47",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 29,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786705",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thewire.in/communalism/saharanpur-police-coronavirus-tablighi"
+                ],
+                "end_ts": "2020-05-29 21:12:14.797710",
+                "start_ts": "2020-05-29 21:11:45.369978",
+                "pwd": "/data/archive/1590785099.47",
+                "output": "thewire.in/communalism/saharanpur-police-coronavirus-tablighi.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529211239/https://thewire.in/communalism/saharanpur-police-coronavirus-tablighi"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 29,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786705",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://thewire.in/communalism/saharanpur-police-coronavirus-tablighi"
-                ],
-                "end_ts": "2020-05-29 21:12:14.797710",
-                "start_ts": "2020-05-29 21:11:45.369978",
-                "pwd": "/data/archive/1590785099.47",
-                "output": "thewire.in/communalism/saharanpur-police-coronavirus-tablighi.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786760.01717",
+    "updated": "1595622264.964633",
     "tags": "",
     "url": "https://thewire.in/communalism/saharanpur-police-coronavirus-tablighi"
 }

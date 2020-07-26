@@ -1,0 +1,276 @@
+﻿@media only screen and (max-width: 1005px) {
+.header_bottom > div {
+        width: 100% !important;
+        text-align: center;
+    }
+.header_bottom > div > .uni_logo, .header_left, .header_bottom_ad {
+            float: none;
+            margin: 0;
+            padding: 0;
+        }
+.header_left span {
+                float: none !important;
+                margin: 4px 0 12px;
+                display: inline-block;
+            }
+}
+@media only screen and (max-width: 991px) {
+    .lftmenu {
+        width: auto;
+    }
+.MainContainer > aside, .subscribe,.subscribe ul { width: auto !important; }
+ .lftmenu img,.subscribe ul li img { height: 32px; }
+.left .ticker-controls { float: right;}
+ .ticker-content {
+     padding-top: 0;
+        line-height: normal;
+    }
+.ticker { height: auto;}
+.ticker-wrapper.has-js {
+        box-sizing: border-box;
+        width: 100% !important;
+        padding: 0 10px !important;
+        margin: 0 !important;
+        height: 35px !important;
+    }
+ .MainContainer > section, .div1 { width: 100%; }
+.MainContainer > section {  margin-top: 10px; }
+.left .ticker-controls {
+     display: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: right !important;
+        padding-top: 0;
+    }
+.header_left {
+        width: 100% !important;
+        padding: 1% !important;
+        text-align: center;
+        box-sizing: border-box;
+    }
+ .footermenu_container ul,.footermenu_second ul {
+        padding: 8px 15px;
+        text-align: center;
+        background: #11305f;
+        box-sizing: border-box;
+    }
+ .footermenu_container ul li {
+            float: none;
+            padding: 0;
+            margin-right: 10px;
+        }
+ .footermenu_container ul li a {
+                font-size: 11px;
+            }
+ .header_left span {
+        margin: 10px 0 5px;
+        color: #fff !important;
+    }
+ .footermenu_second {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+.footermenu_second ul li {
+            float: none;
+            display: inline-block;
+        }
+ .footermenu_second ul li a {
+                font-size: 11px;
+            }
+.footer_followus {
+        float: none;
+        height: 27px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 258px;
+        box-sizing: border-box;
+    }
+ .footer_followus span {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+.footer_followus ul {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+ .footer_followus ul li {
+                margin: 0 10px;
+                padding: 0;
+            }
+.toggleMenu > img {
+        height: 32px;
+    }
+input[dataname="txtsearch"] {
+        width: 150px;
+    }
+.searchBarR1 {
+        width: 150px;
+    }
+ .topmenu_container > div:first-child {
+        width: 76% !important;
+        margin-left: 2%;
+    }
+.searchBoxRR {
+        width: 150px !important;
+    }
+ .topleadimg {
+        width: auto;
+    }
+.toplead_main .pull-right {
+        overflow: inherit !important;
+        float: none;
+        width: auto;
+    }
+.ticker-title,
+    .MainCtA,
+    .MainCtAA,
+    .disNone {
+        display: none;
+    }
+ .ticker-content {
+        width: 100%;
+    }
+.MainContainer {
+        margin-top: 5px;
+    }
+ .nav {
+        display: block;
+        width: 95px !important;
+        position: absolute;
+        z-index: 9;
+        top: 100%;
+        background: #1a3967 !important;
+    }
+.nav > li {
+            width: 100%;
+            border-bottom: solid 1px #0f2d5a;
+        }
+ .nav > li > .parent {
+                margin-right: 10px;
+            }
+.nav > li.hover {
+                position: relative;
+            }
+ .nav > li.hover > ul {
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    border-left: solid 1px #0f2d5a;
+                    width: 130px;
+                }
+ .nav li li a {
+            display: block;
+            background: #1a3967;
+            position: relative;
+            z-index: 100;
+            margin: 0%;
+            border-bottom: solid 1px #0f2d5a;
+            font-size: 13px;
+            padding: 7px 15px;
+        }
+
+        .nav.navbar-nav.topNavUL.topNavULR3 {
+            display: none !important;
+        }
+
+    section div.LeftContainer {
+        padding: 0;
+        margin: 0;
+    }
+.LeftContainer_main {
+        width: 100%;
+    }
+ #mygallery30 {
+ width: 100% !important;}
+.MainContainer > section { padding-right: 0;}
+ .footer_followus,.footermenu_container ul { width: 100%; }
+.footer_followus {
+        text-align: center;
+        padding: 0;
+    }
+.colxsHide {display: none; }
+.newsMenuTxt {
+        display: inline-block;
+        background-color: #990000;
+        color: #fff;
+        font-size: 11px;
+        padding: 4px 5px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .stepcarousel {
+        width:100% !important;
+    }
+         .panel-img {
+            width:300px !important;
+        }
+    
+}
+@media only screen and (max-width: 767px) {
+    .rTFlex {
+    display: block!important;
+}
+}
+@media only screen and (max-width: 450px) {
+    .ticker{
+        height:20px !important;
+    }
+    .srch_btn {
+        position: absolute !important;
+        border-width: 0px !important;
+        top: 20% !important;
+        left: 70% !important;
+    }
+
+    .rspv_txtbox {
+        position: absolute !important;
+        border: 1px solid black !important;
+        top: 5px !important;
+        width: 36.6% !important;
+        left: 30% !important;
+    }
+
+     .stepcarousel {
+        width:100% !important;
+    }
+         .panel-img {
+		width:98% !important;
+	}
+	
+   .SandboxRoot.env-bp-330 .timeline-Tweet-text {
+        margin-left:0px !important;
+    }
+    .timeline-Tweet-media {
+        margin-left:0px !important;
+    }
+    .weather-box {
+        margin-left:22%;
+    }
+    .currency-box {
+        margin-left:29%;
+    }
+   .Otherlinks_News {
+        text-align:center !important;
+    }
+    .imglry {
+        width:100% !important;
+    }
+     }
+@media only screen and (max-width: 358px) {
+    .searchBoxRR {
+        width: 120px !important;
+        font-size: 12px !important;
+    }
+
+    .toggleMenu > img,
+    .lftmenu img, .subscribe ul li img,
+    .topmenu_container {
+        height: 26px;
+    }
+
+    .subscribe {
+        top: 0 !important;
+    }
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/",
+    "timestamp": "1595519884.158",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "\u092a\u094c\u0921\u093c\u0940 \u0917\u0922\u093c\u0935\u093e\u0932 \u0938\u0947 \u092c\u0921\u093c\u0940 \u0916\u092c\u0930 : \u092a\u094d\u0930\u0927\u093e\u0928 \u0915\u0947 \u092d\u093e\u0908 \u0928\u0947 \u0915\u094d\u0935\u093e\u0930\u0902\u091f\u0940\u0928 \u0938\u0947\u0902\u091f\u0930 \u092e\u0947\u0902 \u0915\u0940 \u0916\u0941\u0926\u0915\u0941\u0936\u0940 | Khabar Uttarakhand News",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:13.614331",
+                "end_ts": "2020-07-25 01:14:14.764347",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=khabaruttarakhand.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:14.769072",
+                "end_ts": "2020-07-25 01:14:16.648864",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619856",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:16.651258",
+                "end_ts": "2020-07-25 01:14:33.126990",
+                "duration": 16
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:33.128844",
+                "end_ts": "2020-07-25 01:14:41.458609",
+                "duration": 8
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:41.460223",
+                "end_ts": "2020-07-25 01:14:45.769195",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:45.770979",
+                "end_ts": "2020-07-25 01:14:49.774885",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:14:49.776700",
+                "end_ts": "2020-07-25 01:15:41.121773",
+                "duration": 51
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://khabaruttarakhand.com/big-news-from-pauris-dwarikhal-block-pradhans-brother-commits-suicide-in-quarantine-center/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.158",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:15:41.124141",
+                "end_ts": "2020-07-25 01:16:41.142603",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595620001.143079"
+}

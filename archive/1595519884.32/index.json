@@ -1,0 +1,192 @@
+{
+    "url": "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html",
+    "timestamp": "1595519884.32",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "MP Trader Commits Suicide Citing Losses Due to Lockdown",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:48:10.807245",
+                "end_ts": "2020-07-24 21:48:12.605432",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:48:12.612558",
+                "end_ts": "2020-07-24 21:48:13.604254",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595607493",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:48:13.606342",
+                "end_ts": "2020-07-24 21:48:42.919947",
+                "duration": 29
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:48:42.923454",
+                "end_ts": "2020-07-24 21:49:19.597266",
+                "duration": 36
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:49:19.600882",
+                "end_ts": "2020-07-24 21:49:42.201900",
+                "duration": 22
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:49:42.204524",
+                "end_ts": "2020-07-24 21:49:46.483820",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:49:46.487341",
+                "end_ts": "2020-07-24 21:49:49.309817",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/mp-trader-commits-suicide-citing-losses-due-to-lockdown-2661665.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.32",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:49:49.312907",
+                "end_ts": "2020-07-24 21:50:08.637060",
+                "duration": 19
+            }
+        ]
+    },
+    "updated": "1595607608.637302"
+}

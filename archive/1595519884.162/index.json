@@ -1,0 +1,192 @@
+{
+    "url": "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true",
+    "timestamp": "1595519884.162",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "Noida: Pregnant woman dies, family says turned away by 8 hospitals in 12 hours | Cities News,The Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:13.470681",
+                "end_ts": "2020-07-25 01:21:14.546472",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:14.552510",
+                "end_ts": "2020-07-25 01:21:14.818261",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620274",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/index.html@__twitter_impression=true.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:14.825662",
+                "end_ts": "2020-07-25 01:21:19.214088",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:19.219200",
+                "end_ts": "2020-07-25 01:21:22.418265",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:22.419565",
+                "end_ts": "2020-07-25 01:21:23.620514",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:23.622193",
+                "end_ts": "2020-07-25 01:21:24.198569",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:21:24.200481",
+                "end_ts": "2020-07-25 01:21:25.469099",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/cities/noida-pregnant-woman-dies-family-says-turned-away-by-8-hospitals-in-12-hours-6446459/lite/?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.162",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:21:25.470565",
+                "end_ts": "2020-07-25 01:22:17.202742",
+                "duration": 51
+            }
+        ]
+    },
+    "updated": "1595620337.202984"
+}

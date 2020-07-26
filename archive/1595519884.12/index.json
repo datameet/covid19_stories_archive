@@ -1,0 +1,192 @@
+{
+    "url": "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece",
+    "timestamp": "1595519884.12",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "Coronavirus lockdown | Tripura man dies after failing to buy a smartphone for daughter - The Hindu",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:08:39.899918",
+                "end_ts": "2020-07-24 20:08:54.486266",
+                "duration": 14
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thehindu.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:08:54.487935",
+                "end_ts": "2020-07-24 20:08:54.726386",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601534",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:08:54.729772",
+                "end_ts": "2020-07-24 20:09:54.741037",
+                "duration": 60
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:09:54.748315",
+                "end_ts": "2020-07-24 20:10:10.042950",
+                "duration": 15
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:10:10.049467",
+                "end_ts": "2020-07-24 20:10:13.056475",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:10:13.058217",
+                "end_ts": "2020-07-24 20:10:16.223351",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:10:16.226362",
+                "end_ts": "2020-07-24 20:10:23.026169",
+                "duration": 6
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thehindu.com/news/national/coronavirus-lockdown-tripura-man-dies-after-failing-to-give-daughter-smartphone/article31972164.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.12",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:10:23.028254",
+                "end_ts": "2020-07-24 20:10:59.139051",
+                "duration": 36
+            }
+        ]
+    },
+    "updated": "1595601659.140462"
+}

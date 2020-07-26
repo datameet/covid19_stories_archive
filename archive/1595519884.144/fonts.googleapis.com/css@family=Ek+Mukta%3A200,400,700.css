@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Ek Mukta ExtraLight'), local('EkMukta-ExtraLight'), url(https://fonts.gstatic.com/s/ekmukta/v17/mem6YaCmzCuv3KJUDI7dU60Zdcg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ek Mukta Regular'), local('EkMukta-Regular'), url(https://fonts.gstatic.com/s/ekmukta/v17/mem9YaCmzCuv3KJUDIYScr0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ek Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ek Mukta Bold'), local('EkMukta-Bold'), url(https://fonts.gstatic.com/s/ekmukta/v17/mem6YaCmzCuv3KJUDI6pV60Zdcg.ttf) format('truetype');
+}

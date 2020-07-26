@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "\u0915\u094b\u0930\u094b\u0928\u093e: \u092c\u0947\u0917\u0942\u0938\u0930\u093e\u092f \u092e\u0947\u0902 \u0907\u0938 \u0935\u093e\u092f\u0930\u0938 \u0915\u094b \u0932\u0947\u0915\u0930 \u0915\u094d\u092f\u093e \u092e\u093e\u0939\u094c\u0932 \u0916\u093c\u0930\u093e\u092c \u0939\u094b \u0930\u0939\u093e \u0939\u0948? - BBC News \u0939\u093f\u0902\u0926\u0940",
     "timestamp": "1590785099.37",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 19,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786290",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.bbc.com/hindi/india-52363091"
+                ],
+                "end_ts": "2020-05-29 21:05:10.256251",
+                "start_ts": "2020-05-29 21:04:50.407516",
+                "pwd": "/data/archive/1590785099.37",
+                "output": "www.bbc.com/hindi/india-52363091.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529210525/https://www.bbc.com/hindi/india-52363091"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 19,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786290",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.bbc.com/hindi/india-52363091"
-                ],
-                "end_ts": "2020-05-29 21:05:10.256251",
-                "start_ts": "2020-05-29 21:04:50.407516",
-                "pwd": "/data/archive/1590785099.37",
-                "output": "www.bbc.com/hindi/india-52363091.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786327.688777",
+    "updated": "1595622193.849052",
     "tags": "",
     "url": "https://www.bbc.com/hindi/india-52363091"
 }

@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Unable to detect page title",
     "timestamp": "1590785099.10",
     "history": {
         "title": [
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785606.618561",
+    "updated": "1595622184.056676",
     "tags": "",
     "url": "https://www.thenewsminute.com/article/covid-19-muslims-amd-muslim-volunteers-heckled-harassed-karnataka-121977"
 }

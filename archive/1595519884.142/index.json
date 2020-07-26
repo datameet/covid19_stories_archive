@@ -1,0 +1,192 @@
+{
+    "url": "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms",
+    "timestamp": "1595519884.142",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "auto driver suicide in pudukkottai: \u0baa\u0bc1\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0b9f\u0bcd\u0b9f\u0bc8: \u0b8a\u0b9f\u0b99\u0bcd\u0b95\u0bbe\u0bb2\u0bcd \u0bb5\u0bb1\u0bc1\u0bae\u0bc8, \u0b86\u0b9f\u0bcd\u0b9f\u0bcb \u0b93\u0b9f\u0bcd\u0b9f\u0bc1\u0ba8\u0bb0\u0bcd \u0ba4\u0bc2\u0b95\u0bcd\u0b95\u0bbf\u0bb2\u0bbf\u0b9f\u0bcd\u0b9f\u0bc1 \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8..! - lockdown poverty auto driver commits suicide in pudukkottai | Samayam Tamil",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:48:55.082447",
+                "end_ts": "2020-07-25 00:48:57.877687",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=tamil.samayam.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:48:57.879017",
+                "end_ts": "2020-07-25 00:48:58.320797",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595618338",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:48:58.323289",
+                "end_ts": "2020-07-25 00:49:03.598129",
+                "duration": 5
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:49:03.603055",
+                "end_ts": "2020-07-25 00:49:08.250891",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:49:08.253096",
+                "end_ts": "2020-07-25 00:49:09.915829",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:49:09.917082",
+                "end_ts": "2020-07-25 00:49:10.973258",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:49:10.975304",
+                "end_ts": "2020-07-25 00:49:13.704875",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://tamil.samayam.com/latest-news/state-news/lockdown-poverty-auto-driver-commits-suicide-in-pudukkottai/articleshow/76648433.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.142",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:49:13.706192",
+                "end_ts": "2020-07-25 00:50:07.000739",
+                "duration": 53
+            }
+        ]
+    },
+    "updated": "1595618407.001319"
+}

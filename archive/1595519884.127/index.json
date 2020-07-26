@@ -1,0 +1,192 @@
+{
+    "url": "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html",
+    "timestamp": "1595519884.127",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "\u0c2c\u0c38\u0c4d\u0c38\u0c41\u0c32\u0c4b \u0c26\u0c17\u0c4d\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28 \u0c35\u0c4d\u0c2f\u0c15\u0c4d\u0c24\u0c3f\u0c28\u0c3f \u0c15\u0c3f\u0c02\u0c26\u0c3f\u0c15\u0c3f \u0c26\u0c3f\u0c02\u0c2a\u0c47\u0c36\u0c3e\u0c30\u0c41. \u0c05\u0c02\u0c24\u0c32\u0c4b\u0c28\u0c47..\u0c2c\u0c38\u0c4d\u0c38\u0c41\u0c32\u0c4b \u0c26\u0c17\u0c4d\u0c17\u0c41\u0c24\u0c41\u0c28\u0c4d\u0c28 \u0c35\u0c4d\u0c2f\u0c15\u0c4d\u0c24\u0c3f\u0c28\u0c3f \u0c15\u0c3f\u0c02\u0c26\u0c3f\u0c15\u0c3f \u0c26\u0c3f\u0c02\u0c2a\u0c47\u0c36\u0c3e\u0c30\u0c41. \u0c05\u0c02\u0c24\u0c32\u0c4b\u0c28\u0c47.. - Bus Passenger Died On The Road Sent Out The Patient From Bus Due To Coughing",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:23:12.787696",
+                "end_ts": "2020-07-25 00:23:13.723925",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=tv9telugu.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:23:13.728564",
+                "end_ts": "2020-07-25 00:23:14.000302",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595616794",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:23:14.007141",
+                "end_ts": "2020-07-25 00:24:02.135710",
+                "duration": 48
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:24:02.136928",
+                "end_ts": "2020-07-25 00:24:13.250701",
+                "duration": 11
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:24:13.251965",
+                "end_ts": "2020-07-25 00:24:16.248377",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:24:16.249920",
+                "end_ts": "2020-07-25 00:24:19.827328",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:24:19.830534",
+                "end_ts": "2020-07-25 00:24:22.382928",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://tv9telugu.com/bus-passenger-died-on-the-road-sent-out-the-patient-from-bus-due-to-coughing-257716.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.127",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:24:22.384214",
+                "end_ts": "2020-07-25 00:25:02.940900",
+                "duration": 40
+            }
+        ]
+    },
+    "updated": "1595616902.941396"
+}

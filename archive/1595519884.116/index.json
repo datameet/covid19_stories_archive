@@ -1,0 +1,192 @@
+{
+    "url": "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897",
+    "timestamp": "1595519884.116",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "Migrant Labour died by snake bite in a Quarantine Center in Balurghat - Anandabazar",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:06:41.469729",
+                "end_ts": "2020-07-25 00:06:43.010817",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.anandabazar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:06:43.012408",
+                "end_ts": "2020-07-25 00:06:43.943654",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595615803",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:06:43.950700",
+                "end_ts": "2020-07-25 00:07:11.838719",
+                "duration": 27
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:07:11.840676",
+                "end_ts": "2020-07-25 00:07:23.998473",
+                "duration": 12
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:07:23.999665",
+                "end_ts": "2020-07-25 00:08:24.078740",
+                "duration": 60
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:08:24.083695",
+                "end_ts": "2020-07-25 00:08:27.125019",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:08:27.127300",
+                "end_ts": "2020-07-25 00:08:30.381809",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.anandabazar.com/state/migrant-labour-died-by-snake-bite-in-a-quarantine-center-in-balurghat-1.1159897"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.116",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:08:30.384326",
+                "end_ts": "2020-07-25 00:09:30.355036",
+                "duration": 59
+            }
+        ]
+    },
+    "updated": "1595615970.355351"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown",
+    "timestamp": "1595519884.121",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "Man Commits Suicide Due To Financial Crisis In Lockdown - \u091c\u0942\u0924\u093e \u0915\u093e\u0930\u0940\u0917\u0930 \u0928\u0947 \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e, \u0938\u0941\u0938\u093e\u0907\u0921 \u0928\u094b\u091f \u092e\u0947\u0902 \u0932\u093f\u0916\u093e- 25 \u0939\u091c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947 \u0925\u0947, \u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u0916\u0930\u094d\u091a \u0939\u094b \u0917\u090f - Amar Ujala Hindi News Live",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:15:53.381864",
+                "end_ts": "2020-07-25 00:15:56.109871",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.amarujala.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:15:56.115686",
+                "end_ts": "2020-07-25 00:15:56.995091",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595616356",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:15:56.998099",
+                "end_ts": "2020-07-25 00:16:09.933302",
+                "duration": 12
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:16:09.934551",
+                "end_ts": "2020-07-25 00:16:12.893457",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:16:12.895101",
+                "end_ts": "2020-07-25 00:16:14.488316",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:16:14.490321",
+                "end_ts": "2020-07-25 00:16:15.773785",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:16:15.775096",
+                "end_ts": "2020-07-25 00:16:18.716378",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.amarujala.com/uttar-pradesh/agra/man-commits-suicide-due-to-financial-crisis-in-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.121",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:16:18.717737",
+                "end_ts": "2020-07-25 00:17:10.989087",
+                "duration": 52
+            }
+        ]
+    },
+    "updated": "1595616430.989946"
+}

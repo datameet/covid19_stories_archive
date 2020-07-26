@@ -1,0 +1,42 @@
+var ribbonData = {'English': 'https://english.lokmat.com', 'Marathi': 'https://www.lokmat.com', 'Hindi': 'https://www.lokmatnews.in', 'E-paper': 'http://epaperlokmat.in', 'Manoranjan': 'https://www.lokmat.com/manoranjan/', 'Astro': 'http://astro.lokmat.com', 'Book Classified Ad': 'http://online.lokmatclassified.com/', 'Maha Marathon': 'http://www.mahamarathon.com'}
+if ( !!(window.addEventListener) )
+	window.addEventListener("DOMContentLoaded", loadribbon)
+	else // MSIE
+	window.attachEvent("onload", loadribbon);
+
+
+
+	function loadribbon(){
+		if (typeof ribbonData !== "undefined") {
+			var letters = "";
+
+			var hostName = "?utm_medium=Referral&utm_source=" + document.location.hostname
+			//var regex = /http:\/\//g;
+			var regex = /http(s)?:\/\//g;
+			var subst = '';
+
+			for(var item in ribbonData){
+			if(ribbonData[item].replace(regex, subst)!=document.location.hostname){
+                		letters += '<a href="' + ribbonData[item] + hostName + '" target="_blank">' + item + '</a>';
+	                } 
+			else {
+                    		letters += '<a class="ribbonactive">' + item + '</a>';
+	               }
+			}
+
+			elChild = document.createElement('div');
+			elChild.id="globalNav";
+			elChild.innerHTML = letters;
+
+			document.body.prepend(elChild);
+
+
+			var sheet = document.createElement('style');
+			sheet.innerHTML = "#globalNav {text-align:center; background:#fff; width:100%; margin:0 auto 10px; padding:3px 0px;}\n" +
+				"#globalNav a {display:inline-block; text-decoration:none; font-size:13px; line-height:19px; color:#000; padding:0px 6px; margin:0px 10px; border:1px solid #fff;}\n" +
+				"#globalNav a:hover, #globalNav a.active { border:1px solid #e7e7e7 ; border-radius:2px; background:#f5f5f5 ;}\n" +
+				"#globalNav a.ribbonactive { border:1px solid #e7e7e7 ; border-radius:2px; background:#f5f5f5 ;}\n" +
+				"@media only screen and (max-width:767px){#globalNav{display:none;}}\n";
+			document.body.prepend(sheet);
+		}
+	}

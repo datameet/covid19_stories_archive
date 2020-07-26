@@ -1,8 +1,12 @@
 {
     "title": "West Bengal: Senior Medical Supervisor commits suicide in Jalpaiguri",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.330",
     "history": {
@@ -207,7 +211,7 @@
             }
         ]
     },
-    "updated": "1590789317.447646",
+    "updated": "1595622844.504939",
     "tags": "",
     "url": "https://mumbaimirror.indiatimes.com/coronavirus/news/west-bengal-senior-medical-supervisor-commits-suicide-in-jalpaiguri/articleshow/75740134.cms"
 }

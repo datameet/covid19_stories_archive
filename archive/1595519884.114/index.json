@@ -1,0 +1,192 @@
+{
+    "url": "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next",
+    "timestamp": "1595519884.114",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "After 62 days, the departmental stall at Barauni junction is open for the visitors. | 62 \u0926\u093f\u0928\u094b\u0902 \u0915\u0947 \u092c\u093e\u0926 \u092c\u0930\u094c\u0928\u0940 \u091c\u0902\u0915\u094d\u0936\u0928 \u092a\u0930 \u0938\u094d\u0925\u093f\u0924 \u0935\u093f\u092d\u093e\u0917\u0940\u092f \u0938\u094d\u091f\u0949\u0932 \u0906\u092e\u092f\u093e\u0924\u094d\u0930\u093f\u092f\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0916\u0941\u0932\u093e - Dainik Bhaskar",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:44.191321",
+                "end_ts": "2020-07-25 00:03:46.209519",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:46.214121",
+                "end_ts": "2020-07-25 00:03:46.727921",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595615626",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html@art=next.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:46.735579",
+                "end_ts": "2020-07-25 00:03:53.406239",
+                "duration": 6
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:53.409893",
+                "end_ts": "2020-07-25 00:03:57.236669",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:57.239204",
+                "end_ts": "2020-07-25 00:03:59.758550",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:03:59.759821",
+                "end_ts": "2020-07-25 00:04:00.748901",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:04:00.750193",
+                "end_ts": "2020-07-25 00:04:02.624211",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/bihar/patna/barauni/news/after-62-days-the-departmental-stall-at-barauni-junction-is-open-for-the-visitors-127335650.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.114",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:04:02.625803",
+                "end_ts": "2020-07-25 00:05:02.643703",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595615702.644696"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true",
+    "timestamp": "1595519884.11",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "Kerala student kills self, parents say it was because she couldn\u2019t attend online classes | The News Minute",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:07:28.843321",
+                "end_ts": "2020-07-24 20:07:31.224807",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thenewsminute.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:07:31.228410",
+                "end_ts": "2020-07-24 20:07:31.540554",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601451",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes@amp&__twitter_impression=true.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:07:31.547208",
+                "end_ts": "2020-07-24 20:07:46.902819",
+                "duration": 15
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:07:46.905050",
+                "end_ts": "2020-07-24 20:07:48.464310",
+                "duration": 1
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:07:48.465745",
+                "end_ts": "2020-07-24 20:08:01.810334",
+                "duration": 13
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:08:01.812490",
+                "end_ts": "2020-07-24 20:08:02.366975",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:08:02.369406",
+                "end_ts": "2020-07-24 20:08:08.318965",
+                "duration": 5
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thenewsminute.com/article/kerala-student-kills-self-parents-say-it-was-because-she-couldn-t-attend-online-classes?amp&__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.11",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:08:08.320445",
+                "end_ts": "2020-07-24 20:08:39.800848",
+                "duration": 31
+            }
+        ]
+    },
+    "updated": "1595601519.801458"
+}

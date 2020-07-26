@@ -1,0 +1,192 @@
+{
+    "url": "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html",
+    "timestamp": "1595519884.169",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "Lockdown \u0915\u0947 \u092c\u093e\u0926 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930 \u0939\u0941\u090f \u092f\u0941\u0935\u093e \u0926\u0902\u092a\u0924\u093f \u0915\u0947 Suicide \u092e\u093e\u092e\u0932\u0947 \u092e\u0947\u0902 \u092a\u094d\u0930\u093f\u092f\u0902\u0915\u093e \u0917\u093e\u0902\u0927\u0940 \u0928\u0947 \u092f\u094b\u0917\u0940 \u0938\u0930\u0915\u093e\u0930 \u092a\u0930 \u0909\u0920\u093e\u090f \u0938\u0935\u093e\u0932 | kanpur - News in Hindi - \u0939\u093f\u0902\u0926\u0940 \u0928\u094d\u092f\u0942\u095b, \u0938\u092e\u093e\u091a\u093e\u0930, \u0932\u0947\u091f\u0947\u0938\u094d\u091f-\u092c\u094d\u0930\u0947\u0915\u093f\u0902\u0917 \u0928\u094d\u092f\u0942\u091c\u093c \u0907\u0928 \u0939\u093f\u0902\u0926\u0940",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:39.181155",
+                "end_ts": "2020-07-25 01:28:40.764084",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=hindi.news18.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:40.769015",
+                "end_ts": "2020-07-25 01:28:41.029082",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620721",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:41.035382",
+                "end_ts": "2020-07-25 01:28:51.522541",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:51.523976",
+                "end_ts": "2020-07-25 01:28:54.941528",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:54.942938",
+                "end_ts": "2020-07-25 01:28:57.696437",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:57.697722",
+                "end_ts": "2020-07-25 01:28:59.403551",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:59.405617",
+                "end_ts": "2020-07-25 01:29:50.342677",
+                "duration": 50
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://hindi.news18.com/news/uttar-pradesh/kanpur-priyanka-gandhi-rase-questions-against-yogi-government-in-suicide-case-of-unemployed-young-couple-after-lockdown-nodsr-3158329.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.169",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:29:50.344154",
+                "end_ts": "2020-07-25 01:30:50.359675",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595620850.360228"
+}

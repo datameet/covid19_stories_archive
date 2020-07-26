@@ -1,0 +1,192 @@
+{
+    "url": "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html",
+    "timestamp": "1595519884.107",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "Salon owner hanged his life in the room | \u0938\u0948\u0932\u0942\u0928 \u092e\u093e\u0932\u093f\u0915 \u0928\u0947 \u0915\u092e\u0930\u0947 \u092e\u0947\u0902 \u092b\u0902\u0926\u0947 \u092a\u0930 \u0932\u091f\u0915\u0915\u0930 \u0926\u0940 \u091c\u093e\u0928 - Dainik Bhaskar",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:20.358140",
+                "end_ts": "2020-07-24 23:55:22.507079",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:22.512684",
+                "end_ts": "2020-07-24 23:55:22.766371",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595615122",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:22.773604",
+                "end_ts": "2020-07-24 23:55:27.417490",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:27.418714",
+                "end_ts": "2020-07-24 23:55:31.178613",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:31.180573",
+                "end_ts": "2020-07-24 23:55:33.593682",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:33.595404",
+                "end_ts": "2020-07-24 23:55:35.496399",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:55:35.497774",
+                "end_ts": "2020-07-24 23:55:36.930775",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/rajasthan/bharatpur/news/salon-owner-hanged-his-life-in-the-room-127355293.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.107",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:55:36.932426",
+                "end_ts": "2020-07-24 23:56:36.950964",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595615196.951941"
+}

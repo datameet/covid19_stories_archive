@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Anantkumar Hegde\u2019s Twitter account locked - The Hindu",
     "timestamp": "1590785099.17",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785781",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece"
+                ],
+                "end_ts": "2020-05-29 20:56:30.827403",
+                "start_ts": "2020-05-29 20:56:21.424347",
+                "pwd": "/data/archive/1590785099.17",
+                "output": "www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529205641/https://www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 9,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590785781",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece"
-                ],
-                "end_ts": "2020-05-29 20:56:30.827403",
-                "start_ts": "2020-05-29 20:56:21.424347",
-                "pwd": "/data/archive/1590785099.17",
-                "output": "www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785802.189394",
+    "updated": "1595622185.260314",
     "tags": "",
     "url": "https://www.thehindu.com/news/national/karnataka/anantkumar-hegdes-twitter-account-locked/article31439107.ece"
 }

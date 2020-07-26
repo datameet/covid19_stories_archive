@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rashifal</title>
+<script src="../../../../../ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../../../../../cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="../../../../../code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="../../../../../code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link href="../../../public/css/cangas.datepicker.css" rel="stylesheet">
+<style>
+@font-face {
+	font-family: DivyaBhaskar2;
+src: url(../../../public/font/DivyaBhaskar2.eot@) format('embedded-opentype'), url(../../../public/font/DivyaBhaskar2.woff) format('woff'), url(../../../public/font/DivyaBhaskar2.ttf) format('truetype'),  url(../../../public/font/DivyaBhaskar2.svg) format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+*{margin:0;padding:0;box-sizing:border-box;box-sizing:border-box}
+li{list-style:none}
+.rashifalOverlay{display:block; max-width:330px; width:100%; margin:15px auto 0px auto; background:#fff; box-shadow: 0 0 8px 1px #dedede; border-radius:5px; padding:5px; max-height:300px; overflow:hidden;}
+.rashifalPopup{ width:100%;padding:8px;background-color:#333333;overflow:hidden}
+.popupHeader{ background:#025faf; border-radius:5px 5px 0px 0px; position:relative;color:#fff; padding:5px; text-align:center }
+.rashifalPopup .rbody{padding:5px; background:#fff;}
+.rashifalPopup .skip{background-color: #000;color:#fff;top:10px;border-radius: 16px;padding:0 12px;position:absolute;cursor:default;font:15px/25px Arial;right: 20px;}
+.rashifalPopup .oragneBtn{background-color:#fb8804; text-align:center;color: #fff;width:150px; margin:10px auto 10px auto;border-radius:10px;
+padding:0px 12px}
+::placeholder { font:15px Arial;color:#7cbcf3;}
+:-ms-input-placeholder { font:15px Arial;color:#7cbcf3;}
+::-ms-input-placeholder {font:15px Arial;color:#7cbcf3;}
+.rsmallBg{padding:0px 10px; position:relative; }
+.rsmallBg ul{display:block; margin:0px; padding:0px; list-style:none;}
+.rsmallBg li{text-align:center; padding:0px 5px; float:left; width:70px;}
+.rsmallBg li a{display:block;text-align:center;text-decoration:none; padding:5px 0px; border-radius:5px; }
+.rsmallBg li a img { margin:0px; padding:0px; display:inline-block; width:48px; height:48px; }
+.rsmallBg li figure{width:45px;min-height:45px;max-height:45px;border-radius:100%;margin:0 auto;display:inline-block;background:url( '../../../../../www.bhaskar.com/public/common/images/rashifal/dateicon.png.html') no-repeat 0 0}
+.rsmallBg li a.aries figure{background-position:-1px -203px}
+.rsmallBg li a.taurus figure{background-position:-54px -203px}
+.rsmallBg li a.gemini figure{background-position:-104px -203px}
+.rsmallBg li a.cancer figure{background-position:-156px -203px}
+.rsmallBg li a.leo figure{background-position:-210px -203px}
+.rsmallBg li a.virgo figure{background-position:-259px -204px;}
+.rsmallBg li a.libra figure{background-position:-310px -203px}
+.rsmallBg li a.scorpio figure{background-position:-362px -201px}
+.rsmallBg li a.sagittarius figure{background-position:-413px -203px}
+.rsmallBg li a.capricorn figure{background-position:-461px -203px}
+.rsmallBg li a.aquarius figure{background-position:-513px -204px}
+.rsmallBg li a.pisces figure{background-position:-564px -203px}
+.rsmallBg li a p{display:block;color:#000;padding:5px 0px 0px 0px;}
+.rashifalBg li a span{display:block;color:#666;}
+
+.birthday{display:block;text-align:center;font-size:20px;line-height:35px;font-weight:700}
+.inputBox{ display:block;}
+.inputBox input{display:block;border:0;background-color:#025faf;color:#7cbcf3;font:12px/40px Arial;outline:none;color:#7cbcf3;border-radius:16px;padding:0 10px;box-sizing:border-box}
+.inputBox input:first-child{ float:left; margin-bottom:12px;padding:0 0 0 30px;display:block;max-width:35%;border-radius:28px;background:url('../../../../../www.bhaskar.com/public/common/images/rashifal/dateicon.png.html') no-repeat 5px 9px;background-color:#025faf}
+.rahiTxt{display:block;text-align:center;font-size:20px;line-height:35px;font-weight:700}
+.radioBtn{background-color:#025faf;min-height:40px;max-height:40px;border-radius:28px;box-sizing:border-box;display:flex;flex-wrap:nowrap; float:left; width:64%; margin-left:1%;}
+.radioBtn .container{padding:4px 0 0 18px}
+.container{display:block;position:relative;cursor:pointer;color:#fff;font:13px/32px Arial;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.container input{position:absolute;opacity:0;cursor:pointer}
+.checkmark_widget{position:absolute;top:4px;left:4px;height:32px;width:32px;border-radius:28px}
+.container input:checked ~ .checkmark_widget{background-color:#2196F3}
+.checkmark_widget:after{content:"";position:absolute;display:none}
+.container input:checked ~ .checkmark_widget:after{display:block}
+.container .checkmark_widget:after{top:9px;left:9px;width:8px;height:8px}
+.radioBtn .container.first input:checked ~ .checkmark_widget{background-color:#006ac5;width:53px}
+.radioBtn .container.second input:checked ~ .checkmark_widget{background-color:#006ac5;width:66px}
+.radioBtn .container.third input:checked ~ .checkmark_widget{background-color:#006ac5;width:62px}
+.radioBtn .container i{position:relative;z-index:99;font-style:normal}
+.desktop{background:#34353a;color:#fff;float:left;width:100%;position: relative;z-index: 1; text-align:center;}
+.rashifalOverlay h2 {color:#333; padding:0px 0px 5px 0px; }
+.rsmallBg .bx-wrapper{padding:0}
+.rsmallBg .bx-next,.rsmallBg .bx-prev{position:absolute;width:24px;height:30px;top:50%;text-indent:-9999px;display:block;margin-top:-30px}
+.rsmallBg .bx-prev{left:-13px; background:rgba(185,185,185,.8);border-radius: 0 5px 5px 0;}
+.rsmallBg .bx-next{right:-13px; background:rgba(185,185,185,.8); border-radius: 5px 0 0 5px;}
+.rsmallBg .bx-next:after,.rsmallBg .bx-prev:after{border-style:solid;border-color:#6f7272;border-width:0 4px 4px 0;display:inline-block;padding:5px;content:"";position:absolute;left:50%;top:50%;border-radius:3px}
+.rsmallBg .bx-prev:after{transform:rotate(135deg);-webkit-transform:rotate(135deg);margin:-8px 0 0 -6px}
+.rsmallBg .bx-next:after{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);margin:-8px 0 0 -10px}
+.rsmallBg .bx-next.disabled,.rsmallBg .bx-prev.disabled{opacity:.2}
+.rsmallBg .bx-next:hover,.rsmallBg .bx-prev:hover{background:rgba(0,0,0,0.5)}
+.rsmallBg .bx-next:hover:after,.rsmallBg .bx-prev:hover:after{border-color:#fff}
+.clear{content:"";clear:both;display:table}
+.mdl-active a{color:#666!important;background:#f0f1f3!important}
+.ll-skin-cangas td .ui-state-default{padding:0!important}
+.ll-skin-cangas .ui-datepicker th{font-size:12px!important}
+.ll-skin-cangas{font-size:80%!important}
+.ui-datepicker .ui-datepicker-title{margin:0 10px!important}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{width:48%;border-radius:5px;background:#fff;margin:0 1%;border:solid 1px #366ac5;font-size:15px;height:26px;outline:none}
+.ui-datepicker .ui-datepicker-prev{display:none!important}
+.ui-datepicker .ui-datepicker-next{display:none!important}
+
+
+.bhaskar .rashifalOverlay h2{font:20px/24px Bhaskar_Web_Head_Test_exp,'Noto Sans',Helvetica,sans-serif;}
+.bhaskar .popupHeader{font:16px/20px Bhaskar_Web_Head_Test_exp,'Noto Sans',Helvetica,sans-serif;}
+.bhaskar .rsmallBg li a p{font:16px/22px Bhaskar_Web_Head_Test_exp,Arial,Helvetica,sans-serif;}
+.bhaskar .rashifalPopup .oragneBtn{  font:bold 16px/30px 'Noto Sans',Helvetica,sans-serif;}
+.divya .rashifalOverlay h2{font:bold 22px/24px DivyaBhaskar2,Arial,Helvetica,sans-serif;}
+.divya .popupHeader{font:bold 18px/20px DivyaBhaskar2,Arial,Helvetica,sans-serif;}
+.divya .rsmallBg li a p{font:bold 18px/22px DivyaBhaskar2,Arial,Helvetica,sans-serif;}
+.divya .rsmallBg li a p span.rashiTag{font:normal 16px DivyaBhaskar2,Arial,Helvetica,sans-serif; display:block;    white-space: nowrap;    letter-spacing:-1px;}
+.divya .rashifalPopup .oragneBtn{ font:bold 20px/30px DivyaBhaskar2}
+.divya .rashifalPopup .oragneBtn{margin-bottom:6px}
+.inputBox input:first-child{font-size:11px;}
+.error_message{position: fixed;z-index: 105;display: none;background: #fff;width: 89%;padding: 10px 9px;
+border-radius: 10px;color: red;border: #000 2px solid;top:29%;font-weight:bold;}
+
+</style>
+<script>
+		var $channel_id	=	960 ;
+		var $device		=	'wap';
+	</script>
+</head>
+<body class=" divya ">
+<div class="rashifalOverlay">
+
+<section class="rashifalPopup">
+<div class="popupHeader">મેળવો તમારું ત્રણ પ્રકારનું રાશિફળ, દરરોજ</div>
+<section class="rbody">
+<div class="clear"></div>
+<span class="error_message"></span>
+<div class="inputBox">
+<input type="text" name="date" value="24-07-2020" placeholder="Date Of Birth" id="janmTithi" max="24-07-2020" class="dateicon" />
+<div class="radioBtn"><label class="container first"><i>Male</i>
+<input type="radio" value="M" checked="true" name="gender">
+<span class="checkmark_widget"></span>
+</label>
+<label class="container second"><i>Female</i>
+<input type="radio" name="gender" value="F">
+<span class="checkmark_widget"></span>
+</label>
+<label class="container third"><i>Others</i>
+<input type="radio" name="gender" value="T">
+<span class="checkmark_widget"></span>
+</label>
+</div>
+</div>
+<div class="clear"></div>
+<div class="rsmallBg">
+<ul id="dynamic_rashi">
+<li class="mrashi-check " rel="13">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="aries" title="મેષ (Aries)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907520.85291585907520.png" alt="મેષ" width="80%" height="80%">
+<p>મેષ <span class="rashiTag"> (અ. લ. ઈ.) </span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="14">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="scorpio" title="વૃશ્ચિક (Scorpio)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1586776521.0851586776521.png" alt="વૃશ્ચિક" width="80%" height="80%">
+<p>વૃશ્ચિક <span class="rashiTag">(ન. ય. )</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="15">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="taurus" title="વૃષભ (Taurus)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907538.0071585907538.png" alt="વૃષભ" width="80%" height="80%">
+<p>વૃષભ <span class="rashiTag">(બ. વ. ઉ.) </span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="16">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="gemini" title="મિથુન (Gemini)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907557.42771585907557.png" alt="મિથુન" width="80%" height="80%">
+<p>મિથુન <span class="rashiTag">(ક. છ. ઘ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="17">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="leo" title="સિંહ (Leo)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907591.70251585907591.png" alt="સિંહ" width="80%" height="80%">
+<p>સિંહ <span class="rashiTag"> (મ. ટ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="18">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="virgo" title="કન્યા (Virgo)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907606.25111585907606.png" alt="કન્યા" width="80%" height="80%">
+<p>કન્યા <span class="rashiTag">(પ. ઠ. ણ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="19">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="cancer" title="કર્ક (Cancer)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1586776483.66321586776483.png" alt="કર્ક" width="80%" height="80%">
+<p>કર્ક <span class="rashiTag">(ડ. હ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="20">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="libra" title="તુલા (Libra)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907621.4251585907621.png" alt="તુલા" width="80%" height="80%">
+<p>તુલા <span class="rashiTag">(ર. ત. )</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="21">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="sagittarius" title="ધન (Sagittarius)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907661.64141585907661.png" alt="ધન" width="80%" height="80%">
+<p>ધન <span class="rashiTag">(ભ. ધ. ફ. ઢ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="22">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="capricornus" title="મકર (Capricornus)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907681.73321585907681.png" alt="મકર" width="80%" height="80%">
+<p>મકર <span class="rashiTag"> (ખ. જ.) </span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="23">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="aquarius" title="કુંભ (Aquarius)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907717.76491585907717.png" alt="કુંભ" width="80%" height="80%">
+<p>કુંભ <span class="rashiTag">(ગ. સ. શ. ષ.)</span></p>
+</a>
+</li>
+<li class="mrashi-check " rel="24">
+<a href="https://common.bhaskar.com/dharam-darshan/rashifal/" class="pisces" title="મીન (Pisces)">
+<img src="../../../../../images.bhaskarassets.com/thumb/72x72/web2images/rashifal/rashi_img_1585907737.08021585907737.png" alt="મીન" width="80%" height="80%">
+<p>મીન <span class="rashiTag">(દ. ચ. ઝ. થ.)</span></p>
+</a>
+</li>
+</ul>
+<div class="clear"></div>
+<div class="oragneBtn" id="rashi_submit" style="cursor: pointer;">ક્લિક કરો</div>
+</div>
+</section>
+</section>
+</div>
+<script>
+$(document).ready(function() {
+	if($channel_id==521){
+	var rashiDOB = getCookie('rashiDOB');
+	var rashiGender = getCookie('rashiGender');
+	var rashiId = getCookie('rashiId');
+	}else{
+		var rashiDOB = getCookie('rashiDOBDivya');
+	var rashiGender = getCookie('rashiGenderDivya');
+	var rashiId = getCookie('rashiIdDivya');
+	}
+	if(rashiDOB != ''){
+		$('#janmTithi').val(rashiDOB);
+	}else{
+		$('#janmTithi').val('dd-mm-yy');
+	}
+	if(rashiGender != ''){
+		$("input:radio[name=gender][value='"+rashiGender+"']").attr('checked','checked');
+	}
+  if(rashiId == ''){
+    $('.rsmallBg ul').bxSlider({
+          pager: false,
+          minSlides:1,
+          maxSlides:4,
+          moveSlides:1,
+          slideMargin:0,
+          slideWidth:70,
+          touchEnabled: false
+        });   
+  }
+	if(rashiId != ''){
+		var gujrati = {'મેષ':' (અ. લ. ઈ.) ','વૃષભ':'(બ. વ. ઉ.) ','મિથુન':'(ક. છ. ઘ.)','કર્ક':'(ડ. હ.)','સિંહ':' (મ. ટ.)','કન્યા':'(પ. ઠ. ણ.)','તુલા':'(ર. ત. )','વૃશ્ચિક':'(ન. ય. )','ધન':'(ભ. ધ. ફ. ઢ.)','મકર':' (ખ. જ.) ','કુંભ':'(ગ. સ. શ. ષ.)','મીન':'(દ. ચ. ઝ. થ.)'};
+		var siturl = '';
+		if($channel_id==521)
+			siturl = "https://www.bhaskar.com/religion/rashifal/";
+		else
+		siturl = "https://www.divyabhaskar.co.in/dharm-darshan/rashifal/";
+		$.ajax({
+			'method': "GET",
+			url: 'http://common.bhaskar.com/event-calendar/manageRashiOrder/'+parseInt(rashiId)+'/'+parseInt($channel_id),
+			dataType: 'json',
+			success: function(data){
+				var tempHtml = '';
+				$.each(data, function(k,valRashi){
+					//------------------------------------------------
+					var active_class = rashiId == valRashi.id ? 'mdl-active' : '';
+					var rashi_title_en = valRashi.rashi_title_en;
+					var full_title = valRashi.rashi_title+' ('+rashi_title_en+')';
+					var tempImg = 'https://aeimages.bhaskar.com/web2images/www.bhaskar.com/'+valRashi.image_path;
+					tempHtml += '<li class="mrashi-check '+active_class+'" rel="'+valRashi.id+'">'+
+            '<a href="https://common.bhaskar.com/event-calendar/rashiphalWidget/960/wap/'+siturl+'" target="_parent" class="'+rashi_title_en+'" title="'+full_title+'">'+
+            '<img src="https://common.bhaskar.com/event-calendar/rashiphalWidget/960/wap/'+tempImg+'" alt="'+valRashi.rashi_title+'" width="80%" height="80%">'+
+            '<p>'+valRashi.rashi_title+'<span class="rashiTag">'+gujrati[valRashi.rashi_title]+'</span></p>'+
+            '</a>'+
+          '</li>';  
+					//-----------------------------------------------
+				});
+			$(document).find('#dynamic_rashi').html(tempHtml);
+			iframeHeight();
+			//console.info(tempHtml);	
+			},
+			error: function(jqXhr, textStatus, errorMessage){
+				console.error(jqXhr, textStatus, errorMessage);
+			},
+			complete: function(){
+        $('.rsmallBg ul').bxSlider({
+          pager: false,
+          minSlides:1,
+          maxSlides:4,
+          moveSlides:1,
+          slideMargin:0,
+          slideWidth:70,
+          touchEnabled: false
+        });   
+			}
+
+		});
+    }
+	function getCookie(cname) {
+  		var name = cname + "=";
+  		var ca = document.cookie.split(';');
+  		for(var i = 0; i < ca.length; i++) {
+    		var c = ca[i];
+    		while (c.charAt(0) == ' ') {
+      			c = c.substring(1);
+    		}
+    		if (c.indexOf(name) == 0) {
+      			return c.substring(name.length, c.length);
+    		}
+  		}
+  		return "";
+	}
+  function bhaskarSetCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";domain=.bhaskar.com;path=/";
+  }
+
+  $(document).on('click','.mrashi-check',function(event){
+    event.preventDefault();
+    let that = $(this);
+    $('.mrashi-check').removeClass('mdl-active');
+    that.addClass('mdl-active');
+  });
+
+  $(document).on('click','#rashi_submit',function(){
+        $('#error-date').hide();
+        let rashiId = 0;
+        let rashiDOB = $('#janmTithi').val();
+        let gender = $("input[name='gender']:checked").val();
+         $('.mrashi-check').each(function(){
+           if($(this).hasClass('mdl-active')){
+            rashiId = parseInt($(this).attr('rel'));
+           }
+        });
+    
+        if(rashiId==0){
+			if($channel_id==960){
+				$('.error_message').html('<p style="color:red;font-size:12px;">કૃપા કરી રાશિ પસંદ કરો</p>').show().delay(1000).fadeOut('slow');
+			}else{
+				$('.error_message').html('<p style="color:red;font-size:12px;">कृपया राशि चुने</p>').show().delay(1000).fadeOut('slow');
+			}
+          return false;
+        }
+        if(rashiDOB == '' || rashiDOB == 'dd-mm-yy'){
+			if($channel_id==960){
+				$('.error_message').html('<p style="color:red;font-size:12px;">કૃપા કરી જન્મ તારીખ પસંદ કરો</p>').show().delay(1000).fadeOut('slow');
+			}else{
+				$('.error_message').html('<p style="color:red;font-size:12px;">कृपया जन्मतिथि चुने</p>').show().delay(1000).fadeOut('slow');
+			}
+        	return false;
+        }
+        if($channel_id==960){
+        bhaskarSetCookie("rashiIdDivya", rashiId, 365);
+        bhaskarSetCookie("rashiDOBDivya", rashiDOB, 365);
+        bhaskarSetCookie("rashiGenderDivya", gender, 365);
+		}else{
+		bhaskarSetCookie("rashiId", rashiId, 365);
+        bhaskarSetCookie("rashiDOB", rashiDOB, 365);
+        bhaskarSetCookie("rashiGender", gender, 365);
+		}
+		if($channel_id==521){
+			window.open('https://www.bhaskar.com/religion/rashifal/','_parent');
+		}
+		else{
+			window.open('https://www.divyabhaskar.co.in/dharm-darshan/rashifal/','_parent');
+		}
+  });
+
+    $( "#janmTithi" ).datepicker({
+          showAnim:'slideDown',
+          inline: true,      
+          dateFormat: 'dd-mm-yy',
+          defaultDate: +7,
+          changeMonth: true,
+          yearRange: "-100:+0",
+          maxDate: 0,
+          changeYear: true,
+          onSelect: function(dateText, inst) {
+            console.info("inside onSelect function");
+            $(document).find('.error_message').html('');
+          }
+        }).datepicker('widget').wrap('<div class="ll-skin-cangas"/>');
+
+    });
+	
+	function iframeHeight(){
+    setTimeout(function(){
+		let height ='';
+        var body = document.body,
+        html = document.documentElement;
+        height = Math.max(document.body.clientHeight+20)+'px';
+        parent.postMessage({budgetheight:height},"*");
+     },2000);
+}
+  
+</script>
+</body>
+</html>

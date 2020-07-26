@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576",
+    "timestamp": "1595519884.5",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "18 day old new born dies on board Shramik train, Bengal migrant alleges apathy from Railways",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:58:48.788098",
+                "end_ts": "2020-07-24 19:58:49.828564",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:58:49.830058",
+                "end_ts": "2020-07-24 19:58:51.551381",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595600931",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:58:51.555855",
+                "end_ts": "2020-07-24 19:59:15.623190",
+                "duration": 24
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:59:15.627156",
+                "end_ts": "2020-07-24 19:59:25.878100",
+                "duration": 10
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:59:25.880180",
+                "end_ts": "2020-07-24 19:59:31.509888",
+                "duration": 5
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:59:31.512883",
+                "end_ts": "2020-07-24 19:59:36.946539",
+                "duration": 5
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:59:36.948864",
+                "end_ts": "2020-07-24 19:59:39.564992",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/in-focus/article/18-day-old-new-born-dies-on-board-shramik-train-bengal-migrant-alleges-apathy-from-railways/604576"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.5",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:59:39.567177",
+                "end_ts": "2020-07-24 20:00:02.480992",
+                "duration": 22
+            }
+        ]
+    },
+    "updated": "1595601002.481851"
+}

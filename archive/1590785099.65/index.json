@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "COVID-19 rumours linked to 3 attacks in Delhi, Gurgaon | coronavirus outbreak News,The Indian Express",
     "timestamp": "1590785099.65",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787554",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/"
+                ],
+                "end_ts": "2020-05-29 21:26:05.137176",
+                "start_ts": "2020-05-29 21:25:54.974607",
+                "pwd": "/data/archive/1590785099.65",
+                "output": "indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/index.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529212613/https://indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 10,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590787554",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/"
-                ],
-                "end_ts": "2020-05-29 21:26:05.137176",
-                "start_ts": "2020-05-29 21:25:54.974607",
-                "pwd": "/data/archive/1590785099.65",
-                "output": "indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/index.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787573.758069",
+    "updated": "1595622300.577805",
     "tags": "",
     "url": "https://indianexpress.com/article/coronavirus/covid-19-rumours-linked-to-3-attacks-in-delhi-gurgaon-6350696/"
 }

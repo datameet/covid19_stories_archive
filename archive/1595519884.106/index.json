@@ -1,0 +1,192 @@
+{
+    "url": "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next",
+    "timestamp": "1595519884.106",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "For the first time after the lock down, one roadways bus will operate daily from Barmer to Jodhpur and Jaisalmer | \u0932\u0949\u0915 \u0921\u093e\u0909\u0928 \u0938\u0947 \u0925\u092e\u0940 \u0930\u094b\u0921\u0935\u0947\u091c \u092c\u0938\u094b\u0902 \u0915\u093e \u0938\u0902\u091a\u093e\u0932\u0928 \u0915\u0932 \u0938\u0947, \u091c\u094b\u0927\u092a\u0941\u0930 \u0938\u0947 \u0915\u0908 \u092e\u093e\u0930\u094d\u0917\u094b\u0902 \u092a\u0930 \u0936\u0941\u0930\u0942 \u0939\u094b\u0917\u0940 \u0938\u0947\u0935\u093e - Dainik Bhaskar",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:11.767668",
+                "end_ts": "2020-07-24 23:54:12.647587",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:12.650701",
+                "end_ts": "2020-07-24 23:54:12.906588",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595615052",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html@art=next.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:12.913702",
+                "end_ts": "2020-07-24 23:54:17.141031",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:17.146878",
+                "end_ts": "2020-07-24 23:54:20.668786",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:20.670071",
+                "end_ts": "2020-07-24 23:54:24.661044",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:24.664035",
+                "end_ts": "2020-07-24 23:54:26.704180",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:54:26.705466",
+                "end_ts": "2020-07-24 23:54:28.176760",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/rajasthan/jodhpur/news/for-the-first-time-after-the-lock-down-one-roadways-bus-will-operate-daily-from-barmer-to-jodhpur-and-jaisalmer-127366660.html?art=next"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.106",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:54:28.179077",
+                "end_ts": "2020-07-24 23:55:20.219166",
+                "duration": 52
+            }
+        ]
+    },
+    "updated": "1595615120.220105"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/",
+    "timestamp": "1595519884.55",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "\u0915\u094d\u0935\u093e\u0930\u0902\u091f\u093e\u0908\u0928 \u0935\u094d\u092f\u0915\u094d\u0924\u0940\u091a\u0940 \u0917\u0933\u092b\u093e\u0938 \u0918\u0947\u090a\u0928 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e; \u0905\u092e\u0930\u093e\u0935\u0924\u0940 \u091c\u093f\u0932\u094d\u0939\u094d\u092f\u093e\u0924\u0940\u0932 \u092e\u094b\u0930\u094d\u0936\u0940 \u0924\u093e\u0932\u0941\u0915\u094d\u092f\u093e\u0924\u0940\u0932 \u0918\u091f\u0928\u093e - Marathi News | Suicide by quarantine person; Incidents in Morshi taluka of Amravati district | Latest amravati News at Lokmat.com",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:39:57.502918",
+                "end_ts": "2020-07-24 22:39:58.075622",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.lokmat.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:39:58.083744",
+                "end_ts": "2020-07-24 22:39:58.670332",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595610598",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:39:58.680298",
+                "end_ts": "2020-07-24 22:40:10.183411",
+                "duration": 11
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:40:10.185553",
+                "end_ts": "2020-07-24 22:40:15.231846",
+                "duration": 5
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:40:15.234049",
+                "end_ts": "2020-07-24 22:40:19.807590",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:40:19.809245",
+                "end_ts": "2020-07-24 22:40:22.670029",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:40:22.672217",
+                "end_ts": "2020-07-24 22:40:26.337309",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.lokmat.com/amravati/suicide-quarantine-person-incidents-morshi-taluka-amravati-district/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.55",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:40:26.339791",
+                "end_ts": "2020-07-24 22:41:26.371121",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595610686.371696"
+}

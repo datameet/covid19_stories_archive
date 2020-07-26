@@ -1,0 +1,58 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-07-24T16:25:25Z
+WARC-Record-ID: <urn:uuid:c9e764da-fb3d-42e0-8d71-3416e3e71dcf>
+WARC-Filename: 1595607925.warc
+WARC-Block-Digest: sha1:FPUNRLHHUQJQWEC6ZXIENG5QYQMBIYEN
+Content-Length: 654
+
+software: Wget/1.19.4 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: off
+wget-arguments: "--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595607925" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.newindianexpress.com/states/odisha/2020/may/29/migrant-worker-returning-to-bengal-from-hyderabad-on-foot-dies-in-odisha-2149669.html" 
+
+
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:f03287f3-149e-4299-8ac0-fb20b455b23d>
+WARC-Warcinfo-ID: <urn:uuid:c9e764da-fb3d-42e0-8d71-3416e3e71dcf>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-07-24T16:25:35Z
+WARC-Block-Digest: sha1:FN3R2VE5ZSDYXJLFZIQBFT6RYDNUY5C5
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:c9e764da-fb3d-42e0-8d71-3416e3e71dcf>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:f3cad24e-0669-47f4-b6c3-f688eba74e2d>
+WARC-Warcinfo-ID: <urn:uuid:c9e764da-fb3d-42e0-8d71-3416e3e71dcf>
+WARC-Concurrent-To: <urn:uuid:f03287f3-149e-4299-8ac0-fb20b455b23d>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-07-24T16:25:35Z
+WARC-Block-Digest: sha1:MABTPANR5DFLPGMYQZL6OIDUHXPFDIQJ
+Content-Type: text/plain
+Content-Length: 478
+
+"--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595607925" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.newindianexpress.com/states/odisha/2020/may/29/migrant-worker-returning-to-bengal-from-hyderabad-on-foot-dies-in-odisha-2149669.html" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:44049cf3-c9e6-4e0b-98f2-d1a96d71f205>
+WARC-Warcinfo-ID: <urn:uuid:c9e764da-fb3d-42e0-8d71-3416e3e71dcf>
+WARC-Concurrent-To: <urn:uuid:f03287f3-149e-4299-8ac0-fb20b455b23d>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-07-24T16:25:35Z
+WARC-Block-Digest: sha1:R4LEBM6HD46ALDACRS4BKXSWAVTA2U7X
+Content-Type: text/plain
+Content-Length: 68
+
+wget: unable to resolve host address ‘www.newindianexpress.com’
+
+

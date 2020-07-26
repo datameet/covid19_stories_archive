@@ -1,0 +1,192 @@
+{
+    "url": "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms",
+    "timestamp": "1595519884.151",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "Lockdown mein karz ka bojh: Shmashan mein padi dhoti ko fanda banakar jhul gaya kisan:\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u092e\u0947\u0902 \u0915\u0930\u094d\u091c \u0915\u093e \u092c\u094b\u091d\u0903 \u0936\u094d\u092e\u0936\u093e\u0928 \u092e\u0947\u0902 \u092a\u0921\u093c\u0940 \u0927\u094b\u0924\u0940 \u0915\u094b \u092b\u0902\u0926\u093e \u092c\u0928\u093e\u0915\u0930 \u091d\u0942\u0932 \u0917\u092f\u093e \u0915\u093f\u0938\u093e\u0928",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:09.682064",
+                "end_ts": "2020-07-25 01:05:11.739561",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=navbharattimes.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:11.743324",
+                "end_ts": "2020-07-25 01:05:12.135032",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619312",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:12.138220",
+                "end_ts": "2020-07-25 01:05:25.744934",
+                "duration": 13
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:25.747662",
+                "end_ts": "2020-07-25 01:05:28.194093",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:28.195441",
+                "end_ts": "2020-07-25 01:05:30.612814",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:30.614482",
+                "end_ts": "2020-07-25 01:05:32.096577",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:05:32.098296",
+                "end_ts": "2020-07-25 01:05:35.150981",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://navbharattimes.indiatimes.com/state/madhya-pradesh/other-cities/farmer-hangs-himself-at-beitul-in-mp-was-under-duress-because-of-loan-and-lockdown/articleshow/76180560.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.151",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:05:35.153464",
+                "end_ts": "2020-07-25 01:06:20.663012",
+                "duration": 45
+            }
+        ]
+    },
+    "updated": "1595619380.663544"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html",
+    "timestamp": "1595519884.42",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "Man loses pregnant wife after seven hospitals deny treatment- The New Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:08:42.937264",
+                "end_ts": "2020-07-24 22:08:48.368454",
+                "duration": 5
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:08:48.374278",
+                "end_ts": "2020-07-24 22:08:49.450911",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595608729",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:08:49.454832",
+                "end_ts": "2020-07-24 22:09:39.544000",
+                "duration": 50
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:09:39.546390",
+                "end_ts": "2020-07-24 22:10:05.539962",
+                "duration": 25
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:10:05.542822",
+                "end_ts": "2020-07-24 22:10:19.171841",
+                "duration": 13
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:10:19.176436",
+                "end_ts": "2020-07-24 22:10:26.439857",
+                "duration": 7
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:10:26.442070",
+                "end_ts": "2020-07-24 22:10:29.580310",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/cities/bengaluru/2020/jun/10/man-loses-pregnant-wife-after-seven-hospitals-deny-treatment-2154569.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.42",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:10:29.582386",
+                "end_ts": "2020-07-24 22:11:08.655204",
+                "duration": 39
+            }
+        ]
+    },
+    "updated": "1595608868.655684"
+}

@@ -1,0 +1,788 @@
+var deEvents = {
+      'enlargeClip' : 'enlargeClipEvent'
+    },
+    pageBottomOffset,
+    supportedWebP = null,
+    webPPrefix = 'https://webpcache.epapr.in/index.php?in=',
+    winHeight;
+
+var clipConfig = {};
+var clipPlugins = [];
+var libs_loaded = [];
+
+function validateEmail(email){
+    var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+    if (reg.test(email)){
+        return true; 
+    } else {
+        return false;
+    }
+} 
+
+function numToMetric(num) {
+     if (num >= 1000000000) {
+        return (num / 1000000000).toFixed(1).replace(/\.0$/, '') + 'G';
+     }
+     if (num >= 1000000) {
+        return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+     }
+     if (num >= 1000) {
+        return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+     }
+     return num;
+}
+
+function closeFeedback(){
+  $('#modal-bg').hide().unbind('click',closeFeedback);
+  $('#feedback-sent').remove();
+  $('#feedback-panel').hide();
+}
+
+function showFeedback(){
+  $('#modal-bg').show().click(closeFeedback);
+  $('#feedback-panel').show().find('.panel-close-btn').click(closeFeedback);
+  $('#feedback-send').show();
+  var sendFeedback = function(e){
+    var txt = $('#feedback-box').val().substr(0,1000);
+    var fromemail = $('#feedback-fromemail-input').val();
+    if(!txt){
+      return;
+    }
+    if ( fromemail && !validateEmail(fromemail) ) {
+      $("#feedback-invalid-email").show();
+      setTimeout(function(){
+        $("#feedback-invalid-email").hide();
+      },3000);
+      return;
+    }
+
+    $('#feedback-send').hide();
+    $('#feedback-panel').append('<div id="feedback-sending" style="text-align:center">'+
+      '<i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>');
+    $.post(DEConfig.baseUrl + 'feedback/send',
+      {
+        'response' : txt,
+        'email'   : fromemail,
+        'url': DEConfig.baseUrl,
+        'titleid': DEConfig.titleId,
+        'volumeid': DEConfig.issueId
+      },
+      function(response){
+          $("#feedback-sending").remove();
+          $('#feedback-panel').append('<div id="feedback-sent"><p style="text-align:center;">Feedback sent</p><div style="text-align:center"><button type="button" class="btn btn-link">Close</button></div></div>');
+          $('#feedback-sent').click(closeFeedback);
+      });
+  }
+
+  $('#feedback-send').unbind('click').click(sendFeedback);
+}
+
+function closeAbout(){
+  $('#modal-bg').hide().unbind('click',closeAbout);
+  $('#about-panel').hide();
+}
+
+function showAbout(){
+  $('#modal-bg').show().click(closeAbout);
+  $('#about-panel').show()
+}
+
+function closeEnlargedClip(){
+  $('#enlarged-clip-img').remove();
+	$('.enlarged.clipactions').remove();
+  $('#clip-ad').hide();
+  $('#enlarged-bottom-clip-ad').hide();
+	$('#modal-bg').unbind('click');
+	$('#modal-bg').hide();
+  $('.modal-close').hide();
+  $('#page-bottom').show();
+  removePlugins();
+}
+
+function askToLoginDialog() { 
+  swal({
+    title: "Please Login to view enlarged clip",
+    type: "info",
+    showCancelButton: true,
+    confirmButtonColor: '#23AA43',
+    confirmButtonText: 'Login',
+    closeOnConfirm: true
+  },
+  function(){
+    var url = rwBase + 'user/login?ru='+ baseUrl + 'c/' + clipId;
+    window.location.href = url;
+  });
+}
+
+function checkAuth(){
+  if(!enable_login) { // if login is not enabled from publisher backend user is authorized to view enlarge clip
+    $(window).trigger(deEvents.enlargeClip);
+    return;
+  }
+
+  if (!paidIssue){ // if issue is free user is authorized to view enlarge clip
+    $(window).trigger(deEvents.enlargeClip);
+    return;
+  }
+
+  if(userdata == undefined || userdata.id == undefined) {
+    askToLoginDialog();
+    return;
+  }
+
+  $.getJSON(baseUrl+'shelfapi/isinshelf/'+userdata.id+'/'+issueId+'/'+userdata.crypt+'/'+userdata.key+'?callback=?',
+    function(response){
+      if (response.status==true && response.inShelf==true){
+        $(window).trigger(deEvents.enlargeClip);
+      }else{
+        alert('Not authenticate to view full clip');
+      }
+      return;
+    }
+  );
+}
+
+function enlargeClip() {
+  
+  $(window).scrollTop(0);
+  $('#modal-bg').show().click(closeEnlargedClip);
+  $('.modal-close').show().click(closeEnlargedClip);
+  var clip = $('.clip').css('background-image').replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+  if( clip == 'none' ) {
+    return;
+  }
+
+  //clip = getImageUrl( clip );
+  var cimg = new Image();
+  var clipW, clipH, clipLeft, clipTop;
+  $('#clip-ad').show();
+  cimg.onload = function(e){
+    clipW = this.width;
+    clipH = this.height + 80; // +80 to display sharing options properly on mobile
+    if(clipW < $(window).width()){
+      //center on width
+      clipLeft = Math.floor(($(window).width() - clipW)/2);
+    }
+    if(clipH < $(window).height()){
+      //center on height
+      clipTop = Math.floor(($(window).height() - clipH)/2);
+    }
+    clipLeft = (clipLeft > 20) ? clipLeft : 20;
+    //clipTop = (clipTop > 50) ? clipTop : 50;
+    clipTop = (clipTop > 140) ? clipTop : 140; 
+    
+    if($(window).width() <= 768 && clipTop < 330) {
+      clipTop = 330;
+    } // to integrate ad on clip page mobile
+
+    $('body').append('<img style="top:'+clipTop+'px;left:'+clipLeft+'px" id="enlarged-clip-img" src="'+clip+'" alt="clip" class="clip-enlarged"/>');
+    $('body').append('<div style="min-height:40px;" class="enlarged clipactions">'+$('.clipactions.big').html()+'</div>');
+
+    $('body').append('<div style="top:'+clipTop+'px;left:'+clipLeft+'px;position:absolute;width:'+clipW+'px;height:'+clipH+'px;" id="de-chunks-container"></div>');
+
+
+    clipConfig.clip_width = clipW;
+    clipConfig.clip_height = clipH-72; // -72 because we need clip img height while clipH is de-chunks-container's height
+    showPlugins();
+    $('#page-bottom').hide();
+    var bottom_clip_ad = clipTop+clipH;
+    $('#enlarged-bottom-clip-ad').css({ top: bottom_clip_ad+'px' });
+    
+    $('#enlarged-bottom-clip-ad').show();
+  }
+  cimg.src=clip;
+}
+
+function shareClipOnFb(){
+	var twurl = 'https://www.facebook.com/sharer.php?app_id=335724729790737&sdk=joey&u='+escape(baseUrl+"c/"+clipId)+'&display=popup&ref=plugin'
+	var newwindow=window.open(twurl,'facebook','height=420,width=600,top='+((window.screen.height/2)-210)+',left='+((window.screen.width/2)-275));
+	if (window.focus) {newwindow.focus()}
+	
+	/*
+	if (!window.FB) {
+		return;
+	};
+
+	FB.ui(
+      {
+       method: 'feed',
+       name: 'Clipping of '+clipTitleName,
+       link: "http://www.readwhere.com/read/c/"+clipId,
+       picture:imageLocation
+      },
+      function(response) {
+        if (response && response.post_id) {
+
+        } else {
+
+        }
+      }
+    );*/
+}
+
+function shareClipOnTwitter(){
+	var twurl = 'https://twitter.com/intent/tweet?url='+encodeURIComponent(baseUrl+"c/"+clipId)+'&text='+encodeURIComponent('Clipping of '+clipPublisherName+' '+clipTitleName);
+
+	var newwindow=window.open(twurl,'twitter','height=420,width=550,top='+((window.screen.height/2)-210)+',left='+((window.screen.width/2)-275));
+	if (window.focus) {newwindow.focus()}
+}
+
+function closeDownloadClip(){
+	$('#downloadclip-panel').remove();
+	$('#modal-bg').unbind('click');
+	$('#modal-bg').hide();
+}
+
+function getRwconnectLibrary() {
+  var libs = [
+    {
+      'id': 'rwconnect',
+      'src': rwBase+'design-elements/rwconnect/all.js'
+    }
+  ];
+  loadlibrary(libs);
+}
+
+
+function redirectToClipDownload(key) {
+  if(key==undefined) {
+    $('#modal-bg').show().click(closeDownloadClip);
+    $('body').append('<div id="downloadclip-panel" style="padding:27px;"><p class="download-as">Download As..</p><a href="'+baseUrl+'clip/pagedownload/'+clipId+'" class="pdf-product-image">Full page</a><a class="image-download" href="'+imageLocation+'">Clip image</a></div>');
+  } else {
+    // base_url = DEConfig.baseUrl;
+    // url = base_url + 'clip/download/' + key;
+    // window.location.href = url;
+    if(DEConfig.v2_clip_direct_downloader == true ) {
+      if( DEConfig.wlDownload == true ) {
+        window.location.href = DEConfig.baseUrl+'clip/download/'+clipKey;
+      } else {
+        window.location.href = DEConfig.rwBase+'read/clip/download/'+clipKey;
+      }
+    } else {
+      if( DEConfig.wlDownload == true ) {
+
+        window.location.href = DEConfig.baseUrl+'download/clip/'+clipKey;
+      } else {
+
+        window.location.href = DEConfig.rwBase+'read/download/clip/'+clipKey;
+      }
+    }
+  }
+}
+
+function downloadClip(key) {
+  if(paidIssue){
+    return;
+  }
+
+  if(!enable_login) { // authentication disable, redirect to clip download dialog box
+    redirectToClipDownload(key);
+    return;
+  }
+
+  if(enable_login && DEConfig.loggedin) { // authentication enable and user login, redirect to clip download
+    redirectToClipDownload(key);
+    return;
+  }
+
+  if(enable_login && !DEConfig.loggedin) {
+      RW.login( function( response ) {} );
+  }
+}
+
+function downloadClipForcefully(key) {
+
+  base_url = DEConfig.rwBase + 'read/';
+  if(DEConfig.wlDownload) {
+    
+    base_url = DEConfig.baseUrl;
+  }
+  
+  window.location.href = base_url + 'clip/download/' + key;
+}
+
+/*function downloadClip(){
+	if(paidIssue){
+		//just redirect to image download 
+		//window.location.href = imageLocation;
+		return;
+	}
+	$('#modal-bg').show().click(closeDownloadClip);
+	$('body').append('<div id="downloadclip-panel" style="padding:27px;"><p class="download-as">Download As..</p><a href="'+baseUrl+'clip/pagedownload/'+clipId+'" class="pdf-product-image">Full page</a><a class="image-download" href="'+imageLocation+'">Clip image</a></div>');
+}*/
+
+function validateAndSendEmail(btn){
+	var emailStr = $('#email-addresses').val();
+  //loop on all emails and check each
+  var emails = emailStr.split(/[, ;]/);
+  var trimmed;
+  var cleanEmails = [];
+  var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  var match;
+  for (var i = emails.length - 1; i >= 0; i--) {
+    trimmed = emails[i].trim();
+    if(!trimmed) continue;
+    match = trimmed.match(emailPattern);
+    if(!match){
+      alert('There is an error. Email address(es) are invalid, please re-enter.');
+      $('#email-addresses').focus();
+      break;
+      return;
+    }
+    cleanEmails.push(trimmed);
+  };
+	var fromname = $('#fromname-input').val();
+	if(cleanEmails.length > 0){
+		//send these emails
+		$(btn).replaceWith('<div id="email-sending" style="text-align:center"><i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>');
+		$.post(baseUrl+"clip/sendemail/"+issueId+'/'+clipId+'/'+clipKey,{"emails":cleanEmails,"from":fromname,'titlename':clipPublisherName+' '+clipTitleName}, function(response){
+			$('#email-sending').replaceWith('<p style="text-align:center;">Email sent</p><div style="text-align:center"><button type="button" onclick="closeEmailClip()" class="btn btn-link">Close</button></div>')
+		});
+	}
+}
+
+function closeEmailClip(){
+	$('#downloadclip-panel').remove();
+	$('#modal-bg').unbind('click');
+	$('#modal-bg').hide();
+}
+
+function shareClipOnEmail(){
+	$('#modal-bg').show().click(closeEmailClip);
+	$('body').append('<div id="downloadclip-panel"><p class="download-as">Email Clip</p><button class="btn btn-link panel-close-btn"><i class="fa fa-times"></i></button><label for="emails" class="form-label">Send To:</label><textarea placeholder="Example: ramesh@gmail.com, suresh@yahoo.com" class="form-control email-input" name="emails" id="email-addresses" rows="3"></textarea><label for="fromname" class="form-label">Your Name:</label><input type="text" name="fromname" id="fromname-input" class="form-control" placeholder="Example: Jignesh"/><button onclick="validateAndSendEmail(this)" type="button" class="btn btn-primary form-control sendemail" style="text-align:center">Send</button</div>');
+
+  $("#downloadclip-panel .panel-close-btn").click(closeEmailClip);
+}
+
+function adjustClipImage(){
+	var clip = $('.clip').css('background-image').replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+  if( clip == 'none' ) {
+    return;
+  }
+
+	var cimg = new Image();
+	var clipW, clipH, clipLeft, clipTop;
+	cimg.onload = function(e){
+		clipW = this.width;
+		clipH = this.height;
+		if(clipW < $('.main-clip').width()/1.5){
+			//change clip background to contain and center it
+			$('.clip').css('background-position','center').css('background-size','contain');
+		}
+	}
+	cimg.src=clip;
+}
+
+/* Login functionality in clip page */
+
+// show user info updated
+function showuserinfo(){
+    $('.login-link').hide();
+    var profile = $('.rw-header-link.profile').show();
+    profile.find('.name').text(userdata.name);
+    $('.rw-header-link.loginonly').show();
+
+    var profilepic = '';
+    if(userdata.profilepic && userdata.profilepic != '' && userdata.profilepic != "default") {
+      profilepic = '<img src="'+userdata.profilepic+'">';
+    } else {
+      image = baseUrl+'styles/images/user_default.png';
+      profilepic = '<img src="'+image+'">';
+    }
+    $('.madv4_user_photo').html(profilepic);
+    
+    var fullname = userdata.firstname + ' ' + userdata.lastname;
+    
+    var username = userdata.name;
+    var display_name = '';
+    if (fullname.substring(0, 4) != 'user' && fullname != ' ') {
+      display_name = fullname;
+    } else if (username.substring(0, 4) != 'user') {
+      display_name = username;
+    } else {
+      display_name = userdata.email;
+    }
+    name = display_name.substring(0,8) + '...';
+    $('.madv4_user_name').html(name + '<span class="caret"></span>');
+
+    $(".profile.rw-header-link")
+      .click(function(e){
+        if($(this).hasClass('open')){
+          $(".profile.header-dropdown").hide();
+          $(this).removeClass('open').addClass('close');
+          return;
+        }
+        offset = $(this).offset();
+        $(".profile.header-dropdown")
+            .css({'right':'-1px',
+                'width':'100px'}).show();
+        $(this).removeClass('close').addClass('open');
+        var thisItem = this;
+        $(document).mousedown(function(e){
+          if($(thisItem).hasClass('open')){
+            if(! $(e.target).is('.rw-header-link.list')){
+              e.preventDefault();
+              e.stopPropagation();
+              $(".profile.header-dropdown").hide();
+              $(thisItem).removeClass('open').addClass('close');
+            }
+          }
+          $(document).unbind('mousedown', arguments.callee);
+        });
+    });
+
+    /*//intercom.io script
+    var intercomSettings = {
+      app_id: '849cozqn',
+      email: userdata.email,
+      created_at: userdata.created_time,
+      custom_data: {
+        'title': DEConfig.titleName,
+        'provider': userdata.provider
+      }
+    };
+    window.intercomSettings = intercomSettings;
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true;
+    s.src = 'https://api.intercom.io/api/js/library.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);*/
+}
+
+
+function checkLogin(){
+  $.getJSON(authBase+'api/checklogin?callback=?',
+  function(response){
+      if (response.id){
+          DEConfig.loggedin = true;
+          userdata = response;
+          showuserinfo();
+      } else {
+        getRwconnectLibrary();
+        window.rwAsyncInit = function() {
+          RW.init({
+            appId: DEConfig.appId
+          });
+          $('.login-link').unbind('click').click(function(){
+            RW.login( function( response ) {} );
+          });
+        }
+      }
+  });
+}
+
+DE.drawAugmentedBox = function( x0, y0, x1, y1, elem, pageside ){
+  //var clip = $("#enlarged-clip-img");
+
+  var h = Number( clipConfig.clip_height );
+  var w = Number( clipConfig.clip_width ) ;
+  var box;
+  
+  if(elem){
+      box = document.createElement(elem);
+  }else{
+      box = document.createElement('div');
+  }
+
+  var boxheight = (y1 * h - y0 * h);
+  var boxwidth = (x1 * w - x0 * w);
+  box.style.position = 'absolute';
+  box.style.display = 'block';
+  box.style.top = (y0 * h) + 'px';
+  box.style.left = (x0 * w) + 'px';
+
+  box.style.height=boxheight+'px';
+  box.style.width=boxwidth+'px';
+  box.style.backgroundImage='url("https://sf.readwhere.com/read/theme/images/Transparent.gif")';
+  box.style.zIndex = 11;
+  box.setAttribute('class', 'augmented-box');
+  return box;
+}
+
+function loadlibrary(lib_array){
+
+    var loadScript = function(d, s, id, src) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s);js.id = id;
+            js.src = src;
+            fjs.parentNode.insertBefore(js, fjs);
+          };
+
+    var loadStyle = function(d, s, id, src) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s);js.id = id;
+            js.href = src;
+            js.rel = 'stylesheet';
+            fjs.parentNode.insertBefore(js, fjs);
+          };
+
+    if (lib_array.length){
+        for (i=0; i<lib_array.length; i++){
+            if (lib_array[i].src.substr(lib_array[i].src.length-3)=='css'){
+              loadStyle(document,'link',lib_array[i].id, lib_array[i].src);
+            }else{
+              loadScript(document,'script',lib_array[i].id, lib_array[i].src);
+            }
+        }
+    }
+}
+
+var pageMeta = false;
+var pagePlugins = false;
+function loadPageData( cb ) {
+  if ( pageMeta ) {
+    cb( null, pageMeta );
+  } else {
+    $.getJSON(baseUrl+'pagemeta/getbykey/'+Config.pageKey, function( response ) {
+      if ( response.hasOwnProperty('status') && response.status == false ) {
+        pageMeta = false;
+      } else {
+        pageMeta = response[0];
+      }
+      cb( null, pageMeta );
+    });
+  }
+}
+
+
+function loadPagePlugins( cb ) {
+  if ( pagePlugins ) {
+
+    cb( null, pagePlugins );
+  } else {
+    
+    var pluginsTypes = [];
+    $.each( DE.plugins, function( pluginType, plugins ){
+      pluginsTypes.push( pluginType );
+    });
+
+    $.getJSON( baseUrl+'attributes/getv3/'+Config.pageKey+'/'+pluginsTypes.join('/'), function( response ) {
+      if ( !response ) {
+        pagePlugins = false
+      } else {
+        pagePlugins = response;
+      }
+      cb( null, pagePlugins );
+    } )
+  }
+}
+
+function isRect1InsideOfRect2(rect1, rect2){
+
+  var xInt = ( rect1.x >= rect2.x ) && ( parseInt(rect1.x) + parseInt(rect1.w) ) <=  ( parseInt(rect2.x) + parseInt(rect2.w) );
+  var yInt = ( rect1.y >= rect2.y ) && ( parseInt(rect1.y) + parseInt(rect1.h) ) <= ( parseInt(rect2.y) + parseInt(rect2.h) );
+  return xInt && yInt;
+}
+
+function intersects(rect1, rect2){
+    var xInt = ( rect1.x < rect2.x ) ? rect2.x < ( parseInt(rect1.x) + parseInt(rect1.w) ) : rect1.x < ( parseInt(rect2.x) + parseInt(rect2.w) );
+    var yInt = ( rect1.y < rect2.y ) ? rect2.y < ( parseInt(rect1.y) + parseInt(rect1.h) ) : rect1.y < ( parseInt(rect2.y) + parseInt(rect2.h) );
+    return xInt && yInt;
+}
+
+function getIntersectedRect( rect1, rect2 ) {
+    var intersected_rect_coor = {
+        'x0': Math.max( rect1.x, rect2.x ),
+        'y0': Math.max( rect1.y, rect2.y ),
+        'x1': Math.min( parseInt(rect1.x) + parseInt(rect1.w), parseInt(rect2.x) + parseInt(rect2.w) ),
+        'y1': Math.min( parseInt(rect1.y) + parseInt(rect1.h), parseInt(rect2.y) + parseInt(rect2.h) )
+    };
+
+    var intersected_rect = {
+        'x': intersected_rect_coor.x0,
+        'y': intersected_rect_coor.y0,
+        'w': intersected_rect_coor.x1 - intersected_rect_coor.x0,
+        'h': intersected_rect_coor.y1 - intersected_rect_coor.y0,
+    };
+
+    return intersected_rect;
+}
+
+function getPluginsForClip( cb ){
+  async.parallel(
+    {
+      pageData: function( next ) {
+        loadPageData( next );
+      },
+      pagePlugins: function( next ) {
+        loadPagePlugins( next );
+      }
+    }, function( err, results ) {
+
+        if ( !results.pageData || !results.pageData.hasOwnProperty('levels') || !results.pageData.levels.hasOwnProperty('leveldefault') )  {
+          return false;
+        }
+
+        var pageWidth = results.pageData.levels.leveldefault.width;
+        var pageHeight = results.pageData.levels.leveldefault.height;
+        var clipWidth = pageWidth * ( Config.clipData.x1 - Config.clipData.x0 );
+        var clipHeight = pageHeight * ( Config.clipData.y1 - Config.clipData.y0 );
+        var clipRect = {
+          'x': pageWidth * Config.clipData.x0,
+          'y': pageHeight * Config.clipData.y0,
+          'w': clipWidth,
+          'h': clipHeight
+        };
+
+        if( clipPlugins.length ){
+
+          cb( clipPlugins );
+          return;
+        }
+
+        $.each( results.pagePlugins, function( pluginType, plugins ) {
+          $.each( plugins, function( index, plugin ) {
+            
+            var pluginRect = {
+              'x': pageWidth * plugin.attributes.x0,
+              'y': pageHeight * plugin.attributes.y0,
+              'w': pageWidth * ( plugin.attributes.x1 - plugin.attributes.x0 ),
+              'h': pageHeight * ( plugin.attributes.y1 - plugin.attributes.y0 )
+            };
+
+            if ( isRect1InsideOfRect2( pluginRect, clipRect ) ) {  
+              
+              //var intersectedRect = getIntersectedRect( pluginRect, clipRect );
+              
+              var clipPluginLeft = ( clipRect.x < pluginRect.x ) ? pluginRect.x - clipRect.x : 0;
+              var clipPluginTop = ( clipRect.y < pluginRect.y ) ? pluginRect.y - clipRect.y : 0;
+              var clipPluginWidth = clipPluginLeft + pluginRect.w;
+              var clipPluginHeight = (clipPluginTop + pluginRect.h);
+              
+              plugin.attributes.x0 = Math.max( 0, Math.min( 1, clipPluginLeft / clipWidth ) );
+              plugin.attributes.y0 = Math.max( 0, Math.min( 1, clipPluginTop / clipHeight ) );
+              plugin.attributes.x1 = Math.max( 0, Math.min( 1, clipPluginWidth / clipWidth ) );
+              plugin.attributes.y1 = Math.max( 0, Math.min( 1, clipPluginHeight / clipHeight ) );
+
+              clipPlugins.push( plugin );
+            }
+          })
+        });
+        
+        cb( clipPlugins );
+    }
+  )
+}
+
+function showPlugins(){
+  getPluginsForClip( function ( plugins ) {
+      if ( !plugins ) {
+      
+        return;
+      }
+
+      $.each( plugins, function( index, plugin ) {
+        if ( libs_loaded.indexOf( plugin.attributes.plugin ) === -1 ) {
+          loadlibrary( DE.plugins[ plugin.attributes.plugin ].requirelibs );
+          libs_loaded.push ( plugin.attributes.plugin );
+        }
+
+        DE.plugins[ plugin.attributes.plugin ].onShow( plugin, 'left', 'clip' );
+      })
+  });
+}
+
+function removePlugins(){
+  $("#de-chunks-container").remove();
+}
+
+function renderSideClips(clips, source) {
+  for(var idx=0; idx < clips.length; idx += 1){
+    clip = clips[idx];
+    clipImg = 'https://cache.epapr.in/'+clip['issue_id']+'/'+clip['key']+ ( (clip['width'] > 900) ? '/thumb.jpg' : '/page.jpg');
+    clipImg = getImageUrl( clipImg );
+
+    $('#top-clips-box').append($('<a style="text-decoration:none;display:inline-block;margin:5px;height:170px;overflow:hidden;" data-clipid="'+clip['id']+'" href="'+DEConfig.baseUrl+'c/'+clip['id']+'"><img style="padding:2px;width:310px;border:1px solid #ddd" src="'+clipImg+'" /></a>'));    
+  }
+}
+
+function showTopClipsPage(){
+  if($('#top-clips-box a').length > 0){
+    return;
+  }
+  var fill = function(){
+    $('#top-clips-box').empty();
+    var clip,clipImg;
+  
+    if(topClips.length > 0){
+      $('#top-clips-box').append('<h4>Top Clips Of '+clipTitleName+'</h4>');
+    }
+
+    renderSideClips(topClips, 'topclips');
+  }
+
+  $.getJSON( DEConfig.baseUrl+'viewer/topclipsforissue/'+DEConfig.volumeid , function(response){
+    if(!response.status){
+      //no clips found
+      return; 
+    }
+    topClips = response.data;
+    fill();
+   });
+}
+
+var topClipsShowing;
+
+function onPageScroll(evt) {
+  pageBottomOffset = $('#page-bottom').offset();
+  winHeight = $(window).height();
+  //var bottomBoxReach = $(window).scrollTop() >= ( (pageBottomOffset ? pageBottomOffset.top : 2000) - winHeight);
+  var bottomBoxReach = ($(window).scrollTop() >= ($(document).height() - $(window).height() - 200));
+  if( !topClipsShowing && bottomBoxReach){
+    showTopClipsPage();
+    topClipsShowing = true;
+  }
+}
+
+var getImageUrl = function( url ) {
+  if ( !DEConfig.webPEnabled || !supportedWebP ) {
+    return url;
+  } else {
+    return webPPrefix + url;
+  }
+}
+
+var detectWebPSupport = function() {
+  if ( supportedWebP != null ) {
+    return;
+  }
+  var webP = new Image();
+  webP.onload = function() {
+    supportedWebP = (webP.height === 2) ? true : false;
+  }
+  webP.onerror = function() {
+    supportedWebP = false;
+  }
+  webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+}
+
+function renderMainClip() {
+  var interval = setInterval(function(){
+    if(supportedWebP == null) return;
+    //var clipImg = "http://cache.epapr.in/"+DEConfig.volumeid+'/'+clipKey+"/page.jpg";
+    var clipImg = DEConfig.cloudFrontBase+'read/imageapi/clipimage/'+DEConfig.volumeid+'/'+clipKey;
+    clipImg = getImageUrl(clipImg);
+    $('#clipBgImg').css({
+        'background-image': 'url(' + clipImg + ')',
+        'background-size': 'contain',
+        'background-position': 'center center'
+
+      });
+    clearInterval(interval);
+  
+  }, 1000);
+}
+
+$(document).ready(function(){
+  if ( DEConfig.webPEnabled ) {
+    detectWebPSupport();
+  } else {
+    supportedWebP = false;
+  }
+  
+  $(window).bind(deEvents.enlargeClip, enlargeClip);
+  $(window).scroll(onPageScroll);
+  renderMainClip();
+});

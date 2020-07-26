@@ -1,8 +1,12 @@
 {
     "title": "Gurugram: Jobless mason hangs himself in Aravalis | Gurgaon News - Times of India",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.288",
     "history": {
@@ -226,7 +230,7 @@
             }
         ]
     },
-    "updated": "1590788849.690662",
+    "updated": "1595622576.894801",
     "tags": "",
     "url": "https://timesofindia.indiatimes.com/city/gurgaon/gurugram-jobless-mason-hangs-himself-in-aravalis/articleshow/75686153.cms?from=mdr"
 }

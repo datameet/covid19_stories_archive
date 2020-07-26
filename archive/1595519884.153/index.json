@@ -1,0 +1,192 @@
+{
+    "url": "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms",
+    "timestamp": "1595519884.153",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "Mira Road: 12-year-old commits suicide for not being allowed to step out in lockdown",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:42.792955",
+                "end_ts": "2020-07-25 01:07:44.623322",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=mumbaimirror.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:44.625238",
+                "end_ts": "2020-07-25 01:07:44.872766",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619464",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:44.879142",
+                "end_ts": "2020-07-25 01:07:55.064750",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:55.067353",
+                "end_ts": "2020-07-25 01:07:57.669532",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:57.670867",
+                "end_ts": "2020-07-25 01:07:59.840944",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:07:59.842257",
+                "end_ts": "2020-07-25 01:08:01.298170",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:08:01.299976",
+                "end_ts": "2020-07-25 01:08:03.305484",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://mumbaimirror.indiatimes.com/coronavirus/news/mira-road-12-year-old-commits-suicide-for-not-being-allowed-to-step-out-in-lockdown/articleshow/76084412.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.153",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:08:03.307137",
+                "end_ts": "2020-07-25 01:08:59.143354",
+                "duration": 55
+            }
+        ]
+    },
+    "updated": "1595619539.143706"
+}

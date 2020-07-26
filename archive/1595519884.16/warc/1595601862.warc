@@ -1,0 +1,1003 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-07-24T14:44:22Z
+WARC-Record-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Filename: 1595601862.warc
+WARC-Block-Digest: sha1:VBPLMIWS4YK5BPQUIYC6Z626VWJ6DE76
+Content-Length: 622
+
+software: Wget/1.19.4 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: off
+wget-arguments: "--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595601862" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.telegraphindia.com/states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605" 
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://www.telegraphindia.com/states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-07-24T14:44:22Z
+WARC-Record-ID: <urn:uuid:758b8da0-cd1f-4ea1-a6df-28fdcd673cc4>
+WARC-IP-Address: 104.121.244.77
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Block-Digest: sha1:OY6RN2ZHLEPOKDVCU4WGVGVJSSBP3IC3
+Content-Length: 280
+
+GET /states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605 HTTP/1.1
+User-Agent: ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4
+Accept: */*
+Accept-Encoding: identity
+Host: www.telegraphindia.com
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:265fcabd-b80e-4317-b360-c14f0f2ff1ef>
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Concurrent-To: <urn:uuid:758b8da0-cd1f-4ea1-a6df-28fdcd673cc4>
+WARC-Target-URI: <https://www.telegraphindia.com/states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605>
+WARC-Date: 2020-07-24T14:44:22Z
+WARC-IP-Address: 104.121.244.77
+WARC-Block-Digest: sha1:N3HVQGZU5K2DMCGAGD3FRYUZRJBQVTYR
+WARC-Payload-Digest: sha1:3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ
+Content-Type: application/http;msgtype=response
+Content-Length: 339
+
+HTTP/1.1 301 Moved Permanently
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605
+Cache-Control: max-age=7200
+Expires: Fri, 24 Jul 2020 16:44:22 GMT
+Date: Fri, 24 Jul 2020 14:44:22 GMT
+Connection: keep-alive
+Vary: User-Agent
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-07-24T14:44:22Z
+WARC-Record-ID: <urn:uuid:c23b174f-a708-4962-b504-21bec6c5552d>
+WARC-IP-Address: 104.121.244.77
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Block-Digest: sha1:7JNQBRI35CWM5MUBVEUA2BKHCCWMBXMP
+Content-Length: 273
+
+GET /west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605 HTTP/1.1
+User-Agent: ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4
+Accept: */*
+Accept-Encoding: identity
+Host: www.telegraphindia.com
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:17851380-9df4-4d13-aa0b-df632d6b7243>
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Concurrent-To: <urn:uuid:c23b174f-a708-4962-b504-21bec6c5552d>
+WARC-Target-URI: <https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605>
+WARC-Date: 2020-07-24T14:44:22Z
+WARC-IP-Address: 104.121.244.77
+WARC-Block-Digest: sha1:4PYHZXZSTPUTVLBAV26KEEEES2DVYE3D
+WARC-Payload-Digest: sha1:B6KNSZN5KTN3H5OEWWTXQ6JBURG3XUNI
+Content-Type: application/http;msgtype=response
+Content-Length: 52459
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Server: nginx/1.16.1
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Content-Length: 52103
+Cache-Control: private, max-age=7200
+Expires: Fri, 24 Jul 2020 16:44:22 GMT
+Date: Fri, 24 Jul 2020 14:44:22 GMT
+Connection: keep-alive
+Vary: User-Agent
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/images/favicon.png">
+    
+        <link rel="stylesheet" type='text/css' href="/assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type='text/css' href="/assets/css/override0.3.css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Coronavirus lockdown: Kalimpong woman dies on train - Telegraph India</title>        <meta name="description" content="Son-in-law frantically searches for help, but in vain"/>
+        <link rel="canonical" href="https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605"/>
+        <link rel="amphtml" href="https://www.telegraphindia.com/amp/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605"/>                <meta property="fb:app_id" content="534248160342700">
+
+        <meta name="keyword" content="Shramik Special train, death, Coronavirus, lockdown, Kalimpong, Ranjit Tamang"/>
+        <meta property="og:url" content="https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605"/>
+        <meta property="og:title" content="Coronavirus lockdown: Kalimpong woman dies on train"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Son-in-law frantically searches for help, but in vain"/>
+        <meta property="og:image" content="https://assets.telegraphindia.com/telegraph/c9eb04a4-c10b-417b-81d0-68fd8eb3b448.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:url" content="https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605"/>
+        <meta name="twitter:site" content="@ttindia"/>
+        <meta name="twitter:creator" content="@ttindia"/>
+        <meta name="twitter:title" content="Coronavirus lockdown: Kalimpong woman dies on train"/>
+        <meta name="twitter:description" content="Son-in-law frantically searches for help, but in vain"/>
+        <meta name="robots" content="index, follow">        <meta name="google-site-verification" content="VRsNukuvRBQE0QCvqNj2fdezMC2N6_pAK2B7lMHcHGA"/>
+        <meta name="referrer" content="origin">
+        <meta name="msvalidate.01" content="16C1B4A8FD9A29E3D5AFC3EF251C77A8"/>
+                <script type="application/ld+json">{
+                     "@context": "http://schema.org",
+                     "@type": "NewsArticle",
+                     "mainEntityOfPage": {
+                       "@type": "WebPage",
+                       "@id": "https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605"
+                     },
+                     "headline": "Kalimpong woman dies on train",
+                     "image": [ "https://assets.telegraphindia.com/telegraph/c9eb04a4-c10b-417b-81d0-68fd8eb3b448.jpg"],
+                     "datePublished": "2020-05-28T23:48:53+05:30",
+                     "dateModified": "2020-05-28T23:48:53+05:30",
+                       "author": {
+                           "@type": "Person",
+                           "name": "Vivek Chhetri"
+                         },
+
+                      "publisher": {
+                       "@type": "Organization",
+                       "name": "Telegraph India",
+                       "logo": {
+                         "@type": "ImageObject",
+                         "url": "https://www.telegraphindia.com/assets/images/logo.png"
+                       }
+                     },
+                     "description": "Son-in-law Frantically Searches For Help, But In Vain"
+                }</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5869fef4bf06892f"></script>        <script type="application/ld+json">{
+                    "@context": "http://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@id": "/",
+                            "name": "Telegraph India"
+                        }
+                    },{
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@id": "https://www.telegraphindia.com/west-bengal",
+                            "name": "West-bengal"
+                        }
+                    },{
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "name": "Coronavirus lockdown: Kalimpong woman dies on train"
+                        }
+                    }]
+                }</script>    
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T9HRQZR');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script>window.dataLayer = window.dataLayer || []</script><script type="text/javascript">
+             dataLayer = [{
+            "storyId": 1776605,
+             "storyUrl": https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605,
+             "pagetype": "story",
+             "sectionName": west-bengal,
+             "byline": Vivek Chhetri,
+             "publish-date": 2020-05-28T17:49:33.000000Z,
+             "publish-time": "5:12 AM",
+             "tags": "Core sector,Infrastructure,lockdown,",
+             "title": "Core sector shrinks 38%",
+             "Content_Type":"News",
+             "Location":"New Delhi",
+             "Story Source":"Print",
+             "Story Elements":"None",
+             "Content_SubType":"Spot News",
+             "Subject_attributes":"Sectors - Business",
+             "Story Desk":"Print",
+             "Created_by": "" ,
+             "Modified_by": "",
+            }];
+            </script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>			
+<script>		
+var intViewportWidth = window.innerWidth;
+var abpDevice="";
+if (intViewportWidth>768 && intViewportWidth<1023){abpDevice="tablet"}
+else if (intViewportWidth>=1024){abpDevice="desktop"}
+console.log(abpDevice);
+console.log(intViewportWidth);
+			
+googletag.cmd.push(function() {
+if (abpDevice==="desktop")
+{   googletag.defineSlot('/1088475/TT_Header_728x90', [[970, 250], [970, 90], [728, 90]], 'div-gpt-ad-1525340492587-0').addService(googletag.pubads());
+    googletag.defineSlot('/1088475/TT_Middle_1_728x90', [728, 90], 'div-gpt-ad-1525340492587-1').addService(googletag.pubads());
+    googletag.defineSlot('/1088475/TT_Middle_2_728x90', [[970, 250], [970, 90], [728, 90]], 'div-gpt-ad-1525340492587-4').addService(googletag.pubads());
+    googletag.defineOutOfPageSlot('/1088475/TT_1x1', 'div-gpt-ad-1525340492587-5').addService(googletag.pubads());
+    googletag.defineOutOfPageSlot('/1088475/TT_Slider_1x1', 'div-gpt-ad-1525340492587-6').addService(googletag.pubads());}
+
+    googletag.defineSlot('/1088475/TT_RHS_1_300x250', [[300, 600], [300, 250]], 'div-gpt-ad-1525340492587-2').addService(googletag.pubads());
+    googletag.defineSlot('/1088475/TT_RHS_2_300x250', [[300, 600], [300, 250]], 'div-gpt-ad-1525340492587-3').addService(googletag.pubads());
+    
+    googletag.defineOutOfPageSlot('/1088475/TT_1x1_1', 'div-gpt-ad-1525340492587-7').addService(googletag.pubads());
+    googletag.defineOutOfPageSlot('/1088475/TT_1x1_2', 'div-gpt-ad-1525340492587-8').addService(googletag.pubads());
+
+    
+googletag.pubads().set("page_url", "page_url");
+googletag.pubads().setTargeting("url", "page_url");
+googletag.pubads().setTargeting("TT_Detail", "Detail");
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs();
+googletag.enableServices();
+  });
+</script>
+<script data-ad-client="ca-pub-9104455251217860" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({article:'auto'});
+!function (e, f, u, i) {
+if (!document.getElementById(i)){
+e.async = 1;
+e.src = u;
+e.id = i;
+f.parentNode.insertBefore(e, f);
+}
+}(document.createElement('script'),
+document.getElementsByTagName('script')[0],
+'//cdn.taboola.com/libtrc/telegraphindiacom/loader.js',
+'tb_loader_script');
+if(window.performance && typeof window.performance.mark == 'function')
+{window.performance.mark('tbl_ic');}
+</script>
+
+</head>
+<body class="bg-light">
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9HRQZR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div class="container mainContainer bg-white pd-bottom-3">
+    <div class="ad_header text-center pt-md-3 mb-md-3">
+        <div class="noto-regular fs-11 text-advertisement">Advertisement</div>
+        <!-- /1088475/TT_Header_728x90 -->
+<div id='div-gpt-ad-1525340492587-0'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-0'); });}
+</script>
+</div>    </div>
+    <hr>
+    <div>
+        <nav class="pt-3 pb-1">
+            <div class="row align-items-end">
+                <div class="col">
+                    <div class="noto-regular">
+                        <span>Friday, 24 July 2020</span>
+                        <span>&nbsp;&nbsp;<img src="/assets/images/blue_dot.png"></span>
+                        <span>&nbsp; <a class="muted-link" target="_blank"
+                                        href="https://epaper.telegraphindia.com/"
+                                        title="https://epaper.telegraphindia.com/">E-paper</a></span>
+                    </div>
+                </div>
+                <div class="col-5 text-center">
+                                             <a href="/" title="logo"><img class="img-fluid" src="/assets/images/tt_online_logo.png?v=1"></a>
+                    
+                </div>
+                <div class="col text-right d-flex flex-column align-items-end">
+                    <ul class="list-group list-group-horizontal mb-0">
+                        <!--                        <li class="d-inline-block mr-2 mt-1"><a class="noto-regular text-reset text-capitalize muted-link" href="#">Login</a></li>-->
+                        <li class="d-inline-block">
+                            <a class="uk-padding-remove muted-link"
+                               href="https://www.facebook.com/thetelegraphindia" target="_blank">
+                                <div class="the-icons span3 d-inline-block fs-20 icon_shift_2"
+                                     title="https://www.facebook.com/thetelegraphindia">
+                                    <i class="demo-icon icon-facebook">&#xf09a;</i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-inline-block"><a class="uk-padding-remove muted-link"
+                                                      href="https://twitter.com/ttindia" target="_blank">
+                            <span>
+                                <img src="/assets/images/blue_dot.png">
+                            </span>
+                                <div class="the-icons span3 d-inline-block fs-20 icon_shift_3"
+                                     title="https://twitter.com/ttindia">
+                                    <i class="demo-icon icon-twitter">&#xf309;</i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="d-inline-block"><a class="uk-padding-remove muted-link"
+                                                      href="https://www.instagram.com/telegraphonline/" target="_blank"><span>&nbsp;<img
+                                        src="/assets/images/blue_dot.png"></span>
+                                <div class="the-icons span3 d-inline-block fs-20 icon_shift_3"
+                                     title="https://www.instagram.com/telegraphonline/"><i
+                                        class="demo-icon icon-instagram">&#xf16d;</i></div>
+                            </a></li>
+                        <li class="d-inline-block"><a class="uk-padding-remove muted-link"
+                                                      href="https://play.google.com/store/apps/details?id=com.thetelegraph" target="_blank"><span>&nbsp;<img
+                                        src="/assets/images/blue_dot.png"></span>
+                                <div class="the-icons span3 d-inline-block fs-20 icon_shift_1"
+                                     title="https://play.google.com/store/apps/details?id=com.thetelegraph"><i
+                                        class="demo-icon icon-android">&#xf17b;</i></div>
+                            </a></li>
+                        <li class="d-inline-block"><a class="uk-padding-remove muted-link"
+                                                      href="https://apps.apple.com/us/app/the-telegraph/id1438396234" target="_blank"><span>&nbsp;<img
+                                        src="/assets/images/blue_dot.png"></span>
+                                <div class="the-icons span3 d-inline-block fs-20 icon_shift_2"
+                                     title="https://apps.apple.com/us/app/the-telegraph/id1438396234"><i
+                                        class="demo-icon icon-apple mr-0">&#xf179;</i></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="black_menu">
+    <div class="container">
+        <nav class="navbar p-0 navbar-expand-lg navbar-dark" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="navbar-nav noto-regular fs-15">
+                    <li class="nav-item">
+                                    <a class="nav-link" href="/" target="_self" title="Home">Home</a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/opinion" target="_self" title="Opinion">Opinion</a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/india" target="_self" title="India">India</a>
+                                </li><li class="nav-item dropdown dd-menu">
+                                    <a class="nav-link dropdown-toggle" href="/states" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="/states">
+                                        States
+                                    </a>
+                                    <div class="dropdown-menu search-bg-blue remove-border px-2 pt-0 pb-0"
+                                         aria-labelledby="navbarDropdown"><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/west-bengal" target="_self" title="West Bengal">West Bengal</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/north-east" target="_self" title="North East">North East</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/jharkhand" target="_self" title="">Jharkhand</a></div>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/west-bengal/calcutta" target="_self" title="Calcutta">Calcutta</a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/world" target="_self" title="World">World</a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/business" target="_self" title="">Business</a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/science-tech" target="_self" title="Science & Tech ">Science & Tech </a>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/health" target="_self" title="Health">Health</a>
+                                </li><li class="nav-item dropdown dd-menu">
+                                    <a class="nav-link dropdown-toggle" href="/sports" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="/sports">
+                                        Sports
+                                    </a>
+                                    <div class="dropdown-menu search-bg-blue remove-border px-2 pt-0 pb-0"
+                                         aria-labelledby="navbarDropdown"><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/sports/cricket" target="_self" title="Cricket">Cricket</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/sports/football" target="_self" title="Football">Football</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/sports/horse-racing/" target="_self" title="Horse Racing">Horse Racing</a></div>
+                                </li><li class="nav-item">
+                                    <a class="nav-link" href="/entertainment" target="_self" title="Entertainment">Entertainment</a>
+                                </li><li class="nav-item dropdown dd-menu">
+                                    <a class="nav-link dropdown-toggle" href="/culture" id="navbarDropdown" role="button"
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="/culture">
+                                        Culture
+                                    </a>
+                                    <div class="dropdown-menu search-bg-blue remove-border px-2 pt-0 pb-0"
+                                         aria-labelledby="navbarDropdown"><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/heritage" target="_self" title="Heritage">Heritage</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/travel" target="_self" title="Travel">Travel</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/style" target="_self" title="Style">Style</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/people" target="_self" title="People">People</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/books" target="_self" title="Books">Books</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/food" target="_self" title="Food">Food</a><a class="dropdown-item uk-text-white py-2 px-0 noto-regular fs-15" href="/culture/arts" target="_self" title="Arts">Arts</a></div>
+                                </li>
+                </ul>
+            </div>
+            <div class="site_search">
+                <ul class="navbar-nav noto-regular fs-15 position-relative">
+                    <li class="nav-item">
+                        <div class="the-icons span3" title="Code: 0xe804">
+                            <i data-prop="search" class="demo-icon icon-play uk-text-white search_icon">&#xe804;</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="search_1 position-absolute">
+                <div class="pd-top-10 px-3 search_1_form">
+                    <form action="/search">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control remove-border search_inp noto-regular"
+                                   placeholder="Enter Search Keywords" name="keyword">
+                            <div class="input-group-append">
+                                <button type="submit" style="" class="btn remove-border noto-regular fs-16"
+                                        >Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+
+    </div>
+</div>
+
+
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
+<div class="container uk-background-default pt-2">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="fs-12 uk-text-69 pb-2 noto-regular">
+                <a class="muted-link" href="/"><span class="text-breadcrumbs">Home</span></a> /
+                <a class="muted-link" href="/west-bengal" title=""><span class="text-breadcrumbs">West-bengal</span></a> /
+                                <span>Kalimpong woman dies on train</span>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hrSection">
+
+    <div class="row uk-grid-divider pt-2">
+        <div class="col-8">
+    <div class="row uk-grid-divider">
+        <div class="col-12">
+            <div class="article pb-4">
+                <div>
+                    <!-- <a class="muted-link" href="#" title=""> -->
+                        <span class="red fs-20 noto-bold">
+                                                    </span>
+                    <!-- </a> -->
+                </div>
+                <div>
+                    <h1 class="fs-45 uk-text-1D noto-bold mb-2">
+                        <!-- <a class="muted-link" href="#" title=""> -->
+                            Kalimpong woman dies on train                        <!-- </a> -->
+                    </h1>
+                    <div class="fs-20 uk-text-69 noto-regular">
+                        Son-in-law frantically searches for help, but in vain                    </div>
+                </div>
+                                    <div class="pt-2">
+                        <img src="https://assets.telegraphindia.com/telegraph/c9eb04a4-c10b-417b-81d0-68fd8eb3b448.jpg" width="100%" alt="A Shramik Special train in Patna. ">
+                    </div>
+                                    <div class="uk-text-69 pt-2 pb-2 noto-regular">
+                    <div class="fs-13">
+                        <a class="muted-link" href="#" title="">
+                            A Shramik Special train in Patna.                         </a>
+                    </div>
+                    <div class="fs-11"><a class="muted-link" href="#"
+                                          title="">(PTI)</a></div>
+                </div>
+                <hr class="hrSection">
+                <div class="uk-text-69 pt-2 pb-2 overflow-auto noto-regular">
+                    <div class="fs-12 float-left">
+                        <a class="muted-link" href="#">
+                            <span class="text-breadcrumbs">Vivek Chhetri</span>
+                        </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a class="muted-link" href="#">
+                            <span>Darjeeling</span>
+                        </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <span>Published 28.05.20, 11:48 PM</span>
+                    </div>
+                    <!--                    <div class="fs-12 float-right">2 min read</div>-->
+                </div>
+                <hr class="hrSection">
+
+                                            <div class="fs-17 pt-2 noto-regular">
+                                <p>Ranjit Tamang had pulled the emergency chain of the Shramik Special train a couple of times, frantically looked for railway personnel and tried to search for the train’s location on the internet, but nothing worked and his mother-in-law Kipa Sherpa, 51, breathed her last on journey on Wednesday night.</p><p>“If we could have managed oxygen for her, I think she would have survived,” Tamang, a Kalimpong resident, told <b>The Telegraph</b> over the phone from Lucknow. </p><p>So far, nine persons have reportedly died on Shramik trains since Monday. </p><p>Kipa, her two daughters, their husbands and her grandson had boarded the NJP-bound Shramik Special train in New Delhi on Wednesday evening.</p><p>Tamang said they were all pleased when they had received a call on Tuesday night confirming their travel on a Shramik train. “We woke up early and did not even have proper food — we had bananas and mangoes on the way. We started for the designated place for health check-up at 7 am,” said Tamang who used to stay at Kotla, New Delhi. He was forced to return home because of job loss and the subsequent economic hardship.</p><p>Later in the day, the family was taken to the railway station in a bus. “The day was very hot. My mother-in-law was fine...maybe, she just had a headache because of the heat,” said Tamang.</p><p>The train started from Delhi around 6pm and so did their problem. Shramik trains have non-AC coaches. “My mother-in-law started complaining of uneasiness but once she started getting serious, we, too, became nervous,” said Tamang.</p><p>It was then that Tamang pulled the emergency chain a couple of times. “The train wouldn’t just stop,” he said.</p><p>He moved across compartments hoping to find some railway personnel, but in vain. “I had stored the number of the person who had called me up to confirm my journey. I called him up and he provided me with two helpline numbers,” said Tamang.</p><p>Voice connectivity was an issue. “The helpline number wanted to know our location. We had no clue as it was pitch dark outside. I also received a call from the railway ministry. I tried to search for our location through the internet but that, too, would not work,” the migrant said.</p><p>The official who had called to confirm their journey and the helpline number could finally trace their location.</p><p>“The railway officials were waiting for us at Etawah (Uttar Pradesh). We reached the station around 10.30pm but my mother-in-law had passed away around 9pm without any help,” said Tamang.</p><p>According to the son-in-law, Sherpa did not have major health problems. “However, when she was in Kalimpong, she used to take medicines for high blood pressure but that was never an issue.”</p><p>“Is it too much to ask for a medical team on every Shramik Special train, given the condition in which people are travelling?” asked a resident of Kalimpong, adding that more empathy was needed as harried people were travelling under extraordinary times.</p><p>According to him, the ordeal the five-member Kalimpong family had to go through provides an insight of hardships low-income travellers have to face during this forced mass movement.</p><p>Post-mortem was conducted at Etawah and the family was returning by road on Thursday. “Police have given us food and water. I received a call from district officials there (in Kalimpong) saying the ambulance fare would be borne by them,” said Tamang.</p><p>He had also been assured of transportation from Siliguri to Dalapchand in Kalimpong by the GTA.</p>                            </div>
+                            <div class="text-center uk-background-muted pb-3">
+                                <div>
+                                    <div class="noto-regular fs-11 text-advertisement">Advertisement</div>
+                                    <!-- /1088475/TT_Middle_1_728x90 -->
+<div id='div-gpt-ad-1525340492587-1'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-1'); });}
+</script>
+</div>
+                                </div></div>            </div>
+
+            <hr class="hrSection">
+
+
+            <div class="pb-3 text-center fs-12 uk-text-69 noto-regular listed_topics">
+                
+                                <a class="d-inline-block noto-regular fs-12 uk-text-69 bg-light-grey py-2 px-4 mt-3" href="/topic/death">Death</a>
+                               
+                                <a class="d-inline-block noto-regular fs-12 uk-text-69 bg-light-grey py-2 px-4 mt-3" href="/topic/lockdown">Lockdown</a>
+                               
+                                <a class="d-inline-block noto-regular fs-12 uk-text-69 bg-light-grey py-2 px-4 mt-3" href="/topic/coronavirus">Coronavirus</a>
+                               
+                                <a class="d-inline-block noto-regular fs-12 uk-text-69 bg-light-grey py-2 px-4 mt-3" href="/topic/shramik-special-train">Shramik Special Train</a>
+                                           </div>
+            <hr class="hrSection">
+
+            <div class="uk-text-69 pt-2 pb-2 overflow-auto noto-regular">
+                <div class="fs-12 float-left share-col">
+                    <a class="muted-link" href="#" title=""><span class="mr-3">Share</span></a>
+                    <div class="addthis_inline_share_toolbox_2ajq float-right"></div>
+                </div>
+            </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+        <div class="col-4">
+    <div class="text-center uk-background-muted pb-3">
+        <div>
+            <div class="noto-regular fs-11 text-advertisement">Advertisement</div>
+            <!-- /1088475/TT_RHS_1_300x250 -->
+<div id='div-gpt-ad-1525340492587-2'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-2'); });
+</script>
+</div>
+        </div>
+    </div>
+
+
+    <div class="pt-4">
+        <h2 class="uk-text-blue fs-24 lato-bold"><a class="muted-link" href="#" title="">Most Read</a></h2>
+        <hr class="hrSection">
+
+                    <div class="uk-panel pb-2 pt-2">
+                <a href="#" class="muted-link" title="Delhi riots: Cops stop ambulance, prod wound">
+                    <div class="position-relative clearfix clearfix">
+                        <a href="https://www.telegraphindia.com/india/lion-of-ladakh-contests-modi-claim/cid/1783060">
+                            <img class="float-left mr-3"
+                                 src="https://assets.telegraphindia.com//telegraph/477152f6-8fca-4fd1-924a-30f0648455f2.jpg"
+                                 width="136"
+                                 height="76" alt="">
+                        </a>
+
+                        <div>
+                            <h2 class="fs-15 uk-text-1E noto-regular">
+                                <a class="muted-link" href="https://www.telegraphindia.com/india/lion-of-ladakh-contests-modi-claim/cid/1783060">
+                                    Lion of Ladakh contests claim                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr class="hrSection">
+                        <div class="uk-panel pb-2 pt-2">
+                <a href="#" class="muted-link" title="Delhi riots: Cops stop ambulance, prod wound">
+                    <div class="position-relative clearfix clearfix">
+                        <a href="https://www.telegraphindia.com/calcutta/ca-accused-of-multi-city-murder-run/cid/1782994">
+                            <img class="float-left mr-3"
+                                 src="https://assets.telegraphindia.com//telegraph/48fedcf3-676c-48d7-a920-073b16560738.jpg"
+                                 width="136"
+                                 height="76" alt="">
+                        </a>
+
+                        <div>
+                            <h2 class="fs-15 uk-text-1E noto-regular">
+                                <a class="muted-link" href="https://www.telegraphindia.com/calcutta/ca-accused-of-multi-city-murder-run/cid/1782994">
+                                    CA accused of multi-city murder run                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr class="hrSection">
+                        <div class="uk-panel pb-2 pt-2">
+                <a href="#" class="muted-link" title="Delhi riots: Cops stop ambulance, prod wound">
+                    <div class="position-relative clearfix clearfix">
+                        <a href="https://www.telegraphindia.com/india/citizenship-wait-for-foreign-brides-in-nepal/cid/1783037">
+                            <img class="float-left mr-3"
+                                 src="https://assets.telegraphindia.com//telegraph/5a7f8732-b701-4c5b-83b0-aa8c7eab74a3.jpg"
+                                 width="136"
+                                 height="76" alt="">
+                        </a>
+
+                        <div>
+                            <h2 class="fs-15 uk-text-1E noto-regular">
+                                <a class="muted-link" href="https://www.telegraphindia.com/india/citizenship-wait-for-foreign-brides-in-nepal/cid/1783037">
+                                    'Roti-beti' Delhi gets a Nepal 'beti' message                                   </a>
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr class="hrSection">
+                        <div class="uk-panel pb-2 pt-2">
+                <a href="#" class="muted-link" title="Delhi riots: Cops stop ambulance, prod wound">
+                    <div class="position-relative clearfix clearfix">
+                        <a href="https://www.telegraphindia.com/opinion/modi-s-statement-on-china-signals-desire-to-resolve-border-row-for-good/cid/1782978">
+                            <img class="float-left mr-3"
+                                 src="https://assets.telegraphindia.com//telegraph/341a48ca-e60b-4eed-bd43-ec6204418397.jpg"
+                                 width="136"
+                                 height="76" alt="">
+                        </a>
+
+                        <div>
+                            <h2 class="fs-15 uk-text-1E noto-regular">
+                                <a class="muted-link" href="https://www.telegraphindia.com/opinion/modi-s-statement-on-china-signals-desire-to-resolve-border-row-for-good/cid/1782978">
+                                    Modi's statement on China signals desire to resolve border row for good                                 </a>
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr class="hrSection">
+                        <div class="uk-panel pb-2 pt-2">
+                <a href="#" class="muted-link" title="Delhi riots: Cops stop ambulance, prod wound">
+                    <div class="position-relative clearfix clearfix">
+                        <a href="https://www.telegraphindia.com/india/india-china-clash-clarity-not-callisthenics/cid/1783063">
+                            <img class="float-left mr-3"
+                                 src="https://assets.telegraphindia.com//telegraph/452a47f2-5196-4c92-b340-7b269590000f.jpg"
+                                 width="136"
+                                 height="76" alt="">
+                        </a>
+
+                        <div>
+                            <h2 class="fs-15 uk-text-1E noto-regular">
+                                <a class="muted-link" href="https://www.telegraphindia.com/india/india-china-clash-clarity-not-callisthenics/cid/1783063">
+                                    Clarity, not callisthenics                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <hr class="hrSection">
+            
+    </div>
+
+    <div class="text-center uk-background-muted pb-3 mt-3">
+        <div>
+            <div class="noto-regular fs-11 text-advertisement">Advertisement</div>
+            <!-- /1088475/TT_RHS_2_300x250 -->
+<div id='div-gpt-ad-1525340492587-3'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-3'); });
+</script>
+</div>
+        </div>
+    </div>
+
+<!--    <div class="rowp pt-4">-->
+<!--        <div class="uk-background-lightblue uk-padding-xsmall text-center">-->
+<!--            <div>-->
+<!--                <h2 class="fs-25 uk-text-white noto-regular"><a class="muted-link" href="#" title="">Download-->
+<!--                        our latest App</a></h2>-->
+<!--                <h2 class="fs-21 noto-italic">to get update on the go... </h2>-->
+<!--            </div>-->
+<!--            <div class="pt-2 pb-2">-->
+<!--                <a href="--><!--"><img-->
+<!--                        src="/assets/images/istore_black.png"></a>-->
+<!--                <a href="--><!--"><img-->
+<!--                        src="/assets/images/play_black.png"></a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center uk-background-muted pb-3">
+                <div>
+                    <div class="noto-regular fs-11 text-advertisement">Advertisement</div>
+                    <!-- /1088475/TT_Middle_2_728x90 -->
+<div id='div-gpt-ad-1525340492587-4'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-4'); });}
+</script>
+</div>                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-4">
+        <div class="pt-4">
+            <hr class="hrSection">
+            <div class="row pt-0 pb-4">
+                <div class="col-2">
+                    <div class="bg-light-grey position-relative uk-text-blue wb">
+                        <div class="may_read_text rotated_text">
+                            <a class="muted-link" href="#" title="">
+                                <span class="fs-30 lato-regular">You may read</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="row uk-grid-divider pt-3 pb-4">
+                                                    <div class="col-3">
+                                <div class="position-relative">
+                                    <a href="https://www.telegraphindia.com/india/coronavirus-lockdown-hit-projects-to-resume-in-puri/cid/1776321">
+                                        <img src="https://assets.telegraphindia.com//derivative/THE_TELEGRAPH/1776321/16X9/imagee898f0b2-065c-4069-a5ca-47fbd34d3f23.jpg" width="100%" alt="Lockdown-hit projects to resume in Puri">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="fs-21 uk-text-1D noto-bold pd-top-5">
+                                        <a class="muted-link" href="https://www.telegraphindia.com/india/coronavirus-lockdown-hit-projects-to-resume-in-puri/cid/1776321">
+                                            Lockdown-hit projects to resume in Puri                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                                                        <div class="col-3">
+                                <div class="position-relative">
+                                    <a href="https://www.telegraphindia.com/business/coronavirus-lockdown-pilot-s-distancing-plea-rejected/cid/1776350">
+                                        <img src="https://assets.telegraphindia.com//derivative/THE_TELEGRAPH/1776350/16X9/image1dee9c07-e162-40b0-a870-49ead220a57c.jpg" width="100%" alt="Pilot's distancing plea rejected">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="fs-21 uk-text-1D noto-bold pd-top-5">
+                                        <a class="muted-link" href="https://www.telegraphindia.com/business/coronavirus-lockdown-pilot-s-distancing-plea-rejected/cid/1776350">
+                                            Pilot's distancing plea rejected                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                                                        <div class="col-3">
+                                <div class="position-relative">
+                                    <a href="https://www.telegraphindia.com/sport/much-on-iccs-plate/cid/1775939">
+                                        <img src="https://assets.telegraphindia.com//derivative/THE_TELEGRAPH/1775939/16X9/image2a5fa9ee-e6e5-490b-92ad-d217befc6c6b.jpg" width="100%" alt="Much on ICC's plate">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="fs-21 uk-text-1D noto-bold pd-top-5">
+                                        <a class="muted-link" href="https://www.telegraphindia.com/sport/much-on-iccs-plate/cid/1775939">
+                                            Much on ICC's plate                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                                                        <div class="col-3">
+                                <div class="position-relative">
+                                    <a href="https://www.telegraphindia.com/india/centre-approves-rs-111-70-cr-assistance-to-three-states-for-kharif-crop-damage-rajasthan-manipur-meghalaya/cid/1776275">
+                                        <img src="https://assets.telegraphindia.com//derivative/THE_TELEGRAPH/1776275/16X9/image0e6da870-83ca-4410-94b9-38504ee0f40d.jpg" width="100%" alt="Centre approves Rs 111.70 cr assistance to three states for kharif crop damage">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="fs-21 uk-text-1D noto-bold pd-top-5">
+                                        <a class="muted-link" href="https://www.telegraphindia.com/india/centre-approves-rs-111-70-cr-assistance-to-three-states-for-kharif-crop-damage-rajasthan-manipur-meghalaya/cid/1776275">
+                                            Centre approves Rs 111.70 cr assistance to three states for kharif crop damage                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container uk-background-default pt-4">&nbsp;</div>
+
+    <div class="container pt-3 mainContainer">
+        <!--<div id="taboola-mid-article-thumbnails-1"></div>
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({
+mode: 'thumbnails-mid',
+container: 'taboola-mid-article-thumbnails-1',
+placement: 'Mid Article Thumbnails 1',
+target_type: 'mix'
+});
+</script>-->    </div>
+    <div class="container uk-background-default pt-2 mainContainer">&nbsp;</div>
+    <!-- /1088475/TT_1x1 -->
+<div id='div-gpt-ad-1525340492587-5'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-5'); });}
+</script>
+</div>
+
+<!-- /1088475/TT_Slider_1x1 -->
+<div id='div-gpt-ad-1525340492587-6'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-6'); });}
+</script>
+</div>
+
+<!-- /1088475/TT_1x1_1 -->
+<div id='div-gpt-ad-1525340492587-7'>
+<script>
+if(abpDevice==="desktop"){googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-7'); });}
+</script>
+</div>
+
+<!-- /1088475/TT_1x1_2 -->
+<div id='div-gpt-ad-1525340492587-8' style='width: 1px; height: 1px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1525340492587-8'); });
+  </script>
+</div>
+
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+_taboola.push({flush: true});
+</script>
+<div class="container uk-background-default pt-3">&nbsp;</div>
+
+<!-- Footer start -->
+<div style="background-color:#000;" id="footer" class="noto-regular">
+    <div class="container text-center pt-4">
+        <h4 class="text-white fs-15">Download the latest The Telegraph app</h4>
+        <div class="pt-2 pb-4">
+            <span><a href="https://play.google.com/store/apps/details?id=com.thetelegraph" target="_blank"><img src="/assets/images/istore.png" alt="Apple App Store"></a></span>
+            <span><a href="https://apps.apple.com/us/app/the-telegraph/id1438396234" target="_blank"><img src="/assets/images/play.png" alt="Google Play Store"></a></span>
+        </div>
+        <hr class="hrSectionFooter">
+        <div class="row uk-grid-divider uk-grid-divider-footer">
+            <div class="col-6">
+                <h4 class="text-white fs-18 text-left pt-3 pb-3 mb-0 ml-3 noto-bold">More from The Telegraph India</h4>
+                <hr class="hrSectionFooter">
+
+                <div class="row text-left text-grey pt-4 pl-3">
+                    <div class="col-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#" title="News">News</a></li>
+                            <li><a href="#" title="Opinion">Opinion</a></li>
+                            <li><a href="#" title="India">India</a></li>
+                            <li><a href="#" title="Bengal">Bengal</a></li>
+                            <li><a href="#" title="World">World</a></li>
+                            <li><a href="#" title="Business">Business</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#" title="Science">Science</a></li>
+                            <li><a href="#" title="Technology">Technology</a></li>
+                            <li><a href="#" title="Health">Health</a></li>
+                            <li><a href="#" title="Sports">Sports</a></li>
+                            <li><a href="#" title="Entertainment">Entertainment</a></li>
+                            <li><a href="#" title="Culture">Culture</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h4 class="text-white fs-18 text-left pt-3 pb-3 mb-0 ml-3 noto-bold">More from ABP Group</h4>
+                <hr class="hrSectionFooter">
+                <div class="text-left pt-4 pb-4 ml-3">
+                    <div class="pb-3"><span class="mr-2">
+                            <a href="https://www.fortuneindia.com/?ref=footer_home-template" class="text-white link-reset" target="_blank" title="Fortune India">
+                                <img src="/assets/images/f.png" alt="Fortune India">
+                        </span>
+                        Fortune India</a></div>
+                    <div class="pb-3"><span class="mr-2"><a href="https://www.anandabazar.com/?ref=footer_home-template" class="text-white link-reset" target="_blank"
+                                                            title="Anandabazar Patrika"><img src="/assets/images/p.png"
+                                                                                              alt="Anandabazar Patrika"></span>
+                        Anandabazar Patrika</a></div>
+                </div>
+                <hr class="hrSectionFooter">
+            </div>
+        </div>
+        <hr class="hrSectionFooter">
+    </div>
+</div>
+
+<div style="background-color:#000;" class="noto-regular">
+    <div class="clearfix text-white container pt-4 pb-4">
+        <div class="float-left">
+            Copyright © 2020 The Telegraph. All rights reserved.
+
+            <ul class="list-group list-group-horizontal pt-2 pb-2 fs-12 text-grey">
+                <li class="mr-2"><a href="#" class="muted-link" title="About">About</a></li>
+                <li class="mr-2 text-grey">|</li>
+                <li class="mr-2"><a href="#" class="muted-link" title="Contact us">Contact us</a></li>
+                <li class="mr-2 text-grey">|</li>
+                <li class="mr-2"><a href="#" class="muted-link" title="Terms of use">Terms of use</a></li>
+                <li class="mr-2 text-grey">|</li>
+                <li><a href="#" class="muted-link" title="Privacy Policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="float-right">
+            <ul class="list-group list-group-horizontal">
+                <li class="d-inline-block"><a class="uk-padding-remove muted-link" href="https://www.facebook.com/thetelegraphindia">
+                        <div class="the-icons span3 d-inline-block fs-16" title="Code: 0xf09a">
+                            <i class="demo-icon icon-facebook uk-text-white">&#xf09a;</i>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="d-inline-block"><a class="uk-padding-remove muted-link" href="https://twitter.com/ttindia"><span>&nbsp;&nbsp;<img
+                                src="/assets/images/white_dot.png"></span>
+                        <div class="the-icons span3 d-inline-block fs-16" title="Code: 0xf309"><i
+                                class="demo-icon icon-twitter uk-text-white">&#xf309;</i></div>
+                    </a></li>
+
+                <li class="d-inline-block"><a class="uk-padding-remove muted-link" href="https://www.instagram.com/telegraphonline/"><span>&nbsp;&nbsp;<img
+                                src="/assets/images/white_dot.png"></span>
+                        <div class="the-icons span3 d-inline-block fs-16" title="Code: 0xf16d"><i
+                                class="demo-icon icon-instagram uk-text-white">&#xf16d;</i></div>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/init0.2.js"></script>
+<script>
+  $( function() {
+    $( ".custom_dp" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  } );
+</script>
+</body>
+</html>
+
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:3e2b90ef-e1c2-4321-8f61-88612c5445ac>
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-07-24T14:44:33Z
+WARC-Block-Digest: sha1:NL2A46TO2XP4VGFKM2YWAUFUQUHPJLWE
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:60f59801-6cce-4790-aca4-767e497c8fa2>
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Concurrent-To: <urn:uuid:3e2b90ef-e1c2-4321-8f61-88612c5445ac>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-07-24T14:44:33Z
+WARC-Block-Digest: sha1:SGHVV25YY36IMI74CWRTLZ7X7UVZPFEB
+Content-Type: text/plain
+Content-Length: 446
+
+"--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595601862" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.telegraphindia.com/states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:a520c14a-9e87-4d1b-b4a0-dd2bb4ea6eca>
+WARC-Warcinfo-ID: <urn:uuid:c06caefc-84bb-46df-be16-13ba332bd767>
+WARC-Concurrent-To: <urn:uuid:3e2b90ef-e1c2-4321-8f61-88612c5445ac>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-07-24T14:44:33Z
+WARC-Block-Digest: sha1:TFRZWUJF2ISPV7STERCTG5N7G73PE6EE
+Content-Type: text/plain
+Content-Length: 368
+
+2020-07-24 20:14:33 URL:https://www.telegraphindia.com/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605 [52103/52103] -> "www.telegraphindia.com/states/west-bengal/coronavirus-lockdown-kalimpong-woman-dies-on-train/cid/1776605.html" [1]
+FINISHED --2020-07-24 20:14:33--
+Total wall clock time: 11s
+Downloaded: 1 files, 51K in 8.2s (6.24 KB/s)
+
+

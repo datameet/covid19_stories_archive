@@ -1,0 +1,192 @@
+{
+    "url": "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334",
+    "timestamp": "1595519884.123",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "The 58 Old Year Old Woman Lost His Life Waiting For Train Token | \u0905\u092a\u0928\u0947 \u0917\u0943\u0939\u0930\u093e\u091c\u094d\u092f \u091c\u094c\u0928\u092a\u0941\u0930 \u091c\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0928\u093f\u0915\u0932\u0940 58 \u0938\u093e\u0932 \u0915\u0940 \u092e\u0939\u093f\u0932\u093e \u0915\u0940 \u0918\u0902\u091f\u094b \u0927\u0942\u092a \u092e\u0947\u0902 \u0916\u095c\u0947 \u0930\u0939\u0928\u0947 \u0938\u0947 \u0939\u0941\u0908 \u092e\u094c\u0924",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:42.821375",
+                "end_ts": "2020-07-25 00:18:43.915377",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.abplive.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:43.916945",
+                "end_ts": "2020-07-25 00:18:44.472308",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595616524",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:44.476182",
+                "end_ts": "2020-07-25 00:18:50.156396",
+                "duration": 5
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:50.158797",
+                "end_ts": "2020-07-25 00:18:54.731068",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:54.733122",
+                "end_ts": "2020-07-25 00:18:57.469389",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:57.471219",
+                "end_ts": "2020-07-25 00:18:59.415434",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:18:59.417456",
+                "end_ts": "2020-07-25 00:19:01.033247",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.abplive.com/news/states/the-58-old-year-old-woman-lost-his-life-waiting-for-train-token-1410334"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.123",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:19:01.036107",
+                "end_ts": "2020-07-25 00:20:01.063523",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595616601.063874"
+}

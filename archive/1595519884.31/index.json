@@ -1,0 +1,192 @@
+{
+    "url": "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html",
+    "timestamp": "1595519884.31",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "Having Run out of Cash, 19-year-old Migrant Worker Kills Self in UP's Banda Days after Returning from Mumbai",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:45:22.162333",
+                "end_ts": "2020-07-24 21:45:24.938353",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:45:24.944551",
+                "end_ts": "2020-07-24 21:45:26.083983",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595607326",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:45:26.094154",
+                "end_ts": "2020-07-24 21:45:38.623434",
+                "duration": 12
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:45:38.627391",
+                "end_ts": "2020-07-24 21:46:02.310157",
+                "duration": 23
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:46:02.312400",
+                "end_ts": "2020-07-24 21:47:02.423594",
+                "duration": 60
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:47:02.428389",
+                "end_ts": "2020-07-24 21:47:12.863874",
+                "duration": 10
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:47:12.867699",
+                "end_ts": "2020-07-24 21:47:23.607382",
+                "duration": 10
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/ran-out-of-cash-19-year-old-migrant-worker-kills-self-in-ups-banda-days-after-returning-from-mumbai-2632153.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.31",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:47:23.611947",
+                "end_ts": "2020-07-24 21:48:10.628452",
+                "duration": 47
+            }
+        ]
+    },
+    "updated": "1595607490.629127"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html",
+    "timestamp": "1595519884.180",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "17-yr-old college girl student commits suicide at her granny's house in Kolhapur",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:41:48.649733",
+                "end_ts": "2020-07-25 01:42:21.947140",
+                "duration": 33
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.uniindia.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:42:21.952026",
+                "end_ts": "2020-07-25 01:42:22.636195",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595621542",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:42:22.642990",
+                "end_ts": "2020-07-25 01:42:48.344834",
+                "duration": 25
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:42:48.346881",
+                "end_ts": "2020-07-25 01:42:51.803059",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:42:51.804461",
+                "end_ts": "2020-07-25 01:42:54.283891",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:42:54.285439",
+                "end_ts": "2020-07-25 01:42:55.673338",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:42:55.674798",
+                "end_ts": "2020-07-25 01:42:57.383395",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://www.uniindia.com/news/west/17-yr-old-college-girl-student-commits-suicide-at-her-granny-s-house-in-kolhapur/2037799.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.180",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:42:57.385553",
+                "end_ts": "2020-07-25 01:43:21.414779",
+                "duration": 24
+            }
+        ]
+    },
+    "updated": "1595621601.415713"
+}

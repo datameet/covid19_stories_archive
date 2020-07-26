@@ -1,0 +1,192 @@
+{
+    "url": "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789",
+    "timestamp": "1595519884.46",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "Coronavirus India, Punjab, Mansa: No Smartphone For Online Classes, Girl Allegedly Commits Suicide",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:11.363816",
+                "end_ts": "2020-07-24 22:14:12.558024",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.ndtv.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:12.563718",
+                "end_ts": "2020-07-24 22:14:12.859137",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595609052",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:12.865370",
+                "end_ts": "2020-07-24 22:14:16.601569",
+                "duration": 3
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:16.605147",
+                "end_ts": "2020-07-24 22:14:18.931360",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:18.932687",
+                "end_ts": "2020-07-24 22:14:20.631163",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:20.633683",
+                "end_ts": "2020-07-24 22:14:22.017990",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:14:22.019488",
+                "end_ts": "2020-07-24 22:14:25.116303",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.ndtv.com/india-news/coronavirus-india-punjab-mansa-no-smartphone-for-online-classes-girl-allegedly-commits-suicide-2242789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.46",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:14:25.117986",
+                "end_ts": "2020-07-24 22:15:13.301763",
+                "duration": 48
+            }
+        ]
+    },
+    "updated": "1595609113.302075"
+}

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mukta Regular'), local('Mukta-Regular'), url(../fonts.gstatic.com/s/mukta/v7/iJWKBXyXfDDVXbnBrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Mukta Medium'), local('Mukta-Medium'), url(../fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbEyjmmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Mukta SemiBold'), local('Mukta-SemiBold'), url(../fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbEeiWmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Mukta Bold'), local('Mukta-Bold'), url(../fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbF6iGmd8WU.ttf) format('truetype');
+}

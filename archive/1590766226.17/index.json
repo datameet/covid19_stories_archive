@@ -141,6 +141,24 @@
                 "start_ts": "2020-05-29 21:35:15.959994",
                 "pwd": "/data/archive/1590766226.17",
                 "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/civic-issues/article/bhagalpur-truck-carrying-migrants-rams-into-bus-9-killed-5-other-injured/594028"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590766226.17",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:55:39.105091",
+                "end_ts": "2020-07-25 01:55:43.485173",
+                "duration": 4
             }
         ],
         "dom": [
@@ -223,10 +241,14 @@
             }
         ]
     },
-    "updated": "1590788120.705585",
+    "updated": "1595622343.485599",
     "tags": "",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ]
 }

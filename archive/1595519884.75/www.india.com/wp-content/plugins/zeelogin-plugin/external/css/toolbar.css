@@ -1,0 +1,19 @@
+.navbar{
+  justify-content: flex-start !important;
+  padding: 0.0 1rem !important;
+}
+#main-menu{
+  flex-direction: row !important;
+}
+#menu-secondary a{
+  font-size: 1rem !important;
+
+}
+/*.navbar-secondary ul{
+  margin:  0px 0px 0px 6px !important;
+}*/
+@media screen and (max-width: 767px){
+.navbar-fixed-top {
+    top: 0 !important;
+}
+}

@@ -1,0 +1,35 @@
+<svg version="1.1" id="typing_dot" width="60px" height="20px"  viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <circle cx="0" cy="0" r="5" transform="translate(10 10)" fill="#ffffff" fill-opacity="0.5">
+        <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             values="1; 2; 1; 1"
+             keyTimes="0; 0.2; 0.4; 1"
+             begin="0s"
+             dur="2s"
+             repeatCount="indefinite"
+        />
+    </circle>
+    <circle cx="0" cy="0" r="5" transform="translate(30 10)" fill="#ffffff" fill-opacity="0.5">
+        <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             values="1; 2; 1; 1"
+             keyTimes="0; 0.2; 0.4; 1"
+             begin="0.2s"
+             dur="2s"
+             repeatCount="indefinite"
+        />
+    </circle>
+    <circle cx="0" cy="0" r="5" transform="translate(50 10)" fill="#ffffff" fill-opacity="0.5">
+        <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             values="1; 2; 1; 1"
+             keyTimes="0; 0.2; 0.4; 1"
+             begin="0.4s"
+             dur="2s"
+             repeatCount="indefinite"
+        />
+    </circle>
+</svg>

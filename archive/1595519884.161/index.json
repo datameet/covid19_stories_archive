@@ -1,0 +1,192 @@
+{
+    "url": "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/",
+    "timestamp": "1595519884.161",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "Chhattisgarh: Three children die in quarantine in last 48 hours | India News,The Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:14.245771",
+                "end_ts": "2020-07-25 01:19:16.134046",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:16.136537",
+                "end_ts": "2020-07-25 01:19:16.370795",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620156",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:16.373941",
+                "end_ts": "2020-07-25 01:19:28.316211",
+                "duration": 11
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:28.318845",
+                "end_ts": "2020-07-25 01:19:31.875563",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:31.878093",
+                "end_ts": "2020-07-25 01:19:34.761891",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:34.764833",
+                "end_ts": "2020-07-25 01:19:38.675617",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:19:38.677436",
+                "end_ts": "2020-07-25 01:20:13.304234",
+                "duration": 34
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/india/chhattisgarh-3-children-die-in-quarantine-in-last-48-hours-6432297/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.161",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:20:13.305629",
+                "end_ts": "2020-07-25 01:21:13.319264",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595620273.319634"
+}

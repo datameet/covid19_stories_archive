@@ -1,0 +1,3425 @@
+<!doctype html> <html> <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBM75F9');</script>
+<!-- End Google Tag Manager -->
+ <meta charset="utf-8"> <title> India News in Gujarati: Gujarati News Online, Today's  News – News18 Gujarati</title> <meta name="description" content="Read all the latest news and breaking news in Gujarati on  at New18 Gujarati. Find all  news in Gujarati, taja samachar and more online at News18 Gujarati." /> <meta name="keywords" content=" News Gujarati, Gujarati News Online, India Samachar, India Khabar, Today's  News Gujarati "/> <meta name="news_keywords" content=" News Gujarati, Gujarati News Online, India Samachar, India Khabar, Today's  News Gujarati "> <meta property="og:title" content=" India News in Gujarati: Gujarati News Online, Today's  News – News18 Gujarati" /> <meta property="og:description" content="Read all the latest news and breaking news in Gujarati on  at New18 Gujarati. Find all  news in Gujarati, taja samachar and more online at News18 Gujarati." /> <meta property="og:url" content="http://gujarati.news18.com/news/"/>  <meta property="og:image" content="https://static.gujarati.news18.com/static-guju/uploads/news18-gujarati/images/mainlogo_gujrati.png"/> <meta name="twitter:image" content="https://static.gujarati.news18.com/static-guju/uploads/news18-gujarati/images/mainlogo_gujrati.png">  <meta property="og:type" content="website"/> <meta property="og:name" content="gujarati.news18.com"/> <meta property="og:site_name" content="News18 Gujarati"/> <meta name="viewport" content="width=1024"/> <meta property="fb:pages" content="1374255072905199" /><link rel="dns-prefetch" href="https://gujarati.news18.com"> <link rel="dns-prefetch" href="https://www.google-analytics.com"> <link rel="dns-prefetch" href="https://fonts.googleapis.com"> <link rel="dns-prefetch" href="https://ajax.googleapis.com"> <link rel="dns-prefetch" href="https://www.google.com"> <link rel="dns-prefetch" href="http://static.ibnlive.in.com"> <link rel="dns-prefetch" href="http://img01.ibnlive.in"><link rel="dns-prefetch" href="https://static.hindi.news18.com"><link rel="dns-prefetch" href="https://images.hindi.news18.com"> <meta itemprop="name" content=" India News in Gujarati: Gujarati News Online, Today's  News – News18 Gujarati"> <meta itemprop="description" content="Read all the latest news and breaking news in Gujarati on  at New18 Gujarati. Find all  news in Gujarati, taja samachar and more online at News18 Gujarati.">  <meta itemprop="image" content="https://static.gujarati.news18.com/static-guju/uploads/news18-gujarati/images/mainlogo_gujrati.png">  <meta itemprop="publisher" content="Gujarati News18" /> <meta itemprop="url" content="http://gujarati.news18.com/news/" /> <meta itemprop="editor" content="News18 Gujarati" /> <meta itemprop="headline" content=" India News in Gujarati: Gujarati News Online, Today's  News – News18 Gujarati" /> <meta itemprop="inLanguage" content="Gujarati" /> <meta itemprop="sourceOrganization" content="Network18 Media & Investment Ltd" /> <meta itemprop="keywords" content=" News Gujarati, Gujarati News Online, India Samachar, India Khabar, Today's  News Gujarati " /><link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> <link rel="stylesheet" href="https://static.hindi.news18.com/ibnkhabar/uploads/assests/news18-gujarati/css-v1/khabar-secure-min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <script src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/news18-gujarati/js-v1/scripts.js"></script> <meta name="viewport" content="width=1024"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/favicon.ico" />
+<script type="text/javascript">
+	//var PWT={};
+	function _w18gcon (wg) {
+		var i, x, y, cl = document.cookie.split(";");
+		var out = {};
+		var c = 0;
+		for (i = 0; i < cl.length; i++) {
+			x = cl[i].substr(0, cl[i].indexOf("="));
+			y = cl[i].substr(cl[i].indexOf("=") + 1);
+			x = x.replace(/^\s+|\s+$/g, "");
+			//console.log("new ad id in loop:"+x);
+			if (x == "nnmc") {
+				out.nnmc = unescape(y);
+				c = c + 1
+			}else if (x == "_w18g") {
+				out._w18g = unescape(y);
+				c = c + 1
+			} else if (x == "_w18s") {
+				out._w18s = unescape(y);
+				c = c + 1
+			}
+			if (c == 3) {
+				return out
+			}
+		}
+		return out
+	};
+
+       // var googletag = googletag || {};
+	//googletag.cmd = googletag.cmd || [];
+
+
+	googletag.cmd.push(function(){ 
+		var _w18_pp_uni_id = _w18gcon('_w18g');
+		if(_w18_pp_uni_id.hasOwnProperty('_w18g')){
+			_w18_pp_uni_id= _w18_pp_uni_id._w18g;
+			googletag.pubads().setPublisherProvidedId(_w18_pp_uni_id);
+			console.log("new ad id complete done:"+_w18_pp_uni_id);
+		};
+	});
+</script><!-- pubmatic ads script -->
+<script type='text/javascript'>
+   var PWT={}; //Initialize Namespace
+   var googletag = googletag || {};
+   googletag.cmd = googletag.cmd || [];
+   PWT.jsLoaded = function(){ //PubMatic pwt.js on load callback is used to load GPT
+           (function() {
+                  var gads = document.createElement('script');
+                  var useSSL = 'https:' == document.location.protocol;
+                  gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+                  var node = document.getElementsByTagName('script')[0];
+                  node.parentNode.insertBefore(gads, node);
+           })();
+   };
+   (function() {
+           var purl = window.location.href;
+           var url = '//ads.pubmatic.com/AdServer/js/pwt/113941/2060';
+           var profileVersionId = '';
+           if(purl.indexOf('pwtv=')>0){
+                  var regexp = /pwtv=(.*?)(&|$)/g;
+                  var matches = regexp.exec(purl);
+                  if(matches.length >= 2 && matches[1].length > 0){
+                          profileVersionId = '/'+matches[1];
+                  }
+           }
+           var wtads = document.createElement('script');
+           wtads.async = true;
+           wtads.type = 'text/javascript';
+           wtads.src = url+profileVersionId+'/pwt.js';
+           var node = document.getElementsByTagName('script')[0];
+           node.parentNode.insertBefore(wtads, node);
+           })();
+</script>
+<!-- pubmatic ads script -->	<script type='text/javascript'>
+  var gptadslots = [];
+  </script>
+
+<script type='text/javascript'>
+
+    var gptadslots = [];
+    googletag.cmd.push(function() {
+
+      gptadslots.push(googletag.defineSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_728', [[728, 90], [970, 90], [970, 200]], '/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_728').addService(googletag.pubads()).setCollapseEmptyDiv(true, true));
+
+      gptadslots.push(googletag.defineSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_300', [[300, 250]], '/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_300').addService(googletag.pubads()).setCollapseEmptyDiv(true, true));
+
+    gptadslots.push(googletag.defineSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_BTF_300', [300, 250], '/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_BTF_300').addService(googletag.pubads()).setCollapseEmptyDiv(true, true)); 
+                
+
+    gptadslots.push(googletag.defineSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_ROS/NW18_GUJ_ROS_AL/NW18_GUJ_ROS_AL_ROS_PG_1x1', [1,1],'/1039154/NW18_GUJ_Desktop/NW18_GUJ_ROS/NW18_GUJ_ROS_AL/NW18_GUJ_ROS_AL_ROS_PG_1x1').addService(googletag.pubads()).setCollapseEmptyDiv(true, true));
+     
+    
+     gptadslots.push(googletag.defineOutOfPageSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Shosh_OOP', '/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Shosh_OOP').addService(googletag.pubads()).setCollapseEmptyDiv(true, true));       gptadslots.push(googletag.defineOutOfPageSlot('/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Skin_OOP', '/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Skin_OOP').addService(googletag.pubads()).setCollapseEmptyDiv(true, true));
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs(true);
+    googletag.enableServices();
+
+  });
+  
+  function StreamAdisInViewport(element, visiblity = 1) {
+      const rect = element.getBoundingClientRect();
+      const topMid = rect.top - window.innerHeight;
+      const bottomMid = rect.bottom - rect.height - window.innerHeight;
+      return (window.innerHeight - topMid > 0) && (window.innerHeight - bottomMid < window.innerHeight);
+    }
+  </script><script> 
+	(function() { 
+	window._w18hn = "NEWS18"; 
+	var w18 = document.createElement('script'); 
+	w18.type = 'text/javascript'; 
+	w18.async = true; 
+	w18.src = 'https://s.in.com/common/script_catch.js'; 
+	var s = document.getElementsByTagName('script')[0]; 
+	s.parentNode.insertBefore(w18, s); 
+	})(); 
+</script>
+
+ 
+<script>
+$(document).ready(function(){ winW = $(window).width(); $(".sroll-hide").hide(); });
+function hitGaview(){
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-156703-3', 'auto');
+          var _w18_uni_id = _w18gcon('_w18g'); 
+                                     
+               	  ga('send', 'pageview');
+
+	}
+hitGaview();
+var _comscore
+function hitComscore(){  
+        _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6683813",
+					options: {
+						url_append:"comscorekw="
+					}
+
+  });
+  (function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+  })();
+}
+hitComscore();
+</script>
+<noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=6683813&cv=2.0&cj=1" /></noscript>
+
+<script type='text/javascript'>
+	function _w18setuserbehaviour(){
+		//_w18userinfo
+		var i, x, y, cl = document.cookie.split(';');
+		var _w18userinfo_out = {};
+		var c = 0;
+		for (i = 0; i < cl.length; i++) {
+			   x = cl[i].substr(0, cl[i].indexOf('='));
+			   y = cl[i].substr(cl[i].indexOf('=') + 1);
+			   x = x.replace(/^\s+|\s+$/g, '');         
+			   if (x == '_w18userinfo') {
+					   _w18userinfo_out._w18userinfo = unescape(y);
+					   c = c + 1
+			   }
+				if (c == 1) {break;}
+		}
+		if(c==1){
+			   var contact = JSON.parse(_w18userinfo_out._w18userinfo);             
+			   for (var item in contact) {
+					   googletag.pubads().setTargeting(item,contact[item]); 
+					   console.log(item);
+					   console.log(contact[item]);
+			   }
+		}
+	}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+		"@type": "ListItem",
+		"position": "1",
+		"item": {
+		  "@id": "https://gujarati.news18.com/",
+		  "name": "Home"
+		}
+	  },{
+		"@type": "ListItem",
+		"position": "2",
+		"item": {
+		  "@id": "https://gujarati.news18.com/news/",
+		  "name": "News"
+		}
+	  }]
+}
+</script>	<link rel="next" href="https://gujarati.news18.com/news/page-2/"/>
+<!--Meta Tags End-->	
+<link rel="canonical" href="https://gujarati.news18.com/news/"/>
+
+
+<style>
+.mnone1{display:block;}
+.wnone1{display:none;}
+@media screen and (max-width:765px){	
+.mnone1{display:none;}
+.wnone1{display:block;width:100%}
+}    
+</style>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBM75F9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="main">
+<!-- <style>
+.sponsorlogo-contener{display: flex; padding:0 10px; justify-content: space-between;}
+.sponsorlogo{padding-top: 8px;}
+.sponsorlogo ul{ display: flex; }
+.sponsorlogo ul li{float: left; padding-left:10px; width:180px;}
+.sponsorlogo ul li img{max-width:100%; float: left;}
+.striplogo img{width:250px;}
+</style>
+
+<div class="sponsorlogo-contener container">
+
+<div class="striplogo"><a href="/"><img src="https://images.news18.com/static_news18/pix/ibnhome/news18/images/election_logo_five_state_top.png" alt=""></a></div>
+<div class="sponsorlogo">
+<ul>
+<li>
+        <a target="_blank" href="http://pubads.g.doubleclick.net/gampad/clk?id=4886879447&iu=/1039154/Hindi_News18/Hindi_News18_Desktop_ClickTracker/Hindi_News18_Desktop_ClickTracker_Amazon_Election">
+          <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/spons/amazon-pay_300X100.jpg">
+        </a>
+      </li>
+			<li>
+        <a target="_blank" href="http://pubads.g.doubleclick.net/gampad/clk?id=4886279973&iu=/1039154/Hindi_News18/Hindi_News18_Desktop_ClickTracker/Hindi_News18_Desktop_ClickTracker_Koltepatil">
+          <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/spons/SBI_300X100.jpg">
+        </a>
+      </li>
+			<li>
+        <a target="_blank" href="http://pubads.g.doubleclick.net/gampad/clk?id=4886374311&iu=/1039154/Hindi_News18/Hindi_News18_Desktop_ClickTracker/Hindi_News18_Desktop_ClickTracker_Grofers_Election">
+          <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/spons/Grofers_300X100.jpg">
+        </a>
+      </li>
+</ul>
+</div>
+</div>-->
+
+<script>
+  var JS_ON = '1';
+  /* $(function () {
+
+              $(document).on('click','.accuwidget',function(){
+                ga('send', 'event', 'Accuweather_Widget', 'click', 'click_left', 1, {'nonInteraction': 1});
+             });
+
+             var isMetric = true;
+             var awxGetCurrentConditions = function (locationKey) {
+                 currentConditionsUrl = "https://api.accuweather.com/currentconditions/v1/" +locationKey + ".json?language=en&apikey=05d1f038485e4599ba12b05bdc037393";
+                 $.ajax({
+                     type: "GET",
+                     url: currentConditionsUrl,
+                     dataType: "jsonp",
+                     cache: true,                    // Use cache for better reponse times
+                     jsonpCallback: "awxCallback",   // Prevent unique callback name for better reponse times
+                     success: function (data) {
+                             var html,mhtml;
+                             if(data && data.length > 0) {
+                                 var conditions = data[0];
+                                 var temp = isMetric ? conditions.Temperature.Metric : conditions.Temperature.Imperial;
+                                 var icon = conditions.WeatherIcon;
+                                 html ="<a content='nofollow' target='_blank' href='"+conditions.Link+"?lang=en-us&partner=network18online' class='n18hindi-weather accuwidget'><img alt'"+conditions.WeatherText+"' title='"+conditions.WeatherText+"' src='https://static.hindi.news18.com/ibnkhabar/uploads/assests/weather-icons/icons/"+icon+".png' > | " + temp.Value + "<sup>o</sup>C</a>";
+                                 mhtml="<a class='accuwidget' content='nofollow' target='_blank' href='"+conditions.MobileLink+"?lang=en-us&partner=network18online'><img alt'"+conditions.WeatherText+"' title='"+conditions.WeatherText+"' src='https://static.hindi.news18.com/ibnkhabar/uploads/assests/weather-icons/icons/"+icon+".png' ><span>"+ temp.Value +"<sup>°</sup>c<br><b></b></span>";
+                             }
+                             else {
+                                 html = mhtml= "N/A";
+                             }
+                         $("#weatherinfo").html(html);
+                         $("#weather-mbl").html(mhtml).fadeIn();
+
+                     }
+                 });
+             };
+
+            awxGetCurrentConditions('');
+  });    */
+</script>
+<style>
+  .gsttopbanner-m,
+  .gsttopbanner-w {
+    text-align: center;
+    line-height: 0
+  }
+
+  .gsttopbanner-m {
+    display: none;
+    padding-bottom: 10px
+  }
+
+  .gsttopbanner-w {
+    padding-top: 10px
+  }
+
+  @media screen and (max-width:720px) {
+    .gsttopbanner-m {
+      display: block
+    }
+
+    .gsttopbanner-w {
+      display: none
+    }
+  }
+
+  .navigation li:first-child a {
+    font-weight: normal !important;
+  }
+
+  .n18hindi-weather {
+    padding-left: 24px;
+    font-size: 12px;
+    color: #222;
+    position: relative;
+    display: block
+  }
+
+  .n18hindi-weather a {
+    color: #222;
+  }
+
+  .n18hindi-weather a:hover {
+    color: #222;
+  }
+
+  .n18hindi-weather::after {
+    content: '';
+    border-left: 2px solid #f18849;
+    border-top: 2px solid #f18849;
+    width: 5px;
+    height: 5px;
+    transform: rotate(137deg);
+    position: absolute;
+    top: 6px;
+    right: -12px
+  }
+
+  .n18hindi-weather img {
+    padding-right: 8px;
+    height: 16px
+  }
+
+  .logo {
+    width: 150px
+  }
+
+  .n18hindi-weather sup {
+    float: none;
+    position: relative;
+    top: -2px;
+    font-size: 8px
+  }
+
+  .wthr {
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    font-size: 13px;
+    color: #000;
+    padding-left: 25px;
+    line-height: 11px;
+    margin: 12px 25px 0 0;
+    display: none
+  }
+
+  .wthr a {
+    color: #000;
+  }
+
+  .wthr img {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    width: 20px
+  }
+
+  .wthr b {
+    display: block;
+    font-weight: normal;
+    font-size: 11px;
+  }
+
+  .wthr:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #f18849;
+    border-right: 1px solid #f18849;
+    position: absolute;
+    right: 0px;
+    transform: rotate(45deg);
+    bottom: 2px;
+  }
+
+  @media(max-width: 600px) {
+    .logo-for-mbl {
+      position: relative
+    }
+  }
+  nav li { margin-right:22px !Important;}
+  .nav-rgt-links li { margin-right: 0px !important;}
+  .middlead{display: flex; justify-content: center; margin-top: 10px;}
+  .pht-outer {z-index: 1; margin: 0px auto auto;}
+  .nwlvtv .brade_crum { margin: 0 !important;padding: 0px !important;}
+  .cnsmpnpht-tpshr .share-icon { padding: 0; border: none; margin: 0;}
+
+</style>
+
+
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    /* font-family:'Noto Sans', sans-serif;  */
+  }
+
+  .n18nheader {
+    font-family: 'Noto Sans', arial, sans-serif;
+  }
+
+  .n18thder {
+    text-align: center;
+    padding: 6px 0;
+  }
+
+  .n18thder .inner-ad {}
+
+  .n18bhdr {
+    background: url(headertbg.jpg) no-repeat top center;
+    height: 107px;
+    border-top: 2px solid #e1261d;
+    background-size: cover !important;
+  }
+
+  .n18bhdr .n18hcontainer {
+    width: 1244px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .n18bhdr .logonsection {
+    display: flex;
+    padding-top: 22px;
+    position: absolute;
+    left: 0
+  }
+
+  .nhhdr-nav {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+
+  .n18bhdr .logonsection h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    color: #fff;
+    padding: 5px 0 0 15px;
+    border-left: 1px solid #374b48;
+    height: 52px
+  }
+
+  .n18bhdr .logonsection .nhlogo {
+    padding-right: 15px;
+    position: relative;
+    top: 0px;
+  }
+
+  .n18bhdr .logonsection .nhlogo img {
+    width: 138px;
+    object-fit: cover;
+  }
+
+  .n18bhdr .lnlivetv {
+    display: flex;
+    justify-content: space-between;
+    /* width:850px; */
+  }
+
+  .n18bhdr .lnlivetv .languagebox {
+    width: auto;
+    background: #e1261d;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 27px;
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 27px;
+    font-weight: normal;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    margin-right: 15px
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner {
+    background: #fff;
+    height: 100%;
+    padding-left: 10px;
+    line-height: 27px;
+    box-sizing: border-box;
+    width: 130px;
+    color: #3c3c3c;
+    font-size: 12px;
+    position: relative;
+    border-radius: 0 0 7px 7px;
+    margin-left: 10px
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner a {
+    color: #3c3c3c;
+    display: block
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner .lddnav {
+    font-size: 12px;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    display: none;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    z-index: 99;
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner:hover .lddnav {
+    display: block
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner .lddnav.adcls {
+    display: block
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner .lddnav a {
+    display: block;
+    padding: 2px 10px;
+    margin: 5px 0;
+    color: #3c3c3c
+  }
+
+  .n18bhdr .lnlivetv .languagebox .linner .lddnav a:hover {
+    background: #e1261d;
+    color: #fff
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv {
+    width: 140px;
+    height: 27px;
+    border-radius: 0 0 7px 7px;
+    padding: 2px 10px 0;
+    box-sizing: border-box;
+    background: #e1261d;
+    color: #fff;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    position: relative;
+    margin-right: 15px;
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv .nhltvddnav {
+    background: #e1261d;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 21px;
+    width: 100%;
+    left: 0;
+    display: none;
+    padding-top: 6px;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    z-index: 99;
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv:hover .nhltvddnav {
+    display: block
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv .nhltvddnav.adcls {
+    display: block
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv .nhltvddnav a {
+    display: block;
+    padding: 4px 10px;
+    color: #fff;
+    margin: 5px 0;
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv .nhltvddnav a:hover {
+    background: #b50d05
+  }
+
+  .n18bhdr .lnlivetv .nhlivetv strong {
+    padding: 0 0px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 1px #fff solid;
+    position: relative;
+    top: -3px;
+  }
+
+  .n18bhdr .lnlivetv .lnlapp {
+    width: 180px;
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+    height: 27px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span.apple_lo_go {
+    width: 12px;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .apple_lo_go img {
+    width: 100%;
+  }
+
+  span.android_lo_go {
+    width: 12px;
+    display: inline-block;
+  }
+
+  span.android_lo_go img {
+    width: 100%;
+  }
+
+  .n18bhdr .lnlivetv .lnlapp strong {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #001d42;
+    margin-left: 2px;
+    font-weight: normal;
+    border-bottom: 1px #001d42 solid;
+  }
+
+  .n18bhdr .lnlivetv:hover .lnlapp strong {
+    border-bottom: none
+  }
+
+  .n18bhdr .nhtranding {
+    border-radius: 20px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 15px;
+    background: #fff;
+    font-size: 13px;
+    color: #e1261d;
+    margin-top: 26px;
+    display: inline-block;
+    font-weight: bold;
+    float: right
+  }
+
+  .n18bhdr .nhtranding a {
+    color: #646464;
+    padding-left: 20px;
+    font-weight: normal
+  }
+
+  .n18bhdr .nhtranding a:hover {
+    color: #e1261d
+  }
+
+  .n18bhdr .nhsocial {
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 2px 2px 4px rgba(00, 00, 00, 0.2);
+    height: 27px;
+    padding: 0 10px;
+    line-height: 27px
+  }
+
+  .n18bhdr .nhsocial strong {
+    font-size: 12px;
+    position: relative;
+    font-weight: normal;
+    color: #666;
+    padding-right: 20px;
+    text-transform: uppercase;
+    position: relative
+  }
+
+  .n18bhdr .nhsocial strong:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-left: 1px solid #7a7a7a;
+    border-top: 1px solid #7a7a7a;
+    right: 13px;
+    top: 6px;
+    transform: rotate(132deg);
+  }
+
+  .hsocial-sprite {
+    background: url(https://images.hindi.news18.com/ibnkhabar/uploads/2020/02/social-sprite-img.png) no-repeat;
+    display: inline-block;
+  }
+
+  .nhlanguate-arrow {
+    background-position: -71px -4px;
+    width: 12px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+
+  .nhlivetv-icon {
+    background-position: -5px -5px;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    top: 2px
+  }
+
+  .nhltv-arrow {
+    background-position: -71px -24px;
+    width: 12px;
+    height: 15px;
+    position: relative;
+    top: 2px
+  }
+
+  .nhapp-icon {
+    background-position: -29px -5px;
+    width: 10px;
+    height: 18px;
+  }
+
+  .nhfb-icon {
+    background-position: -50px -4px;
+    width: 8px;
+    height: 16px;
+    position: relative;
+    top: 2px
+  }
+
+  .nhtw-icon {
+    background-position: -6px -24px;
+    width: 17px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    margin: 0 15px
+  }
+
+  .nhig-icon {
+    background-position: -29px -24px;
+    width: 17px;
+    height: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 15px
+  }
+
+  .nhutb-icon {
+    background-position: -50px -24px;
+    width: 17px;
+    height: 16px;
+    position: relative;
+    top: 2px
+  }
+
+  .navigation {
+    box-shadow: 0px 7px 14px rgba(00, 00, 00, 0.4);
+    margin-bottom: 20px;
+    border-top: 1px solid #d4d4d4;
+  }
+
+  .social-links a {
+    display: none;
+  }
+
+  @media only screen and (max-width:767px) {
+    .mobile-none-header {
+      display: none;
+    }
+
+  }
+</style>
+
+<style>
+  .left-box {
+    position: relative;
+    z-index: 1;
+  }
+
+  .right-box {
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav.nav-fxd {
+    z-index: 9999
+  }
+
+  .tplng-strip {
+    width: calc(100% - 300px)
+  }
+
+  .tplng-strip li {
+    float: left;
+    padding: 0 12px;
+    position: relative;
+    font-family: 'googlefont', Arial;
+    font-size: 13px;
+    font-weight: bold
+  }
+
+  .tplng-strip li:first-child {
+    margin-left: 0px
+  }
+
+  .tplng-strip li a {
+    display: inline-block;
+    color: #666
+  }
+
+  .tplng-strip li span {
+    display: none;
+    background: #414141;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 12px;
+    border-radius: 3px;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    font-family: arial;
+    text-transform: uppercase;
+    z-index: 4;
+  }
+
+  .tplng-strip li span:before {
+    content: "";
+    border-top: 6px solid #414141;
+    border-left: 6px solid transparent;
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .tplng-strip li:hover span {
+    display: block;
+  }
+
+  .tplng-strip li.act {
+    background: #e1261d
+  }
+
+  .tplng-strip li:hover a {
+    color: #000
+  }
+
+  .tplng-strip li.act a {
+    color: #fff
+  }
+
+  .glbl-nav-r img {
+    margin-left: 15px;
+    height: 16px;
+  }
+
+  .foradd {
+    z-index: 9999 !Important
+  }
+
+  .rgtad {
+    position: relative;
+    z-index: 99;
+  }
+
+  @media screen and (max-width:768px) {
+    .tplng-strip {
+      width: 100% !important;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .tplng-strip li {
+      width: 23%;
+      box-sizing: border-box;
+      margin: 1% !important;
+      box-shadow: inset 0px 0px 1px #ccc;
+      background: #edecec;
+      padding: 0px
+    }
+
+    .tplng-strip li a {
+      display: block;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+    }
+
+    .glbl-nav-r {
+      display: none
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    .tplng-strip li {
+      width: 48% !important;
+    }
+  }
+</style>
+<!-- top languages start -->
+
+
+
+
+
+
+
+<!-- New Header Code Start-->
+
+
+<div class="n18nheader mobile-none-header">
+
+  <!-- Top Add on Front -->
+  <div class="n18thder">
+    <div class="inner-ad">
+
+    <div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_728">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_728");
+    });
+  </script>
+</div>
+    </div>
+  </div>
+  
+  <!-- End Top Add on Front -->
+
+
+  
+
+    <div class="n18bhdr" style=" background: url(https://static.gujarati.news18.com/static-guju/uploads/2020/03/BG-1.jpg) no-repeat top center;">
+      <div class="n18hcontainer">
+
+        <!-- Website Logo -->
+        <div class="logonsection">
+          <a href="https://gujarati.news18.com" class="nhlogo"><img src="https://static.gujarati.news18.com/static-guju/uploads/2020/03/gujarati.png" alt="Home" /></a>
+         <h2></h2>
+
+        </div>
+        <!-- Website Logo -->
+
+        <!--Top nav Start -->
+        <div class="nhhdr-nav">
+          <div class="lnlivetv">
+            <div class="languagebox">
+              <span>Change Language</span>
+              <div class="linner">
+
+                <a href="https://gujarati.news18.com/" onclick='ga("send","event","Gujarati","Click","https://gujarati.news18.com/")' target="_blank" rel="nofollow">ગુજરાતી <span class="nhlanguate-arrow hsocial-sprite"></span></a>
+
+                <div class="lddnav">
+				<a href="https://www.news18.com" onclick="ga('send', 'event', 'English', 'Click', 'https://gujarati.news18.com/');" target="_blank">ENGLISH</a>
+                  <a href="https://hindi.news18.com/" onclick='ga("send","event","Hindi","Click","https://gujarati.news18.com/")' target="_blank">हिन्दी</a>
+                  <a href="https://lokmat.news18.com/" onClick="ga('send', 'event', 'Marathi', 'Click', 'https://gujarati.news18.com/');" target="_blank">मराठी</a>
+                  <a href="https://bengali.news18.com" onclick='ga("send","event","Bengali","Click","https://gujarati.news18.com/")' target="_blank">বাংলা </a>
+                  <a href="https://assam.news18.com/" onclick='ga("send","event","Odia","Click","https://gujarati.news18.com/")' target="_blank">অসমীয়া </a>                  
+                  <a href="https://kannada.news18.com" onclick='ga("send","event","Kannada","Click","https://gujarati.news18.com/")' "target=_blank">ಕನ್ನಡ </a>
+                  <a href="https://tamil.news18.com" onclick='ga("send","event","Tamil","Click","https://gujarati.news18.com/")' target="_blank">தமிழ் </a>
+                  <a href="https://malayalam.news18.com" onclick='ga("send","event","Malayalam","Click","https://gujarati.news18.com/")' target="_blank">മലയാളം </a>
+                  <a href="https://telugu.news18.com" onclick='ga("send","event","Telugu","Click","https://gujarati.news18.com/")' target="_blank">తెలుగు </a>
+                  <a href="https://punjab.news18.com" onclick='ga("send","event","Punjabi","Click","https://gujarati.news18.com/")' target="_blank">ਪੰਜਾਬੀ </a>
+                  <a href="http://urdu.news18.com" onclick='ga("send","event","Urdu","Click","https://gujarati.news18.com/")' target="_blank">اردو </a>
+                  <a href="https://odia.news18.com" onclick='ga("send","event","Odia","Click","https://gujarati.news18.com/")' target="_blank">ଓଡ଼ିଆ </a>
+                </div>
+              </div>
+            </div>
+            <div class="nhlivetv">
+              <a href="/live-tv/">
+                <span class="nhlivetv-icon hsocial-sprite"></span>
+                <strong>WATCH LIVE TV</strong>
+                <!-- <span class="nhltv-arrow hsocial-sprite"> -->
+              </a>
+              <!--<div class="nhltvddnav">
+							<a href="/livetv/news18-uttar-pradesh-uttarakhand/" data-cat="livetv_channel_switch_D">News18 उत्तर प्रदेश, उत्तराखंड</a>
+							<a href="/livetv/news18-bihar-jharkhand/" data-cat="livetv_channel_switch_D">News18 बिहार, झारखंड</a>
+							<a href="/livetv/news18-madhya-pradesh-chhattisgarh/" data-cat="livetv_channel_switch_D" >News18 मध्य प्रदेश, छत्तीसगढ़</a>
+							<a href="/livetv/news18-rajasthan/" data-cat="livetv_channel_switch_D">News18 राजस्थान</a>
+						</div> -->
+            </div>
+            <div class="lnlapp">
+              <span class="nhapp-icon hsocial-sprite"></span>
+              <strong>Download App</strong>
+              <a href="https://itunes.apple.com/in/app/news18-for-iphone/id395194912?mt=8" target="_blank" rel="nofollow">
+                <span class="apple_lo_go">
+                  <img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/12/app-nw.png" title="News18 for iPhone">
+                </span>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.divum.ibn&hl=en" target="_blank" rel="nofollow"><span class="android_lo_go">
+                  <img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/12/an-nw.png" title="News18 for Android">
+                </span></a>
+            </div>
+
+            <!-- Social Media Icone-->
+
+            
+              <div class="nhsocial">
+                <strong>Follow Us on</strong>
+                                  <a href="https://www.facebook.com/News18Gujarati/" class="nhfb-icon hsocial-sprite" target="_blank"></a>
+                                  <a href="https://twitter.com/news18guj" class="nhtw-icon hsocial-sprite" target="_blank"></a>
+                                  <a href="https://www.instagram.com/news18gujarati/" class="nhig-icon hsocial-sprite" target="_blank"></a>
+                                  <a href="https://www.youtube.com/channel/UCqfX_f4rBbPhq_KESE4saCA" class="nhutb-icon hsocial-sprite" target="_blank"></a>
+                              </div>
+            
+            <!--End  Social Media Icone-->
+
+          </div>
+
+
+          <div class="nhtranding">Trending Topics :<a href="/news">#LatestNews </a><a href="/tag/coronavirus/">#CoronaVirus </a><a href="/tag/caa/">#CAA </a></div>
+
+        </div>
+        <!--Top nav End -->
+
+
+      </div>
+    </div>
+
+  
+</div>
+
+<!-- New Header Code End -->
+
+
+
+
+<!-- mobile header start -->
+<aside class="mbl-nav"></aside>
+<aside class="mbl-nav-clbx"></aside>
+<article class="mobile-header">
+  <aside class="srch-for-mbl"> <a href="javascript:void(0);" onclick="ga('send', 'event', 'Search', 'click', 'Site Search', 1, {'nonInteraction': 1});"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/11/srch-icn.png" alt="Search" /></a> </aside>
+  <aside class="logo-for-mbl"><a href="/"><img src="https://static.gujarati.news18.com/static-guju/uploads/2020/03/gujarati.png" /></a></aside>
+  <div class="wthr" id="weather-mbl"></div>
+</article>
+<div class="mobile-bg"></div>
+<article class="mobile-navigation">
+  <article class="mbl-arrow-switch">
+    <!--<aside class="mbl-switch"><a href="http://www.news18.com/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/11/switch.png" /></a></aside> -->
+  </article>
+  <article class="mobile-navigation-list">
+    <ul class="tplng-strip clearfix">
+      <li class="act"><a href="javascript:void(0)" rel="ਪੰਜਾਬੀ">ગુજરાતી</a><span>Gujarati</span></li>
+      <li><a href="https://www.news18.com" onClick="ga('send', 'event', 'English', 'Click', 'https://gujarati.news18.com/');" target="_blank">ENGLISH</a><span>ENGLISH</span></li>
+      <li><a href="https://hindi.news18.com/" target="_blank" rel="nofollow" onClick="ga('send', 'event', 'Hindi', 'Click', 'https://gujarati.news18.com/');">हिन्दी</a><span>HINDI</span></li>
+      <li><a href="https://bengali.news18.com" onClick="ga('send', 'event', 'Bengali', 'Click', 'https://gujarati.news18.com/');" target="_blank">বাংলা</a><span>Bengali</span></li>
+      <li><a href="https://lokmat.news18.com" onClick="ga('send', 'event', 'Marathi', 'Click', 'https://gujarati.news18.com/');" target="_blank">मराठी</a><span>Marathi</span></li>
+      <li><a href="https://kannada.news18.com" onClick="ga('send', 'event', 'Kannada', 'Click', 'https://gujarati.news18.com/');" target="_blank">ಕನ್ನಡ</a><span>Kannada</span></li>
+      <li><a href="https://tamil.news18.com" onClick="ga('send', 'event', 'Tamil', 'Click', 'https://gujarati.news18.com/');" target="_blank">தமிழ்</a><span>Tamil</span></li>
+      <li><a href="https://malayalam.news18.com" onClick="ga('send', 'event', 'Malayalam', 'Click', 'https://gujarati.news18.com/');" target="_blank" rel="nofollow">മലയാളം</a><span>Malayalam </span></li>
+      <li><a href="https://telugu.news18.com" onClick="ga('send', 'event', 'Telugu', 'Click', 'https://gujarati.news18.com/');" target="_blank">తెలుగు</a><span>Telugu</span></li>
+      <li><a href="https://punjab.news18.com" onClick="ga('send', 'event', 'Punjabi', 'Click', 'https://gujarati.news18.com/');" target="_blank">ਪੰਜਾਬੀ</a><span>Punjabi</span></li>
+      <li><a href="http://urdu.news18.com" onClick="ga('send', 'event', 'Urdu', 'Click', 'https://gujarati.news18.com/');" target="_blank">اردو</a><span>Urdu</span></li>
+
+    </ul>
+    <ul class="mbl-nav-list"> <li><a href="/coronavirus-latest-news/" >કોરોના વાયરસ ન્યૂઝ</a></li><li><a href="/india-china/" >ભારત ચીન સંઘર્ષ</a></li><li><a href="/gujarat/" >ગુજરાત</a></li><li><a href="/national-international/" >દેશવિદેશ</a></li><li><a href="/entertainment/" >મનોરંજન</a></li><li><a href="/business/" >વેપાર</a></li><li><a href="/sport/" >રમત-જગત</a></li><li><a href="/lifestyle/" >લાઈફ સ્ટાઈલ</a></li><li><a href="/photogallery/" >ફોટો</a></li><li><a href="/videos/" >વીડિયો</a></li><li><a href=" /mission-paani/" >#મિશન-પાણી</a></li><li><a href="/live-tv/etv-gujarati/" >LIVE TV</a></li> </ul>  <ul class="mbl-subnav-list">  <li><a href="/madhya-gujarat/ahmedabad/" >અમદાવાદ</a></li><li><a href="/south-gujarat/surat" >સુરત</a></li><li><a href="/gujarat/madhya-gujarat/" >મધ્ય ગુજરાત</a></li><li><a href="/gujarat/south-gujarat/" >દક્ષિણ ગુજરાત</a></li><li><a href="/gujarat/north-gujarat/" >ઉત્તર ગુજરાત</a></li><li><a href="/gujarat/kutchh-saurastra/" >કચ્છ-સૌરાષ્ટ્ર</a></li><li><a href="/dharm-bhakti/" >ધર્મભક્તિ</a></li><li><a href="/news/career/board-results/" >બોર્ડ પરિણામ 2020</a></li>       </ul>  <ul class="mbl-subnav-list forabt">
+        <li><a href="/about-us/">અમારા વિશે </a></li>
+        <li><a href="/disclaimer/">ડિસ્ક્લેમર</a></li>
+        <li><a href="/contact-us/">સંપર્ક કરો </a></li>
+        <li><a href="/feedback/">ફીડબેક</a></li>
+        <li><a href="http://godigital.in.com/contactUs.php" target="_blank" rel="nofollow">Advertise With Us</a></li>
+      </ul>
+  </article>
+</article>
+<div class="exp-search-formobile exp-formobile">
+  <div class="expinner">
+          <script>
+        (function() {
+          var cx = '016188666204635919540:tqjkxhki43i';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+      </div>
+</div> <!-- mobile header end -->
+<!-- nav start -->
+<nav class="clearfix">
+  <article class="container">
+    <aside class="nav-rgt-links forl">
+      <ul>
+        <li><a href="javascript:void(0);"><em></em></a></li>
+      </ul>
+    </aside>
+    <ul>
+      <li class="for-logo"><a href="/"><img src="https://static.gujarati.news18.com/static-guju/uploads/news18-gujarati/images/mainlogo_gujrati.png" width="70" alt="Logo" /></a></li> <li><a href="/coronavirus-latest-news/" >કોરોના વાયરસ ન્યૂઝ</a></li><li><a href="/india-china/" >ભારત ચીન સંઘર્ષ</a></li><li><a href="/gujarat/" >ગુજરાત</a></li><li><a href="/national-international/" >દેશવિદેશ</a></li><li><a href="/entertainment/" >મનોરંજન</a></li><li><a href="/business/" >વેપાર</a></li><li><a href="/sport/" >રમત-જગત</a></li><li><a href="/lifestyle/" >લાઈફ સ્ટાઈલ</a></li><li><a href="/photogallery/" >ફોટો</a></li><li><a href="/videos/" >વીડિયો</a></li><li><a href=" /mission-paani/" >#મિશન-પાણી</a></li><li><a href="/live-tv/etv-gujarati/" class="lvtv-fnt"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/12/lvtv-new.png" class="lvtv-new"/  >LIVE TV</a></li>    </ul>
+    <aside class="nav-rgt-links">
+      <ul>
+        <li></li>
+        <li> <a href="javascript:void(0);" onclick="ga('send', 'event', 'Search', 'click', 'Site Search', 1, {'nonInteraction': 1});"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2016/11/srch-icn.png" alt="Search" id="show-srch-forweb" /></a> </li>
+      </ul>
+    </aside>
+    <div class="exp-search exp">
+      <div class="expinner">
+                  <script>
+            (function() {
+              var cx = '016188666204635919540:tqjkxhki43i';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+              </div>
+    </div>
+    <div class="nav-rgt-inside-links" style="display: none;">
+      <div class="social-links"> <a href="https://www.facebook.com/1374255072905199 " class="social-sprite hfb-icon" target="_blank" rel="nofollow"></a> <!-- <a href="https://plus.google.com/107703185892464785255/posts" class="social-sprite hg-icon" target="_blank"></a>--> <a href="https://twitter.com/news18guj" class="social-sprite htw-icon" target="_blank" rel="nofollow"></a> <a href="https://www.youtube.com/subscription_center?add_user=ibn7" class="social-sprite hu-icon" target="_blank" rel="nofollow"></a> </div>
+      <div class="sub-nav clearfix">
+        <ul class="h-links clearfix"> <li><a href="/coronavirus-latest-news/" >કોરોના વાયરસ ન્યૂઝ</a></li><li><a href="/india-china/" >ભારત ચીન સંઘર્ષ</a></li><li><a href="/gujarat/" >ગુજરાત</a></li><li><a href="/national-international/" >દેશવિદેશ</a></li><li><a href="/entertainment/" >મનોરંજન</a></li><li><a href="/business/" >વેપાર</a></li><li><a href="/sport/" >રમત-જગત</a></li><li><a href="/lifestyle/" >લાઈફ સ્ટાઈલ</a></li><li><a href="/photogallery/" >ફોટો</a></li><li><a href="/videos/" >વીડિયો</a></li><li><a href=" /mission-paani/" >#મિશન-પાણી</a></li><li><a href="/live-tv/etv-gujarati/" >LIVE TV</a></li> </ul>
+        <div class="b-link clearfix"> <li><a href="/madhya-gujarat/ahmedabad/" >અમદાવાદ</a></li><li><a href="/south-gujarat/surat" >સુરત</a></li><li><a href="/gujarat/madhya-gujarat/" >મધ્ય ગુજરાત</a></li><li><a href="/gujarat/south-gujarat/" >દક્ષિણ ગુજરાત</a></li><li><a href="/gujarat/north-gujarat/" >ઉત્તર ગુજરાત</a></li><li><a href="/gujarat/kutchh-saurastra/" >કચ્છ-સૌરાષ્ટ્ર</a></li><li><a href="/dharm-bhakti/" >ધર્મભક્તિ</a></li><li><a href="/news/career/board-results/" >બોર્ડ પરિણામ 2020</a></li> <div class="switch-text"> </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</nav> <!-- nav end -->  <style>
+    .full-tmbox {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 2px 6px #ccc;
+      width: 140px;
+      display: none;
+      line-height: 30px;
+      z-index: 999
+    }
+
+    .full-tmbox li {
+      float: none;
+      margin-right: 0;
+    }
+
+    .navigation li:last-child:hover .full-tmbox {
+      display: block;
+    }
+
+    .dnar {
+      display: inline-block;
+      border-top: 7px solid #4c4c4c;
+      border-left: 7px solid transparent;
+      transform: rotate(135deg);
+      position: relative;
+      top: -3px
+    }
+
+    .navigation li:last-child:hover .full-tmbox {
+      display: block
+    }
+
+    .full-tmbox li a {
+      color: #4c4c4c !important;
+      font-size: 13px;
+      padding: 5px 10px;
+      text-transform: none;
+      border-bottom: none !important;
+      height: auto;
+      font-weight: 400 !important
+    }
+
+    @media screen and (max-width:720px) {
+      .full-tmbox {
+        position: fixed;
+        top: 100px;
+        left: auto
+      }
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $("#fltms a.mup").click(function() {
+        $(".full-tmbox_up").slideToggle();
+      });
+      $("#fltms a.mdown").click(function() {
+        $(".full-tmbox_d").slideToggle();
+      });
+    });
+  </script> <!-- second nav start -->
+  <article class="navigation clearfix">
+    <article class="container">
+      <ul>  <li><a href="/madhya-gujarat/ahmedabad/" >અમદાવાદ</a></li><li><a href="/south-gujarat/surat" >સુરત</a></li><li><a href="/gujarat/madhya-gujarat/" >મધ્ય ગુજરાત</a></li><li><a href="/gujarat/south-gujarat/" >દક્ષિણ ગુજરાત</a></li><li><a href="/gujarat/north-gujarat/" >ઉત્તર ગુજરાત</a></li><li><a href="/gujarat/kutchh-saurastra/" >કચ્છ-સૌરાષ્ટ્ર</a></li><li><a href="/dharm-bhakti/" >ધર્મભક્તિ</a></li><li><a href="/news/career/board-results/" >બોર્ડ પરિણામ 2020</a></li>         
+      </ul>
+    </article>
+  </article> <!-- second nav end --> 
+<!--<div class="gsttopbanner-w"><a href="/gst-in-hindi/"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2017/07/gst-banner-main.jpg"/></a></div><div class="gsttopbanner-m"><a href="/gst-in-hindi/"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/2017/07/gst-mobile-banner.jpg"/></a></div>-->
+<!-- ROS interstitial -->
+<!--<div id="div-gpt-ad-1508235228331-0"></div>-->
+<script>
+  $(document).ready(function() {
+    $("img").on("error", function() {
+      $(this).attr('src', 'https://images.gujarati.news18.com/static-guju/uploads/2017/12/default1.jpg');
+    });
+  });
+</script>
+<style>
+  @media screen and (max-width:768px) {
+    #fp_mainWrapper {
+      padding-top: 8px
+    }
+
+    .section-blog-left {
+      width: 100%;
+    }
+
+    .data-list-cat,
+    .data-list-cat.big {
+      margin: 0 1% 20px 1%;
+    }
+
+    .data-list-cat {
+      width: 31.3%;
+      height: 250px;
+    }
+
+    .section-blog-right {
+      display: none
+    }
+  }
+</style>
+<!-- mobile ipl banner code-->
+<style>
+  .mbladtp {
+    width: 100%;
+    text-align: center;
+    display: none
+  }
+
+  @media screen and (max-width:720px) {
+    body {
+      padding-top: 56px;
+    }
+
+    .mbladtp {
+      display: block
+    }
+  }
+</style>
+
+<!--BUDGET 2019-->
+<link href="/events/budget-2020/css/budgetday-style-new.css?v=q1" rel="stylesheet">
+<script src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/js/glide.min.js"></script>
+<script type="text/javascript">
+// "use strict";
+var election_assembly_2019_maharashtra = function(data){
+	let headerHtml = '';
+	let innerHtml = '';
+	let bottamHtml = '';
+	let progressbarHtml = '';
+	let totalWonSeat = data.total_seats.seats;
+	data.alliance.forEach(function(item){
+		headerHtml += `<th style="background:` +  item.color + `">` + item.display_name+ `</th>`;
+		innerHtml += `<td style="background:` +  item.color + `">` +  item.wonlead + `</td>`;
+		bottamHtml +=`<td>` + item.changes + `</td>`
+		progressbarHtml +=  `<span style="width:` + (item.wonlead/totalWonSeat*100) + `%; background:` +  item.color + `"></span>`; 
+	});
+
+	let html = `<table cellpadding="0" cellspacing="0"><tr>
+				<th>Alliance</th> ` + headerHtml + `
+				</tr>
+				<tr>
+				<td>Wins + Leads</td> ` + innerHtml + `
+				</tr>
+				<tr>
+				<td>+/- 2014</td> ` + bottamHtml + `
+				</tr>
+				</table>
+				<div class="newelec-tallywidget-right"></div>`;
+
+	document.getElementById('el_mah_winseat').innerHTML = `(` + (data.total_seats.seats/2 + 1) + ` Seats to Win)`;
+	document.getElementById('el_mah_total').innerHTML =  `<span>` + data.total_seats.wonlead + `</span>/ ` + data.total_seats.seats + ` Seats `;
+	document.getElementById('el_mah_inner').innerHTML = html;
+	document.getElementById('el_mah_pro_bar').innerHTML = progressbarHtml;
+
+	headerHtml = '';
+	innerHtml = '';
+	bottamHtml = '';
+	html = '';
+	progressbarHtml = '';
+	data.party.forEach(function(item){
+		headerHtml += ` <th style="background:` +  item.color + `">` + item.name + `</th>`;
+		innerHtml += `<td style="background:` +  item.color + `;">` +  item.wonlead + `</td>`;
+		bottamHtml += `<td>` + item.changes + `</td>`;
+		progressbarHtml +=  `<span style="width:` + (item.wonlead/totalWonSeat*100) + `%; background:` +  item.color + `"></span>`; 
+	});
+	html = `<table cellpadding="0" cellspacing="0"><tr>
+					<th>Party</th> ` + headerHtml + `
+					</tr>
+					<tr>
+					<td>Wins + Leads</td> ` + innerHtml + `
+					</tr>
+					<tr>
+					<td>+/- 2014</td> ` + bottamHtml + `
+					</tr>
+					</table>
+					<div class="newelec-tallywidget-right"></div>`;
+	document.getElementById('el_party_mah_winseat').innerHTML = `(` + (data.total_seats.seats/2 + 1) + ` Seats to Win)`;
+	document.getElementById('el_party_mah_total').innerHTML =  `<span>` + data.total_seats.wonlead + `</span>/ ` + data.total_seats.seats + ` Seats `;
+	document.getElementById('el_party_mah_inner').innerHTML = html;
+	document.getElementById('el_party_mah_pro_bar').innerHTML = progressbarHtml;
+}
+
+
+var election_assembly_2019_haryana = function(data){
+	let headerHtml = '';
+	let innerHtml = '';
+	let bottamHtml = '';
+	let progressbarHtml = '';
+	let totalWonSeat = data.total_seats.seats;
+	data.alliance.forEach(function(item){
+		headerHtml += `<th style="background:` +  item.color + `">` + item.display_name+ `</th>`;
+		innerHtml += `<td style="background:` +  item.color + `">` +  item.wonlead + `</td>`;
+		bottamHtml +=`<td>` + item.changes + `</td>`;
+		progressbarHtml +=  `<span style="width:` + (item.wonlead/totalWonSeat*100) + `%; background:` +  item.color + `"></span>`;
+	});
+	
+	let html = `<table cellpadding="0" cellspacing="0"><tr>
+					<th>Alliance</th> ` + headerHtml + `
+					</tr>
+					<tr>
+					<td>Wins + Leads</td> ` + innerHtml + `
+					</tr>
+					<tr>
+					<td>+/- 2014</td> ` + bottamHtml + `
+					</tr>
+					</table>
+					<div class="newelec-tallywidget-right"></div>`;
+	document.getElementById('el_har_winseat').innerHTML = `(` + (data.total_seats.seats/2 + 1) + ` Seats to Win)`;
+	document.getElementById('el_har_total').innerHTML =  `<span>` + data.total_seats.wonlead + `</span>/ ` + data.total_seats.seats + ` Seats `;
+	document.getElementById('el_har_inner').innerHTML = html;
+	document.getElementById('el_har_pro_bar').innerHTML = progressbarHtml;
+
+	headerHtml = '';
+	innerHtml = '';
+	bottamHtml = '';
+	html = '';
+	progressbarHtml = '';
+	data.party.forEach(function(item){
+		headerHtml += ` <th style="background:` +  item.color + `">` + item.name + `</th>`;
+		innerHtml += `<td style="background:` +  item.color + `;">` +  item.wonlead + `</td>`;
+
+		bottamHtml += `<td>` + item.changes + `</td>`;
+		progressbarHtml +=  `<span style="width:` + (item.wonlead/totalWonSeat*100) + `%; background:` +  item.color + `"></span>`;
+	});
+	html = `<table cellpadding="0" cellspacing="0"><tr>
+					<th>Party</th> ` + headerHtml + `
+					</tr>
+					<tr>
+					<td>Wins + Leads</td> ` + innerHtml + `
+					</tr>
+					<tr>
+					<td>+/- 2014</td> ` + bottamHtml + `
+					</tr>
+					</table>
+					<div class="newelec-tallywidget-right"></div>`;
+
+
+	document.getElementById('el_party_har_winseat').innerHTML = `(` + (data.total_seats.seats/2 + 1) + ` Seats to Win)`;	
+	document.getElementById('el_party_har_total').innerHTML =  `<span>` + data.total_seats.wonlead + `</span>/ ` + data.total_seats.seats + ` Seats `;
+	document.getElementById('el_party_har_inner').innerHTML = html;
+	document.getElementById('el_party_har_pro_bar').innerHTML = progressbarHtml;
+}
+
+var election_assembly_2019_all = function(data){
+	let alliancePartyWidget = document.getElementById("alliance-party-widget");
+	if (true){
+		alliancePartyWidget.style.display = "block";
+	}
+	else{
+		alliancePartyWidget.style.display = "none";
+	}
+		
+	
+	election_assembly_2019_maharashtra(data.maharashtra);
+	election_assembly_2019_haryana(data.haryana);
+}
+
+
+var bypoll_party_summary = function(data){
+	let byPollWidget = document.getElementById("by-poll-widget");
+	if (true){
+		 
+		byPollWidget.style.display = "block";
+	}
+	else{
+		 
+		byPollWidget.style.display = "block";
+	}
+	let headerHtml = '';
+	let innerHtml = '';
+	let bottamHtml = '';
+	let i = 0;
+	let glideBtn = '';
+	for (let key in data) {
+		let item = data[key];
+		if (item.Assembly != undefined){
+			for (let ky in item.Assembly.data) {
+				let itm = item.Assembly.data[ky];
+				headerHtml += `<th class="newelecparty bjp" style="background:` +  itm.color + `">` + itm.name + `</th>`;
+				bottamHtml += `<td>` + itm.wonlead + `</td>`;
+			}
+			innerHtml += `<li>
+							<div class="newelecbypoll-sliderhd">
+							<h3>` + item.Assembly.state_name +`<span>(ASSEMBLY)</span></h3>
+							<p>` + item.Assembly.total_seats.wonlead + `/<span>` + item.Assembly.total_seats.seats +` Seat</span></p>
+							</div>
+							<table cellspacing="0" cellpadding="0">
+							<tr> ` + headerHtml +`</tr>
+							<tr>` + bottamHtml + ` </tr>
+							</table>
+						</li>`;
+			headerHtml = '';
+			bottamHtml = '';
+		}
+
+		if (item['Lok Sabha'] != undefined){
+			let mainItem = item['Lok Sabha'];
+			for (let ky in mainItem.data) {
+				let itm = mainItem.data[ky];
+				headerHtml += `<th class="newelecparty bjp" style="background:` +  itm.color + `">` + itm.name + `</th>`;
+				bottamHtml += `<td>` + itm.wonlead + `</td>`;
+			}
+			innerHtml += `<li>
+							<div class="newelecbypoll-sliderhd">
+							<h3>` + mainItem.state_name +`<span>(Lok Sabha)</span></h3>
+							<p>` + mainItem.total_seats.wonlead + `/<span>` + mainItem.total_seats.seats +` Seat</span></p>
+							</div>
+							<table cellspacing="0" cellpadding="0">
+							<tr> ` + headerHtml +`</tr>
+							<tr>` + bottamHtml + ` </tr>
+							</table>
+						</li>`;
+			headerHtml = '';
+			bottamHtml = '';
+		}
+
+		glideBtn += `<button data-glide-dir="=` + i++ +`"></button>`;
+		}
+
+
+	innerHtml = `<div class="newelecbypoll-sliderwrap">
+            <div data-glide-el="track" >
+               <ul  class="newelecbypoll-slider">` + innerHtml + `
+                 
+               </ul>
+               <div class="newelecbypoll-sliderbullet" data-glide-el="controls[nav]">
+                ` + glideBtn + `
+               </div>
+            </div>
+         </div>`;
+
+
+	document.getElementById('el_bypoll_ul').innerHTML = innerHtml;
+	new Glide(document.querySelector('.newelecbypoll-sliderwrap'), {
+				  autoplay: 2000,type: 'carousel',perView:4,rewind:false,slidesToScroll: 1,breakpoints: {
+				  650: {perView: 1.2}}}).mount();	
+
+	
+
+}
+
+var switchdata_mhhr_assembly_2019 = async function(data){
+	let timeInterval = 60000;
+	let showAllianceAndParty = 'on';
+	let showByPoll = 'off';
+	if (showAllianceAndParty == 'on'){
+		election_assembly_callback("election_assembly_2019_haryana_all", data.seat_party_summary_all);
+		setTimeout(function(){
+			election_assembly_callback("election_assembly_2019_haryana_all", data.seat_party_summary_all);
+		}, 3000);
+		var intervalIdAll = window.setInterval(
+			election_assembly_callback,
+			timeInterval,
+			"election_assembly_2019_haryana_all",
+			data.seat_party_summary_all
+		);
+	}
+	if (showByPoll == 'on'){
+		election_assembly_callback("election_assembly_2019_haryana_all", data.by_poll_party_summary_cross);
+		setTimeout(function(){
+			election_assembly_callback("election_assembly_2019_haryana_all", data.by_poll_party_summary_cross); 
+		}, 3000);
+		var intervalByPoll = window.setInterval(
+			election_assembly_callback,
+			timeInterval,
+			"election_assembly_2019_haryana_all",
+			data.by_poll_party_summary_cross
+		);
+	}
+	
+
+	return data;
+}
+
+async function election_assembly_callback(id, url) {
+	let sc = document.createElement("script");
+	sc.src = url;
+	sc.id = id + (new Date().getTime());
+	document.body.appendChild(sc);
+	document.getElementById(sc.id).remove();
+}
+document.addEventListener("DOMContentLoaded", function() {
+	let switcherUrl = "https://election.nw18.com/electiondata/electionjson/assembly_mhhr_2019/live/switchdata.json?v=1";
+	let flagUrl = "https://election.nw18.com/electiondata/electionjson/assemblyelection-sponsor-2019_cross.json";
+	var domainId = {};
+
+	domainId['assam.news18.com'] = 'assam';
+	domainId['devassam.news18.com'] = 'assam';
+	domainId['stgassam.news18.com'] = 'assam';
+	domainId['betaassam.news18.com'] = 'assam';
+
+	domainId['bengali.news18.com'] = 'bengali';
+	domainId['devbengali.news18.com'] = 'bengali';
+	domainId['stgbengali.news18.com'] = 'bengali';
+	domainId['betabengali.news18.com'] = 'bengali';
+
+	domainId['gujarati.news18.com'] = 'gujarati';
+	domainId['devgujarati.news18.com'] = 'gujarati';
+	domainId['stggujarati.news18.com'] = 'gujarati';
+	domainId['betagujarati.news18.com'] = 'gujarati';
+
+	domainId['kannada.news18.com'] = 'kannada';
+	domainId['devkannada.news18.com'] = 'kannada';
+	domainId['stgkannada.news18.com'] = 'kannada';
+	domainId['betakannada.news18.com'] = 'kannada';
+
+	domainId['malayalam.news18.com'] = 'malayalam';
+	domainId['devmalayalam.news18.com'] = 'malayalam';
+	domainId['stgmalayalam.news18.com'] = 'malayalam';
+	domainId['betamalayalam.news18.com'] = 'malayalam';
+
+	domainId['odia.news18.com'] = 'odia';
+	domainId['devodia.news18.com'] = 'odia';
+	domainId['stgodia.news18.com'] = 'odia';
+	domainId['betaodia.news18.com'] = 'odia';
+
+	domainId['punjab.news18.com'] = 'punjabi';
+	domainId['devpunjabi.news18.com'] = 'punjabi';
+	domainId['stgpunjabi.news18.com'] = 'punjabi';
+	domainId['betapunjabi.news18.com'] = 'punjabi';
+
+	domainId['tamil.news18.com'] = 'tamil';
+	domainId['devtamil.news18.com'] = 'tamil';
+	domainId['stgtamil.news18.com'] = 'tamil';
+	domainId['betatamil.news18.com'] = 'tamil';
+
+	domainId['telugu.news18.com'] = 'telugu';
+	domainId['devtelugu.news18.com'] = 'telugu';
+	domainId['stgtelugu.news18.com'] = 'telugu';
+	domainId['betatelugu.news18.com'] = 'telugu';
+
+	domainId['urdu.news18.com'] = 'urdu';
+	domainId['devurdu.news18.com'] = 'urdu';
+	domainId['stgurdu.news18.com'] = 'urdu';
+	domainId['betaurdu.news18.com'] = 'urdu';
+	
+	var request = new XMLHttpRequest();
+	request.open('GET', flagUrl, true);
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400) {
+			let data = JSON.parse(request.responseText);
+			if (data.constituency_tally_display){
+				document.getElementById('newelec-tallywidgetwrap-alliance-tally').setAttribute('onclick',"location.href='" + data.liveblogurl[domainId[window.location.hostname]] + "';");
+				document.getElementById('newelec-tallywidgetwrap-party-tally').setAttribute('onclick',"location.href='" + data.liveblogurl[domainId[window.location.hostname]] + "';");
+				document.getElementById('by-poll-widget').setAttribute('onclick',"location.href='" + data.liveblogurl[domainId[window.location.hostname]] + "';");
+				document.getElementById("newelec-tallywidgetwrap-alliance-tally").style.cursor = "pointer";
+				document.getElementById("newelec-tallywidgetwrap-party-tally").style.cursor = "pointer";
+				document.getElementById("by-poll-widget").style.cursor = "pointer";
+				election_assembly_callback('election_assembly_2019_switcher', switcherUrl);
+			}
+		} else {
+			console.log('Found Error:');
+		}
+	};
+	request.onerror = function() {
+		console.log('Found Error:');
+	};
+	request.send();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+	var ul = document.getElementById("tally_ul");
+	ul.addEventListener('click', function (e) {
+		var target = e.target;
+		while (target && target.parentNode !== ul) {
+			target = target.parentNode;
+			if(!target) { return; }
+		}
+		if (target.tagName === 'LI'){
+			target.className = 'active';
+			document.getElementById("newelec-tallywidgetwrap-" + target.id + "-tally").style.display = "block";
+			if (target.nextElementSibling != null){
+				target.nextElementSibling.classList.remove("active");
+				document.getElementById("newelec-tallywidgetwrap-" + target.nextElementSibling.id + "-tally").style.display = "none";
+			}
+			if (target.previousElementSibling != null){
+				target.previousElementSibling.classList.remove("active");
+				document.getElementById("newelec-tallywidgetwrap-" + target.previousElementSibling.id + "-tally").style.display = "none";
+			}
+		}
+	});
+
+		
+});
+
+</script>
+
+<div id="alliance-party-widget" class="newelec-topwrap" style="display: none;" >
+<div class="container clearfix">	
+
+
+ 
+<div class="container clearfix">	
+
+
+ 
+  
+<!--  tally tabs start -->
+<div class="newelec-tallytabs font-oswald">
+<ul id="tally_ul">
+<li id="alliance" class="active"><a href="JavaScript:Void(0);">Alliance Tally</a></li>	
+<li id="party"><a href="JavaScript:Void(0);">Party Tally</a></li>
+</ul>	
+
+</div>
+
+<!--  tally tabs end -->
+
+<!-- alliance  tally start -->
+<div id="newelec-tallywidgetwrap-alliance-tally" class="newelec-tallywidgetwrap font-oswald" style="display: block;">
+<div class="newelec-tallywidget">
+<div class="newelec-tallywidgetbox">
+<!-- this heading will go only maharashtra and haryana page start-->
+<div id = "el_mah_pro_bar" class="newelec-tallywidget-progressbaar forelecnew">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+<div class="newelec-tallywidgetbox-hd-forelection">
+<h2><figure><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/10/maharashtra-map.png"></figure>
+<span>Maharashtra <em id = "el_mah_winseat">(- Seats to Win)</em></span></h2>
+<p id = "el_mah_total" ><span>-</span>/- Seats</p>
+</div>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidgetbox-hd">
+<h2><span>Maharashtra</span> Assembly Elections</h2>
+<p><span >-/</span>- Seats ((- Seats to Win)</p>
+</div>
+<div  id = "el_mah_inner" class="newelec-tallywidget-table">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<th>Alliance</th>
+<th style="background:#ff6600">BJP+</th>
+<th style="background:#ff6600">YSRCP+</th>
+<th style="background:#ff6600">TDP+</th>
+<th style="background:#498fcd">INC+</th>
+<th style="background:#464646">OTH</th>
+</tr>
+<tr>
+<td>Wins + Leads</td>
+<td id = "el_mah_bjp" style="background:#ff6600">-</td>
+<td id = "el_mah_ysrcp" style="background:#498fcd">-</td>
+<td id = "el_mah_tdp" style="background:#498fcd">-</td>
+<td id = "el_mah_inc" style="background:#d93300">-</td>
+<td id = "el_mah_oth" style="background:#464646">-</td>
+</tr>
+<tr>
+<td>+/- 2014</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<div class="newelec-tallywidget-right"></div>
+</div>
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<a href="#" class="newelec-detailresults">DetailED Results [+]</a>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidget-progressbaar">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+
+</div>
+
+
+<div class="newelec-tallywidgetbox">
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<div  id="el_har_pro_bar" class="newelec-tallywidget-progressbaar forelecnew">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+
+<div class="newelec-tallywidgetbox-hd-forelection">
+<h2><figure><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/10/haryana-map.png"></figure><span>Haryana <em id = "el_har_winseat">(145 Seats to Win)</em></span></h2>
+<p id = "el_har_total" ><span>-</span>/- Seats</p>
+</div>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidgetbox-hd">
+<h2><span>Haryana</span> Assembly Elections</h2>
+<p><span >-</span>/- Seats ((- Seats to Win)</p>
+</div>
+<div id = "el_har_inner" class="newelec-tallywidget-table">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<th>Alliance</th>
+<th style="background:#ff6600">BJP+</th>
+<th style="background:#498fcd">INC+</th>
+<th style="background:#d93300">BJD+</th>
+<th style="background:#464646">OTH</th>
+</tr>
+<tr>
+<td>Wins + Leads</td>
+<td style="background:#ff6600">-</td>
+<td style="background:#498fcd">-</td>
+<td style="background:#d93300">-</td>
+<td style="background:#464646">-</td>
+</tr>
+<tr>
+<td>+/- 2014</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<div class="newelec-tallywidget-right"></div>
+</div>
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<a href="#" class="newelec-detailresults">DetailED Results [+]</a>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidget-progressbaar">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+
+</div>
+</div>
+</div>
+<!-- alliance  tally end -->
+
+<!--party tally start -->
+<div id="newelec-tallywidgetwrap-party-tally" class="newelec-tallywidgetwrap font-oswald">
+<div class="newelec-tallywidget party-tallywidget">
+<div class="newelec-tallywidgetbox">
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<div id="el_party_mah_pro_bar" class="newelec-tallywidget-progressbaar forelecnew">
+
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+
+</div>
+
+<div class="newelec-tallywidgetbox-hd-forelection">
+<h2><figure><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/10/maharashtra-map.png"></figure><span>Maharashtra <em id = "el_party_mah_winseat">(145 Seats to Win)</em></span></h2>
+<p  id="el_party_mah_total" ><span>-</span>/- Seats</p>
+</div>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidgetbox-hd">
+<h2><span>Haryana</span> Assembly Elections</h2>
+
+<p><span  >-</span>/- Seats ((145 Seats to Win)</p>
+</div>
+<div  id="el_party_mah_inner" class="newelec-tallywidget-table">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<th>Party</th>
+<th style="background:#ff6600">BJP+</th>
+<th style="background:#498fcd">INC+</th>
+<th style="background:#d93300">SHS+</th>
+<th style="background:#a02600">ssc</th>
+<th style="background:#005c45">ncp</th>
+<th style="background:#593b00">tdp</th>
+<th style="background:#464646">OTH</th>
+</tr>
+<tr>
+<td>Wins + Leads</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+</tr>
+<tr>
+<td>+/- 2014</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</table>
+<div class="newelec-tallywidget-right"></div>
+</div>
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<a href="#" class="newelec-detailresults">DetailED Results [+]</a>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div  class="newelec-tallywidget-progressbaar">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+</div>
+
+<div class="newelec-tallywidgetbox"  id="newelecpartytally">
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<div  id="el_party_har_pro_bar" class="newelec-tallywidget-progressbaar forelecnew">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+
+<div class="newelec-tallywidgetbox-hd-forelection">
+<h2><figure><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/10/haryana-map.png"></figure><span>Haryana <em id = "el_party_har_winseat" >(145 Seats to Win)</em></span></h2>
+<p  id = "el_party_har_total" ><span>-</span>/- Seats</p>
+</div>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+
+
+<div class="newelec-tallywidgetbox-hd">
+<h2><span>Haryana</span> Assembly Elections</h2>
+<p><span  >-</span>/- Seats ((145 Seats to Win)</p>
+</div>
+<div id = "el_party_har_inner" class="newelec-tallywidget-table">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<th>Party</th>
+<th style="background:#ff6600">BJP+</th>
+<th style="background:#498fcd">INC+</th>
+<th style="background:#d93300">SHS+</th>
+<th style="background:#a02600">ssc</th>
+<th style="background:#005c45">ncp</th>
+<th style="background:#593b00">tdp</th>
+<th style="background:#464646">OTH</th>
+</tr>
+<tr>
+<td>Wins + Leads</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+<td style="background:#fff; color: #444">-</td>
+</tr>
+<tr>
+<td>+/- 2014</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</table>
+<div class="newelec-tallywidget-right"></div>
+</div>
+
+<!-- this heading will go only maharashtra and haryana page start-->
+<a href="#" class="newelec-detailresults">DetailED Results [+]</a>
+<!-- this heading will go only maharashtra and haryana page end-->
+
+<div class="newelec-tallywidget-progressbaar">
+<span style="width:40%; background:#ff6600"></span>
+<span style="width:20%; background:#498fcd"></span>
+<span style="width:10%; background:#d93300"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+<span style="width:5%; background:#464646"></span>
+</div>
+
+</div>
+</div>
+</div>
+<!-- party tally end -->
+
+</div>
+</div>
+</div>
+
+<style type="text/css">
+.newelec-tophd {color: #002954; font-size: 32px; font-weight: bold; text-align: center;line-height: 32px;
+    margin: 5px 0 10px 0;}
+.newelec-tophd span {color: #e93d24;}
+
+.newelec-topwrap{margin: 10px }
+.newelec-tallytabs{position: relative;border-bottom: 1px solid #d7d7d7; margin-bottom: 10px;}
+.newelec-tallytabs ul{display: flex; justify-content: center;}
+.newelec-tallytabs ul li{font-size: 16px;  font-weight: normal; margin: 0 10px}
+.newelec-tallytabs ul li a{color: #666666; padding: 5px 15px; display: block; border-bottom: 4px solid #f8f8f8;}
+.newelec-tallytabs ul li.active{font-weight: bold; position: relative; top:1px;}
+.newelec-tallytabs ul li.active a{color: #e1261c; border-bottom: 3px solid #e1261c;}
+.newelec-tallytabs-refresh{position: absolute; top: 5px; right: 0; color: #7e7e7e; font-style: italic;  font-weight: normal; font-size: 12px; text-transform: uppercase;}
+.newelec-tallytabs-refresh img {position: relative; margin-left: 5px; top: 3px;}
+.newelec-tallywidgetwrap{display: none;}
+.newelec-tallywidget{display:flex; justify-content: space-between; }	 
+.newelec-tallywidgetbox{position: relative; padding: 10px; width: 49.5%; background: #fff; border: 1px solid #d1d1d0; box-sizing: border-box;}
+.newelec-tallywidgetbox-hd{display:flex; justify-content:space-between; padding-bottom:5px; align-items: center; display: none;}
+.newelec-tallywidgetbox-hd h2{font-size:18px; text-transform:uppercase;color: #001d42;}
+.newelec-tallywidgetbox-hd h2 span{color:#e1261c; }
+.newelec-tallywidgetbox-hd p{font-size:12px;color:#999999; text-transform:uppercase;}
+.newelec-tallywidgetbox-hd p span{font-weight:bold; font-size:22px; color:#474747;}
+.newelec-tallywidgetbox-hd-forelection{display:flex; justify-content:space-between; padding-bottom:5px; align-items: center;}
+.newelec-tallywidgetbox-hd-forelection h2{text-transform:uppercase;color: #e1261c; display: flex; line-height: 26px;}
+.newelec-tallywidgetbox-hd-forelection h2 figure{width: 50px; flex-shrink: 0; margin-right: 15px; filter: grayscale(100%); opacity: 0.5;}
+.newelec-tallywidgetbox-hd-forelection h2 figure img{max-width: none; width: auto}
+.newelec-tallywidgetbox-hd-forelection h2 span{font-size:28px; }
+.newelec-tallywidgetbox-hd-forelection h2 span em{color:#999999; font-size: 14px; font-style: normal; font-weight: normal; display: block }
+.newelec-tallywidgetbox-hd-forelection p{font-size:12px;color:#999999; text-transform:uppercase;}
+.newelec-tallywidgetbox-hd-forelection p span{font-weight:bold; font-size:22px; color:#474747;}
+.newelec-tallywidget-table{position:relative;padding-right: 30px;}
+.newelec-tallywidget-right {background: #e7e7e7; width: 30px; position: absolute; right: 0;  top: 0; border-bottom: 4px solid #d0d0d0;bottom: 0}
+.newelec-tallywidget-right:before, .newelec-tallywidget-right:after{content: ""; position: absolute;}
+.newelec-tallywidget-right:before{width: 18px; height: 4px;  background: #464646;  top: 50%;  margin-top: -2px;  left: 50%;  margin-left: -9px;}
+.newelec-tallywidget-right:after{width: 4px; height: 18px;  background: #464646;  top: 50%;  margin-top: -9px; left: 50%; margin-left: -2px;}
+.newelec-tallywidget-table table{width:100%; background:#e7e7e7;  border-collapse: collapse; border-bottom:4px solid #d0d0d0}
+.newelec-tallywidget-table table tr th, .newelec-tallywidget-table table tr td { padding:5px; border:1px solid #fff; text-align:center;}
+.newelec-tallywidget-table table tr td{border:1px solid #fff;}
+.newelec-tallywidget-table table tr:nth-child(2) td{font-weight:bold; font-size:32px; padding:2px 0; color:#fff;} 
+.newelec-tallywidget-table table tr td:nth-child(1) {font-weight:bold; font-size:12px!important; color:#464646; width:100px;} 
+.newelec-tallywidget-table table tr:nth-child(3) td{font-weight:normal; font-size:12px;color:#7a7a7a; } 
+.newelec-tallywidget-table table tr th{font-size:14px; font-weight:normal; color:#fff;} 
+.newelec-tallywidget-table table tr th:nth-child(1){color:#464646;} 
+.newelec-tallywidget-progressbaar{margin:5px 0;  display:flex; background:#ccc; display: none;}
+.newelec-tallywidget-progressbaar span{height:8px; display: block;}
+.newelec-tallywidget-progressbaar.forelecnew{margin:10px 0;  display:flex; position: relative; }
+.newelec-tallywidget-progressbaar.forelecnew:before{content: ""; border-left: 5px solid transparent;border-right: 5px solid transparent;  border-top: 5px solid #a5a5a5;  top: -8px; position: absolute;  left: 50%; margin-left: -3px;}
+
+
+@media only screen and (max-width:600px){
+.newelec-topwrap{background: #fff; padding-bottom: 0;}
+.newelec-tophd {font-size: 18px; line-height: 26px; margin: 0px 0 10px 0;}	
+.newelec-tallywidget{display: block; clear: both; width: 100%; float: left; padding-bottom: 10px;}
+.newelec-tallytabs ul li a {border-bottom: 4px solid #fff;}
+.newelec-tallywidgetbox{box-sizing: border-box; width:100%; clear: both; border: none; padding: 10px 0}
+.newelec-tallywidgetbox-hd h2 {font-size: 14px;
+text-transform: uppercase;line-height: 18px;}
+.newelec-tallywidgetbox-hd h2 span{display: block;}
+.newelec-tallywidgetbox-hd p {font-size: 11px;}
+.newelec-tallywidgetbox-hd p span { font-size: 18px;}
+.btm-links a {font-size: 12px; margin-right: 14px;}
+.all-seats {margin-top: 10px;}
+.newelec-tallywidget-table table tr td:nth-child(1) {width: 50px; text-align: center;}
+.newelec-tallywidget-table table tr:nth-child(2) td {font-size: 20px;}
+.newelec-tallywidget-table table tr th{font-size:12px; } 
+.newelec-btmlinks{display: none;}
+.newelec-tallywidget-right:before {width: 14px; height: 2px; margin-top: 4px;margin-left: -9px;}
+.newelec-tallywidget-right:after {width: 8px;height: 8px; background: none; margin-top: 0px;margin-left: -4px; border-top: 2px solid #464646;border-right: 2px solid #464646; transform: rotate(45deg);}
+.newelec-tallywidgetbox-hd-forelection h2 {line-height: 20px;}
+.newelec-tallywidgetbox-hd-forelection h2 span {font-size: 18px;}
+.newelec-tallywidgetbox-hd-forelection h2 span em {font-size: 12px;}
+.newelec-tallywidgetbox-hd-forelection p span {font-size: 20px;}
+.newelec-tallytabs-refresh{display: none;}
+.newelec-detailresults{display: none;}
+.newelec-btn{display: none;}
+.newelec-search {height: 40px;}
+.newelec-search:before {height: 40px; border-right: 1px solid #eee; top: 0;left: 5px;}
+.newelec-search input {height: 40px; margin-top: 0;}
+.newelec-middlewrap {display: block;margin-bottom: 0;}
+.newelec-middle-leftwrap {width: 100%;}
+.newelec-middle-leftwrap-in {display: block;}
+.newelec-middle-left { width: 100%;}
+.newelec-middle { margin-left: 0; margin-top: 20px;}
+.newelec-middle-newslist li:first-child a h3 {left: 20px;font-size: 16px;line-height: 24px; padding: 10px 10px 0px 10px;}
+.newelec-battleslider li{font-size: 14px; line-height: 22px;}
+.newelec-middle-right {width: 100%;margin: 20px 0;}
+.newelec-keycandidateshd-left {display: block;}
+.newelec-keycandidatestabs {margin-left: 0; margin-top: 5px;}
+.newelec-keycandidatestabs li {font-size: 11px;margin: 0;}
+.newelec-keycandidatestabs li a {padding: 3px 5px; }
+
+/* scroll css for party tally start */
+.party-tallywidget .newelec-tallywidget-table table, .party-state-tallywidget .newelec-tallywidget-table table { overflow: scroll; display: flex;}
+.party-tallywidget .newelec-tallywidget-table tr:nth-child(2) td, .party-state-tallywidget .newelec-tallywidget-table tr:nth-child(2) td  { padding: 2px 20px;  line-height: 14px;}
+.party-tallywidget .newelec-tallywidget-table table tr th, 
+.party-tallywidget .newelec-tallywidget-table table tr td{}
+.party-tallywidget .newelec-tallywidget-table table tr th:nth-child(1), 
+.party-tallywidget .newelec-tallywidget-table table tr td:nth-child(1) { position: sticky; left: 0;  z-index: 1;  background: #e7e7e7;     border-left: none; width:10%;}
+.party-state-tallywidget .newelec-tallywidget-table table tr th, 
+.party-state-tallywidget .newelec-tallywidget-table table tr td{}
+.party-state-tallywidget .newelec-tallywidget-table table tr th:nth-child(1), 
+.party-state-tallywidget .newelec-tallywidget-table table tr td:nth-child(1) {
+ position: sticky; left: 0; z-index: 1; background: #e7e7e7;     border-left: none; width:10%;}
+.party-tallywidget .newelec-tallywidget-table, .party-state-tallywidget .newelec-tallywidget-table{padding-right: 0px}
+.party-tallywidget .newelec-tallywidget-right, .party-state-tallywidget .newelec-tallywidget-right{display: none;}
+/* scroll css for party tally end */
+
+}
+
+.newelec-detailresults {
+    color: #e1261d;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0 0 0;
+    text-align: center;
+    display: block;
+}
+</style>
+
+
+
+
+
+<!-- By Poll Widget start -->
+
+<div class="clearfix vsp10"></div>
+   <!-- global bypoll start --> 
+   <div id="by-poll-widget" class="container clearfix" style="display: none;">
+      <div class="newbypollwidget">
+         <div class="newbypollwidgethd">
+            <h2 class="newelecheading">By-Poll<span>Results</span></h2>
+            <!-- <div class="newelecbypoll-refresh">
+               
+               <a href="JavaScript:Void(0);">Detail Results</a>
+            </div> -->
+		 </div>
+		 <div id = "el_bypoll_ul"> </div>
+         
+      </div>
+   </div>
+   <style type="text/css">
+      .newbypollwidget{margin: 10px 0;font-family: 'Oswald', sans-serif;}
+      .newbypollwidgethd{display: flex; justify-content: space-between;align-items: center; padding-bottom: 2px}
+      .newelecheading{color: #ed1c24; font-size: 20px;font-weight: bold; text-transform: uppercase;   }
+      .newelecheading span {margin-left: 5px; color: #021939; }
+      .newelecbypoll-refresh{ font-size: 12px; text-transform: uppercase;}
+      .newelecbypoll-refresh a {color: #ed1c24; position: relative; font-weight: bold; margin-right: 18px;}
+      .newelecbypoll-refresh a:before, .newelecbypoll-refresh a:after {content: "";position: absolute;}
+      .newelecbypoll-refresh a:before {background: #ed1c24; width: 10px; height: 2px;  top: 8px; right: -18px;}
+      .newelecbypoll-refresh a:after {width: 4px;height: 4px; top: 6px; right: -18px;  display: block; border-top: 2px solid #ed1c24; border-right: 2px solid #ed1c24;transform: rotate(45deg);}
+      .newelecbypoll-sliderwrap{position: relative; overflow: hidden;}
+      .newelecbypoll-slider{display: flex;}
+      .newelecbypoll-slider li{background: linear-gradient(#fff, #eaeaea); border: 1px solid #dbdbdb;  padding: 12px 10px; box-sizing: border-box;}
+      .newelecbypoll-sliderhd {display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #dbdbdb; padding-bottom: 5px; margin-bottom: 5px; text-transform: uppercase;}
+      .newelecbypoll-sliderhd h3 {color: #ef4a00;font-size: 16px;  font-weight: bold; line-height: 20px;}
+      .newelecbypoll-sliderhd h3 span {color: #021939;  font-size: 12px;  margin-left: 8px;}
+      .newelecbypoll-sliderhd p{font-size: 18px; color: #001d42}
+      .newelecbypoll-sliderhd p span{font-size: 12px; color: #444}
+      .newelecbypoll-slider li table{width:100%; border-collapse: collapse;}
+      .newelecbypoll-slider li table th, .newelecbypoll-slider li table td{ text-transform: uppercase;  text-align: center; padding: 5px 0; border:2px solid #f0f0f0;}
+      .newelecbypoll-slider li table th{font-weight: normal;color: #fff;}
+      .newelecbypoll-slider li table td{font-weight: bold;color: #464646; background: #fff }
+      .newelecparty{background: #383838}
+      .newelecparty.bjp{background: #f97d09}
+      .newelecparty.inc{background: #2ea7ff}
+      .newelecparty.oth{background: #383838}
+	  .newelecbypoll-sliderbullet{display: flex; justify-content: center; padding: 10px 0}
+      .newelecbypoll-sliderbullet button{border: none;background: #b0b0b0; width: 16px; height: 7px;  border-radius: 30px; margin: 0 4px; outline: none;padding: 0px;}
+      .newelecbypoll-sliderbullet button.glide__bullet--active{background: #e1261c}
+      @media screen and (max-width:650px){
+      .newbypollwidget { margin: 10px 10px;}
+      .newelecbypoll-sliderbullet, .newelecbypoll-refresh a:nth-child(2){display: none;}
+      .newbypollwidgethd{background: none; margin-bottom: 5px}
+      .newelecbypoll-refresh a:nth-child(1){font-size: 0px}
+      .newelecheading {font-size: 18px;}
+	  #alliance-party-widget{margin:0;}
+	  #alliance-party-widget > .container{padding:10px;}
+      }
+   </style>
+   <script type="text/javascript">
+     
+   </script>
+   
+   <!-- global bypoll end -->
+
+<!-- By Poll Widget start -->
+<style type="text/css">
+  a {
+    color: #282828;
+  }
+
+  a:hover {
+    color: #e1261d;
+  }
+
+  .global-smalhd {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .globalimg {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .globalimg img {
+    width: 100%;
+    ;
+    float: left;
+    transform: scale(1);
+    transition: all .5s ease-in-out
+  }
+
+  .globalimg:hover img {
+    transform: scale(1.2);
+    transition: all .5s ease-in-out
+  }
+
+  .brade_crum {
+    padding: 15px 0 5px 0;
+  }
+
+  .mobile-add {
+    display: none;
+  }
+
+  .sectorila-listing {
+    margin-top: 15px
+  }
+
+  .pht-artcl-shr2 a:nth-child(2),
+  .pht-artcl-shr a:nth-child(2),
+  .article-imgcontener .shrarebox a:nth-child(3),
+  ul.story_share_box li:nth-child(4),
+  .video_black_cont .video_top_discription .sharebtn a.gp,
+  #liveblog-header .lvt-rightbox .lbshre a:nth-child(3),
+  .event-content .lbcontent .gshre-box a:nth-child(3) {
+    display: none !important;
+  }
+
+
+  @media screen and (max-width: 720px) {
+    .mobile-add {
+      display: block;
+    }
+
+    .brade_crum {
+      padding: 12px 10px 0 10px !important;
+    }
+  }
+</style>
+<script type="text/javascript" async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
+<!--Mobile ad top banner-->
+<div id="mobilTop320x100" style="margin-bottom: 10px; text-align: center"></div>
+<div style="clear:both"></div>
+            <!--SECTIONPAGE start-->
+                <div class="outer">
+                    <div class="section-blog">
+                        
+                        
+                    	<div class="section-blog-left resLiftSideFull">
+			<div class="brade_crum"><a href="/">હોમ</a> &raquo; <h2>ન્યૂઝ</h2></div>
+                       
+                            <div class="vsp10 clearfix" ></div>    
+                            
+                                                <div class="hotTopic clearfix">
+							
+						 <div class="section-blog-left-img">
+								<a href="/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html" class="photo_icon_big"></a>
+								<figure>                                    
+								<a href="/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html"><img src="https://images.news18.com/static-guju/uploads/2020/07/PANCHANG-22.jpg?impolicy=website&width=582&height=388" alt="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય" title="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય" ></a>
+									<div class="title-content">                                 
+									<h1><a href="/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html">25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય</a></h1>  
+									</div>
+						   </figure>
+							</div><div class="section-blog-left-img-list"><ul><li><a href="/news/north-gujarat/gandhinagar-gujarat-assembly-by-election-cancel-non-disclosure-petition-in-gujarat-high-court-km-1002678.html"><span class="video_icon_ss"></span>6 મહિનામા ચૂંટણી લેવી લોકશાહી પ્રક્રિયા, બીજીબાજુ Corona: 8 બેઠક પર પેટાચૂંટણીનું શું થશે?</a></li><li><a href="/news/south-gujarat/tapi-naxalites-arrested-gujarat-ats-tapi-vyara-harkhand-lockdown-ap-1002673.html"><span class="video_icon_ss"></span>ગુજરાતમાં નક્સલવાદ! વ્યારામાંથી પથ્થલગડી ચળવળ ચલાવતા ત્રણ નક્સલવાદી ઝડપાયા</a></li><li><a href="/news/gujarat/kutchh-saurastra-case-of-fraud-at-visavadar-in-junagadh-district-ag-1002674.html"><span class="video_icon_ss"></span>જૂનાગઢ : કરોડો રૂપિયાનો વરસાદ કરાવી દેશે, તેમ કહી બીભત્સ માંગણી કરી</a></li><li><a href="/news/south-gujarat/surat-drunk-husband-beat-wife-surat-181-abhayam-gujarat-ap-1002667.html"><span class="video_icon_ss"></span>સુરત: દારુડિયા પતિના ત્રાસથી કંટાળી પત્નીએ માંગ અભયમની મદદ, પતિની વાત સાંભળી ચોંકી જશો</a></li><li><a href="/photogallery/madhya-gujarat/ahmedabad-people-of-ahmedabad-go-out-without-wearing-masks-ag-1002654.html"><span class="photo_icon_ss"></span>અમદાવાદના લોકો એટલા બિન્દાસ થઈ ગયા છે કે માસ્ક પહેર્યા વગર બહાર નીકળે છે</a></li>						
+							</ul>
+                        </div>
+												<div class="clearfix webadd">
+							<script type="text/javascript">
+							 if (!navigator.userAgent.match(/Android/i) &&
+							 !navigator.userAgent.match(/webOS/i) &&
+							 !navigator.userAgent.match(/iPhone/i) &&
+							 !navigator.userAgent.match(/iPod/i) &&
+							 !navigator.userAgent.match(/iPad/i) &&
+							 !navigator.userAgent.match(/Blackberry/i)) { 
+								google_ad_client = "ca-pub-2192002536170159";
+								/* News18_Hindi_TextAd_900x60 */
+								var winWidth = $(window).width();
+								if (winWidth > 1024) {
+									google_ad_slot = "6098428388";
+									google_ad_width = 900;
+									google_ad_height = 60;
+								} else if(winWidth > 660 && winWidth < 1024) {
+									google_ad_slot = "1728876788";
+									google_ad_width = 660;
+									google_ad_height = 80;
+								}
+								if (winWidth >= 660) {
+								  document.write('<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"><\/script>');
+								}
+
+							}
+							</script>							
+						</div>
+						                        </div>
+						                                    
+						<!--BLOG LISTs-->
+                                                <div id="mobil300x250"></div>
+						<div class="blog-list">
+							 <div class="blog-list-blog"><a href="/news/south-gujarat/surat-surat-smimer-hospital-does-not-have-good-facilities-diamond-worker-who-made-such-video-viral-dies-during-treatment-km-1002657.html" ></a><a href="/news/south-gujarat/surat-surat-smimer-hospital-does-not-have-good-facilities-diamond-worker-who-made-such-video-viral-dies-during-treatment-km-1002657.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Ratnakalakar-mot-corona-in-surat.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરત: 'કઈંક કરો નહીં તો અહીં મરી જઈશ',  તેવો Video બનાવનાર રત્નકલાકારનું મોત થતા હાહાકાર" title="સુરત: 'કઈંક કરો નહીં તો અહીં મરી જઈશ',  તેવો Video બનાવનાર રત્નકલાકારનું મોત થતા હાહાકાર" /></a><p><a href="/news/south-gujarat/surat-surat-smimer-hospital-does-not-have-good-facilities-diamond-worker-who-made-such-video-viral-dies-during-treatment-km-1002657.html">સુરત: 'કઈંક કરો નહીં તો અહીં મરી જઈશ',  તેવો Video બનાવનાર રત્નકલાકારનું મોત થતા હાહાકાર</a></p></div> <div class="blog-list-blog"><a href="/photogallery/madhya-gujarat/ahmedabad-shravan-shiva-temple-coronavirus-ahmedabad-gujarat-ap-1002656.html" class="photoiconb"></a><a href="/photogallery/madhya-gujarat/ahmedabad-shravan-shiva-temple-coronavirus-ahmedabad-gujarat-ap-1002656.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/shravan-corona-testing.jpg?impolicy=website&width=281&height=187" class="fader" alt="અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું" title="અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું" /></a><p><a href="/photogallery/madhya-gujarat/ahmedabad-shravan-shiva-temple-coronavirus-ahmedabad-gujarat-ap-1002656.html">અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું</a></p></div> <div class="blog-list-blog"><a href="/news/gujarat/applications-pending-by-rto-office-will-be-disposed-of-from-july-27-to-31-ag-1002655.html" class="vodeoiconb"></a><a href="/news/gujarat/applications-pending-by-rto-office-will-be-disposed-of-from-july-27-to-31-ag-1002655.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/RTO-office1.jpg?impolicy=website&width=281&height=187" class="fader" alt="આરટીઓ કચેરી દ્વારા પડતર અરજીઓનો આગામી 27 થી 31 જુલાઇ દરમિયાન નિકાલ કરવામાં આવશે" title="આરટીઓ કચેરી દ્વારા પડતર અરજીઓનો આગામી 27 થી 31 જુલાઇ દરમિયાન નિકાલ કરવામાં આવશે" /></a><p><a href="/news/gujarat/applications-pending-by-rto-office-will-be-disposed-of-from-july-27-to-31-ag-1002655.html">આરટીઓ કચેરી દ્વારા પડતર અરજીઓનો આગામી 27 થી 31 જુલાઇ દરમિયાન નિકાલ કરવામાં આવશે</a></p></div> <div class="blog-list-blog"><a href="/photogallery/south-gujarat/surat-coronavirus-surat-mass-proning-therapy-smimer-hospital-gujarat-ap-1002646.html" class="photoiconb"></a><a href="/photogallery/south-gujarat/surat-coronavirus-surat-mass-proning-therapy-smimer-hospital-gujarat-ap-1002646.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/surat-smimer-mass-proning.jpg?impolicy=website&width=281&height=187" class="fader" alt="સંજીવની સમાન થેરાપી! સુરતની સ્મીમેર હોસ્પિટલમાં કોરોના દર્દીઓ માટે 'માસ પ્રોનિંગ'નો પ્રયોગ" title="સંજીવની સમાન થેરાપી! સુરતની સ્મીમેર હોસ્પિટલમાં કોરોના દર્દીઓ માટે 'માસ પ્રોનિંગ'નો પ્રયોગ" /></a><p><a href="/photogallery/south-gujarat/surat-coronavirus-surat-mass-proning-therapy-smimer-hospital-gujarat-ap-1002646.html">સંજીવની સમાન થેરાપી! સુરતની સ્મીમેર હોસ્પિટલમાં કોરોના દર્દીઓ માટે 'માસ પ્રોનિંગ'નો પ્રયોગ</a></p></div> <div class="blog-list-blog"><a href="/photogallery/business/centre-now-makes-it-mandatory-for-all-motorbikes-to-have-handholds-and-saree-guards-safety-features-ag-1002640.html" class="photoiconb"></a><a href="/photogallery/business/centre-now-makes-it-mandatory-for-all-motorbikes-to-have-handholds-and-saree-guards-safety-features-ag-1002640.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Road-Safety.jpg?impolicy=website&width=281&height=187" class="fader" alt="ટૂ-વ્હીલર પર બેસવાની રીત બદલાશે, સરકારનો નવો આદેશ" title="ટૂ-વ્હીલર પર બેસવાની રીત બદલાશે, સરકારનો નવો આદેશ" /></a><p><a href="/photogallery/business/centre-now-makes-it-mandatory-for-all-motorbikes-to-have-handholds-and-saree-guards-safety-features-ag-1002640.html">ટૂ-વ્હીલર પર બેસવાની રીત બદલાશે, સરકારનો નવો આદેશ</a></p></div> <div class="blog-list-blog"><a href="/news/madhya-gujarat/ahmedabad-playgrounds-will-be-mandatory-in-every-primary-school-in-the-gujarat-state-an-exercise-started-by-the-education-department-km-1002638.html" class="vodeoiconb"></a><a href="/news/madhya-gujarat/ahmedabad-playgrounds-will-be-mandatory-in-every-primary-school-in-the-gujarat-state-an-exercise-started-by-the-education-department-km-1002638.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/School-Graund.jpg?impolicy=website&width=281&height=187" class="fader" alt="રાજ્યની દરેક પ્રાથમિક શાળાઓમાં રમતના મેદાન ફરજિયાત થશે, શિક્ષણ વિભાગે શરૂ કરી કવાયત" title="રાજ્યની દરેક પ્રાથમિક શાળાઓમાં રમતના મેદાન ફરજિયાત થશે, શિક્ષણ વિભાગે શરૂ કરી કવાયત" /></a><p><a href="/news/madhya-gujarat/ahmedabad-playgrounds-will-be-mandatory-in-every-primary-school-in-the-gujarat-state-an-exercise-started-by-the-education-department-km-1002638.html">રાજ્યની દરેક પ્રાથમિક શાળાઓમાં રમતના મેદાન ફરજિયાત થશે, શિક્ષણ વિભાગે શરૂ કરી કવાયત</a></p></div> <div class="blog-list-blog"><a href="/news/south-gujarat/surat-coronavirus-surat-gujarat-corona-warriors-death-ap-1002633.html" class="vodeoiconb"></a><a href="/news/south-gujarat/surat-coronavirus-surat-gujarat-corona-warriors-death-ap-1002633.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/chief-fire-officer-surat.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરતમાં કોરોના વધુ ઘાતક બન્યો! વધુ 309 લોકોને ચોંટ્યો, સબ ફાયર ઓફિસરનું કોરોનાથી મોત" title="સુરતમાં કોરોના વધુ ઘાતક બન્યો! વધુ 309 લોકોને ચોંટ્યો, સબ ફાયર ઓફિસરનું કોરોનાથી મોત" /></a><p><a href="/news/south-gujarat/surat-coronavirus-surat-gujarat-corona-warriors-death-ap-1002633.html">સુરતમાં કોરોના વધુ ઘાતક બન્યો! વધુ 309 લોકોને ચોંટ્યો, સબ ફાયર ઓફિસરનું કોરોનાથી મોત</a></p></div> <div class="blog-list-blog"><a href="/photogallery/gujarat/gujarat-coronavirus-cases-updates-on-24th-july-2020-ag-1002631.html" class="photoiconb"></a><a href="/photogallery/gujarat/gujarat-coronavirus-cases-updates-on-24th-july-2020-ag-1002631.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/24th-july-1.jpg?impolicy=website&width=281&height=187" class="fader" alt="રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત" title="રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત" /></a><p><a href="/photogallery/gujarat/gujarat-coronavirus-cases-updates-on-24th-july-2020-ag-1002631.html">રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત</a></p></div> <div class="blog-list-blog"><a href="/photogallery/madhya-gujarat/ahmedabad-the-international-scandal-of-injections-used-for-corona-virus-was-caught-in-surat-km-1002613.html" class="photoiconb"></a><a href="/photogallery/madhya-gujarat/ahmedabad-the-international-scandal-of-injections-used-for-corona-virus-was-caught-in-surat-km-1002613.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Corona-Drugs-Scam-in-ahmedabad-surat.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ" title="સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ" /></a><p><a href="/photogallery/madhya-gujarat/ahmedabad-the-international-scandal-of-injections-used-for-corona-virus-was-caught-in-surat-km-1002613.html">સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ</a></p></div> <div class="blog-list-blog"><a href="/news/south-gujarat/surat-grade-pay-gujarat-police-social-media-campaign-surat-range-ig-4-policemen-ap-1002620.html" class="vodeoiconb"></a><a href="/news/south-gujarat/surat-grade-pay-gujarat-police-social-media-campaign-surat-range-ig-4-policemen-ap-1002620.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Gujarat-police-gred-pay.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરતઃ પોલીસ ગ્રેડ-પે અંગે સોશિયલ મીડિયા ઉપર આંદોલન, 4 પોલીસકર્મીની અટકાયત" title="સુરતઃ પોલીસ ગ્રેડ-પે અંગે સોશિયલ મીડિયા ઉપર આંદોલન, 4 પોલીસકર્મીની અટકાયત" /></a><p><a href="/news/south-gujarat/surat-grade-pay-gujarat-police-social-media-campaign-surat-range-ig-4-policemen-ap-1002620.html">સુરતઃ પોલીસ ગ્રેડ-પે અંગે સોશિયલ મીડિયા ઉપર આંદોલન, 4 પોલીસકર્મીની અટકાયત</a></p></div> <div class="blog-list-blog"><a href="/videos/kutchh-saurastra/amreli-more-than-3-inches-of-rain-in-2-hours-in-savarkundla-of-amreli-district-1002618.html" class="vodeoiconb"></a><a href="/videos/kutchh-saurastra/amreli-more-than-3-inches-of-rain-in-2-hours-in-savarkundla-of-amreli-district-1002618.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/MX79a2Vnzj8_1002618.jpg?impolicy=website&width=281&height=187" class="fader" alt="Video: અમરેલી  જિલ્લાના સાવરકુંડલામાં 2 કલાકમાં 3 ઇંચથી વધુ વરસાદ" title="Video: અમરેલી  જિલ્લાના સાવરકુંડલામાં 2 કલાકમાં 3 ઇંચથી વધુ વરસાદ" /></a><p><a href="/videos/kutchh-saurastra/amreli-more-than-3-inches-of-rain-in-2-hours-in-savarkundla-of-amreli-district-1002618.html">Video: અમરેલી  જિલ્લાના સાવરકુંડલામાં 2 કલાકમાં 3 ઇંચથી વધુ વરસાદ</a></p></div> <div class="blog-list-blog"><a href="/photogallery/madhya-gujarat/ahmedabad-cyber-crime-women-harassment-ahmedabad-social-media-gujarat-ap-1002607.html" class="photoiconb"></a><a href="/photogallery/madhya-gujarat/ahmedabad-cyber-crime-women-harassment-ahmedabad-social-media-gujarat-ap-1002607.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/cyber-crime-case-Ahmedabad.jpg?impolicy=website&width=281&height=187" class="fader" alt="અમદાવાદનો કિસ્સોઃ વારંવાર ફોન કરીને મળવા બોલાવતા મહિલાએ ના પાડી, આરોપીએ વટાવી તમામ હદ" title="અમદાવાદનો કિસ્સોઃ વારંવાર ફોન કરીને મળવા બોલાવતા મહિલાએ ના પાડી, આરોપીએ વટાવી તમામ હદ" /></a><p><a href="/photogallery/madhya-gujarat/ahmedabad-cyber-crime-women-harassment-ahmedabad-social-media-gujarat-ap-1002607.html">અમદાવાદનો કિસ્સોઃ વારંવાર ફોન કરીને મળવા બોલાવતા મહિલાએ ના પાડી, આરોપીએ વટાવી તમામ હદ</a></p></div> <div class="blog-list-blog"><a href="/photogallery/business/goldsilverprice-gold-price-today-silver-price-today-ahmedabad-ap-1002600.html" class="photoiconb"></a><a href="/photogallery/business/goldsilverprice-gold-price-today-silver-price-today-ahmedabad-ap-1002600.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Gold-Silver-price-24-7-2020.jpg?impolicy=website&width=281&height=187" class="fader" alt="સોનું રેકોર્ડ સ્તર ઉપર પહોંચ્યું, ચાંદીમાં મોટો કડાકો, જાણો અમદાવાદમાં સોના-ચાંદીના ભાવ" title="સોનું રેકોર્ડ સ્તર ઉપર પહોંચ્યું, ચાંદીમાં મોટો કડાકો, જાણો અમદાવાદમાં સોના-ચાંદીના ભાવ" /></a><p><a href="/photogallery/business/goldsilverprice-gold-price-today-silver-price-today-ahmedabad-ap-1002600.html">સોનું રેકોર્ડ સ્તર ઉપર પહોંચ્યું, ચાંદીમાં મોટો કડાકો, જાણો અમદાવાદમાં સોના-ચાંદીના ભાવ</a></p></div> <div class="blog-list-blog"><a href="/videos/gujarat/important-news-for-gujcet-exam-increase-in-application-limit-1002585.html" class="vodeoiconb"></a><a href="/videos/gujarat/important-news-for-gujcet-exam-increase-in-application-limit-1002585.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/mjnrSU1XAmE_1002585.jpg?impolicy=website&width=281&height=187" class="fader" alt="Video: GUJCETની પરીક્ષા માટે મહત્વના સમાચાર, આવેદનપત્ર ભરવાની મર્યાદામાં વધારો" title="Video: GUJCETની પરીક્ષા માટે મહત્વના સમાચાર, આવેદનપત્ર ભરવાની મર્યાદામાં વધારો" /></a><p><a href="/videos/gujarat/important-news-for-gujcet-exam-increase-in-application-limit-1002585.html">Video: GUJCETની પરીક્ષા માટે મહત્વના સમાચાર, આવેદનપત્ર ભરવાની મર્યાદામાં વધારો</a></p></div> <div class="blog-list-blog"><a href="/news/madhya-gujarat/ahmedabad-took-money-from-going-to-srp-in-the-name-of-union-ag-1002594.html" class="vodeoiconb"></a><a href="/news/madhya-gujarat/ahmedabad-took-money-from-going-to-srp-in-the-name-of-union-ag-1002594.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/money.jpg?impolicy=website&width=281&height=187" class="fader" alt="અમદાવાદ : યુનિયનના નામે એસઆરપી જવાનો પાસેથી પૈસા પડાવતા પોલીસ ફરિયાદ" title="અમદાવાદ : યુનિયનના નામે એસઆરપી જવાનો પાસેથી પૈસા પડાવતા પોલીસ ફરિયાદ" /></a><p><a href="/news/madhya-gujarat/ahmedabad-took-money-from-going-to-srp-in-the-name-of-union-ag-1002594.html">અમદાવાદ : યુનિયનના નામે એસઆરપી જવાનો પાસેથી પૈસા પડાવતા પોલીસ ફરિયાદ</a></p></div> <div class="blog-list-blog"><a href="/news/north-gujarat/gandhinagar-anganwadi-workers-recruitment-women-and-child-welfare-department-more-than-7000-employees-km-1002584.html" class="vodeoiconb"></a><a href="/news/north-gujarat/gandhinagar-anganwadi-workers-recruitment-women-and-child-welfare-department-more-than-7000-employees-km-1002584.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/vibhavariben-dave.......jpg?impolicy=website&width=281&height=187" class="fader" alt="મહિલા અને બાળ કલ્યાણ વિભાગ દ્વારા 7000થી વધુ કર્મચારીઓની ઓનલાઈન ભરતી કરાશે" title="મહિલા અને બાળ કલ્યાણ વિભાગ દ્વારા 7000થી વધુ કર્મચારીઓની ઓનલાઈન ભરતી કરાશે" /></a><p><a href="/news/north-gujarat/gandhinagar-anganwadi-workers-recruitment-women-and-child-welfare-department-more-than-7000-employees-km-1002584.html">મહિલા અને બાળ કલ્યાણ વિભાગ દ્વારા 7000થી વધુ કર્મચારીઓની ઓનલાઈન ભરતી કરાશે</a></p></div> <div class="blog-list-blog"><a href="/news/dharm-bhakti/shravan-daridradahan-shivstrotram-for-good-health-and-wealth-mp-1002596.html" ></a><a href="/news/dharm-bhakti/shravan-daridradahan-shivstrotram-for-good-health-and-wealth-mp-1002596.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/shiv-strotra-abcd.jpg?impolicy=website&width=281&height=187" class="fader" alt="દારિદ્રદહન શિવસ્તોત્રમ: શ્રાવણમાં વાંચવા માત્રથી મળશે અઢળક ધન-સંપત્તિ" title="દારિદ્રદહન શિવસ્તોત્રમ: શ્રાવણમાં વાંચવા માત્રથી મળશે અઢળક ધન-સંપત્તિ" /></a><p><a href="/news/dharm-bhakti/shravan-daridradahan-shivstrotram-for-good-health-and-wealth-mp-1002596.html">દારિદ્રદહન શિવસ્તોત્રમ: શ્રાવણમાં વાંચવા માત્રથી મળશે અઢળક ધન-સંપત્તિ</a></p></div> <div class="blog-list-blog"><a href="/news/business/ratan-tata-big-statement-on-covid-19-pandemic-layoff-said-india-inc-lack-of-empathy-ch-1002595.html" class="vodeoiconb"></a><a href="/news/business/ratan-tata-big-statement-on-covid-19-pandemic-layoff-said-india-inc-lack-of-empathy-ch-1002595.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/02/Ratan-Tata-Chhotu.jpg?impolicy=website&width=281&height=187" class="fader" alt="ભારતીય કંપનીઓ દ્વારા છટણી કરવા પર નારાજ રતન ટાટાએ કહ્યું - 'લીડરમાં સહાનુભૂતિ નથી બચી'" title="ભારતીય કંપનીઓ દ્વારા છટણી કરવા પર નારાજ રતન ટાટાએ કહ્યું - 'લીડરમાં સહાનુભૂતિ નથી બચી'" /></a><p><a href="/news/business/ratan-tata-big-statement-on-covid-19-pandemic-layoff-said-india-inc-lack-of-empathy-ch-1002595.html">ભારતીય કંપનીઓ દ્વારા છટણી કરવા પર નારાજ રતન ટાટાએ કહ્યું - 'લીડરમાં સહાનુભૂતિ નથી બચી'</a></p></div> <div class="blog-list-blog"><a href="/photogallery/entertainment/anurag-kashyap-says-sushant-singh-rajput-chose-drive-over-his-film-mp-1002588.html" class="photoiconb"></a><a href="/photogallery/entertainment/anurag-kashyap-says-sushant-singh-rajput-chose-drive-over-his-film-mp-1002588.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/sushant-and-anurag-abcd.jpg?impolicy=website&width=281&height=187" class="fader" alt="અનુરાગ કશ્યપનો દાવો, સુશાંતે તેની બે ફિલ્મ કરન જોહર અને YRFને કારણે ઠુકરાવી" title="અનુરાગ કશ્યપનો દાવો, સુશાંતે તેની બે ફિલ્મ કરન જોહર અને YRFને કારણે ઠુકરાવી" /></a><p><a href="/photogallery/entertainment/anurag-kashyap-says-sushant-singh-rajput-chose-drive-over-his-film-mp-1002588.html">અનુરાગ કશ્યપનો દાવો, સુશાંતે તેની બે ફિલ્મ કરન જોહર અને YRFને કારણે ઠુકરાવી</a></p></div> <div class="blog-list-blog"><a href="/news/national-international/rajasthan-political-crisis-congess-says-they-will-sit-till-session-called-tent-being-set-inside-raj-bhavan-ag-1002583.html" class="vodeoiconb"></a><a href="/news/national-international/rajasthan-political-crisis-congess-says-they-will-sit-till-session-called-tent-being-set-inside-raj-bhavan-ag-1002583.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/raj-bhavan.jpg?impolicy=website&width=281&height=187" class="fader" alt="કોંગ્રેસ ધારાસભ્ય બોલ્યા- માંગણી ના માની તો ટેન્ટ લગાવીને આખી રાત રાજભવનમાં ધરણાં કરીશું" title="કોંગ્રેસ ધારાસભ્ય બોલ્યા- માંગણી ના માની તો ટેન્ટ લગાવીને આખી રાત રાજભવનમાં ધરણાં કરીશું" /></a><p><a href="/news/national-international/rajasthan-political-crisis-congess-says-they-will-sit-till-session-called-tent-being-set-inside-raj-bhavan-ag-1002583.html">કોંગ્રેસ ધારાસભ્ય બોલ્યા- માંગણી ના માની તો ટેન્ટ લગાવીને આખી રાત રાજભવનમાં ધરણાં કરીશું</a></p></div> <div class="blog-list-blog"><a href="/videos/gujarat/north-gujarat-relief-to-students-in-north-gujarat-universitys-online-exam-1002564.html" class="vodeoiconb"></a><a href="/videos/gujarat/north-gujarat-relief-to-students-in-north-gujarat-universitys-online-exam-1002564.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/MS3KsZVBEk0_1002564.jpg?impolicy=website&width=281&height=187" class="fader" alt="Video: North Gujarat Universityની ઓનલાઇન પરીક્ષામાં વિદ્યાર્થીઓને રાહત" title="Video: North Gujarat Universityની ઓનલાઇન પરીક્ષામાં વિદ્યાર્થીઓને રાહત" /></a><p><a href="/videos/gujarat/north-gujarat-relief-to-students-in-north-gujarat-universitys-online-exam-1002564.html">Video: North Gujarat Universityની ઓનલાઇન પરીક્ષામાં વિદ્યાર્થીઓને રાહત</a></p></div> <div class="blog-list-blog"><a href="/videos/gujarat/congress-mla-shailesh-parmar-wrote-a-letter-to-the-election-commission-demanding-that-the-by-elections-be-held-on-ballot-paper-1002568.html" class="vodeoiconb"></a><a href="/videos/gujarat/congress-mla-shailesh-parmar-wrote-a-letter-to-the-election-commission-demanding-that-the-by-elections-be-held-on-ballot-paper-1002568.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/3n_LoHC1I6U_1002568.jpg?impolicy=website&width=281&height=187" class="fader" alt="Congress MLA Shailesh Parmarએ ચૂંટણી પંચને પત્ર લખી પેટાચૂંટણી બેલેટ પેપરથી કરવાની માગ કરી" title="Congress MLA Shailesh Parmarએ ચૂંટણી પંચને પત્ર લખી પેટાચૂંટણી બેલેટ પેપરથી કરવાની માગ કરી" /></a><p><a href="/videos/gujarat/congress-mla-shailesh-parmar-wrote-a-letter-to-the-election-commission-demanding-that-the-by-elections-be-held-on-ballot-paper-1002568.html">Congress MLA Shailesh Parmarએ ચૂંટણી પંચને પત્ર લખી પેટાચૂંટણી બેલેટ પેપરથી કરવાની માગ કરી</a></p></div> <div class="blog-list-blog"><a href="/photogallery/national-international/onlineclass-coronavirus-rajasthan-virender-sehwag-study-on-mountain-ap-1002573.html" class="photoiconb"></a><a href="/photogallery/national-international/onlineclass-coronavirus-rajasthan-virender-sehwag-study-on-mountain-ap-1002573.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/online-study-on-mauntain-Rajasthan.jpg?impolicy=website&width=281&height=187" class="fader" alt="ઓનલાઈન અભ્યાસની માથાકુટઃ નેટવર્ક નહીં આવતા રોજ પહાડ ઉપર જઈને ભણે છે વિદ્યાર્થી" title="ઓનલાઈન અભ્યાસની માથાકુટઃ નેટવર્ક નહીં આવતા રોજ પહાડ ઉપર જઈને ભણે છે વિદ્યાર્થી" /></a><p><a href="/photogallery/national-international/onlineclass-coronavirus-rajasthan-virender-sehwag-study-on-mountain-ap-1002573.html">ઓનલાઈન અભ્યાસની માથાકુટઃ નેટવર્ક નહીં આવતા રોજ પહાડ ઉપર જઈને ભણે છે વિદ્યાર્થી</a></p></div> <div class="blog-list-blog"><a href="/news/south-gujarat/surat-cases-of-corona-virus-have-increased-in-the-city-along-with-laziness-and-negligence-of-the-corporation-in-surat-km-1002565.html" class="vodeoiconb"></a><a href="/news/south-gujarat/surat-cases-of-corona-virus-have-increased-in-the-city-along-with-laziness-and-negligence-of-the-corporation-in-surat-km-1002565.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/surat-palika-bedarkari-corona.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરત : Coronaનો કહેર વધ્યો, સાથે મહાનગરપાલિકાની આળસ અને બેદરકારી પણ વધી" title="સુરત : Coronaનો કહેર વધ્યો, સાથે મહાનગરપાલિકાની આળસ અને બેદરકારી પણ વધી" /></a><p><a href="/news/south-gujarat/surat-cases-of-corona-virus-have-increased-in-the-city-along-with-laziness-and-negligence-of-the-corporation-in-surat-km-1002565.html">સુરત : Coronaનો કહેર વધ્યો, સાથે મહાનગરપાલિકાની આળસ અને બેદરકારી પણ વધી</a></p></div> <div class="blog-list-blog"><a href="/news/entertainment/mumbai-police-likely-to-record-kangana-ranaut-statement-in-sushant-singh-rajput-death-mp-1002570.html" ></a><a href="/news/entertainment/mumbai-police-likely-to-record-kangana-ranaut-statement-in-sushant-singh-rajput-death-mp-1002570.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/kangana-sushat-abc.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુશાંત સિંઘ રાજપૂત કેસ: હવે મુંબઇ પોલીસ લેશે કંગના રનૌટનું નિવેદન" title="સુશાંત સિંઘ રાજપૂત કેસ: હવે મુંબઇ પોલીસ લેશે કંગના રનૌટનું નિવેદન" /></a><p><a href="/news/entertainment/mumbai-police-likely-to-record-kangana-ranaut-statement-in-sushant-singh-rajput-death-mp-1002570.html">સુશાંત સિંઘ રાજપૂત કેસ: હવે મુંબઇ પોલીસ લેશે કંગના રનૌટનું નિવેદન</a></p></div> <div class="blog-list-blog"><a href="/photogallery/lifestyle/how-to-make-your-hair-black-home-remedy-and-beauty-tips-ch-1002566.html" class="photoiconb"></a><a href="/photogallery/lifestyle/how-to-make-your-hair-black-home-remedy-and-beauty-tips-ch-1002566.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/world-news-43.jpg?impolicy=website&width=281&height=187" class="fader" alt="કાળા લસલસતા વાળ જોઇએ છે? તો અપનાવો આ પ્રાકૃતિક ઘરેલુ નુસખા" title="કાળા લસલસતા વાળ જોઇએ છે? તો અપનાવો આ પ્રાકૃતિક ઘરેલુ નુસખા" /></a><p><a href="/photogallery/lifestyle/how-to-make-your-hair-black-home-remedy-and-beauty-tips-ch-1002566.html">કાળા લસલસતા વાળ જોઇએ છે? તો અપનાવો આ પ્રાકૃતિક ઘરેલુ નુસખા</a></p></div> <div class="blog-list-blog"><a href="/news/madhya-gujarat/ahmedabad-gujarat-hc-asks-government-to-fine-rs-1000-rupees-for-not-wearing-face-mask-vz-1002562.html" class="vodeoiconb"></a><a href="/news/madhya-gujarat/ahmedabad-gujarat-hc-asks-government-to-fine-rs-1000-rupees-for-not-wearing-face-mask-vz-1002562.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Face-Mask-Gujarat-HC.jpg?impolicy=website&width=281&height=187" class="fader" alt="માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર" title="માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર" /></a><p><a href="/news/madhya-gujarat/ahmedabad-gujarat-hc-asks-government-to-fine-rs-1000-rupees-for-not-wearing-face-mask-vz-1002562.html">માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર</a></p></div> <div class="blog-list-blog"><a href="/videos/madhya-gujarat/ahmedabad-ahmedabad-2-hole-on-road-at-a-distance-of-20-feet-in-maninagar-amc-satisfied-with-barricade-1002563.html" class="vodeoiconb"></a><a href="/videos/madhya-gujarat/ahmedabad-ahmedabad-2-hole-on-road-at-a-distance-of-20-feet-in-maninagar-amc-satisfied-with-barricade-1002563.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/1E995PpT2p4_1002563.jpg?impolicy=website&width=281&height=187" class="fader" alt="અમદાવાદઃ મણિનગરમાં 20 ફૂટના અંતરે 2 ભૂવા, AMCએ બેરિકેટ મુકી સંતોષ માન્યો" title="અમદાવાદઃ મણિનગરમાં 20 ફૂટના અંતરે 2 ભૂવા, AMCએ બેરિકેટ મુકી સંતોષ માન્યો" /></a><p><a href="/videos/madhya-gujarat/ahmedabad-ahmedabad-2-hole-on-road-at-a-distance-of-20-feet-in-maninagar-amc-satisfied-with-barricade-1002563.html">અમદાવાદઃ મણિનગરમાં 20 ફૂટના અંતરે 2 ભૂવા, AMCએ બેરિકેટ મુકી સંતોષ માન્યો</a></p></div> <div class="blog-list-blog"><a href="/videos/national-international/all-the-important-news-of-the-country-and-abroad-till-this-evening-2-1002557.html" class="vodeoiconb"></a><a href="/videos/national-international/all-the-important-news-of-the-country-and-abroad-till-this-evening-2-1002557.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/dMa0a1SRiFI_1002557.jpg?impolicy=website&width=281&height=187" class="fader" alt="Video: આજ સાંજ સુધીના દેશ વિદેશના તમામ મહત્વના સમાચારો સંક્ષિપ્તમાં" title="Video: આજ સાંજ સુધીના દેશ વિદેશના તમામ મહત્વના સમાચારો સંક્ષિપ્તમાં" /></a><p><a href="/videos/national-international/all-the-important-news-of-the-country-and-abroad-till-this-evening-2-1002557.html">Video: આજ સાંજ સુધીના દેશ વિદેશના તમામ મહત્વના સમાચારો સંક્ષિપ્તમાં</a></p></div> <div class="blog-list-blog"><a href="/videos/kutchh-saurastra/amreli-rain-in-amreli-district-heavy-rain-in-rangpur-vadera-and-nana-bhandariya-1002556.html" class="vodeoiconb"></a><a href="/videos/kutchh-saurastra/amreli-rain-in-amreli-district-heavy-rain-in-rangpur-vadera-and-nana-bhandariya-1002556.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/QE26a76YIGI_1002556.jpg?impolicy=website&width=281&height=187" class="fader" alt="Video: અમરેલી જિલ્લામાં વરસાદી માહોલ, રંગપુર, વડેરા અને નાના ભંડારિયામાં ધોધમાર વરસાદ" title="Video: અમરેલી જિલ્લામાં વરસાદી માહોલ, રંગપુર, વડેરા અને નાના ભંડારિયામાં ધોધમાર વરસાદ" /></a><p><a href="/videos/kutchh-saurastra/amreli-rain-in-amreli-district-heavy-rain-in-rangpur-vadera-and-nana-bhandariya-1002556.html">Video: અમરેલી જિલ્લામાં વરસાદી માહોલ, રંગપુર, વડેરા અને નાના ભંડારિયામાં ધોધમાર વરસાદ</a></p></div> <div class="blog-list-blog"><a href="/photogallery/lifestyle/shravan-2020-heres-what-to-eat-lord-shiva-devotees-on-monday-fasting-ch-1002551.html" class="photoiconb"></a><a href="/photogallery/lifestyle/shravan-2020-heres-what-to-eat-lord-shiva-devotees-on-monday-fasting-ch-1002551.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/world-news-42.jpg?impolicy=website&width=281&height=187" class="fader" alt="શ્રાવણ માસનો ઉપવાસ કરો છો? તો ભૂલથી પણ ના કરો આ વસ્તુઓનું સેવન" title="શ્રાવણ માસનો ઉપવાસ કરો છો? તો ભૂલથી પણ ના કરો આ વસ્તુઓનું સેવન" /></a><p><a href="/photogallery/lifestyle/shravan-2020-heres-what-to-eat-lord-shiva-devotees-on-monday-fasting-ch-1002551.html">શ્રાવણ માસનો ઉપવાસ કરો છો? તો ભૂલથી પણ ના કરો આ વસ્તુઓનું સેવન</a></p></div> <div class="blog-list-blog"><a href="/news/kutchh-saurastra/rajkot-rajkot-police-arrest-fake-journalist-km-1002538.html" class="vodeoiconb"></a><a href="/news/kutchh-saurastra/rajkot-rajkot-police-arrest-fake-journalist-km-1002538.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/police-rajkot-fake.jpg?impolicy=website&width=281&height=187" class="fader" alt="રાજકોટ: પત્રકારના નામે તોડ કરવા નીકળેલી ટોળકીના ચાર જેટલા સભ્યોની પોલીસે કરી ધરપકડ" title="રાજકોટ: પત્રકારના નામે તોડ કરવા નીકળેલી ટોળકીના ચાર જેટલા સભ્યોની પોલીસે કરી ધરપકડ" /></a><p><a href="/news/kutchh-saurastra/rajkot-rajkot-police-arrest-fake-journalist-km-1002538.html">રાજકોટ: પત્રકારના નામે તોડ કરવા નીકળેલી ટોળકીના ચાર જેટલા સભ્યોની પોલીસે કરી ધરપકડ</a></p></div> <div class="blog-list-blog"><a href="/photogallery/gujarat/south-gujarat-black-ink-affixed-on-cr-patils-welcome-banner-in-surat-ag-1002534.html" class="photoiconb"></a><a href="/photogallery/gujarat/south-gujarat-black-ink-affixed-on-cr-patils-welcome-banner-in-surat-ag-1002534.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Black-ink.jpg?impolicy=website&width=281&height=187" class="fader" alt="સુરત : સીઆર પાટીલના સ્વાગત બેનર પર નીતિન પટેલ સિવાય બધાના ચહેરા પર કાળી શાહી લગાવી" title="સુરત : સીઆર પાટીલના સ્વાગત બેનર પર નીતિન પટેલ સિવાય બધાના ચહેરા પર કાળી શાહી લગાવી" /></a><p><a href="/photogallery/gujarat/south-gujarat-black-ink-affixed-on-cr-patils-welcome-banner-in-surat-ag-1002534.html">સુરત : સીઆર પાટીલના સ્વાગત બેનર પર નીતિન પટેલ સિવાય બધાના ચહેરા પર કાળી શાહી લગાવી</a></p></div> <div class="blog-list-blog"><a href="/news/national-international/ambala-and-hasimara-airbase-selected-strategically-for-rafale-squadrons-to-keep-watch-on-china-and-pakistan-vz-1002550.html" class="vodeoiconb"></a><a href="/news/national-international/ambala-and-hasimara-airbase-selected-strategically-for-rafale-squadrons-to-keep-watch-on-china-and-pakistan-vz-1002550.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/dassault-rafale-IAF-03.jpg?impolicy=website&width=281&height=187" class="fader" alt="પાકિસ્તાન અને ચીનને કાબૂમાં રાખવા રાફેલ માટે અંબાલા અને હાસીમરા બેઝની પસંદગી" title="પાકિસ્તાન અને ચીનને કાબૂમાં રાખવા રાફેલ માટે અંબાલા અને હાસીમરા બેઝની પસંદગી" /></a><p><a href="/news/national-international/ambala-and-hasimara-airbase-selected-strategically-for-rafale-squadrons-to-keep-watch-on-china-and-pakistan-vz-1002550.html">પાકિસ્તાન અને ચીનને કાબૂમાં રાખવા રાફેલ માટે અંબાલા અને હાસીમરા બેઝની પસંદગી</a></p></div> <div class="blog-list-blog"><a href="/photogallery/business/post-office-recurring-deposit-indian-government-rd-schemes-ap-1002541.html" class="photoiconb"></a><a href="/photogallery/business/post-office-recurring-deposit-indian-government-rd-schemes-ap-1002541.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/Post-office-RD-Schemes.jpg?impolicy=website&width=281&height=187" class="fader" alt="શું તમારે પાંચ જ વર્ષમાં લાખોપતિ બનવું છે? તમારા માટે પોસ્ટ ઓફિસની આ સ્કીમ છે કામની" title="શું તમારે પાંચ જ વર્ષમાં લાખોપતિ બનવું છે? તમારા માટે પોસ્ટ ઓફિસની આ સ્કીમ છે કામની" /></a><p><a href="/photogallery/business/post-office-recurring-deposit-indian-government-rd-schemes-ap-1002541.html">શું તમારે પાંચ જ વર્ષમાં લાખોપતિ બનવું છે? તમારા માટે પોસ્ટ ઓફિસની આ સ્કીમ છે કામની</a></p></div> <div class="blog-list-blog"><a href="/videos/south-gujarat/narmada-care-of-coronavirus-in-rajpipla-declared-some-area-buffer-zone-1002542.html" class="vodeoiconb"></a><a href="/videos/south-gujarat/narmada-care-of-coronavirus-in-rajpipla-declared-some-area-buffer-zone-1002542.html" ><img src="https://images.gujarati.news18.com/static-guju/uploads/2017/12/greyimg.jpg" data-original="https://images.news18.com/static-guju/uploads/2020/07/P1-Vcn4Da50_1002542.jpg?impolicy=website&width=281&height=187" class="fader" alt="Rajpiplaમાં Coronavirusનો કેર, કેટલાક વિસ્તાર બફર ઝોન જાહેર" title="Rajpiplaમાં Coronavirusનો કેર, કેટલાક વિસ્તાર બફર ઝોન જાહેર" /></a><p><a href="/videos/south-gujarat/narmada-care-of-coronavirus-in-rajpipla-declared-some-area-buffer-zone-1002542.html">Rajpiplaમાં Coronavirusનો કેર, કેટલાક વિસ્તાર બફર ઝોન જાહેર</a></p></div>						</div>
+									
+                        <!--BLOGlist/END-->
+                                     <!--PAGINATION-START-->
+									 <div class="pagination"><ul><li><a class='selected' rel='prev'>1</a></li><li><a href="/news/page-2/" rel="next">2</a></li><li><a href="/news/page-3/" rel="next">3</a></li><li><a href="/news/page-4/" rel="next">4</a></li><li><a href="/news/page-5/" rel="next">5</a></li><li><a href="/news/page-6/" rel="next">6</a></li><li><a href="/news/page-7/" rel="next">7</a></li><li><a href="/news/page-8/" rel="next">8</a></li><li><a href="/news/page-9/" rel="next">9</a></li><li><a href="/news/page-10/" rel="next">10</a></li><li class='next' title='next'><a href='/news/page-2/' rel='next'>&nbsp;</a></li></ul></div> 
+                                     <!--PAGINATION-END-->
+                        </div>
+                    <!--RIGHTSIDE-->
+                    <style>.wwnone { display: none; } .rhs-fexed{width:300px; float: right; }.ptop{position:fixed;bottom:0;z-index:9 !important} @media only screen and (max-width: 740px){ .wwnone { display: block; } .rhs-fexed { display: none} .ptop{position:static;} }</style>
+<div class="rhs-fexed">
+    <div class="section-blog-right resRightSide">
+        <div class="add clearfix" >	<div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_300">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_ATF_300");
+    });
+  </script>
+</div></div>
+		        
+		<style>.live_cricketpup{background:#fff!important;border-radius:6px;padding:4px 41px 4px 4px;position:fixed;top:165px;left:-495px;color:#fff;z-index:4}.live_cwidget{background:#2b2b2b;position:relative;padding-bottom:4px;height:91px}.live_cwidget h2{font-size:18px;padding:4px 10px;background:#ec1c23;text-transform:uppercase;font-weight:400;color:#fff!important}.live_cwidget h2.msc_h2{font-size:14px;font-weight:700}.live_cwidget .lcinner{margin:6px 24px 6px 64px;overflow:hidden}.live_cwidget ul li{float:left;width:300px;line-height:14px!important;padding:5px 0 0;border-bottom:none;font-size:15px}.live_cwidget ul li .score{font-size:16px;color:#fff;line-height:28px}.live_cwidget ul li .score span{font-size:23px;padding:0 6px}.live_cwidget a{color:#fff!important}.mcricket_widget{background:#fff;display:block}.cricket_icon{background:url(/images/cricket-icon.png) no-repeat!important;position:absolute;top:40px;left:10px;z-index:0;width:22px;height:33px}.lc_larrow,.lc_rarrow{width:10px;height:16px;position:absolute;top:52px}.lc_rarrow{background:url(/images/lc-rarrow.png) no-repeat;right:10px}.lc_larrow{background:url(/images/lc-larrow.png) no-repeat;left:40px}.cwidget-box{display:none}@media(max-width:600px){.cwidget-box{display:block;margin-top:20px}.mcricket_widget{width:100%}}</style>
+<div class="mcricket_widget ptop15"> <div class="live_cwidget"> <h2 class="msc_h2">LIVE Now</h2> <div class="lcinner"><span class="sprite_img cricket_icon pcimg"></span> <a href="#" class="sprite_img lc_larrow scoreMidArrow" data-type="left"></a> <a href="#" class="sprite_img lc_rarrow scoreMidArrow" data-type="right"></a> <ul id="mobileLiveScoreCard"></ul></div></div><div class="clearfix" style="padding-top:10px"></div> </div>
+<script>var matchInterval = setInterval("getLeftScoreCardWedget();",15000);$(document).ready(function(){ getLeftScoreCardWedget(); var lhsScoreCount=0; $('a.scoreMidArrow').on('click', function(e){ e.preventDefault(); var totalLhsScorLi = $('#mobileLiveScoreCard').find('li').length; var totalLhsScorLi = $('#liveScoreCard').find('li').length; var lshScoreMrgn=0; var lshScoreDir = $(this).data('type'); lhsScoreCount = ( lshScoreDir === 'right' ) ? lhsScoreCount+1 : lhsScoreCount-1; if(lhsScoreCount<0 || lhsScoreCount>=totalLhsScorLi){lhsScoreCount=0;} var lhsScorLiWidth = $('#mobileLiveScoreCard').find('li').outerWidth(); var lhsScorLiWidth = $('#liveScoreCard').find('li').outerWidth(); lshScoreMrgn = (lhsScoreCount*lhsScorLiWidth); $('#mobileLiveScoreCard').animate({marginLeft:'-'+lshScoreMrgn+'px'},500); $('#liveScoreCard').animate({marginLeft:'-'+lshScoreMrgn+'px'},500); }); }) </script>			<div style="clear:both;"></div>
+			        <div class="ph_gallery">
+		<a href="/photogallery/"><h2 class="ph_heading">તસવીરો</h2></a>
+		<div class="w_widget clearfix">
+		<ul class="w_listing"><li>
+							<a href=/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html><span class="pbicon3 pbs"></span><img src=https://images.news18.com/static-guju/uploads/2020/07/PANCHANG-22.jpg?impolicy=website&width=300&height=200 alt="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય" title="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય"/></a>
+							<p><a href=/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html>25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય</a></p>
+						  </li></ul>
+		<div class="sub_photo clearfix">
+		<ul id="bottList"><li>
+									<a href="/photogallery/madhya-gujarat/ahmedabad-people-of-ahmedabad-go-out-without-wearing-masks-ag-1002654.html"><span class="pbicon3 pbs"></span><img src="https://images.news18.com/static-guju/uploads/2020/07/without-wearing-masks.jpg?impolicy=website&width=139&height=93" alt="અમદાવાદના લોકો એટલા બિન્દાસ થઈ ગયા છે કે માસ્ક પહેર્યા વગર બહાર નીકળે છે" title="અમદાવાદના લોકો એટલા બિન્દાસ થઈ ગયા છે કે માસ્ક પહેર્યા વગર બહાર નીકળે છે"/></a>
+									<p><a href="/photogallery/madhya-gujarat/ahmedabad-people-of-ahmedabad-go-out-without-wearing-masks-ag-1002654.html">અમદાવાદના લોકો એટલા બિન્દાસ થઈ ગયા છે કે માસ્ક પહેર્યા વગર બહાર નીકળે છે</a></p>
+								</li><li>
+									<a href="/photogallery/madhya-gujarat/ahmedabad-shravan-shiva-temple-coronavirus-ahmedabad-gujarat-ap-1002656.html"><span class="pbicon3 pbs"></span><img src="https://images.news18.com/static-guju/uploads/2020/07/shravan-corona-testing.jpg?impolicy=website&width=139&height=93" alt="અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું" title="અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું"/></a>
+									<p><a href="/photogallery/madhya-gujarat/ahmedabad-shravan-shiva-temple-coronavirus-ahmedabad-gujarat-ap-1002656.html">અમદાવાદઃ શ્રાવણ માસ શરુ થતાં ધાર્મિક સ્થળો ઉપર કોરોના ટેસ્ટીંગ, પરિણામ આવ્યું ચોંકાવનારું</a></p>
+								</li></ul>
+		</div>
+		</div>
+		</div><!-- asian games 2018 -->		
+		<div class="clearfix vsp20"></div>
+		<!--end code  asian games 2018 -->
+        <div class="clearfix vsp20"></div>	
+        <div><div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_BTF_300">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_LATESTNEWS/NW18_GUJ_LATESTNEWS_AL/NW18_GUJ_LTSNWS_AL_ROS_BTF_300");
+    });
+  </script>
+</div></div>
+
+        <div class="clearfix vsp20"></div>	
+        
+					<!-- Top Stories Widget (Start) -->
+					<h2 class="widget-globalheading">તાજેતરના સમાચાર</h2>
+					<div class="widget-right-topstories">
+						<ul>
+							<li>  <figure class="yogaday-globalimg"><a href="https://gujarati.news18.com/news/south-gujarat/tapi-naxalites-arrested-gujarat-ats-tapi-vyara-harkhand-lockdown-ap-1002673.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/images/placeholder.jpg" class="fader" data-original="https://images.news18.com/static-guju/uploads/2020/07/Naxalites-arrested-by-Gujarat-ATS-2.jpg?impolicy=website&width=610&height=406" alt="ગુજરાતમાં નક્સલવાદ! વ્યારામાંથી પથ્થલગડી ચળવળ ચલાવતા ત્રણ નક્સલવાદી ઝડપાયા" title="ગુજરાતમાં નક્સલવાદ! વ્યારામાંથી પથ્થલગડી ચળવળ ચલાવતા ત્રણ નક્સલવાદી ઝડપાયા"></a></figure><a href="https://gujarati.news18.com/news/south-gujarat/tapi-naxalites-arrested-gujarat-ats-tapi-vyara-harkhand-lockdown-ap-1002673.html">ગુજરાતમાં નક્સલવાદ! વ્યારામાંથી પથ્થલગડી ચળવળ ચલાવતા ત્રણ નક્સલવાદી ઝડપાયા </a></li> <li>  <figure class="yogaday-globalimg"><a href="https://gujarati.news18.com/photogallery/gujarat/gujarat-coronavirus-cases-updates-on-24th-july-2020-ag-1002631.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/images/placeholder.jpg" class="fader" data-original="https://images.news18.com/static-guju/uploads/2020/07/24th-july.jpg?impolicy=website&width=610&height=406" alt="રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત" title="રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત"></a></figure><a href="https://gujarati.news18.com/photogallery/gujarat/gujarat-coronavirus-cases-updates-on-24th-july-2020-ag-1002631.html">રાજ્યમાં કોરોનાના નવા 1068 કેસ નોંધાયા, 24 કલાકમાં 26 દર્દીઓના મોત </a></li> <li>  <figure class="yogaday-globalimg"><a href="https://gujarati.news18.com/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/images/placeholder.jpg" class="fader" data-original="https://images.news18.com/static-guju/uploads/2020/07/PANCHANG-22.jpg?impolicy=website&width=610&height=406" alt="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય" title="25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય"></a></figure><a href="https://gujarati.news18.com/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html">25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય </a></li> <li>  <figure class="yogaday-globalimg"><a href="https://gujarati.news18.com/photogallery/madhya-gujarat/ahmedabad-the-international-scandal-of-injections-used-for-corona-virus-was-caught-in-surat-km-1002613.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/images/placeholder.jpg" class="fader" data-original="https://images.news18.com/static-guju/uploads/2020/07/Corona-Drugs-Scam-in-ahmedabad-surat.jpg?impolicy=website&width=610&height=406" alt="સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ" title="સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ"></a></figure><a href="https://gujarati.news18.com/photogallery/madhya-gujarat/ahmedabad-the-international-scandal-of-injections-used-for-corona-virus-was-caught-in-surat-km-1002613.html">સુરતમાં Coronaના રેમડિસેવીર અને ટોસિલિઝુમેબ ઇન્જેક્શનનું આંતરરાષ્ટ્રીય કૌભાંડ ઝડ </a></li> <li>  <figure class="yogaday-globalimg"><a href="https://gujarati.news18.com/news/madhya-gujarat/ahmedabad-gujarat-hc-asks-government-to-fine-rs-1000-rupees-for-not-wearing-face-mask-vz-1002562.html"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/assests/images/placeholder.jpg" class="fader" data-original="https://images.news18.com/static-guju/uploads/2020/07/Face-Mask-Gujarat-HC.jpg?impolicy=website&width=610&height=406" alt="માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર" title="માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર"></a></figure><a href="https://gujarati.news18.com/news/madhya-gujarat/ahmedabad-gujarat-hc-asks-government-to-fine-rs-1000-rupees-for-not-wearing-face-mask-vz-1002562.html">માસ્ક ન પહેરનારને 1,000 રૂપિયા સુધી દંડ કરો : હાઇકોર્ટની રાજ્ય સરકારને ટકોર </a></li> 						</ul>
+					</div>
+					<!-- Top Stories Widget (End) -->
+		<style type="text/css">
+			.widget-globalheading{ border-bottom: 2px solid #111; font-size: 28px; font-weight: bold; color: #111; position: relative; line-height: 30px; padding-bottom: 5px; }
+			.widget-globalheading:before{content: ""; height: 5px; width: 25px; background: #f4342f; position: absolute; left:0; bottom: -3px}
+			.widget-right-topstories{background: #333333; overflow: hidden;}
+			.widget-right-topstories ul{padding: 10px 0; overflow: auto; height: auto; width: 104%;}
+			.widget-right-topstories ul li{    display: flex;     padding: 8px 20px;     font-size: 14px;     line-height: 20px;}
+			.widget-right-topstories ul li a{ color: #fff }
+			.widget-right-topstories ul li figure{ flex-shrink: 0; width:130px; margin-right: 10px }		
+		</style>
+		<!-- yogaday end -->        <div class="clearfix vsp20"></div>	
+<!-- start outbrain implementation- replacing MGID -->
+<div class="OUTBRAIN" data-src="http://gujarati.news18.com/news/" data-widget-id="SB_3"></div> 
+<!-- end outbrain implementation- replacing MGID -->
+ 
+
+    </div>
+</div>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+    var wintop= $(window).scrollTop();
+    var winBottom = wintop + $(this).height();
+    var rhs= $('.section-blog-right').height();
+    var nowfooter= parseInt($(document).height()-$('footer').height());
+    var gap=200;
+    if(winBottom >= rhs+gap){
+        $('.section-blog-right').addClass('ptop');
+    }
+    else{
+        $('.section-blog-right').removeClass('ptop');
+    }
+    if(winBottom >=nowfooter){
+        $('.section-blog-right').removeClass('ptop');
+    }
+    
+});
+</script>  
+                    
+            	</div>
+             </div>
+			 </div>
+<style>
+.section-blog-left {border: none; padding: 0 0 10px 0; margin-top: 0}
+.brade_crum { padding: 0;  border-bottom: none; height: auto; line-height: 18px;position: relative}
+.brade_crum h1{ display:inline-block}
+.section-blog-left-img-list ul li {margin:0; padding: 18px 7px 18px 0}
+.section-blog-left-img-list ul li:first-child{ padding-top:0}
+.section-blog-left-img  img{width:100%}
+.forlarge, .forsmal,.webadd{text-align:center; line-height:0; padding-top:8px}
+.forsmal{display:none}
+.w_widget {border: none;}
+.sub_photo ul {margin: 0;}
+.sub_photo ul li {width: 48%; margin-right: 4%;}
+.sub_photo ul li img{width:100%}
+@media screen and (max-width:1024px){
+.forlarge{ display:none}
+.forsmal{display:block}
+}
+@media screen and (max-width:720px){
+.forlarge, .forsmal{ display:none}
+}
+
+</style>
+             <!--FOOTER-->
+
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "News18 Gujarati",   
+		"url": "https://gujarati.news18.com/",
+		"logo": "https://static.gujarati.news18.com/static-guju/uploads/2020/03/gujarati.png",  
+		"sameAs": ["https://www.facebook.com/News18Gujarati/","https://twitter.com/news18guj", "https://www.youtube.com/channel/UCqfX_f4rBbPhq_KESE4saCA","https://www.instagram.com/news18gujarati/"]
+	}
+</script>
+
+<!--footer 728x90-->
+<div class="content-add vspacer bottom-ad" id="ads728x90_Footer"></div><div style="margin-bottom: 0px;" class="content-add" id="webad1x1OOP"></div></div><!--footer latest news end--><!--FOOTER--><div class="clearfix"></div><!--Ad script for web-->
+<footer><div class="outer clearfix ftbox"> 
+
+
+	
+<script>
+$(document).ready(function() {
+$('.ftrchnl-in').slick({
+dots: true,
+infinite: false,
+speed: 500,
+slidesToShow: 7,
+autoplay: false,
+nextArrow: '.chnlarr',
+prevArrow: '.chnlarl',
+appendDots : '.sliderBullets2',
+});
+});
+</script>
+<style>
+footer .ftbox { padding: 18px 0;}
+.ftrchnl{ position: relative; margin: 0 0 0 92px}
+.ftrchnl-in{overflow:hidden; margin: 0 70px 0 60px}
+.ftrchnl-in .lick-list{width:100%; overflow:hidden}
+.ftrchnl-in .slick-slide{ padding:0 30px;     display: inline-block; width: auto !Important; border-left:1px solid #3e3e3e; }
+.ftrchnl-in .slick-slide img{ display: inline-block; vertical-align: middle; outline: none}
+.ftrchnl-in .slick-slide:first-child{ border: none; padding-left: 0px}
+.ftrchnl-ar{ position: absolute; top:0px;width:60px; height: 45px;background:#212121;border-top:0px;border-left:0px;transform: rotate(0deg);}
+.ftrchnl-ar:before{ content: ""; position: absolute; top:50%;   width:15px; height: 15px; border-top:3px solid #393939; border-left:3px solid #393939;     transform: rotate(-45deg); display: block; left: 50%;
+margin: -7px 0 0 -7px;}
+.ftrchnl-ar.chnlarl{left:0px}
+.ftrchnl-ar.chnlarr{    right: 0px;  transform: rotate(180deg);}
+.ftrlvlt-hd {font-size: 20px; color: #fff; font-weight: 400; line-height: 60px; border-right: 1px solid #818181; padding-right: 16px; position: absolute;    height: 60px; text-transform: uppercase}
+.ftrlvlt-hd img {position: absolute;top: 42%;right: -6px;}
+.fornwftr{margin-left: 25px;width: 280px !important;padding: 20px 0 0 0 !important;}
+.fmid .topic ul li { font-size: 13px;}
+.from-network h3 { height: auto; flex-shrink: 0;    margin: auto; border: none;}
+.btmsitelist{width: 100%; border-left: 1px solid #818181;}
+.section-blog-left-aricle iframe{display: block; margin: 20px auto;}
+</style>
+
+<h3 class="ftrlvlt-hd">Live TV<img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/farrow.png" alt=""></h3>		
+<div class="clearfix ftrchnl">
+<div class="ftrchnl-in clearfix">
+
+<div><a href="/live-tv/" ><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18gujarati.png" alt="News18 Gujarati" title="News18 Gujarati"/></a></div>
+
+<div><a href="https://www.news18.com/livetv/"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/cnnnews18.png" alt="News18" title="News18"/></a></div>
+<div><a href="https://hindi.news18.com/livetv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18india.png" alt="News18 India" title="News18 India"/></a></div>
+<div><a href="https://bengali.news18.com/live-tv/news18-bangla/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18bengla.png" alt="News18 Bangla" title="News18 Bangla"/></a></div>
+<div><a href="https://hindi.news18.com/livetv/news18-rajasthan/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18rajasthan.png" alt="News18 Rajasthan" title="News18 Rajasthan"/></a></div>
+<div><a href="https://hindi.news18.com/livetv/news18-bihar-jharkhand/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/bh-jk.gif" alt="News18 Bihar, Jharkhand" title="News18 Bihar, Jharkhand"/></a></div>
+<div><a href="https://hindi.news18.com/livetv/news18-madhya-pradesh-chhattisgarh/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/mp-ch.gif" alt="News18 Madhya Pradesh, Chhattisgarh" title="News18 Madhya Pradesh, Chhattisgarh"/></a></div>
+<div><a href="https://hindi.news18.com/livetv/news18-uttar-pradesh-uttarakhand/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/up-uk.gif" alt="News18 Uttar Pradesh, Uttarakhand" title="News18 Uttar Pradesh, Uttarakhand"/></a></div>
+<div><a href="https://punjab.news18.com/live-tv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18-punjab-haryana-himachal.gif" alt="News18 Punjab, Haryana, Himachal" title="News18 Punjab, Haryana, Himachal"/></a></div>
+<div><a href="https://kannada.news18.com/live-tv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18kannada.png" alt="News18 Kannada" title="News18 Kannada"/></a></div>
+<div><a href="https://www.news18kerala.com/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18kerala.png" alt="News18 Kerala" title="News18 Kerala"/></a></div>
+<div><a href="https://www.news18odia.com/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18oria.png" alt="News18 Odia" title="News18 Odia"/></a></div>
+<div><a href="https://tamil.news18.com/live-tv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18tamil.png" alt="News18 Tamil" title="News18 Tamil"/></a></div>
+<div><a href="https://urdu.news18.com/live-tv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18urdu.png" alt="News18 Urdu" title="News18 Urdu"/></a></div>
+<div><a href="https://www.news18assam.com/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/news18-assam-north-east.gif" alt="News18 Assam/NorthEast" title="News18 Assam/NorthEast"/></a></div>
+
+<div><a href="https://lokmat.news18.com/live-tv/" target="_blank"><img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/logo/lokmat.png" alt="Lokmat" title="Lokmat"/></a></div>
+
+</div>
+<a href="#" class="ftrchnl-ar chnlarl" ></a>
+<a href="#" class="ftrchnl-ar chnlarr" > </a>  
+</div>
+<script type="text/javascript" src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/js/slick.min.js" ></script>
+</div>
+
+
+<div class="fmid"> 
+	<div class="outer clearfix"> <div class="topic fleft"> <h2>વિભાગ</h2> <ul> 
+         
+            <li><a href="https://gujarati.news18.com/national-international/">દેશવિદેશ</a></li> 
+         
+            <li><a href="https://gujarati.news18.com/eye-catcher/">અજબગજબ</a></li> 
+         
+            <li><a href="https://gujarati.news18.com/business/">વેપાર </a></li> 
+         
+            <li><a href="https://gujarati.news18.com/dharm-bhakti/">ધર્મભક્તિ</a></li> 
+         
+        <!-- <li><a class="flink" href="news/"> </a></li>  -->
+        <li><a href="https://gujarati.news18.com/photogallery/">તસવીરો</a></li> 
+        <li><a href="https://gujarati.news18.com/videos/">વીડિયો</a></li> <li><a href="https://gujarati.news18.com/live-tv/news18-gujarati">લાઇવ ટીવી</a></li>
+         <!-- <li><a href="shows/"></a></li>
+         <li><a href="blogs/"></a></li> 
+         <li><a href="/press-release/">પ્રેસનોટ</a></li> -->
+        </ul> </div> <div class="fletest-news fleft"> <h2>તાજેતરના સમાચાર</h2>
+         <ul><li><a href="/photogallery/dharm-bhakti/today-horoscope-in-gujarati-read-25th-july-2020-rashifal-or-horosocpe-here-km-1002680.html">25 જુલાઈ 2020 : વાંચો આજનું રાશિ ભવિષ્ય</a></li><li><a href="/news/north-gujarat/gandhinagar-gujarat-assembly-by-election-cancel-non-disclosure-petition-in-gujarat-high-court-km-1002678.html">6 મહિનામા ચૂંટણી લેવી લોકશાહી પ્રક્રિયા, બીજીબાજુ Corona: 8 બેઠક પર પેટાચૂંટણીનું શું થશે?</a></li><li><a href="/news/south-gujarat/tapi-naxalites-arrested-gujarat-ats-tapi-vyara-harkhand-lockdown-ap-1002673.html">ગુજરાતમાં નક્સલવાદ! વ્યારામાંથી પથ્થલગડી ચળવળ ચલાવતા ત્રણ નક્સલવાદી ઝડપાયા</a></li><li><a href="/news/gujarat/kutchh-saurastra-case-of-fraud-at-visavadar-in-junagadh-district-ag-1002674.html">જૂનાગઢ : કરોડો રૂપિયાનો વરસાદ કરાવી દેશે, તેમ કહી બીભત્સ માંગણી કરી</a></li><li><a href="/news/south-gujarat/surat-drunk-husband-beat-wife-surat-181-abhayam-gujarat-ap-1002667.html">સુરત: દારુડિયા પતિના ત્રાસથી કંટાળી પત્નીએ માંગ અભયમની મદદ, પતિની વાત સાંભળી ચોંકી જશો</a></li></ul> </div> 
+	<div class="topic fleft fornwftr"> <ul> 
+			<li><a href="/about-us/">અમારા વિશે</a></li>
+			<li><a href="/contact-us/">સંપર્ક કરો</a></li>
+			<li><a href="/privacy_policy.html">ગોપનીયતા નીતિ</a></li>
+                        <li><a href="/cookie-policy.html">કૂકી પોલિસી</a></li>
+			<li><a href="/sitemap/">સાઇટ મેપ</a></li>
+			<!-- <a href="http://godigital.in.com/contactUs.php" target="_blank" rel="nofollow">Advertise With Us</a> -->
+			</ul> </div>
+ </div> 
+ <div class="from-network clearfix"> <div class="outer" style="display: flex;"> <h3>Network 18 Sites<img src="https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/farrow.png" alt=""></h3> <ul class="btmsitelist"> <li><a href="/" >News18 India </a></li> <li><a href="https://www.news18.com/cricketnext/">CricketNext </a></li> <li><a href="/states/">News18 States </a></li> <!--<li><a href="https://hindi.pradesh18.com/" target="_blank">Pradesh18 </a></li>--> <li><a href="https://bengali.news18.com/" target="_blank" rel="nofollow">Bangla News </a></li> <li><a href="https://gujarati.news18.com/" target="_blank" rel="nofollow">Gujarati News </a></li> <li><a href="https://urdu.news18.com/" target="_blank" rel="nofollow">Urdu News </a></li> <li><a href="https://www.news18lokmat.com/" target="_blank" rel="nofollow">Marathi News </a></li> <li><a href="https://www.topperlearning.com/" target="_blank" rel="nofollow">TopperLearning </a></li> <li><a href="https://www.moneycontrol.com/" target="_blank" rel="nofollow">Moneycontrol </a></li> <li><a href="https://www.firstpost.com/" target="_blank" rel="nofollow">Firstpost </a></li> <li><a href="https://compareindia.news18.com/" target="_blank" rel="nofollow">CompareIndia </a></li> <li><a href="https://www.historyindia.com/" target="_blank" rel="nofollow">History India </a></li> <li><a href="https://www.mtvindia.com/" target="_blank" rel="nofollow">MTV India </a></li> <li><a href="https://www.in.com/" target="_blank" rel="nofollow">In.com </a></li> <li><a href="https://www.burrp.com/" target="_blank" rel="nofollow">Burrp </a></li><li><a href="https://www.topperlearning.com/doubts-solutions/all-questions/" target="_blank" rel="nofollow">Clear Study Doubts</a></li><li><a href="https://www.caprep18.com/" target="_blank" rel="nofollow">CAprep18</a></li>
+<li><a href="https://www.topperlearning.com/become-partner" target="_blank" rel="nofollow">Education Franchisee Opportunity</a></li> </ul> </div> </div> 
+ <div class="fbottom-txt"><div class="outer"> CNN name, logo and all associated elements ® and © 2017 Cable News Network LP, LLLP. A Time Warner Company. All rights reserved. CNN and the CNN logo are registered marks of Cable News Network, LP LLLP, displayed with permission. Use of the CNN name and/or logo on or as part of NEWS18.com does not derogate from the intellectual property rights of Cable News Network in respect of them. © Copyright Network18 Media and Investments Ltd 2016. All rights reserved.</div> </div> 
+ </div>
+ </footer><div class="mobile-footer">© Copyright Network18 Media and Investments Ltd  2016. All rights reserved. NETWORK 18 SITES</div>
+ 
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 848989982;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/848989982/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Google Code for Remarketing Tag end -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '482038382136514');
+fbq('track', 'PageView');
+</script>
+<!-- End Facebook Pixel Code -->
+
+<!-- Accio - In Image Ad in article start------> 
+<!-- Accio - In Image Ad in article end ------>
+<script>
+    function isMobileDevice() {
+        if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)
+                ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function   resizeIframe(obj) {
+       
+        if (isMobileDevice()) {
+            obj.style.height =  '235px';
+           
+        } else {
+            obj.style.height = '450px';
+           
+        }
+    }
+
+</script>
+
+<script type='text/javascript' src='/js/lazyloder-min.js'></script>
+<script>
+$(document).ready(function(){
+	setTimeout(function(){var t="";$(".fader").each(function(){t=$(this).data("original"),$(this).attr("src",t),t=""})},1500);
+});
+</script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<style type="text/css">
+    .global-exitpollwrap{width:100%; position: relative; background: #fff; padding: 10px 0; border-bottom: 3px solid #eee; box-shadow: 0px 0px 1px #ccc}    
+    .global-exitpoll{max-width:1244px; padding: 0 10px; margin: auto;}
+    .global-exitpoll-left{width:72%; padding-right: 1%; float: left; border-right: 2px solid #ccc}
+    .global-exitpoll-right{width:25%; float: right;}
+    .global-exitpollhd{color: #282828; font-size: 18px; font-weight: bold; text-transform: capitalize;  margin-bottom: 8px; position: relative; text-align:left}
+    .global-exitpollhd span{color: #e1261c; text-transform: none; padding-left: 5px}
+    .exitpoll-slidelist{ overflow: hidden; }
+
+    .exitpoll-slidelist li{border:1px dashed #9b9b9b; padding: 5px 10px 8px 10px; box-sizing: border-box; position: relative;}
+    .exitpoll-slidelist-hd{ display: flex; justify-content: space-between; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 5px; }
+    .exitpoll-slidelist-hd h2, .exitpoll-slidelist-hd h3{ font-size: 18px; font-weight: bold; color: #e1261c; font-family:"Oswald", sans-serif; text-transform: capitalize; }
+    .exitpoll-slidelist-hd h2 span, .exitpoll-slidelist-hd h3 span{ font-size: 12px; font-weight: normal; color: #777; padding-left: 4px }
+    .exitpoll-slidelist-icon{width:20px; height: 20px; background: url(images/exiptpoll-share.png) 50% 50% no-repeat; cursor: pointer;}
+    .exitpoll-slidelist-seats-table{display: flex; justify-content: space-between;}
+    .exitpoll-slidelist-seats{ font-size: 24px; font-weight: bold; color: #000; line-height: 18px; text-align: center;   align-self: center; margin-right: 10px }
+    .exitpoll-slidelist-seats span{ font-size: 14px; color: #8d8d8d; display: block; padding-top: 5px}
+    .exitpoll-slidelist-seats em{font-size: 12px; font-weight: normal; color: #8d8d8d; display: block; font-style: normal; margin-top: 5px; letter-spacing: -1px}
+    .exitpoll-slidelist-table{width:100%;}
+    .exitpoll-slidelist-table table{width:100%; border-collapse: collapse;}
+    .exitpoll-slidelist-table table td{font-size: 14px; font-weight: bold; color: #fff; vertical-align: middle; text-transform: uppercase; border: 2px solid #fff; padding: 5px 2px; text-align: center;}
+    .exitpoll-slidelist .slick-arrow{ display: none !Important; }
+    .exitpoll-slidelist .slick-dots{ display: flex; justify-content: center; padding-top: 10px }
+    .exitpoll-slidelist .slick-dots li{border: none; padding:0px;margin-right:5px; background: #b0b0b0; font-size: 0px; width:10px !important; height: 6px; border-radius: 20px}
+    .exitpoll-slidelist .slick-dots li button{ display: none; }
+    .exitpoll-slidelist .slick-dots li.slick-active{ background: #e1261c }
+    .exitpoll-slidelist-share{ position: absolute; top:10px; right:35px;  display: none; }
+    .exitpoll-slidelist-share a{ display: inline-block; margin-right:5px; }
+    .exitpoll-allfigures{color: #fff !important;  background: #e1261c; font-size: 12px;  padding: 0 15px;  height: 25px;  line-height: 25px;  display: inline-block;  border-radius: 20px;  position: absolute;  right: 8px;  bottom: 0;}
+    .loksabha-exitpoll li{width:320px !important; margin-right: 10px} 
+    .assembly-exitpoll li{ margin-right: 0px }
+
+    .assembly-exitpoll{ position: relative;  }
+    .assembly-exitpoll .slick-arrow{ display: block !Important; position: absolute; top:0px;  background: none; border: none;  font-size: 0px; outline: none;  margin: 0; padding: 0; cursor: pointer; width:auto; height:auto}
+    .assembly-exitpoll .slick-arrow:before{content: "";  width: 9px; height: 9px;  border-top: 3px solid #e1261c;  border-left: 3px solid #e1261c;  position: absolute;  top: 0px;transform: none;   left: auto; }
+    .assembly-exitpoll .slick-arrow.slick-prev{transform: rotate(-45deg);  top: 21px; right: 45px;  z-index: 1;}
+    .assembly-exitpoll .slick-arrow.slick-next{transform: rotate(135deg); top: 21px; right: 12px;}
+.display-none-mobile{}
+.display-block-mobile{ display: none;}
+.slick-track{ display: flex; }
+.exitpoll-slidelist .slick-track{transform: translate3d(-320px, 0px, 0px);}
+.cdblinklive{font-family: "Oswald", sans-serif; font-size: 16px; font-style: normal; display: inline-block; color: #e1261c;  margin-left: 8px;}
+.epdib{display: inline-block}
+.display-none-mobile.epdib{color:black}
+    @media screen and (max-width:650px){
+        .global-exitpoll-left, .global-exitpoll-right{width:100%;}          
+        .global-exitpoll-left{ border: none; padding:0px; margin-bottom: 20px }
+        .exitpoll-slidelist li{ margin-right: 0px }
+        .exitpoll-allfigures {right: 0; margin: 5px 0 0 0;}
+        .exitpoll-slidelist .slick-dots{ display: none !important; }
+        .exitpoll-slidelist-seats{ font-size: 20px;  line-height: 16px; margin-right: 10px }
+        .loksabha-exitpoll li{width:280px !important; margin-right: 10px}
+        .exitpoll-slidelist-table table td{ font-size: 13px; padding:5px 0px; }    
+		.display-none-mobile{ display: none}  
+		.display-block-mobile{ display: block;}
+        .epmdib{display: inline-block !important}
+		}
+}
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.exitpoll-slidelist-icon').click(function () {
+            $(this).parent('.exitpoll-slidelist-hd').find('.exitpoll-slidelist-share').slideToggle();
+        });
+    });
+</script> 
+
+<script>
+    var all_states = {};
+    all_states['telangana'] = 'तेलंगाना';
+    all_states['andhra-pradesh'] = 'आंध्र प्रदेश';
+    all_states['assam'] = 'असम';
+    all_states['bihar'] = 'बिहार';
+    all_states['goa'] = 'गोवा';
+    all_states['gujarat'] = 'गुजरात';
+    all_states['haryana'] = 'हरियाणा';
+    all_states['himachal'] = 'हिमाचल';
+    all_states['himachal-pradesh'] = 'हिमाचल प्रदेश';
+    all_states['jammu-kashmir'] = 'जम्मू कश्मीर';
+    all_states['jammu-and-kashmir'] = 'जम्मू कश्मीर';
+    all_states['karnataka'] = 'कर्नाटक';
+    all_states['kerala'] = 'केरल';
+    all_states['madhya-pradesh'] = 'मध्य प्रदेश';
+    all_states['maharashtra'] = 'महाराष्ट्र';
+    all_states['manipur'] = 'मणिपुर';
+    all_states['meghalaya'] = 'मेघालय';
+    all_states['nagaland'] = 'नागालैंड';
+    all_states['odisha'] = 'ओडिशा';
+    all_states['punjab'] = 'पंजाब';
+    all_states['rajasthan'] = 'राजस्थान';
+    all_states['tamil-nadu'] = 'तमिलनाडु';
+    all_states['tripura'] = 'त्रिपुरा';
+    all_states['uttar-pradesh'] = 'उत्तर प्रदेश';
+    all_states['west-bengal'] = 'पश्चिम बंगाल';
+    all_states['chhattisgarh'] = 'छत्तीसगढ़';
+    all_states['jharkhand'] = 'झारखंड';
+    all_states['uttarakhand'] = 'उत्तराखंड';
+    all_states['delhi'] = 'दिल्ली';
+    all_states['lakshadweep'] = 'लक्षद्वीप';
+    all_states['andaman-nicobar'] = 'अंडमान निकोबार द्वीप';
+    all_states['andaman-and-nicobar'] = 'अंडमान निकोबार द्वीप';
+    all_states['arunachal'] = 'अरुणाचल';
+    all_states['mizoram'] = 'मिज़ोरम';
+    all_states['sikkim'] = 'सिक्किम';
+    all_states['daman-diu'] = 'दमन दीव';
+    all_states['daman-and-diu'] = 'दमन दीव';
+    all_states['puducherry'] = 'पुडुचेरी';
+    all_states['chandigarh'] = 'चंडीगढ़';
+    all_states['dadra-and-nagar-haveli'] = 'दादरा नागर हवेली';
+    all_states['arunachal-pradesh'] = 'अरुणाचल प्रदेश';
+    all_states['all-india'] = 'देश के आंकड़े ';
+
+    all_states['telangna'] = 'तेलंगाना';
+    all_states['jammu-&-kashmir'] = 'जम्मू कश्मीर';
+
+    var seat_text = 'Seats';
+    var loksabha_text = 'Lok Sabha Election 2019';
+    var assembly_text = 'Assembly Election 2019';
+    var exitpoll_text = 'Exit Poll';
+    var all_india_text = 'All India Figures';
+    var link_url = 'https://gujarati.news18.com/news/national-international/live-lok-sabha-election-exit-poll-result-2019-elections-opinion-polls-results-today-871908.html';
+	var assembly_link_url = 'https://gujarati.news18.com/news/national-international/live-lok-sabha-election-exit-poll-result-2019-elections-opinion-polls-results-today-871908.html';
+	var all_india_link = '';
+	var loksabha_live_link = 'https://gujarati.news18.com/news/national-international/live-lok-sabha-election-exit-poll-result-2019-elections-opinion-polls-results-today-871908.html';
+
+    var is_hindi = false;
+    var current_site_langauge = 'gujarati';
+    if (current_site_langauge == 'hindi') {
+        is_hindi = true;
+    }
+
+    var color_codes = {};
+
+    var run_ajax = true;
+
+    function nw_click_refresh_election_data() {
+        $(document).on('click', '.refeshdata', function () {
+
+            nw_hit_election_ajax_direct();
+        });
+    }
+
+    function nw_refresh_election_data() {
+        setInterval(function () {
+            if (run_ajax == true) {
+
+                nw_hit_election_ajax_direct();
+            }
+        }, 180000);
+    }
+	
+	function nw_get_exit_poll_status(){
+		var url = 'https://election.nw18.com/electiondata/electionjson/exitpoll/exitpoll-status.json';
+        $.ajax({
+            url: url,
+            type: 'GET',
+			dataType: 'json',
+            //jsonp: 'jsonp',
+            crossDomain: true,
+            cache: true,
+            success: function (response) {
+				var is_exit_poll_on = response.is_exitpoll_live;
+				if(is_exit_poll_on==1){
+					nw_hit_election_ajax_color_codes();
+				}                
+            }
+        });
+	}
+
+    function nw_hit_election_ajax_color_codes() {
+        var url = 'https://election.nw18.com/electiondata/electionjson/general_election_2019/lok_sabha/party_colour.json';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            crossDomain: true,
+            cache: true,
+            success: function (response) {
+                $.each(response, function (party_slug, party_details) {
+                    color_codes[party_slug] = party_details['PARTY_COLOUR'];
+                });
+                nw_hit_election_ajax_direct();
+                nw_refresh_election_data();
+            }
+        });
+    }
+
+    function nw_hit_election_ajax_direct() {
+        var url = 'https://election.nw18.com/electiondata/electionjson/manual_lok_sabha_2019_exit_poll_result_cross.json';
+        var callbackjsonp = 'loc_sabha_election_2019';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'jsonp',
+            jsonp: 'jsonp',
+            jsonpCallback: callbackjsonp,
+            crossDomain: true,
+            cache: true,
+            data: {
+                action: 'nw_refresh_data',
+            },
+            success: function (response) {
+                response = response.result;
+
+                var election_data = nw_get_election_data(response);
+
+                var loksabha_data = election_data['loksabha'];
+                var assembly_data = election_data['assembly'];
+
+                var loksabha_data_html = nw_get_loksabha_html(loksabha_data);
+                var assembly_data_html = nw_get_assembly_html(assembly_data);
+
+                var final_html = '<div class="global-exitpollwrap">';
+                final_html += '<div class="global-exitpoll clearfix">' + loksabha_data_html + assembly_data_html;
+                final_html += '</div></div>';
+
+                $('.nw_section_ajax_refresh').html(final_html);
+
+                // first destroy slicks
+                //$('.loksabha-exitpoll').slick('destroy');
+                //$('.assembly-exitpoll').slick('destroy');
+
+                // reinitiate slick
+                $('.loksabha-exitpoll').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 1000,
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    autoplay: true,
+                    slidesToScroll: 1,
+                    responsive: [{
+                            breakpoint: 650,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                            }
+                        }]
+
+                });
+
+                $('.assembly-exitpoll').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    autoplay: false,
+                
+                });
+				
+            }
+        });
+    }
+
+    function nw_get_election_data(response) {
+        var final_data = new Array();
+        var loksabha_data = new Array();
+        var assembly_data = new Array();
+
+        for (var key in response) {
+            if (response.hasOwnProperty(key)) {
+                var $cons_details = response[key];
+
+                if ($cons_details['cons_type'] == 'loc') {
+                    loksabha_data[$cons_details['display_order']] = $cons_details;
+                    continue;
+                }
+
+                if ($cons_details['cons_type'] == 'as') {
+                    assembly_data[$cons_details['display_order']] = $cons_details;
+                    continue;
+                }
+            }
+        }
+
+        var loksabha_data_new = {};
+        var assembly_data_new = {};
+
+        var keys = Object.keys(loksabha_data),
+                i, len = keys.length;
+        keys.sort();
+        for (i = 0; i < len; i++) {
+            var k = keys[i];
+            loksabha_data_new[k] = loksabha_data[k];
+        }
+
+        var keys = Object.keys(assembly_data),
+                i, len = keys.length;
+        keys.sort();
+        for (i = 0; i < len; i++) {
+            var k = keys[i];
+            assembly_data_new[k] = assembly_data[k];
+        }
+
+        loksabha_data = loksabha_data_new;
+        assembly_data = assembly_data_new;
+        final_data['loksabha'] = loksabha_data;
+        final_data['assembly'] = assembly_data;
+
+        return final_data;
+    }
+
+    function nw_get_loksabha_html($data) {
+        if (jQuery.isEmptyObject($data)) {
+            return '';
+        }
+
+		var all_india_anchor_link = 'javascript:void(0);';
+		if(is_hindi==true){
+			all_india_anchor_link = all_india_link;
+		}
+		
+		if(is_hindi==true){
+			var html = '<div class="global-exitpoll-left">';
+		html += '<h2 class="global-exitpollhd"><a href="'+loksabha_live_link+'" target="_blank"><div class="display-none-mobile epdib">' + loksabha_text + '<span>' + exitpoll_text + '</span></div><span class="display-block-mobile epmdib">' + exitpoll_text + '</span></a> <a target="_blank" href="'+all_india_anchor_link+'" data-type="all_india_lok_sabha_card" data-value="" class="nw_ga_event exitpoll-allfigures">' + all_india_text + '</a><a href="'+loksabha_live_link+'" target="_blank"><div class="cdblinklive"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/05/liveimg.gif" alt="" title="" /> LIVE</div></a></h2> ';        html += '<ul class="exitpoll-slidelist loksabha-exitpoll">';
+		}
+		else{
+			var html = '<div class="global-exitpoll-left">';
+		html += '<h2 class="global-exitpollhd"><a href="'+loksabha_live_link+'" target="_blank"><div class="display-none-mobile epdib">' + loksabha_text + '<span>' + exitpoll_text + '</span></div><span class="display-block-mobile epmdib">' + exitpoll_text + '</span></a> <a href="'+all_india_anchor_link+'" data-type="all_india_lok_sabha_card" data-value="" class="nw_ga_event exitpoll-allfigures">' + all_india_text + '</a><a href="'+loksabha_live_link+'" target="_blank"><div class="cdblinklive"><img src="https://images.hindi.news18.com/ibnkhabar/uploads/2019/05/liveimg.gif" alt="" title="" /> LIVE</div></a></h2> ';        html += '<ul class="exitpoll-slidelist loksabha-exitpoll">';
+		}
+
+//        if (false == Array.isArray($data)) {
+//            return '';
+//        }
+
+        for (var key in $data) {
+            if ($data.hasOwnProperty(key)) {
+                var $cons_details = $data[key];
+                for (var key1 in $cons_details) {
+                    var parties = $cons_details['parties'];
+                    var $party_names = '<tr>';
+                    var $party_votes = '<tr>';
+
+                    $.each(parties, function (key, value) {
+                        if (value['party_color'] == '') {
+                            //value['party_color'] = 'black';
+                            if (typeof color_codes[value['party_name']] == 'undefined') {
+                                value['party_color'] = 'gray';
+                            } else {
+                                value['party_color'] = color_codes[value['party_name']];
+                            }
+                        }
+                        $party_names += '<td style="background: ' + value['party_color'] + '">' + value['party_name'] + '</td>';
+                        if (typeof value['seat_won'] != 'undefined' && value['seat_won'] != '') {
+                            $party_votes += '<td style="background: ' + value['party_color'] + '">' + value['seat_won'] + '</td>';
+                        }
+
+                    });
+
+                    $party_names += '</tr>';
+                    $party_votes += '</tr>';
+                }
+
+                var state = $cons_details['state'];
+                var original_state = state;
+                if (is_hindi) {
+                    state = state.toLowerCase();
+                    //state = state.replace(" ", "-");
+                    state = state.split(" ").join("-");
+                    state = all_states[state];
+                    if (typeof state == 'undefined') {
+                        state = original_state;
+                    }
+                }
+
+                var url = link_url;
+                html += '<li class="nw_ga_event" data-type="lok_sabha_card" data-value="' + state + '"><a href="' + url + '">';
+                html += '<div class="exitpoll-slidelist-hd">';
+
+                var cons_name = '';
+                if ($cons_details['cons_name'] != '') {
+                    cons_name = '<span>' + $cons_details['cons_name'] + '</span>';
+                }
+                html += '<h3>' + state + '<span>' + cons_name + '</span></h3><span class="exitpoll-slidelist-icon"></span>';
+                html += '<div class="exitpoll-slidelist-share">';
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="exitpoll-slidelist-seats-table">';
+                html += '<div class="exitpoll-slidelist-seats">' + $cons_details['total_seats'] + '<span>' + seat_text + '</span></div>';
+                html += '<div class="exitpoll-slidelist-table">';
+                html += '<table cellpadding="0" cellspacing="0">';
+                html += $party_names;
+                html += $party_votes;
+                html += '</table>	';
+                html += '</div>	';
+                html += '</div>';
+                html += '</a></li>';
+
+            }
+        }
+
+        html += '</ul></div>';
+        return html;
+    }
+
+    function nw_get_assembly_html($data) {
+        if (jQuery.isEmptyObject($data)) {
+            return '';
+        }
+
+        var html = '<div class="global-exitpoll-right">';
+        html += '<h2 class="global-exitpollhd">' + assembly_text + '<span> ' + exitpoll_text + '</span></h2>	'
+        html += '<ul class="exitpoll-slidelist assembly-exitpoll">';
+
+//        if (false == Array.isArray($data)) {
+//            return '';
+//        }
+
+        for (var key in $data) {
+            if ($data.hasOwnProperty(key)) {
+                var $cons_details = $data[key];
+                for (var key1 in $cons_details) {
+                    var parties = $cons_details['parties'];
+                    var $party_names = '<tr>';
+                    var $party_votes = '<tr>';
+
+                    $.each(parties, function (key, value) {
+                        if (value['party_color'] == '') {
+                            //value['party_color'] = 'black';
+                            if (typeof color_codes[value['party_name']] == 'undefined') {
+                                value['party_color'] = 'gray';
+                            } else {
+                                value['party_color'] = color_codes[value['party_name']];
+                            }
+                        }
+                        $party_names += '<td style="background: ' + value['party_color'] + '">' + value['party_name'] + '</td>';
+                        if (typeof value['seat_won'] != 'undefined' && value['seat_won'] != '') {
+                            $party_votes += '<td style="background: ' + value['party_color'] + '">' + value['seat_won'] + '</td>';
+                        }
+                    });
+
+                    $party_names += '</tr>';
+                    $party_votes += '</tr>';
+                }
+
+                var state = $cons_details['state'];
+                var original_state = state;
+                if (is_hindi) {
+                    state = state.toLowerCase();
+                    //state = state.replace(" ", "-");
+                    state = state.split(" ").join("-");
+                    state = all_states[state];
+                    if (typeof state == 'undefined') {
+                        state = original_state;
+                    }
+                }
+
+                var url = assembly_link_url;
+                html += '<li class="nw_ga_event" data-type="vidanasabha_card" data-value="' + state + '"><a href="' + url + '">';
+                html += '<div class="exitpoll-slidelist-hd">';
+
+                var cons_name = '';
+                if ($cons_details['cons_name'] != '') {
+                    cons_name = '<span>' + $cons_details['cons_name'] + '</span>';
+                }
+
+                html += '<h3>' + state + cons_name + '</span></h3><span class="exitpoll-slidelist-icon"></span>';
+                html += '<div class="exitpoll-slidelist-share">';
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="exitpoll-slidelist-seats-table">';
+                html += '<div class="exitpoll-slidelist-seats">' + $cons_details['total_seats'] + '<span>' + seat_text + '</span></div>';
+                html += '<div class="exitpoll-slidelist-table">';
+                html += '<table cellpadding="0" cellspacing="0">';
+                html += $party_names;
+                html += $party_votes;
+                html += '</table>	';
+                html += '</div>	';
+                html += '</div>';
+                html += '</a></li>';
+
+            }
+        }
+
+        html += '</ul></div>';
+        return html;
+    }
+
+    function nw_scroll_to_div() {
+        $(document).on('click', '.nw_click_story', function () {
+            var storyID = $(this).attr('data-id');
+            var className = '.nw_story_' + storyID + '_2019';
+            $('html,body').animate({
+                scrollTop: $(className).offset().top},
+                    'slow');
+        });
+    }
+
+	nw_get_exit_poll_status();
+    //nw_hit_election_ajax_color_codes();
+    nw_scroll_to_div();
+    nw_ga_click();
+
+    $(document).ready(function () {
+		
+    });
+
+    $(window).on('load', function () {
+		
+    });
+
+    function nw_ga_click() {
+		var is_hindi = false;
+		var current_site_langauge = 'gujarati';
+		if (current_site_langauge == 'hindi') {
+			is_hindi = true;
+		}
+		
+        $(document).on('click', '.nw_ga_event', function () {
+            var type = $(this).attr('data-type');
+            var value = $(this).attr('data-value');
+
+            if (type == 'all_india_lok_sabha_card') {
+                ga("send", "event", "all_india_lok_sabha_card", "Click");
+				if(is_hindi==false){
+					$('.loksabha-exitpoll').slick('slickGoTo', 0);
+				}
+            } else {
+                ga("send", "event", type, "Click", value);
+            }
+
+        });
+    }
+</script> 
+
+
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1039154/News18/News18_Ros/News18_ROS_Reach_1x1', [1, 1], 'div-gpt-ad-1583319345250-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- /1039154/News18/News18_Ros/News18_ROS_Reach_1x1 -->
+<div id='div-gpt-ad-1583319345250-0' style='width: 1px; height: 1px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1583319345250-0'); });
+  </script>
+</div>
+<!-- Catfish 728x90 sticky on desktop start -->
+<!-- Catfish 728x90 sticky on desktop end -->
+
+
+<iframe style='display:none' src='https://spl.zeotap.com/?zdid=75&ziid={impression_id}&zpb=News18Hindi&env=mWeb'></iframe> 
+	
+<!-- Covide-19 Cube -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap');
+@font-face {
+font-family: 'Segoe Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe Pro Regular'), url('https://images.news18.com/static_news18/pix/ibnhome/news18/delhi-assembly-election-2020/fonts/SegoePro-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'Segoe Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe Pro Bold'), url('https://images.news18.com/static_news18/pix/ibnhome/news18/delhi-assembly-election-2020/fonts/SegoePro-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'Segoe Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe Condensed'), url('https://images.news18.com/static_news18/pix/ibnhome/news18/delhi-assembly-election-2020/fonts/SegoePro-Cond.woff') format('woff');
+}
+@font-face {
+font-family: 'Segoe Pro Cond Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe Pro Cond Bold'), url('https://images.news18.com/static_news18/pix/ibnhome/news18/delhi-assembly-election-2020/fonts/SegoePro-CondBold.woff') format('woff');
+}
+.corona-toolbarbtn {position: fixed;z-index: 99;bottom:0;left: 50%;transform: translate(-50%, 0);cursor: pointer;display: flex !important;background: #FFC44E;padding: 8px 11px;border-radius: 20px 20px 0 0;border-top: 1px solid #000;border-left: 1px solid #000;border-right: 1px solid #000;box-shadow: 0 0 10px #00000029;}
+.corona-toolbarbtn .toolbarbtn-l {margin-right: 10px;}
+.corona-toolbarbtn img {display: block;}
+.corona-toolbar {position: fixed;bottom: 0;background:#1E2630;width: 100%;z-index: 999999999 !important; display:none;}
+.corona-container {width: 1244px;box-sizing: initial;margin: 0 auto;display: flex;justify-content: space-between;line-height: 22px; font-family: 'Segoe Pro Regular';}
+.corona-container  img{max-width: inherit;}
+.corona-container .corona-boxl{width: 360px;background: #fff;}
+.corona-container .corona-boxr{width:884px;padding:3px;}
+.corona-container .corona-boxl .corona-l-r {display: flex;padding:7px;}
+.corona-container .corona-boxl .corona-l-r:first-child {background: #FFC44E;}
+.corona-container .corona-boxl .corona-l-r .virus{margin-right: 5px;}
+.corona-container .corona-boxl .virus-text .virushead-1{font-family: 'Montserrat', sans-serif;font-weight: 900;font-size: 32px;margin-bottom: 5px;}
+.corona-container .corona-boxl .virus-text .virushead-2 {font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 17px;text-transform: uppercase;margin-bottom: 5px;}
+.corona-container .corona-boxl .virus-text .virushead-2 span {border-bottom:2px solid #000;}
+.corona-container .corona-boxl .virus-text ul{display:flex;flex-wrap: wrap;justify-content: space-between;}
+.corona-container .corona-boxl .virus-text ul li {width:50%;    font-size: 15px;}
+.corona-container .corona-boxl .virus-text ul li span {font-weight: bold;}
+.corona-container .corona-boxl .virus-text ul li span img {width: 15px;}
+.corona-container .corona-boxl .corona-l-r:last-child {border-left: 2px solid #E1261C;display: block;height:60px;}
+.corona-container .corona-boxl .corona-l-r:last-child p{color:#1E2630; font-family: 'Segoe Pro Bold';font-size: 13px;margin:0; font-weight: bold;}
+.corona-container .corona-boxl .corona-l-r:last-child p a {color:#1E2630;}
+.corona-container .corona-boxl .corona-l-r:last-child p a:hover {color:#1E2630;}
+.corona-boxr .corona-main {display:none;}
+.corona-boxr .corona-main.active {display: inherit;}
+.corona-boxr .corona-header{display: flex;justify-content: space-between;margin-bottom: 7px; position:relative;padding-right: 35px;}
+.corona-boxr .corona-header .cross-icon{width: 22px;height: 22px;background: #ffc44e;border-radius: 50%;position: absolute;right: 0;top: 5px;cursor: pointer;}
+.corona-boxr .corona-header .cross-icon:before, .corona-boxr .corona-header .cross-icon:after {content: '';width: 12px;height: 2px;background: #222;display: block;position: absolute;top: 50%;left: 25%;}
+.corona-boxr .corona-header .cross-icon:before {transform: rotate(-45deg);}
+.corona-boxr .corona-header .cross-icon:after{transform: rotate(45deg);}
+.corona-boxr .corona-header .coorna-tab {display: flex;}
+.corona-boxr .corona-header .coorna-tab li {font-size: 24px;color: #8F8A7F;font-family: 'Segoe Pro Regular';text-transform: uppercase;padding: 10px 50px 10px 15px;margin-right: 3px;border-bottom: 1px solid #8F8A7F; cursor: pointer;}
+.corona-boxr .corona-header .coorna-tab li:last-child {margin-right:0;}
+.corona-boxr .corona-header .other-link {display: flex;align-items: center;}
+.corona-boxr .corona-header .other-link li {margin-right: 30px;font-size: 14px;text-transform: uppercase;font-family: 'Segoe Pro Bold';}
+.corona-boxr .corona-header .other-link li a {color: #fff;display: flex;align-items: center;}
+.corona-boxr .corona-header .other-link li a span{display:block;}
+.corona-boxr .corona-header .other-link li a .icon{margin-right: 7px;}
+.corona-boxr .corona-header .other-link li a .icon img {height: 30px;}
+.corona-boxr .corona-header .other-link li a .text {line-height: 13px;}
+.corona-boxr .corona-header .other-link li a .text span {color: #BBBBBB;font-size: 12px;font-family: 'Segoe Pro Regular';}
+.corona-boxr .corona-header .other-link li:last-child {margin-right:0;}
+.corona-main-inner {display:flex;border: 1px solid #444444;background: #1F2326;margin-bottom: 5px;}
+.corona-main-inner .c-main-l {width:25%;padding:10px 10px 5px;border-right: 1px solid #444444;box-sizing: border-box;}
+.corona-main-inner .c-main-r {width:75%;}
+.corona-main-inner .c-main-r ul {display:flex;}
+.corona-main-inner .c-main-r ul li {font-family: 'Segoe Pro Regular';flex:0 0 25%;border-right: 1px solid #444444;text-align: center; position:relative;padding:0 0 3px 0;}
+.corona-main-inner .c-main-r ul li:last-child{border-right:0;}
+.corona-main-inner .c-main-r ul li:after{content:''; width:100%; height:3px; background:#707070;position: absolute;left: 0;bottom: 0;}
+.corona-main-inner .c-main-r ul li .head1{color: #BBBBBB;font-size: 11px;text-transform: uppercase;}
+.corona-main-inner .c-main-r ul li .head2 {font-size: 34px;font-family: 'Segoe Pro Bold';padding: 5px 0;}
+.corona-main-inner .c-main-r ul li span {font-size: 12px;}
+.corona-main-inner .c-main-r ul li.active-cases .head2{color:#FFB727;}
+.corona-main-inner .c-main-r ul li.active-cases span {color:#FFB727;}
+.corona-main-inner .c-main-r ul li.total-confirmed .head2{color:#FFD488;}
+.corona-main-inner .c-main-r ul li.total-confirmed span {color:#FFD488;}
+.corona-main-inner .c-main-r ul li.cured .head2{color:#41B408;}
+.corona-main-inner .c-main-r ul li.cured span{color:#41B408;}
+.corona-main-inner .c-main-r ul li.total-deaths .head2{color:#E34042;}
+.corona-main-inner .c-main-r ul li.total-deaths span{color:#E34042;}
+.c-main-select {width: 100%;padding: 4px;border: 0; margin-bottom: 10px; height: 30px}
+.c-main-l-head {color: #444444;font-size: 24px;font-family: 'Segoe Pro Regular';text-transform: uppercase;}
+.corona-m-ftr {display: flex;justify-content: space-between;align-items: center;}
+.corona-m-ftr .corona-m-box {font-family: 'Segoe Pro Regular';color: #FFECCB;font-size: 11px;font-style: italic;}
+.corona-m-ftr .corona-m-box span{color: #FFECCB;font-weight: 900;border-bottom: 1px solid;}
+.corona-m-ftr .corona-m-box:nth-child(2){color: #FFB727;}
+.corona-m-ftr .corona-hospital {font-family: 'Segoe Pro Regular';background: #F5F5F5;color: #E1261C;font-size: 12px;text-transform: uppercase;padding: 3px 18px;border-radius: 25px;display: flex;align-items: center;}
+.corona-m-ftr .corona-hospital img {width: 22px;margin-right: 5px;}
+.note-icon {margin-right: 7px;display: inline-block;vertical-align: top;width: 20px;}
+.note-icon img{display: block;width: 20px;}
+.corona-boxr .corona-header .coorna-tab li.active {position: relative;font-family: 'Segoe Pro bold';color: #FFC44E;}
+.corona-boxr .corona-header .coorna-tab li.active:before {content: '';width: 100%;height: 3px;position: absolute;background: #FFC44E;bottom: 0;left: 0;}
+.corona-boxr .corona-header .coorna-tab li.active:after {content: '';width: 0px;height: 0px;border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #FFC44E;position: absolute;top: 100%;left: 10px;}
+
+.bounce {animation-name:bounce;animation-timing-function: ease; animation-duration: 2s;animation-iteration-count: infinite;}
+@keyframes bounce {
+0%   { transform: scale(1,1)    translateY(0); }
+10%  { transform: scale(1.1,.9) translateY(0); }
+30%  { transform: scale(.9,1.1) translateY(-20px); }
+50%  { transform: scale(1,1)    translateY(0); }
+100% { transform: scale(1,1)    translateY(0); }
+}
+.corona-glide {position: relative;width:90%;box-sizing: border-box;display: inline-block;}
+.corona-glide * {box-sizing: inherit; }
+.corona-glide .glide__track {overflow: hidden; }
+.corona-glide .glide__slides {position: relative;width: 100%;list-style: none;backface-visibility: hidden;transform-style: preserve-3d;touch-action: pan-Y;overflow: hidden;padding: 0;white-space: nowrap;display: flex;flex-wrap: nowrap;will-change: transform; }
+.corona-glide .glide__slide s--dragging {user-select: none; }
+.corona-glide .glide__slide {width: 100%;height: 100%;white-space: initial;user-select: none;-webkit-touch-callout: none;-webkit-tap-highlight-color: transparent; }
+.corona-glide .glide__slide a {user-select: none;-webkit-user-drag: none;-moz-user-select: none;-ms-user-select: none; }.glide__arrows {-webkit-touch-callout: none;user-select: none; }
+.corona-glide .glide__bullets {-webkit-touch-callout: none;user-select: none }
+.corona-glide .glide--rtl {direction: rtl;}
+a {color: #282828;}
+a:hover {color: #e1261d; text-decoration: none;}
+.other-link .corona-m-box span {
+    color: #FFECCB;
+    font-weight: 900;
+    border-bottom: 1px solid;
+    font-size: 11px;
+    font-style: italic;
+}
+div#jsw.ads.dismiss.queue.contract.complete {
+    bottom: 75px;
+}
+.virus-text a:hover {
+    color: #e1261d;
+}
+.help-lineno .helphead{font-size:12px;font-weight:normal;line-height:12px;}
+.help-lineno .helphead img{width: 10px;}
+.corona-boxr .corona-header .external-link {display: flex;align-self: flex-end;}
+.corona-boxr .corona-header .external-link li {margin-right:10px;}
+.corona-boxr .corona-header .external-link li:last-child{margin:0;}
+.corona-boxr .corona-header .external-link li a {color:#FFECCB;font-size: 11px;font-style: italic;border-bottom: 1px solid;}
+.covid-radio {padding-left: 20px;position: relative;line-height: 15px;}
+.covid-radio .covid-radio-label {color:#FFC44E;font-size:11px;text-transform: uppercase;}
+.covid-radio input[type="radio"] {position: absolute;opacity: 0;z-index:1;left:0;top:3px;cursor:pointer;margin:0;}
+.covid-radio input[type="radio"] + .covid-radio-label:before {position: absolute;content: '';border-radius: 100%;border:1px solid #ffc44e;display: inline-block;width: 10px;height: 10px;top: 3px;vertical-align: top;cursor: pointer;text-align: center;-webkit-transition: all 250ms ease;transition: all 250ms ease;left: 0;}
+.covid-radio input[type="radio"]:checked + .covid-radio-label:before {background-color: #ffc44e;box-shadow: inset 0 0 0 2px #1f2326;}
+.corona-toolbarbtn { z-index: 9999999;}
+.covid-19-loading {text-align: center;padding: 50px 0;width: 100%;    color: #fff;}
+.covid-19-loading:before {content: "";display: inline-block;border-radius: 50%;width: 24px;height: 24px;margin: 0 10px -6px 0;border: 3px solid #e12b26;border-top-color:#1e263000;-webkit-animation: animate-loading 1s linear infinite;animation: animate-loading 1s linear infinite;}
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+
+
+
+
+<div class="corona-toolbarbtn" onclick="ga('send', 'event', 'COVID19 Toolbar', 'Click', 'COVID19 Toolbar - Expand');">
+	<div class="toolbarbtn-l bounce">
+		<img src = "https://images.news18.com/static_news18/pix/ibnhome/news18/images/corona-toolbar/corona-virus-btn-virus.png?impolicy=website&width=50&height=50" alt="corona virus btn" title="corona virus btn">
+	</div>
+	<div class="toolbarbtn-r">
+	       <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/images/corona-toolbar/corona-virus-btn.png?impolicy=website&width=217&height=45" alt="corona virus btn" title="corona virus btn">
+	</div>
+</div>
+<div class="corona-toolbar">
+<div class="covid-19-loading">Loading</div>
+</div>
+
+ 
+
+<script>
+function numberFormat(x) {
+    x=x.toString();
+    var lastThree = x.substring(x.length-3);
+    var otherNumbers = x.substring(0,x.length-3);
+    if(otherNumbers != '')
+        lastThree = ',' + lastThree;
+    var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+    return res;
+}
+
+$(document).ready(function(){
+
+   $(".corona-toolbarbtn").click(function(){
+      if ($(".corona-container").length > 0) { }
+      else {
+      $(".corona-toolbar").slideToggle();
+      ga('send', 'event', 'COVID19 Toolbar', 'Click', 'COVID19 Toolbar - Expand');
+      sliderData();
+      }
+   });
+   $(".cross-icon").click(function(){
+      $(".corona-toolbar").slideToggle();
+      ga('send', 'event', 'COVID19 Toolbar', 'Click', 'COVID19 Toolbar - Close');
+   });
+
+   });
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.1/glide.js"></script>
+<script type="text/javascript">
+
+
+ function sliderData (){
+      if ($(".corona-container").length > 0) {
+	 
+      } else {
+	 $.ajax({
+	    url:'/commonstore/covid-19/covid-tool-bar/corona_virus_toolbar_ajax_desktop.php',
+	    type : 'GET',
+	    cache : true,
+	    success: function(response) {
+	        $('div.corona-toolbar').html(response);
+		new Glide('.corona-glide', {
+		  type: 'carousel',
+		  autoplay: 5000,
+		  perView: 1,
+		  focusAt: 'center',
+		  breakpoints: {
+		      800: {
+			perView: 1
+		      },
+		      480: {
+			perView: 1
+		      }
+		    }
+		  }).mount()
+	    },
+	    error: function(xhr, ajaxOptions, thrownError) { 
+	    }
+	    
+      });
+      }
+      
+   }
+</script>  
+<!-- Covide-19 Cube -->
+<div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_ROS/NW18_GUJ_ROS_AL/NW18_GUJ_ROS_AL_ROS_PG_1x1">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_ROS/NW18_GUJ_ROS_AL/NW18_GUJ_ROS_AL_ROS_PG_1x1");
+    });
+  </script>
+</div><div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Shosh_OOP">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Shosh_OOP");
+    });
+  </script>
+</div><div id="/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Skin_OOP">
+  <script>
+    googletag.cmd.push(function () {
+      googletag.display("/1039154/NW18_GUJ_Desktop/NW18_GUJ_Home/NW18_GUJ_Home_Home/NW18_GUJ_HP_Skin_OOP");
+    });
+  </script>
+</div>
+<script>googletag.cmd.push(function() {googletag.pubads().setTargeting("section_name","latest"); googletag.pubads().setTargeting("meta_keywords",['News Gujarati','Gujarati News Online','India Samachar','India Khabar','Today\'s  News Gujarati']); googletag.pubads().setTargeting("title_name"," India News in Gujarati: Gujarati News Online, Today\'s  News – News18 Gujarati"); googletag.pubads().setTargeting("url","http://gujarati.news18.com/news/"); googletag.pubads().setTargeting("excerpt_description","Read all the latest news and breaking news in Gujarati on  at New18 Gujarati. Find all  news in Gujarati, taja samachar and more online at News18 Gujarati."); googletag.pubads().setTargeting("Content_Type","news"); googletag.pubads().setTargeting("DFP","okay"); googletag.enableServices(); });</script></body>
+</html>

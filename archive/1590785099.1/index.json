@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "5 held for attack on Panchkula nurse : The Tribune India",
     "timestamp": "1590785099.1",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 13,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785171",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733"
+                ],
+                "end_ts": "2020-05-29 20:46:25.357047",
+                "start_ts": "2020-05-29 20:46:11.912451",
+                "pwd": "/data/archive/1590785099.1",
+                "output": "www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529204642/https://www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 13,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590785171",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733"
-                ],
-                "end_ts": "2020-05-29 20:46:25.357047",
-                "start_ts": "2020-05-29 20:46:11.912451",
-                "pwd": "/data/archive/1590785099.1",
-                "output": "www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785204.930334",
+    "updated": "1595622171.125457",
     "tags": "",
     "url": "https://www.tribuneindia.com/news/chandigarh/5-held-for-attack-on-panchkula-nurse-70733"
 }

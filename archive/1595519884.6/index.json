@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399",
+    "timestamp": "1595519884.6",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "Jharkhand: Man commits suicide as wedding gets postponed due to lockdown | Crime News",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:02.581476",
+                "end_ts": "2020-07-24 20:00:03.562056",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:03.569148",
+                "end_ts": "2020-07-24 20:00:03.859915",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601003",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:03.863343",
+                "end_ts": "2020-07-24 20:00:13.572905",
+                "duration": 9
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:13.575642",
+                "end_ts": "2020-07-24 20:00:19.213622",
+                "duration": 5
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:19.216231",
+                "end_ts": "2020-07-24 20:00:27.372660",
+                "duration": 8
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:27.374403",
+                "end_ts": "2020-07-24 20:00:43.652566",
+                "duration": 16
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:00:43.656741",
+                "end_ts": "2020-07-24 20:00:45.862175",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/crime/article/jharkhand-man-commits-suicide-as-wedding-gets-postponed-due-to-lockdown/597399"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.6",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:00:45.863732",
+                "end_ts": "2020-07-24 20:01:08.391630",
+                "duration": 22
+            }
+        ]
+    },
+    "updated": "1595601068.392685"
+}

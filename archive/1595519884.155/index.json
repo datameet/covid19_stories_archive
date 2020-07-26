@@ -1,0 +1,192 @@
+{
+    "url": "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms",
+    "timestamp": "1595519884.155",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "Lockdown Maharashtra: \u0932\u0949\u0915\u0921\u093e\u0909\u0928\u092e\u0927\u0940\u0932 \u092c\u0947\u0930\u094b\u091c\u0917\u093e\u0930\u0940\u0928\u0947 \u0924\u0930\u0941\u0923\u093e\u091a\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e, \u091a\u093f\u0920\u094d\u0920\u0940\u0924 \u0932\u093f\u0939\u093f\u0932\u0947... - coronavirus lockdown india jobless youth commits suicide | Maharashtra Times",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:26.069590",
+                "end_ts": "2020-07-25 01:10:29.283981",
+                "duration": 3
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=maharashtratimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:29.286569",
+                "end_ts": "2020-07-25 01:10:29.963879",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619629",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:29.971743",
+                "end_ts": "2020-07-25 01:10:33.776705",
+                "duration": 3
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:33.778465",
+                "end_ts": "2020-07-25 01:10:36.537924",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:36.539221",
+                "end_ts": "2020-07-25 01:10:39.303675",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:39.305101",
+                "end_ts": "2020-07-25 01:10:41.242334",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:10:41.246195",
+                "end_ts": "2020-07-25 01:10:44.642352",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://maharashtratimes.com/maharashtra/nagpur-vidarbha-news/nagpur/coronavirus-lockdown-india-jobless-youth-commits-suicide/articleshow/76474303.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.155",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:10:44.644916",
+                "end_ts": "2020-07-25 01:11:44.667109",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595619704.667362"
+}

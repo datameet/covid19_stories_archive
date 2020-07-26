@@ -1,0 +1,192 @@
+{
+    "url": "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211",
+    "timestamp": "1595519884",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "Four days, 7 hospitals, pregnant woman dies : The Tribune India",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:46:38.306448",
+                "end_ts": "2020-07-24 19:46:39.289089",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.tribuneindia.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:46:39.290403",
+                "end_ts": "2020-07-24 19:46:39.547463",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595600199",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:46:39.549616",
+                "end_ts": "2020-07-24 19:47:39.554178",
+                "duration": 60
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:47:39.555704",
+                "end_ts": "2020-07-24 19:47:55.989619",
+                "duration": 16
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:47:55.991894",
+                "end_ts": "2020-07-24 19:48:02.731608",
+                "duration": 6
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:48:02.734584",
+                "end_ts": "2020-07-24 19:48:07.213846",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:48:07.218276",
+                "end_ts": "2020-07-24 19:48:11.441886",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.tribuneindia.com/news/punjab/four-days-7-hospitals-pregnant-woman-dies-94211"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:48:11.444785",
+                "end_ts": "2020-07-24 19:48:19.796540",
+                "duration": 8
+            }
+        ]
+    },
+    "updated": "1595600299.79867"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece",
+    "timestamp": "1595519884.13",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "Cousins commit suicide - The Hindu",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:10:59.275704",
+                "end_ts": "2020-07-24 20:11:02.644003",
+                "duration": 3
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thehindu.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:02.648729",
+                "end_ts": "2020-07-24 20:11:02.920957",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601662",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:02.925907",
+                "end_ts": "2020-07-24 20:11:45.199888",
+                "duration": 42
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:45.201469",
+                "end_ts": "2020-07-24 20:11:47.938911",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:47.942405",
+                "end_ts": "2020-07-24 20:11:50.694027",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:50.698328",
+                "end_ts": "2020-07-24 20:11:53.345118",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:11:53.347613",
+                "end_ts": "2020-07-24 20:11:58.448685",
+                "duration": 5
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thehindu.com/news/cities/Madurai/cousins-commit-suicide-thoothukudi/article31724091.ece"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.13",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:11:58.450524",
+                "end_ts": "2020-07-24 20:12:32.082936",
+                "duration": 33
+            }
+        ]
+    },
+    "updated": "1595601752.083232"
+}

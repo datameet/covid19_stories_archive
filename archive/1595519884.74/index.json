@@ -1,0 +1,192 @@
+{
+    "url": "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28",
+    "timestamp": "1595519884.74",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "Odisha priest chops off man\u2019s head inside temple to appease gods, ward off coronavirus - Crime News",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:00:39.304314",
+                "end_ts": "2020-07-24 23:00:40.072165",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatoday.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:00:40.075132",
+                "end_ts": "2020-07-24 23:00:40.426212",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595611840",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:00:40.427983",
+                "end_ts": "2020-07-24 23:00:58.827359",
+                "duration": 18
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:00:58.829520",
+                "end_ts": "2020-07-24 23:01:03.657033",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:03.658997",
+                "end_ts": "2020-07-24 23:01:05.390670",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:05.392636",
+                "end_ts": "2020-07-24 23:01:07.592654",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:07.594796",
+                "end_ts": "2020-07-24 23:01:10.621315",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatoday.in/crime/story/odisha-priest-kills-man-to-offer-human-sacrifice-for-coronavirus-1682830-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.74",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:01:10.623085",
+                "end_ts": "2020-07-24 23:01:25.989386",
+                "duration": 15
+            }
+        ]
+    },
+    "updated": "1595611885.98974"
+}

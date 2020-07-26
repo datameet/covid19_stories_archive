@@ -203,6 +203,24 @@
                 "start_ts": "2020-05-29 21:35:22.376134",
                 "pwd": "/data/archive/1590766226.22",
                 "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thequint.com/coronavirus/bhopal-gas-tragedy-victims-die-bmhrc-covid-19-treatment-munni-bee"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590766226.22",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:55:44.441227",
+                "end_ts": "2020-07-25 01:55:45.353320",
+                "duration": 0
             }
         ],
         "title": [
@@ -223,10 +241,14 @@
             }
         ]
     },
-    "updated": "1590788128.23722",
+    "updated": "1595622345.353741",
     "tags": "",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ]
 }

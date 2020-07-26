@@ -1,0 +1,192 @@
+{
+    "url": "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true",
+    "timestamp": "1595519884.156",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "Mumbai: Man moved to care facility after 9-hour wait outside hospital, dies of heart attack | Mumbai News - Times of India",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:44.793152",
+                "end_ts": "2020-07-25 01:11:46.833613",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=m.timesofindia.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:46.837037",
+                "end_ts": "2020-07-25 01:11:47.073206",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619707",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms@__twitter_impression=true.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:47.075777",
+                "end_ts": "2020-07-25 01:11:54.452762",
+                "duration": 7
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:54.459350",
+                "end_ts": "2020-07-25 01:11:58.018144",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:58.024358",
+                "end_ts": "2020-07-25 01:11:58.959912",
+                "duration": 0
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:11:58.961168",
+                "end_ts": "2020-07-25 01:12:00.359085",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:12:00.360545",
+                "end_ts": "2020-07-25 01:12:01.961966",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://m.timesofindia.com/city/mumbai/mumbai-man-moved-to-care-facility-after-9-hour-wait-outside-hospital-dies-of-heart-attack/amp_articleshow/75961847.cms?__twitter_impression=true"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.156",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:12:01.963375",
+                "end_ts": "2020-07-25 01:13:01.976567",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595619781.977075"
+}

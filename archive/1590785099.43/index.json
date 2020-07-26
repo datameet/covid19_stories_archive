@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Women from northeast face racial slur in Kolkata | Kolkata News - Times of India",
     "timestamp": "1590785099.43",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 9,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786515",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "end_ts": "2020-05-29 21:08:44.938216",
+                "start_ts": "2020-05-29 21:08:35.266086",
+                "pwd": "/data/archive/1590785099.43",
+                "output": "timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -79,6 +107,24 @@
                 "start_ts": "2020-05-29 21:08:44.938359",
                 "pwd": "/data/archive/1590785099.43",
                 "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.43",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:53:36.040438",
+                "end_ts": "2020-07-25 01:53:53.063292",
+                "duration": 17
             }
         ],
         "archive_org": [
@@ -99,34 +145,6 @@
                 "start_ts": "2020-05-29 21:09:12.435961",
                 "pwd": "/data/archive/1590785099.43",
                 "output": "https://web.archive.org/web/20200529210914/https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
-            }
-        ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 9,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786515",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
-                ],
-                "end_ts": "2020-05-29 21:08:44.938216",
-                "start_ts": "2020-05-29 21:08:35.266086",
-                "pwd": "/data/archive/1590785099.43",
-                "output": "timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms.html"
             }
         ],
         "dom": [
@@ -187,7 +205,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786555.00318",
+    "updated": "1595622233.063761",
     "tags": "",
     "url": "https://timesofindia.indiatimes.com/city/kolkata/women-from-northeast-face-racial-slur-in-city/articleshow/74902441.cms"
 }

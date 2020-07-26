@@ -1,8 +1,12 @@
 {
     "title": "In locked down Solapur, hunger, heat kill old couple",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.197",
     "history": {
@@ -188,7 +192,7 @@
             }
         ]
     },
-    "updated": "1590788250.521732",
+    "updated": "1595622413.665406",
     "tags": "",
     "url": "https://www.freepressjournal.in/mumbai/in-locked-down-solapur-hunger-heat-kill-old-couple"
 }

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html",
+    "timestamp": "1595519884.94",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "young man commits suicide in Corona's fear|10 \u0aa6\u0abf\u0ab5\u0ab8\u0aa5\u0ac0 \u0aa4\u0abe\u0ab5\u0aa8\u0abe \u0aaa\u0a97\u0ab2\u0ac7 \u0a95\u0acb\u0ab0\u0acb\u0aa8\u0abe\u0aa8\u0acb \u0aa1\u0ab0 \u0aae\u0aa8\u0aae\u0abe\u0a82 \u0a98\u0ac2\u0ab8\u0ac0 \u0a9c\u0aa4\u0abe\u0a82 \u0aaf\u0ac1\u0ab5\u0a95\u0aa8\u0ac0 \u0a86\u0aa4\u0acd\u0aae\u0ab9\u0aa4\u0acd\u0aaf\u0abe",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:28.358153",
+                "end_ts": "2020-07-24 23:30:28.846489",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.divyabhaskar.co.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:28.849586",
+                "end_ts": "2020-07-24 23:30:29.520466",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595613629",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:29.522454",
+                "end_ts": "2020-07-24 23:30:49.732840",
+                "duration": 20
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:49.735102",
+                "end_ts": "2020-07-24 23:30:53.779256",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:53.786537",
+                "end_ts": "2020-07-24 23:30:56.577161",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:30:56.580051",
+                "end_ts": "2020-07-24 23:30:59.331816",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:30:59.333299",
+                "end_ts": "2020-07-24 23:31:04.365970",
+                "duration": 5
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/young-man-commits-suicide-in-coronas-fear-127458864.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.94",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:31:04.368790",
+                "end_ts": "2020-07-24 23:32:04.401788",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595613724.402524"
+}

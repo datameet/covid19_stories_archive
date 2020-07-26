@@ -1,8 +1,12 @@
 {
     "title": "Hyderabad: Eight migrants returning home killed in road accident | Cities News,The Indian Express",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.378",
     "history": {
@@ -188,7 +192,7 @@
             }
         ]
     },
-    "updated": "1590789413.851498",
+    "updated": "1595622916.389",
     "tags": "",
     "url": "https://indianexpress.com/article/cities/hyderabad/india-lockdown-hyderabad-migrant-labourers-accident-6335807/?fbclid=IwAR3cSta5cPjibyt52giqm76vJRx9_Thuxjo39SmdBPkYnQmvbyYWTjEAN2M"
 }

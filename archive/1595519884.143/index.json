@@ -1,0 +1,192 @@
+{
+    "url": "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/",
+    "timestamp": "1595519884.143",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "J&amp;K Protocol&#039;s Focus on COVID-19 Is Deserting Patients With Other Ailments - The Wire Science",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:07.183721",
+                "end_ts": "2020-07-25 00:50:08.031888",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=science.thewire.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:08.036401",
+                "end_ts": "2020-07-25 00:50:08.635772",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595618408",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:08.639539",
+                "end_ts": "2020-07-25 00:50:25.832493",
+                "duration": 17
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:25.834201",
+                "end_ts": "2020-07-25 00:50:29.684181",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:29.686058",
+                "end_ts": "2020-07-25 00:50:32.439939",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:32.441531",
+                "end_ts": "2020-07-25 00:50:34.452115",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:50:34.453560",
+                "end_ts": "2020-07-25 00:50:37.396477",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://science.thewire.in/health/jk-protocols-focus-on-covid-19-is-deserting-patients-with-other-ailments/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.143",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:50:37.397899",
+                "end_ts": "2020-07-25 00:51:37.418138",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595618497.419136"
+}

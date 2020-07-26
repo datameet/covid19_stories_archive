@@ -1,0 +1,192 @@
+{
+    "url": "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/",
+    "timestamp": "1595519884.163",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "Mumbai: 53-year-old suspected Covid patient commits suicide at Nair hospital | Cities News,The Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:17.334140",
+                "end_ts": "2020-07-25 01:22:18.475809",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:18.477479",
+                "end_ts": "2020-07-25 01:22:18.882826",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620338",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:18.885867",
+                "end_ts": "2020-07-25 01:22:23.731209",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:23.732784",
+                "end_ts": "2020-07-25 01:22:25.252622",
+                "duration": 1
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:25.255508",
+                "end_ts": "2020-07-25 01:22:26.571717",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:26.573077",
+                "end_ts": "2020-07-25 01:22:27.370568",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:22:27.372013",
+                "end_ts": "2020-07-25 01:22:29.149324",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/cities/mumbai/mumbai-53-year-old-suspected-covid-patient-commits-suicide-at-nair-hospital-6444830/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.163",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:22:29.150723",
+                "end_ts": "2020-07-25 01:23:14.549527",
+                "duration": 45
+            }
+        ]
+    },
+    "updated": "1595620394.549806"
+}

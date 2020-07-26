@@ -1,0 +1,192 @@
+{
+    "url": "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html",
+    "timestamp": "1595519884.186",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "Coronavirus: Snake bites a young man in quarantine center and he dies in Gonda UP | India News in Hindi | Coronavirus: \u0915\u094d\u0935\u093e\u0930\u0902\u091f\u0940\u0928 \u0938\u0947\u0902\u091f\u0930 \u092e\u0947\u0902 \u0906\u092f\u093e \u091c\u0939\u0930\u0940\u0932\u093e \u0938\u093e\u0902\u092a, 16 \u0938\u093e\u0932 \u0915\u0947 \u0932\u0921\u093c\u0915\u0947 \u0915\u094b \u0915\u093e\u091f\u093e, \u092e\u094c\u0924 \u0938\u0947 \u092e\u091a\u093e \u092c\u0935\u093e\u0932 - Catch Hindi",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:51:04.178076",
+                "end_ts": "2020-07-25 01:51:06.325511",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=hindi.catchnews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:51:06.330731",
+                "end_ts": "2020-07-25 01:51:06.597305",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595622066",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:51:06.603650",
+                "end_ts": "2020-07-25 01:52:06.669205",
+                "duration": 60
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:06.674912",
+                "end_ts": "2020-07-25 01:52:15.883406",
+                "duration": 9
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:15.885945",
+                "end_ts": "2020-07-25 01:52:20.402417",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:20.403756",
+                "end_ts": "2020-07-25 01:52:24.494921",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:24.496762",
+                "end_ts": "2020-07-25 01:52:26.616026",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://hindi.catchnews.com/india/coronavirus-snake-bites-a-young-man-in-quarantine-center-and-he-dies-in-gonda-up-191220.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.186",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:52:26.617449",
+                "end_ts": "2020-07-25 01:52:50.588655",
+                "duration": 23
+            }
+        ]
+    },
+    "updated": "1595622170.589798"
+}

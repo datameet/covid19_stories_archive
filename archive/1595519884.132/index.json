@@ -1,0 +1,192 @@
+{
+    "url": "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms",
+    "timestamp": "1595519884.132",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "Walking from Ludhiana to Hardoi, migrant dies | Lucknow News - Times of India",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:31:42.748228",
+                "end_ts": "2020-07-25 00:31:45.210268",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:31:45.211924",
+                "end_ts": "2020-07-25 00:31:45.788712",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595617305",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:31:45.792677",
+                "end_ts": "2020-07-25 00:31:54.620815",
+                "duration": 8
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:31:54.622461",
+                "end_ts": "2020-07-25 00:32:07.798681",
+                "duration": 13
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:32:07.800041",
+                "end_ts": "2020-07-25 00:32:17.016554",
+                "duration": 9
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:32:17.017884",
+                "end_ts": "2020-07-25 00:32:23.252196",
+                "duration": 6
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:32:23.253693",
+                "end_ts": "2020-07-25 00:32:27.036829",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/lucknow/walking-from-ludhiana-to-hardoi-migrant-dies/articleshow/75863677.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.132",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:32:27.038249",
+                "end_ts": "2020-07-25 00:33:27.050195",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595617407.050544"
+}

@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "'I was denied medical services': Buxar woman who delivered stillborn alleges religious bias - cnbctv18.com",
     "timestamp": "1590785099.36",
     "history": {
         "title": [
@@ -79,6 +79,24 @@
                 "start_ts": "2020-05-29 21:04:35.245019",
                 "pwd": "/data/archive/1590785099.36",
                 "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.cnbctv18.com/healthcare/i-was-denied-medical-services-buxar-woman-who-delivered-stillborn-alleges-religious-bias-5867821.htm"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.36",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:53:08.170209",
+                "end_ts": "2020-07-25 01:53:13.630472",
+                "duration": 5
             }
         ],
         "archive_org": [
@@ -187,7 +205,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786287.436893",
+    "updated": "1595622193.631333",
     "tags": "",
     "url": "https://www.cnbctv18.com/healthcare/i-was-denied-medical-services-buxar-woman-who-delivered-stillborn-alleges-religious-bias-5867821.htm"
 }

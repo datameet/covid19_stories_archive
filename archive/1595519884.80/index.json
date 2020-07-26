@@ -1,0 +1,192 @@
+{
+    "url": "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html",
+    "timestamp": "1595519884.80",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "Migrant worker, 26, found hanging at quarantine centre in Chhattisgarh - india news - Hindustan Times",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:08:51.119865",
+                "end_ts": "2020-07-24 23:08:52.196186",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.hindustantimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:08:52.198537",
+                "end_ts": "2020-07-24 23:08:52.469386",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595612332",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:08:52.472479",
+                "end_ts": "2020-07-24 23:09:03.108952",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:09:03.111110",
+                "end_ts": "2020-07-24 23:09:06.247974",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:09:06.250004",
+                "end_ts": "2020-07-24 23:09:09.215616",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:09:09.217180",
+                "end_ts": "2020-07-24 23:09:12.198267",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:09:12.203664",
+                "end_ts": "2020-07-24 23:09:15.603135",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.hindustantimes.com/india-news/migrant-worker-26-found-hanging-at-quarantine-centre-in-chhattisgarh/story-qAzVVvxcm6K4NElwtKC1sJ.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.80",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:09:15.605028",
+                "end_ts": "2020-07-24 23:09:39.301203",
+                "duration": 23
+            }
+        ]
+    },
+    "updated": "1595612379.301503"
+}

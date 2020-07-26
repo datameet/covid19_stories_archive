@@ -1,8 +1,12 @@
 {
-    "title": "Ankur Bhardwaj on Twitter: \"When the first scenes of migrant workers on foot were shown to us, the Union govt should've issued directions to facilitate their movement rather than stop them.\nSo many poor people dying because the administration just doesn't care for them.\u2026 https://t.co/6bPKn9EMmp\"",
+    "title": null,
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.259",
     "history": {
@@ -185,10 +189,25 @@
                 "start_ts": "2020-05-29 18:16:55.163932",
                 "pwd": "/data/archive/1590766226.259",
                 "output": "Ankur Bhardwaj on Twitter: &quot;When the first scenes of migrant workers on foot were shown to us, the Union govt should&#39;ve issued directions to facilitate their movement rather than stop them.&#10;So many poor people dying because the administration just doesn&#39;t care for them.\u2026 https://t.co/6bPKn9EMmp&quot;"
+            },
+            {
+                "cmd": [
+                    "curl",
+                    "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590766226.259",
+                "output": "Unable to detect page title",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:58:21.804279",
+                "end_ts": "2020-07-25 01:58:22.575430",
+                "duration": 0
             }
         ]
     },
-    "updated": "1590788617.932022",
+    "updated": "1595622502.583012",
     "tags": "",
     "url": "https://twitter.com/Bhayankur/status/1255318671733534723/photo/1"
 }

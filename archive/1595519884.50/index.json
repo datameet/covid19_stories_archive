@@ -1,0 +1,192 @@
+{
+    "url": "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/",
+    "timestamp": "1595519884.50",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "barber salon  sucide in chandrapur nck 90 | Loksatta",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:00.503723",
+                "end_ts": "2020-07-24 22:34:04.046971",
+                "duration": 3
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.loksatta.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:04.048598",
+                "end_ts": "2020-07-24 22:34:04.624540",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595610244",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:04.634355",
+                "end_ts": "2020-07-24 22:34:31.020155",
+                "duration": 26
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:31.022287",
+                "end_ts": "2020-07-24 22:34:34.623324",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:34.624691",
+                "end_ts": "2020-07-24 22:34:36.535693",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:36.538872",
+                "end_ts": "2020-07-24 22:34:38.456679",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:34:38.459343",
+                "end_ts": "2020-07-24 22:34:41.738518",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.loksatta.com/maharashtra-news/barber-salon-sucide-in-chandrapur-nck-90-2187717/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.50",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:34:41.740946",
+                "end_ts": "2020-07-24 22:35:29.665621",
+                "duration": 47
+            }
+        ]
+    },
+    "updated": "1595610329.667419"
+}

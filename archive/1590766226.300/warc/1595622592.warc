@@ -1,0 +1,1417 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-07-24T20:29:52Z
+WARC-Record-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Filename: 1595622592.warc
+WARC-Block-Digest: sha1:PJG36I2Z7FJWW7VXBHOMSMYL3UXRO75Y
+Content-Length: 622
+
+software: Wget/1.19.4 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: off
+wget-arguments: "--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595622592" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/" 
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-07-24T20:29:52Z
+WARC-Record-ID: <urn:uuid:06de8c1e-1151-4d65-82b5-ec1d24791001>
+WARC-IP-Address: 104.18.33.253
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Block-Digest: sha1:MVGJFOL2G6HFT7ANEALYSJ3KWJUHVIP7
+Content-Length: 280
+
+GET /tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/ HTTP/1.1
+User-Agent: ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4
+Accept: */*
+Accept-Encoding: identity
+Host: thehushpost.com
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:2a52b0e9-396f-4874-8013-b0ac92d02ff0>
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Concurrent-To: <urn:uuid:06de8c1e-1151-4d65-82b5-ec1d24791001>
+WARC-Target-URI: <https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/>
+WARC-Date: 2020-07-24T20:29:52Z
+WARC-IP-Address: 104.18.33.253
+WARC-Block-Digest: sha1:2FXRQJ5CLDMVCQXDTCWMUO5HURZ2SFDV
+WARC-Payload-Digest: sha1:63IMMQZVCWADA6ZOVJVHKYHHNFSUS26H
+Content-Type: application/http;msgtype=response
+Content-Length: 837
+
+HTTP/1.1 301 Moved Permanently
+Date: Fri, 24 Jul 2020 20:29:53 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d4b4633d5585cec0bae51776a2252140e1595622592; expires=Sun, 23-Aug-20 20:29:52 GMT; path=/; domain=.thehushpost.com; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: PHP/7.3.17
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+X-Redirect-By: WordPress
+Location: https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/
+Vary: User-Agent
+CF-Cache-Status: DYNAMIC
+cf-request-id: 04241da8910000e243bba0e200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b8065541a94e243-SIN
+
+0
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-07-24T20:29:53Z
+WARC-Record-ID: <urn:uuid:acf43dd2-371e-4997-8e74-aaf34c403912>
+WARC-IP-Address: 104.18.33.253
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Block-Digest: sha1:IFNFTIR25UGNAAG7XA22V4LKS73NEOIQ
+Content-Length: 331
+
+GET /man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/ HTTP/1.1
+User-Agent: ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4
+Accept: */*
+Accept-Encoding: identity
+Host: thehushpost.com
+Connection: Keep-Alive
+Cookie: __cfduid=d4b4633d5585cec0bae51776a2252140e1595622592
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:12aee571-cf2f-4d98-a6f9-095028ad2323>
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Concurrent-To: <urn:uuid:acf43dd2-371e-4997-8e74-aaf34c403912>
+WARC-Target-URI: <https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/>
+WARC-Date: 2020-07-24T20:29:53Z
+WARC-IP-Address: 104.18.33.253
+WARC-Block-Digest: sha1:3FYO4QQDZZ6UTL36QLJBX2HIANS22GTI
+WARC-Payload-Digest: sha1:QVLVJ324QBAKHZ5PNUR4NP4NVFBPKT4O
+Content-Type: application/http;msgtype=response
+Content-Length: 96537
+
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 20:29:54 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/7.3.17
+X-Pingback: https://thehushpost.com/xmlrpc.php
+Link: <https://thehushpost.com/wp-json/>; rel="https://api.w.org/", <https://thehushpost.com/?p=51905>; rel=shortlink
+Vary: Accept-Encoding,User-Agent
+CF-Cache-Status: DYNAMIC
+cf-request-id: 04241dac510000e243bba28200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5b80655a1e8be243-SIN
+
+c96
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+    <title>Man hounded for contracting coronavirus commits suicide, tests negative</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://thehushpost.com/xmlrpc.php" />
+    <meta property="og:image" content="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg" />
+<!-- This site is optimized with the Yoast SEO plugin v13.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Man hounded for contracting coronavirus commits suicide, tests negative" />
+<meta property="og:description" content="In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus." />
+<meta property="og:url" content="https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/" />
+<meta property="og:site_name" content="The Hush Post" />
+<meta property="article:tag" content="Coronavirus" />
+<meta property="article:tag" content="coronavirus test positive" />
+<meta property="article:tag" content="COVID-19" />
+<meta property="article:tag" content="Lockdown" />
+<meta property="article:tag" content="suicide" />
+<meta property="article:section" content="Tamil Nadu" />
+<meta property="article:published_time" content="2020-04-02T12:53:43+00:00" />
+<meta property="og:image" content="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg" />
+<meta property="og:image:secure_url" content="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="960" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus." />
+<meta name="twitter:title" content="Man hounded for contracting coronavirus commits suicide, tests negative" />
+<meta name="twitter:image" content="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://thehushpost.com/#website","
+12ec
+url":"https://thehushpost.com/","name":"The Hush Post","inLanguage":"en-US","description":"India Reports Here...","potentialAction":[{"@type":"SearchAction","target":"https://thehushpost.com/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"ImageObject","@id":"https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/#primaryimage","inLanguage":"en-US","url":"https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg","width":1280,"height":960},{"@type":"WebPage","@id":"https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/#webpage","url":"https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/","name":"Man hounded for contracting coronavirus commits suicide, tests negative","isPartOf":{"@id":"https://thehushpost.com/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/#primaryimage"},"datePublished":"2020-04-02T12:53:43+00:00","dateModified":"2020-04-02T12:53:43+00:00","author":{"@id":"https://thehushpost.com/#/schema/person/902b05ade17779920791e85dcd335eed"},"description":"In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus.","potentialAction":[{"@type":"ReadAction","target":["https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"]}]},{"@type":["Person"],"@id":"https://thehushpost.com/#/schema/person/902b05ade17779920791e85dcd335eed","name":"The Hush Post (RK)","image":{"@type":"ImageObject","@id":"https://thehushpost.com/#authorlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/62a4a216e62dfb62813719ec7b27df2f?s=96&d=identicon&r=g","caption":"The Hush Post (RK)"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Hush Post &raquo; Feed" href="https://thehushpost.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Hush Post &raquo; Comments Feed" href="https://thehushpost.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Hush Post &raquo; Man hounded for contracting coronavirus commits suicide, tests negative later Comments Feed" href="https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.10.4 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.10.4';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-109715492-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-109715492-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback(
+261e
+);
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thehushpost.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://thehushpost.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='a3-pvc-style-css'  href='https://thehushpost.com/wp-content/plugins/page-views-count/assets/css/style.min.css?ver=2.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-style-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400%2C400italic%2C600%2C600italic%2C700%7CRoboto%3A300%2C400%2C400italic%2C500%2C500italic%2C700%2C900&#038;ver=9.6' type='text/css' media='all' />
+<link rel='stylesheet' id='a3pvc-css'  href='//thehushpost.com/wp-content/uploads/sass/pvc.min.css?ver=1589462159' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://thehushpost.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-css'  href='https://thehushpost.com/wp-content/themes/Newspaper/style.css?ver=9.6' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/thehushpost.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thehushpost.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.js?ver=7.10.4'></script>
+<script type='text/javascript' src='https://thehushpost.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://thehushpost.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://thehushpost.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thehushpost.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thehushpost.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel='shortlink' href='https://thehushpost.com/?p=51905' />
+<link rel="alternate" type="application/json+oembed" href="https://thehushpost.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thehushpost.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F&#038;format=xml" />
+                <!-- auto ad code generated with Easy Google AdSense plugin v1.0.3 -->
+                <script data-ad-client="ca-pub-4891096597768786" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>      
+                <!-- / Easy Google AdSense plugin --><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://thehushpost.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+<!-- JS generated by theme -->
+
+<script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            }
+13f9
+;
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type0";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img";
+var td_animation_stack_general_selectors=".td-animation-stack img, .td-animation-stack .entry-thumb, .post img";
+var td_ajax_url="https:\/\/thehushpost.com\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=9.6";
+var td_get_template_directory_uri="https:\/\/thehushpost.com\/wp-content\/themes\/Newspaper";
+var tds_snap_menu="smart_snap_always";
+var tds_logo_on_sticky="show_header_logo";
+var tds_header_style="";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="show";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="enabled";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdsDateFormat="l, F j, Y";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-4891096597768786",
+          enable_page_level_ads: true
+     });
+</script>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "WebSite",
+                    "@id": "https://thehushpost.com/",
+                    "name": "Home"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://thehushpost.com/news/tamil-nadu/",
+                    "name": "Tamil Nadu"
+                }
+            }
+            ,{
+                "@type": "ListItem",
+                "position": 3,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/",
+                    "name": "Man hounded for contracting coronavirus commits suicide, tests negative later"                                
+                }
+            }    
+        ]
+    }
+</script>
+<link rel="icon" href="https://thehushpost.com/wp-content/uploads/2018/12/cropped-The-Hush-Post-Retina-Mobile-Logo-White-2.png" sizes="32x32" />
+<link rel="icon" href="https://thehushpost.com/wp-content/uploads/2018/12/cropped-The-Hush-Post-Retina-Mobile-Logo-White-2.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thehushpost.com/wp-content/uploads/2018/12/cropped-The-Hush-Post-Retina-Mobile-Logo-White-2.png" />
+<meta name="msapplication-TileImage" content="https://thehushpost.com/wp-content/uploads/2018/12/cropped-The-Hush-Post-Retina-Mobile-Logo-White-2.png" />
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+
+<body data-rsssl=1 class="post-template-default single single-post postid-51905 single-format-standard man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later global-block-template-1 wpb-js-composer js-comp-ver-5.5.2 vc_responsive td-animation-stack-type0 td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                
+2766
+<i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Vimeo">
+                <i class="td-icon-font td-icon-vimeo"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="VKontakte">
+                <i class="td-icon-font td-icon-vk"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-main-menu-top-container"><ul id="menu-main-menu-top" class="td-mobile-main-menu"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first menu-item-6"><a href="/">Home</a></li>
+<li id="menu-item-6510" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6510"><a href="https://thehushpost.com/news/politics/">Politics</a></li>
+<li id="menu-item-2916" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-2916"><a href="https://thehushpost.com/tag/diaspora/">Diaspora</a></li>
+<li id="menu-item-1491" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1491"><a href="https://thehushpost.com/news/entertainment/">Entertainment</a></li>
+<li id="menu-item-24781" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24781"><a href="https://thehushpost.com/news/education/">Education</a></li>
+<li id="menu-item-1493" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1493"><a href="https://thehushpost.com/news/sports/">Sports</a></li>
+<li id="menu-item-1494" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1494"><a href="https://thehushpost.com/news/travel/">Travel</a></li>
+<li id="menu-item-25261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25261"><a href="https://thehushpost.com/news/lifestyle/">Lifestyle</a></li>
+<li id="menu-item-28251" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28251"><a href="https://thehushpost.com/news/health/">Health</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="https://thehushpost.com/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>
+
+    <style>
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    </style>
+    
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style 1
+-->
+
+
+<div class="td-header-wrap td-header-style-1 ">
+    
+    <div class="td-header-top-menu-full td-container-wrap td_stretch_container">
+        <div class="td-container td-header-row td-header-top-menu">
+            
+    <div class="top-bar-style-1">
+        
+<div class="td-header-sp-top-menu">
+
+
+	        <div class="td_data_time">
+            <div style="visibility:hidden;">
+
+                Saturday, July 25, 2020
+            </div>
+        </div>
+    <div class="menu-top-container"><ul id="menu-td-demo-top-menu" class="top-header-menu"><li id="menu-item-25249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-25249"><a href="https://thehushpost.com/about-us/">About Us</a></li>
+<li id="menu-item-25250" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-25250"><a href="https://thehushpost.com/advertisement/">Advertisement</a></li>
+<li id="menu-item-25018" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-25018"><a href="#">Blog</a></li>
+</ul></div></div>
+        <div class="td-header-sp-top-widget">
+    
+    
+        
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Vimeo">
+                <i class="td-icon-font td-icon-vimeo"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="VKontakte">
+                <i class="td-icon-font td-icon-vk"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>    </div>    </div>
+
+<!-- LOGIN MODAL -->
+        </div>
+    </div>
+
+    <div class="td-banner-wrap-full td-logo-wrap-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-header">
+            <div class="td-header-sp-logo">
+                        <a class="td-main-logo" href="https://thehushpost.com/">
+            <img class="td-retina-data" data-retina="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Retina-Mobile-Logo-Black.png" src="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Logo-Black-2.png" alt=""/>
+            <span class="td-visual-hidden">The Hush Post</span>
+        </a>
+                </div>
+                    </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap td-header-gradient ">
+            <div class="td-container td-header-row td-header-main-menu">
+                <div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-header">
+        		<a class="td-mobile-logo td-sticky-header" href="https://thehushpost.com/">
+			<img class="td-retina-data" data-retina="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Retina-Mobile-Logo-White-1.png" src="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Mobile-Logo-White-1.png" alt=""/>
+		</a>
+			<a class="td-header-logo td-sticky-header" href="https://thehushpost.com/">
+			<img class="td-retina-data" data-retina="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Retina-Mobile-Logo-Black.png" src="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Logo-Black-2.png" alt=""/>
+		</a>
+	    </div>
+    <div class="menu-main-menu-top-container"><ul id="menu-main-menu-top-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-6"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-6510"><a href="https://thehushpost.com/news/politics/">Politics</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag td-menu-item td-normal-menu menu-item-2916"><a href="https://thehushpost.com/tag/diaspora/">Diaspora</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1491"><a href="https://thehushpost.com/news/entertainment/">Entertainment</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-24781"><a href="https://thehushpost.com/news/education/">Education</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1493"><a href="https://thehushpost.com/news/sports/">Sports</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1494"><a href="https://thehushpost.com/news/travel/">Travel</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-25261"><a href="https://thehushpost.com/news/lifestyle/">Lifestyle</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-28251"><a href="https://thehushpost.com/news/health/">Health</a></li>
+</ul></div></div>
+
+
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            <a id="td-header-search-button-mob" href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+        </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://thehushpost.com/">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" />
+28c9
+<input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+            </div>
+
+            
+<div class="td-main-content-wrap td-container-wrap">
+
+    <div class="td-container td-post-template-default ">
+        <div class="td-crumb-container"><div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://thehushpost.com/">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="View all posts in Tamil Nadu" class="entry-crumb" href="https://thehushpost.com/news/tamil-nadu/">Tamil Nadu</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">Man hounded for contracting coronavirus commits suicide, tests negative later</span></div></div>
+
+        <div class="td-pb-row">
+                                    <div class="td-pb-span8 td-main-content" role="main">
+                            <div class="td-ss-main-content">
+                                
+    <article id="post-51905" class="post-51905 post type-post status-publish format-standard has-post-thumbnail hentry category-tamil-nadu tag-coronavirus tag-coronavirus-test-positive tag-covid-19 tag-lockdown tag-suicide" itemscope itemtype="https://schema.org/Article">
+        <div class="td-post-header">
+
+            <ul class="td-category"><li class="entry-category"><a  href="https://thehushpost.com/news/tamil-nadu/">Tamil Nadu</a></li></ul>
+            <header class="td-post-title">
+                <h1 class="entry-title">Man hounded for contracting coronavirus commits suicide, tests negative later</h1>
+
+                
+
+                <div class="td-module-meta-info">
+                    <div class="td-post-author-name"><div class="td-author-by">By</div> <a href="https://thehushpost.com/author/ramhushpost/">The Hush Post (RK)</a><div class="td-author-line"> - </div> </div>                    <span class="td-post-date td-post-date-no-dot"><time class="entry-date updated td-module-date" datetime="2020-04-02T18:23:43+00:00" >April 2, 2020</time></span>                                                        </div>
+
+            </header>
+
+        </div>
+
+        <div class="td-post-sharing-top"><div id="td_social_sharing_article_top" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1 "><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text">
+                                        <div class="td-social-but-icon"><i class="td-icon-share"></i></div>
+                                        <div class="td-social-but-text">Share</div>
+                                    </div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="whatsapp://send?text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later %0A%0A https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/">
+                                        <div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div>
+                                        <div class="td-social-but-text">WhatsApp</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later&url=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F&via=The+Hush+Post">
+                                        <div class="td-social-but-icon"><i class="td-icon-twitter"></i></div>
+                                        <div class="td-social-but-text">Twitter</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-googleplus" href="https://plus.google.com/share?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/">
+                                        <div class="td-social-but-icon"><i class="td-icon-googleplus"></i></div>
+                                        <div class="td-social-but-text">Google+</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&amp;media=https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg&description=In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus.">
+                                        <div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div>
+                                        <div class="td-social-but-text">Pinterest</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-reddit" href="https://reddit.com/submit?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&title=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later">
+                                        <div class="td-social-but-icon"><i class="td-icon-reddit"></i></div>
+                                        <div class="td-social-but-text">ReddIt</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="/cdn-cgi/l/email-protection#57682422353d3234236a1a3639773f382239333233773138257734383923253634233e393077343825383936213e2522247734383a3a3e23247724223e343e33327b7723322423247739323036233e2132773b36233225713538332e6a3f232327246d7878233f323f22243f273824237934383a783a36397a3f3822393332337a3138257a34383923253634233e39307a343825383936213e2522247a34383a3a3e23247a24223e343e33327a23322423247a39323036233e21327a3b3623322578">
+                                        <div class="td-social-but-icon"><i class="td-icon-mail"></i></div>
+                                        <div class="td-social-but-text">Email</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-print" href="#">
+                                        <div class="td-social-but-icon"><i class="td-icon-print"></i></div>
+                                        <div class="td-social-but-text">Print</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later">
+                                        <div class="td-social-but-icon"><i class="td-icon-telegram"></i></div>
+                                        <div class="td-social-but-text">Telegram</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_top">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>
+
+        <div class="td-post-content">
+
+        <div class="td-post-featured-image"><img width="696" height="522" class="entry-thumb" src="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-696x522.jpg" srcset="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-696x522.jpg 696w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-300x225.jpg 300w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-768x576.jpg 768w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-1024x768.jpg 1024w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-80x60.jpg 80w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-265x198.jpg 265w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-1068x801.jpg 1068w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections-560x420.jpg 560w, https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg 1280w" sizes="(max-width: 696px) 100vw, 696px" alt="" title="13-year-old boy commits suicide after losing class monitor elections"/></div>
+        
+ <!-- A generated by theme --> 
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><div class="td-g-rec td-g-rec-id-content_top td_uid_1_5f1b44c214a78_rand td_block_template_1 ">
+
+<style>
+/*
+3360
+ custom css */
+.td_uid_1_5f1b44c214a78_rand.td-a-rec-img {
+				    text-align: left;
+				}
+				.td_uid_1_5f1b44c214a78_rand.td-a-rec-img img {
+                    margin: 0 auto 0 0;
+                }
+</style><script type="text/javascript">
+var td_screen_width = window.innerWidth;
+
+                    if ( td_screen_width >= 1140 ) {
+                        /* large monitors */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="8963753167"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+            
+	                    if ( td_screen_width >= 1019  && td_screen_width < 1140 ) {
+	                        /* landscape tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="8963753167"></ins>');
+	                        (adsbygoogle = window.adsbygoogle || []).push({});
+	                    }
+	                
+                    if ( td_screen_width >= 768  && td_screen_width < 1019 ) {
+                        /* portrait tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="8963753167"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                
+                    if ( td_screen_width < 768 ) {
+                        /* Phones */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="8963753167"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                </script>
+</div>
+
+ <!-- end A --> 
+
+<p><strong>The Hush Post | 6:20 pm | One-minute read |</strong></p>
+<p>In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus. Ironically, the poor man later tested negative for COVID-19.</p>
+<p>The man had recently returned to his village in Madurai from Kerala where he worked as a labourer. The 35-year-old had visited his mother in the village. During his stay, the man developed symptoms such as cough and fatigue, which are generally associated with coronavirus.</p>
+<p>Locals alerted the police and state health department. Since, the ambulance did not arrive on time, locals themselves arranged a vehicle and rushed the man to the hospital.</p>
+<p>The videos of people ferrying him to the hospital had gone viral on the social media. This had revealed his identity.</p>
+<p>The man recovered and reached home later, but locals adversely reacted to the possibility that he might have contracted the virus.</p>
+<p>The man’s family claimed he was upset with being ostracized. His body was recovered from a rail track near Kappalur tollgate between Madurai and Thirumangalam.</p>
+
+ <!-- A generated by theme --> 
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><div class="td-g-rec td-g-rec-id-content_bottom td_uid_2_5f1b44c2152e5_rand td_block_template_1 ">
+
+<style>
+/* custom css */
+.td_uid_2_5f1b44c2152e5_rand.td-a-rec-img {
+				    text-align: left;
+				}
+				.td_uid_2_5f1b44c2152e5_rand.td-a-rec-img img {
+                    margin: 0 auto 0 0;
+                }
+</style><script type="text/javascript">
+var td_screen_width = window.innerWidth;
+
+                    if ( td_screen_width >= 1140 ) {
+                        /* large monitors */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="1700055405"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+            
+	                    if ( td_screen_width >= 1019  && td_screen_width < 1140 ) {
+	                        /* landscape tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="1700055405"></ins>');
+	                        (adsbygoogle = window.adsbygoogle || []).push({});
+	                    }
+	                
+                    if ( td_screen_width >= 768  && td_screen_width < 1019 ) {
+                        /* portrait tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="1700055405"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                
+                    if ( td_screen_width < 768 ) {
+                        /* Phones */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="1700055405"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                </script>
+</div>
+
+ <!-- end A --> 
+
+        </div>
+
+
+        <footer>
+                        
+            <div class="td-post-source-tags">
+                                <ul class="td-tags td-post-small-box clearfix"><li><span>TAGS</span></li><li><a href="https://thehushpost.com/tag/coronavirus/">Coronavirus</a></li><li><a href="https://thehushpost.com/tag/coronavirus-test-positive/">coronavirus test positive</a></li><li><a href="https://thehushpost.com/tag/covid-19/">COVID-19</a></li><li><a href="https://thehushpost.com/tag/lockdown/">Lockdown</a></li><li><a href="https://thehushpost.com/tag/suicide/">suicide</a></li></ul>            </div>
+
+            <div class="td-post-sharing-bottom"><div id="td_social_sharing_article_bottom" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1 "><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text">
+                                        <div class="td-social-but-icon"><i class="td-icon-share"></i></div>
+                                        <div class="td-social-but-text">Share</div>
+                                    </div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="whatsapp://send?text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later %0A%0A https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/">
+                                        <div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div>
+                                        <div class="td-social-but-text">WhatsApp</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later&url=https%3A%2F%2Fthehushpost.com%2Fman-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later%2F&via=The+Hush+Post">
+                                        <div class="td-social-but-icon"><i class="td-icon-twitter"></i></div>
+                                        <div class="td-social-but-text">Twitter</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-googleplus" href="https://plus.google.com/share?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/">
+                                        <div class="td-social-but-icon"><i class="td-icon-googleplus"></i></div>
+                                        <div class="td-social-but-text">Google+</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&amp;media=https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg&description=In a tragic incident, a man in Kerala allegedly committed suicide as locals hounded him for contracting coronavirus.">
+                                        <div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div>
+                                        <div class="td-social-but-text">Pinterest</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-reddit" href="https://reddit.com/submit?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&title=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later">
+                                        <div class="td-social-but-icon"><i class="td-icon-reddit"></i></div>
+                                        <div class="td-social-but-text">ReddIt</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="/cdn-cgi/l/email-protection#a19ed2d4c3cbc4c2d59cecc0cf81c9ced4cfc5c4c581c7ced381c2cecfd5d3c0c2d5c8cfc681c2ced3cecfc0d7c8d3d4d281c2ceccccc8d5d281d2d4c8c2c8c5c48d81d5c4d2d5d281cfc4c6c0d5c8d7c481cdc0d5c4d387c3cec5d89cc9d5d5d1d29b8e8ed5c9c4c9d4d2c9d1ced2d58fc2cecc8eccc0cf8cc9ced4cfc5c4c58cc7ced38cc2cecfd5d3c0c2d5c8cfc68cc2ced3cecfc0d7c8d3d4d28cc2ceccccc8d5d28cd2d4c8c2c8c5c48cd5c4d2d5d28ccfc4c6c0d5c8d7c48ccdc0d5c4d38e">
+                                        <div class="td-social-but-icon"><i class="td-icon-mail"></i></div>
+                                        <div class="td-social-but-text">Email</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-print" href="#">
+                                        <div class="td-social-but-icon"><i class="td-icon-print"></i></div>
+                                        <div class="td-social-but-text">Print</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/&text=Man+hounded+for+contracting+coronavirus+commits+suicide%2C+tests+negative+later">
+                                        <div class="td-social-but-icon"><i class="td-icon-telegram"></i></div>
+                                        <div class="td-social-but-text">Telegram</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_bottom">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>            <div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Previous article</span><a href="https://thehushpost.com/maulana-saad-says-he-is-in-self-isolation/">Maulana Saad says, he is in self isolation | Police on a look out</a></div></div><div class="td-next-prev-separator"></div><div class="td-block-span6 td-post-next-post"><div class="td-post-next-prev-content"><span>Next article</span><a href="https://thehushpost.com/400-attendees-of-markaz-in-delhi-test-positive-for-coronavirus-over-800-had-gone-from-himachal/">400 attendees of Markaz in Delhi test positive for coronavirus; over 800 had gone from Himachal</a></div></div></div>            <div class="td-author-name vcard author" style="display: none"><span class="fn"><a href="https://thehushpost.com/author/ramhushpost/">The Hush Post (RK)</a></span></div>	        <span class="td-page-meta" itemprop="author" itemscope itemtype="https://schema.org/Person">
+1e64
+<meta itemprop="name" content="The Hush Post (RK)"></span><meta itemprop="datePublished" content="2020-04-02T18:23:43+00:00"><meta itemprop="dateModified" content="2020-04-02T18:23:43+05:30"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/"/><span class="td-page-meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Logo-Black-2.png"></span><meta itemprop="name" content="The Hush Post"></span><meta itemprop="headline " content="Man hounded for contracting coronavirus commits suicide, tests negative later"><span class="td-page-meta" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://thehushpost.com/wp-content/uploads/2019/07/13-year-old-boy-commits-suicide-after-losing-class-monitor-elections.jpg"><meta itemprop="width" content="1280"><meta itemprop="height" content="960"></span>        </footer>
+
+    </article> <!-- /.post -->
+
+    <div class="td_block_wrap td_block_related_posts td_uid_3_5f1b44c216480_rand td_with_ajax_pagination td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_3_5f1b44c216480" ><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var block_td_uid_3_5f1b44c216480 = new tdBlock();
+block_td_uid_3_5f1b44c216480.id = "td_uid_3_5f1b44c216480";
+block_td_uid_3_5f1b44c216480.atts = '{"limit":6,"ajax_pagination":"next_prev","live_filter":"cur_post_same_categories","td_ajax_filter_type":"td_custom_related","class":"td_uid_3_5f1b44c216480_rand","td_column_number":3,"live_filter_cur_post_id":51905,"live_filter_cur_post_author":"7","block_template_id":"","header_color":"","ajax_pagination_infinite_stop":"","offset":"","td_ajax_preloading":"","td_filter_default_txt":"","td_ajax_filter_ids":"","el_class":"","color_preset":"","border_top":"","css":"","tdc_css":"","tdc_css_class":"td_uid_3_5f1b44c216480_rand","tdc_css_class_style":"td_uid_3_5f1b44c216480_rand_style"}';
+block_td_uid_3_5f1b44c216480.td_column_number = "3";
+block_td_uid_3_5f1b44c216480.block_type = "td_block_related_posts";
+block_td_uid_3_5f1b44c216480.post_count = "6";
+block_td_uid_3_5f1b44c216480.found_posts = "75";
+block_td_uid_3_5f1b44c216480.header_color = "";
+block_td_uid_3_5f1b44c216480.ajax_pagination_infinite_stop = "";
+block_td_uid_3_5f1b44c216480.max_num_pages = "13";
+tdBlocksArray.push(block_td_uid_3_5f1b44c216480);
+</script><h4 class="td-related-title td-block-title"><a id="td_uid_4_5f1b44c21803f" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="td_uid_3_5f1b44c216480" href="#">RELATED ARTICLES</a><a id="td_uid_5_5f1b44c218044" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="td_uid_3_5f1b44c216480" href="#">MORE FROM AUTHOR</a></h4><div id=td_uid_3_5f1b44c216480 class="td_block_inner">
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://thehushpost.com/65-yr-old-cycles-130-km-for-wifes-chemo-session/" rel="bookmark" class="td-image-wrap" title="65-yr-old cycles 130 km for wife&#8217;s chemo session"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="coronavirus patients" title="65-yr-old cycles 130 km for wife&#8217;s chemo session" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2020/01/corona-218x150.jpg"  width="218" height="150" /></a></div>                <a href="https://thehushpost.com/news/tamil-nadu/" class="td-post-category">Tamil Nadu</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/65-yr-old-cycles-130-km-for-wifes-chemo-session/" rel="bookmark" title="65-yr-old cycles 130 km for wife&#8217;s chemo session">65-yr-old cycles 130 km for wife&#8217;s chemo session</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://thehushpost.com/unable-buy-liquor-3-die-after-consuming-paint-varnish/" rel="bookmark" class="td-image-wrap" title="Unable to buy liquor, 3 die after consuming paint &#038; varnish during lockdown"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="Liquor" title="Unable to buy liquor, 3 die after consuming paint &#038; varnish during lockdown" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2018/09/Liquor.jpg"  width="218" height="112" /></a></div>                <a href="https://thehushpost.com/news/tamil-nadu/" class="td-post-category">Tamil Nadu</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/unable-buy-liquor-3-die-after-consuming-paint-varnish/" rel="bookmark" title="Unable to buy liquor, 3 die after consuming paint &#038; varnish during lockdown">Unable to buy liquor, 3 die after consuming paint &#038; varnish during lockdown</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://thehushpost.com/kamal-hassan-escapes-death-three-dead-accident/" rel="bookmark" class="td-image-wrap" title="Kamal Hassan escapes death| Three dead in accident on sets of &#8216;Indian 2&#8217;"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="Indian 2 film shooting accident" title="Kamal Hassan escapes death| Three dead in accident on sets of &#8216;Indian 2&#8217;" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2020/02/kamal-218x150.jpg"  width="218" height="150" /></a></div>                <a href="https://thehushpost.com/news/tamil-nadu/chennai/" class="td-post-category">Chennai</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/kamal-hassan-escapes-death-three-dead-accident/" rel="bookmark" title="Kamal Hassan escapes death| Three dead in accident on sets of &#8216;Indian 2&#8217;">Kamal Hassan escapes death| Three dead in accident on sets of &#8216;Indian 2&#8217;</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 --></div><!--./row-fluid-->
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb">
+215b
+<a href="https://thehushpost.com/woman-forced-to-sell-hair-to-feed-her-children-social-media-comes-to-help/" rel="bookmark" class="td-image-wrap" title="Woman forced to sell hair to feed her children; social media comes to help"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="Woman forced to sell hair" title="Woman forced to sell hair to feed her children; social media comes to help" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2020/01/salem-218x150.jpg"  width="218" height="150" /></a></div>                <a href="https://thehushpost.com/news/tamil-nadu/" class="td-post-category">Tamil Nadu</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/woman-forced-to-sell-hair-to-feed-her-children-social-media-comes-to-help/" rel="bookmark" title="Woman forced to sell hair to feed her children; social media comes to help">Woman forced to sell hair to feed her children; social media comes to help</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://thehushpost.com/four-girl-students-expelled-college-drinking-birthday-party/" rel="bookmark" class="td-image-wrap" title="Four girl students expelled from college for drinking at birthday party with their male friends"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="girls expelled for drinking with boys" title="Four girl students expelled from college for drinking at birthday party with their male friends" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2020/01/expel-218x150.jpg"  width="218" height="150" /></a></div>                <a href="https://thehushpost.com/news/education/" class="td-post-category">Education</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/four-girl-students-expelled-college-drinking-birthday-party/" rel="bookmark" title="Four girl students expelled from college for drinking at birthday party with their male friends">Four girl students expelled from college for drinking at birthday party with their male friends</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://thehushpost.com/amateur-astronomer-shanmugam-subramanian-alerted-nasa-about-vikram-lander/" rel="bookmark" class="td-image-wrap" title="Amateur astronomer Shanmugam Subramanian alerted NASA about location of Vikram Lander | Worked 7 hours daily on his laptop"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC"alt="shanmugam Subramanian" title="Amateur astronomer Shanmugam Subramanian alerted NASA about location of Vikram Lander | Worked 7 hours daily on his laptop" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2019/12/shan-218x150.jpg"  width="218" height="150" /></a></div>                <a href="https://thehushpost.com/news/karnataka/bengaluru/" class="td-post-category">Bengaluru</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/amateur-astronomer-shanmugam-subramanian-alerted-nasa-about-vikram-lander/" rel="bookmark" title="Amateur astronomer Shanmugam Subramanian alerted NASA about location of Vikram Lander | Worked 7 hours daily on his laptop">Amateur astronomer Shanmugam Subramanian alerted NASA about location of Vikram Lander | Worked 7 hours daily on his laptop</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_3_5f1b44c216480" data-td_block_id="td_uid_3_5f1b44c216480"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#"  class="td-ajax-next-page" id="next-page-td_uid_3_5f1b44c216480" data-td_block_id="td_uid_3_5f1b44c216480"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->
+	<div class="comments" id="comments">
+        	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">LEAVE A REPLY <small><a rel="nofollow" id="cancel-comment-reply-link" href="/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://thehushpost.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><div class="clearfix"></div>
+				<div class="comment-form-input-wrap td-form-comment">
+					<textarea placeholder="Comment:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+					<div class="td-warning-comment">Please enter your comment!</div>
+				</div>
+		        <div class="comment-form-input-wrap td-form-author">
+			            <input class="" id="author" name="author" placeholder="Name:*" type="text" value="" size="30"  aria-required='true' />
+			            <div class="td-warning-author">Please enter your name here</div>
+			         </div>
+<div class="comment-form-input-wrap td-form-email">
+			            <input class="" id="email" name="email" placeholder="Email:*" type="text" value="" size="30"  aria-required='true' />
+			            <div class="td-warning-email-error">You have entered an incorrect email address!</div>
+			            <div class="td-warning-email">Please enter your email address here</div>
+			         </div>
+<div class="comment-form-input-wrap td-form-url">
+			            <input class="" id="url" name="url" placeholder="Website:" type="text" value="" size="30" />
+                     </div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='51905' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="85"/></p></form>	</div><!-- #respond -->
+	    </div> <!-- /.content -->
+                            </div>
+                        </div>
+                        <div class="td-pb-span4 td-main-sidebar" role="complementary">
+                            <div class="td-ss-main-sidebar">
+                                <aside class="td_block_template_1 widget widget_search"><form method="get" class="td-search-form-widget" action="https://thehushpost.com/">
+    <div role="search">
+        <input class="td-widget-search-input" type="text" value="" name="s" id="s" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="searchsubmit" value="Search" />
+    </div>
+</form></aside><div class="td_block_wrap td_block_7 td_block_widget td_uid_7_5f1b44c21bed2_rand td_with_ajax_pagination td-pb-border-top td_block_template_1 tdc-no-posts td-column-1 td_block_padding"  data-td-block-uid="td_uid_7_5f1b44c21bed2" ><script>var block_td_uid_7_5f1b44c21bed2 = new tdBlock();
+block_td_uid_7_5f1b44c21bed2.id = "td_uid_7_5f1b44c21bed2";
+block_td_uid_7_5f1b44c21bed2.atts = '{"custom_title":"Featured News","custom_url":"","block_template_id":"","header_color":"#","header_text_color":"#","accent_text_color":"#","m6_tl":"","limit":"5","offset":"","el_class":"","post_ids":"","c
+2745
+ategory_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","sort":"random_today","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","ajax_pagination":"load_more","ajax_pagination_infinite_stop":"","class":"td_block_widget td_uid_7_5f1b44c21bed2_rand","separator":"","show_modified_date":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m6f_title_font_header":"","m6f_title_font_title":"Article title","m6f_title_font_settings":"","m6f_title_font_family":"","m6f_title_font_size":"","m6f_title_font_line_height":"","m6f_title_font_style":"","m6f_title_font_weight":"","m6f_title_font_transform":"","m6f_title_font_spacing":"","m6f_title_":"","m6f_cat_font_title":"Article category tag","m6f_cat_font_settings":"","m6f_cat_font_family":"","m6f_cat_font_size":"","m6f_cat_font_line_height":"","m6f_cat_font_style":"","m6f_cat_font_weight":"","m6f_cat_font_transform":"","m6f_cat_font_spacing":"","m6f_cat_":"","m6f_meta_font_title":"Article meta info","m6f_meta_font_settings":"","m6f_meta_font_family":"","m6f_meta_font_size":"","m6f_meta_font_line_height":"","m6f_meta_font_style":"","m6f_meta_font_weight":"","m6f_meta_font_transform":"","m6f_meta_font_spacing":"","m6f_meta_":"","css":"","tdc_css":"","td_column_number":1,"color_preset":"","border_top":"","tdc_css_class":"td_uid_7_5f1b44c21bed2_rand","tdc_css_class_style":"td_uid_7_5f1b44c21bed2_rand_style"}';
+block_td_uid_7_5f1b44c21bed2.td_column_number = "1";
+block_td_uid_7_5f1b44c21bed2.block_type = "td_block_7";
+block_td_uid_7_5f1b44c21bed2.post_count = "0";
+block_td_uid_7_5f1b44c21bed2.found_posts = "0";
+block_td_uid_7_5f1b44c21bed2.header_color = "#";
+block_td_uid_7_5f1b44c21bed2.ajax_pagination_infinite_stop = "";
+block_td_uid_7_5f1b44c21bed2.max_num_pages = "0";
+tdBlocksArray.push(block_td_uid_7_5f1b44c21bed2);
+</script><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Featured News</span></h4></div><div id=td_uid_7_5f1b44c21bed2 class="td_block_inner"></div></div> <!-- ./block --><div class="td_block_wrap td_block_11 td_block_widget td_uid_9_5f1b44c21f365_rand td-pb-border-top td_block_template_1 tdc-no-posts td-column-1"  data-td-block-uid="td_uid_9_5f1b44c21f365" ><script>var block_td_uid_9_5f1b44c21f365 = new tdBlock();
+block_td_uid_9_5f1b44c21f365.id = "td_uid_9_5f1b44c21f365";
+block_td_uid_9_5f1b44c21f365.atts = '{"custom_title":"Popular News","custom_url":"","block_template_id":"","header_text_color":"#","border_color":"#","accent_text_color":"#","m10_tl":"","m10_el":"","limit":"5","offset":"","el_class":"","post_ids":"","category_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","sort":"random_7_day","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","ajax_pagination":"","ajax_pagination_infinite_stop":"","class":"td_block_widget td_uid_9_5f1b44c21f365_rand","separator":"","show_modified_date":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m10f_title_font_header":"","m10f_title_font_title":"Article title","m10f_title_font_settings":"","m10f_title_font_family":"","m10f_title_font_size":"","m10f_title_font_line_height":"","m10f_title_font_style":"","m10f_title_font_weight":"","m10f_title_font_transform":"","m10f_title_font_spacing":"","m10f_title_":"","m10f_cat_font_title":"Article category tag","m10f_cat_font_settings":"","m10f_cat_font_family":"","m10f_cat_font_size":"","m10f_cat_font_line_height":"","m10f_cat_font_style":"","m10f_cat_font_weight":"","m10f_cat_font_transform":"","m10f_cat_font_spacing":"","m10f_cat_":"","m10f_meta_font_title":"Article meta info","m10f_meta_font_settings":"","m10f_meta_font_family":"","m10f_meta_font_size":"","m10f_meta_font_line_height":"","m10f_meta_font_style":"","m10f_meta_font_weight":"","m10f_meta_font_transform":"","m10f_meta_font_spacing":"","m10f_meta_":"","m10f_ex_font_title":"Article excerpt","m10f_ex_font_settings":"","m10f_ex_font_family":"","m10f_ex_font_size":"","m10f_ex_font_line_height":"","m10f_ex_font_style":"","m10f_ex_font_weight":"","m10f_ex_font_transform":"","m10f_ex_font_spacing":"","m10f_ex_":"","css":"","tdc_css":"","td_column_number":1,"header_color":"","color_preset":"","border_top":"","tdc_css_class":"td_uid_9_5f1b44c21f365_rand","tdc_css_class_style":"td_uid_9_5f1b44c21f365_rand_style"}';
+block_td_uid_9_5f1b44c21f365.td_column_number = "1";
+block_td_uid_9_5f1b44c21f365.block_type = "td_block_11";
+block_td_uid_9_5f1b44c21f365.post_count = "0";
+block_td_uid_9_5f1b44c21f365.found_posts = "0";
+block_td_uid_9_5f1b44c21f365.header_color = "";
+block_td_uid_9_5f1b44c21f365.ajax_pagination_infinite_stop = "";
+block_td_uid_9_5f1b44c21f365.max_num_pages = "0";
+tdBlocksArray.push(block_td_uid_9_5f1b44c21f365);
+</script><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Popular News</span></h4></div><div id=td_uid_9_5f1b44c21f365 class="td_block_inner"></div></div> <!-- ./block -->                            </div>
+                        </div>
+                            </div> <!-- /.td-pb-row -->
+    </div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+
+<!-- Instagram -->
+
+
+
+
+	<!-- Footer -->
+	<div class="td-footer-wrapper td-footer-container td-container-wrap ">
+    <div class="td-container">
+
+	    <div class="td-pb-row">
+		    <div class="td-pb-span12">
+                
+ <!-- A generated by theme --> 
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><div class="td-g-rec td-g-rec-id-footer_top td_uid_11_5f1b44c236536_rand td_block_template_1 ">
+
+<style>
+/* custom css */
+.td_uid_11_5f1b44c236536_rand.td-a-rec-img {
+				    text-align: left;
+				}
+				.td_uid_11_5f1b44c236536_rand.td-a-rec-img img {
+                    margin: 0 auto 0 0;
+                }
+</style><script type="text/javascript">
+var td_screen_width = window.innerWidth;
+
+                    if ( td_screen_width >= 1140 ) {
+                        /* large monitors */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="2719599393"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+            
+	                    if ( td_screen_width >= 1019  && td_screen_width < 1140 ) {
+	                        /* landscape tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="2719599393"></ins>');
+	                        (adsbygoogle = window.adsbygoogle || []).push({});
+	                    }
+	                
+                    if ( td_screen_width >= 768  && td_screen_width < 1019 ) {
+                        /* portrait tablets */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="2719599393"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                
+                    if ( td_screen_width < 768 ) {
+                        /* Phones */
+                        document.write('<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4891096597768786" data-ad-slot="2719599393"></ins>');
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    }
+                </script>
+</div>
+
+ <!-- end A --> 
+
+		    </div>
+	    </div>
+
+        <div class="td-pb-row">
+
+            <div class="td-pb-span4">
+                            </div>
+
+            <div class="td-pb-span4">
+                            </div>
+
+            <div class="td-pb-span4">
+                            </div>
+        </div>
+    </div>
+<div class="td-footer-bottom-full">
+    <div class="td-container">
+        <div class="td-pb-row">
+            <div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://thehushpost.com/"><img class="td-retina-data" src="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Logo-White-1.png" data-retina="https://thehushpost.com/wp-content/uploads/2018/10/The-Hush-Post-Retina-Mobile-Logo-White-2.png" alt="The Hush Post" title="India Reports Here..." width="272" /></a>
+1e5e
+</aside></div><div class="td-pb-span5"><aside class="footer-text-wrap"><div class="block-title"><span>ABOUT US</span></div>It is a news website dedicated to the six north Indian states of Punjab, Haryana, Himachal Pradesh, Jammu and Kashmir, Uttarakhand and also national capital Delhi and Chandigarh, as well as the diaspora. We also break news, latest sports, films, political stories and provide crisp coverage of events as and when they unfold.<div class="footer-email-wrap">Contact us: <a href="/cdn-cgi/l/email-protection#254d50564d4d50564d554a5651654248444c490b464a48"><span class="__cf_email__" data-cfemail="7a120f0912120f09120a15090e3a1d171b131654191517">[email&#160;protected]</span></a></div></aside></div><div class="td-pb-span4"><aside class="footer-social-wrap td-social-style-2"><div class="block-title"><span>FOLLOW US</span></div>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Vimeo">
+                <i class="td-icon-font td-icon-vimeo"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="VKontakte">
+                <i class="td-icon-font td-icon-vk"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span></aside></div>        </div>
+    </div>
+</div>
+</div>
+	<!-- Sub Footer -->
+	    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                    <div class="menu-main-menu-top-container"><ul id="menu-main-menu-top-2" class="td-subfooter-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-6"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-6510"><a href="https://thehushpost.com/news/politics/">Politics</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag td-menu-item td-normal-menu menu-item-2916"><a href="https://thehushpost.com/tag/diaspora/">Diaspora</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1491"><a href="https://thehushpost.com/news/entertainment/">Entertainment</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-24781"><a href="https://thehushpost.com/news/education/">Education</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1493"><a href="https://thehushpost.com/news/sports/">Sports</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1494"><a href="https://thehushpost.com/news/travel/">Travel</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-25261"><a href="https://thehushpost.com/news/lifestyle/">Lifestyle</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-28251"><a href="https://thehushpost.com/news/health/">Health</a></li>
+</ul></div>                </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    &copy; The Hush Post                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div><!--close td-outer-wrap-->
+
+                <div class="td-more-articles-box">
+                    <i class="td-icon-close td-close-more-articles-box"></i>
+                    <span class="td-more-articles-box-title">MORE STORIES</span>
+                    <div class="td-content-more-articles-box">
+
+                    
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://thehushpost.com/dr-k-sivan-hardship-chandrayaan-2/" rel="bookmark" class="td-image-wrap" title="Who is Dr K Sivan? From no slippers and trousers to wear in school to reaching for the moon"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABGAQMAAAAASKMqAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABBJREFUKM9jGAWjYBQMKwAAA9QAAQWBn6cAAAAASUVORK5CYII="alt="Dr K SIVAN" title="Who is Dr K Sivan? From no slippers and trousers to wear in school to reaching for the moon" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2019/09/KSIVAN-100x70.jpg"  width="100" height="70" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/dr-k-sivan-hardship-chandrayaan-2/" rel="bookmark" title="Who is Dr K Sivan? From no slippers and trousers to wear in school to reaching for the moon">Who is Dr K Sivan? From no slippers and trousers to...</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-09-07T18:55:41+00:00" >September 7, 2019</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://thehushpost.com/neighbour-beheads-dalit-girl-who-turned-down-his-advances/" rel="bookmark" class="td-image-wrap" title="Neighbour beheads Dalit girl who turned down his advances"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABGAQMAAAAASKMqAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABBJREFUKM9jGAWjYBQMKwAAA9QAAQWBn6cAAAAASUVORK5CYII="alt="Sword" title="Neighbour beheads Dalit girl who turned down his advances" data-type="image_tag" data-img-url="https://thehushpost.com/wp-content/uploads/2018/07/Blood_stained_sword.jpg"  width="93" height="70" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://thehushpost.com/neighbour-beheads-dalit-girl-who-turned-down-his-advances/" rel="bookmark" title="Neighbour beheads Dalit girl who turned down his advances">Neighbour beheads Dalit girl who turned down his advances</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2018-11-01T15:08:31+00:00" >November 1, 2018</time></span>                            </div>
+        </div>
+
+        </div>
+
+                            </div>
+                </div>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2019
+        Version: 9.6 (rara)
+        Deploy mode: deploy
+        Speed booster: v4.9.3
+
+        uid: 5f1b44c252dc8
+    -->
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://thehushpost.com/wp-content/themes/Newspaper/js/tagdiv_theme.min.js?ver=9.6'></script>
+<script type='text/javascript' src='https://thehushpost.com/wp-includes/js/comment-reply.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://thehushpost.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+
+<!-- JS generated by theme -->
+
+<script>
+    
+
+                jQuery().ready(fun
+13d3
+ction jQuery_ready() {
+                    tdAjaxCount.tdGetViewsCountsAjax("post","[51905]");
+                });
+            
+
+	
+
+		(function(){
+			var html_jquery_obj = jQuery('html');
+
+			if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+
+				var path = 'https://thehushpost.com/wp-content/themes/Newspaper/style.css';
+
+				jQuery.get(path, function(data) {
+
+					var str_split_separator = '#td_css_split_separator';
+					var arr_splits = data.split(str_split_separator);
+					var arr_length = arr_splits.length;
+
+					if (arr_length > 1) {
+
+						var dir_path = 'https://thehushpost.com/wp-content/themes/Newspaper';
+						var splited_css = '';
+
+						for (var i = 0; i < arr_length; i++) {
+							if (i > 0) {
+								arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+							}
+							//jQuery('head').append('<style>' + arr_splits[i] + '</style>');
+
+							var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(str) {
+								return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(/^\s+|\s+$/gm,'');
+							});
+
+							splited_css += "<style>" + formated_str + "</style>";
+						}
+
+						var td_theme_css = jQuery('link#td-theme-css');
+
+						if (td_theme_css.length) {
+							td_theme_css.after(splited_css);
+						}
+					}
+				});
+			}
+		})();
+
+	
+	
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.block-title > span,
+    .block-title > span > a,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title:after,
+    .td-theme-wrap .td_block_template_10 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::after,
+    .td-theme-wrap .td_block_template_14 .td-block-title,
+    .td-theme-wrap .td_block_template_15 .td-block-title:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title:before {
+        background-color: #222222;
+    }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    	background-color: #222222 !important;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .woocommerce div.product .woocommerce-tabs ul.tabs:before,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title,
+    .td-theme-wrap .td_block_template_17 .td-block-title::before {
+        border-color: #222222;
+    }
+
+    .td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title::after {
+        border-color: #222222 transparent transparent transparent;
+    }
+    
+    .td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #222222 transparent transparent transparent !important;
+    }
+
+    
+    .td-footer-wrapper,
+    .td-footer-wrapper .td_block_template_7 .td-block-title > *,
+    .td-footer-wrapper .td_block_template_17 .td-block-title,
+    .td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter {
+        background-color: #111111;
+    }
+
+    
+    .td-footer-wrapper::before {
+        background-image: url('https://thehushpost.com/wp-content/uploads/2018/10/8.jpg');
+    }
+
+    
+    .td-footer-wrapper::before {
+        background-size: cover;
+    }
+
+    
+    .td-footer-wrapper::before {
+        background-position: center center;
+    }
+
+    
+    .td-footer-wrapper::before {
+        opacity: 0.1;
+    }
+
+
+
+    
+    .td-menu-background,
+    .td-search-background {
+        background-image: url('https://thehushpost.com/wp-content/uploads/2018/10/8.jpg');
+    }
+
+    
+    .white-popup-block:before {
+        background-image: url('https://thehushpost.com/wp-content/uploads/2018/10/8.jpg');
+    }
+</style>
+
+
+</body>
+</html>
+0
+
+
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:5252d880-5663-47c6-86ef-d34aa8fdaddb>
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-07-24T20:29:54Z
+WARC-Block-Digest: sha1:52577Y2SM7CGYRHL3RKYGT7GQYV3AQSX
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:8e351911-d69d-49b2-afc1-83c645cf8600>
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Concurrent-To: <urn:uuid:5252d880-5663-47c6-86ef-d34aa8fdaddb>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-07-24T20:29:54Z
+WARC-Block-Digest: sha1:X5ROLWKJCKPMLO5PMCT6BC2VIRR3VFXL
+Content-Type: text/plain
+Content-Length: 446
+
+"--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595622592" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:975666ea-5b53-4f96-bcd0-331cb9e19118>
+WARC-Warcinfo-ID: <urn:uuid:05f0b997-1e8d-480c-a804-8c017f6de502>
+WARC-Concurrent-To: <urn:uuid:5252d880-5663-47c6-86ef-d34aa8fdaddb>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-07-24T20:29:54Z
+WARC-Block-Digest: sha1:QS4EXOEDZWCKEJGN3UJZQ4MQX7WB5I4B
+Content-Type: text/plain
+Content-Length: 363
+
+2020-07-25 01:59:54 URL:https://thehushpost.com/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/ [95837] -> "thehushpost.com/tamil-nadu/man-hounded-for-contracting-coronavirus-commits-suicide-tests-negative-later/index.html" [1]
+FINISHED --2020-07-25 01:59:54--
+Total wall clock time: 2.4s
+Downloaded: 1 files, 94K in 0.1s (765 KB/s)
+
+

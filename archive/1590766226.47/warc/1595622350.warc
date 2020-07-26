@@ -1,0 +1,114 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-07-24T20:25:50Z
+WARC-Record-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Filename: 1595622350.warc
+WARC-Block-Digest: sha1:7AN44WG7UVO6TRMNPZMRSRE2ITRV5KKC
+Content-Length: 644
+
+software: Wget/1.19.4 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: off
+wget-arguments: "--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595622350" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.republicworld.com/india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html" 
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://www.republicworld.com/india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-07-24T20:25:50Z
+WARC-Record-ID: <urn:uuid:8731c50b-28cc-4c61-b55e-98089ee008ed>
+WARC-IP-Address: 64.185.181.238
+WARC-Warcinfo-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Block-Digest: sha1:6ENXROG33XQEELDWWKLZVK5RJZ7KVDY2
+Content-Length: 302
+
+GET /india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html HTTP/1.1
+User-Agent: ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4
+Accept: */*
+Accept-Encoding: identity
+Host: www.republicworld.com
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:9721ca80-ad19-4a87-9242-9a364a6eb937>
+WARC-Warcinfo-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Concurrent-To: <urn:uuid:8731c50b-28cc-4c61-b55e-98089ee008ed>
+WARC-Target-URI: <https://www.republicworld.com/india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html>
+WARC-Date: 2020-07-24T20:25:50Z
+WARC-IP-Address: 64.185.181.238
+WARC-Block-Digest: sha1:FNDJJQRM5Z5SARMMKAOYYJBUB562CFHA
+WARC-Payload-Digest: sha1:I4R75IUOGLQ4MSYFCU6RGPCXR3KXAQZX
+Content-Type: application/http;msgtype=response
+Content-Length: 721
+
+HTTP/1.1 406 Not Acceptable
+Content-Type: text/html; charset=UTF-8
+Content-Length: 411
+Connection: keep-alive
+Date: Fri, 24 Jul 2020 20:25:51 GMT
+Strict-Transport-Security: max-age=31536000
+X-Cache: MISS,v35maa1
+Age: 0
+Server: v/6.3.9/6.3.8/v6blr1-www
+X-Version: 98
+X-Server: v/6.3.9/v6blr1-https
+
+This website is secured against online attacks. Your request was blocked due to suspicious behavior<br />
+<br />
+ Client IP : 49.207.205.233<br />
+<br />
+Incident Time : 2020-07-24 20:25:51 UTC <br />
+<br />
+ Incident ID : XxtDznZ@j7fWe2B3URmNhQAAAPc<br />
+<br />
+If you feel it was a legitimate request, please contact the website owner for further investigation and remediation with a screenshot of this page.
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:2d4a999f-d353-49c7-a8f3-e2f3157a389d>
+WARC-Warcinfo-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-07-24T20:25:51Z
+WARC-Block-Digest: sha1:W7DB6NGEKBTFGNPBDJ53GTV5HSS6W5VX
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:6c7968c0-ba2e-47de-b98b-6c0db8ffac55>
+WARC-Warcinfo-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Concurrent-To: <urn:uuid:2d4a999f-d353-49c7-a8f3-e2f3157a389d>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-07-24T20:25:51Z
+WARC-Block-Digest: sha1:4C2FVBESFUKDFLKHV5X4AUMSWNSSIMW7
+Content-Type: text/plain
+Content-Length: 468
+
+"--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595622350" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.republicworld.com/india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:07ec1066-ebce-4541-bd6f-16d79cc53485>
+WARC-Warcinfo-ID: <urn:uuid:ed69b150-5aeb-4754-a312-28e12ce0af31>
+WARC-Concurrent-To: <urn:uuid:2d4a999f-d353-49c7-a8f3-e2f3157a389d>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-07-24T20:25:51Z
+WARC-Block-Digest: sha1:DDI3ZPSN3YMVV6ZNDKPS3NZA7YSC32GY
+Content-Type: text/plain
+Content-Length: 183
+
+https://www.republicworld.com/india-news/general-news/two-up-migrant-workers-returning-from-gujarat-in-trains-die-en-route-police.html:
+2020-07-25 01:55:51 ERROR 406: Not Acceptable.
+
+

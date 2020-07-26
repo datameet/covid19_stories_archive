@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0px; font-weight:normal;}
+img{ border:none;}
+.win body{font-family:"DINAKARAN2W", Arial, Helvetica, sans-serif;line-height:!important;font-size:100%;font-weight:normal;}
+@font-face {font-family: 'DINAKARAN2W';src: url('fonts/dinakaran2w-webfont.eot');src: url('fonts/dinakaran2w-webfont.eot?#iefix') format('embedded-opentype'),/*url('dinakaran2w-webfont.woff') format('woff'),*/url('fonts/dinakaran2w-webfont.ttf') format('truetype'),url('fonts/dinakaran2w-webfont.svg#DINAKARAN2W') format('svg');font-weight:normal;}
+@font-face {font-family: 'big-jiregular';src: url('fonts/big-ji.eot');src: url('fonts/big-ji.eot?#iefix') format('embedded-opentype'),url('fonts/big-ji.woff') format('woff'),url('fonts/big-ji.ttf') format('truetype'),url('fonts/big-ji.svg#big-jiregular') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'FontAwesome';src: url('fonts/fontawesome-webfont.eot?v=4.1.0');src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');font-weight: normal;font-style: normal}
+.width-setting{width:1200px;}
+.width-setting-top{width:1000px;}
+.width-left{ width:100%; float:left;}
+
+#head-box-1{ float:left; width:100%;  background-color:#007dc6; border-bottom:solid 1px #FFF; height:30px;}
+.top-shadow-left{float:left; position:fixed; left:50%; width:283px; top:0px; margin:0px 0px 0px -923px; height:600px; z-index:500;opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */}
+.top-shadow-right{float:left; position:fixed; left:50%; width:283px; top:0px; margin:0px 0px 0px 640px; height:600px; z-index:500;opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */}
+#head-box-2{float:left; width:100%; height:90px; padding:10px 0px;
+background-image:url(https://img.dinakaran.com/images/site-use/new-header-bg.gif?id=1);background-repeat:no-repeat;background-position:center top;}
+.ad-boxtop728{ float:left; width:728px; height:90px; margin:0px -70px 0px 70px}
+img.dinakaranlogo{ float:left; margin:0px -20px 0px 20px;}
+.left-icons{ float:left;  font-weight:normal;}
+.left-icons a{ text-decoration:none; color:#FFF; text-shadow:0px 0px 15px #217392; float:left; padding:0px 10px; background-image:url(images/line-bg.png); background-repeat:no-repeat; background-position:right; width:25px; height:30px; text-align:center; line-height:30px;}
+.left-icons a:hover{ text-decoration:none; color:#FFF;text-shadow:0px 0px 6px #000;}
+
+
+
+.right-icons{ float:right; font-weight:normal;}
+.right-icons a{ text-decoration:none; color:#FFF; text-shadow:0px 0px 15px #217392; float:left; padding:0px 5px; background-image:url(images/line-bg.png); background-repeat:no-repeat; background-position:left; width:25px; height:30px; text-align:center; line-height:30px;}
+.right-icons a:hover{ text-decoration:none; color:#FFF;text-shadow:0px 0px 6px #000;}
+
+.fa232-home:before{font-family: FontAwesome;content:"\f015";}
+.fa232-epaper:before{font-family: FontAwesome;content:"\f15c";}
+.fa232-sitemap:before{font-family: FontAwesome;content:"\f0e8";}
+.fa232-facebook:before{font-family: FontAwesome;content:"\f09a";}
+.fa232-twitter:before{font-family: FontAwesome;content:"\f099";}
+.fa232-google:before{font-family: FontAwesome;content:"\f0d5";}
+.fa232-print:before{font-family: 'FontAwesome'; content:"\f02f"; padding-right:10px;}
+.fa232-plus:before{font-family: 'FontAwesome'; content:"\f055"; }
+.fa232-minus:before{font-family: 'FontAwesome'; content:"\f056"; }
+
+.fa232-star:before{font-family: 'FontAwesome'; content:"\f005"; }
+
+.fa232-rss:before{font-family: 'FontAwesome'; content:"\f09e";}
+.fa232-apple:before{font-family: 'FontAwesome'; content:"\f179";}
+.fa232-android:before{font-family: 'FontAwesome'; content:"\f17b"; }
+.fa232-google:before{font-family: 'FontAwesome'; content:"\f0d4";}
+.fa232-windows:before{font-family: 'FontAwesome'; content:"\f17a"; }
+.fa232-allnews:before{font-family: 'FontAwesome'; content:"\f00a"; }
+.fa232-pix:before{font-family: 'FontAwesome'; content:"\f03e"; }
+.fa232-vdo:before{font-family: 'FontAwesome'; content:"\f03d"; }
+.fa232-time:after{font-family: 'FontAwesome'; content:"\f017"; margin-left:8px; line-height:25px; font-size:19px; }
+.sunlogo{ float:left; width:160px; height:60px; margin:0px 0px 0px 320px; padding:2px; z-index:500;}
+.sunlogo h3{ float:left; width:140px; margin:0px; padding:0px 0px 0px 5px; color:#FFF; font-size:11.5px; line-height:13.5px; font-weight:normal; text-align:left;}
+.sunlogo a{ float:left;}
+.sunlogo a img{ float:left;width:15px;}
+
+.fa232-left:before{font-family: 'FontAwesome'; content:"\f060"; }
+.fa232-right:before{font-family: 'FontAwesome'; content:"\f061"; }
+
+
+#footer-box{ float:left; width:100%; border-top:solid 1px #007dc6;background: #191919; /* Old browsers */
+background: -moz-linear-gradient(top,  #191919 0%, #181818 76%, #181818 76%, #0f0f0f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #191919 0%,#181818 76%,#181818 76%,#0f0f0f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #191919 0%,#181818 76%,#181818 76%,#0f0f0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#0f0f0f',GradientType=0 ); /* IE6-9 */ }
+#footer-box-2{ float:left; width:100%; border-top:solid 1px #007dc6;background: #007dc6; /* Old browsers */ }
+.fotextlast{ float:left; margin:10px 10px 10px 10px; color:#FFF; text-shadow:1px 1px 2px #333; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+.win .fotextlast a{font-size:12px;}
+.fotextlast a{ text-decoration:none; color:#FFF}
+.fotextlast a:hover{ text-decoration:underline; color:#FFF}
+
+.more-link{ float:left; width:110px; margin:20px 10px 20px 20px;}
+.more-link a{ float:left; width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666; text-shadow:1px 1px 1px #000; text-decoration:none; line-height:20px;}
+.more-link a:hover{ text-decoration:none; color:#FFF;}
+
+.contact-info{ float:left; width:220px; margin:20px 10px 20px 20px;}
+.contact-info2{ float:left; width:320px; margin:20px 10px 20px 20px;}
+.contact-info h1,.contact-info2 h1{ float:left; width:100%; font-size:22px; color:#FFF; font-weight:normal; margin:0px; padding:0px;}
+.contact-info h2,.contact-info2 h2{ float:left; width:100%; font-size:16px; color:#666; font-weight:normal; margin:10px 0px 0px 0px; padding:0px;}
+.win .contact-info h1,.win .contact-info2 h1{font-size:22px;}
+.win .contact-info h2,.win .contact-info2 h2{font-size:16px;}
+.contact-info2 h3{ float:left; width:100%; font-size:13px; color:#007dc6; font-weight:normal; margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif;}
+.win .contact-info2 h3{font-size:15px; }
+.contact-info2 h3 strong{ font-size:15px; color:#FFF; font-weight: normal;}
+.win .contact-info2 h3 strong{ font-size:17px;}
+.contact-info a{ float:left; width:100%; font-size:17px; color:#007dc6; font-weight:normal; margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; text-decoration:none;}
+.win .contact-info a{font-size:19px;}
+.contact-info a:hover{ text-decoration:none; color:#FF0;}
+
+
+
+
+
+#menubar{background: #fbfafa; /* Old browsers */
+background: -moz-linear-gradient(top,  #fbfafa 0%, #e9e9ea 74%, #d9d9d9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fbfafa 0%,#e9e9ea 74%,#d9d9d9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fbfafa 0%,#e9e9ea 74%,#d9d9d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfafa', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+ float:left; padding:0;height:40px; margin:0px;  width:100%; border-bottom:solid 1px #007dc6;border-top:solid 1px #FFF;}
+
+#menubar-1{ float:left; padding:0;height:40px; margin:0px;  width:100%;}
+#menuline2{ float:left; width:1200px; margin:0px 0px; padding:0px 0px; line-height:35px; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007dc6+0,0063ba+100 */
+background: rgb(0,125,198); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,125,198,1) 0%, rgba(0,99,186,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,125,198,1) 0%,rgba(0,99,186,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,125,198,1) 0%,rgba(0,99,186,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007dc6', endColorstr='#0063ba',GradientType=0 ); /* IE6-9 */
+list-style:none;-webkit-border-bottom-right-radius: 15px;
+-webkit-border-bottom-left-radius: 15px;
+-moz-border-radius-bottomright: 15px;
+-moz-border-radius-bottomleft: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;}
+
+.icon-2box{ float:left; width:80px; margin:5px 0px 0px 0px; padding:0px 0px 0px 0px;-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;box-shadow:0px 0px 18px -3px #999; border-bottom:none; border:solid 1px #FFF; line-height:33px; height:33px;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f5f5+32,ffffff+100 */
+background: #f6f5f5; /* Old browsers */
+background: -moz-linear-gradient(top,  #f6f5f5 32%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f6f5f5 32%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f6f5f5 32%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f5f5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.icon-2box a{ float:left; width:40px; text-align:center; line-height:34px; padding:0px 0px 0px 0px; margin:0px; text-decoration:none; color:#333; font-size:21px;}
+.icon-2box a:hover{ color:#900; text-decoration:none;}
+.icon-2box a.rigimg{ background-image:url(images/line-bg-2.png); background-repeat:no-repeat; background-position:right center;}
+.icon-2box a.allnews{ font-size:16px;}
+
+.icon-2box-2{ float:left; width:80px; margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;-webkit-border-bottom-left-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-bottomright: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px; border-top:none; border-right:solid 1px #1090da;border-bottom:solid 1px #1090da;border-left:solid 1px #1090da; box-shadow:0px 0px 18px -3px #333;   line-height:35px; height:35px;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007cc5+34,028ada+100 */
+background: #007cc5; /* Old browsers */
+background: -moz-linear-gradient(top,  #007cc5 34%, #028ada 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #007cc5 34%,#028ada 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #007cc5 34%,#028ada 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007cc5', endColorstr='#028ada',GradientType=0 ); /* IE6-9 */
+
+
+}
+.icon-2box-2 h1{ float:left; width:40px; line-height:35px; margin:0px; padding:0px;}
+.icon-2box-2 h1 a{ float:left; width:40px; text-align:center; font-weight:normal; line-height:35px; padding:0px 0px 0px 0px; margin:0px; text-decoration:none; color:#FFF; font-size:17px;}
+.icon-2box-2 h1 a:hover{ color:#FF0; text-decoration:none;}
+.icon-2box-2 h1 a.rigimg-2{ background-image:url(images/line-bg-2.png); background-repeat:no-repeat; background-position:right center;}
+#menutop{ float:left;width:1110px; margin:0px; padding:0px;}
+#menutop li{float:left; line-height:40px; height:40px; list-style:none;}
+.win #menutop li a{ float:left; padding:0px 10px; line-height:40px; font-size:17px; color:#333;text-decoration:none; background-image:url(images/line-bg-2.png); background-repeat:no-repeat; background-position:right center;}
+#menutop li a{ float:left; padding:0px 7px; line-height:40px; font-size:16px; color:#333;text-decoration:none;}
+#menutop li a:hover{ text-decoration:none; color:#900;}
+
+#menubottom{ float:left; width:1108px; margin:0px; padding:0px;}
+#menubottom li{float:left; line-height:35px; height:35px; list-style:none;}
+#menubottom li a{ float:left; padding:0px 10px; line-height:35px; color:#FFF;  text-decoration:none;font-size:16px; background-image:url(images/line-bg.png); background-repeat:no-repeat; background-position:right center;}
+.win #menubottom li a{font-size:17px;}
+#menubottom li a:hover{ text-decoration:none; color:#FF0;}
+
+
+.icon-2box-2 h1 ul.sub-menu{ display:none; list-style:none; width:220px;  margin:35px 0px 0px 0px; border-top:solid 2px #900; padding:0px; float:left; position:absolute; z-index:100; box-shadow:0px 0px 15px #666; background-color:#FFF;}
+.icon-2box-2 h1:hover ul.sub-menu{list-style:none; display:block; }
+.icon-2box-2 h1:hover ul.sub-menu li{list-style:none; margin:0px; padding:0px 6%; line-height:35px; border-bottom:dotted 1px #999; float:left; width:88%;}
+.icon-2box-2 h1:hover ul.sub-menu li a{ float:left; width:100%; margin:0px; line-height:35px; font-size:17px; font-weight:normal; padding:0px 0px; text-align:left; color:#900; text-decoration:none;}
+.icon-2box-2 h1:hover ul.sub-menu li a:hover{ text-decoration:none; color:#000;}
+
+#menubottom li ul.sub-menu-2{ display:none; list-style:none; width:220px;  margin:35px 0px 0px 0px; border-top:solid 1px #005484;border-left:solid 1px #005484;border-right:solid 1px #005484;border-bottom:solid 1px #005484;  padding:10px 0px; float:left; position:absolute; z-index:100; box-shadow:2px 2px 15px -5px #000;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0762b3+0,064e96+100 */
+background: #0762b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #0762b3 0%, #064e96 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0762b3 0%,#064e96 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0762b3 0%,#064e96 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0762b3', endColorstr='#064e96',GradientType=0 ); /* IE6-9 */
+-webkit-border-radius: 20px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 20px;
+-moz-border-radius-topleft: 0;
+border-radius: 20px;
+border-top-left-radius: 0;
+}
+#menubottom li:hover ul.sub-menu-2{list-style:none; display:block; }
+#menubottom li:hover a{ color:#FF0;}
+#menubottom li:hover ul.sub-menu-2 li{list-style:none; padding:0px; margin:0px 6%; line-height:35px; border-bottom:dotted 1px #1090da; float:left; width:88%;}
+#menubottom li:hover ul.sub-menu-2 li a{ float:left; width:100%; margin:0px; line-height:35px; font-size:17px; background-image:none; font-weight:normal; padding:0px 0px; text-align:left; color:#FFF; text-decoration:none;}
+#menubottom li:hover ul.sub-menu-2 li a:hover{ text-decoration:none; color:#FF0;}
+
+.sun-icon{ float:left; width:650px; text-align:center; margin:0px 0px 0px 0px;}
+.sun-icon a img{ float:left; width:15px; margin:2px 0px 0px 400px; }
+.sun-icon h1{ float:left; width:130px; margin:2px 0px 0px 10px; font-size:11.5px; line-height:12px; text-align:left; color:#FFF; font-weight:normal;}
+.mac .sun-icon h1{ float:left; width:130px; margin:2px 0px 0px 10px; font-size:8.5px; line-height:12px; text-align:left; color:#FFF; font-weight:normal;}
+
+a.hot-break{ width:100%; float:left; line-height:60px; margin:5px 0px 0px 0px; text-align:center; color:#FFF;background-image:url(https://img.dinakaran.com/images/site-use/bg-blue-black.gif); font-size:30px; text-decoration:none;}
+a.hot-break:hover{ text-decoration:none; color:#FF0;}
+
+@media (max-width: 770px) and (min-width:319px){a.hot-break{ font-size:18px; line-height:22px; margin:65px 0px -65px 0px; padding:10px 0px}}

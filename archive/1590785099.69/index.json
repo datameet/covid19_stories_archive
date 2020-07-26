@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Accused of \u2018hugging people\u2019, man beaten up by policeman and locals | Cities News,The Indian Express",
     "timestamp": "1590785099.69",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 8,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787643",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/"
+                ],
+                "end_ts": "2020-05-29 21:27:32.074732",
+                "start_ts": "2020-05-29 21:27:23.683458",
+                "pwd": "/data/archive/1590785099.69",
+                "output": "indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/index.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529212739/https://indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 8,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590787643",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/"
-                ],
-                "end_ts": "2020-05-29 21:27:32.074732",
-                "start_ts": "2020-05-29 21:27:23.683458",
-                "pwd": "/data/archive/1590785099.69",
-                "output": "indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/index.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787660.492537",
+    "updated": "1595622301.143966",
     "tags": "",
     "url": "https://indianexpress.com/article/cities/delhi/accused-of-hugging-people-man-beaten-up-by-policeman-and-locals-6400944/"
 }

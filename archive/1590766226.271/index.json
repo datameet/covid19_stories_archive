@@ -1,8 +1,12 @@
 {
     "title": "Elderly man found dead in Pune, note found in flat states \u2018corona fear\u2019 | Pune News - Times of India",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.271",
     "history": {
@@ -226,7 +230,7 @@
             }
         ]
     },
-    "updated": "1590788668.387742",
+    "updated": "1595622505.805397",
     "tags": "",
     "url": "https://timesofindia.indiatimes.com/city/pune/elderly-man-found-dead-note-found-in-flat-states-corona-fear/articleshow/75073842.cms"
 }

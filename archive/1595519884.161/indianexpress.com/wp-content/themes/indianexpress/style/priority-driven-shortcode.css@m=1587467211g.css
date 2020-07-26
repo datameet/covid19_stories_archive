@@ -1,0 +1,18 @@
+.pdsc-related-modify {background: #eee;box-sizing: border-box;width: 100%;padding: 15px;float: none;border-radius: 4px;margin: 0 auto 20px;display: block;clear: both;}
+.pdsc-related-txt {border-bottom: 1px solid #c7c7c7;color: #000;font-size: 18px;font-weight: 500;padding: 0 0 8px 0;font-family: 'Roboto', sans-serif;}
+.pdsc-related-txt a{color: #000;}
+.pdsc-related-modify ul {padding: 10px 0 5px;margin: 0px 0 0px 0;clear: both;}
+.pdsc-related-modify li {box-sizing: border-box;display: block;overflow: hidden;width: 100%;color: #404040;position: relative;padding: 0 0 10px 20px;font-family: Roboto, sans-serif;font-size: 15px;line-height: 20px;}
+.pdsc-related-modify li a {color: #000;font-family: Roboto, sans-serif;font-size: 15px;line-height: 22px;text-decoration: underline;text-decoration-color: #ddd;text-underline-position: under;cursor: pointer;display: inline-block;}
+.pdsc-related-modify li a:hover {text-decoration: none;}
+.pdsc-related-modify li:before,.pdsc-related-modify li:after {content: "";position: absolute;}
+.pdsc-related-modify li:before {width: 8px;height: 8px;left: 0;top: 8px;background: #B0B0B0;border-radius: 50%;}
+.pdsc-full-coverage-link {padding: 0 0 0px 20px;display: block;margin-top: 2px;}
+.pdsc-full-coverage-link a {color: #2E658E;text-transform: uppercase;font-family: 'Roboto', sans-serif;font-size: 11px;font-weight: bold;}
+
+@media (max-width: 767px) {
+    .pdsc-related-modify {max-width: 100%; padding: 10px;}
+    .pdsc-related-modify li:before {top: 6px;}
+    .pdsc-related-txt {border-bottom: 1px solid #c7c7c7;color: #000;font-size: 16px;line-height: 1.2; font-weight: 500;padding: 0 0 8px 0; font-family: roboto;}
+    .pdsc-related-modify li a { font-size: 13px; line-height: 20px;}
+}

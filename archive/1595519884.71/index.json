@@ -1,0 +1,192 @@
+{
+    "url": "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28",
+    "timestamp": "1595519884.71",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "Two Covid-19 patients commit suicide at Chennai hospitals within 24 hours - India News",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:56:33.613911",
+                "end_ts": "2020-07-24 22:56:34.337122",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.indiatoday.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:56:34.341998",
+                "end_ts": "2020-07-24 22:56:34.629532",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595611594",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:56:34.632926",
+                "end_ts": "2020-07-24 22:57:01.630337",
+                "duration": 26
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:57:01.632361",
+                "end_ts": "2020-07-24 22:57:06.527325",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:57:06.529745",
+                "end_ts": "2020-07-24 22:57:10.872287",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:57:10.874735",
+                "end_ts": "2020-07-24 22:57:16.340759",
+                "duration": 5
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:57:16.342522",
+                "end_ts": "2020-07-24 22:57:19.331929",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.indiatoday.in/india/story/two-covid-19-patients-commit-suicide-at-chennai-hospitals-within-24-hours-1682915-2020-05-28"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.71",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:57:19.333440",
+                "end_ts": "2020-07-24 22:57:37.873307",
+                "duration": 18
+            }
+        ]
+    },
+    "updated": "1595611657.873758"
+}

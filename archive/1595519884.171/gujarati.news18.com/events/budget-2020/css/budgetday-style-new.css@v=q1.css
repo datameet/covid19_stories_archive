@@ -1,0 +1,316 @@
+/* budget highlight and banner start */
+.budgetwrap{}
+.budgetwrap.forgrey {background: #f5f5f5;}
+.budgetwrap .outer{ padding:0px 20px; background:#fff; }
+.budget-left{width:calc(100% - 320px); float: left;}
+.budget-right{width:300px; float: right;}
+.df-jcsb { display: flex;  justify-content: space-between;}
+
+.budget-header {border-top: 1px solid #cfcfcd; border-bottom: 2px solid #868686; background: url(../../../../images.hindi.news18.com/ibnkhabar/uploads/2019/01/bd-ban-bakground.jpg) 0 0 no-repeat;line-height: 0; background-size: cover;}
+.budget-header .bhlbox {position: relative;}
+.budget-header .bhlbox img{width: 350px; padding: 5px 15px 10px 15px; background: rgba(255, 255, 255, 0.8); box-sizing: border-box;}
+
+.budget-header .bhlbox .tsonsor { position: absolute; top: 5px;  left: 0;}
+.budget-header .bhlbox .tsonsor span {  position: absolute; top: 15px;  right: -35px;  font-size: 11px; color: #686868;  text-transform: uppercase; transform: rotate(-90deg);}
+.budget-header .bhlbox .budgetlogo { padding-top: 6px;}
+.budget-header .bhrbox { display: flex; justify-content: space-between; width: 726px; height: 77px; padding-top: 5px; display: none;}
+.budget-header .bhrbox .sponcer-box { background: #fff; padding: 1px 2px 2px;}
+.budget-header .bhrbox .sponcer-box h2 {font-size: 9px; text-transform: uppercase; color: #6a6a6a;  text-align: center; line-height: 10px; border-bottom: 1px solid #dbdbdb; margin-bottom: 5px; height: 5px;}
+.budget-header .bhrbox .sponcer-box h2 span {background: #fff; padding: 0 3px;}
+.budget-header .bhrbox .asponsor img { padding-right: 1px;}
+
+.hlight-contener {padding:15px 0 0;}
+.budget-hlight {border: 1px solid #c1c1c1; padding: 0px;  position: relative; height: 52px;box-shadow: 0px 2px 6px rgba(0,0,0,.2);line-height: 1.3;}
+.budget-hlight h2 {  font-size: 20px;line-height: 18px;  font-weight: bold;; color: #dd2827;   text-align: right;   background: #fff;  padding:10px 10px 0 12px;  position: absolute;  top: 0;  left: 0;  text-transform: uppercase; height: 100%; box-sizing: border-box;}
+.budget-hlight h2 span { display: block;  font-size: 16px;  font-weight: normal; text-align: right;}
+.ofhidden-outer { position: relative;padding: 6px 20px;}
+.ofhidden-outer .pvr {  position: absolute;  top: 23px; left: 10px;  border-top: 6px solid transparent; border-bottom: 6px solid transparent;
+    border-right: 6px solid #222;  width: auto;  height: auto;  background: none;  transform: none;   margin: 0;  border-left: none;}
+.ofhidden-outer .nxt {  position: absolute; top: 23px;right: 10px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 6px solid #222;  width: auto;
+    height: auto;    background: none; transform: none;    margin: 0; }
+.ofhidden-outer .pvr:before, .ofhidden-outer .nxt:before{ display: none;  }
+.ofhidden-outer .ofinnerbox { overflow: hidden;  border-left: 1px solid #b0b0b0;  border-right: 1px solid #b0b0b0;  height: 42px;}
+.budget-hlight ul.hilight li {max-width:250px; outline: none; border-right: 1px solid #b0b0b0; padding: 0 15px;  font-size: 13px;  line-height: 19px;  font-weight: bold;  border-bottom: 0;   height: 42px;  display: flex;  align-items: center;cursor: pointer; float: left;}
+.budget-hlight ul.hilight li strong { padding: 5px;  font-size: 14px;  color: #202020;  display: flex;  align-items: center; }
+.budget-hlight ul.hilight li strong span{width: 22px;  height: 22px;  font-weight: normal;  color: #fff;   border-radius: 100%;  font-size: 13px;   text-align: center;  line-height: 35px;  margin-left: 5px;  flex-shrink: 0;  display: flex;  align-items: center;}
+.budget-hlight ul.hilight li strong span img { margin: auto;}
+.budget-hlight ul.hilight li strong span.sasta{ background: #017200 }
+.budget-hlight ul.hilight li strong span.mahanga{ background: #ce0000 }
+.midDiv{ padding-top: 0px }
+.mob_ad {padding: 16px 0;line-height: 0;text-align: center;  background: #dbdde3; display: none;}
+.addinner-box {background: #e8e9ed;min-width: 250px;display: inline-block;margin: 0 auto;text-align: center;min-height: 250px;padding: 0 10px 10px;}
+.addinner-box span {color: #797e90;font-size: 11px;text-align: center;padding: 2px 0 0;display: block;line-height: 16px;}
+
+/* budget highlight and banner end */
+
+/* budget top large heading and four story start */
+.bhilighth1 {font-size: 40px;  line-height: 50px;  color: #282828;  padding: 15px 20px 20px 0;  text-align: center;     font-weight: bold;}
+.bhilighth1 a { color: #282828; }
+.hlight-point {border-top: 1px solid #bbb9b9; margin-bottom: 20px }
+.hlight-point li {font-size: 14px; line-height: 20px;  color: #4f4f4f;  display: flex;  border-bottom: 1px solid #bbb9b9; padding: 15px 0;  flex-basis: 218px;}
+.hlight-point li h2 { font-size: 45px; line-height: 40px;  color: #bfbfbf;  padding-right: 10px; font-weight: normal;}
+.hlight-point li a { color: #4f4f4f;}
+/* budget top large heading and four story end */
+
+/* budget live tv and story start */
+a{color:#4f4f4f}
+.budgetwrap-union{}
+.toptwosection { position: relative; margin-bottom: 20px}
+.toptwosection-left{width:45%;}
+.lb-lbox{ height: 250px; overflow: hidden; margin-bottom: 15px; cursor:pointer; }
+.lb-lbox figure{position: relative; width: 100%; float: left;}
+.lb-lbox img{width:100%}
+.lb-lbox figure span{border-radius: 50%;height: 50px; width:50px; background:rgba(00, 00, 00, 0.6); position: absolute; top:38%;left:45%;border:2px solid #fff}
+.lb-lbox figure span:before{ content:''; border-top:12px solid transparent;border-bottom:12px solid transparent; border-left:12px solid #fff; position: absolute; top:14px; left: 20px}
+.lb-lbox figure strong{background:#e1261c; font-weight: bold; font-size:16px;padding:5px 10px; text-transform: uppercase; position: absolute; top:0;  right:0;color:#fff}
+.lb-lbox figure strong img{padding-right:5px; width:auto}
+.toptwosection-middle{background: #f3f3f3; padding: 0 20px; box-sizing: border-box;}
+.toptwosection-middle li{border-bottom: 1px dotted #939393; padding: 15px 0; font-size: 16px; line-height: 22px; font-weight: bold;}
+.toptwosection-middle li:last-child{ border: none; }
+.toptwosection-right{width:53%;}
+.btstory{}
+.btstory li {background: #f3f3f3; margin-bottom: 10px;  font-size: 18px;  line-height: 26px; align-items: center; font-weight: bold; display: flex;}
+.btstory li a:first-child{ flex-shrink: 0 }
+.btstory li img {width:180px; padding-right: 15px; display: block;}
+.livetv-exp {position: absolute; top: 0;  left: 0;  width: 100%;  height: 100%;  background: #000; z-index: 2;  display: none; padding-top: 30px;}
+.livetv-exp a { color: #fff;  font-size: 16px; position: absolute;  top: 6px;  right: 10px;}
+.toptwosection-left-story li figure{margin-bottom:15px; width:100%;}
+.toptwosection-left-story li figure img{ width:100%;}
+.toplargehd { font-size: 24px; line-height: 30px; font-weight: bold;  margin: 10px 0;}
+.toptwosection-left-story .budget-title{ display: none; }
+.toptwosection .toplargehd { font-size: 20px; line-height: 28px;}
+/* budget live tv and story end */
+
+/* budget cheaper dearer start */
+.cheaperdiper-contener {padding-bottom: 15px;}
+.cheaperdiper-hlight {border: 1px solid #c1c1c1; padding: 0 0 0 80px;  position: relative; height: 60px;  background: #ececec;}
+.cheaperdiper-hlight h2 {position: absolute; top: 0;  left: 0;  background: #fff;  font-size: 18px;  color: #000;  text-align: right; padding: 10px;  text-transform: uppercase;  line-height: 19px;  height: 100%;  border-right: 1px solid #ddd; box-sizing: border-box; font-weight: bold;}
+.cheaperdiper-hlight h2 span {font-size: 12px; display: block; font-weight: normal;}
+.cheaperdiper-hlight h2 span a.green {color: #0d7100;}
+.cheaperdiper-hlight h2 span a.red {color: #cc0000;}
+.cheaperdiper-in{ overflow: hidden; margin-top: 10px }
+.cheaperdiper-in .slick-arrow{ display: none !important; }
+.cheaperdiper-in li {max-width:250px; outline: none; border-right: 1px solid #b0b0b0; padding: 0 15px;  font-size: 13px;  line-height: 19px;  font-weight: bold;  border-bottom: 0; height: 42px;  display: flex;  align-items: center;cursor: pointer; float: left;}
+.cheaperdiper-in li strong { padding: 5px;  font-size: 14px;  color: #202020;  display: flex;  align-items: center; }
+.cheaperdiper-in li strong span{width: 35px;  height: 35px; font-weight: normal;  color: #fff;  border-radius: 100%; font-size: 13px;  text-align: center;  line-height: 35px;  margin-left: 5px;  flex-shrink: 0;  display: flex; align-items: center; }
+.cheaperdiper-in li strong span img { margin: auto;}
+.cheaperdiper-in li strong span.sasta{ background: #017200 }
+.cheaperdiper-in li strong span.mahanga{ background: #ce0000 }
+/* budget cheaper dearer end */
+
+
+.globalimg{width:100%; position: relative; margin:0; padding: 0; overflow: hidden;}
+.globalimg img{width:100%;; float: left; transform: scale(1); transition: all .5s ease-in-out}
+.globalimg:hover img{transform: scale(1.2); transition: all .5s ease-in-out}
+.bmore {background: #ddd; text-align: center; height: 10px; line-height: 5px; margin-top: 10px;}
+.bmore a { background: #fff; padding: 0 12px;  font-size: 12px;  text-transform: uppercase; color: #e1261d; font-weight: bold;}
+.budget-title {font-size: 20px; font-weight: bold; color: #dd2827; text-transform: uppercase; padding-bottom: 10px;}
+
+
+/* budget graphic details and videos start */
+
+.nvrbox { width: 45.9956709957%; }
+.nvrbox li { display: flex;  font-size: 14px;  line-height: 20px;  border-bottom: 1px dotted #939393; padding: 15px 0 12px; font-weight: bold;}
+.nvrbox li:first-child {padding-top: 0;}
+.nvrbox li figure {margin-right: 20px;position: relative; width:126px;flex-shrink: 0;}
+.nvrbox li .video-sicon {width: 25px; height: 25px;  right: 10px; bottom: 10px}
+.nvrbox li .video-sicon:after {top: 25%;}
+.sectorila-listing{ flex-wrap: wrap; }
+.sectorila-listing li {flex-basis: 216px; padding-bottom: 10px; font-size: 14px; line-height: 22px;}
+.sectorila-listing li .tbox {display: flex; justify-content: space-between; font-size: 16px; font-weight: bold;}
+.sectorila-listing li h2 { font-size: 14px; font-weight: bold; line-height: 22px; padding-top: 6px;}
+.sectorila-listing li .tbox a { color: #e1261d;}
+.sectorila-listing li figure{ margin-bottom: 10px }
+.sectionnam {display: block; text-transform: uppercase;  color: #e1261d;  font-size: 12px; font-weight: normal;}
+
+.toplargehd{font-size: 24px; line-height: 30px; font-weight: bold; margin: 10px 0 }
+.topsmallhd{font-size: 20px; line-height: 24px; font-weight: bold;}
+.over-perfom {}
+.over-perfom h2 { font-size: 16px; text-transform: uppercase;  color: #dd2827; background: #f3f3f3; height: 11px; line-height: 11px;}
+.over-perfom figure {border: 1px solid #c1c1c1; margin-top: 15px;}
+.over-perfom figure img{width: 100%}
+.rgtad{ text-align: center; }
+.btmstr{}
+.bdgtvdstr{}
+/* budget graphic details and videos end */
+/* body{ background: #fff } */
+div.brade_crum{font-size:16px;line-height:20px;padding-top:0;box-sizing: border-box;}
+.brade_crum a{color: #282828;}
+.brade_crum h1{font-size:14px; display: inline-block;}
+
+.topthreesection { position: relative;}
+.topthreesection-left{width:37%;}
+.topthreesection-left li{ border-top: 1px dotted #939393;padding: 15px 0;}
+.topthreesection-left li:first-child{ border-top: none;padding: 0px 0 15px 0;}
+.toplargehd{font-size: 24px; line-height: 30px; font-weight: bold; margin: 10px 0 }
+.topsmallhd{font-size: 20px; line-height: 24px; font-weight: bold;}
+.topthreesection-left li p{font-size: 14px; line-height: 20px;  color: #5a5a5a;}
+.topthreesection-middle{width: 35%; padding: 0 20px; box-sizing: border-box;}
+.topthreesection-middle li{border-bottom: 1px dotted #939393; padding: 15px 0; font-size: 16px; line-height: 22px; font-weight: bold;}
+.topthreesection-middle li:last-child{ border: none; }
+.topthreesection-right{width:24%;}
+.topthreesection-right li{border-top: 1px dotted #939393; padding: 15px 0; font-size: 16px; line-height: 22px; font-weight: bold;}
+.topthreesection-right li:first-child{ border: none; padding-top: 0px }
+.topthreesection-middle.forbottom{background: none;padding: 0;}
+.topthreesection-middle.forbottom li{ padding: 10px 0 }
+.topthreesection-middle.forbottom li:first-child { padding-top: 0px}
+
+
+/* ===============&&&&&&&&&&&&&&&&===================== */
+
+.bd-layout{max-width:1244px;width:100%;margin:0px auto;}
+.bd-layout a{color: #111;}
+ul{list-style: none;}
+.bd-hl-header{background: #f3f3f3;display: flex;padding: 10px;font-size: 17px;align-items: center;border:1px solid #dddddd;box-sizing:border-box;}
+.bd-hl-header strong{margin-right: 15px;color: #ec353a;font-size: 17px;font-weight: bold;}
+.bd-hl-header strong a{color: #ec353a}
+.bd-hl-header ul{display: flex;align-items: center;overflow: hidden;}
+.bd-hl-header ul li{margin-right: 15px;padding-left: 20px;position: relative;}
+.bd-hl-header ul li:before{content: "";width: 10px;height: 10px;border-radius: 50%;background: #000;left: 0;position: absolute;top:50%;margin-top: -5px;}
+.bd-hl-header ul a{font-weight: bold;}
+.bd-hl-header ul .slick-list {overflow:hidden;}
+.bd-hl-header ul .slick-track {display: flex;}
+.bd-toslider{border:1px solid #ddd;padding: 10px;display: flex;}
+.bdslid-title strong{font-size: 18px;font-weight: 700;color: #000;text-transform: uppercase;}
+.bdslid-title span {text-transform: uppercase;font-size: 13px;font-weight: lighter;}
+.bd-green{color: #017200;}
+.bd-red{color: #ce0000;}
+.bd-green-bg{background: url('https://gujarati.news18.com/events/budget-2020/css/images/up-arrow.png') center center no-repeat;}
+.bd-red-bg{background: url('https://gujarati.news18.com/events/budget-2020/css/images/down-arrow.png') center center no-repeat;}
+.bdslidercont{overflow: hidden;width: 100%;position: relative;padding: 0 20px;}
+.test{border-right:1px solid #ddd;}
+.bdslidercont:before{content: "";width:1px;height: 100%;border-left: 1px solid #ddd;position: absolute;left: 20px;top:0;}
+.bdslidercont:after{content: "";width:1px;height: 100%;border-right:1px solid #ddd;position: absolute;right: 20px;top:0;}
+.bdslider, .bdslider a{display: flex;align-items: center;}
+.bdslider {padding:0 15px;width: 100%;position: relative;}
+.bdslider li{border-right:1px solid #ddd;padding: 10px 0;margin-right: 15px;}
+.bdslider strong{text-transform: capitalize;font-size: 15px;}
+.cirs {width: 22px;height: 22px;border-radius: 50%;margin:0 15px;}
+.bdslider .slick-list {width: 100%;overflow: hidden;}
+.bdslider .slick-track {display: flex;}
+.bdslider button.slick-arrow{background: transparent;width:15px;height: 15px;border: none;position: absolute;font-size: 0;line-height: 0;z-index: 1;}
+.bdslider button.slick-next  {right:-20px;border-left:7px solid #000;border-top:7px solid transparent;border-bottom:7px solid transparent;}
+.bdslider button.slick-prev{left:-20px;border-right:7px solid #000;border-top:7px solid transparent;border-bottom:7px solid transparent;}
+.bd-ts>div,.bd-ts>figure{flex:1}
+.bd-ts figure img{display:block;height:100%;width:100%;object-fit:cover}
+.bd-ts>div{padding:70px 60px 20px 60px;position:relative;box-sizing:border-box;}
+.bd-h-cont>strong{position:absolute;background:#ffe400;color:#000;left:50%;top:0;text-transform:uppercase;padding:5px 10px;font-size:22px;font-weight: bold;transform: translateX(-50%);}
+.bd-ts h1{font-size:22px;color:#fff;margin-bottom:20px}
+.bd-ts a:hover {color: #fff;}
+.bd-ts a{color:#fff;font-size:16px;display:block;margin:20px 0;padding:0 0 0 30px;position:relative;line-height:26px}
+.bd-ts a.arrow:after,.bd-ts a.arrow:before{width:7px;height:1.5px;background:#fff}
+.bd-ts a:after,.bd-ts a:before{content:"";position:absolute;left:0}
+.bd-ts a.arrow:before{transform:rotate(37deg);top:11px}
+.bd-ts a.arrow:after{transform:rotate(-41deg);top:14px}
+.bd-ts{background: url('../../../../static.hindi.news18.com/ibnkhabar/uploads/2019/07/budgetbreakingnewsbg.jpg') center center no-repeat;background-size: cover;}
+.bd-ts figure + .bd-h-cont{text-align: left;}
+.bdtwocol h6{font-weight: normal;}
+.bd-ts {text-align: center;display:flex;}
+.bd-ts a{display: inline-block;font-weight: normal;padding-left: 20px;margin:5px 0;}
+.bd-tscont{margin-bottom: 20px;}
+
+/* ===============&&&&&&&&&&&&&&&&===================== */
+
+@media(min-width:768px){
+.bd-ts > figure{flex:none;width:38%;}
+.for_mobile_add_only{display: none;}
+ul.topthreesection-right{display:block;}
+ul.topthreesection-right li{width:100%;}
+.calc_iframe{width:100% !important;}
+.topthreesection-middle{margin-top:15px;}
+.globalimg{margin-bottom:10px;}
+.bd-hl-header{margin-bottom: 20px;padding: 12px 10px !important;}
+.budget-hlight{display:flex;align-items: center;}
+.budget-hlight > .bdslid-title{flex:none;width:110px;}
+.budget-hlight > .ofhidden-outer{width:100%;overflow: hidden;}
+.bdslid-title{width: 150px;padding-left: 15px;}
+
+}
+
+@media screen and (max-width:767px){
+.budget-header .container { padding: 0px }
+.budget-header .bhlbox img{width: 80%; padding: 5px 5px 10px 5px;}
+
+.budget-left,  .budget-right,  .toptwosection ul, .budget-video .bvlbox, .nvrbox, .toptwosection-left{width: 100%;}
+.budget-header{margin-bottom: 10px}
+.budgetwrap .outer{padding:0px 10px;}
+.budgetwrap .container{padding:0px;}
+.ofhidden-outer{ padding:0px  }
+.ofhidden-outer .ofinnerbox{border: none; height: auto;  padding: 10px 0;}
+.toptwosection-left{ margin-bottom: 10px }
+.budget-hlight{ height: auto; padding: 0 }
+.budget-hlight ul.hilight li{ padding: 0 5px;height: 30px; }
+.budget-hlight h2{padding:10px 10px 4px 10px; position: relative; text-align: left; font-size: 14px; font-weight: bold; height: auto;}
+.budget-hlight h2 span {display: inline-block; font-size: 14px;}
+.budget-hlight ul.hilight li strong span {width: 22px; height: 22px; font-size: 11px;  line-height: 32px;}
+.budget-hlight ul.hilight li strong {font-size: 14px; background: none}
+.ofhidden-outer .slick-arrow{ display: none !important; }
+
+.bhilighth1 {font-size: 20px; line-height: 28px; padding: 0 10px 10px 20px;}
+.hlight-point { display: none}
+
+.toptwosection, .budget-video, .sectorila-listing{ flex-wrap: wrap;}
+.toptwosection {padding: 0 10px; margin-top: 15px;}
+.lb-lbox{margin-bottom: 5px; height: 220px;}
+.toptwosection-right {display: block; width: 100%; margin-top: 15px;}
+.toptwosection-right li {width: 100%; font-size: 15px; display: block;  line-height: 22px; box-sizing: border-box;}
+.btstory li img{ display: none; }
+.btstory li img { width: 130px;}
+.btstory li:first-child{ padding-right: 0px; background: #fff; font-size: 18px; line-height: 28px;}
+.btstory li:first-child img{width:100%; margin-bottom: 10px; display: block;}
+.btstory li:last-child{ display: none; }
+.livetv-exp{ height: 200px }
+.budget-rate *{ box-sizing: initial; }
+.budgetwrap-union .container{ padding:0px; }
+.toptwosection-left-story .budget-title{ display: block; margin-top: 15px }
+.toptwosection-left-story .toplargehd { font-size: 18px; line-height: 28px;   margin: 0;}
+/* .tpnews{ margin-top: 20px } */
+
+.cheaperdiper-contener { margin: 0 10px;}
+.cheaperdiper ul{ overflow: scroll; }
+.cheaperdiper-hlight{ height: auto; padding: 0 }
+.cheaperdiper-hlight h2 {padding: 8px 10px 4px 10px;  position: relative;  text-align: left; font-size: 14px;}
+.cheaperdiper-hlight h2 span{ display: inline-block; }
+.cheaperdiper-in {padding-bottom: 0;  border: none; height: auto; border-top: 1px solid #c1c1c1;  padding: 5px 0; margin-top: 0;}
+.cheaperdiper-in li{ padding: 0 5px;height: 30px; }
+.cheaperdiper-in li strong span {width: 30px; height: 30px; font-size: 11px;  line-height: 32px;}
+.cheaperdiper-in li strong {font-size: 14px; background: none}
+
+.nvrbox{margin-top: 10px}
+.btmstr{ margin: 0 10px 20px 10px   }
+.bdgtvdstr{ margin: 0 10px }
+.sectorila-listing li{ flex-basis: 100%; margin-bottom: 10px }
+.topthreesection-left li:last-child{ display: none; }
+.topthreesection-right {display:block;}
+.topthreesection-right li { padding: 15px 0 !important; }
+.topthreesection-right li .globalimg{margin-bottom: 15px;}
+.topthreesection-right li .global-smalhd{line-height: 1.3;font-size: 22px;}
+
+.sectorila-listing { padding: 0 10px;}
+/*.navigation{ display: none !important; }*/
+body{padding-top: 54px}
+.brade_crum { padding: 0 10px }
+.wrapper{margin-top: 0px;}
+.tpadd{ margin-bottom: 10px }
+
+.topthreesection { flex-wrap: wrap;padding: 0;}
+.topthreesection ul{width: 100%;}
+.topthreesection-left .toplargehd,
+.topthreesection-left .toplargehd + a,
+.topthreesection-right .global-smalhd {padding: 0 10px;display: block;}
+.mob_ad{ display: block; margin-bottom: 20px;}
+.brekurlLink{display:flex;flex-flow:column;}
+.bd-ts>figure{float:none;margin-bottom:0;order:1;}
+.bd-ts figure + .bd-h-cont{order:2;}
+.bd-hl-header{display:block;}
+.hlight-contener {margin-bottom:0;padding: 0;margin-left: -10px;margin-right:-10px;}
+.bd-ts>div{padding:60px 20px 20px !important; order:2;}
+.for_mobile_add_only{margin-bottom: 20px !important;}
+.bdslid-title{display: flex;margin:0;padding: 10px;}
+.bdslid-title h4{margin-left: 10px;}
+.bd-hl-header strong{display: block;margin-bottom: 10px;}
+.bd-2019-widgetcont{margin-bottom: 0px !important}
+.bd-tscont{margin-bottom: 0px}
+.topthreesection-right{display:none}
+.bd-h-cont>strong{font-size:22px;}
+}

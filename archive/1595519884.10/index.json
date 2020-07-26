@@ -1,0 +1,192 @@
+{
+    "url": "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express",
+    "timestamp": "1595519884.10",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "10-Month-Old Baby, Migrant Labourer Die on Shramik Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:07.477401",
+                "end_ts": "2020-07-24 20:06:12.913763",
+                "duration": 5
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.thequint.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:12.916557",
+                "end_ts": "2020-07-24 20:06:13.222314",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601373",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:13.224650",
+                "end_ts": "2020-07-24 20:06:31.163394",
+                "duration": 17
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:31.165107",
+                "end_ts": "2020-07-24 20:06:40.155581",
+                "duration": 8
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:40.157593",
+                "end_ts": "2020-07-24 20:06:42.557491",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:42.559420",
+                "end_ts": "2020-07-24 20:06:43.623430",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:06:43.625199",
+                "end_ts": "2020-07-24 20:06:59.864150",
+                "duration": 16
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.thequint.com/news/india/10-month-old-baby-and-migrant-labourer-die-on-shramik-express"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.10",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:06:59.866119",
+                "end_ts": "2020-07-24 20:07:28.635957",
+                "duration": 28
+            }
+        ]
+    },
+    "updated": "1595601448.637112"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881",
+    "timestamp": "1595519884.147",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u090a\u0928 \u092e\u0947\u0902 \u092a\u0924\u094d\u0928\u0940 \u0928\u0947 \u0915\u0940 \u092e\u093e\u092f\u0915\u0947 \u091c\u093e\u0928\u0947 \u0915\u0940 \u091c\u093f\u0926, \u092a\u0924\u093f \u0928\u0947 \u0915\u093f\u092f\u093e \u092e\u0928\u093e \u0924\u094b \u0915\u0930 \u0932\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921 - migrant woman commits suicide in lockdown",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:58:28.410982",
+                "end_ts": "2020-07-25 00:58:29.243481",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=punjab.punjabkesari.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:58:29.249654",
+                "end_ts": "2020-07-25 00:58:29.733129",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595618909",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:58:29.739702",
+                "end_ts": "2020-07-25 00:59:22.869889",
+                "duration": 53
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:59:22.871685",
+                "end_ts": "2020-07-25 00:59:37.383645",
+                "duration": 14
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:59:37.385243",
+                "end_ts": "2020-07-25 00:59:41.749911",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:59:41.751532",
+                "end_ts": "2020-07-25 00:59:47.025141",
+                "duration": 5
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:59:47.027837",
+                "end_ts": "2020-07-25 00:59:49.267931",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://punjab.punjabkesari.in/punjab/news/migrant-woman-commits-suicide-in-lockdown-1178881"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.147",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:59:49.270505",
+                "end_ts": "2020-07-25 01:00:46.505949",
+                "duration": 57
+            }
+        ]
+    },
+    "updated": "1595619046.506207"
+}

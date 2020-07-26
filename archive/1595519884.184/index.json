@@ -1,0 +1,192 @@
+{
+    "url": "http://www.dinakaran.com/News_Detail.asp?Nid=591613",
+    "timestamp": "1595519884.184",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "\u0ba4\u0ba3\u0bcd\u0ba3\u0bc0\u0bb0\u0bcd \u0ba4\u0bca\u0b9f\u0bcd\u0b9f\u0bbf\u0baf\u0bbf\u0bb2\u0bbf\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0b95\u0bc1\u0ba4\u0bbf\u0ba4\u0bcd\u0ba4\u0bc1 \u0baa\u0bbf.\u0b9f\u0bc6\u0b95\u0bcd \u0baa\u0b9f\u0bcd\u0b9f\u0ba4\u0bbe\u0bb0\u0bbf \u0ba4\u0bb1\u0bcd\u0b95\u0bca\u0bb2\u0bc8: \u0b8a\u0bb0\u0b9f\u0b99\u0bcd\u0b95\u0bbe\u0bb2\u0bcd \u0bb5\u0bc7\u0bb2\u0bc8\u0baf\u0bbf\u0bb4\u0ba8\u0bcd\u0ba4 \u0bb5\u0bbf\u0bb0\u0b95\u0bcd\u0ba4\u0bbf | B.Tech graduate suicide by jumping from a tank of water: frustration with curfew - Dinakaran",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:46:24.392290",
+                "end_ts": "2020-07-25 01:46:25.612979",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.dinakaran.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:46:25.614862",
+                "end_ts": "2020-07-25 01:46:25.864349",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595621785",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "www.dinakaran.com/News_Detail.asp@Nid=591613.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:46:25.866636",
+                "end_ts": "2020-07-25 01:46:57.331827",
+                "duration": 31
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:46:57.335211",
+                "end_ts": "2020-07-25 01:47:57.483141",
+                "duration": 60
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:47:57.485133",
+                "end_ts": "2020-07-25 01:48:57.591526",
+                "duration": 60
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:48:57.593629",
+                "end_ts": "2020-07-25 01:49:02.229530",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:49:02.231327",
+                "end_ts": "2020-07-25 01:49:32.685088",
+                "duration": 30
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://www.dinakaran.com/News_Detail.asp?Nid=591613"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.184",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:49:32.686717",
+                "end_ts": "2020-07-25 01:50:11.039690",
+                "duration": 38
+            }
+        ]
+    },
+    "updated": "1595622011.040654"
+}

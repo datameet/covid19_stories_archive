@@ -1,0 +1,12 @@
+_ajax=function(){fileName:"";callMethod:"get";callParam:[];isAsynchronus:!0;this._query=function(_waitFunction,_responseFunction){if(typeof _waitFunction=='function'&&typeof _responseFunction=='function'){var rArr=new Array();var cParam=new Array();for(i=0;i<this.callParam.length;i++){var ta=new Array();ta=this.callParam[i];for(a=0;a<ta.length;a++)
+ta[a]=escape(ta[a]);rArr[i]=ta;cParam[i]=ta.join("=");ta=null}
+var strParam=cParam.join("&");var aj;if(window.XMLHttpRequest)
+aj=new XMLHttpRequest;else if(window.ActiveXObject)
+aj=new ActiveXObject("Microsoft.XMLHTTP");if(this.callMethod=="get")
+this.fileName=this.fileName+"?"+strParam;aj.onreadystatechange=function(){if(aj.readyState<4){var wf=function(ar){_waitFunction(ar)}
+wf(rArr)}
+else if(aj.readyState==4){var r="";if(aj.status==200){r=aj.responseText;aj=null}
+else r="ERROR "+aj.readyState+": "+aj.statusText;var rf=function(ar,rs){_responseFunction(ar,rs)}
+rf(rArr,r)}};aj.open(this.callMethod,this.fileName,this.isAsynchronus);if(this.callMethod=="post")
+aj.setRequestHeader("Content-Type","application/x-www-form-urlencoded");if(this.callMethod=="post")
+aj.send(strParam);else aj.send(null)}}}

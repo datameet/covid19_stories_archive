@@ -1,0 +1,192 @@
+{
+    "url": "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;",
+    "timestamp": "1595519884.170",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u0909\u0928 \u0928\u0947 \u0915\u093f\u092f\u093e \u0928\u093f\u0930\u093e\u0936: \u0930\u093e\u0924 12 \u092c\u091c\u0947 \u092a\u0924\u093f-\u092a\u0924\u094d\u0928\u0940 \u0914\u0930 \u091c\u0935\u093e\u0928 \u092c\u0947\u091f\u0947 \u0928\u0947 \u090f\u0915 \u0938\u093e\u0925 \u0916\u093e\u0928\u093e \u0916\u093e\u092f\u093e, \u092b\u093f\u0930 \u0915\u0930 \u0932\u093f\u092f\u093e \u0938\u0941\u0938\u093e\u0907\u0921 | Jodhpur suicide: cases of depression increase in lockdown, many people commit suicide kpa",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:30:50.553344",
+                "end_ts": "2020-07-25 01:30:50.788423",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=hindi.asianetnews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:30:50.790641",
+                "end_ts": "2020-07-25 01:30:51.434121",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620851",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:30:51.440624",
+                "end_ts": "2020-07-25 01:31:14.066098",
+                "duration": 22
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:31:14.071111",
+                "end_ts": "2020-07-25 01:31:17.694589",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:31:17.695911",
+                "end_ts": "2020-07-25 01:31:20.844750",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:31:20.846095",
+                "end_ts": "2020-07-25 01:31:23.270114",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:31:23.271589",
+                "end_ts": "2020-07-25 01:31:25.231985",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://hindi.asianetnews.com/gallery/rajasthan/jodhpur-suicide-cases-of-depression-increase-in-lockdown-many-people-commit-suicide-kpa-qcxfmt#image1;"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.170",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:31:25.235659",
+                "end_ts": "2020-07-25 01:32:03.516913",
+                "duration": 38
+            }
+        ]
+    },
+    "updated": "1595620923.517837"
+}

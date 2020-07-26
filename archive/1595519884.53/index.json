@@ -1,0 +1,192 @@
+{
+    "url": "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/",
+    "timestamp": "1595519884.53",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "Coronavirus : \u0927\u0915\u094d\u0915\u093e\u0926\u093e\u092f\u0915! \u0915\u094b\u0930\u094b\u0928\u093e\u091a\u094d\u092f\u093e \u092d\u0940\u0924\u0940\u0928\u0947 \u0935\u0943\u0926\u094d\u0927\u093e\u091a\u0940 \u0917\u0933\u092b\u093e\u0938 \u0918\u0947\u090a\u0928\u00a0\u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e\u00a0 - Marathi News | Coronavirus : Shocking! Committed suicide by strangling an old man due to scare of corona pda | Latest crime News at Lokmat.com",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:37.121866",
+                "end_ts": "2020-07-24 22:37:37.750563",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.lokmat.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:37.752868",
+                "end_ts": "2020-07-24 22:37:38.230137",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595610458",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:38.248266",
+                "end_ts": "2020-07-24 22:37:52.985908",
+                "duration": 14
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:52.988156",
+                "end_ts": "2020-07-24 22:38:03.081556",
+                "duration": 10
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:38:03.086607",
+                "end_ts": "2020-07-24 22:38:07.158719",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:38:07.162972",
+                "end_ts": "2020-07-24 22:38:10.096684",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:38:10.099274",
+                "end_ts": "2020-07-24 22:38:14.238398",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.lokmat.com/crime/coronavirus-shocking-committed-suicide-strangling-old-man-due-scare-corona-pda/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.53",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:38:14.242001",
+                "end_ts": "2020-07-24 22:38:53.675406",
+                "duration": 39
+            }
+        ]
+    },
+    "updated": "1595610533.675668"
+}

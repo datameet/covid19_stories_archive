@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273",
+    "timestamp": "1595519884.2",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "Howrah: With no computer or smartphone, 16-year-old student commits suicide after failing to attend online classes",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:51:57.583107",
+                "end_ts": "2020-07-24 19:51:58.260608",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:51:58.263855",
+                "end_ts": "2020-07-24 19:51:58.873080",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595600518",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:51:58.876177",
+                "end_ts": "2020-07-24 19:52:18.960277",
+                "duration": 20
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:52:18.962701",
+                "end_ts": "2020-07-24 19:52:58.232580",
+                "duration": 39
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:52:58.233887",
+                "end_ts": "2020-07-24 19:53:54.847877",
+                "duration": 56
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:53:54.850365",
+                "end_ts": "2020-07-24 19:54:18.758889",
+                "duration": 23
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:54:18.761714",
+                "end_ts": "2020-07-24 19:54:22.765455",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/in-focus/article/with-no-computer-or-smartphone-16-year-old-student-commits-suicide-after-failing-to-attend-online-classes/609273"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.2",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:54:22.767935",
+                "end_ts": "2020-07-24 19:54:44.069512",
+                "duration": 21
+            }
+        ]
+    },
+    "updated": "1595600684.070955"
+}

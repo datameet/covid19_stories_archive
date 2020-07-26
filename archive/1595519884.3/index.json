@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540",
+    "timestamp": "1595519884.3",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "Medical apathy in UP: Pregnant woman dies after private hospitals refuse to admit her",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:54:44.193549",
+                "end_ts": "2020-07-24 19:54:45.028465",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:54:45.036962",
+                "end_ts": "2020-07-24 19:54:45.996703",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595600685",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:54:46.000118",
+                "end_ts": "2020-07-24 19:55:08.300466",
+                "duration": 22
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:55:08.303177",
+                "end_ts": "2020-07-24 19:55:13.460744",
+                "duration": 5
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:55:13.462625",
+                "end_ts": "2020-07-24 19:55:49.061775",
+                "duration": 35
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:55:49.063914",
+                "end_ts": "2020-07-24 19:55:53.904385",
+                "duration": 4
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:55:53.906834",
+                "end_ts": "2020-07-24 19:55:56.646007",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/in-focus/article/medical-apathy-in-up-pregnant-woman-dies-after-private-hospitals-refuse-to-admit-her/596540"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.3",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:55:56.647341",
+                "end_ts": "2020-07-24 19:56:16.281903",
+                "duration": 19
+            }
+        ]
+    },
+    "updated": "1595600776.282256"
+}

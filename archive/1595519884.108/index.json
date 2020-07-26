@@ -1,0 +1,192 @@
+{
+    "url": "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html",
+    "timestamp": "1595519884.108",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "Unemployed youth could not install installment due to lockdown, then suicide | \u0932\u093e\u0945\u0915\u0921\u093e\u0909\u0928 \u0915\u0947 \u0915\u093e\u0930\u0923 \u092c\u0947\u0930\u093e\u0947\u091c\u0917\u093e\u0930 \u092f\u0941\u0935\u0915 \u0915\u093f\u0938\u094d\u0924 \u0928\u0939\u0940\u0902 \u0926\u0947 \u0938\u0915\u093e \u0924\u094b \u0915\u0940 \u0906\u0924\u094d\u092e\u0939\u0924\u094d\u092f\u093e - Dainik Bhaskar",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:37.097532",
+                "end_ts": "2020-07-24 23:56:37.929660",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.bhaskar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:37.934167",
+                "end_ts": "2020-07-24 23:56:38.213297",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595615198",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:38.219255",
+                "end_ts": "2020-07-24 23:56:44.598267",
+                "duration": 6
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:44.603234",
+                "end_ts": "2020-07-24 23:56:49.058531",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:49.060403",
+                "end_ts": "2020-07-24 23:56:51.428268",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:51.429492",
+                "end_ts": "2020-07-24 23:56:52.857510",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:56:52.860823",
+                "end_ts": "2020-07-24 23:56:54.446448",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.bhaskar.com/local/rajasthan/banswara/aaspur/news/unemployed-youth-could-not-install-installment-due-to-lockdown-then-suicide-127384556.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.108",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:56:54.447814",
+                "end_ts": "2020-07-24 23:57:44.663085",
+                "duration": 50
+            }
+        ]
+    },
+    "updated": "1595615264.663449"
+}

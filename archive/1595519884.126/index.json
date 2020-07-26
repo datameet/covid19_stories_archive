@@ -1,0 +1,192 @@
+{
+    "url": "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms",
+    "timestamp": "1595519884.126",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "weaver commits suicide: \u0cac\u0cc6\u0cb3\u0c97\u0cbe\u0cb5\u0cbf: \u0c95\u0cca\u0cb0\u0cca\u0ca8\u0cbe \u0cb8\u0c82\u0c95\u0cb7\u0ccd\u0c9f, \u0ca8\u0cc7\u0c95\u0cbe\u0cb0 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 - coronavirus lockdown weaver commits suicide in belagavi | Vijaya Karnataka",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:00.149179",
+                "end_ts": "2020-07-25 00:22:01.105609",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=vijaykarnataka.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:01.110135",
+                "end_ts": "2020-07-25 00:22:01.348527",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595616721",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:01.355120",
+                "end_ts": "2020-07-25 00:22:05.739482",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:05.743465",
+                "end_ts": "2020-07-25 00:22:08.389686",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:08.395353",
+                "end_ts": "2020-07-25 00:22:11.683515",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:11.684710",
+                "end_ts": "2020-07-25 00:22:12.846445",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:22:12.848026",
+                "end_ts": "2020-07-25 00:22:15.553178",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://vijaykarnataka.com/news/belagavi/coronavirus-lockdown-weaver-commits-suicide-in-belagavi/articleshow/76213815.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.126",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:22:15.554769",
+                "end_ts": "2020-07-25 00:23:12.639658",
+                "duration": 57
+            }
+        ]
+    },
+    "updated": "1595616792.640573"
+}

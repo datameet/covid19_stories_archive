@@ -1,0 +1,192 @@
+{
+    "url": "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/",
+    "timestamp": "1595519884.75",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "TV Actors Commit Suicide in Chennai, Decomposed Bodies Found After Neighbours Complained of Foul Smell | India.com",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:26.153026",
+                "end_ts": "2020-07-24 23:01:28.537264",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.india.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:28.544243",
+                "end_ts": "2020-07-24 23:01:28.793795",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595611888",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:28.796647",
+                "end_ts": "2020-07-24 23:01:54.378840",
+                "duration": 25
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:54.380408",
+                "end_ts": "2020-07-24 23:01:59.144808",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:01:59.146210",
+                "end_ts": "2020-07-24 23:02:01.199738",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:02:01.203063",
+                "end_ts": "2020-07-24 23:02:04.222913",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:02:04.226027",
+                "end_ts": "2020-07-24 23:02:08.677192",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.india.com/entertainment/tamil-news-tv-actors-commit-suicide-in-chennai-decomposed-bodies-found-after-neighbours-complaint-of-foul-smell-4050645/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.75",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:02:08.678794",
+                "end_ts": "2020-07-24 23:02:34.267325",
+                "duration": 25
+            }
+        ]
+    },
+    "updated": "1595611954.267612"
+}

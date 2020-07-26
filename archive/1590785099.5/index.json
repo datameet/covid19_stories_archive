@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Attacks on Muslims in the Name of COVID-19 Surge Across India",
     "timestamp": "1590785099.5",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 27,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785359",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
+                ],
+                "end_ts": "2020-05-29 20:49:47.935368",
+                "start_ts": "2020-05-29 20:49:19.962512",
+                "pwd": "/data/archive/1590785099.5",
+                "output": "www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "failed",
@@ -39,6 +67,24 @@
                 "start_ts": "2020-05-29 20:49:53.773259",
                 "pwd": "/data/archive/1590785099.5",
                 "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.5",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:56.585320",
+                "end_ts": "2020-07-25 01:52:57.569073",
+                "duration": 0
             }
         ],
         "favicon": [
@@ -79,6 +125,24 @@
                 "start_ts": "2020-05-29 20:49:47.935510",
                 "pwd": "/data/archive/1590785099.5",
                 "output": "Failed to chmod: output.pdf does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.5",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:54.989268",
+                "end_ts": "2020-07-25 01:52:56.583992",
+                "duration": 1
             }
         ],
         "archive_org": [
@@ -99,34 +163,6 @@
                 "start_ts": "2020-05-29 20:50:06.588608",
                 "pwd": "/data/archive/1590785099.5",
                 "output": "https://web.archive.org/web/20200529205007/https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
-            }
-        ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 27,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590785359",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
-                ],
-                "end_ts": "2020-05-29 20:49:47.935368",
-                "start_ts": "2020-05-29 20:49:19.962512",
-                "pwd": "/data/archive/1590785099.5",
-                "output": "www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana.html"
             }
         ],
         "dom": [
@@ -187,7 +223,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785408.86326",
+    "updated": "1595622177.570574",
     "tags": "",
     "url": "https://www.thequint.com/news/india/coronavirus-muslims-attacked-covid19-karnataka-haryana"
 }

@@ -1,0 +1,106 @@
+jQuery( window ).load( function() {
+  //jQuery( document ).ready( function() {
+	try { 
+		var user_from = 'others';
+		var reffer = document.referrer;
+		if ( '' !== reffer ) {
+			if ( reffer.indexOf('google') > -1 ) {
+				user_from = 'organic';
+			} else if ( reffer.indexOf('t.co') > -1 || reffer.indexOf('whatsapp') > -1 || reffer.indexOf('facebook') > -1 || reffer.indexOf('twitter') > -1 || reffer.indexOf('instagram') > -1 || reffer.indexOf('reddit') > -1 || reffer.indexOf('linkedin') > -1 || reffer.indexOf('quora') > -1 ) {
+				user_from = 'social';
+			} else if ( reffer.indexOf('financialexpress') > -1 ) {
+				user_from = 'direct';
+			}
+		}
+		var coming_from = bell_icon_getCookie('ls_user_referer');
+		if( 'social' !== coming_from && 'organic' !== coming_from ){
+		bell_icon_setCookie( 'ls_user_referer', user_from, 365 );
+		}
+    bell_icon_setCookie( 'ls_check_page_type', check_type, 365 );
+		bell_icon_setCookie( 'ls_user_story_id', s_post_id, 365 ); 
+    var user_count = bell_icon_getCookie('ls_user_counter');
+
+        var count1  = bell_icon_getCookie('ls_num1_count');
+        var count2  = bell_icon_getCookie('ls_num2_count');
+        var count3  = bell_icon_getCookie('ls_num3_count');
+        var total1  = bell_icon_getCookie('ls_notification_count');
+        if( 0 !== parseInt(total1) ){
+          if( '0' !== count1 && '0' !== count2 && '0' !== count3 ){
+           bell_icon_setCookie( 'ls_num1_count',num1, 365 );
+           bell_icon_setCookie( 'ls_num2_count',num2, 365 );
+           bell_icon_setCookie( 'ls_num3_count',num3, 365 );
+           bell_icon_setCookie( 'ls_notification_count',total, 365 );
+          }
+        }
+        if( 0 === parseInt(total1) ){
+          jQuery(".bell-icon sub").remove();
+        } 
+        if( 0 !== parseInt(total1) ) {
+          jQuery(".bell-icon sub").text(total!='' ? total : total1);
+        }
+        if ( '' === user_count ){
+            bell_icon_setCookie( 'ls_user_counter',1, 365 );
+        }else{
+            bell_icon_setCookie( 'ls_user_counter', parseInt(user_count)+1 , 365 );
+        }
+        var user_type_from = bell_icon_getCookie( 'ls_user_referer' );
+        var bell_slug = '';
+        if ( 'others' === user_type_from  || 'direct' === user_type_from ) {
+            bell_slug = 'top-news';
+        } else if ( 'organic' === user_type_from ) {
+            if( 'single' === check_type){
+              bell_slug = 'related-news';
+          }else{
+              bell_slug = 'top-news';
+          }   
+        } else if ( 'social' === user_type_from ) {
+             if( 'single' === check_type){
+              bell_slug = 'most-social';
+          }else{
+              bell_slug = 'top-news';
+          }
+        }
+        if ( '' !== bell_slug ) {
+            bell_slug = location.protocol + '//' + location.hostname + '/' + encodeURIComponent( bell_slug ) + '/';
+            jQuery(".bell-icon").attr("href", bell_slug);
+
+    }else{
+            bell_slug = location.protocol + '//' + location.hostname + '/' + encodeURIComponent( bell_slug ) + '/';
+            jQuery(".bell-icon").attr("href", bell_slug);
+    }
+	}
+	catch( error ){ }
+
+
+	jQuery(window).scroll(function(){
+		if(jQuery(window).scrollTop() > 200){
+			jQuery('.bell-icon').css('display', 'flex');
+		}
+		else{
+			jQuery('.bell-icon').css('display', 'none');
+		}
+	});
+
+	});
+
+function bell_icon_setCookie( cname, cvalue, exdays ) {
+	var d = new Date();
+	//console.log(cname, cvalue, exdays);
+	d.setTime( d.getTime() + ( 30 * 60 * 1000 ) );
+	var expires = 'expires='+d.toUTCString();
+	document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+}
+function bell_icon_getCookie( cname ) {
+    var name = cname + '=';
+    var ca   = document.cookie.split( ';' );
+    for( var i = 0; i < ca.length; i++ ) {
+      var c = ca[i];
+      while ( ' ' === c.charAt( 0 ) ) {
+        c = c.substring( 1 );
+      }
+      if ( 0 === c.indexOf( name ) ) {
+        return c.substring( name.length, c.length );
+      }
+    }
+    return '';
+  }

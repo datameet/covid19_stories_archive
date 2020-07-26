@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158",
+    "timestamp": "1595519884.4",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "Depressed Ajmer family consumes poison after failing to pay loan instalments amid lockdown",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:56:16.395927",
+                "end_ts": "2020-07-24 19:56:24.129826",
+                "duration": 7
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:56:24.134643",
+                "end_ts": "2020-07-24 19:56:24.528382",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595600784",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:56:24.534613",
+                "end_ts": "2020-07-24 19:57:02.060260",
+                "duration": 37
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:57:02.063123",
+                "end_ts": "2020-07-24 19:57:50.500885",
+                "duration": 48
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:57:50.503067",
+                "end_ts": "2020-07-24 19:58:01.150559",
+                "duration": 10
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:58:01.152814",
+                "end_ts": "2020-07-24 19:58:11.543924",
+                "duration": 10
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 19:58:11.545790",
+                "end_ts": "2020-07-24 19:58:25.193511",
+                "duration": 13
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/mirror-now/in-focus/article/depressed-ajmer-family-consumes-poison-after-failing-to-pay-loan-instalments-amid-lockdown/605158"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.4",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 19:58:25.196002",
+                "end_ts": "2020-07-24 19:58:48.640088",
+                "duration": 23
+            }
+        ]
+    },
+    "updated": "1595600928.641101"
+}

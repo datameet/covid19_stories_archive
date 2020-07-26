@@ -1,8 +1,12 @@
 {
     "title": "Migrant worker from Odisha commits suicide in Haryana",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.357",
     "history": {
@@ -188,7 +192,7 @@
             }
         ]
     },
-    "updated": "1590789384.449643",
+    "updated": "1595622910.157583",
     "tags": "",
     "url": "https://kalingatv.com/state/stranded-odia-migrant-worker-commits-suicide-in-haryana/"
 }

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+            .abp-homepage-special-widget2-wrap {
+            border-top: 1px solid #b7ae99;
+            }
+            .abp-homepage-special-widget2-wrap{
+            margin-bottom:0;
+            }
+            .abp-homepage-special-widget2-wrap .abp-homepage-244-137-img-down-block a ul li.heading div {
+            background-color: #eeebea;
+            }
+            .abp-homepage-special-widget2-wrap .abp-homepage-244-137-img-down-block a ul li.heading {
+            color: #000;
+            }
+            .abp-homepage-special-widget2-wrap .abp-homepage-244-137-img-down-block:hover ul li.heading div{
+            background-color: #e3dcd2;
+            transition: all .2s ease-in-out;
+            }
+            @media(max-width:992px){
+            .abp-homepage-special-widget2-wrap .abp-homepage-244-137-img-down-block:hover ul li.heading div {
+            background-color: #eeebea;
+            transition: all .2s ease-in-out;
+            }
+            .abp-homepage-special-widget2-wrap .section-head-wrap .heading{
+            text-align:left;
+            }
+            }
+            @media(max-width: 767px){
+            	.abp-homepage-special-widget2-wrap .abp-more-stories-level2-col .abp-homepage-244-137-img-down-block{
+            		border-right:none;
+            	}
+            	.abp-homepage-special-widget2-wrap .abp-more-stories-level2-col .abp-homepage-244-137-img-down-block a ul li.heading div{
+            		    border-top: 1px solid #ee303b;
+            	}
+            }

@@ -1,0 +1,44 @@
+if ('serviceWorker' in navigator) {
+//alert(1);
+//console.log('service worker');
+    try {
+        window.addEventListener("load", function () {
+            /*navigator.serviceWorker.getRegistrations().then(function(registrations) {
+             for(let registration of registrations) {
+             registration.unregister();
+             } })*/
+            navigator.serviceWorker.register("/service-worker.js?v=" + serviceWorkerVersion).then(function (e) {
+                console.log("Service worker registered successfully!!");
+            })["catch"](function (e) {
+                //console.log(e);
+                gaTrackEvent("Error", 'pwa', 'error-' + e.message, 'service-worker-register', true);
+            }), 
+            window.addEventListener('beforeinstallprompt', function (event) {
+                //gaTrackEvent("pwa", 'pwa-open');
+                
+                // beforeinstallprompt Event fired
+                //console.log('beforeinstallprompt', event);
+                // e.userChoice will return a Promise.
+                event.userChoice.then(function (choiceResult) {
+                    
+                    //console.log(choiceResult.outcome);
+                    if (choiceResult.outcome === 'accepted') {
+                        
+                        //console.log('User added to home screen');
+                        gaTrackEvent("pwa", 'install');
+                        
+                    } else {
+                        
+                        
+                        //console.log('User cancelled home screen banner install');
+                        gaTrackEvent("pwa", 'cancel'); 
+                        
+                    }
+                });
+            });
+        });
+    } catch (e) {
+        //alert(e.message);
+        gaTrackEvent("Error", 'pwa', 'error-' + e.message, 'service-worker-register', true);
+    }
+}

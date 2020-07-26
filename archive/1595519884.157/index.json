@@ -1,0 +1,192 @@
+{
+    "url": "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html",
+    "timestamp": "1595519884.157",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "Pregnant woman dies due to lack of treatment - Bihar  Buxar  Crime  News",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:02.142246",
+                "end_ts": "2020-07-25 01:13:03.662492",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=m.jagran.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:03.667450",
+                "end_ts": "2020-07-25 01:13:04.355311",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619784",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:04.357601",
+                "end_ts": "2020-07-25 01:13:07.768048",
+                "duration": 3
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:07.769866",
+                "end_ts": "2020-07-25 01:13:09.601681",
+                "duration": 1
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:09.603050",
+                "end_ts": "2020-07-25 01:13:10.594351",
+                "duration": 0
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:10.597044",
+                "end_ts": "2020-07-25 01:13:11.475454",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:13:11.477995",
+                "end_ts": "2020-07-25 01:13:13.433550",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://m.jagran.com/bihar/buxar-pregnant-woman-dies-due-to-lack-of-treatment-20225893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.157",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:13:13.434943",
+                "end_ts": "2020-07-25 01:14:13.454072",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595619853.455167"
+}

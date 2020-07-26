@@ -1,0 +1,192 @@
+{
+    "url": "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html",
+    "timestamp": "1595519884.62",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "One More Bihar Resident labour died in train: Migrant laborer returning from Haryana to Bihar died in labor special train near Begusarai but dead body stripped down in Mansi - \u0936\u094d\u0930\u092e\u093f\u0915 \u0938\u094d\u092a\u0947\u0936\u0932 \u091f\u094d\u0930\u0947\u0928 \u0938\u0947 \u0939\u0930\u093f\u092f\u093e\u0923\u093e \u0938\u0947 \u092c\u093f\u0939\u093e\u0930 \u0932\u094c\u091f \u0930\u0939\u0947 \u092a\u094d\u0930\u0935\u093e\u0938\u0940 \u092e\u091c\u0926\u0942\u0930 \u0915\u0940 \u091f\u094d\u0930\u0947\u0928 \u092e\u0947\u0902 \u0939\u0940 \u092e\u094c\u0924, \u092e\u093e\u0928\u0938\u0940 \u092e\u0947\u0902 \u0909\u0924\u093e\u0930\u093e \u0936\u0935",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:29.798100",
+                "end_ts": "2020-07-24 22:48:30.290589",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:30.292968",
+                "end_ts": "2020-07-24 22:48:30.806841",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595611110",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:30.808887",
+                "end_ts": "2020-07-24 22:48:49.162398",
+                "duration": 18
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:49.163933",
+                "end_ts": "2020-07-24 22:48:53.264414",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:53.265767",
+                "end_ts": "2020-07-24 22:48:56.024090",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:56.025930",
+                "end_ts": "2020-07-24 22:48:59.906904",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:48:59.908687",
+                "end_ts": "2020-07-24 22:49:03.468297",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/bihar/bhagalpur/story-one-more-bihar-resident-labour-died-in-train-migrant-laborer-returning-from-haryana-to-bihar-died-in-labor-special-train-near-begusarai-but-dead-body-stripped-down-in-mansi-3244483.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.62",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:49:03.470826",
+                "end_ts": "2020-07-24 22:49:29.251210",
+                "duration": 25
+            }
+        ]
+    },
+    "updated": "1595611169.251646"
+}

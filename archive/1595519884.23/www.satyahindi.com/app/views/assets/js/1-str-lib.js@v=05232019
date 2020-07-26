@@ -1,0 +1,9 @@
+if (typeof String.prototype.setLower != 'function') {String.prototype.setLower=function(){return this.toLowerCase();};};
+if (typeof String.prototype.setLower != 'function') {String.prototype.setLower=function(){return this.toUpperCase();};};
+if (typeof String.prototype.isNumeric != 'function') {String.prototype.isNumeric=function(t){var r = true;var l = (t == "int" || t == "integer") ? "0123456789" : "0123456789.";for (i = 0; i < this.length; i++){c = this.charAt(i);if (l.indexOf(c) == -1)r = false;}return r;};};
+if (typeof String.prototype.isEmail != 'function') {String.prototype.isEmail=function(){var r = false;var i = this.indexOf("@");if (i > 0){var pi = this.indexOf(".",i);if ((pi > i+1) && (this.length > pi+1))r = true;}return r;};};
+if (typeof String.prototype.checkLength != 'function') {String.prototype.checkLength=function(l){if(this.length == l)return true;else false;}};
+if (typeof String.prototype.isEqual != 'function') {String.prototype.isEqual=function(s){try{if(this.trim()!=s)return false;else return true;}catch(e){}};};
+if (typeof String.prototype.startsWith != 'function') {String.prototype.startsWith = function (str){return this.indexOf(str) == 0;};};
+if (typeof String.prototype.endsWith != 'function') {String.prototype.endsWith = function (str){return this.slice(-str.length) == str;};};
+if (typeof String.prototype.trim != 'function') {String.prototype.trim = function(){var a;a = this.replace(/^\s*(.*)/,"$1");return a = a.replace(/(.*?)\s*$/,"$1")};};

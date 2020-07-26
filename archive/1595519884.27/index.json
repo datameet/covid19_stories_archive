@@ -1,0 +1,192 @@
+{
+    "url": "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/",
+    "timestamp": "1595519884.27",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "Grocery businessman commits suicide due to loss of business",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:36:14.331605",
+                "end_ts": "2020-07-24 21:36:19.524544",
+                "duration": 5
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.patrika.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:36:19.531738",
+                "end_ts": "2020-07-24 21:36:20.778501",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595606780",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:36:20.795013",
+                "end_ts": "2020-07-24 21:37:05.428900",
+                "duration": 44
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:37:05.431254",
+                "end_ts": "2020-07-24 21:37:20.353867",
+                "duration": 14
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:37:20.355958",
+                "end_ts": "2020-07-24 21:37:32.120651",
+                "duration": 11
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:37:32.122054",
+                "end_ts": "2020-07-24 21:37:51.657910",
+                "duration": 19
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:37:51.659542",
+                "end_ts": "2020-07-24 21:37:56.530079",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.patrika.com/khandwa-news/grocery-businessman-commits-suicide-due-to-loss-of-business-6176610/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.27",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:37:56.532456",
+                "end_ts": "2020-07-24 21:38:56.580364",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595606936.584886"
+}

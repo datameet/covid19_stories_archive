@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="hi" class="html" style="transform: none;"><head>
+		<meta charset="UTF-8"><script src="https://js-agent.newrelic.com/nr-1169.min.js"></script><script src="https://connect.facebook.net/en_GB/sdk.js?hash=a1f7a46c1fb71c6385c79decd90c4391&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-f251ab32909293cb20f",applicationID:"50964313"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<link rel="shortcut icon" href="https://s.enavabharat.com/favicon.ico?r=1" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+                <link rel="apple-touch-icon" sizes="180x180" href="https://s.enavabharat.com/apple-touch-icon.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="https://s.enavabharat.com/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="https://s.enavabharat.com/favicon-16x16.png">
+                <link rel="manifest" href="https://s.enavabharat.com/site.webmanifest">
+
+		<!-- link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Regular.eot" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Regular.woff" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Regular.ttf" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Regular.svg" as="font">
+
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Medium.eot" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Medium.woff" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Medium.ttf" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Medium.svg" as="font">
+
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-SemiBold.eot" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-SemiBold.woff" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-SemiBold.ttf" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-SemiBold.svg" as="font">
+
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Bold.eot" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Bold.woff" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Bold.ttf" as="font">
+		<link rel="preload" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/fonts/Mukta-Bold.svg" as="font" -->
+
+		<link href="https://fonts.googleapis.com/css?family=Mukta:400,500,600,700" rel="stylesheet" type="text/css">
+
+					<style>
+:root {
+--top-stories-color: #E47A1A;
+--latest-news-color:#E47A1A;
+--navabharat-special-color: #C15050;
+--blogs-color: #E33A45;
+--india-color : #5D5FB4;
+--world-color: #B24181;
+--politics-color: #5D5FB4;
+--business-color: #408D4D;
+--state-color: #158E9B;
+--entertainment-color: #DD5172;
+--sports-color: #175AA0;
+--astrology-color: #EA8822;
+--education-color: #4096C4;
+--technology-color: #6F469F;
+--lifestyle-color: #EA8822;
+--automobile-color: #ACA217;
+--gallery-color: #ACA217;  
+--photos-color:#21C9A1;
+--videos-color:#E33A45;
+--audio-color: #365CC3;
+--news-brief-color:#be995f;
+--author-color:#629bcc;
+} 
+</style>		
+		<link rel="canonical" href="https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/" hreflang="hi-in">
+		<title>Financially strait and disease stricken Panthela driver commits suicide | आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या | Navabharat (नवभारत)</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.8.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Financially strait and disease stricken Panthela driver commits suicide: मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का […]. Read (Financially strait and disease stricken Panthela driver commits suicide) news in hindi at Navabharat (नवभारत).">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:locale" content="hi"><meta property="fb:pages" content="315129601910932"><meta property="og:type" content="article">
+<meta property="og:title" content="आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या | Navabharat (नवभारत)">
+<meta property="og:description" content="मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का …">
+<meta property="og:url" content="https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/">
+<meta property="og:site_name" content="Navabharat">
+<meta property="article:publisher" content="Navabharat"><meta property="article:author" content="https://www.enavabharat.com/author/amit/">
+<meta property="article:section" content="चंद्रपुर">
+<meta property="article:published_time" content="2020-05-22T14:40:09+00:00">
+<meta property="article:modified_time" content="2020-05-22T14:40:09+00:00">
+<meta property="og:updated_time" content="2020-05-22T14:40:09+00:00">
+<meta property="fb:app_id" content="973270659709010">
+<meta property="og:image" content="https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg">
+<meta property="og:image:secure_url" content="https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg">
+<meta property="og:image:width" content="528">
+<meta property="og:image:height" content="330">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का […]">
+<meta name="twitter:title" content="आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या | Navabharat (नवभारत)">
+<meta name="twitter:url" content="https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/"><meta name="twitter:site" content="@enavabharat">
+<meta name="twitter:image" content="https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg">
+<meta name="twitter:creator" content="@enavabharat">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//s.enavabharat.com">
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//www.instagram.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//www.enavabharat.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="nb_article-editor-styles-css" href="https://s.enavabharat.com/wp-content/themes/nb2020/assets/css/nb_article1807.css?ver=20200529" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://s.enavabharat.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" media="all">
+<link rel="stylesheet" id="wp-polls-css" href="https://s.enavabharat.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.75.3" media="all">
+<style id="wp-polls-inline-css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('https://s.enavabharat.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-81803573-6&amp;ver=1.1"></script>
+<script src="https://s.enavabharat.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script src="https://s.enavabharat.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://www.enavabharat.com/wp-json/">
+<link rel="shortlink" href="https://www.enavabharat.com/?p=54472">
+<link rel="alternate" type="application/json+oembed" href="https://www.enavabharat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.enavabharat.com%2Fchandrapur-news-hindi%2Ffinancially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.enavabharat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.enavabharat.com%2Fchandrapur-news-hindi%2Ffinancially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472%2F&amp;format=xml">
+	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	       <link rel="amphtml" href="https://www.enavabharat.com/amp/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/">
+    	  <meta name="news_keywords" content="Financially, Suicide, Chandrapur, Lockdown, Corona Virus">
+		  <meta name="Keywords" content="चंद्रपुर,महाराष्ट्र,राज्य,Financially, Suicide, Chandrapur, Lockdown, Corona Virus">
+	<meta property="article:tag" content="चंद्रपुर"><meta property="article:tag" content="महाराष्ट्र"><meta property="article:tag" content="राज्य"><meta property="article:tag" content="Financially"><meta property="article:tag" content="Suicide"><meta property="article:tag" content="Chandrapur"><meta property="article:tag" content="Lockdown"><meta property="article:tag" content="Corona Virus" https:="" s.enavabharat.com="">			<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81803573-6');
+</script>
+		<script type="application/ld+json"> { "@context": "https://schema.org", "@type": "NewsArticle", "mainEntityOfPage":{ "@type":"WebPage", "@id":"https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/" }, "headline": "आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या", "url":"https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/", "image": { "@type": "ImageObject", "url": "https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg", "height": 675, "width": 1200 }, "thumbnailUrl":"https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727-136x85.jpg", "datePublished": "2020-05-22T08:10:09+05:30", "dateModified": "2020-05-22T08:10:09+05:30", "dateCreated": "2020-05-22T08:10:09+05:30", "author": { "@type": "Person", "name": "Amit Borkar" },"publisher":{"@type":"Organization","name":"Navabharat","logo":{"@type":"ImageObject","url":"https://s.enavabharat.com/wp-content/uploads/2020/02/navabharat-logo.png","width":300,"height":69}}, "articleSection":"चंद्रपुर","description": "मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का [&amp;hellip;]", "articleBody":"मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का भरण पोषण करता था. लोमेश अविवाहित होने से उस पर बुजुर्ग माता, पिता, बहन और भांजी की जिममेदारी थी. कोरोना लाकडाउन की वजह से पिछले दो महीने से पानठेला बंद रहने से परिवार का भरण पोषण मुश्किल हो रहा था.लोमेश पिछले कुछ वर्षो से सिकलसेल और किडनी की बीमारी से परेशान था. बीमारी पर मात कर लोमेश पिछले कुछ वर्षो से पानठेला चलाकर बुजुर्ग माता, पिता, बहन और भांजी का भरण पोषण कर रहा था. किंतु 47 दिनों से लाकडाउन की वजह से पानठेला बंद रहने से आर्थिक तंगी में फंस गया था. परिवार के भरण पोषण की समस्या से वह त्रस्त था. इससे परेशान होकर घर के पीछे खेत में नागापुर के कुएं में कूदकर अपनी ईहलीला समाप्त कर ली.लोमेश ने खुदकुशी के पूर्व घर और कुएं के पास अलग अलग सुसाईड नोट लिख छोडे थे जिसमें लिखा था बीमारी से त्रस्त होकर और परिवार के भरण पोषण में असमर्थ होने से खुदकुशी कर रहा हूं. इसके लिए किसी को जम्मिेदार न ठहराया जाये. लोमेश घर का इकलौता कमाऊ था इसकी वजह से परिवार के सामने आर्थिक संकट आ गया है.", "keywords":"राज्य" }</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या",
+  "description": "<p>मूल. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का [&hellip;]</p>
+",
+  "image":"https://s.enavabharat.com/wp-content/uploads/2020/02/navabharat-logo.png",
+  "publisher":"Navabharat",
+  "url" : "https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/",
+  "editor":"Navabharat",
+  "headline":"",
+  "inLanguage":"Hindi",
+  "sourceOrganization":"Navabharat",
+  "keywords":"राज्य"
+}
+</script>
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","url":"https://www.enavabharat.com","name":"Navabharat","potentialAction":{"@type":"SearchAction","target":"https://www.enavabharat.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Navabharat",
+    "legalname":"NavaBharat Media",
+    "url":"https://www.enavabharat.com",
+    "logo":"https://s.enavabharat.com/wp-content/uploads/2020/02/navabharat-logo.png",
+    "address":{"@type":"PostalAddress",
+    "streetAddress":"Nava Bharat Bhavan, Chhattrapati Square, Wardha Road",
+    "addressLocality":"Nagpur, Maharashtra",
+    "addressRegion":"India",
+    "postalCode":"440010",
+    "Telephone":"+712-228-4001"},
+    "sameAs": [
+      "https://www.facebook.com/enavabharat/",
+      "https://twitter.com/enavabharat"
+            ]
+  }
+</script>
+<meta name="author" content="Navabharat">
+<meta name="copyright" content="Navabharat Press 2020">
+	<style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+	<body class="article" style="transform: none;">
+		<div id="header" class="header-footer-group" role="banner">
+			
+			<div class="container-fluid top-bar">
+				<div class="container row">
+		            <ul class="left_ul">
+						<li class="date"><span class="date">
+						शुक्रवार, जुलाई 24, 2020</span></li> 
+						<li class="select"> 
+							<div class="select_city_div" id="city_sel_dropdown">
+								<div class="city_dropdown selectDropdown filled"><ul><li class="state_name"><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/maharashtra-news-hindi/" id="maharashtra-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="महाराष्ट्र">महाराष्ट्र</a></li><li class="active"><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/mumbai-news-hindi/" id="मुंबईdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="मुंबई">मुंबई</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/nagpur-news-hindi/" id="नागपुरdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="नागपुर">नागपुर</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/pune-news-hindi/" id="पुणेdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="पुणे">पुणे</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/nashik-news-hindi/" id="नासिकdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="नासिक">नासिक</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/aurangabad-news-hindi/" id="औरंगाबादdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="औरंगाबाद">औरंगाबाद</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/amravati-news-hindi/" id="अमरावतीdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="अमरावती">अमरावती</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/chandrapur-news-hindi/" id="चंद्रपुरdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="चंद्रपुर">चंद्रपुर</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/akola-news-hindi/" id="अकोलाdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="अकोला">अकोला</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/bhandara-news-hindi/" id="भंडाराdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="भंडारा">भंडारा</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/gondia-news-hindi/" id="गोंदियाdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="गोंदिया">गोंदिया</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/gadchiroli-news-hindi/" id="गड़चिरोलीdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="गड़चिरोली">गड़चिरोली</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/wardha-news-hindi/" id="वर्धाdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="वर्धा">वर्धा</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/yavatmal-news-hindi/" id="यवतमालdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="यवतमाल">यवतमाल</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/thane-news-hindi/" id="ठाणेdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="ठाणे">ठाणे</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/buldhana-news-hindi/" id="बुलढानाdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="बुलढाना">बुलढाना</a></li><li class=""><a data-id="maharashtra-news-hindidropdown" data-slug="https://www.enavabharat.com/washim-news-hindi/" id="वाशिमdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="वाशिम">वाशिम</a></li><li class="state_name"><a data-id="madhya-pradesh-news-hindidropdown" data-slug="https://www.enavabharat.com/madhya-pradesh-news-hindi/" id="madhya-pradesh-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="मध्य प्रदेश">मध्य प्रदेश</a></li><li class=""><a data-id="madhya-pradesh-news-hindidropdown" data-slug="https://www.enavabharat.com/bhopal-news-hindi/" id="भोपालdropdown" class="menu_nav_alink dropdown_toggle" href="#" title="भोपाल">भोपाल</a></li><li class="state_name"><a data-id="chhattisgarh-news-hindidropdown" data-slug="https://www.enavabharat.com/chhattisgarh-news-hindi/" id="chhattisgarh-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="छत्तीसगढ़">छत्तीसगढ़</a></li><li class="state_name"><a data-id="odisha-news-hindidropdown" data-slug="https://www.enavabharat.com/odisha-news-hindi/" id="odisha-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="ओडिशा">ओडिशा</a></li><li class="state_name"><a data-id="uttar-pradesh-news-hindidropdown" data-slug="https://www.enavabharat.com/uttar-pradesh-news-hindi/" id="uttar-pradesh-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="उत्तर प्रदेश">उत्तर प्रदेश</a></li><li class="state_name"><a data-id="north-india-news-hindidropdown" data-slug="https://www.enavabharat.com/north-india-news-hindi/" id="north-india-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="उत्तर भारत">उत्तर भारत</a></li><li class="state_name"><a data-id="delhi-news-hindidropdown" data-slug="https://www.enavabharat.com/delhi-news-hindi/" id="delhi-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="दिल्ली">दिल्ली</a></li><li class="state_name"><a data-id="other-states-news-hindidropdown" data-slug="https://www.enavabharat.com/other-states-news-hindi/" id="other-states-news-hindidropdown" class="menu_nav_alink dropdown_toggle" href="#" title="अन्य राज्य">अन्य राज्य</a></li></ul><span id="selected_topic">शहर चुनें</span></div>
+							</div> 
+						</li>
+		            </ul> 
+		            <ul class="right_ul">
+		            			            	<li><a href="https://www.enavabharat.com/latest-news/" target="blank" title="ताजा समाचार">ताजा समाचार</a></li>
+		            	 
+						<li class="epaper"><a href="http://epaper.enavabharat.com/" target="blank" rel="nofollow" title="ईपेपर">ईपेपर</a></li>
+						<li class="news_brief"><a href="https://www.enavabharat.com/news-brief/" title="न्यूज़ ब्रीफ">न्यूज़ ब्रीफ</a></li>
+						<li class="navarashtra_link"><a href="http://navarashtra.com/" title="मराठी" rel="nofollow" target="_blank">मराठी</a></li>
+						
+						
+		            </ul> 
+		        </div>
+    		</div>
+			
+			
+
+    		<header class="container-fluid head">
+		        <div class="container head_top"> 
+					<div class="brand_logo_blk header-titles"><a href="https://www.enavabharat.com/" class="brand_logo_alink" rel="home" title="Financially strait and disease stricken Panthela driver commits suicide | आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या | Navabharat (नवभारत)"><img title="Navabharat : Central India Hindi News Portal - सदैव अपने पाठकों के साथ" src="https://s.enavabharat.com/wp-content/uploads/2020/02/navabharat-logo.png" class="" alt="Hindi News | Live News in Hindi | ताजा हिंदी खबरें"></a>	<div class="brandlink">
+							<a href="https://www.enavabharat.com" class="balink" title="enavabharat.com">enavabharat.com</a>
+						</div> 
+					</div>  
+					<div class="g-adv-div">  
+						<div id="div-gpt-ad-728x90"></div> 
+					</div>  
+        		</div>
+        		<div class="head_bottom_navbar">
+					<div class="container">
+						<div class="home_logo">
+							<a class="home_alink eventtracker" data-event-sub-cat="Home-Desktop" data-event-cat="Menu" href="https://www.enavabharat.com" title="Navabharat Hindi News"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/fevicon.png" alt="Navabharat" title="Navabharat"></a>
+						</div>
+
+
+
+						<div class="menu_cross_button_blk"> 				
+							<button type="button" class="navbar_toggle_btn main_menu_cross_btn" onclick="openNav()">
+							  <span class="sr-only">Toggle Navigation</span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span> 
+							</button>  
+							
+						</div>
+		            	<div class="menu_navbar_blk" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation"><ul id="menu-nb-menu" class="menu_navbar_ul"><li itemprop="name" id="menu-item-344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-344"><a title="देश" href="https://www.enavabharat.com/india-news-hindi/" itemprop="url">देश</a></li>
+<li itemprop="name" id="menu-item-345" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-345"><a title="विदेश" href="https://www.enavabharat.com/world-news-hindi/" itemprop="url">विदेश</a></li>
+<li itemprop="name" id="menu-item-346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-346"><a title="राज्य" href="https://www.enavabharat.com/state-news-hindi/" itemprop="url">राज्य</a></li>
+<li itemprop="name" id="menu-item-347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-347"><a title="खेल" href="https://www.enavabharat.com/sports-news-hindi/" itemprop="url">खेल</a></li>
+<li itemprop="name" id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a title="मनोरंजन" href="https://www.enavabharat.com/entertainment-news-hindi/" itemprop="url">मनोरंजन</a></li>
+<li itemprop="name" id="menu-item-349" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-349"><a title="लाइफ स्टाइल" href="https://www.enavabharat.com/lifestyle-news-hindi/" itemprop="url">लाइफ स्टाइल</a></li>
+<li itemprop="name" id="menu-item-8244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8244"><a title="ऑटोमोबाइल" href="https://www.enavabharat.com/automobile-news-hindi/" itemprop="url">ऑटोमोबाइल</a></li>
+<li itemprop="name" id="menu-item-350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-350"><a title="बिज़नेस" href="https://www.enavabharat.com/business-news-hindi/" itemprop="url">बिज़नेस</a></li>
+<li itemprop="name" id="menu-item-351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-351"><a title="टेक्नॉलजी" href="https://www.enavabharat.com/technology-news-hindi" itemprop="url">टेक्नॉलजी</a></li>
+<li itemprop="name" id="menu-item-5791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5791"><a title="एजुकेशन" href="https://www.enavabharat.com/education-news-hindi" itemprop="url">एजुकेशन</a></li>
+<li itemprop="name" id="menu-item-5793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5793"><a title="ब्लॉग" href="https://www.enavabharat.com/blogs/" itemprop="url">ब्लॉग</a></li>
+<li itemprop="name" id="menu-item-352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-352"><a title="गैलरी" href="https://www.enavabharat.com/gallery/" itemprop="url">गैलरी</a></li>
+<li itemprop="name" id="menu-item-6379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6379"><a title="विशेष" href="https://www.enavabharat.com/special-coverage/" itemprop="url">विशेष</a></li>
+</ul></div>	
+						<div class="top_isocial"> 
+															<a class="isprite ifacebook" href="https://www.facebook.com/enavabharat" title="Facebook" target="_blank"></a>
+								<a class="isprite itwitter" href="https://twitter.com/enavabharat" title="Twitter" target="_blank"></a>
+								<a class="isprite iinstagram" href="https://www.instagram.com/enavabharat/" title="Instagram" target="_blank"></a>
+								<a class="isprite iyoutube" href="https://www.youtube.com/c/eNavaBharat" title="YouTube" target="_blank"></a>
+								<a class="isprite ilinkedin" href="https://www.linkedin.com/company/10095720/" title="Linkedin" target="_blank"></a>
+								<a class="isprite ipinterest" href="https://in.pinterest.com/enavabharat/" title="Pinterest" target="_blank"></a>
+													</div>	
+						<form class="search_form_blk" action="https://www.enavabharat.com/search/">
+		                    <div class="search-input">
+		                        <input id="search_input_fld" class="form-control mr-sm-2 ui-autocomplete-input" type="search" name="s" placeholder="Search" aria-label="Search" required="" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+		                        <button class="search-trigger btn-clear" type="submit">
+		                            <img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/search_icon.png" alt="Search">
+		                        </button>
+		                        <img class="close-btn btn-clear" onclick="close_search_form(this)" title="Close Search" src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/login-back.png" alt="Close Search">
+		                    </div>
+		                    <a class="search-btn" href="javascript:;" onclick="open_search_form(this)">
+		                        <img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/search.png" alt="Search">
+		                    </a>
+		                </form>   
+			<div class="mega-menu-blk" style="max-width: 1260px; width: 1260px;">
+                                <div class="mghead">
+                                        मेगा मेनू
+                                </div>
+                        <div class="menulist-blk">
+								<div class="footer-list col_2">
+									<h3 class="sec-name">खबरें एक झलक में</h3>
+									<ul>
+										<li><h6><a href="https://www.enavabharat.com" class="mn-alink" title="मुख पृष्ठ">मुख पृष्ठ</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/india-news-hindi/" class="mn-alink" title="देश">देश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/world-news-hindi/" class="mn-alink" title="विदेश">विदेश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/state-news-hindi/" class="mn-alink" title="राज्य">राज्य</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/madhya-pradesh-news-hindi/" class="mn-alink" title="मध्य प्रदेश">मध्य प्रदेश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bhopal-news-hindi/" class="mn-alink" title="छत्तीसगढ़">छत्तीसगढ़</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/delhi-news-hindi/" class="mn-alink" title="दिल्ली">दिल्ली</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/odisha-news-hindi/" class="mn-alink" title="ओडिशा">ओडिशा</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gujarat-news-hindi/" class="mn-alink" title="गुजरात">गुजरात</a></h6></li> 
+										<li><h6><a href="https://www.enavabharat.com/maharashtra-news-india/" class="mn-alink" title="महाराष्ट्र">महाराष्ट्र</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/other-states-news-india/" class="mn-alink" title="अन्य राज्य">अन्य राज्य</a></h6></li>			
+										<li><h6><a href="https://www.enavabharat.com/education-news-hindi/" class="mn-alink" title="एजुकेशन">एजुकेशन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/blogs/" class="mn-alink" title="ब्लॉग">ब्लॉग</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/special-coverage/" class="mn-alink" title="नवभारत विशेष">नवभारत विशेष</a></h6></li>
+										
+									</ul>
+								</div>
+								<div class="footer-list col_2">
+									<h3 class="sec-name">राज्यों से स्थानीय खबरे</h3>
+									<ul>
+										<li><h6><a href="https://www.enavabharat.com/bhopal-news-hindi/" class="mn-alink" title="भोपाल">भोपाल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/akola-news-hindi/" class="mn-alink" title="अकोला">अकोला</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/amravati-news-hindi/" class="mn-alink" title="अमरावती">अमरावती</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/garchiroli-news-hindi/" class="mn-alink" title="गड़चिरोली">गड़चिरोली</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gondia-news-hindi/" class="mn-alink" title="गोंदिया">गोंदिया</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/chandrapur-news-hindi/" class="mn-alink" title="चंद्रपुर">चंद्रपुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/thane-news-hindi/" class="mn-alink" title="ठाणे">ठाणे</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/nagpur-news-hindi/" class="mn-alink" title="नागपुर">नागपुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/nashik-news-hindi/" class="mn-alink" title="नासिक">नासिक</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/aurangabad-news-hindi/" class="mn-alink" title="नासिक">औरंगाबाद</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/kolhapur-news-hindi/" class="mn-alink" title="नासिक">कोल्हापुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/jalgaon-news-hindi/" class="mn-alink" title="नासिक">जलगांव</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/ahmednagar-news-hindi/" class="mn-alink" title="नासिक">अहमदनगर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/pune-news-hindi/" class="mn-alink" title="पुणे">पुणे</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/buldhana-news-hindi/" class="mn-alink" title="बुलढाना">बुलढाना</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bhandara-news-hindi/" class="mn-alink" title="भंडारा">भंडारा</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/mumbai-news-hindi/" class="mn-alink" title="मुंबई">मुंबई</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/yawatmal-news-hindi/" class="mn-alink" title="यवतमाल">यवतमाल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/wasim-news-hindi/" class="mn-alink" title="वाशिम">वाशिम</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/vardha-news-hindi/" class="mn-alink" title="वर्धा">वर्धा</a></h6></li>
+
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">खेल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/sports-news-hindi/" class="mn-alink" title="खेल">खेल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/football-news-hindi/" class="mn-alink" title="फुटबॉल">फुटबॉल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/tennis-news-hindi/" class="mn-alink" title="टेनिस">टेनिस</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/cricket-news-hindi/" class="mn-alink" title="क्रिकेट">क्रिकेट</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/hockey-news-hindi/" class="mn-alink" title="हॉकी">हॉकी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/other-games-news-hindi/" class="mn-alink" title="अन्य खेल">अन्य खेल</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list">
+									<h3 class="sec-name">बिज़नेस समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/business-news-hindi/" class="mn-alink" title="बिज़नेस">बिज़नेस</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/markets-news-hindi/" class="mn-alink" title="मार्केट्स">मार्केट्स</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/economy-news-hindi/" class="mn-alink" title="इकॉनमी">इकॉनमी</a></h6></li>		
+										<li><h6><a href="https://www.enavabharat.com/corporate-world-news-hindi/" class="mn-alink" title="कॉरपोरेट जगत">कॉरपोरेट जगत</a></h6></li>
+										 <!-- <li><h6><a href="" class="mn-alink" title="पर्सनल फ़ाइनैन्स">पर्सनल फ़ाइनैन्स</a></h6></li> -->
+										 <li><h6><a href="https://www.enavabharat.com/jobs-news-hindi/" class="mn-alink" title="रोजगार">रोजगार</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list col_2">
+									<h3 class="sec-name">मनोरंजन समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/entertainment-news-hindi/" class="mn-alink" title="मनोरंजन">मनोरंजन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bollywood-news-hindi/" class="mn-alink" title="बॉलीवुड">बॉलीवुड</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/hollywood-news-hindi/" class="mn-alink" title="हॉलीवुड">हॉलीवुड</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="रीजनल">रीजनल</a></h6></li> -->
+										<li><h6><a href="https://www.enavabharat.com/celebrity-news-hindi/" class="mn-alink" title="सेलिब्रिटी">सेलिब्रिटी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/movies-news-hindi/" class="mn-alink" title="मूवीज़">मूवीज़</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/television-news-hindi/" class="mn-alink" title="टेलीविजन">टेलीविजन</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="म्यूज़िक">म्यूज़िक</a></h6></li> -->
+										<!-- <li><h6><a href="" class="mn-alink" title="बुक्स">बुक्स</a></h6></li> -->
+										<!-- <li><h6><a href="" class="mn-alink" title="आर्ट्स">आर्ट्स</a></h6></li> -->
+										
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">लाइफस्टाइल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/lifestyle-news-hindi/" class="mn-alink" title="लाइफ़ स्टाइल">लाइफ़ स्टाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/vastu-astrology-news-hindi/" class="mn-alink" title="वास्तु-ज्योतिष">वास्तु-ज्योतिष</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/health-news-hindi/" class="mn-alink" title="हेल्थ">हेल्थ</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/fashion-beauty-news-hindi/" class="mn-alink" title="फ़ैशन - ब्यूटी">फ़ैशन - ब्यूटी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/travel-news-hindi/" class="mn-alink" title="पर्यटन">पर्यटन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/religion-news-hindi/" class="mn-alink" title="धर्म-अध्यात्म">धर्म-अध्यात्म</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/food-news-hindi/" class="mn-alink" title="खाना खजाना">खाना खजाना</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/relationships-news-hindi/" class="mn-alink" title="रिश्ते - नाते">रिश्ते - नाते</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list">
+									<h3 class="sec-name">टेक्नॉलजी समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/gallery/" class="mn-alink" title="टेक्नॉलजी">टेक्नॉलजी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/science-news-hindi/" class="mn-alink" title="विज्ञान">विज्ञान</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gadgets-news-hindi/" class="mn-alink" title="गैजेट">गैजेट</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/mobiles-news-hindi/" class="mn-alink" title="मोबाइल">मोबाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/internet/" class="mn-alink" title="इंटर्नेट">इंटर्नेट</a></h6></li>
+										<!--li><h6><a href="https://www.enavabharat.com/computing/" class="mn-alink" title="कम्प्यूटिंग">कम्प्यूटिंग</a></h6></li -->
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">गैलरी</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/gallery/" class="mn-alink" title="गैलरी">गैलरी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/photos/" class="mn-alink" title="फोटो">फोटो</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/videos/" class="mn-alink" title="विडियो">विडियो</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="ऑडियो">ऑडियो</a></h6></li> -->
+										
+									</ul>
+								</div> 
+								 <div class="footer-list">
+									<h3 class="sec-name">ऑटोमोबाइल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/automobile-news-hindi/" class="mn-alink" title="ऑटोमोबाइल">ऑटोमोबाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/cars-news-hindi/" class="mn-alink" title="कार">कार</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bikes-news-hindi/" class="mn-alink" title="बाइक्स">बाइक्स</a></h6></li>
+										
+									</ul>
+								</div> 
+							</div></div>
+						<div class="clear"></div>
+					</div>
+		        </div>
+        	</header>
+	</div>
+        		<div class="container trendtopic_widget"> 
+			<div class="title"> 
+				<div class="trendtxt">ट्रेंडिंग टॉपिक्स</div>
+			</div> 
+			<div class="trendtopic_blk  ">	
+				<ul class="trendtopic_slider">
+									<li class="trendt_list"> 
+						<a href="/coronavirus/" class="sub_cat_alink" title="कोरोना विषाणु"><h3 class="trendtopic">#कोरोना विषाणु</h3></a> 
+					</li>
+									<li class="trendt_list"> 
+						<a href="/navabharat-vibes/" class="sub_cat_alink" title="नवभारत Vibes"><h3 class="trendtopic">#नवभारत Vibes</h3></a> 
+					</li>
+									<li class="trendt_list"> 
+						<a href="/covid-19-lockdown-vibes/" class="sub_cat_alink" title="कोविड -19 लॉकडाउन वाइब्स "><h3 class="trendtopic">#कोविड -19 लॉकडाउन वाइब्स </h3></a> 
+					</li>
+									<li class="trendt_list"> 
+						<a href="/covid-19-e-charcha/" class="sub_cat_alink" title="कोविड -19 e - चर्चा"><h3 class="trendtopic">#कोविड -19 e - चर्चा</h3></a> 
+					</li>
+								<li class="trendt_list rashifal right">
+					<a href="/vastu-astrology-news-hindi/" class="sub_cat_alink" title="आज का राशिफल"><h3 class="trendtopic">राशिफल</h3></a>
+				</li>
+				<li class="trendt_list newspodcost right">
+										<a href="/editorial/" id="nb-specialwidget" class="sub_cat_alink" title="संपादकीय"><h3 class="trendtopic">संपादकीय</h3></a>
+				</li>
+				<!--li class="trendt_list videobulletin "> आज का 
+					<a href="#" class="sub_cat_alink" title="वीडियो बुलेटिन"><h3 class="trendtopic">वीडियो बुलेटिन</h3></a>
+				</li-->  
+					  
+				</ul>	 
+
+<!-- ul class="trendtopic_slider"></ul -->
+
+<script>
+jQuery('#nb-specialwidget').on('click', function() {
+	  jQuery('html,body').animate({scrollTop: jQuery('.hr_widget').offset().top-100},'slow');
+});
+</script>
+
+			</div> 
+			<div class="clear"></div>  
+		</div>
+		
+
+					<div id="content" class="container-fluid" style="transform: none;">
+
+                <div class="container" style="transform: none;">
+                        <div class="main" style="transform: none;">
+                        	
+<div class="left_wrap" id="post-54472" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;"> 
+         
+        
+<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;"><section class="article_widget">
+        	<div class="breadcrumb-social">
+                <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li class="b-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://www.enavabharat.com" title="Home" itemprop="item"><span itemprop="name">होम</span></a><meta itemprop="position" content="1"></li>
+                    <li class="b-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://www.enavabharat.com/state-news-hindi/" title="राज्य" itemprop="item"><span itemprop="name">राज्य</span></a><meta itemprop="position" content="2"></li>
+                                        <li class="b-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="https://www.enavabharat.com/chandrapur-news-hindi/" title="चंद्रपुर" itemprop="item"><span itemprop="name">चंद्रपुर</span></a><meta itemprop="position" content="3"></li>
+                                    </ul>
+		<ul class="out_options">
+	
+			<!-- <li class="bookmark"><a href="#" class="isprite bookmark" id="bookmarkme" target="_blank" title="bookmark" aria-label="bookmark"></a></li> -->
+			<li class="mail"><a href="mailto:?subject=enavabharat.com%3A%20आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या&amp;body=From%20enavabharat.%20%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%A4%E0%A4%82%E0%A4%97%E0%A5%80%20%E0%A4%94%E0%A4%B0%20%E0%A4%AC%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B8%E0%A5%87%20%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%20%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A4%A0%E0%A5%87%E0%A4%B2%E0%A4%BE%20%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A4%95%20%E0%A4%95%E0%A5%80%20%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%B9%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%20Read%20more%20at%20https%3A%2F%2Fwww.enavabharat.com%2Fchandrapur-news-hindi%2Ffinancially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472%2F" class="isprite mail" target="_blank" title="Email" aria-label="Email"></a></li>
+			<li class="print"><a href="#" onclick="window.print()" class="isprite print" target="_blank" title="print" aria-label="print"></a></li>
+			<li class="fbtn dec"><a href="javascript:void(0);" id="font_dec" class="font_btn" title="Decrease font size">A-</a></li>
+			<li class="fbtn inc"><a href="javascript:void(0);" id="font_inc" class="font_btn  active" title="Increase font size">A+</a></li>
+		</ul>
+        </div>
+        
+        <article class="article tp-chandrapur">
+
+	<div class="article-header">
+        <div class="cat_date_blk deshvidesh">
+                <a href="https://www.enavabharat.com/chandrapur-news-hindi/" title="चंद्रपुर" class="cat_name"><h5 class="cat">चंद्रपुर</h5></a>
+                <span class="date">Published: May 22, 2020 08:10 PM</span>                                
+        </div>
+        <h1 class="h1-title"><span class="cat tp-chandrapur">चंद्रपुर</span>आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या</h1>        
+        
+        <div class="author_section">
+        		                <figure class="author_blk">
+                        <a href="https://www.enavabharat.com/author/amit/" title="Amit Borkar" class="author_div"><img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/03/amit-96x96.jpg" alt="Amit Borkar" title="Amit Borkar"> </a>
+                        <figcaption>
+                                <div class="author"><a href="https://www.enavabharat.com/author/amit/" title="Amit Borkar">Amit Borkar</a></div>
+								<div class="role_comp"><span class="a_role">कंटेन्ट राइटर</span><a href="https://www.enavabharat.com" class="a_comp" title="नवभारत.कॉम">नवभारत.कॉम</a></div> 
+                        </figcaption>                                   
+                </figure>
+                                <div class="social_links" style="width: 150px;">  
+                        <a class="isprite ifacebook" onclick="PopupCenter(this.href,'आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या via enavabharat',560,360,'issocial','https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/');return false" href="https://facebook.com/sharer.php?u=https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/" title="Share on Facebook"></a>
+                        <a href="https://twitter.com/intent/tweet?url=https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/&amp;text=आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या&amp;via=enavabharat" class="isprite itwitter" title="Twitter"></a>
+                        <a href="whatsapp://send?text=https://www.enavabharat.com/chandrapur-news-hindi/financially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472/" class="isprite iwhatsapp" title="whatsapp"></a>
+                        <a href="mailto:?subject=enavabharat.com%3A%20आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या&amp;body=From%20enavabharat.%20%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%A5%E0%A4%BF%E0%A4%95%20%E0%A4%A4%E0%A4%82%E0%A4%97%E0%A5%80%20%E0%A4%94%E0%A4%B0%20%E0%A4%AC%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%B8%E0%A5%87%20%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%20%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A4%A0%E0%A5%87%E0%A4%B2%E0%A4%BE%20%E0%A4%9A%E0%A4%BE%E0%A4%B2%E0%A4%95%20%E0%A4%95%E0%A5%80%20%E0%A4%86%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%B9%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%20Read%20more%20at%20https%3A%2F%2Fwww.enavabharat.com%2Fchandrapur-news-hindi%2Ffinancially-strait-and-disease-stricken-panthela-driver-commits-suicide-54472%2F" class="isprite imail" target="_blank" title="Email" aria-label="Email" style="background-position: -279px -89px;"></a>
+                </div>
+        </div>  
+</div>
+
+	<div class="article-body">
+         
+	   
+	<div class="art_img">
+        <div class="img_parent ">
+
+			    <img src="https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727.jpg 528w, https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727-384x240.jpg 384w, https://s.enavabharat.com/wp-content/uploads/2020/02/2018_10large_Well_2_727-136x85.jpg 136w" sizes="(max-width: 528px) 100vw, 528px" alt="आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या" title="आर्थिक तंगी और बीमारी से त्रस्त पानठेला चालक की आत्महत्या">
+
+		</div><!-- .featured-media-inner -->
+
+	</div><!-- .featured-media -->
+
+	<h2 class="subtitle"></h2><ul><li>दिखाई देने लगे लाकडाउन के साईड इफेक्ट</li></ul><p style="text-align: justify;"><strong>मूल</strong>. आर्थिक परस्थितिि और बीमारी से परेशान होकर एक पानठेला चालक ने कुएं में कूदकर अपनी ईहलीला समाप्त करने की घटना मूल में घटी. यह लाकडाउन के साईड इफेक्ट भी दिखाई देने लगे है. यहां के वार्ड क्रं. 1 निवासी लोमेश गेडाम (42) का बस स्टैंड के सामने पानठेला है. इसके भरोसे उसके परिवार का भरण पोषण करता था. लोमेश अविवाहित होने से उस पर बुजुर्ग माता, पिता, बहन और भांजी की जिममेदारी थी. कोरोना लाकडाउन की वजह से पिछले दो महीने से पानठेला बंद रहने से परिवार का भरण पोषण मुश्किल हो रहा था.</p>
+<p style="text-align: justify;">लोमेश पिछले कुछ वर्षो से सिकलसेल और किडनी की बीमारी से परेशान था. बीमारी पर मात कर लोमेश पिछले कुछ वर्षो से पानठेला चलाकर बुजुर्ग माता, पिता, बहन और भांजी का भरण पोषण कर रहा था. किंतु 47 दिनों से लाकडाउन की वजह से पानठेला बंद रहने से आर्थिक तंगी में फंस गया था. परिवार के भरण पोषण की समस्या से वह त्रस्त था. इससे परेशान होकर घर के पीछे खेत में नागापुर के कुएं में कूदकर अपनी ईहलीला समाप्त कर ली.</p>
+<p style="text-align: justify;">लोमेश ने खुदकुशी के पूर्व घर और कुएं के पास अलग अलग सुसाईड नोट लिख छोडे थे जिसमें लिखा था बीमारी से त्रस्त होकर और परिवार के भरण पोषण में असमर्थ होने से खुदकुशी कर रहा हूं. इसके लिए किसी को जम्मिेदार न ठहराया जाये. लोमेश घर का इकलौता कमाऊ था इसकी वजह से परिवार के सामने आर्थिक संकट आ गया है.</p>
+
+		</div><!-- .article-body -->
+
+
+	<div class="article-footer">      
+                                        
+        <div class="ft_story_date"><span class="text-left">Published: May 22, 2020 08:10 PM </span> <span class="text-right">   Updated:  May 22, 2020 08:10 PM</span></div>
+         
+
+                <div class="tags_list_blk">
+                <div class="tags_title_blk">
+                        <span class="tag_txt">टॉपिक: </span>
+                </div>
+                <div class="tags_list">
+                    <a href="https://www.enavabharat.com/chandrapur-news-hindi/" class="tag_alink" title="चंद्रपुर">चंद्रपुर</a><a href="https://www.enavabharat.com/maharashtra-news-hindi/" class="tag_alink" title="महाराष्ट्र">महाराष्ट्र</a><a href="https://www.enavabharat.com/state-news-hindi/" class="tag_alink" title="राज्य">राज्य</a>            </div>    
+            <div class="clear"></div>
+        </div><!-- .article-footer -->
+        
+	</div><!-- .article-footer -->
+
+	</article>
+
+        <section class="outbrain_widget">  
+        <!-- img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/Promotedcontent.png" -->
+        </section>
+		<section class="fbcmt_widget" id="fbcomments">                     
+                <div class="widget_header">
+                        <div class="cmt_title">Comments</div>
+                </div> 
+                <div class="widget_content">
+                    <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://www.enavabharat.com/?p=54472" data-width="100%" data-numposts="5" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=973270659709010&amp;container_width=930&amp;height=100&amp;href=https%3A%2F%2Fwww.enavabharat.com%2F%3Fp%3D54472&amp;locale=en_GB&amp;numposts=5&amp;sdk=joey&amp;version=v6.0&amp;width=" style="width: 100%;"><span style="vertical-align: top; width: 100%; height: 0px; overflow: hidden;"><iframe name="f1a477404466bec" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v6.0/plugins/comments.php?app_id=973270659709010&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3c9b233efdf464%26domain%3Dwww.enavabharat.com%26origin%3Dhttps%253A%252F%252Fwww.enavabharat.com%252Ff24ff6ef05f8e94%26relation%3Dparent.parent&amp;container_width=930&amp;height=100&amp;href=https%3A%2F%2Fwww.enavabharat.com%2F%3Fp%3D54472&amp;locale=en_GB&amp;numposts=5&amp;sdk=joey&amp;version=v6.0&amp;width=" style="border: none; visibility: hidden; width: 100%;"></iframe></span></div>
+                </div>                   
+        </section>
+        
+        <section class="hr_widget_blk">
+			<div class="cat_nbhead_blk">
+	            <a href="https://www.enavabharat.com/chandrapur-news-hindi/" title="संबंधित खबरें" class="cat_name"><h2 class="cat">संबंधित खबरें</h2></a>
+	            <a href="https://www.enavabharat.com/chandrapur-news-hindi/" title="संबंधित खबरें" class="readmore">और भी पढ़े<img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/next.png"></a>                
+	        </div>
+			<div class="nb_vid_photos_widget photos">
+			<div class="top_list"><div class="flex_col flex_right"><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/an-officer-handling-the-responsibility-of-three-departments-106856/" title="तीन विभाग की जिम्मेदारी संभाल रहा एक अधिकारी">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-425x240.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/verernary-nagbhid.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="तीन विभाग की जिम्मेदारी संभाल रहा एक अधिकारी" title="तीन विभाग की जिम्मेदारी संभाल रहा एक अधिकारी">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/an-officer-handling-the-responsibility-of-three-departments-106856/" class="cat_alink title_alink" title="तीन विभाग की जिम्मेदारी संभाल रहा एक अधिकारी"><h5 class="cat">अतिरिक्त बोझ</h5>
+									<h4 class="title">तीन विभाग की जिम्मेदारी संभाल रहा एक अधिकारी</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/government-is-doing-the-work-of-demoralizing-the-tribals-106832/" title="आदिवासियों का मनोबल गिराने का ही काम कर रही सरकार">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-425x240.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/adiwasi.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="आदिवासियों का मनोबल गिराने का ही काम कर रही सरकार" title="आदिवासियों का मनोबल गिराने का ही काम कर रही सरकार">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/government-is-doing-the-work-of-demoralizing-the-tribals-106832/" class="cat_alink title_alink" title="आदिवासियों का मनोबल गिराने का ही काम कर रही सरकार"><h5 class="cat">आदिवासी समाज</h5>
+									<h4 class="title">आदिवासियों का मनोबल गिराने का ही काम कर रही सरकार</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/75-year-old-woman-from-corona-dies-in-chandrapur-106828/" title="कोरोना से तेलंगना की 75 वर्षीय महिला का चंद्रपुर में मृत्यु">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-425x240.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/corona-death-rate.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="कोरोना से तेलंगना की 75 वर्षीय महिला का चंद्रपुर में मृत्यु" title="कोरोना से तेलंगना की 75 वर्षीय महिला का चंद्रपुर में मृत्यु">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/75-year-old-woman-from-corona-dies-in-chandrapur-106828/" class="cat_alink title_alink" title="कोरोना से तेलंगना की 75 वर्षीय महिला का चंद्रपुर में मृत्यु"><h5 class="cat">कोरोना वायरस </h5>
+									<h4 class="title">कोरोना से तेलंगना की 75 वर्षीय महिला का चंद्रपुर में मृत्यु</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/5350-metric-tons-of-uria-available-in-the-district-in-a-week-106821/" title="जिले में सप्ताहभर में 5350 मेट्रिक टन युरिया उपलब्ध">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-425x240.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/uria-khad.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="जिले में सप्ताहभर में 5350 मेट्रिक टन युरिया उपलब्ध" title="जिले में सप्ताहभर में 5350 मेट्रिक टन युरिया उपलब्ध">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/5350-metric-tons-of-uria-available-in-the-district-in-a-week-106821/" class="cat_alink title_alink" title="जिले में सप्ताहभर में 5350 मेट्रिक टन युरिया उपलब्ध"><h5 class="cat">खरिप मौसम</h5>
+									<h4 class="title">जिले में सप्ताहभर में 5350 मेट्रिक टन युरिया उपलब्ध</h4>
+								</a>
+							</figcaption>
+						</figure></div><div class="flex_col flex_right"><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/paddy-growers-get-sanjeevani-jhajjam-in-district-on-5th-day-106212/" title="धान उत्पादकों को संजीवनी, 5वें दिन भी जिले में झमाझम">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/lazyload_img.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3-763x430.jpg 763w, https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3-768x433.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/rain-3.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="धान उत्पादकों को संजीवनी, 5वें दिन भी जिले में झमाझम" title="धान उत्पादकों को संजीवनी, 5वें दिन भी जिले में झमाझम">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/paddy-growers-get-sanjeevani-jhajjam-in-district-on-5th-day-106212/" class="cat_alink title_alink" title="धान उत्पादकों को संजीवनी, 5वें दिन भी जिले में झमाझम"><h5 class="cat">Monsoon</h5>
+									<h4 class="title">धान उत्पादकों को संजीवनी, 5वें दिन भी जिले में झमाझम</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/stirges-in-13-villages-people-worried-after-getting-corona-positive-106200/" title="13 गांवों में हड़कंप, कोरोना पाजिटिव मिलने के बाद लोग चिंता में">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/lazyload_img.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/arunachal-pradesh-coronavirus.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="13 गांवों में हड़कंप, कोरोना पाजिटिव मिलने के बाद लोग चिंता में" title="13 गांवों में हड़कंप, कोरोना पाजिटिव मिलने के बाद लोग चिंता में">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/stirges-in-13-villages-people-worried-after-getting-corona-positive-106200/" class="cat_alink title_alink" title="13 गांवों में हड़कंप, कोरोना पाजिटिव मिलने के बाद लोग चिंता में"><h5 class="cat">Corona Update </h5>
+									<h4 class="title">13 गांवों में हड़कंप, कोरोना पाजिटिव मिलने के बाद लोग चिंता में</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/9-new-positives-found-in-district-202-so-far-discharged-after-treatment-106193/" title="जिले में मिले 9 नए पाजिटिव, अब तक 202 को उपचार के बाद छुट्टी">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/lazyload_img.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/06/Another-BJP-MLA-in-MP-found-infected-with-covid-19.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="जिले में मिले 9 नए पाजिटिव, अब तक 202 को उपचार के बाद छुट्टी" title="जिले में मिले 9 नए पाजिटिव, अब तक 202 को उपचार के बाद छुट्टी">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/9-new-positives-found-in-district-202-so-far-discharged-after-treatment-106193/" class="cat_alink title_alink" title="जिले में मिले 9 नए पाजिटिव, अब तक 202 को उपचार के बाद छुट्टी"><h5 class="cat">चंद्रपुर in कोरोना</h5>
+									<h4 class="title">जिले में मिले 9 नए पाजिटिव, अब तक 202 को उपचार के बाद छुट्टी</h4>
+								</a>
+							</figcaption>
+						</figure><figure class="lead_story_blk">
+							<a class="img_parent" href="https://www.enavabharat.com/chandrapur-news-hindi/encroachment-removes-forest-department-despite-dissent-growing-discontent-among-villagers-106188/" title="मनाई के बावजूद अतिक्रमण हटा रहा वन विभाग- ग्रामीणों में बढ़ रहा असंतोष">
+								<img class="lazyload" src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/lazyload_img.jpg" data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman-425x240.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/atikraman.jpg 1200w" sizes="(max-width: 425px) 100vw, 425px" alt="मनाई के बावजूद अतिक्रमण हटा रहा वन विभाग- ग्रामीणों में बढ़ रहा असंतोष" title="मनाई के बावजूद अतिक्रमण हटा रहा वन विभाग- ग्रामीणों में बढ़ रहा असंतोष">
+							</a>
+							<figcaption>
+								<a href="https://www.enavabharat.com/chandrapur-news-hindi/encroachment-removes-forest-department-despite-dissent-growing-discontent-among-villagers-106188/" class="cat_alink title_alink" title="मनाई के बावजूद अतिक्रमण हटा रहा वन विभाग- ग्रामीणों में बढ़ रहा असंतोष"><h5 class="cat">अतिक्रमण</h5>
+									<h4 class="title">मनाई के बावजूद अतिक्रमण हटा रहा वन विभाग- ग्रामीणों में बढ़ रहा असंतोष</h4>
+								</a>
+							</figcaption>
+						</figure></div></div>
+		</div>
+		</section>                
+        
+        <div class="g-adv-div">  
+                <div id="div-gpt-ad-728x90" style="width: 300px; height: 94px; margin: 0px auto;"><!-- img src="/assets/images/adv_730x90.png" alt="Advertisement" title="Advertisement" --></div> 
+        </div>
+	</section></div></div><!-- .post -->
+                                
+                                                        <div class="right_wrap" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;"> 
+								 
+																			
+																				
+
+				 
+							<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;"><div class="widget_rhs newsboard_widget card entertainment"> 
+    <div class="widget_header cat_nbhead_blk"><a class="cat_name"><h2 class="cat">ट्रेंडिंग न्यूज़</h2></a></div><ul class="widget_content news_list_blk"><li class="news_list">
+                <div class="thumb_wrap">
+                    <a href="https://www.enavabharat.com/state-news-hindi/videos-of-injustice-to-poor-emerge-from-mp-106120/" title="जान जोखिम में डाल दो पैसों कमाने का भी गरीब&nbsp;को नहीं है हक़ ?" class="">
+                        <img data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-150x85.jpg" src="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-150x85.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0015-1.jpg 1200w" sizes="(max-width: 150px) 100vw, 150px" alt="" class="lazyload">
+                    </a>    
+                </div>
+                <div class="info_wrap">                                     
+                    <a href="https://www.enavabharat.com/state-news-hindi/videos-of-injustice-to-poor-emerge-from-mp-106120/" class="cat_alink title_alink" title="जान जोखिम में डाल दो पैसों कमाने का भी गरीब&nbsp;को नहीं है हक़ ?"><h5 class="cat">वीडियो वायरल</h5>
+                        <h4 class="title">जान जोखिम में डाल दो पैसों कमाने का भी गरीब&nbsp;को नहीं है हक़ ?</h4>
+                    </a>
+                </div> 
+            </li><li class="news_list">
+                <div class="thumb_wrap">
+                    <a href="https://www.enavabharat.com/state-news-hindi/fruit-seller-womans-english-106057/" title="‘मैं कहां जा कर मरूं, कलेक्टर के घर या मोदी के?’- अंग्रेजी बोलनेवाली फ्रूट सेलर" class="">
+                        <img data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-150x85.jpg" src="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-150x85.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/IMG-20200723-WA0017.jpg 1200w" sizes="(max-width: 150px) 100vw, 150px" alt="" class="lazyload">
+                    </a>    
+                </div>
+                <div class="info_wrap">                                     
+                    <a href="https://www.enavabharat.com/state-news-hindi/fruit-seller-womans-english-106057/" class="cat_alink title_alink" title="‘मैं कहां जा कर मरूं, कलेक्टर के घर या मोदी के?’- अंग्रेजी बोलनेवाली फ्रूट सेलर"><h5 class="cat">सोशल मीडिया</h5>
+                        <h4 class="title">‘मैं कहां जा कर मरूं, कलेक्टर के घर या मोदी के?’- अंग्रेजी बोलनेवाली फ्रूट सेलर</h4>
+                    </a>
+                </div> 
+            </li><li class="news_list">
+                <div class="thumb_wrap">
+                    <a href="https://www.enavabharat.com/india-news-hindi/cr-patil-appointed-as-state-president-of-gujarat-and-jamyang-tussering-namgyal-ladakh-103720/" title="सी आर पाटिल गुजरात और जम्यांग नामग्याल लद्दाख के प्रदेश अध्यक्ष नियुक्त" class="">
+                        <img data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-150x85.jpg" src="https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-150x85.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/naamgyala.jpg 1200w" sizes="(max-width: 150px) 100vw, 150px" alt="CR Patil appointed as State President of Gujarat and Jamyang Tussering Namgyal Ladakh" class="lazyload">
+                    </a>    
+                </div>
+                <div class="info_wrap">                                     
+                    <a href="https://www.enavabharat.com/india-news-hindi/cr-patil-appointed-as-state-president-of-gujarat-and-jamyang-tussering-namgyal-ladakh-103720/" class="cat_alink title_alink" title="सी आर पाटिल गुजरात और जम्यांग नामग्याल लद्दाख के प्रदेश अध्यक्ष नियुक्त"><h5 class="cat">भाजपा प्रदेश अध्यक्ष</h5>
+                        <h4 class="title">सी आर पाटिल गुजरात और जम्यांग नामग्याल लद्दाख के प्रदेश अध्यक्ष नियुक्त</h4>
+                    </a>
+                </div> 
+            </li><li class="news_list">
+                <div class="thumb_wrap">
+                    <a href="https://www.enavabharat.com/other-states-news-hindi/pilot-calls-mlas-allegations-baseless-103763/" title="पायलट ने विधायक के आरोपों को बताया आधारहीन" class="">
+                        <img data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-150x85.jpg" src="https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-150x85.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/Sachin-Pilot.jpg 1200w" sizes="(max-width: 150px) 100vw, 150px" alt="Sachin Pilot" class="lazyload">
+                    </a>    
+                </div>
+                <div class="info_wrap">                                     
+                    <a href="https://www.enavabharat.com/other-states-news-hindi/pilot-calls-mlas-allegations-baseless-103763/" class="cat_alink title_alink" title="पायलट ने विधायक के आरोपों को बताया आधारहीन"><h5 class="cat">राजस्थान पायलट</h5>
+                        <h4 class="title">पायलट ने विधायक के आरोपों को बताया आधारहीन</h4>
+                    </a>
+                </div> 
+            </li><li class="news_list">
+                <div class="thumb_wrap">
+                    <a href="https://www.enavabharat.com/maharashtra-news-hindi/pawar-insulted-hinduism-why-hindutva-thackeray-is-silent-vinayak-mete-103733/" title="पवार से हिन्दू धर्म का अपमान, हिंदुत्ववादी ठाकरे चुप क्यों?" class="">
+                        <img data-src="https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-150x85.jpg" src="https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-150x85.jpg" srcset="https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-150x85.jpg 150w, https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-425x240.jpg 425w, https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-764x430.jpg 764w, https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray-768x432.jpg 768w, https://s.enavabharat.com/wp-content/uploads/2020/07/sharad-pawar-and-udhav-thackeray.jpg 1200w" sizes="(max-width: 150px) 100vw, 150px" alt="" class="lazyload">
+                    </a>    
+                </div>
+                <div class="info_wrap">                                     
+                    <a href="https://www.enavabharat.com/maharashtra-news-hindi/pawar-insulted-hinduism-why-hindutva-thackeray-is-silent-vinayak-mete-103733/" class="cat_alink title_alink" title="पवार से हिन्दू धर्म का अपमान, हिंदुत्ववादी ठाकरे चुप क्यों?"><h5 class="cat">अयोध्या राम मंदिर</h5>
+                        <h4 class="title">पवार से हिन्दू धर्म का अपमान, हिंदुत्ववादी ठाकरे चुप क्यों?</h4>
+                    </a>
+                </div> 
+            </li></ul></div><div class="adv_rhs_card">
+									<div class="adv_header_blk"><h5 class="adv_txt">Advertisement</h5><h5></h5></div> 
+									<div class="adv_content_blk">
+										<div id="div-gpt-ad-123" style="height:250px; width: 300px; background: #000; margin: 0 auto;"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/adv300x250.jpg"></div>
+									</div> 
+								</div><div class="widget_rhs cartoon card "> 
+				<div class="widget_header cat_nbhead_blk">
+					<a href="https://www.enavabharat.com/cartoon/" title="आज का कार्टून" class="cat_name"><h2 class="cat">आज का कार्टून</h2></a>                
+				</div>
+				<div class="widget_content card">
+					<div class="c_img"><a href="https://www.enavabharat.com/cartoon/aaj-ka-cartoon-may-20-2020-51604/" title="आज का कार्टून : मई 20, 2020"><img class="lazyload" src="https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-425x240.gif" data-src="https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-425x240.gif" srcset="https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-425x240.gif 425w, https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-764x430.gif 764w, https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-150x85.gif 150w, https://s.enavabharat.com/wp-content/uploads/2020/05/20-may-cartoon-768x432.gif 768w" sizes="(max-width: 425px) 100vw, 425px" alt="आज का कार्टून : मई 20, 2020" title="आज का कार्टून : मई 20, 2020"></a></div>
+					<a href="https://www.enavabharat.com/cartoon/" title="आज का कार्टून" class="readmore">और भी पढ़े</a>
+				</div> 
+	   
+			</div><div id="polls-12" class="wp-polls">
+	<form id="polls_form_12" class="wp-polls-form" action="/index.php" method="post">
+		<p style="display: none;"><input type="hidden" id="poll_12_nonce" name="wp-polls-nonce" value="85541cb43a"></p>
+		<p style="display: none;"><input type="hidden" name="poll_id" value="12"></p>
+		<p style="text-align: center"><strong>देश में कोरोना के बढ़ते मामलों की स्थिति देख, क्या पुनः लॉकडाउन लागू करना चाहिए?</strong></p><div id="polls-12-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="radio" id="poll-answer-26" name="poll_12" value="26"> <label for="poll-answer-26">हाँ</label></li>
+		<li><input type="radio" id="poll-answer-27" name="poll_12" value="27"> <label for="poll-answer-27">नहीं</label></li>
+		</ul><p style="text-align: center"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(12);"></p><p style="text-align: center"><a href="#ViewPollResults" onclick="poll_result(12); return false;" title="View Results Of This Poll">View Results</a></p></div>
+	</form>
+</div><div id="polls-12-loading" class="wp-polls-loading"><img src="https://s.enavabharat.com/wp-content/plugins/wp-polls/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image">&nbsp;Loading ...</div></div></div>
+                        </div>
+                </div>
+
+
+        </div>
+			<footer class="footer">
+				<div class="container-fluid ft-top">
+			        <div class="container brand_social_wrap">
+						<div class="brand-blk">
+						   <a href="https://www.enavabharat.com" class="brand_logo_alink" title="enavabharat"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/enavabharatlogo.png" alt="enavabharat" title="enavabharat"></a>
+						</div>
+						<div class="bottom_isocial white_icons"> 
+							<a class="isprite ifacebook" href="https://www.facebook.com/enavabharat" title="Facebook" target="_blank"></a>
+							<a class="isprite itwitter" href="https://twitter.com/enavabharat" title="Twitter" target="_blank"></a>
+							<a class="isprite iinstagram" href="https://www.instagram.com/enavabharat/" title="Instagram" target="_blank"></a>
+							<a class="isprite iyoutube" href="https://www.youtube.com/c/eNavaBharat" title="YouTube" target="_blank"></a>
+							<a class="isprite ilinkedin" href="https://www.linkedin.com/company/10095720/" title="LinkedIn"></a>
+							<a class="isprite ipinterest" href="https://in.pinterest.com/enavabharat/" title="Pinterest" target="_blank"></a>
+							<!-- <a class="isprite imailto" href="info@navabharat.com" title="Email"></a> --> 
+						</div> 
+					</div>
+				</div>	 	
+					
+				<div class="container-fluid ft-bottom">
+			        <div class="container ft-1">
+						<div class="ft-left w100">
+							<div class="menulist-blk">
+								<div class="footer-list col_2">
+									<h3 class="sec-name">खबरें एक झलक में</h3>
+									<ul>
+										<li><h6><a href="https://www.enavabharat.com" class="mn-alink" title="मुख पृष्ठ">मुख पृष्ठ</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/india-news-hindi/" class="mn-alink" title="देश">देश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/world-news-hindi/" class="mn-alink" title="विदेश">विदेश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/state-news-hindi/" class="mn-alink" title="राज्य">राज्य</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/madhya-pradesh-news-hindi/" class="mn-alink" title="मध्य प्रदेश">मध्य प्रदेश</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bhopal-news-hindi/" class="mn-alink" title="छत्तीसगढ़">छत्तीसगढ़</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/delhi-news-hindi/" class="mn-alink" title="दिल्ली">दिल्ली</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/odisha-news-hindi/" class="mn-alink" title="ओडिशा">ओडिशा</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gujarat-news-hindi/" class="mn-alink" title="गुजरात">गुजरात</a></h6></li> 
+										<li><h6><a href="https://www.enavabharat.com/maharashtra-news-india/" class="mn-alink" title="महाराष्ट्र">महाराष्ट्र</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/other-states-news-india/" class="mn-alink" title="अन्य राज्य">अन्य राज्य</a></h6></li>			
+										<li><h6><a href="https://www.enavabharat.com/education-news-hindi/" class="mn-alink" title="एजुकेशन">एजुकेशन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/blogs/" class="mn-alink" title="ब्लॉग">ब्लॉग</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/special-coverage/" class="mn-alink" title="नवभारत विशेष">नवभारत विशेष</a></h6></li>
+										
+									</ul>
+								</div>
+								<div class="footer-list col_2">
+									<h3 class="sec-name">राज्यों से स्थानीय खबरे</h3>
+									<ul>
+										<li><h6><a href="https://www.enavabharat.com/bhopal-news-hindi/" class="mn-alink" title="भोपाल">भोपाल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/akola-news-hindi/" class="mn-alink" title="अकोला">अकोला</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/amravati-news-hindi/" class="mn-alink" title="अमरावती">अमरावती</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/garchiroli-news-hindi/" class="mn-alink" title="गड़चिरोली">गड़चिरोली</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gondia-news-hindi/" class="mn-alink" title="गोंदिया">गोंदिया</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/chandrapur-news-hindi/" class="mn-alink" title="चंद्रपुर">चंद्रपुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/thane-news-hindi/" class="mn-alink" title="ठाणे">ठाणे</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/nagpur-news-hindi/" class="mn-alink" title="नागपुर">नागपुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/nashik-news-hindi/" class="mn-alink" title="नासिक">नासिक</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/aurangabad-news-hindi/" class="mn-alink" title="नासिक">औरंगाबाद</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/kolhapur-news-hindi/" class="mn-alink" title="नासिक">कोल्हापुर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/jalgaon-news-hindi/" class="mn-alink" title="नासिक">जलगांव</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/ahmednagar-news-hindi/" class="mn-alink" title="नासिक">अहमदनगर</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/pune-news-hindi/" class="mn-alink" title="पुणे">पुणे</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/buldhana-news-hindi/" class="mn-alink" title="बुलढाना">बुलढाना</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bhandara-news-hindi/" class="mn-alink" title="भंडारा">भंडारा</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/mumbai-news-hindi/" class="mn-alink" title="मुंबई">मुंबई</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/yawatmal-news-hindi/" class="mn-alink" title="यवतमाल">यवतमाल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/wasim-news-hindi/" class="mn-alink" title="वाशिम">वाशिम</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/vardha-news-hindi/" class="mn-alink" title="वर्धा">वर्धा</a></h6></li>
+
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">खेल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/sports-news-hindi/" class="mn-alink" title="खेल">खेल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/football-news-hindi/" class="mn-alink" title="फुटबॉल">फुटबॉल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/tennis-news-hindi/" class="mn-alink" title="टेनिस">टेनिस</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/cricket-news-hindi/" class="mn-alink" title="क्रिकेट">क्रिकेट</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/hockey-news-hindi/" class="mn-alink" title="हॉकी">हॉकी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/other-games-news-hindi/" class="mn-alink" title="अन्य खेल">अन्य खेल</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list">
+									<h3 class="sec-name">बिज़नेस समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/business-news-hindi/" class="mn-alink" title="बिज़नेस">बिज़नेस</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/markets-news-hindi/" class="mn-alink" title="मार्केट्स">मार्केट्स</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/economy-news-hindi/" class="mn-alink" title="इकॉनमी">इकॉनमी</a></h6></li>		
+										<li><h6><a href="https://www.enavabharat.com/corporate-world-news-hindi/" class="mn-alink" title="कॉरपोरेट जगत">कॉरपोरेट जगत</a></h6></li>
+										 <!-- <li><h6><a href="" class="mn-alink" title="पर्सनल फ़ाइनैन्स">पर्सनल फ़ाइनैन्स</a></h6></li> -->
+										 <li><h6><a href="https://www.enavabharat.com/jobs-news-hindi/" class="mn-alink" title="रोजगार">रोजगार</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list col_2">
+									<h3 class="sec-name">मनोरंजन समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/entertainment-news-hindi/" class="mn-alink" title="मनोरंजन">मनोरंजन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bollywood-news-hindi/" class="mn-alink" title="बॉलीवुड">बॉलीवुड</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/hollywood-news-hindi/" class="mn-alink" title="हॉलीवुड">हॉलीवुड</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="रीजनल">रीजनल</a></h6></li> -->
+										<li><h6><a href="https://www.enavabharat.com/celebrity-news-hindi/" class="mn-alink" title="सेलिब्रिटी">सेलिब्रिटी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/movies-news-hindi/" class="mn-alink" title="मूवीज़">मूवीज़</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/television-news-hindi/" class="mn-alink" title="टेलीविजन">टेलीविजन</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="म्यूज़िक">म्यूज़िक</a></h6></li> -->
+										<!-- <li><h6><a href="" class="mn-alink" title="बुक्स">बुक्स</a></h6></li> -->
+										<!-- <li><h6><a href="" class="mn-alink" title="आर्ट्स">आर्ट्स</a></h6></li> -->
+										
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">लाइफस्टाइल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/lifestyle-news-hindi/" class="mn-alink" title="लाइफ़ स्टाइल">लाइफ़ स्टाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/vastu-astrology-news-hindi/" class="mn-alink" title="वास्तु-ज्योतिष">वास्तु-ज्योतिष</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/health-news-hindi/" class="mn-alink" title="हेल्थ">हेल्थ</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/fashion-beauty-news-hindi/" class="mn-alink" title="फ़ैशन - ब्यूटी">फ़ैशन - ब्यूटी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/travel-news-hindi/" class="mn-alink" title="पर्यटन">पर्यटन</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/religion-news-hindi/" class="mn-alink" title="धर्म-अध्यात्म">धर्म-अध्यात्म</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/food-news-hindi/" class="mn-alink" title="खाना खजाना">खाना खजाना</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/relationships-news-hindi/" class="mn-alink" title="रिश्ते - नाते">रिश्ते - नाते</a></h6></li>
+									</ul>
+								</div> 
+								<div class="footer-list">
+									<h3 class="sec-name">टेक्नॉलजी समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/gallery/" class="mn-alink" title="टेक्नॉलजी">टेक्नॉलजी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/science-news-hindi/" class="mn-alink" title="विज्ञान">विज्ञान</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/gadgets-news-hindi/" class="mn-alink" title="गैजेट">गैजेट</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/mobiles-news-hindi/" class="mn-alink" title="मोबाइल">मोबाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/internet/" class="mn-alink" title="इंटर्नेट">इंटर्नेट</a></h6></li>
+										<!--li><h6><a href="https://www.enavabharat.com/computing/" class="mn-alink" title="कम्प्यूटिंग">कम्प्यूटिंग</a></h6></li -->
+									</ul>
+								</div>
+								<div class="footer-list">
+									<h3 class="sec-name">गैलरी</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/gallery/" class="mn-alink" title="गैलरी">गैलरी</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/photos/" class="mn-alink" title="फोटो">फोटो</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/videos/" class="mn-alink" title="विडियो">विडियो</a></h6></li>
+										<!-- <li><h6><a href="" class="mn-alink" title="ऑडियो">ऑडियो</a></h6></li> -->
+										
+									</ul>
+								</div> 
+								 <div class="footer-list">
+									<h3 class="sec-name">ऑटोमोबाइल समाचार</h3>
+									<ul>                     
+										<li><h6><a href="https://www.enavabharat.com/automobile-news-hindi/" class="mn-alink" title="ऑटोमोबाइल">ऑटोमोबाइल</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/cars-news-hindi/" class="mn-alink" title="कार">कार</a></h6></li>
+										<li><h6><a href="https://www.enavabharat.com/bikes-news-hindi/" class="mn-alink" title="बाइक्स">बाइक्स</a></h6></li>
+										
+									</ul>
+								</div> 
+							</div>
+							<!-- <div class="topics-blk">
+								<div class="sec-name">#हॉट एंड ट्रेंडिंग टॉपिक्स</div>
+															</div> -->
+						</div>	
+					</div>
+
+
+<div class="container other_links"> 
+<div class="container">
+<!-- h5 class="our_div">Our Divisions</h5 -->
+</div>
+<div class="container">
+<div class="brand"><a class="brand_alink" href="https://www.enavabharat.com" title="Navabharat" target="_blank"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/b_navabharat-logo.png"></a></div> 
+<div class="brand"><a class="brand_alink" href="http://www.navarashtra.com" title="Navarashtra" target="_blank" rel="nofollow"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/b_navarashtra-logo.png"></a></div>	 
+<div class="brand"><a class="brand_alink" href="http://www.navabharatmedia.com" title="NavabharatMedia" target="_blank" rel="nofollow"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/b_navabharatmedia-logo.png"></a></div>	
+<div class="brand"><a class="brand_alink" href="http://epaper.enavabharat.com" title="Navabharat epaper" target="_blank" rel="nofollow"><img src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/images/b_ePapar-logo.png"></a></div>	
+</div>
+</div>
+
+
+					<div class="container ft-2">
+						<div class="footer-links">
+			                <a href="/privacy-policy/" class="ft-alink" title="Privacy">Privacy</a>
+			                <a href="/terms-and-conditions/" class="ft-alink" title="Terms and condition">Terms and condition</a>
+			                <a href="/feeds/" class="ft-alink" title="RSS">RSS</a>
+			                <a href="/topics/" class="ft-alink" title="Topics">Topics</a>
+			                <a href="/disclaimer/" class="ft-alink" title="Disclaimer">Disclaimer</a>
+			                <a href="/about-us/" class="ft-alink" title="About">About</a>
+			                <a href="/author/" class="ft-alink" title="Our Authors">Our Authors</a>
+			                <!--a href="#" class="ft-alink" title="Submit News">Submit News</a>
+			                <a href="#" class="ft-alink" title="FAQ">FAQ</a>
+			                <a href="/career/" class="ft-alink" title="Career">Career</a-->
+			                <a href="/advertise-with-us/" class="ft-alink" title="Advertise With Us">Advertise</a>
+			                <a href="/feedback/" class="ft-alink" title="Feedback">Feedback</a>
+			                <a href="/contact-us/" class="ft-alink" title="Contact">Contact</a>
+			            </div>
+						<div class="copyright-text">
+						<h3 class="cc-txt">Copyright © Navabharat Press 2020. All rights reserved.</h3>
+			            </div>
+					</div> 
+				</div>	
+					
+			</footer>
+
+				<script src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/js/vendor.bundle.js?ver=20200529"></script>
+<script src="https://s.enavabharat.com/wp-content/themes/nb2020/assets/js/nb_custom.js?ver=20200529"></script>
+<script async="" src="//platform.twitter.com/widgets.js?ver=1.1"></script>
+<script async="" src="//www.instagram.com/embed.js?ver=1.1"></script>
+<script src="//code.jquery.com/ui/1.10.2/jquery-ui.js?ver=1.1"></script>
+<script>
+var pollsL10n = {"ajax_url":"https:\/\/www.enavabharat.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+</script>
+<script src="https://s.enavabharat.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.75.3"></script>
+<script src="https://s.enavabharat.com/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+			<div class="textwidget custom-html-widget"><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>		<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div> <script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v6.0&amp;appId=973270659709010&amp;autoLogAppEvents=1"></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-f251ab32909293cb20f","applicationID":"50964313","transactionName":"MhBSZQoZWxdUVhVZDgtacVIMEVoKGkYIXgYQGVFD","queueTime":0,"applicationTime":418,"atts":"HldRE0IDSBk=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script>
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.c4b33f07650267db9f8a72eaac551cac.html?origin=https%3A%2F%2Fwww.enavabharat.com" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

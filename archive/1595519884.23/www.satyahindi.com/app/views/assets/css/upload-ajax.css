@@ -1,0 +1,102 @@
+#drop_zone{
+     border: 2px dashed #bbb;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+     padding: 15px;
+     text-align: center;
+     font: 20pt bold 'Arial';
+     color: #bbb;
+}
+#browseFile{
+     border: 1px solid #bbb;
+     border-radius: 3px;
+     font: 12pt normal 'Arial';
+     color: #888;
+     text-transform: none !important;
+}
+.upload-btn-wrapper {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     margin-top: 10px;
+}
+.upload-btn-wrapper input[type=file] {
+     font-size: 100px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+}
+img.thumb {
+     height: 75px;
+     border: 1px solid #000;
+}
+img.thumberr {
+     height: 75px;
+     border: 2px solid #f00;
+}
+ul#thumb{
+     list-style-type: none;
+     padding: 0 0 0 10px; 
+}
+ul#thumb li{
+     position: relative;
+     display: inline-block;
+     font-size: small;
+     margin: 10px 5px 0 0;
+}
+button#bbisBtnUpload, button#bbisBtnComplete{
+     color: #fff;
+     width: 100%;
+     background-color: rgb(32, 184, 245);
+     border: none;
+     margin: 0 auto;
+     text-transform: uppercase;
+}
+#progress_status{
+     width:100%;
+     height:20px;
+	background-color: #000;
+	margin: 10px 0;
+     text-align: center;
+     display: none;
+     
+}
+#progressbar {
+	width:0%;
+     height:20px;
+	background-color: #558b2f;
+}
+#status{
+     color:#fff;
+     position: relative;
+     top:-20px;
+     width: 100px;
+     margin: 0 auto;
+     font-size: small;
+}
+ul#complete{
+     list-style-type: none;
+}
+ul#complete li{
+     position: relative;
+     display: inline-block;
+     font-size: small;
+     margin: 10px 5px 0 0;
+}
+a.icon, span.icon{
+     text-transform: uppercase;
+     font: 20px bold;
+     color: #333;
+     text-decoration: none;
+     padding: 37.5px 37.5px;
+     border: #e2e2e2 1px solid;
+     display: inline-block;
+}
+#hComplete, #hThumb{
+     font-size: small;
+     font-weight: bold;
+     display: none;
+     padding: 10px 0 0 10px;
+}

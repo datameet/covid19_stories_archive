@@ -1,0 +1,192 @@
+{
+    "url": "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up",
+    "timestamp": "1595519884.159",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "\u092e\u091c\u0926\u0942\u0930 \u0915\u0940 \u092c\u0947\u091f\u0940 \u0928\u0947 \u092a\u0942\u091b\u093e, \u0915\u093e\u0928\u092a\u0941\u0930 \u091c\u0902\u0915\u094d\u0936\u0928 \u092a\u0930 \u0924\u0940\u0928 \u0926\u093f\u0928 \u0938\u0947 \u092a\u095c\u0940 \u092e\u0947\u0930\u0947 \u092a\u093e\u092a\u093e \u0915\u0940 \u0932\u093e\u0936 \u0938\u095c \u091a\u0941\u0915\u0940 \u0939\u0948, \u0906\u0916\u093f\u0930 \u0915\u092c \u0939\u094b\u0917\u093e \u092a\u094b\u0938\u094d\u091f\u092e\u0949\u0930\u094d\u091f\u092e",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:41.311441",
+                "end_ts": "2020-07-25 01:16:41.780471",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=janjwar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:41.785510",
+                "end_ts": "2020-07-25 01:16:43.133596",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620003",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:43.140376",
+                "end_ts": "2020-07-25 01:16:49.756629",
+                "duration": 6
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:49.761795",
+                "end_ts": "2020-07-25 01:16:52.843178",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:52.844552",
+                "end_ts": "2020-07-25 01:16:54.868586",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:54.869907",
+                "end_ts": "2020-07-25 01:16:55.909218",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:16:55.910621",
+                "end_ts": "2020-07-25 01:16:58.466031",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://janjwar.com/post/laborer-has-been-sitting-with-the-fathers-body-for-three-days-for-postmortem-in-azamgarh-in-up"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.159",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:16:58.467461",
+                "end_ts": "2020-07-25 01:17:58.487516",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595620078.48844"
+}

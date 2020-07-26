@@ -1,0 +1,192 @@
+{
+    "url": "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/",
+    "timestamp": "1595519884.160",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "Farmer\u2019s suicide \u2018over sugarcane dues\u2019 triggers protest in Muzaffarnagar | India News,The Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:17:58.651046",
+                "end_ts": "2020-07-25 01:18:00.132772",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=indianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:00.134963",
+                "end_ts": "2020-07-25 01:18:00.462866",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620080",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:00.464863",
+                "end_ts": "2020-07-25 01:18:07.035128",
+                "duration": 6
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:07.036460",
+                "end_ts": "2020-07-25 01:18:09.467041",
+                "duration": 2
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:09.468490",
+                "end_ts": "2020-07-25 01:18:11.193543",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:11.194833",
+                "end_ts": "2020-07-25 01:18:12.315650",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:18:12.317639",
+                "end_ts": "2020-07-25 01:18:14.058500",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://indianexpress.com/article/india/farmers-suicide-over-sugarcane-dues-triggers-protest-in-muzaffarnagar-6445021/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.160",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:18:14.059894",
+                "end_ts": "2020-07-25 01:19:14.078226",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595620154.07923"
+}

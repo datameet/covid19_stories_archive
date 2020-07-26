@@ -1,0 +1,192 @@
+{
+    "url": "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/",
+    "timestamp": "1595519884.52",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "\u0932\u0949\u0915\u0921\u093e\u090a\u0928\u091a\u093e \u092c\u0933\u0940 : \u091c\u0917\u0923\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u096c\u0966\u0966 \u0915\u093f\u093c\u092e\u0940\u093c\u091a\u0940 \u092a\u093e\u092f\u092a\u0940\u091f \u0905\u0928\u094d \u0938\u092e\u094b\u0930 \u0935\u0921\u093f\u0932\u093e\u0902\u091a\u093e \u092e\u0943\u0924\u094d\u092f\u0942 - Marathi News | Lockdown victim: after 600 km walking for survive they saw father's death, incident in Nanded | Latest nanded News at Lokmat.com",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:36:40.120422",
+                "end_ts": "2020-07-24 22:36:40.860535",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.lokmat.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:36:40.866242",
+                "end_ts": "2020-07-24 22:36:41.335040",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595610401",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:36:41.339059",
+                "end_ts": "2020-07-24 22:36:55.358165",
+                "duration": 14
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:36:55.360986",
+                "end_ts": "2020-07-24 22:37:04.468627",
+                "duration": 9
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:04.470701",
+                "end_ts": "2020-07-24 22:37:09.307891",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:09.309874",
+                "end_ts": "2020-07-24 22:37:12.663215",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:37:12.666111",
+                "end_ts": "2020-07-24 22:37:15.861288",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.lokmat.com/nanded/lockdown-victim-after-600-km-walking-survive-they-saw-fathers-death-incident-nanded/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.52",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:37:15.863369",
+                "end_ts": "2020-07-24 22:37:36.938138",
+                "duration": 21
+            }
+        ]
+    },
+    "updated": "1595610456.939109"
+}

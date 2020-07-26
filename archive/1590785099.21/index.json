@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Accused of being coronavirus carrier, man thrashed in UP''s Aligarh; six booked",
     "timestamp": "1590785099.21",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 1,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590785924",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216"
+                ],
+                "end_ts": "2020-05-29 20:58:46.467394",
+                "start_ts": "2020-05-29 20:58:44.752485",
+                "pwd": "/data/archive/1590785099.21",
+                "output": "www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529205851/https://www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 1,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590785924",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216"
-                ],
-                "end_ts": "2020-05-29 20:58:46.467394",
-                "start_ts": "2020-05-29 20:58:44.752485",
-                "pwd": "/data/archive/1590785099.21",
-                "output": "www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785931.920052",
+    "updated": "1595622185.800018",
     "tags": "",
     "url": "https://www.outlookindia.com/newsscroll/accused-of-being-coronavirus-carrier-man-thrashed-in-ups-aligarh-six-booked/1829216"
 }

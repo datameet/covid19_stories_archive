@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Not wrong to shoot hiding attendees of Tablighi Jamaat event: Karnataka\u00a0BJP MLA\u00a0Renukacharya- The New Indian Express",
     "timestamp": "1590785099.25",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 10,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786014",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
+                ],
+                "end_ts": "2020-05-29 21:00:25.643328",
+                "start_ts": "2020-05-29 21:00:14.710789",
+                "pwd": "/data/archive/1590785099.25",
+                "output": "www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529210041/https://www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 10,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786014",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
-                ],
-                "end_ts": "2020-05-29 21:00:25.643328",
-                "start_ts": "2020-05-29 21:00:14.710789",
-                "pwd": "/data/archive/1590785099.25",
-                "output": "www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786042.918946",
+    "updated": "1595622186.35477",
     "tags": "",
     "url": "https://www.newindianexpress.com/states/karnataka/2020/apr/08/not-wrong-to-shoot-hiding-attendees-of-tablighi-jamaat-event-karnataka-bjp-mla-renukacharya-2127129.html"
 }

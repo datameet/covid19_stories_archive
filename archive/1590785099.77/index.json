@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "NewsBits : Vegetable vendor harassed over his faith, made to do sit-ups, police arrest the accused",
     "timestamp": "1590785099.77",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 6,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787858",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused"
+                ],
+                "end_ts": "2020-05-29 21:31:04.766270",
+                "start_ts": "2020-05-29 21:30:58.725271",
+                "pwd": "/data/archive/1590785099.77",
+                "output": "www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529213113/http://www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 6,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590787858",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "http://www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused"
-                ],
-                "end_ts": "2020-05-29 21:31:04.766270",
-                "start_ts": "2020-05-29 21:30:58.725271",
-                "pwd": "/data/archive/1590785099.77",
-                "output": "www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787874.5186",
+    "updated": "1595622302.491076",
     "tags": "",
     "url": "http://www.newsbits.in/vegetable-vendor-harassed-over-his-faith-made-to-do-situps-police-arrest-the-accused"
 }

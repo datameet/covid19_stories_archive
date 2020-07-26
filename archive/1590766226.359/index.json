@@ -1,8 +1,12 @@
 {
     "title": "\u092e\u0927\u094d\u092f \u092a\u094d\u0930\u0926\u0947\u0936 \u092e\u0947\u0902 \u0930\u093e\u0936\u0928 \u0932\u0947\u0928\u0947 \u0917\u090f \u0906\u0926\u093f\u0935\u093e\u0938\u0940 \u092f\u0941\u0935\u0915 \u0915\u094b \u092a\u0941\u0932\u093f\u0938 \u0928\u0947 \u092a\u0940\u091f\u093e, \u0905\u0938\u094d\u092a\u0924\u093e\u0932 \u092e\u0947\u0902 \u0939\u0941\u0908 \u092e\u094c\u0924",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.359",
     "history": {
@@ -207,7 +211,7 @@
             }
         ]
     },
-    "updated": "1590789391.564018",
+    "updated": "1595622910.809546",
     "tags": "",
     "url": "https://janjwar.com/post/police-beat-up-tribal-youth-who-went-to-ration-in-madhya-pradesh-died-in-hospital"
 }

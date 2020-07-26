@@ -1,0 +1,192 @@
+{
+    "url": "http://m.varthabharati.in/article/2020_05_22/244596",
+    "timestamp": "1595519884.185",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "http://m.varthabharati.in/article/2020_05_22/244596",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "\u0ca6\u0cbe\u0c82\u0ca1\u0cc7\u0cb2\u0cbf: \u0cae\u0cca\u0cae\u0ccd\u0cae\u0c97\u0ca8\u0cbf\u0c97\u0cc6 \u0c95\u0cca\u0cb0\u0ccb\u0ca8 \u0ca6\u0cc3\u0ca2; \u0ca4\u0ca8\u0c97\u0cc2 \u0cb8\u0ccb\u0c82\u0c95\u0cc1 \u0cb9\u0cb0\u0ca1\u0cbf\u0cb0\u0cc1\u0cb5 \u0cb6\u0c82\u0c95\u0cc6\u0caf\u0cb2\u0ccd\u0cb2\u0cbf \u0cb5\u0cc3\u0ca6\u0ccd\u0ca7\u0cc6 \u0c86\u0ca4\u0ccd\u0cae\u0cb9\u0ca4\u0ccd\u0caf\u0cc6 - Varthabharati",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:11.245142",
+                "end_ts": "2020-07-25 01:50:12.739484",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=m.varthabharati.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:12.744744",
+                "end_ts": "2020-07-25 01:50:13.636180",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595622013",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "m.varthabharati.in/article/2020_05_22/244596.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:13.642354",
+                "end_ts": "2020-07-25 01:50:26.285507",
+                "duration": 12
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:26.287978",
+                "end_ts": "2020-07-25 01:50:35.836095",
+                "duration": 9
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:35.837899",
+                "end_ts": "2020-07-25 01:50:39.840384",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:39.841997",
+                "end_ts": "2020-07-25 01:50:42.433234",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:50:42.435494",
+                "end_ts": "2020-07-25 01:50:44.206229",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://m.varthabharati.in/article/2020_05_22/244596"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.185",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:50:44.207636",
+                "end_ts": "2020-07-25 01:51:04.003038",
+                "duration": 19
+            }
+        ]
+    },
+    "updated": "1595622064.003977"
+}

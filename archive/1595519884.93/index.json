@@ -1,0 +1,192 @@
+{
+    "url": "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html",
+    "timestamp": "1595519884.93",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "The Ichchapore youth, who was facing financial difficulties due to the lockdown, was hanging suicide|\u0ab2\u0acb\u0a95\u0aa1\u0abe\u0a89\u0aa8\u0aa8\u0ac7 \u0ab2\u0ac0\u0aa7\u0ac7 \u0a86\u0ab0\u0acd\u0aa5\u0abf\u0a95 \u0ab8\u0a82\u0a95\u0aa1\u0abe\u0aae\u0aa3\u0aae\u0abe\u0a82 \u0a86\u0ab5\u0ac0 \u0a9c\u0aa4\u0abe \u0a88\u0a9a\u0acd\u0a9b\u0abe\u0aaa\u0acb\u0ab0\u0aa8\u0abe \u0aaf\u0ac1\u0ab5\u0abe\u0aa8\u0ac7 \u0aab\u0abe\u0a82\u0ab8\u0acb \u0a96\u0abe\u0aa7\u0acb",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:01.867408",
+                "end_ts": "2020-07-24 23:29:02.286513",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.divyabhaskar.co.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:02.296149",
+                "end_ts": "2020-07-24 23:29:03.153922",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595613543",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:03.158019",
+                "end_ts": "2020-07-24 23:29:22.914663",
+                "duration": 19
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:22.918146",
+                "end_ts": "2020-07-24 23:29:27.718895",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:27.722748",
+                "end_ts": "2020-07-24 23:29:30.598226",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:29:30.600164",
+                "end_ts": "2020-07-24 23:29:32.956738",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:29:32.959306",
+                "end_ts": "2020-07-24 23:29:37.428293",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.divyabhaskar.co.in/local/gujarat/surat/news/the-ichchapore-youth-who-was-facing-financial-difficulties-due-to-the-lockdown-was-hanging-suicide-127387869.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.93",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:29:37.430630",
+                "end_ts": "2020-07-24 23:30:28.198387",
+                "duration": 50
+            }
+        ]
+    },
+    "updated": "1595613628.199911"
+}

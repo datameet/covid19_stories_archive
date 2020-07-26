@@ -1,0 +1,192 @@
+{
+    "url": "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789",
+    "timestamp": "1595519884.7",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "Bengaluru: Denied admission by 9 hospitals, 43-year-old man dies in ambulance",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:08.499600",
+                "end_ts": "2020-07-24 20:01:09.807106",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.timesnownews.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:09.809134",
+                "end_ts": "2020-07-24 20:01:10.611223",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595601070",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:10.614664",
+                "end_ts": "2020-07-24 20:01:32.824845",
+                "duration": 22
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:32.826448",
+                "end_ts": "2020-07-24 20:01:48.930908",
+                "duration": 16
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:48.932402",
+                "end_ts": "2020-07-24 20:01:52.847981",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:01:52.850529",
+                "end_ts": "2020-07-24 20:02:02.644369",
+                "duration": 9
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 20:02:02.647413",
+                "end_ts": "2020-07-24 20:02:06.846573",
+                "duration": 4
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.timesnownews.com/bengaluru/article/bengaluru-denied-admission-by-9-hospitals-43-year-old-man-dies-in-ambulance/615789"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.7",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 20:02:06.848722",
+                "end_ts": "2020-07-24 20:02:34.045439",
+                "duration": 27
+            }
+        ]
+    },
+    "updated": "1595601154.047201"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4",
+    "timestamp": "1595519884.178",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "Financial crisis made worse by lockdown killed brothers, 4 kids",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:21.460084",
+                "end_ts": "2020-07-25 01:39:23.285120",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=ahmedabadmirror.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:23.289635",
+                "end_ts": "2020-07-25 01:39:23.525711",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595621363",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms@fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:23.530112",
+                "end_ts": "2020-07-25 01:39:34.168757",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:34.171357",
+                "end_ts": "2020-07-25 01:39:38.760072",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:38.761431",
+                "end_ts": "2020-07-25 01:39:41.070751",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:41.072016",
+                "end_ts": "2020-07-25 01:39:42.481608",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:39:42.483111",
+                "end_ts": "2020-07-25 01:39:45.712111",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://ahmedabadmirror.indiatimes.com/ahmedabad/cover-story/financial-crisis-made-worse-by-lockdown-killed-brothers-4-kids/articleshow/76500944.cms?fbclid=IwAR1E1Ide5G0Sl5Tf0KR6OSDYdtcahfdrlWYYT2UnhveG3LhY6TmMkyMGFw4"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.178",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:39:45.713852",
+                "end_ts": "2020-07-25 01:40:28.638832",
+                "duration": 42
+            }
+        ]
+    },
+    "updated": "1595621428.640125"
+}

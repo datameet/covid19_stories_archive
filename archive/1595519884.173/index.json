@@ -1,0 +1,192 @@
+{
+    "url": "https://epaper.prabhatkhabar.com/c/52208139",
+    "timestamp": "1595519884.173",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://epaper.prabhatkhabar.com/c/52208139",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "Clipping of Prabhat Khabar - MUZAFFARPUR - City",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:11.969000",
+                "end_ts": "2020-07-25 01:34:12.631405",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=epaper.prabhatkhabar.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:12.637340",
+                "end_ts": "2020-07-25 01:34:13.331067",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595621053",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "epaper.prabhatkhabar.com/c/52208139.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:13.334208",
+                "end_ts": "2020-07-25 01:34:18.748296",
+                "duration": 5
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:18.751063",
+                "end_ts": "2020-07-25 01:34:19.712508",
+                "duration": 0
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:19.714288",
+                "end_ts": "2020-07-25 01:34:20.858752",
+                "duration": 1
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:20.860090",
+                "end_ts": "2020-07-25 01:34:21.448834",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:34:21.450223",
+                "end_ts": "2020-07-25 01:34:22.709147",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://epaper.prabhatkhabar.com/c/52208139"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.173",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:34:22.711378",
+                "end_ts": "2020-07-25 01:34:38.444157",
+                "duration": 15
+            }
+        ]
+    },
+    "updated": "1595621078.445121"
+}

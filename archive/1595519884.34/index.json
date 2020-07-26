@@ -1,0 +1,192 @@
+{
+    "url": "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html",
+    "timestamp": "1595519884.34",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "Death in Shramik Special: 'For The Next Three Hours, I Sat Next to Ibrar's Corpse'",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:52:22.791141",
+                "end_ts": "2020-07-24 21:52:24.293061",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.news18.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:52:24.295725",
+                "end_ts": "2020-07-24 21:52:24.831916",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595607744",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:52:24.836046",
+                "end_ts": "2020-07-24 21:52:55.377855",
+                "duration": 30
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:52:55.382776",
+                "end_ts": "2020-07-24 21:53:50.254341",
+                "duration": 54
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:53:50.257555",
+                "end_ts": "2020-07-24 21:54:21.580085",
+                "duration": 31
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:54:21.584643",
+                "end_ts": "2020-07-24 21:54:32.162631",
+                "duration": 10
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:54:32.166842",
+                "end_ts": "2020-07-24 21:54:53.777287",
+                "duration": 21
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.news18.com/news/india/death-in-shramik-special-for-the-next-three-hours-i-sat-next-to-ibrars-corpse-2643109.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.34",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:54:53.779000",
+                "end_ts": "2020-07-24 21:55:04.316421",
+                "duration": 10
+            }
+        ]
+    },
+    "updated": "1595607904.317119"
+}

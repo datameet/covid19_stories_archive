@@ -1,0 +1,192 @@
+{
+    "url": "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529",
+    "timestamp": "1595519884.87",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "Due to fear of Corona in Gurugram, the guard shot himself, the report was yet to come | \u0917\u0941\u0930\u0941\u0917\u094d\u0930\u093e\u092e \u092e\u0947\u0902 \u0915\u094b\u0930\u094b\u0928\u093e \u0915\u0947 \u0921\u0930 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0917\u093e\u0930\u094d\u0921 \u0928\u0947 \u0916\u0941\u0926 \u0915\u094b \u092e\u093e\u0930\u0940 \u0917\u094b\u0932\u0940, \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0906\u0928\u0940 \u0925\u0940 \u092c\u093e\u0915\u0940 | Hari Bhoomi",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:16:53.958458",
+                "end_ts": "2020-07-24 23:16:56.583588",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.haribhoomi.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:16:56.585850",
+                "end_ts": "2020-07-24 23:16:57.284420",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595612817",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:16:57.287684",
+                "end_ts": "2020-07-24 23:17:09.578849",
+                "duration": 12
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:17:09.582376",
+                "end_ts": "2020-07-24 23:17:14.299707",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:17:14.301775",
+                "end_ts": "2020-07-24 23:17:18.028044",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:17:18.029490",
+                "end_ts": "2020-07-24 23:17:21.499360",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:17:21.501561",
+                "end_ts": "2020-07-24 23:17:24.468753",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.haribhoomi.com/local/haryana/coronavirus-fear-security-guard-shot-himself-in-gurugram-haryana-ukyd-331529"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.87",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:17:24.470783",
+                "end_ts": "2020-07-24 23:17:44.502813",
+                "duration": 20
+            }
+        ]
+    },
+    "updated": "1595612864.503486"
+}

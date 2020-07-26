@@ -1,0 +1,69 @@
+{
+    "url": "https://ia601503.us.archive.org/26/items/NonVirusDeaths/EZEg3H4WAAAzmCY.jpeg",
+    "timestamp": "1595519884.168",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=ia601503.us.archive.org"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.168",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:33.847213",
+                "end_ts": "2020-07-25 01:28:34.659935",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595620714",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://ia601503.us.archive.org/26/items/NonVirusDeaths/EZEg3H4WAAAzmCY.jpeg"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.168",
+                "output": "ia601503.us.archive.org/26/items/NonVirusDeaths/EZEg3H4WAAAzmCY.jpeg",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:28:34.665647",
+                "end_ts": "2020-07-25 01:28:39.049821",
+                "duration": 4
+            }
+        ],
+        "pdf": [],
+        "screenshot": [],
+        "dom": [],
+        "git": [],
+        "media": [],
+        "archive_org": []
+    },
+    "updated": "1595620719.050079"
+}

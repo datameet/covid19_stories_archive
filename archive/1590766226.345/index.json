@@ -1,8 +1,12 @@
 {
     "title": "\u0cb2\u0cbe\u0c95\u0ccd \u0ca1\u0ccc\u0ca8\u0ccd \u0ca8\u0cbf\u0c82\u0ca6 \u0cb9\u0cb8\u0cbf\u0cb5\u0cc1 \u0ca4\u0cbe\u0cb3\u0cb2\u0cbe\u0cb0\u0ca6\u0cc7 \u0cb5\u0cc3\u0ca6\u0ccd\u0ca7 \u0cb8\u0cbe\u0cb5\u0cc1: \u0c85\u0c82\u0ca4\u0ccd\u0caf\u0c95\u0ccd\u0cb0\u0cbf\u0caf\u0cc6 \u0ca8\u0cc6\u0cb0\u0cb5\u0cc7\u0cb0\u0cbf\u0cb8\u0cbf\u0ca6 \u0cae\u0cc1\u0cb8\u0ccd\u0cb2\u0cbf\u0cae\u0cb0\u0cc1! - Kannadavahini | DailyHunt",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.345",
     "history": {
@@ -188,7 +192,7 @@
             }
         ]
     },
-    "updated": "1590789350.188638",
+    "updated": "1595622863.293482",
     "tags": "",
     "url": "https://m.dailyhunt.in/news/india/kannada/kannadavahini-epaper-vahikan/laak+doun+nindha+hasivu+taalalaarade+vruddha+saavu+antyakriye+neraverisidha+muslimaru-newsid-177616198?ss=wsp&s=pa"
 }

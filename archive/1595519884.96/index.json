@@ -1,0 +1,192 @@
+{
+    "url": "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html",
+    "timestamp": "1595519884.96",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "A young man who lost his job in a lockdown committed suicide|\u0ab2\u0ac9\u0a95\u0aa1\u0abe\u0a89\u0aa8\u0aae\u0abe\u0a82 \u0aa8\u0acb\u0a95\u0ab0\u0ac0 \u0a97\u0ac1\u0aae\u0abe\u0ab5\u0ac0 \u0aa6\u0ac7\u0aa4\u0abe \u0aaf\u0ac1\u0ab5\u0a95\u0aa8\u0acb \u0aab\u0abe\u0a82\u0ab8\u0acb \u0a96\u0abe\u0a87 \u0a86\u0aaa\u0a98\u0abe\u0aa4",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:33:44.849256",
+                "end_ts": "2020-07-24 23:33:46.351032",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.divyabhaskar.co.in"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:33:46.358195",
+                "end_ts": "2020-07-24 23:33:46.963639",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595613826",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:33:46.974265",
+                "end_ts": "2020-07-24 23:34:09.916677",
+                "duration": 22
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:34:09.923356",
+                "end_ts": "2020-07-24 23:34:13.802891",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:34:13.805006",
+                "end_ts": "2020-07-24 23:34:18.110328",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:34:18.113181",
+                "end_ts": "2020-07-24 23:34:23.502860",
+                "duration": 5
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:34:23.504772",
+                "end_ts": "2020-07-24 23:34:27.088561",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.divyabhaskar.co.in/local/gujarat/ahmedabad/news/a-young-man-who-lost-his-job-in-a-lockdown-committed-suicide-127355290.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.96",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:34:27.091169",
+                "end_ts": "2020-07-24 23:35:27.111252",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595613927.111773"
+}

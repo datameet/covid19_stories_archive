@@ -1,0 +1,7174 @@
+var time_interval=500;
+var status=1;
+var number=200;
+var refresh=30;
+var iframes=0;
+var country_rtb1;
+var city_rtb;
+var city_ip;
+var city_region;
+var timedate1;
+var newtestunitcount=0;
+  var andstatus300=0; 
+  var andstatus3001=0; 
+function calcTime(cityddd, offsetdd) {
+
+    // create Date object for current location
+   var ddd = new Date();
+
+    // convert to msec
+    // add local time zone offset
+    // get UTC time in msec
+   var utcdd = ddd.getTime() + (ddd.getTimezoneOffset() * 60000);
+
+    // create new Date object for different city
+    // using supplied offset
+  var nde = new Date(utcdd + (3600000*offsetdd));
+   hoursssss=nde.getHours();
+
+    // return time as a string
+    //console.log("hoursssss"+hoursssss);
+    return hoursssss;
+
+}
+
+(function () {
+
+        var gads = document.createElement('script');
+
+        gads.type = 'text/javascript';
+gads.async = true;
+var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+                '//rtbpass-us.andbeyond.media/prebid-ls-3.18.0.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+function helper(jArray,data)
+{
+if(jArray.length>0)
+{
+for(i=0;i<jArray.length;i++)
+{
+country_include=jArray[i]["country_include"];
+country_exclude=jArray[i]["country_exclude"];
+path_include=jArray[i]["path_include"];
+path_exclude=jArray[i]["path_exclude"];
+callback1=jArray[i]["no"];
+path=window.parent.location.pathname;
+negative_time=jArray[i]["negative_time"];
+ if((country_include!=undefined && country_include.length>0 && !country_include.includes(data)) || (country_exclude!=undefined && country_exclude.length>0 && country_exclude.includes(data)))
+{
+status=0;
+}
+else
+status=checker(path_include,path_exclude,path);
+}
+if(status==1 && negative_time==1)
+{
+var weekdays = new Array(7);
+weekdays[0] = "Sunday";
+weekdays[1] = "Monday";
+weekdays[2] = "Tuesday";
+weekdays[3] = "Wednesday";
+weekdays[4] = "Thursday";
+weekdays[5] = "Friday";
+weekdays[6] = "Saturday";
+var current_date = new Date();
+var weekday_value = current_date.getDay();
+var timehours=new Date().getHours();
+if(timehours==20 || timehours==21 || timehours==22  || timehours==23 || timehours==24 || timehours==1 || timehours==2 || timehours==3 || timehours==4 || timehours==5)
+{
+status=1;
+}
+else
+status=0;
+}
+}
+return status;
+}
+function checker(path_include,path_exclude,path)
+{
+var path_include_array = path_include.split(",");
+var path_exclude_array = path_exclude.split(",");
+if(path_include!=undefined &&  path_include.length>0 && path_include_array.length>0)
+{
+status=0;
+for(i=0;i<path_include_array.length;i++)
+{
+if(path.includes(path_include_array[i]))
+status=1;
+}
+}
+else
+status=1;
+if(path_exclude!=undefined &&  path_exclude.length>0 && path_exclude_array.length>0)
+{
+for(i=0;i<path_exclude_array.length;i++)
+{
+if(path.excludes(path_exclude_array[i]))
+status=0;
+}
+}
+return status;
+}
+window.setTimeout(function() {
+
+intval=setInterval(function() {
+try
+{
+if(jQuery!=undefined)
+{
+clearInterval(intval);
+
+var jArray=[{"internal":"32339-RM-refresh-1","country_include":"","country_exclude":"","path_include":"","path_exclude":"","no":"callback0()","negative_time":"0"}];
+var fail=0;
+path=window.parent.location.pathname;
+jQuery.ajax({
+url: "//global.cloud.netacuity.com/webservice/query?u=04842bc1-ecc8-4db1-aeec-6a7708559ff2&json=true",
+error: function(){
+data="IN";
+fail=1;
+country_rtb=data;
+country_rtb1=country_rtb;
+status=helper(jArray,data);
+status=1;
+callback1=jArray[0]["no"];
+if(status==1)
+{
+eval(callback1);
+
+googletag.cmd.push(function () {
+
+
+rtbpbjs.que.push(function() {
+rtbpbjs.setTargetingForGPTAsync();
+});
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+}
+},
+success: function(data){
+if(data.response!=undefined && data.response["edge-two-letter-country"]!=undefined)
+var data1=data.response["edge-two-letter-country"].toString().toUpperCase();
+city_rtb=data.response["edge-city"].toString().toUpperCase();
+city_ip=data.response["ip"].toString().toUpperCase();
+city_region=data.response["edge-region"].toString().toUpperCase();
+var country_rtb=data1;
+status=helper(jArray,data);
+country_rtb1=country_rtb;
+status=1;
+callback1=jArray[0]["no"];
+if(status==1)
+{
+eval(callback1);
+
+googletag.cmd.push(function () {
+
+
+rtbpbjs.que.push(function() {
+rtbpbjs.setTargetingForGPTAsync();
+});
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+}
+},
+timeout: 4000 
+});
+
+}
+}
+catch(e)
+{
+
+
+}
+},50);
+
+},100);
+
+var block_url=[{"url":"www.loksatta.com\/chaturang-news\/diabetes-and-sex-175445\/"},{"url":"www.loksatta.com\/photos\/trending-gallery\/216047viral-memes-aatm-nirbhar-long-duration-speech-local-topic-memes-goes-viral-after-modi-speech-scsg-91\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/210651marathi-actress-varsha-usgaonkar-photos-ssj-93\/1\/"},{"url":"www.loksatta.com\/manoranjan-news\/amitabh-bachchans-famous-dialogues-1030500\/"},{"url":"cmsdev.loksatta.com\/desh-videsh-news\/tribune-elite-case-journalists-exposing-aadhaar-breach-deserve-an-award-not-an-investigation-says-edward-snowden-1613679\/"},{"url":"www.loksatta.com\/photos\/sports-gallery\/216067ms-dhoni-named-captain-as-rohit-sharma-suresh-raina-pick-combined-mumbai-indians-chennai-super-kings-xi-psd-91\/1\/"},{"url":"www.loksatta.com\/photos\/sports-gallery\/20196120-most-tallest-bowlers-in-cricket-history-asy-88\/1\/"},{"url":"www.loksatta.com\/desh-videsh-news\/banks-technically-write-off-over-rs-68000-cr-loans-choksi-among-50-t"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/214888urmila-kothare-and-adinath-kothare-love-story-their-first-date-ssv-92\/1\/"},{"url":"cmsdev.loksatta.com\/maharashtra-news\/bhima-koregaon-violence-pune-rural-police-arrest-12-persons-from-sanaswadi-kondhapuri-1613591\/"},{"url":"www.loksatta.com\/desh-videsh-news\/if-you-can-hold-breath-for-1-min-it-means-you-dont-have-covid-19-says-ramdev-dmp-82__trashed-2141840\/"},{"url":"www.loksatta.com\/photos\/todays-photo-3\/217077know-about-mns-chief-raj-thackerays-son-young-leader-amit-thackeray-dmp-82\/1\/"},{"url":"www.loksatta.com\/photos\/sports-gallery\/217693know-more-facts-about-indian-cricketer-hardik-pandya-jud-87\/1\/"},{"url":"www.loksatta.com\/photos\/lifestyle-gallery\/2036707\/very-coldest-place-on-earth-oymyakon-asy-88\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/216520sonalee-kulkarni-engegment-with-kunal-benodekar-watch-photos-ssv-92\/1\/"},{"url":"www.loksatta.com\/apatyajnmache-samajbhan-news\/is-it-safe-to-have-sex-during-pregnancy-1654597\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/214162sonalee-kulkarni-to-tejashree-pradhan-marathi-celebrity-no-make-up-look-ssv-92\/1\/"},{"url":"cmsdev.loksatta.com\/"},{"url":"www.loksatta.com\/lagnacha-arth-news\/articles-in-marathi-on-sexual-education-1642562\/"},{"url":"www.loksatta.com\/trending-news\/angry-woman-spanks-couple-with-plank-after-catching-them-having-sex-in-a-bush-scsg-91-2221840\/"},{"url":"cmsdev.loksatta.com\/?efgerg"},{"url":"www.loksatta.com\/photos\/todays-photo-3\/217943pune-flower-bed-formed-by-petals-fallen-during-the-heavy-rain-and-winds-vjb-91\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/214100yar-ka-panchnama-fame-actress-sonnalli-seygall-bold-photoshoot-going-viral-during-lockdown-avb-95\/1\/"},{"url":"www.loksatta.com\/lifestyle-news\/nirma-university-ncw-writes-to-gujarat-police-seeks-probe-against-man-who-hacked-gujarat-online-class-and-masturbated-sas-89__trashed-2137959\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/214976know-about-marathi-actress-prajkta-mali-what-see-is-doing-in-lockdown-dmp-82\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/222264movie-theaters-in-china-reopened-after-178-days-from-july-20-scsg-91\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/217594do-you-know-this-things-about-shamis-wife-hasin-jahan-who-shares-nude-photo-scj-81\/1\/"},{"url":"cmsdev.loksatta.com\/maharashtra-news\/bhima-koregaon-violence-pune-rural-police-arrest-12-persons-from-sanaswadi-kondhapuri-1613591\/?ddf"},{"url":"www.loksatta.com\/lekhaa-news\/article-about-ani-kashinath-ghanekar-dialogue-1790277\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/217709know-about-mann-kee-awaaz-pratigya-fame-actress-pooja-gor-dmp-82\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/216609actor-solanki-diwakar-returns-to-selling-fruits-to-earn-money-avb-95\/1\/"},{"url":"www.loksatta.com\/chaturang-news\/responsible-parenthood-mahamohajal-dd70-2163156\/%20-"},{"url":"cmsdev.loksatta.com\/photos\/entertainment-gallery\/1612241\/adorable-pics-of-imran-khan-wife-avantika-and-daughter-imara-will-give-you-family-goals\/"},{"url":"cmsdev.loksatta.com\/desh-videsh\/?dfgjmn"},{"url":"www.loksatta.com\/photos\/todays-photo-3\/217793many-tress-fallen-during-rain-and-storm-at-pimpri-chinchwad-area-psd-91\/1\/"},{"url":"cmsdev.loksatta.com\/manoranjan\/"},{"url":"www.loksatta.com\/photos\/todays-photo-3\/217445migrants-on-exile-youth-waiting-for-train-at-pune-station-aau-85\/1\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/214110celebrities-participate-in-the-pillow-challenge-mppg-94\/1\/"},{"url":"www.loksatta.com\/krida-news\/footballer-clinton-njie-sex-video-live-snapchat-google-search-russian-premier-league-olympique-marseille-vjb-91-1942593\/"},{"url":"www.loksatta.com\/photos\/entertainment-gallery\/217468know-more-about-actress-anupriya-goenka-movies-ads-web-series-unknown-facts-jud-87\/1\/"},{"url":"www.loksatta.com\/photos\/lifestyle-gallery\/217412home-remedies-for-skin-and-eye-health-problems-asy-88\/1\/"}];
+
+
+var width;
+var height;
+
+ 
+
+
+
+var size3001status=1;
+var size3002status=1;
+var size3003status=1;
+var size3004status=1;
+var size3005status=1;
+var size3006status=1;
+
+
+
+
+var size1601status=1;
+var size1602status=1;
+
+var size6001status=1;
+var size6002status=1;
+var size6003status=1;
+var size6004status=1;
+var size6005status=1;
+
+var size7281status=1;
+var size7282status=1;
+
+var size9701status=1;
+var size9702status=1;
+var size9703status=1;
+
+var size9702501status=1;
+var size9702502status=1;
+
+
+var size3201status=1;
+var size3202status=1;
+
+
+
+
+
+
+var label_adapter={"openx":["visible"],"pubmatic":["USGEO"],"tripleart":["ARTICLEPAGE"],"triplehome":["HOMEPAGE"]};
+var and_geo_block={"COUNTRY":[{"country_name":"ALL","Adunit_country":["MOBILE"],"Time_country":"NONE","Hour_country":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"country_name":"ALL","Adunit_country":["ANDBEYONDNEWUNIT"],"Time_country":"NONE","Hour_country":"ALL"},{"country_name":"IN","Adunit_country":["CONNATIXBLOCK","FLYINGCARPETNNEW1"],"Time_country":"NONE","Hour_country":"ALL"},{"country_name":"INTERNATIONAL","Adunit_country":["CONNATIXBLOCK","FLYINGCARPETNNEW1"],"Time_country":"NONE","Hour_country":"ALL"}],"CITY":[{"city_name":"BAHADURGARH","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"BOMBAY","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"DELHI","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"FARIDABAD","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"GHAZIABAD","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"GURGAON","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"GURUGRAM","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"MEERUT","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"MUMBAI","Adunit_city":["LS_AGRALEKH_AS_ATF_160X600_LEFT","LS_AGRALEKH_AS_ATF_160X600_RIGHT","LS_AGRALEKH_AS_ATF_300X250","LS_AGRALEKH_AS_ATF_728X90","LS_AGRALEKH_ATF_160X600_LEFT","LS_AGRALEKH_ATF_160X600_RIGHT","LS_AGRALEKH_ATF_300X250","LS_AGRALEKH_ATF_728X90","LS_ASTRO_ATF_150X1600_LEFT","LS_ASTRO_ATF_150X1600_RIGHT","LS_HOME_ATF_150X1600_LEFT","LS_HOME_ATF_150X1600_RIGHT","LS_HOME_ATF_300X250","LS_HOME_ATF_728X90","LS_LAL_BAGH_ATF_160X600_LEFT","LS_LAL_BAGH_ATF_160X600_RIGHT","LS_LAL_BAGH_ATF_300X250","LS_LAL_BAGH_ATF_728X90","LS_ROS_ATF_ENT_AS_300X250","LS_ROS_ATF_ENT_HP_300X250","LS_ROS_CONTX_AS_ATF_300X250","LS_ROS_CONTX_AS_ATF_728X90","LS_ROS_CONTX_AS_LHS_160X600","LS_ROS_CONTX_AS_RHS_160X600","LS_ROS_HEALTH_AS_ATF_300X250","LS_ROS_HEALTH_AS_ATF_728X90","LS_ROS_HEALTH_AS_LHS_160X600","LS_ROS_HEALTH_AS_RHS_160X600","LS_ROS_HEALTH_HP_ATF_300X250","LS_ROS_HEALTH_HP_ATF_728X90","LS_ROS_HEALTH_HP_LHS_160X600","LS_ROS_HEALTH_HP_RHS_160X600","LS_ROS_LSY_AS_ATF_300X250","LS_ROS_LSY_AS_ATF_728X90","LS_ROS_LSY_AS_GUTTER_LEFT_SKIN","LS_ROS_LSY_AS_GUTTER_RIGHT_SKIN","LS_ROS_LSY_HP_ATF_300X250","LS_ROS_LSY_HP_ATF_728X90","LS_ROS_LSY_HP_GUTTER_LEFT_SKIN","LS_ROS_LSY_HP_GUTTER_RIGHT_SKIN","LS_ROS_MAHA_AS_ATF_300X250","LS_ROS_MAHA_AS_ATF_728X90","LS_ROS_MAHA_AS_GUTTER_LEFT_SKIN","LS_ROS_MAHA_AS_GUTTER_RIGHT_SKIN","LS_ROS_MAHA_HP_ATF_300X250","LS_ROS_MAHA_HP_ATF_728X90","LS_ROS_MAHA_HP_GUTTER_LEFT_SKIN","LS_ROS_MAHA_HP_GUTTER_RIGHT_SKIN","LS_ROS_OTH_AS_ATF_300X250","LS_ROS_OTH_AS_ATF_728X90","LS_ROS_OTH_HP_ATF_300X250","LS_ROS_OTH_HP_ATF_728X90","LS_ROS_PTG_AS_ATF_300X250","LS_ROS_PTG_AS_ATF_728X90","LS_ROS_PTG_HP_ATF_300X250","LS_ROS_PTG_HP_ATF_728X90","LS_ROS_PTG_HP_GUTTER_LEFT_SKIN","LS_ROS_PTG_HP_GUTTER_RIGHT_SKIN","LS_ROS_SPO_AS_ATF_300X250","LS_ROS_SPO_AS_ATF_728X90","LS_ROS_SPO_AS_GUTTER_LEFT_SKIN","LS_ROS_SPO_AS_GUTTER_RIGHT_SKIN","LS_ROS_SPO_HP_ATF_300X250","LS_ROS_SPO_HP_ATF_728X90","LS_ROS_SPO_HP_GUTTER_LEFT_SKIN","LS_ROS_SPO_HP_GUTTER_RIGHT_SKIN","LS_SECTION_ATF_150X1600_LEFT","LS_SECTION_ATF_150X1600_RIGHT","LS_SECTION_ATF_300X250","LS_SECTION_ATF_728X90","LS_STORY_ATF_150X1600_LEFT","LS_STORY_ATF_150X1600_RIGHT","LS_STORY_ATF_300X250","LS_STORY_ATF_728X90","LS_WC_ATF_728X90","MOBILE"],"Time_city":[{"from":"1594492200","to":"1594578540"}],"Hour_city":"NONE"},{"city_name":"MUMBAI","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"NEW DELHI","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"NOIDA","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"},{"city_name":"THANE","Adunit_city":["ANDBEYONDNEWUNIT"],"Time_city":"NONE","Hour_city":"ALL"}],"STATE":[{"state_name":"IN_DL","Adunit_state":["MOBILE"],"Time_state":"NONE","Hour_state":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"state_name":"IN_DL","Adunit_state":["ANDBEYONDNEWUNIT"],"Time_state":"NONE","Hour_state":"ALL"},{"state_name":"IN_HR","Adunit_state":["MOBILE"],"Time_state":"NONE","Hour_state":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"state_name":"IN_HR","Adunit_state":["ANDBEYONDNEWUNIT"],"Time_state":"NONE","Hour_state":"ALL"},{"state_name":"IN_KA","Adunit_state":["MOBILE"],"Time_state":"NONE","Hour_state":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"state_name":"IN_KA","Adunit_state":["ANDBEYONDNEWUNIT"],"Time_state":"NONE","Hour_state":"ALL"},{"state_name":"IN_MH","Adunit_state":["MOBILE"],"Time_state":"NONE","Hour_state":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"state_name":"IN_MH","Adunit_state":["ANDBEYONDNEWUNIT"],"Time_state":"NONE","Hour_state":"ALL"},{"state_name":"IN_UP","Adunit_state":["MOBILE"],"Time_state":"NONE","Hour_state":[{"fromhour":"6","tohour":"25","timezone":"Asia\/Calcutta"}]},{"state_name":"IN_UP","Adunit_state":["ANDBEYONDNEWUNIT"],"Time_state":"NONE","Hour_state":"ALL"}]}; 
+var tier2=0;
+var tier3=0;
+var factor_internal=0;
+var timebased=1;
+var timebased_refresh=60;
+var timer_refresh=0;
+var factor_visible=1;
+var factor_tier1=1;
+var factor_tier2=2;
+var factor_tier1_text='TIER1';
+var factor_tier2_text='TIER2_US';
+
+var no_refresh='NO_REFRESH';
+var detectPartial=true;
+var highcpm=0.09;
+var highcpm1=highcpm;
+
+var strategy=0;
+
+String.prototype.replaceAll = function(searchStr, replaceStr) {
+    var str = this;
+
+    searchStr = searchStr.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+
+    return str.replace(new RegExp(searchStr, 'gi'), replaceStr);
+};
+function bidadjust(cpm)
+{
+
+
+
+if (cpm < 8) {
+cpm1=cpm;
+
+cpm= (cpm).toFixed(2);
+return cpm;
+} else {
+return '8.00';
+}
+
+
+
+}
+
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+timer_refresh=timer_refresh+1;
+
+}
+
+
+
+function isInteger(num){
+return (num^0)=== num;
+}
+
+
+var randomval1=Math.floor(Math.random() * 10) + 1;
+ // console.log("randomval1"+randomval1);
+var network1=21796214895;
+var network2=21801619092;
+var percent1=8;
+
+if(randomval1<=percent1){
+ var namemc=network1;
+}else{
+var namemc=network2;
+}
+
+
+
+var PREBID_TIMEOUT_NEW =4000;
+var floor=0;
+var ref=refresh;
+
+function isVisible(elem) {
+    if (!(elem instanceof Element)) return true;
+    const style = getComputedStyle(elem);
+    if (style.display === 'none') return false;
+    if (style.visibility !== 'visible') return false;
+    if (style.opacity < 0.1) return false;
+    if (elem.offsetWidth + elem.offsetHeight + elem.getBoundingClientRect().height +
+        elem.getBoundingClientRect().width === 0) {
+        return false;
+    }
+    const elemCenter   = {
+        x: elem.getBoundingClientRect().left + elem.offsetWidth / 2,
+        y: elem.getBoundingClientRect().top + elem.offsetHeight / 2
+    };
+    if (elemCenter.x < 0) return false;
+    if (elemCenter.x > (document.documentElement.clientWidth || window.innerWidth)) return false;
+    if (elemCenter.y < 0) return false;
+    if (elemCenter.y > (document.documentElement.clientHeight || window.innerHeight)) return false;
+    let pointContainer = document.elementFromPoint(elemCenter.x, elemCenter.y);
+    do {
+        if (pointContainer === elem) return true;
+    } while (pointContainer = pointContainer.parentNode);
+    return false;
+}
+
+
+var adUnitand =[
+{
+code: "andbeyond1601",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond1602",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond1603",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond1604",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond1605",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond1606",
+mediaTypes:{
+banner:{
+sizes: [[160,600]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099785",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "pubmatic",
+labelAny:["USGEO"],
+params: {
+publisherId: "156181",
+adSlot: "Loksatta_160x600_HB"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973019"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126407"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19516"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "18126240"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "776593065"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3001",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond30010",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond30011",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3002",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3003",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3004",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3005",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3006",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3007",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3008",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3009",
+mediaTypes:{
+banner:{
+sizes: [[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099787",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973017"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126404"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19514"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825514"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "848394575"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6001",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond60010",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond60011",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6002",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6003",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6004",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6005",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6006",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6007",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6008",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6009",
+mediaTypes:{
+banner:{
+sizes: [[300,600],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099793",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973027"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126405"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19515"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825528"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_300x600_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_300x600_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "837607528"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107703"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3201",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3202",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3203",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3204",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3205",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond3206",
+mediaTypes:{
+banner:{
+sizes: [[320,50]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259969",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973033"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126408"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19518"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825541"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "656665226"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107698"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6401",
+mediaTypes:{
+banner:{
+sizes: [[640,480],[300,250]],
+},
+},
+bids: [
+{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond6402",
+mediaTypes:{
+banner:{
+sizes: [[640,480],[300,250]],
+},
+},
+bids: [
+{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7281",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7282",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7283",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7284",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7285",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond7286",
+mediaTypes:{
+banner:{
+sizes: [[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099799",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973016"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126406"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19517"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825587"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "766494650"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107700"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702001",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90],[970,200]],
+},
+},
+bids: [
+{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702501",
+mediaTypes:{
+banner:{
+sizes: [[970,250],[970,90],[728,90],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259970",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973031"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126410"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825576"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "186881114"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702502",
+mediaTypes:{
+banner:{
+sizes: [[970,250],[970,90],[728,90],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259970",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973031"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126410"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825576"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "186881114"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702503",
+mediaTypes:{
+banner:{
+sizes: [[970,250],[970,90],[728,90],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259970",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973031"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126410"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825576"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "186881114"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702504",
+mediaTypes:{
+banner:{
+sizes: [[970,250],[970,90],[728,90],[300,250]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540259970",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973031"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126410"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825576"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "186881114"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9703001",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90],[970,250]],
+},
+},
+bids: [
+{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9703002",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90],[970,250]],
+},
+},
+bids: [
+{
+bidder: "triplelift",
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "triplehome",
+labelAny:["HOMEPAGE"],
+params: {
+inventoryCode: "Loksatta_home_970x250_desktop"
+}
+},{
+bidder: "tripleart",
+labelAny:["ARTICLEPAGE"],
+params: {
+inventoryCode: "Loksatta_article_970x250_desktop"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "96174"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9701",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099802",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973030"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126409"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19519"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825563"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "946272231"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107702"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9702",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099802",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973030"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126409"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19519"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825563"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "946272231"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107702"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9703",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099802",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973030"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126409"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19519"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825563"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "946272231"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107702"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+},{
+code: "andbeyond9704",
+mediaTypes:{
+banner:{
+sizes: [[970,90],[728,90]],
+},
+},
+bids: [
+{
+bidder: "openx",
+labelAny:["visible"],
+params: {
+unit: "540099802",
+delDomain: "rtbdemand-d.openx.net"
+}
+},{
+bidder: "getapp",
+params: {
+placementId: "13973030"
+}
+},{
+bidder: "oftmedia",
+params: {
+placementId: "14126409"
+}
+},{
+bidder: "gumgum",
+params: {
+inSlot: "19519"
+}
+},{
+bidder: "triplelift",
+params: {
+inventoryCode: "rtbdemand_loksatta_display"
+}
+},{
+bidder: "bcmapp",
+params: {
+placementId: "16825563"
+}
+},{
+bidder: "appnexus",
+params: {
+placementId: "18192015"
+}
+},{
+bidder: "medianet",
+params: {
+cid: "8CUO7Q43N",
+crid: "946272231"
+}
+},{
+bidder: "rtbdemandadk",
+params: {
+host: "rtb-eu.rtbdemand.com",
+zoneId: "107702"
+}
+},{
+bidder: "rtbhouse",
+params: {
+publisherId: "LmfunSqAj1q6dpnpEb1X",
+region: "prebid-asia"
+}
+}
+]
+}
+];
+
+var rtbpbjs = rtbpbjs || {};
+rtbpbjs.que = rtbpbjs.que || [];
+
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+
+googletag.cmd.push(function () {
+
+googletag.pubads().enableSingleRequest();
+googletag.pubads().disableInitialLoad();
+googletag.enableServices();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+function refreshBid1(id) {
+try
+{
+status_bad=1;
+console.log("STATUS_BAD"+status_bad);
+id1=null;
+ status_bad=0;
+ try
+ {
+ id1=eval(id);
+ if(id1==undefined)
+ status_bad=1;
+
+ }
+ catch(e)
+ {
+ status_bad=1;
+
+ }
+if(status_bad==1)
+{
+googletag.cmd.push(function () {
+aff="324757";
+len=id.length;
+pos1=id.substr(len-1);
+
+if(id.indexOf('300')>0)
+{
+width1=300;
+height1=250;
+width2=width1;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [300, 250], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('600')>0)
+{
+width1=300;
+height1=600;
+width2=600;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [[300,600],[300, 250]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('728')>0)
+{
+width1=728;
+height1=90;
+width2=728;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [728, 90], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+if(id.indexOf('970') >0)
+{
+width1=970;
+height1=90;
+width2=970;
+
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [[970, 90],[728,90]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('640')>0)
+{
+width1=640;
+height1=480;
+width2=640;
+
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [[640,480],[300, 250],[728,90]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+if(id.indexOf('970')>0 && id.indexOf('250')>0)
+{
+width1=970;
+height1=250;
+width2=970250;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [970,250], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+if(id.indexOf('160')>0)
+{
+width1=160;
+height1=600;
+width2=160;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [160, 600], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('320')>0 )
+{
+width1=320;
+height1=50;
+width2=width1;
+text='googletag.defineSlot("/21796214895/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", [320, 50], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+
+if(text!=undefined)
+{
+try
+{
+id1=eval(text);
+console.log('TEXT_FINAL'+text);
+console.log("ID1_EVAL"+id1);
+console.log("andbeyond" + width2 + pos1);
+
+eval("andbeyond" + width2 + pos1 + " = id1");
+}
+catch(e)
+{
+console.log('EXCEPTION'+e);
+
+}
+
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+}
+});
+
+
+}
+
+if(status_bad==0)
+{
+googletag.cmd.push(function () {
+
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+
+}
+
+ rtbpbjs.que.push(function() {
+      rtbpbjs.requestBids({
+        timeout: PREBID_TIMEOUT_NEW,
+        adUnitCodes: [id],
+        bidsBackHandler: function() {
+
+
+rtbpbjs.setTargetingForGPTAsync([id]);
+ googletag.pubads().refresh([id1]);
+
+
+
+
+        }
+      });
+    });
+}
+catch(e)
+{
+console.log("EXCEPTION");
+
+console.error("Exception thrown", e);
+} 
+ }
+
+
+*/
+ 
+
+
+function refreshBid1(id,test) {
+try
+{
+if(googletag!=undefined &&  googletag.pubads()!=undefined)
+ googletag.pubads().setTargeting(id,"0");
+
+
+var labelnew=Array();
+labelnew.push("active");
+labelnew.push("visible");
+
+if(country_rtb1!="IN"){
+    labelnew.push("NRI");
+}
+
+if(country_rtb1=="IN"){
+    labelnew.push("INDIAGEO");
+}
+
+ rtbpbjs.que.push(function() {
+  rtbpbjs.setBidderConfig({"bidders":["colombia","improvedigital","criteointl","audiencenetwork","sovrn","smartadserver","criteo","pubmatic","rubicon","sovrn","abmapp","medianet"],"config":{"schain":{"validation":"relaxed","config":{"ver":"1.0","complete":1,"nodes":[{"asi":"andbeyond.media","sid":"11148","hp":1}]}}}});
+rtbpbjs.setBidderConfig({"bidders":["districtmDMX","brapp","adkernelAdn","tripleart","openx","gumgum","ix","ixrtb","andbeyond","adkernel","oftmedia","getapp","33across","bcmapp","triplelift","appnexus"],"config":{"schain":{"validation":"relaxed","config":{"ver":"1.0","complete":1,"nodes":[{"asi":"rtbdemand.com","sid":"21966","hp":1}]}}}});
+
+      rtbpbjs.requestBids({
+        labels:labelnew,
+        timeout: 2000,
+        adUnitCodes: [id],
+        bidsBackHandler: function() {
+/*
+if(id=='andbeyond7286' && test!=undefined)
+{
+ rtbpbjs.setTargetingForGPTAsync([id]);
+console.log('TEST'+test);
+eval(test);
+}
+else
+{
+*/
+id1=eval(id);
+
+
+
+
+
+try
+{
+
+
+id1.setTargeting("prebidtrue", "0");
+
+id1.setTargeting("refresh1","0");
+id1.setTargeting("active","1");
+
+
+}
+catch(e)
+{
+console.log('EXCEPTION'+e);
+
+}
+
+andstatus3001=1;
+
+ rtbpbjs.setTargetingForGPTAsync([id]);
+          googletag.pubads().refresh([id1]);
+       }
+      });
+    });
+
+ setTimeout(function () {
+
+if(andstatus3001==0)
+{
+
+  id1=eval(id);
+console.log('REFRESHING AGAIN AS NO PREBID RETURNED');
+                 googletag.pubads().refresh([id1]);
+}
+                 }, 3000);
+
+ 
+}
+catch(e)
+{
+
+
+}
+
+ }
+
+
+
+function callback0() {
+
+
+
+  var urlmain1=window.location.href;
+var andbeyonddebug1=1;
+if((/andbeyonddebug/).test(urlmain1)){
+ var andbeyonddebug1=2;
+
+  }
+
+
+
+
+
+
+
+
+
+ var totalSeconds=0;
+    var timestop;
+var div = document.createElement("div");
+div.setAttribute("id", "tracker");
+div.style.display = "none";
+div.innerHTML = "0";
+    document.head.appendChild(div);
+
+    var div = document.createElement("div");
+div.setAttribute("id", "norefreshtracker");
+div.style.display = "none";
+div.innerHTML = "0";
+    document.head.appendChild(div);
+
+    function disps()
+    {
+      totalSeconds++
+document.getElementById("tracker").innerHTML=totalSeconds;
+
+    }
+
+
+function addListenerMulti(element, eventNames, listener) {
+  var events = eventNames.split(' ');
+  for (var i=0, iLen=events.length; i<iLen; i++) {
+    element.addEventListener(events[i], listener, false);
+  }
+}
+
+ var idleStates = false;
+        var idleTimers = null;
+        addListenerMulti(window,"mousemove mouseover click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick", function() {
+            clearTimeout(idleTimers);
+            if (idleStates == false) {
+
+                timestop = setInterval(function(){disps()},1000);
+            }
+            idleStates = true;
+            idleTimers = setTimeout(function () {
+
+                clearInterval(timestop);
+                idleStates = false; }, 3000);
+        });
+
+
+
+
+
+
+setTimeout(function(){
+  var locurl2=window.location.href;
+locurl2 = locurl2.replace(/(^\w+:|^)\/\//, '');
+ // console.log("locurl2"+locurl2);
+if(block_url && block_url.length>0)
+{
+for(i=0;i<block_url.length;i++)
+{
+var url22=block_url[i]['url'];
+
+if(locurl2.indexOf(url22)>=0)
+{
+   // console.log("locuradult1");
+try{
+if(googletag!=undefined &&  googletag.pubads()!=undefined){
+ googletag.pubads().setTargeting("adult","1");
+   // console.log("locuradult2");
+}
+}catch(e){
+console.log('EXCEPTION'+e);
+}
+}
+}
+
+}
+
+},1000);
+
+
+setTimeout(function(){
+
+googletag.cmd.push(function() {googletag.defineSlot('/21796214895/324757_Loksatta_pageview_1x1', [1, 1]).addService(googletag.pubads());});
+
+
+rtbpbjs.que.push(function() {
+
+ rtbpbjs.aliasBidder('appnexus', 'districtm');
+rtbpbjs.aliasBidder('appnexus', 'abmapp');
+rtbpbjs.aliasBidder('appnexus', 'getapp');
+rtbpbjs.aliasBidder('appnexus', 'bcmapp');
+rtbpbjs.aliasBidder('triplelift', 'triplehome');
+rtbpbjs.aliasBidder('triplelift', 'tripleart');
+rtbpbjs.aliasBidder('triplelift', 'tripleart');
+rtbpbjs.aliasBidder('adkernel','rtbdemandadk'); 
+
+rtbpbjs.setConfig({ useBidCache: true });
+rtbpbjs.setConfig({
+       userSync: {
+          iframeEnabled: true
+       }
+    });
+
+
+rtbpbjs.addAdUnits(adUnitand);
+ rtbpbjs.bidderSettings =
+            {
+openx: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.8;}},
+pubmatic: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.85;}},
+getapp: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.75;}},
+triplelift: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.6;}},
+bcmapp: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.75;}},
+andbeyond: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.85;}},
+tripleart: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.79;}},
+triplehome: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.79;}},
+rtbdemandadk: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.85;}},
+aardvark: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.9;}},
+oftmedia: {bidCpmAdjustment: function(bidCpm, bid) {return bidCpm * 0.7;}},      
+          standard: {
+                    adserverTargeting: [
+                        {
+                            key: "hb_bidder",
+                            val: function (bidResponse) {
+                                return bidResponse.bidderCode;
+                            }
+                        }, {
+                            key: "hb_adid",
+                            val: function (bidResponse) {
+                                return bidResponse.adId;
+                            }
+                        }, {
+                            key: "hb_pb",
+                            val: function (bidResponse) {
+                        var cpm = bidResponse.cpm;
+                        if (cpm < 8) {
+                        cpm1=cpm;
+                        cpm= (cpm).toFixed(2);
+                        return cpm;
+                        } else {
+                        return '8.00';
+                        }
+
+                        }
+                        },{
+                            key: "hb_format",
+                            val: function (bidResponse) {
+                              try
+                              {
+                              mediaType=bidResponse.mediaType;
+                              if(mediaType==undefined)
+                              mediaType='banner';
+                              }
+                              catch(e)
+                              {
+                              mediaType='banner';
+                              }
+
+                                return mediaType;
+                            }
+                          },{
+                            key: "hb_size",
+                            val: function (bidResponse) {
+                                return bidResponse.size;
+
+                            }
+                        }
+                    ]
+                },
+
+            };
+});
+
+
+
+
+
+
+
+
+
+
+console.log("country"+country_rtb1);
+console.log("city"+city_rtb);
+
+
+
+
+
+if(country_rtb1!=undefined){
+
+
+
+function refreshBid2(id,this1,type,test,factor,width,height,newidflag,flag6,flag_active) {
+try{
+  // console.log("refreshbid22");
+var html=jQuery(this1).html();
+var demand_timeout;
+var demand_payout;
+var ad;
+var publisher_id;
+var cid;
+var crid;
+var id3;
+var supply_timeout;
+
+var countrefresh=0;
+var norefresh=-1;
+var idnew=id;
+        var windowwidth = jQuery(window, parent.document).width();
+var visible=true;
+if(windowwidth<700 || flag6==1)
+visible = isVisible(this1);
+else 
+visible = isVisible(this1);
+if(windowwidth<700)
+visible=true;
+
+
+
+
+
+flag=1;
+if(visible==true)
+{
+
+flag=1;
+}
+
+
+var data;
+
+id=id.replaceAll('\/', '');
+id=id.replaceAll('\_', '');
+id=id.replaceAll('\-', '');
+
+try
+{
+data=eval('count'+id);
+}
+catch(e)
+{
+data=0;
+}
+var count=1;
+if(data==undefined)
+count=1;
+else
+count=parseInt(data)+1;
+
+
+
+eval("count" + id + " = count");
+tempval=eval("count"+id);
+
+countrefresh=count;
+
+
+
+
+/*
+if(flag_active==0 && (country_rtb1=='IN' || country_rtb1=='PK'))
+{
+factor_visible_new=factor_visible*2;
+
+}
+else
+{
+
+if(flag_active==0 && visible==false)
+{
+
+factor_visible_new=factor_visible*2;
+
+}
+else
+factor_visible_new=factor_visible;
+
+}
+*/
+
+
+
+
+
+
+
+
+strategy2=strategy;
+
+
+
+if(visible==false)
+{
+success=count/factor_visible;
+
+if(Number.isInteger(success))
+{
+flag=1;
+strategy2=0;
+}
+else
+{
+
+
+strategy2=0;
+flag=0;
+
+
+
+}
+}
+
+ // console.log('ID'+id+'strategy'+strategy2+'VISIBLE'+visible);
+
+
+
+
+
+
+
+
+
+
+
+if(visible==true && factor>1)
+{
+success=count/factor;
+if(Number.isInteger(success))
+{
+flag=1;
+}
+else
+flag=0;
+}
+
+
+if(norefresh>0)
+flag=0;
+
+
+
+
+
+flag2=1;
+if(type==0)
+{
+
+try
+{
+flag2=eval('status'+id+'new');
+
+}
+catch(e)
+{
+flag2=1;
+}
+
+
+
+
+if(count<=1000 && flag==1 && flag2==1)
+{
+
+var data;
+var counter=1;
+
+try
+{
+if(width==970 && height==250){
+  data=eval('status'+width+height+'new');
+  counter=parseInt(data)+1;
+}
+else{
+if((width==300 && height==600) || (width==300 && height==100))
+ data=eval('status'+height+'new');
+else 
+  data=eval('status'+width+'new');
+counter=parseInt(data)+1;
+}
+}catch(e)
+{
+data=1;
+counter=1;
+}
+if(width==970 && height==250)
+eval("status" + width + height+ "new" + " = counter");
+else
+{
+if((width==300 && height==600) || (width==300 && height==100))
+eval("status" + height + "new" + " = counter");
+else
+eval("status" + width + "new" + " = counter");
+}
+
+
+eval("status" + id + "new" + " = 1");
+
+
+try
+{
+
+if(width==970 && height==250){
+  stat=eval('size'+width+height+counter+'status');
+  }else{
+
+    stat=eval('size'+width+counter+'status');
+
+
+
+  }
+
+if(stat==0)
+flag2=0;
+}
+catch(e)
+{
+flag2=0;
+
+}
+
+
+
+if(height=="600" && width=="300"){
+  id2='andbeyond'+height+counter;
+}else if(height=="250" && width=="970"){
+  id2='andbeyond'+width+height+counter;
+}
+else{
+  id2='andbeyond'+width+counter;
+}
+if(height=="200" && width=="970")
+  id2='andbeyond'+width+height+counter;
+if(height=="100" && width=="300")
+  id2='andbeyond'+height+counter;
+
+
+eval("andbeyonddiv" + id + " = id2");
+eval("andbeyondwidth" + id + " = width");
+eval("andbeyondheight" + id + " = height");
+
+test=test.replaceAll(idnew, id2);
+
+
+ //test= test.replace(idnew, id2);
+
+
+
+
+
+id=id2;
+
+eval("count" + id + " = countrefresh");
+
+}
+
+
+}
+
+ // console.log("condition_flag"+html);
+ // console.log("dddtype22"+type);
+ // console.log("flag_active"+flag_active);
+ 
+
+
+
+
+var condition_flag=0;
+var namemc_back=namemc;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+if(count<=1000 && flag==1 && flag2==1)
+{
+try
+{
+data=eval('counterefresh'+id);
+}
+catch(e)
+{
+data=0;
+}
+
+var count=1;
+if(data==undefined)
+count=1;
+else
+count=parseInt(data)+1;
+eval("counterefresh" + id + " =count");
+
+
+if(html.indexOf('rtbdemiframe')>0)
+{
+type=0;
+
+}
+if(time_interval==undefined)
+time_interval=3000;
+
+startdate=new Date();
+
+try
+{
+startdate=eval('timerefreshand');
+}
+catch(e)
+{
+
+startdate=0;
+
+}
+var enddate   = new Date();
+if(startdate==0)
+mseconds=5000;
+else
+mseconds = (enddate.getTime() - startdate.getTime()) ;
+
+if(mseconds<time_interval)
+{
+var dateObj = enddate.getTime();
+dateObj += time_interval-mseconds;
+endate = new Date(dateObj);
+crontime=time_interval-mseconds;
+}
+else
+{
+crontime=0;
+}
+
+eval("timerefreshand = enddate");
+status_bad=0;
+id1=null;
+
+try
+{
+id1=eval(id);
+if(id1==undefined)
+status_bad=1;
+
+}
+catch(e)
+{
+status_bad=1;
+
+}
+
+
+
+
+
+if(status_bad==1)
+{
+
+googletag.cmd.push(function () {
+aff="324757";
+len=id.length;
+if(len==14){
+pos1=id.substr(len-2);
+}
+else{
+  pos1=id.substr(len-1);
+}
+
+
+
+text=null;
+
+
+if(id.indexOf('100')>0)
+{
+width1=300;
+height1=100;
+width2=100;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[300, 100]], "'+id+'").addService(googletag.pubads())';
+
+}
+if(id.indexOf('300')>0)
+{
+width1=300;
+height1=250;
+width2=width1;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[300, 250],[250, 250],[200, 200]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('600')>0)
+{
+width1=300;
+height1=600;
+width2=600;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[300,600]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('728')>0)
+{
+width1=728;
+height1=90;
+width2=728;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[728, 90]], "'+id+'").addService(googletag.pubads())';
+
+}
+if(id.indexOf('468')>0)
+{
+width1=468;
+height1=60;
+width2=468;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[468, 60]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+if(id.indexOf('970') >0)
+{
+width1=970;
+height1=90;
+width2=970;
+
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[970, 90],[728,90]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('640')>0)
+{
+width1=640;
+height1=480;
+width2=640;
+
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[640,480]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+if(id.indexOf('970')>0 && id.indexOf('250')>0)
+{
+width1=970;
+height1=250;
+width2=970250;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[970,250]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('970')>0 && id.indexOf('200')>0)
+{
+width1=970;
+height1=200;
+width2=970200;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[970,200]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+if(id.indexOf('160')>0)
+{
+width1=160;
+height1=600;
+width2=160;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[160, 600],[120, 600]], "'+id+'").addService(googletag.pubads())';
+
+}
+if(id.indexOf('120')>0)
+{
+width1=120;
+height1=600;
+width2=120;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[120, 600]], "'+id+'").addService(googletag.pubads())';
+
+}
+if(id.indexOf('320')>0 )
+{
+width1=320;
+height1=50;
+width2=width1;
+text='googletag.defineSlot("/'+namemc_back+'/'+aff+'-'+width1+'-'+height1+'-'+pos1+'", ["fluid",[320, 50]], "'+id+'").addService(googletag.pubads())';
+
+}
+
+
+
+if(text!=undefined )
+{
+try
+{
+
+id1=eval(text);
+
+
+
+
+eval("andbeyond" + width2 + pos1 + " = id1");
+
+
+
+
+googletag.pubads().enableSingleRequest();
+ googletag.pubads().disableInitialLoad();
+googletag.enableServices();
+}
+catch(e)
+{
+console.log("CREATION EXCEPTION"+e+'FOR ID'+id);
+}
+}
+});
+
+
+}
+
+if(type==0 || type==1)
+{
+
+eval("strategy2" + id + " =strategy2");
+eval("strategy2width" + id + " =width");
+eval("strategy2height" + id + " =height");
+eval("strategy2type" + id + " =type");
+eval("strategy2counter" + id + " =counter");
+
+
+
+if(type==0 && strategy2==0){
+this1.innerHTML="";
+}
+}
+
+if(html.indexOf('rtbdemiframe')>0 && strategy2==0){
+this1.innerHTML="";
+}
+
+
+if((type==0 || newidflag==1) && strategy2==0){
+ this1.innerHTML=test;
+ }
+
+
+if(html.indexOf('rtbdemiframe')>0 && strategy2==0){
+ this1.innerHTML=test;
+}
+
+
+
+
+
+
+
+
+if(id1!=null && id1!=undefined){
+try
+{
+
+
+id1.setTargeting("prebidtrue", "0");
+
+if(flag_active==undefined || flag_active==0)
+id1.setTargeting("active","0");
+else
+id1.setTargeting("active","1");
+
+if(visible==true)
+id1.setTargeting("visible","1");
+else
+id1.setTargeting("visible","0");
+
+if(count==1)
+id1.setTargeting("refresh1","1");
+if(count==2)
+id1.setTargeting("refresh1","2");
+if(count==3)
+id1.setTargeting("refresh1","3");
+if(count==4)
+id1.setTargeting("refresh1","4");
+if(count==5)
+id1.setTargeting("refresh1","5");
+if(count==6)
+id1.setTargeting("refresh1","6");
+if(count==7)
+id1.setTargeting("refresh1","7");
+if(count==8)
+id1.setTargeting("refresh1","8");
+if(count==9)
+id1.setTargeting("refresh1","9");
+if(count>=10)
+id1.setTargeting("refresh1","10");
+
+
+keyname='activevisible';
+if(visible==true && flag_active==1)
+{
+keyname='activevisible';
+
+}
+if(visible==true && flag_active==0)
+{
+keyname='inactivevisible';
+
+}
+
+if(visible==false && flag_active==1)
+{
+keyname='activeinvisible';
+
+}
+if(visible==false && flag_active==0)
+{
+keyname='inactiveinvisible';
+
+}
+
+if(count==1)
+id1.setTargeting(keyname,"1");
+
+if(count==2)
+id1.setTargeting(keyname,"2");
+
+if(count==3)
+id1.setTargeting(keyname,"3");
+
+if(count==4)
+id1.setTargeting(keyname,"4");
+
+if(count==5)
+id1.setTargeting(keyname,"5");
+
+if(count==6)
+id1.setTargeting(keyname,"6");
+
+if(count==7)
+id1.setTargeting(keyname,"7");
+
+if(count==8)
+id1.setTargeting(keyname,"8");
+
+if(count==9)
+id1.setTargeting(keyname,"9");
+
+if(count>=10)
+id1.setTargeting(keyname,"10");
+
+
+
+var randomvaldata=Math.floor(Math.random() * 10) + 1;
+if(randomvaldata==1){
+  if(flag_active==1){
+  id1.setTargeting("refreshtype","active");
+}else{
+  id1.setTargeting("refreshtype","inactive");
+}
+}else{
+   id1.setTargeting("refreshtype","none");
+}
+
+}
+catch(e)
+{
+console.log('EXCEPTION'+e);
+}
+}
+
+var labelnew=Array();
+
+if(country_rtb1=="IN"){
+  if(flag_active==1 && visible==true){
+labelnew.push("indiavisible");
+} 
+}else{
+  labelnew.push("indiavisible");
+}
+
+
+if(flag_active==1)
+labelnew.push("active");
+else
+labelnew.push("inactive");
+
+if(visible==true)
+labelnew.push("visible");
+else
+labelnew.push("invisible");
+
+if(visible==true)
+labelnew.push(country_rtb1);
+else
+labelnew.push(country_rtb1);
+
+
+if(country_rtb1!="IN"){
+    labelnew.push("NRI");
+}
+if(country_rtb1=="US"){
+    labelnew.push("USGEO");
+}
+
+if(country_rtb1=="IN"){
+    labelnew.push("INDIAGEO");
+}
+
+  labelnew.push("desktop");
+  var lsurl=window.location.origin + window.location.pathname;
+  var lsurl=lsurl.split('/').length;
+if(lsurl=="https://www.loksatta.com/" || lsurl=="https://www.loksatta.com"){
+labelnew.push("HOMEPAGE");
+}
+if(lsurl>=6){
+labelnew.push("ARTICLEPAGE");
+}
+
+ rtbpbjs.que.push(function() {
+ 	rtbpbjs.setBidderConfig({"bidders":["colombia","improvedigital","criteointl","audiencenetwork","sovrn","smartadserver","criteo","pubmatic","rubicon","sovrn","abmapp","medianet"],"config":{"schain":{"validation":"relaxed","config":{"ver":"1.0","complete":1,"nodes":[{"asi":"andbeyond.media","sid":"11148","hp":1}]}}}});
+rtbpbjs.setBidderConfig({"bidders":["districtmDMX","brapp","adkernelAdn","tripleart","openx","gumgum","ix","ixrtb","andbeyond","adkernel","oftmedia","getapp","33across","bcmapp","triplelift","appnexus"],"config":{"schain":{"validation":"relaxed","config":{"ver":"1.0","complete":1,"nodes":[{"asi":"rtbdemand.com","sid":"21966","hp":1}]}}}});
+
+if(id!=undefined)
+{
+     rtbpbjs.requestBids({
+       labels:labelnew,
+        timeout: PREBID_TIMEOUT_NEW,
+        adUnitCodes: [id],
+        bidsBackHandler: function() {
+andstatus300=1;
+
+try
+{
+strategy2=eval('strategy2'+id);
+}
+catch(e)
+{
+strategy2=0;
+}
+
+
+try
+{
+width=eval("strategy2width"+id);
+}
+catch(e)
+{
+
+}
+try
+{
+height=eval("strategy2height"+id);
+}
+catch(e)
+{
+
+}
+
+
+
+
+
+
+
+temp1=0;
+ad=null;
+if(strategy2==1)
+{
+targetingParams=rtbpbjs.getBidResponses();
+var params = rtbpbjs.getAdserverTargetingForAdUnitCode(id);
+
+
+
+
+try{
+if(params && params['hb_adid']){
+  // console.log("IDPREBID5");
+cpm_final=params['hb_pb'];
+publisher_id=params['hb_bidder'];
+
+}
+else{
+cpm_final=0;
+}
+
+}
+catch(e){
+ console.log('BIGEXCEPTION'+e);
+}
+
+
+highcpm=0.01;
+
+
+
+targetingParams=rtbpbjs.getBidResponses(id);
+
+cpm_final1=0;
+
+
+
+
+
+
+
+
+
+
+
+
+ if(cpm_final > highcpm)
+{
+
+
+format=params['hb_format'];
+
+
+if(format=='native')
+{
+
+hb_native_linkurl=params['hb_native_linkurl'];
+hb_native_brand=params['hb_native_brand'];
+hb_native_body=params['hb_native_body'];
+hb_native_title =params['hb_native_title'];
+hb_native_icon=params['hb_native_icon'];
+hb_adid=params['hb_adid'];
+hb_native_image==params['hb_native_image'];
+var urlpub=window.location.origin + window.location.pathname;
+
+
+if(html.indexOf('21796214895')<0 && html.indexOf('21751243814')<0 && html.indexOf('21796214895')<0 && html.indexOf('rtbdemiframe')<0 && html.indexOf('sponsored-post')<0){
+ contentbl='<div id="' + id + '" style="height:'+height+'px; width:'+width+'px;margin:0 auto;text-align:center;overflow:hidden;"><style> .sponsored-post { background-color: #fffdeb; font-family: sans-serif; padding: 10px 20px 10px 20px; } .content { overflow: hidden; } .thumbnail { width: 120px; height: 100px; float: left; margin: 0 20px 10px 0; background-image: url('+hb_native_image+'); background-size: cover; } h1 { font-size: 18px; margin: 0; } a { color: #0086b3; text-decoration: none; } p { font-size: 16px; color: #444; margin: 10px 0 10px 0; } .attribution { color: #fff; font-size: 9px; font-weight: bold; display: inline-block; letter-spacing: 2px; background-color: #ffd724; border-radius: 2px; padding: 4px; } </style> <div class="sponsored-post"> <div class="thumbnail"></div> <div class="content"> <h1><a href="'+hb_native_linkurl+'" target="_blank" class="pb-click" pbAdId="'+hb_adid+'">'+hb_native_title+'</a></h1> <p>'+hb_native_body+'</p> <div class="attribution">'+hb_native_brand+'</div> </div> </div> <script src="https://cdn.jsdelivr.net/npm/prebid-universal-creative@latest/dist/native-trk.js"></script> <script> let pbNativeTagData = {}; pbNativeTagData.pubUrl = "%%PATTERN:url%%"; window.pbNativeTag.startTrackers(pbNativeTagData); </script> </html></div>';
+}
+else{
+ contentbl='<div><style>.sponsored-post { background-color: #fffdeb; font-family: sans-serif; padding: 10px 20px 10px 20px; } .content { overflow: hidden; } .thumbnail { width: 120px; height: 100px; float: left; margin: 0 20px 10px 0; background-image: url('+hb_native_image+'); background-size: cover; } h1 { font-size: 18px; margin: 0; } a { color: #0086b3; text-decoration: none; } p { font-size: 16px; color: #444; margin: 10px 0 10px 0; } .attribution { color: #fff; font-size: 9px; font-weight: bold; display: inline-block; letter-spacing: 2px; background-color: #ffd724; border-radius: 2px; padding: 4px; } </style></div> <div class="sponsored-post"> <div class="thumbnail"></div> <div class="content"> <h1><a href="'+hb_native_linkurl+'" target="_blank" class="pb-click" pbAdId="'+hb_adid+'">'+hb_native_title+'</a></h1> <p>'+hb_native_body+'</p> <div class="attribution">'+hb_native_brand+'</div> </div> </div> <script src="https://cdn.jsdelivr.net/npm/prebid-universal-creative@latest/dist/native-trk.js"></script> <script> let pbNativeTagData = {}; pbNativeTagData.pubUrl = "'+urlpub+'"; window.pbNativeTag.startTrackers(pbNativeTagData); </script> </html>';
+}
+
+jQuery(this1,parent.document).html(contentbl);
+
+}
+else{
+
+if(html.indexOf('21796214895')<0 && html.indexOf('21751243814')<0 && html.indexOf('21796214895')<0 && html.indexOf('rtbdemiframe')<0)
+{
+var newDiv = document.createElement("div");
+newDiv.setAttribute("id", id);
+newDiv.setAttribute("width", width);
+newDiv.setAttribute("height", height);
+style1="height:"+height+"px; width:"+width+"px;margin:0 auto;text-align:center";
+newDiv.setAttribute("style",style1);
+}
+
+var newFrame = document.createElement("iframe");
+newFrame.setAttribute("id", "rtbdemiframe");
+newFrame.setAttribute("FRAMEBORDER", "0");
+newFrame.setAttribute("SCROLLING", "no");
+newFrame.setAttribute("MARGINHEIGHT", "0");
+newFrame.setAttribute("MARGINWIDTH", "0");
+newFrame.setAttribute("TOPMARGIN", "0");
+newFrame.setAttribute("LEFTMARGIN", "0");
+newFrame.setAttribute("ALLOWTRANSPARENCY", "true");
+newFrame.setAttribute("WIDTH", "0");
+newFrame.setAttribute("HEIGHT", "0");
+
+
+
+if(html.indexOf('21796214895')<0 && html.indexOf('21751243814')<0 && html.indexOf('21796214895')<0 && html.indexOf('rtbdemiframe')<0){
+    newDiv.appendChild(newFrame);
+jQuery(this1,parent.document).html(newDiv);
+}
+else{
+jQuery(this1,parent.document).html(newFrame);
+}
+var url='https://prebid.andbeyond.media/impben1.php?special=1&aff=324757&publisher_id='+publisher_id+'&price='+cpm_final;
+var pixel='<img src="'+url+'" style="display:none"></img>';
+
+
+temp123='#'+id;
+
+    jQuery(temp123,parent.document).eq(0).append(pixel);
+
+
+rtbpbjs.renderAd(newFrame.contentWindow.document,params['hb_adid']);
+
+
+}
+
+
+
+if(demand_payout>0)
+pay=demand_payout;
+else
+pay=cpm_final;
+url=' ';
+
+
+
+}
+else
+{
+
+
+try
+{
+type=eval("strategy2type"+id);
+}
+catch(e)
+{
+
+}
+
+
+
+try
+{
+counter=eval("strategy2counter"+id);
+}
+catch(e)
+{
+
+}
+
+if(type==0)
+{
+
+counter=counter-1;
+
+if(width==970 && height==250){
+eval("status" + width + height+ "new" + " = counter");
+}
+else
+{
+if((width==300 && height==600) || (width==300 && height==100)){
+eval("status" + height + "new" + " = counter");
+}
+else{
+eval("status" + width + "new" + " = counter");
+}
+}
+
+}
+
+
+
+}
+
+}
+
+
+try
+{
+strategy2=eval('strategy2'+id);
+}
+catch(e)
+{
+strategy2=0;
+}
+
+
+
+
+
+if(strategy2==0)
+{
+
+
+id1=eval(id);
+
+
+if(id1!=undefined)
+{
+        // console.log("GOOGLEREFRESHERE"+id+'ID1'+JSON.stringify(id1))
+
+ //jQuery(this1,parent.document).html(test);
+
+ rtbpbjs.setTargetingForGPTAsync([id]);
+ // googletag.pubads().setTargeting("refresh","0");
+       googletag.pubads().refresh([id1]);
+       // console.log("bid"+JSON.stringify(rtbpbjs.getBidResponses()));
+}
+}
+
+
+
+
+
+
+}
+
+      });
+}
+    });
+
+ setTimeout(function () {
+
+if(andstatus300==0)
+{
+  id1=eval(id);
+console.log('REFRESHING AGAIN AS NO PREBID RETURNED');
+                 googletag.pubads().refresh([id1]);
+}
+                 }, 5000);
+}
+
+}
+catch(e)
+{
+
+console.log('EXCEPTION'+e);
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ var windowwidth = jQuery(window, parent.document).width();
+
+var global_refresh=0;
+
+
+var tier2=0;
+
+var newid=0;
+
+var flag2=1;
+
+      refreshval=refresh;
+    
+
+
+number5=0;
+var refresh_time1=0;
+var refresh_time=0;
+var refresh_time2=0;
+
+setInterval(function(){
+
+    
+
+
+  
+  var val1=jQuery("#tracker").text();
+  var weekdays = new Array(7);
+  weekdays[0] = "Sunday";
+  weekdays[1] = "Monday";
+  weekdays[2] = "Tuesday";
+  weekdays[3] = "Wednesday";
+  weekdays[4] = "Thursday";
+  weekdays[5] = "Friday";
+  weekdays[6] = "Saturday";
+  var current_date = new Date();
+  var weekday_value = current_date.getDay();
+  //var timehours=new Date().getHours();
+
+success=timer_refresh/timebased_refresh;
+
+timedate1 = Math.round((new Date()).getTime() / 1000);
+
+if(Number.isInteger(success))
+{
+timeflag=1;
+highcpm=0.1;
+}
+else
+{
+
+timeflag=0;
+}
+
+
+
+diff=timer_refresh-refresh_time1;
+if(number5==0)
+diff=30;
+
+
+
+
+
+ if ((val1 == refreshval && diff>=25) || (timebased==1 && timeflag==1 && diff>=25 && number5<number) || (andbeyonddebug1==2)) {
+
+
+refresh_time=timer_refresh;
+diff=refresh_time-refresh_time1;
+refresh_time1=refresh_time;
+
+
+
+if(val1 == refreshval || (andbeyonddebug1==2))
+flag_active=1;
+else
+flag_active=0;
+
+if(number5==0)
+diff=26;
+
+flag7=1;
+
+if(diff>=25 && number5<=5 || flag_active==1 || (andbeyonddebug1==2))
+{
+flag6=0;
+highcpm=highcpm1;
+if(googletag!=undefined &&  googletag.pubads()!=undefined)
+ googletag.pubads().setTargeting("refresh","0");
+}
+else
+{
+
+
+
+if(googletag!=undefined &&  googletag.pubads()!=undefined)
+ googletag.pubads().setTargeting("refresh","1");
+flag6=1;
+highcpm=0.1;
+
+} 
+ 
+
+
+number5++;
+if(flag_active==1)
+  refreshval = refreshval + refresh;
+     
+ var sizeflag=0;
+          if(andbeyonddebug1==2){
+      andbeyonddebug1=3;
+     }
+ 
+
+  idnew2='';
+   knew=0;
+jQuery('*[id^="gpt_ad"],*[id^="div-gpt-ad"],*[id^="andbeyond"],*[id^="div-insticator-ad"]').each(function() {
+
+newid=0;
+newidflag=0;
+var norefresh=0;
+flag2=1;
+var vs2=null;
+try
+{
+if(jQuery(this)!=undefined)
+ vs2=jQuery(this).attr('id');
+else
+ vs2=null;
+}
+catch(e)
+{
+}
+
+if(vs2)
+{
+
+temp=jQuery(this).html();
+
+ var windowwidthqwq = jQuery(window, parent.document).width();
+
+if(windowwidthqwq<700 && vs2.indexOf('andbeyond')<0)
+var temp_caps='MOBILE';
+else
+var temp_caps=temp.toUpperCase();
+
+m1html=temp;
+
+if(vs2.indexOf('andbeyond')==0 || vs2.indexOf('div-gpt-ad')==0 || vs2.indexOf('gpt_ad')==0 || vs2.indexOf('div-insticator-ad')==0)
+{
+
+
+
+
+
+var ele='#'+vs2+' iframe';
+try
+{
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+if(country_rtb1==undefined)
+   country_rtb1="IN";
+
+
+if(vs2.indexOf('andbeyond')<0)
+flag2=blackbox(temp_caps,country_rtb1,city_rtb,city_region,0);
+else
+flag2=1;
+
+
+
+}
+catch(e)
+{
+flag2=1;
+}
+
+
+
+factortier1=m1html.indexOf(factor_tier1_text);
+factortier2=m1html.indexOf(factor_tier2_text);
+factortier3=m1html.indexOf("TIER3");
+
+if(factortier2>0)
+tier2=1;
+
+if(factortier3>0)
+tier3=1;
+
+
+
+size600=temp.indexOf('height="600"');
+size300=temp.indexOf('width="300"');
+size250=temp.indexOf('height="250"');
+size250se=temp.indexOf('width="250"');
+size728=temp.indexOf('width="728"');
+size160=temp.indexOf('width="160"');
+size970=temp.indexOf('width="970"');
+size90=temp.indexOf('height="90"');
+size320=temp.indexOf('width="320"');
+size50=temp.indexOf('height="50"');
+size336=temp.indexOf('width="336"');
+size280=temp.indexOf('height="280"');
+size200=temp.indexOf('height="200"');
+size1050=temp.indexOf('width="1050"');
+size159=temp.indexOf('height="159"');
+size120=temp.indexOf('width="120"');
+size100=temp.indexOf('height="100"');
+size468=temp.indexOf('width="468"');
+size60=temp.indexOf('height="60"');
+size550=temp.indexOf('width="550"');
+size990=temp.indexOf('width="990"');
+flag=0;
+
+  var windowwidthqwq = jQuery(window, parent.document).width();
+      var url33=window.location.origin + window.location.pathname;      
+
+
+if(vs2.indexOf('andbeyond')==0){
+  flag2=1;
+}
+
+
+if(size300>0 && size250>0)
+{
+flag=1;
+width=300;
+height=250;
+}
+if(size250>0 && size250se>0)
+{
+flag=1;
+width=300;
+height=250;
+}
+if(size336>0 && size280>0)
+{
+flag=1;
+width=300;
+height=250;
+}
+if(size600>0 && size300>0)
+{
+flag=1;
+width=300;
+height=600;
+}
+
+
+ if(size160>0)
+ {
+ flag=1;
+ width=160;
+ height=600;
+ }
+
+ if(size120>0 && size600>0)
+ {
+ flag=1;
+ width=160;
+ height=600;
+ }
+
+if(size728>0)
+{
+flag=1;
+width=728;
+height=90;
+}
+if(size970>0 && size250>0)
+{
+flag=1;
+width=970;
+height=250;
+}
+
+if(size970>0 && size200>0)
+{
+flag=1;
+width=970;
+height=250;
+}
+
+if(size970>0 && size90>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+
+if(size1050>0 && size90>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+if(size990>0 && size60>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+if(size320>0 && size50>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+if(size300>0 && size100>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+
+if(size550>0 && size100>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+
+
+if(size468>0 && size60>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+
+if(windowwidthqwq>1024){
+
+if(size159>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+
+}
+
+
+
+if(flag==0)
+{
+
+
+  // console.log(jQuery(this).html());
+  //do something
+
+
+
+sizehp1=temp.indexOf('300x250');
+sizehp2=temp.indexOf('728x90');
+sizehp3=temp.indexOf('320x50');
+sizehp4=temp.indexOf('300x600');
+sizehp5=temp.indexOf('970x90');
+sizehp6=temp.indexOf('970x250');
+sizehp8=temp.indexOf('160x600');
+sizehp7=temp.indexOf('google_ads_iframe');
+
+
+size1206001=temp.indexOf('120X600');
+size1606001=temp.indexOf('160X600');
+size3006001=temp.indexOf('300X600');
+size728901=temp.indexOf('728X90');
+size970901=temp.indexOf('970X90');
+size320501=temp.indexOf('320X50');
+size9702501=temp.indexOf('970X250');
+sizeh3002501=temp.indexOf('300X250');
+
+if(sizehp8>0 && sizehp7>0)
+{
+flag=1;
+width=160;
+height=600;
+}
+
+if(sizehp1>0 && sizehp7>0)
+{
+flag=1;
+width=300;
+height=250;
+}
+
+if(sizehp2>0 && sizehp7>0)
+{
+flag=1;
+width=728;
+height=90;
+}
+
+if(!(/elections/.test(url33))){
+if(sizehp3>0 && sizehp7>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+}
+if(sizehp4>0 && sizehp7>0)
+{
+flag=1;
+width=300;
+height=600;
+}
+if(sizehp5>0 && sizehp7>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+if(sizehp6>0 && sizehp7>0)
+{
+flag=1;
+width=970;
+height=250;
+}
+
+
+if(size1206001>0 && sizehp7>0)
+ {
+ flag=1;
+ width=160;
+ height=600;
+ }
+
+ if(size1606001>0 && sizehp7>0)
+ {
+ flag=1;
+ width=160;
+ height=600;
+ }
+
+
+if(sizeh3002501>0 && sizehp7>0)
+{
+flag=1;
+width=300;
+height=250;
+}
+
+if(size3006001>0 && sizehp7>0)
+{
+flag=1;
+width=300;
+height=600;
+}
+if(!(/elections/.test(url33))){
+if(size320501>0 && sizehp7>0)
+{
+flag=1;
+width=320;
+height=50;
+}
+}
+
+if(size970901>0 && sizehp7>0)
+{
+flag=1;
+width=970;
+height=90;
+}
+
+
+if(size728901>0 && sizehp7>0)
+{
+flag=1;
+width=728;
+height=90;
+}
+
+if(size9702501>0 && sizehp7>0)
+{
+flag=1;
+width=970;
+height=250;
+}
+}
+
+
+
+
+
+
+
+
+
+m=vs2.indexOf('andbeyond');
+m1=vs2.indexOf('div-gpt-ad');
+m2=vs2.indexOf('gpt_ad');
+m3=vs2.indexOf('div-insticator-ad');
+
+
+
+if(factortier1>0 && global_refresh==0){
+global_refresh=1;
+
+
+refresh=Math.round(refresh/factor_tier1);
+}
+if(factortier2>0 && global_refresh==0){
+global_refresh=1;
+refresh=15;
+if(timebased==1 && timeflag==1)
+highcpm=0.2;
+else
+highcpm=0.1;
+
+}
+
+
+if(flag2==1)
+{
+if(flag==1 && newid!=undefined && newid!=0)
+{
+if(flag6==1)
+ test='<div id="' + newid + '" style="height:'+height+'px; width:'+width+'px;margin:0 auto;text-align:center;"><scr' + 'ipt>googletag.pubads().setTargeting("refresh","1");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + newid + '\'); });</scr' + 'ipt></div>';
+else
+ test='<div id="' + newid + '" style="height:'+height+'px; width:'+width+'px;margin:0 auto;text-align:center;"><scr' + 'ipt>googletag.pubads().setTargeting("refresh","0");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + newid + '\'); });</scr' + 'ipt></div>';
+ 
+refreshBid2(newid,this,1,test,1,width,height,newidflag,flag6,flag_active);
+
+
+}
+else
+{
+if( m==0 || ((m1==0 || m2==0 || m3==0) && flag==1 && temp.indexOf("andbeyond")<0))
+{
+
+  
+if(m==0)
+{   
+
+if(flag6==1)
+ test='<scr' + 'ipt> googletag.pubads().setTargeting("refresh","1");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + vs2 + '\'); });</scr' + 'ipt>';
+else
+ test='<scr' + 'ipt> googletag.pubads().setTargeting("refresh","0");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + vs2 + '\'); });</scr' + 'ipt>';
+
+ refreshBid2(vs2,this,1,test,1,width,height,newidflag,flag6,flag_active);
+}
+else
+{
+
+if(flag6==1)
+ test='<div id="' + vs2 + '" style="height:'+height+'px; width:'+width+'px;margin:0 auto;text-align:center;"><scr' + 'ipt>googletag.pubads().setTargeting("refresh","1");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + vs2 + '\'); });</scr' + 'ipt></div>';
+else
+ test='<div id="' + vs2 + '" style="height:'+height+'px; width:'+width+'px;margin:0 auto;text-align:center;"><scr' + 'ipt>googletag.pubads().setTargeting("refresh","0");google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay(\'' + vs2 + '\'); });</scr' + 'ipt></div>';
+ 
+refreshBid2(vs2,this,0,test,1,width,height,newidflag,flag6,flag_active);
+
+}
+
+}
+
+} 
+
+}
+if(flag2==0){
+    if(newtestunitcount==1){
+    googletag.cmd.push(function () {
+      newtestunit33=googletag.defineSlot("/21796214895/324757_Block_Loksatta", [1, 1], "newtestunit33").addService(googletag.pubads());
+    });
+    refreshBid1('newtestunit33',newtestunit33);
+    }
+    newtestunitcount=2;
+     
+
+    }
+}
+
+}
+});
+
+
+
+}
+
+
+
+
+}, 1000)
+ 
+
+
+
+
+flag2=1;
+
+function blackbox(temp_caps,country_rtb1,city_rtb,city_region,new12)
+{
+
+flag2=1;
+
+for (var make in and_geo_block) {
+    for (var i = 0; i < and_geo_block[make].length; i++) {
+        var country1 = and_geo_block[make][i].country_name;
+        var Adunit1 = and_geo_block[make][i].Adunit_country;
+        var city1 = and_geo_block[make][i].city_name;
+        var adunit_city1 = and_geo_block[make][i].Adunit_city;
+         var state1 = and_geo_block[make][i].state_name;
+         var adunit_state1 = and_geo_block[make][i].Adunit_state;
+         var Time_city1 = and_geo_block[make][i].Time_city;
+         var Time_state1 = and_geo_block[make][i].Time_state;
+         var Time_country1 = and_geo_block[make][i].Time_country;
+         var Hour_state1 = and_geo_block[make][i].Hour_state;
+         var Hour_city1 = and_geo_block[make][i].Hour_city;
+         var Hour_country1 = and_geo_block[make][i].Hour_country;
+
+
+         var country_state=country_rtb1+"_"+city_region;
+
+
+
+       if(country1!=undefined && Adunit1!=undefined && Time_country1!=undefined){
+      for(d=0; d<Adunit1.length; d++){
+      var adunit_caps=Adunit1[d].toUpperCase();
+      var norefresh1=temp_caps.indexOf(adunit_caps);
+      for(var kkk=0; kkk<Time_country1.length; kkk++){
+     
+                for(var kk2=0; kk2<Hour_country1.length; kk2++){
+
+            
+
+             if(Hour_country1[kk2].timezone!=undefined)
+                    timezone=Hour_country1[kk2].timezone;
+                    else
+                    timezone='LOCAL';
+                    if(timezone=='LOCAL')
+                    {
+                    current_hour2=new Date().getHours();
+                    }
+                    else
+                    {
+
+                    // d2="new Date().toLocaleString('en-US', { timeZone: '"+timezone+"' })";
+                    // d3=eval(d2);
+
+                    // d1=new Date(d3);
+                    // current_hour2=d1.getHours();
+                    current_hour2=calcTime('Bombay', '+5.5');
+
+                    }
+
+                     if(current_hour2==0)
+                      current_hour2=24;
+
+                   if(current_hour2==1)
+                      current_hour2=25;
+
+                   if(current_hour2==2)
+                      current_hour2=26;
+
+                   // if(current_hour2==3)
+                   //    current_hour2=27;
+
+                   // if(current_hour2==4)
+                   //    current_hour2=28;
+
+                   // if(current_hour2==5)
+                   //    current_hour2=29;
+
+
+            if(Time_country1 != "NONE" && Hour_country1 != "NONE" && norefresh1>=0 && country_rtb1==country1 && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                      
+                      
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && norefresh1>=0 && country_rtb1==country1 && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && norefresh1>=0 && country_rtb1==country1 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                        
+                       
+                      }
+
+                     if(Time_country1 != "NONE" && Hour_country1 != "NONE" && norefresh1>=0 && country1== "ALL" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                      
+                      
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && norefresh1>=0 && country1== "ALL" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && norefresh1>=0 && country1== "ALL" && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                        
+                      
+                      }
+
+ if(new12==0){
+                     if(Time_country1 != "NONE" && Hour_country1 != "NONE" && Adunit1[d]=="ALL" && country1== "ALL" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                      
+                      
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && Adunit1[d]=="ALL" && country1== "ALL" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && Adunit1[d]=="ALL" && country1== "ALL" && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                        
+                       
+                      }
+
+                         if(Time_country1 != "NONE" && Hour_country1 != "NONE" && Adunit1[d]=="ALL" && country_rtb1==country1 && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                      
+                      
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && Adunit1[d]=="ALL" && country_rtb1==country1 && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && Adunit1[d]=="ALL" && country_rtb1==country1 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                     
+                      }
+
+}
+
+
+            if(new12==0){
+
+                   if(Time_country1 != "NONE" && Hour_country1 != "NONE" && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                     
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN" && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                     
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+                     
+                  }
+
+
+                     if(Time_country1 != "NONE" && Hour_country1 != "NONE" && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2 && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1){
+                      flag2=0;
+                      
+                       
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "NONE"  && Hour_country1 != "ALL" && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN" && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                        if(Time_country1 != "NONE" && Hour_country1 == "NONE" && Time_country1 != "ALL" && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN" && Time_country1[kkk].from <= timedate1 && Time_country1[kkk].to >= timedate1)
+                      {
+                      flag2=0;
+                        
+                      
+                      }
+
+
+                     if(Time_country1 == "ALL" && Hour_country1 == "NONE" && norefresh1>=0 && country_rtb1==country1 ){
+                      flag2=0;
+                      
+                      
+                      }
+
+
+
+                        if(Hour_country1 == "ALL" && Time_country1 == "NONE"  && norefresh1>=0 && country_rtb1==country1)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                       if(Hour_country1 == "ALL" && Time_country1 == "ALL"  && norefresh1>=0 && country_rtb1==country1)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                        if(Hour_country1 != "NONE" && Time_country1 == "ALL"  && norefresh1>=0 && country_rtb1==country1 && Hour_country1[kk2].fromhour <= current_hour2 && Hour_country1[kk2].tohour >= current_hour2)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                     if(Time_country1 == "ALL" && Hour_country1 == "NONE" && norefresh1>=0 && country1== "ALL" ){
+                      flag2=0;
+                      
+                     
+                      }
+
+                        if(Hour_country1 == "ALL" && Time_country1 == "NONE"  && norefresh1>=0 && country1== "ALL")
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+                        if(Time_country1 == "ALL" && Hour_country1 == "NONE"  && norefresh1>=0 && country1== "ALL")
+                      {
+                      flag2=0;
+                        
+                      
+                      }
+                        if(Time_country1 == "ALL" && Hour_country1 == "ALL"  && norefresh1>=0 && country1== "ALL")
+                      {
+                      flag2=0;
+                        
+                      
+                      }
+
+ if(new12==0){
+                     if(Time_country1 == "ALL" && Hour_country1 == "NONE" && Adunit1[d]=="ALL" && country1== "ALL" ){
+                      flag2=0;
+                      
+                     
+                      }
+
+                        if(Hour_country1 == "ALL" && Time_country1 == "NONE"  && Adunit1[d]=="ALL" && country1== "ALL")
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+                     
+
+                         if(Time_country1 == "ALL" && Hour_country1 == "NONE" && Adunit1[d]=="ALL" && country_rtb1==country1 ){
+                      flag2=0;
+                      
+                      
+                      }
+                       if(Time_country1 == "NONE" && Hour_country1 == "ALL" && Adunit1[d]=="ALL" && country_rtb1==country1 ){
+                      flag2=0;
+                      
+                      
+                      }
+                       if(Time_country1 == "ALL" && Hour_country1 == "ALL" && Adunit1[d]=="ALL" && country_rtb1==country1 ){
+                      flag2=0;
+                      
+                      
+                      }               
+
+}
+
+            if(new12==0){
+
+                   if(Time_country1 == "ALL" && Hour_country1 == "NONE" && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN" ){
+                      flag2=0;
+                     
+                      }
+
+                        if(Hour_country1 == "ALL" && Time_country1 == "NONE"  && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN")
+                      {
+                       
+                      flag2=0;
+                    
+                      }
+                        if(Hour_country1 == "ALL" && Time_country1 == "ALL"  && Adunit1[d]=="ALL" && country1=="INTERNATIONAL" && country_rtb1!="IN")
+                      {
+                       
+                      flag2=0;
+                    
+                      }
+
+                        
+                      
+
+                  }
+
+                     if(Time_country1 == "ALL" && Hour_country1 == "NONE" && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN" ){
+                      flag2=0;
+                      
+                     
+                      }
+
+                        if(Hour_country1 == "ALL" && Time_country1 == "NONE"  && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN")
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+                       if(Hour_country1 == "ALL" && Time_country1 == "ALL"  && norefresh1>=0 && country1=="INTERNATIONAL" && country_rtb1!="IN")
+                      {
+                       
+                      flag2=0;
+                     
+                      }
+
+
+
+
+      }
+      }
+      }
+  }
+      if(city1!=undefined && adunit_city1!=undefined && Time_city1!=undefined){
+      for(var f=0; f<adunit_city1.length; f++){
+      //console.log("Time_city1"+Time_city1);
+      for(var h=0; h<Time_city1.length; h++){
+      var adunitcity_caps=adunit_city1[f].toUpperCase();
+      var norefresh2=temp_caps.indexOf(adunitcity_caps);
+     
+
+ for(var h2=0; h2<Hour_city1.length; h2++){
+
+            // console.log(Hour_state1[k2].fromhour);
+            // console.log(Hour_state1[k2].tohour);
+
+      if(Hour_city1[h2].timezone!=undefined)
+                    timezone=Hour_city1[h2].timezone;
+                    else
+                    timezone='LOCAL';
+                    if(timezone=='LOCAL')
+                    {
+                    current_hour1=new Date().getHours();
+                    }
+                    else
+                    {
+
+                    // d2="new Date().toLocaleString('en-US', { timeZone: '"+timezone+"' })";
+                    // d3=eval(d2);
+
+                    // d1=new Date(d3);
+                    // current_hour1=d1.getHours();
+                     current_hour1=calcTime('Bombay', '+5.5');
+
+                    }
+
+                    if(current_hour1==0)
+                      current_hour1=24;
+
+                   if(current_hour1==1)
+                      current_hour1=25;
+
+                   if(current_hour1==2)
+                      current_hour1=26;
+
+                   // if(current_hour1==3)
+                   //    current_hour1=27;
+
+                   // if(current_hour1==4)
+                   //    current_hour1=28;
+
+                   // if(current_hour1==5)
+                   //    current_hour1=29;
+
+
+              
+                  if (Time_city1 != "NONE" && Hour_city1 != "NONE" && norefresh2 >= 0 && city_rtb == city1 && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+      
+    }
+
+    if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && norefresh2 >= 0 && city_rtb == city1 && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+        flag2 = 0;
+   
+    }
+
+    if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && norefresh2 >= 0 && city_rtb == city1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+
+    if (Time_city1 != "NONE" && Hour_city1 != "NONE" && norefresh2 >= 0 && city1 == "ALL" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+    if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && norefresh2 >= 0 && city1 == "ALL" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+        flag2 = 0;
+        
+    }
+
+    if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && norefresh2 >= 0 && city1 == "ALL" && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+
+    if (new12 == 0) {
+        if (Time_city1 != "NONE" && Hour_city1 != "NONE" && adunit_city1[f] == "ALL" && city1 == "ALL" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+          
+        }
+
+        if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && adunit_city1[f] == "ALL" && city1 == "ALL" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+            flag2 = 0;
+            
+        }
+
+        if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && adunit_city1[f] == "ALL" && city1 == "ALL" && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Time_city1 != "NONE" && Hour_city1 != "NONE" && adunit_city1[f] == "ALL" && city_rtb == city1 && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && adunit_city1[f] == "ALL" && city_rtb == city1 && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+            flag2 = 0;
+           
+        }
+
+        if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && adunit_city1[f] == "ALL" && city_rtb == city1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+    }
+
+    if (new12 == 0) {
+
+        if (Time_city1 != "NONE" && Hour_city1 != "NONE" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+          
+        }
+
+        if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+            flag2 = 0;
+          
+        }
+
+        if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+            flag2 = 0;
+
+          
+        }
+
+        if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+            flag2 = 0;
+           
+        }
+
+    }
+
+    if (Time_city1 != "NONE" && Hour_city1 != "NONE" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1 && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+        
+    }
+
+    if (Hour_city1 != "NONE" && Time_city1 == "NONE" && Hour_city1 != "ALL" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1) {
+
+        flag2 = 0;
+       
+    }
+
+    if (Time_city1 != "NONE" && Hour_city1 == "NONE" && Time_city1 != "ALL" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN" && Time_city1[h].from <= timedate1 && Time_city1[h].to >= timedate1) {
+        flag2 = 0;
+
+        
+    }
+
+
+    if (Time_city1 == "ALL" && Hour_city1 == "NONE" && norefresh2 >= 0 && city_rtb == city1) {
+        flag2 = 0;
+
+      
+    }
+
+            if(Hour_city1 != "NONE" && Time_city1 == "ALL"  && norefresh2>=0 && city_rtb==city1 && Hour_city1[h2].fromhour <= current_hour1 && Hour_city1[h2].tohour >= current_hour1)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+
+    if (Hour_city1 == "ALL" && Time_city1 == "NONE" && norefresh2 >= 0 && city_rtb == city1) {
+
+        flag2 = 0;
+        
+    }
+
+    if (Time_city1 == "ALL" && Hour_city1 == "NONE" && norefresh2 >= 0 && city1 == "ALL") {
+        flag2 = 0;
+
+      
+    }
+
+    if (Hour_city1 == "ALL" && Time_city1 == "NONE" && norefresh2 >= 0 && city1 == "ALL") {
+
+        flag2 = 0;
+        
+    }
+
+    if (Time_city1 == "ALL" && Hour_city1 == "NONE" && norefresh2 >= 0 && city1 == "ALL") {
+        flag2 = 0;
+
+      
+    }
+     if (Time_city1 == "ALL" && Hour_city1 == "ALL" && norefresh2 >= 0 && city1 == "ALL") {
+        flag2 = 0;
+
+      
+    }
+
+    if (new12 == 0) {
+        if (Time_city1 == "ALL" && Hour_city1 == "NONE" && adunit_city1[f] == "ALL" && city1 == "ALL") {
+            flag2 = 0;
+
+         
+        }
+
+        if (Hour_city1 == "ALL" && Time_city1 == "NONE" && adunit_city1[f] == "ALL" && city1 == "ALL") {
+
+            flag2 = 0;
+          
+        }
+
+        if (Time_city1 == "ALL" && Hour_city1 == "NONE" && adunit_city1[f] == "ALL" && city_rtb == city1) {
+            flag2 = 0;
+        }
+         if (Time_city1 == "NONE" && Hour_city1 == "ALL" && adunit_city1[f] == "ALL" && city_rtb == city1) {
+            flag2 = 0;
+        }
+
+       if (Time_city1 == "ALL" && Hour_city1 == "ALL" && adunit_city1[f] == "ALL" && city_rtb == city1) {
+            flag2 = 0;
+
+         
+        }
+    }
+
+    if (new12 == 0) {
+
+        if (Time_city1 == "ALL" && Hour_city1 == "NONE" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+            flag2 = 0;
+
+         
+        }
+
+        if (Hour_city1 == "ALL" && Time_city1 == "NONE" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+            flag2 = 0;
+           
+        }
+         if (Hour_city1 == "ALL" && Time_city1 == "ALL" && adunit_city1[f] == "ALL" && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+            flag2 = 0;
+           
+        }
+
+    }
+
+    if (Time_city1 == "ALL" && Hour_city1 == "NONE" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+        flag2 = 0;
+
+        
+    }
+
+    if (Hour_city1 == "ALL" && Time_city1 == "NONE" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+        flag2 = 0;
+       
+    }
+    if (Hour_city1 == "ALL" && Time_city1 == "ALL" && norefresh2 >= 0 && city1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+        flag2 = 0;
+       
+    }
+
+
+
+
+
+                }
+
+
+
+
+
+
+      }
+      }
+      }
+      if(state1!=undefined && adunit_state1!=undefined && Time_state1!=undefined && Hour_state1!=undefined){
+
+
+      for(c=0; c<adunit_state1.length; c++){
+
+      var adunit_caps1=adunit_state1[c].toUpperCase();
+
+      var norefresh3=temp_caps.indexOf(adunit_caps1);
+
+      for(var kk=0; kk<Time_state1.length; kk++){
+
+
+           for(var k2=0; k2<Hour_state1.length; k2++){
+
+            // console.log(Hour_state1[k2].fromhour);
+            // console.log(Hour_state1[k2].tohour);
+
+            if(Hour_state1[k2].timezone!=undefined)
+                    timezone=Hour_state1[k2].timezone;
+                    else
+                    timezone='LOCAL';
+                    if(timezone=='LOCAL')
+                    {
+                    current_hour=new Date().getHours();
+                    }
+                    else
+                    {
+
+                    // d2="new Date().toLocaleString('en-US', { timeZone: '"+timezone+"' })";
+                    // d3=eval(d2);
+
+                    // d1=new Date(d3);
+                    // current_hour=d1.getHours();
+                    current_hour=calcTime('Bombay', '+5.5');
+
+                    }
+
+
+                        if(current_hour==0)
+                      current_hour=24;
+
+                   if(current_hour==1)
+                      current_hour=25;
+
+                   if(current_hour==2)
+                      current_hour=26;
+
+                   // if(current_hour==3)
+                   //    current_hour=27;
+
+                   // if(current_hour==4)
+                   //    current_hour=28;
+
+                   // if(current_hour==5)
+                   //    current_hour=29;
+
+
+ if (Time_state1 != "NONE" && Hour_state1 != "NONE" && norefresh3 >= 0 && country_state == state1 && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+    if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && norefresh3 >= 0 && country_state == state1 && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+        flag2 = 0;
+        
+    }
+
+    if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && norefresh3 >= 0 && country_state == state1 && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+
+    if (Time_state1 != "NONE" && Hour_state1 != "NONE" && norefresh3 >= 0 && state1 == "ALL" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+    if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && norefresh3 >= 0 && state1 == "ALL" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+        flag2 = 0;
+        
+    }
+
+    if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && norefresh3 >= 0 && state1 == "ALL" && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+       
+    }
+
+
+    if (new12 == 0) {
+        if (Time_state1 != "NONE" && Hour_state1 != "NONE" && adunit_state1[c] == "ALL" && state1 == "ALL" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && adunit_state1[c] == "ALL" && state1 == "ALL" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+            flag2 = 0;
+          
+        }
+
+        if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && adunit_state1[c] == "ALL" && state1 == "ALL" && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Time_state1 != "NONE" && Hour_state1 != "NONE" && adunit_state1[c] == "ALL" && country_state == state1 && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && adunit_state1[c] == "ALL" && country_state == state1 && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+            flag2 = 0;
+           
+        }
+
+        if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && adunit_state1[c] == "ALL" && country_state == state1 && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+    }
+
+    if (new12 == 0) {
+
+        if (Time_state1 != "NONE" && Hour_state1 != "NONE" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+            flag2 = 0;
+           
+        }
+
+        if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+            flag2 = 0;
+           
+        }
+
+    }
+
+    if (Time_state1 != "NONE" && Hour_state1 != "NONE" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+    if (Hour_state1 != "NONE" && Time_state1 == "NONE" && Hour_state1 != "ALL" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour) {
+
+        flag2 = 0;
+       
+    }
+
+    if (Time_state1 != "NONE" && Hour_state1 == "NONE" && Time_state1 != "ALL" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN" && Time_state1[kk].from <= timedate1 && Time_state1[kk].to >= timedate1) {
+        flag2 = 0;
+
+    }
+
+
+    if (Time_state1 == "ALL" && Hour_state1 == "NONE" && norefresh3 >= 0 && country_state == state1) {
+        flag2 = 0;
+
+    }
+
+    if (Hour_state1 == "ALL" && Time_state1 == "NONE" && norefresh3 >= 0 && country_state == state1) {
+
+        flag2 = 0;
+       
+    }
+ if (Hour_state1 == "ALL" && Time_state1 == "ALL" && norefresh3 >= 0 && country_state == state1) {
+
+        flag2 = 0;
+       
+    }
+
+                if(Hour_state1 != "NONE" && Time_city1 == "ALL"  && norefresh3>=0 && country_state==state1 && Hour_state1[k2].fromhour <= current_hour && Hour_state1[k2].tohour >= current_hour)
+                      {
+                       
+                      flag2=0;
+                      
+                      }
+
+    if (Time_state1 == "ALL" && Hour_state1 == "NONE" && norefresh3 >= 0 && state1 == "ALL") {
+        flag2 = 0;
+
+       
+    }
+
+    if (Hour_state1 == "ALL" && Time_state1 == "NONE" && norefresh3 >= 0 && state1 == "ALL") {
+
+        flag2 = 0;
+     
+    }
+
+    if (Time_state1 == "ALL" && Hour_state1 == "NONE" && norefresh3 >= 0 && state1 == "ALL") {
+        flag2 = 0;
+
+    }
+    if (Time_state1 == "ALL" && Hour_state1 == "ALL" && norefresh3 >= 0 && state1 == "ALL") {
+        flag2 = 0;
+
+    }
+
+    if (new12 == 0) {
+        if (Time_state1 == "ALL" && Hour_state1 == "NONE" && adunit_state1[c] == "ALL" && state1 == "ALL") {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 == "ALL" && Time_state1 == "NONE" && adunit_state1[c] == "ALL" && state1 == "ALL") {
+
+            flag2 = 0;
+           
+        }
+
+        if (Time_state1 == "ALL" && Hour_state1 == "NONE" && adunit_state1[c] == "ALL" && country_state == state1) {
+            flag2 = 0;
+
+        }
+         if (Time_state1 == "NONE" && Hour_state1 == "ALL" && adunit_state1[c] == "ALL" && country_state == state1) {
+            flag2 = 0;
+
+        }
+        if (Time_state1 == "ALL" && Hour_state1 == "ALL" && adunit_state1[c] == "ALL" && country_state == state1) {
+            flag2 = 0;
+
+        }
+
+    }
+
+    if (new12 == 0) {
+
+        if (Time_state1 == "ALL" && Hour_state1 == "NONE" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+            flag2 = 0;
+
+        }
+
+        if (Hour_state1 == "ALL" && Time_state1 == "NONE" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+            flag2 = 0;
+          
+        }
+         if (Hour_state1 == "ALL" && Time_state1 == "ALL" && adunit_state1[c] == "ALL" && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+            flag2 = 0;
+          
+        }
+
+    }
+
+    if (Time_state1 == "ALL" && Hour_state1 == "NONE" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+        flag2 = 0;
+
+    }
+
+    if (Hour_state1 == "ALL" && Time_state1 == "NONE" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+        flag2 = 0;
+       
+    }
+if (Hour_state1 == "ALL" && Time_state1 == "ALL" && norefresh3 >= 0 && state1 == "INTERNATIONAL" && country_rtb1!= "IN") {
+
+        flag2 = 0;
+       
+    }
+
+
+
+     
+      }
+  }
+      }
+      }
+      
+
+    }
+}
+
+return flag2;
+}
+
+
+var windowwidth1 = jQuery(window, parent.document).width();
+var url22=window.location.origin + window.location.pathname;
+var globalcount=0;
+var globalinterval=setInterval(function(){
+
+if(globalcount<=10){
+globalcount++;
+if(globalcount==10){
+clearInterval(globalinterval);
+}
+
+
+
+if(windowwidth1<=767){
+
+
+ flag2=blackbox("DELHINCRBLOCK",country_rtb1,city_rtb,city_region,1);
+if(flag2==1){
+
+
+
+  if(jQuery("#andbeyond3202").length){
+    
+    }
+    else{
+    var test111='<div class="andbeyondmob" style="width: 320px;height: 50px;bottom: 0px;position: fixed;margin: 0 auto; text-align: center; z-index: 9999999999; left: 0; right: 0;"><div id="andbeyond3202" style="width:320px;height:50px;margin: 0 auto;    position: relative;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond3202"); });</scr' + 'ipt></div></div>';
+   
+
+    if(jQuery("body").length){
+       googletag.cmd.push(function () {
+    andbeyond3202=googletag.defineSlot("/"+namemc+"/324757-320-50-2", [320,50], "andbeyond3202").addService(googletag.pubads());
+    });
+  jQuery("body").eq(0).append(test111);
+ if(jQuery("#showhide").length){
+  jQuery(".andbeyondmob").css("bottom","53px");
+ }
+ refreshBid1('andbeyond3202',andbeyond3202);
+}
+
+}
+}  
+ 
+}
+if(windowwidth1>=1000){
+
+if(jQuery("#andbeyond3008").length){
+     }
+     else{
+         var test4='<div class="LS_DESK_3008" style="background: #fff;box-shadow: 0 0 10px 5px #dfdfdf; padding: 10px;overflow:hidden;margin-bottom:20px;width:300px;height:250px;"><div id="andbeyond3008" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond3008"); });</scr' + 'ipt></div></div>';
+     
+  if(jQuery(".ent-gallery").eq(0).length){
+      googletag.cmd.push(function () {
+   andbeyond3008=googletag.defineSlot("/"+namemc+"/324757-300-250-8", [300, 250], "andbeyond3008").addService(googletag.pubads());
+    });
+       jQuery(".ent-gallery").eq(0).after(test4);
+    refreshBid1('andbeyond3008',andbeyond3008);
+     
+ }
+  
+ }
+ if(jQuery("#andbeyond7283").length){
+
+     }
+     else{
+     var testnew3='<div class="LS_DESK_7283" style="width: 100%;height: 90px;margin: 10px auto 10px;overflow:hidden;text-align: center;z-index: 9999999;display: inline-block;"><div id="andbeyond7283" style="width:728px;height:90px;margin:0 auto;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond7283"); });</scr' + 'ipt></div></div>';
+
+  if(jQuery("footer").eq(0).length){
+      googletag.cmd.push(function () {
+     andbeyond7283=googletag.defineSlot("/"+namemc+"/324757-728-90-3", [728, 90], "andbeyond7283").addService(googletag.pubads());
+    });
+   jQuery("footer").eq(0).before(testnew3);
+  
+  refreshBid1('andbeyond7283',andbeyond7283);
+   
+   }
+
+}
+
+}
+
+
+  if(country_rtb1!=undefined && city_region!=undefined && city_rtb!=undefined){
+
+ flag36=blackbox("FLYINGCARPETNNEW1",country_rtb1,city_rtb,city_region,1);
+
+if(flag36==1){
+
+if(windowwidth1<=767){
+
+
+
+     // console.log("inner");
+if(jQuery("#andbeyond6005").length){
+    
+    }
+    else{
+    // console.log("inner1");
+  var flyingcarpetunit='<div style="position: relative!important;left: 0!important;    width: 100%!important;    height: 300px!important;    border: 0!important;    margin: 0!important;    padding: 0!important;   clip: rect(0,auto,auto,0)!important;    -webkit-clip-path: polygon(0px 0px,100% 0px,100% 100%,0px 100%)!important;    clip-path: polygon(0px 0px,100% 0px,100% 100%,0px 100%)!important;">      <div class="fly" style="  right: 0;left:0;margin:0 auto;  position: fixed!important;top: 0!important;height: 100%;-webkit-transform: translateZ(0)!important;display: -webkit-box; display: -ms-flexbox; display: flex;    -webkit-box-orient: vertical;-webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;-webkit-box-align: center; -ms-flex-align: center;    align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;"><div class="andbeyond_adunit" style="width:100%;overflow:hidden;"><div class="desk-6005" style="width: 100%;    display: inline-block; text-align: center; z-index: 9999999;"><div id="andbeyond6005" style="width:300px;height:600px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond6005"); });</scr' + 'ipt></div></div></div>'; 
+  if(jQuery("#rightsec p").eq(1).length){
+   googletag.cmd.push(function () {
+  andbeyond6005=googletag.defineSlot("/"+namemc+"/324757-300-600-5", [300, 600], "andbeyond6005").addService(googletag.pubads());
+ });
+  jQuery("#rightsec p").eq(1).before(flyingcarpetunit);
+
+    refreshBid1('andbeyond6005',andbeyond6005);
+ 
+
+
+}
+}
+}
+
+}
+  
+
+    
+ 
+           
+      
+     
+
+
+
+ flag2=blackbox("ANDBEYONDNEWUNIT",country_rtb1,city_rtb,city_region,1);
+if(flag2==1){
+
+
+
+  if(windowwidth<=767){
+      if(jQuery("#andbeyond3007").length){
+      }
+      else{
+          var test33='<div class="LS_DESK_3007" style=" margin:10px auto 10px;width:300px;height:250px;overflow:hidden;"><div id="andbeyond3007" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond3007"); });</scr' + 'ipt></div></div>';
+  
+   if(jQuery(".white-bg").eq(0).length){
+   googletag.cmd.push(function () {
+   andbeyond3007=googletag.defineSlot("/"+namemc+"/324757-300-250-7", [300, 250], "andbeyond3007").addService(googletag.pubads());
+    });
+        jQuery(".white-bg").eq(0).before(test33);
+     refreshBid1('andbeyond3007',andbeyond3007);
+     
+  
+}
+   
+  }
+
+     if(jQuery("#andbeyond30011").length){
+      }
+      else{
+          var test33='<div class="LS_DESK_30011" style=" margin:10px auto 10px;width:300px;height:250px;overflow:hidden;"><div id="andbeyond30011" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond30011"); });</scr' + 'ipt></div></div>';
+   var lissssdd = jQuery('.txtsection #rightsec p');
+ if (lissssdd.length > 5) {
+   googletag.cmd.push(function () {
+   andbeyond30011=googletag.defineSlot("/"+namemc+"/324757-300-250-11", [300, 250], "andbeyond30011").addService(googletag.pubads());
+    });
+      lissssdd.slice(-2).eq(0).before(test33);
+     refreshBid1('andbeyond30011',andbeyond30011);
+     
+}
+   
+  }
+  }
+  if(windowwidth>=1000){
+   if(jQuery("#andbeyond3007").length){
+      }
+      else{
+          var test10='<div class="LS_DESK_3007" style="background: #fff;box-shadow: 0 0 10px 5px #dfdfdf;overflow:hidden; padding: 10px;margin-bottom:20px;width:300px;height:250px;"><div id="andbeyond3007" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond3007"); });</scr' + 'ipt></div></div>';
+  
+   if(jQuery(".rightcol .worldcup").eq(1).length){
+    googletag.cmd.push(function () {
+   andbeyond3007=googletag.defineSlot("/"+namemc+"/324757-300-250-7", [300, 250], "andbeyond3007").addService(googletag.pubads());
+    });
+        jQuery(".rightcol .worldcup").eq(1).parent().before(test10);
+     refreshBid1('andbeyond3007',andbeyond3007);
+     
+  
+}
+   
+  }
+
+
+   if(jQuery("#andbeyond30010").length){
+      }
+      else{
+          var test110='<div class="LS_DESK_30010" style="background: #fff;box-shadow: 0 0 10px 5px #dfdfdf; overflow:hidden;padding: 10px;margin-bottom:20px;width:300px;height:250px;"><div id="andbeyond30010" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond30010"); });</scr' + 'ipt></div></div>';
+  
+   if(jQuery('.storybox #rightsec p').eq(0).length){
+    googletag.cmd.push(function () {
+   andbeyond30010=googletag.defineSlot("/"+namemc+"/324757-300-250-10", [300, 250], "andbeyond30010").addService(googletag.pubads());
+    });
+        jQuery(".textwidget .shadow").eq(1).before(test110);
+     refreshBid1('andbeyond30010',andbeyond30010);
+     
+  
+}
+   
+  }
+
+
+  
+
+  var lisssd = jQuery('.storybox #rightsec p');
+ if(jQuery("#andbeyond3009").length){
+      }
+      else{
+          var test8='<div class="LS_DESK_3009" style="width: 300px;height: 250px;margin: 10px auto 10px;overflow:hidden; text-align: center; z-index: 11;"><div id="andbeyond3009" style="width:300px;height:250px;margin: 0 auto;text-align: center;"><scr' + 'ipt>google' + 'tag.cmd.' + 'push(func' + 'tion() { google' + 'tag.displ' + 'ay("andbeyond3009"); });</scr' + 'ipt></div></div>';
+
+  if (lisssd.length > 7) {
+     googletag.cmd.push(function () {
+   andbeyond3009=googletag.defineSlot("/"+namemc+"/324757-300-250-9", [300, 250], "andbeyond3009").addService(googletag.pubads());
+    });
+    lisssd.slice(-4).eq(0).before(test8);
+    refreshBid1('andbeyond3009',andbeyond3009);
+     
+}
+    
+    
+  }
+}
+}
+
+  }
+
+
+
+}
+},1000);
+
+
+
+}
+
+
+
+},500)
+
+
+}
+
+
+
+
+

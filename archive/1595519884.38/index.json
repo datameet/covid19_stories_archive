@@ -1,0 +1,192 @@
+{
+    "url": "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html",
+    "timestamp": "1595519884.38",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "Avreena Khatoon to Vinod Kumar: The 16 migrants on trains who\u2019ll never make it home- The New Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:07.813473",
+                "end_ts": "2020-07-24 22:01:09.006236",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:09.010644",
+                "end_ts": "2020-07-24 22:01:10.344861",
+                "duration": 1
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595608270",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:10.347535",
+                "end_ts": "2020-07-24 22:01:35.635320",
+                "duration": 25
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:35.636645",
+                "end_ts": "2020-07-24 22:01:44.674942",
+                "duration": 9
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:44.676727",
+                "end_ts": "2020-07-24 22:01:49.989539",
+                "duration": 5
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:01:49.992504",
+                "end_ts": "2020-07-24 22:01:53.729684",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:01:53.731201",
+                "end_ts": "2020-07-24 22:01:56.899572",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/nation/2020/may/29/avreena-khatoon-to-vinod-kumar-the-16-migrants-on-trains-wholl-never-make-it-home-2149385.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.38",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:01:56.901156",
+                "end_ts": "2020-07-24 22:02:26.206569",
+                "duration": 29
+            }
+        ]
+    },
+    "updated": "1595608346.207037"
+}

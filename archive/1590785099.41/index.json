@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "CJ Werleman on Twitter: \"\u201cMuslims don\u2019t get any rations. Muslims spread coronavirus.\u201d\n\nHindu humanitarian aid workers in Bihar, India deny food packages to impoverished Muslim families.\n\n(via DOAM)\u2026 https://t.co/1Pqho5GZnE\"",
     "timestamp": "1590785099.41",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 28,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786422",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://twitter.com/cjwerleman/status/1254182055597899776"
+                ],
+                "end_ts": "2020-05-29 21:07:30.334648",
+                "start_ts": "2020-05-29 21:07:02.009071",
+                "pwd": "/data/archive/1590785099.41",
+                "output": "twitter.com/cjwerleman/status/1254182055597899776.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529210746/https://twitter.com/cjwerleman/status/1254182055597899776"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 28,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786422",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://twitter.com/cjwerleman/status/1254182055597899776"
-                ],
-                "end_ts": "2020-05-29 21:07:30.334648",
-                "start_ts": "2020-05-29 21:07:02.009071",
-                "pwd": "/data/archive/1590785099.41",
-                "output": "twitter.com/cjwerleman/status/1254182055597899776.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786467.658307",
+    "updated": "1595622200.296855",
     "tags": "",
     "url": "https://twitter.com/cjwerleman/status/1254182055597899776"
 }

@@ -1,0 +1,633 @@
+/* === NB New - Custuom  js ===  */
+
+/*  --- custom tab content js --- */
+ 
+jQuery(document).on('click','.tab_nav_alink',function(){
+	var cls = jQuery(this).attr('data-toggle-class');
+	jQuery(this).parent().addClass('active').siblings(".tab_nav_li").removeClass('active');
+	jQuery(this).parents(".tab_content_blk").find(".tab_pane").removeClass('active');
+	jQuery(this).parents(".tab_content_blk").find("."+cls).addClass('active');
+});
+
+/*  --- mega menu js --- */
+var megamenu_width = jQuery('header .head_top').width();
+jQuery('.mega-menu-blk').css("max-width",megamenu_width);	
+jQuery('.mega-menu-blk').css("width",megamenu_width);
+ 
+jQuery('footer .menulist-blk').clone().appendTo('.mega-menu-blk'); 
+ 
+if (jQuery(".ui-helper-hidden-accessible").length > 0){ 
+	alert("hi");
+    jQuery(".ui-helper-hidden-accessible").css("display", "inline-block");
+}
+
+ 
+jQuery(document).mouseup(function(e){
+   var container = jQuery(".mega-menu-blk,.main_menu_cross_btn ");
+   // if the target of the click isn't the container nor a descendant of the container
+   if (!container.is(e.target) && container.has(e.target).length === 0) 
+	{
+		container.removeClass('open');
+		jQuery("body").removeClass("no-scroll");
+	}
+}); 
+
+/* function openSubNav(i){  
+	jQuery(i).toggleClass('active');
+	jQuery(i).next('.dropdown_menu').slideToggle();
+	jQuery(i).parent('li').siblings('li').find('.dropdown_menu').slideUp();
+	jQuery(i).parent('li').siblings('li').find('.dropdown_arrow').removeClass('active');
+} */
+ 
+function openNav(i){ 
+	jQuery('.navbar_toggle_btn').toggleClass('open');
+	jQuery('.mega-menu-blk').toggleClass('open');  
+} 
+jQuery(".navbar_toggle_btn").click(function(){
+	//return jQuery(".mega-menu-blk").hasClass("open")?jQuery("body").removeClass("no-scroll"):jQuery("body").addClass("no-scroll");
+	return jQuery(".mega-menu-blk").hasClass("open")?jQuery("body").addClass("no-scroll"):jQuery("body").removeClass("no-scroll");
+});
+ 
+
+
+
+/*  --- lazyload called - js --- */
+jQuery("img.lazyload").lazyload(); 
+
+/*  --- Search Open - js --- */
+function open_search_form(e){
+	jQuery('.search_form_blk').addClass('open');  	 
+	setTimeout(function(){
+		jQuery('#search_input_fld').focus();	
+	},10);
+} 
+function close_search_form(e){  
+	jQuery('.search_form_blk').removeClass('open');
+}
+
+/*  --- stickyNav - js --- */
+jQuery(window).bind('scroll', function() {
+
+	jQuery(".city_dropdown").removeClass('open'); // Close city drowdown if open
+
+    var bannerHeight = jQuery( '#header' ).height() - 40;
+	if (jQuery(window).scrollTop() >= bannerHeight) {
+		jQuery('.head_bottom_navbar').addClass('stickyNav');
+	}
+	else {
+		jQuery('.head_bottom_navbar').removeClass('stickyNav');
+	}
+	var headerHeight = jQuery( '#header' ).height();
+	if (jQuery(window).scrollTop() >= headerHeight) {
+		jQuery('.lb_head').addClass('stickyLb');
+		jQuery('.lb_body').addClass('stickyLb');
+	}
+	else {
+		jQuery('.lb_head').removeClass('stickyLb');
+		jQuery('.lb_body').removeClass('stickyLb');
+	}  
+	  
+	  
+});
+
+/*  --- PopupCenter - js --- */
+function PopupCenter(url,title,w,h,id,currentUrl){
+	var dualScreenLeft=window.screenLeft!=undefined?window.screenLeft:screen.left;
+	var dualScreenTop=window.screenTop!=undefined?window.screenTop:screen.top;
+	width=window.innerWidth?window.innerWidth:document.documentElement.clientWidth?document.documentElement.clientWidth:screen.width;
+	height=window.innerHeight?window.innerHeight:document.documentElement.clientHeight?document.documentElement.clientHeight:screen.height;
+	var left=((width/2)-(w/2))+dualScreenLeft;
+	var top=((height/2)-(h/2))+dualScreenTop;
+	var childWindow=window.open(url,title,'scrollbars=yes, width='+w+', height='+h+', top='+top+', left='+left+' ');
+	if(window.focus){
+			childWindow.focus();
+	}
+	childWindow.onunload = function(){
+		setTimeout(get_shares,5000);
+	}
+} 
+ 
+
+/*  --- select dropdown - js --- */ 
+
+jQuery('select.city_dropdown').each(function() {
+
+    var dropdown = jQuery('<div />').addClass('city_dropdown selectDropdown');
+
+    jQuery(this).wrap(dropdown);
+
+    var label = jQuery('<span />').text(jQuery(this).attr('placeholder')).insertAfter(jQuery(this));
+    var list = jQuery('<ul />');
+
+    jQuery(this).find('option').each(function() {
+        list.append(jQuery('<li />').append(jQuery('<a />').text(jQuery(this).text())));
+    });
+
+    list.insertAfter(jQuery(this));
+
+    if(jQuery(this).find('option:selected').length) {
+        label.text(jQuery(this).find('option:selected').text());
+        list.find('li:contains(' + jQuery(this).find('option:selected').text() + ')').addClass('active');
+        jQuery(this).parent().addClass('filled');
+    }
+
+});
+
+jQuery(document).on('click touch', '.selectDropdown ul li a', function(e) {
+    e.preventDefault();
+    var dropdown = jQuery(this).parent().parent().parent();
+    var active = jQuery(this).parent().hasClass('active');
+    var label = active ? dropdown.find('select').attr('placeholder') : jQuery(this).text();
+
+    dropdown.find('option').prop('selected', false);
+    dropdown.find('ul li').removeClass('active');
+
+    dropdown.toggleClass('filled', !active);
+    dropdown.children('span').text( label.replace("--", "") );
+
+    if(!active) {
+        dropdown.find('option:contains(' + jQuery(this).text() + ')').prop('selected', true);
+        jQuery(this).parent().addClass('active');
+    }
+
+    dropdown.removeClass('open');
+});
+
+jQuery('.city_dropdown > span').on('click touch', function(e) {
+    var self = jQuery(this).parent();
+    self.toggleClass('open');
+});
+
+jQuery(document).on('click touch', function(e) {
+    var dropdown = jQuery('.city_dropdown');
+    if(dropdown !== e.target && !dropdown.has(e.target).length) {
+        dropdown.removeClass('open');
+    }
+});
+
+/* ---- Moblie script - js ---- */ 
+
+var bodyWidth = jQuery('body').innerWidth();
+ 
+
+if(bodyWidth < 992){
+	 
+	/*  --- append city dropdown  --- */
+	//var city_sel_d = jQuery('#city_sel_dropdown').detach();
+	//jQuery('.head_top').append(city_sel_d); 
+	
+	/*  --- append city dropdown  --- */
+	var upd_btn = jQuery('.auto_upd_btn').detach();
+	jQuery('.lb_head .lbtitle').append(upd_btn);
+	
+	/*  --- menu navbar animate scrollLeft --- */
+	/* jQuery(".menu_navbar_blk").animate({scrollLeft:200},950,function(){
+		jQuery(".menu_navbar_blk").animate({scrollLeft:0},950)
+	}); */ 
+	
+
+}
+
+if(bodyWidth < 1250){
+	
+	/*  --- trendtopic width js --- */
+	//var trendtopic_width = jQuery('.trendtopic_widget .title').width(); 
+	//jQuery('.trendtopic_widget .trendtopic_blk .trendtopic_slider').css({ "display": "flex","flex-wrap": "nowrap", "max-width": trendtopic_width, "width":trendtopic_width});
+	//jQuery('.trendtopic_widget .trendtopic_blk').css({ "margin": "0 0 20px 0"});	
+	
+}
+
+
+
+	
+/* ---- Desktop script - js ---- */
+
+if(bodyWidth > 992){
+	/*  --- theia Sticky Sidebar js --- */ 
+	jQuery('.right_wrap, .left_wrap').theiaStickySidebar({ additionalMarginTop: 40 });
+	
+	 
+	/* jQuery('.subcat_slider').slick({
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 7,  
+		slidesToScroll: 3, 
+		speed: 1000 , 
+		variableWidth: true,
+		responsive: [
+			{
+			  breakpoint: 1224,
+			  settings: {
+				slidesToShow: 4,
+				slidesToScroll: 3
+			  }
+			}
+		] 
+	}); */
+
+	
+	jQuery('.subcat_slider').slick({
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 4,  
+		slidesToScroll: 3, 
+		speed: 1000 , 
+		variableWidth: true  
+	});
+	
+
+	jQuery('#lb_highlights').slick({
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 5,  
+		slidesToScroll: 2, 
+		speed: 1000 , 
+		variableWidth: true
+	});
+	 
+ 
+	var wp_poll_width = jQuery('.wp-polls .wp-polls-ans .wp-polls-ul li').width(); 
+	jQuery('.wp-polls .wp-polls-ans .wp-polls-ul .pollbar:before').css("width", wp_poll_width);
+}
+ 
+ 
+ 
+
+/* ---- local news board widget - tab-content - js ---- */
+
+jQuery(document).on("click", ".tabs li a", function(){
+  data_tab = jQuery(this).attr('data-tab');
+  jQuery(this).addClass('active');
+  jQuery(this).parent('li').siblings('li').find('a').removeClass('active');
+  jQuery('#'+data_tab).fadeIn();
+  data_url = jQuery('#'+data_tab).attr('data-url');
+  jQuery('#'+data_tab).find('.view-all-btn').attr('href',data_url);
+  jQuery('#'+data_tab).siblings(".tab-content").hide();
+});
+
+ 
+jQuery('.article_photo_slider').slick({
+	slidesToShow: 1,
+	dots:false, 
+	adaptiveHeight: true
+});
+ 
+/* if (jQuery.isFunction(window.slick)) {
+	jQuery('.article_photo_slider').slick({
+		slidesToShow: 1,
+		dots:false, 
+		adaptiveHeight: true
+	});
+} */
+ 
+ 
+ 
+
+var lb_filter_btn = jQuery('.filter_btn').click(function() {
+  if (this.id == 'live_blog') {
+    jQuery('#lb_parent .qa-message-list > div').fadeIn(450);
+  } else {
+    var el = jQuery('.' + this.id).fadeIn(450);
+    jQuery('#lb_parent .qa-message-list > div').not(el).hide();
+  }
+  lb_filter_btn.removeClass('active');
+  jQuery(this).addClass('active');
+}); 
+ 
+//get inital font size
+
+jQuery(window).on('load',function(){	
+	get_font_size();
+});
+
+function get_font_size() {
+  size = jQuery( ".article-body p" ).css( "font-size" );
+  size = parseInt(size, 10);
+  jQuery( "#font-size" ).text(  size  );
+  jQuery('.fbtn.inc').removeClass('active');	
+} 
+
+jQuery("#font_inc" ).on( "click", function() {
+  // parse font size, if less than 50 increase font size
+  if ((size + 2) <= 26) { 
+	jQuery(".article-body, .article-header .subtitle, .article-body h2, .article-body h3, .article-body p, .message-item .message-head .user-details .author, .message-item .message-head .user-details .posted" ).css( "font-size", "+=2" );
+    jQuery( "#font-size" ).text(  size += 2 );
+	jQuery('.fbtn.inc').addClass('active');
+	jQuery('.fbtn.dec').removeClass('active');
+  } 
+});
+
+jQuery("#font_dec" ).on( "click", function() {
+  if ((size - 2) >= 16) {
+    jQuery(".article-body, .article-header .subtitle, .article-body h2, .article-body h3, .article-body p, .message-item .message-head .user-details .author, .message-item .message-head .user-details .posted" ).css( "font-size", "-=2" );
+    jQuery( "#font-size" ).text(  size -= 2  );
+	jQuery('.fbtn.dec').addClass('active');
+	jQuery('.fbtn.inc').removeClass('active');
+  } 
+}); 
+ 
+
+  
+
+   
+/*  --- text overlay video slider - js --- */ 
+
+jQuery(".video_lead_slider").slick({
+	centerMode: true,
+	focusOnSelect: true,
+	centerPadding: '200px',
+	slidesToShow: 1, 
+	adaptiveHeight: true,
+	arrows: true,
+	speed: 2000,
+	responsive: [{
+		breakpoint: 992,
+		settings: "unslick"
+	  }]
+}); 
+
+
+
+
+
+
+
+
+ 
+var video_slide_width = jQuery('.text_overlay_video_blk').width();
+jQuery('.text_overlay_video_blk figcaption').css("max-width", video_slide_width);	
+jQuery('.text_overlay_video_blk figcaption').css("width", video_slide_width);
+ 
+   
+var var_alert_listbox_scrollbar = document.getElementById("alert_listbox");
+if(var_alert_listbox_scrollbar){
+jQuery(function(){
+  jQuery('#alert_listbox').mCustomScrollbar({
+    axis:"y",
+    theme:"dark",
+    setHeight: "270px",
+    setWidth: "100%",
+  });
+});
+}  
+
+
+
+ 
+	
+	
+	
+
+
+
+
+/*amol Patil script */
+function newslatter_subscription(){
+	var email = jQuery("#newslatter").val();
+	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  	if(regex.test(email)){
+  		jQuery.ajax({
+    	    type: "GET",
+		    url: '/wp-content/themes/nb2020/ajax/newslatter_subscription.php',
+	        data:{email:email},
+		    success: function(data){
+	            if(data=='exists'){
+	            	jQuery('#newslatter_btn'). html("Exists!");
+	            	jQuery("#newslatter").css("border-style","solid");
+			  		jQuery("#newslatter").css("border-width","1px");
+			  		jQuery("#newslatter").css("color","red");
+	            }else{
+	            	jQuery("#newslatter").css("border-style","solid");
+			  		jQuery("#newslatter").css("border-width","1px");
+			  		jQuery("#newslatter").css("color","green");
+	            }
+		    }
+		   
+    });
+  	}else{
+  		jQuery("#newslatter").css("border-style","solid");
+  		jQuery("#newslatter").css("border-width","1px");
+  		jQuery("#newslatter").css("color","red");
+  	}
+
+}
+
+function print_subscription(){
+	var phome_number = jQuery("#print_subs").val();
+	var regex = /^([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})+$/;
+  	if(regex.test(phome_number)){
+  		jQuery.ajax({
+    	    type: "GET",
+		    url: '/wp-content/themes/nb2020/ajax/newslatter_subscription.php',
+	        data:{phome_number:phome_number},
+		    success: function(data){
+	            if(data=='exists'){
+	            	jQuery('#print_btn'). html("Exists!");
+	            	jQuery("#print_subs").css("border-style","solid");
+			  		jQuery("#print_subs").css("border-width","1px");
+			  		jQuery("#print_subs").css("color","red");
+	            }else{
+	            	jQuery("#print_subs").css("border-style","solid");
+			  		jQuery("#print_subs").css("border-width","1px");
+			  		jQuery("#print_subs").css("color","green");
+	            }
+		    }
+		   
+    });
+  	}else{
+  		jQuery("#print_subs").css("border-style","solid");
+  		jQuery("#print_subs").css("border-width","1px");
+  		jQuery("#print_subs").css("color","red");
+  	}
+
+}
+
+jQuery( document ).ready(function() {
+	var my_city_is = getCookie('my_city_is');
+	
+    if(my_city_is != ''){
+    	var hyper_look_array = my_city_is.split("#");
+    	var id= hyper_look_array[0];
+    	var cid= hyper_look_array[1];
+    	var topic_name= hyper_look_array[2];
+    	
+    	if(id == cid){
+	  		cid = 'all-city';
+	  	}
+	  
+	  jQuery('#selected_topic').html(topic_name);
+
+	  jQuery('.local_news_widget .state_list li a').removeClass('active');
+	  jQuery("#"+id+'link').addClass('active');
+
+	  jQuery(".local_news_widget .tab-content.newsboard_widget ").removeClass('active');
+	  jQuery("#"+id).addClass('active');
+
+
+	  jQuery('#'+id+' .city_list li').removeClass('active');
+	  jQuery("#"+id+" .city_list ."+cid+"").addClass('active');
+	  jQuery('#'+id+' .story_widget.active').css('display','none');
+	  jQuery('#'+id+' .story_widget.active').removeClass('active');
+	  jQuery('#'+id+' #'+cid).css('display','');
+	  jQuery('#'+id+' #'+cid).addClass('active');
+    }
+});
+//hyper local javascript start
+jQuery('#city_sel_dropdown .city_dropdown ul li a').on('click', function() {
+	  var id = jQuery(this).attr('data-id');
+	  id = id.replace("dropdown", "");
+	  var cid = this.id.replace("dropdown", "");
+	  var topic_name = jQuery(this).attr('title');
+	  var data_slug = jQuery(this).attr('data-slug');
+	  
+	  // Set a cookie
+	  //document.cookie = "my_city_is="+id+"#"+cid+"#"+topic_name+"; expires=;path=/";
+	  setCookie('my_city_is',id+"#"+cid+"#"+topic_name);
+	  //Cookies.set('my_city_is', id+"#"+cid+"#"+topic_name);
+
+	  if(id == cid){
+	  	cid = 'all-city';
+	  }
+	  
+	  jQuery('#selected_topic').html(topic_name.replace('--',''));
+
+	  jQuery('.local_news_widget .state_list li a').removeClass('active');
+	  jQuery("#"+id+'link').addClass('active');
+
+	  jQuery(".local_news_widget .tab-content.newsboard_widget ").removeClass('active');
+	  jQuery("#"+id).addClass('active');
+
+
+	  jQuery('#'+id+' .city_list li').removeClass('active');
+	  jQuery("#"+id+" .city_list ."+cid+"").addClass('active');
+	  jQuery('#'+id+' .story_widget.active').css('display','none');
+	  jQuery('#'+id+' .story_widget.active').removeClass('active');
+	  jQuery('#'+id+' #'+cid).css('display','');
+	  jQuery('#'+id+' #'+cid).addClass('active');
+
+	  jQuery('#hp_read_more_link a').attr('href',data_slug);
+	  jQuery('#hp_read_more_link a').attr('title',topic_name);
+
+	  
+	  jQuery('html,body').animate({
+            scrollTop: jQuery("#"+id+'link').offset().top-80},
+            'slow');
+
+
+	});
+
+	jQuery('.local_news_widget .state_list li a').on('click', function() {
+		var title = jQuery(this).attr('title');
+		var data_slug = jQuery(this).attr('data-slug');
+		jQuery('#hp_read_more_link a').attr('href',data_slug);
+		jQuery('#hp_read_more_link a').attr('title',title);
+	});
+
+
+	jQuery('.local_news_widget .city_list li a').on('click', function() {
+		var id = jQuery(this).attr('data-tab');
+		var did = jQuery(this).attr('data-id');
+		var title = jQuery(this).attr('title');
+		var data_slug = jQuery(this).attr('data-slug');
+
+		jQuery('#'+did+' .city_list li').removeClass('active');
+		jQuery('#'+did+' .city_list .'+id).addClass('active');
+
+		jQuery('#'+did+' .story_widget.active').css('display','none');
+		jQuery('#'+did+' .story_widget.active').removeClass('active');
+		jQuery('#'+did+' #'+id).css('display','');
+		jQuery('#'+did+' #'+id).addClass('active');
+
+		jQuery('#hp_read_more_link a').attr('href',data_slug);
+		jQuery('#hp_read_more_link a').attr('title',title);
+		
+	});
+//hyper local javascript end
+
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function setCookie(cname,data) { 
+  var now = new Date();
+  var time = now.getTime();
+  var expireTime = time + 1000*36000;
+  now.setTime(expireTime);
+  var tempExp = 'Wed, 31 Oct 2012 08:50:17 GMT';
+  document.cookie = cname+'='+data+';expires='+now.toGMTString()+';path=/';
+  console.log(document.cookie);
+  //document.cookie = "my_city_is="+id+"#"+cid+"#"+topic_name+"; expires=;path=/";
+
+}
+
+
+//for alert box
+/*
+var ajax_call = function() {
+	var title = jQuery('.alert_stories_popup ul li:first a').attr('title');
+	
+  jQuery.ajax({
+	    type: "GET",
+	    url: '/wp-content/themes/nb2020/ajax/nb_header_alert.php',
+        data:{title:title},
+        dataType:"json",
+	    success: function(data){
+           
+            if(data.count > 0){
+            	jQuery('.alert a .count').html(data.count);
+
+            	var html = '<li class="news_list"><a href="" class="story_alink" title="जिम में व्यायाम के दौरान दिल का दौरान पड़ने से एक युवक की मौत"><h2 class="latest_article cat"></h2><h3 class="title">जिम में व्यायाम के दौरान दिल का दौरान पड़ने से एक युवक की मौत</h3>	</a></li>';
+				jQuery('.alert_stories_popup ul #mCSB_1 #mCSB_1_container').prepend(html);
+            }
+	    }
+		   
+    });
+};
+
+var interval = 1000 * 60 * 2; // where X is your every X minutes
+setInterval(ajax_call, interval);
+*/
+
+//search
+jQuery( function() {
+	var cache = {};
+	jQuery( "#search_input_fld" ).autocomplete({
+	minLength: 2,
+		source: function( request, response ) {
+			var term = request.term;
+			if ( term in cache ) {
+				response( cache[ term ] );
+				return;
+			}
+
+			jQuery.getJSON( "/wp-content/themes/nb2020/ajax/get_topic_list.php", request, function( data, status, xhr ) {
+				cache[ term ] = data;
+				response( data );
+			});
+		}
+	});
+} );
+jQuery( "#search_input_fld" ).on( "autocompleteselect", function( event, ui ) { 
+	console.log(ui.item.value);
+	window.location = ui.item.url;
+	//jQuery( "#main_topic_id" ).val(ui.item.id);
+} );

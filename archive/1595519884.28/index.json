@@ -1,0 +1,192 @@
+{
+    "url": "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/",
+    "timestamp": "1595519884.28",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "Unemployed youth commits suicide in Corona Lockdown in Balod",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:38:56.728984",
+                "end_ts": "2020-07-24 21:39:01.216287",
+                "duration": 4
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.patrika.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:39:01.218344",
+                "end_ts": "2020-07-24 21:39:02.015126",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595606942",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/index.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:39:02.017899",
+                "end_ts": "2020-07-24 21:40:00.153358",
+                "duration": 58
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:40:00.156662",
+                "end_ts": "2020-07-24 21:40:06.640412",
+                "duration": 6
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:40:06.642929",
+                "end_ts": "2020-07-24 21:40:10.510205",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:40:10.514989",
+                "end_ts": "2020-07-24 21:40:13.508560",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 21:40:13.511665",
+                "end_ts": "2020-07-24 21:40:16.169881",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.patrika.com/balod-news/unemployed-youth-commits-suicide-in-corona-lockdown-in-balod-6228646/"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.28",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 21:40:16.171586",
+                "end_ts": "2020-07-24 21:40:51.088120",
+                "duration": 34
+            }
+        ]
+    },
+    "updated": "1595607051.088586"
+}

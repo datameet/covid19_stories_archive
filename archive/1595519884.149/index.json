@@ -1,0 +1,192 @@
+{
+    "url": "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms",
+    "timestamp": "1595519884.149",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "migrants death: \u0935\u093f\u091c\u092f\u0935\u093e\u0921\u093c\u093e\u0903 \u092a\u0948\u0926\u0932 \u0928\u093f\u0915\u0932\u0947 \u0936\u094d\u0930\u092e\u093f\u0915 \u0915\u0940 \u0939\u0940\u091f \u0938\u094d\u091f\u094d\u0930\u094b\u0915 \u0938\u0947 \u092e\u094c\u0924, \u0921\u0930\u0947 \u0938\u093e\u0925\u0940 \u0932\u093e\u0936 \u091b\u094b\u0921\u093c\u0915\u0930 \u092d\u093e\u0917\u0947 - migrant worker die on road in andhra pradesh mates leave dead body on road | Navbharat Times",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:05.922277",
+                "end_ts": "2020-07-25 01:02:08.575266",
+                "duration": 2
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=navbharattimes.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:08.581112",
+                "end_ts": "2020-07-25 01:02:09.077588",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595619129",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:09.085780",
+                "end_ts": "2020-07-25 01:02:29.074665",
+                "duration": 19
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:29.076490",
+                "end_ts": "2020-07-25 01:02:34.945805",
+                "duration": 5
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:34.947375",
+                "end_ts": "2020-07-25 01:02:39.028159",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:39.029474",
+                "end_ts": "2020-07-25 01:02:42.163825",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:02:42.165237",
+                "end_ts": "2020-07-25 01:02:45.545386",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://navbharattimes.indiatimes.com/state/other-states/other-cities/migrant-worker-die-on-road-in-andhra-pradesh-mates-leave-dead-body-on-road/articleshow/75886337.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.149",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:02:45.546787",
+                "end_ts": "2020-07-25 01:03:45.564206",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595619225.564761"
+}

@@ -1,0 +1,58 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-07-24T16:26:59Z
+WARC-Record-ID: <urn:uuid:b6df34e2-f44d-402c-9db4-f3cb9f4d4bb1>
+WARC-Filename: 1595608019.warc
+WARC-Block-Digest: sha1:4QWKKNO45JZYQ4OEWMRTGRTXKEOZX5TF
+Content-Length: 661
+
+software: Wget/1.19.4 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: off
+wget-arguments: "--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595608019" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.newindianexpress.com/states/kerala/2020/jun/11/debt-ridden-amid-covid-19-lockdown-cashew-factory-owner-hangs-himself-in-kerala-2155213.html" 
+
+
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:221b901b-a8f2-41ed-9bf6-19f47e0a21f8>
+WARC-Warcinfo-ID: <urn:uuid:b6df34e2-f44d-402c-9db4-f3cb9f4d4bb1>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-07-24T16:27:09Z
+WARC-Block-Digest: sha1:YP5LROMGZ4JDCBK4MIOUKNFD72RRS6ZZ
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:b6df34e2-f44d-402c-9db4-f3cb9f4d4bb1>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:dfd2454f-5312-470c-a1aa-dba63ff4e4ed>
+WARC-Warcinfo-ID: <urn:uuid:b6df34e2-f44d-402c-9db4-f3cb9f4d4bb1>
+WARC-Concurrent-To: <urn:uuid:221b901b-a8f2-41ed-9bf6-19f47e0a21f8>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-07-24T16:27:09Z
+WARC-Block-Digest: sha1:OYH7IQFMSHDMPVYX2HA3TC2GO7CAU33D
+Content-Type: text/plain
+Content-Length: 485
+
+"--no-verbose" "--adjust-extension" "--convert-links" "--force-directories" "--backup-converted" "--span-hosts" "--no-parent" "-e" "robots=off" "--restrict-file-names=windows" "--timeout=60" "--warc-file=warc/1595608019" "--page-requisites" "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4" "https://www.newindianexpress.com/states/kerala/2020/jun/11/debt-ridden-amid-covid-19-lockdown-cashew-factory-owner-hangs-himself-in-kerala-2155213.html" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:6b20b2d4-4b5a-44af-92b8-eaf34a56b773>
+WARC-Warcinfo-ID: <urn:uuid:b6df34e2-f44d-402c-9db4-f3cb9f4d4bb1>
+WARC-Concurrent-To: <urn:uuid:221b901b-a8f2-41ed-9bf6-19f47e0a21f8>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-07-24T16:27:09Z
+WARC-Block-Digest: sha1:R4LEBM6HD46ALDACRS4BKXSWAVTA2U7X
+Content-Type: text/plain
+Content-Length: 68
+
+wget: unable to resolve host address ‘www.newindianexpress.com’
+
+

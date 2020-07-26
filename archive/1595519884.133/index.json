@@ -1,0 +1,192 @@
+{
+    "url": "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms",
+    "timestamp": "1595519884.133",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "Three of a family found dead in their house in Jodhpur | Jaipur News - Times of India",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:27.198774",
+                "end_ts": "2020-07-25 00:33:32.125853",
+                "duration": 4
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:32.130830",
+                "end_ts": "2020-07-25 00:33:32.439542",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595617412",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:32.446948",
+                "end_ts": "2020-07-25 00:33:41.500341",
+                "duration": 9
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:41.502399",
+                "end_ts": "2020-07-25 00:33:45.691618",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:45.693011",
+                "end_ts": "2020-07-25 00:33:48.456408",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:48.458256",
+                "end_ts": "2020-07-25 00:33:50.140174",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:33:50.142414",
+                "end_ts": "2020-07-25 00:33:56.976140",
+                "duration": 6
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://timesofindia.indiatimes.com/city/jaipur/3-of-a-family-found-dead-in-their-house-in-jodhpur/articleshow/76778215.cms"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.133",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:33:56.977629",
+                "end_ts": "2020-07-25 00:34:32.687667",
+                "duration": 35
+            }
+        ]
+    },
+    "updated": "1595617472.688025"
+}

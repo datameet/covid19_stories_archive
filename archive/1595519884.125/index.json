@@ -1,0 +1,192 @@
+{
+    "url": "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543",
+    "timestamp": "1595519884.125",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "Banda Lockdown Worker Commits Suicide Due To Unemployment",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:20:54.743153",
+                "end_ts": "2020-07-25 00:20:56.736937",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.abpganga.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:20:56.738537",
+                "end_ts": "2020-07-25 00:20:57.396333",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595616657",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:20:57.402298",
+                "end_ts": "2020-07-25 00:21:01.633537",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:21:01.635531",
+                "end_ts": "2020-07-25 00:21:05.861200",
+                "duration": 4
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:21:05.862759",
+                "end_ts": "2020-07-25 00:21:08.583272",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:21:08.588346",
+                "end_ts": "2020-07-25 00:21:10.844348",
+                "duration": 2
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 00:21:10.846926",
+                "end_ts": "2020-07-25 00:21:12.682445",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.abpganga.com/crime/banda-lockdown-worker-commits-suicide-due-to-unemployment-61543"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.125",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-25 00:21:12.683976",
+                "end_ts": "2020-07-25 00:22:00.002922",
+                "duration": 47
+            }
+        ]
+    },
+    "updated": "1595616720.003233"
+}

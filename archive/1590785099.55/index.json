@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Covid-19: Gujarat hospital makes separate wards for Hindu, Muslim patients",
     "timestamp": "1590785099.55",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 5,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787251",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital"
+                ],
+                "end_ts": "2020-05-29 21:20:57.167320",
+                "start_ts": "2020-05-29 21:20:51.858255",
+                "pwd": "/data/archive/1590785099.55",
+                "output": "scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "failed",
@@ -39,6 +67,24 @@
                 "start_ts": "2020-05-29 21:21:01.159616",
                 "pwd": "/data/archive/1590785099.55",
                 "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.55",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:54:34.799176",
+                "end_ts": "2020-07-25 01:54:38.348800",
+                "duration": 3
             }
         ],
         "favicon": [
@@ -101,34 +147,6 @@
                 "output": "https://web.archive.org/web/20200529212111/https://scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 5,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590787251",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital"
-                ],
-                "end_ts": "2020-05-29 21:20:57.167320",
-                "start_ts": "2020-05-29 21:20:51.858255",
-                "pwd": "/data/archive/1590785099.55",
-                "output": "scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +205,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787272.192315",
+    "updated": "1595622278.349949",
     "tags": "",
     "url": "https://scroll.in/latest/959274/covid-19-separate-wards-for-hindu-and-muslim-patients-made-in-ahmedabad-hospital"
 }

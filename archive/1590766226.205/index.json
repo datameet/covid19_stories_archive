@@ -1,8 +1,12 @@
 {
     "title": "Farmer kills self in Nagpur district",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.205",
     "history": {
@@ -207,7 +211,7 @@
             }
         ]
     },
-    "updated": "1590788268.431444",
+    "updated": "1595622419.467851",
     "tags": "",
     "url": "https://www.devdiscourse.com/article/headlines/1054072-farmer-kills-self-in-nagpur-district"
 }

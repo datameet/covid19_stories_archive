@@ -1,0 +1,9 @@
+/**
+ * Home - javascript
+ * Version: 1.0
+ * Author: Vinod Patidar
+ * Website: http://catchnews.com
+ * @param null
+ * @return html
+ */ 
+jQuery(document).ready(function(){function a(){jQuery(".accordion2 .accordion2-section-title").removeClass("active"),jQuery(".accordion2 .accordion2-section-content").slideUp(300).removeClass("open")}jQuery(".accordion2-section-title").click(function(b){var c=jQuery(this).attr("href");jQuery(b.target).is(".active")?a():(a(),jQuery(this).addClass("active"),jQuery(".accordion2 "+c).slideDown(300).addClass("open")),b.preventDefault()})});

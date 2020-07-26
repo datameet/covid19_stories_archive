@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Men Who Went to Tabhlighi Jamaat Meet Attacked: Minorities Commission to Delhi Police",
     "timestamp": "1590785099.51",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 36,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590786935",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "https://thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked"
+                ],
+                "end_ts": "2020-05-29 21:16:12.330852",
+                "start_ts": "2020-05-29 21:15:35.368742",
+                "pwd": "/data/archive/1590785099.51",
+                "output": "thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529211633/https://thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 36,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590786935",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "https://thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked"
-                ],
-                "end_ts": "2020-05-29 21:16:12.330852",
-                "start_ts": "2020-05-29 21:15:35.368742",
-                "pwd": "/data/archive/1590785099.51",
-                "output": "thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590786994.642414",
+    "updated": "1595622265.506673",
     "tags": "",
     "url": "https://thewire.in/communalism/delhi-minorities-commission-police-muslims-attacked"
 }

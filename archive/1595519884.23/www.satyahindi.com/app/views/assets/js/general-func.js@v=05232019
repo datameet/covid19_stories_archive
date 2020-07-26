@@ -1,0 +1,12 @@
+function _checkData(){var p=new Object();p.rndNum=Math.random()*99999;if(_$('#hdMode'))
+p.mode=_$('#hdMode').getVal();var ar=new Array();ar.push(new Array("param",unescape(encodeURIComponent(JSON.stringify(p)))));var aj=new _ajax();aj.fileName=__WEBROOT__+"/check-data/";aj.callMethod="post";aj.callParam=ar;aj.isAsynchronus=!0;if(_checkData.lastBNTitle==undefined)
+_checkData.lastBNTitle="";aj._query(function(p){},function(p,r){if(r.trim()!=""){var resp=JSON.parse(r);var bNews=resp.breakingNews;if(bNews.status==1){var lastTitle=_checkData.lastBNTitle;if(bNews.payload.title!=null&&bNews.payload.title!=undefined){breakingNewsTitle=bNews.payload.title.trim();_checkData.lastBNTitle=bNews.payload.title.trim();if(lastTitle.trim()!=breakingNewsTitle){popupHtml='<div class="popup"><div class="close2"><i class="fa fa-times"></i></div><h3>BREAKING NEWS</h3><span>'+breakingNewsTitle+'</span></div>';jQuery(document).ready(function(){setTimeout(function(){$.poupBottom()},100)})}}
+if(breakingNewsTitle.trim()!="")
+_setCookie("lastTitle",breakingNewsTitle.trim(),1)}else _checkData.lastBNTitle="";if(resp.electionResult!=undefined){var elecRes=resp.electionResult;var widgetHTML="";if(elecRes.status==1){if(elecRes.html!=undefined)
+widgetHTML=elecRes.html}else{}
+if(_$('#'+elecRes.target))
+_$('#'+elecRes.target).setHTML(widgetHTML)}}
+st=setTimeout("_checkData()",20000)})};function _callSearch(){if(_$('#txtQ').getVal().trim()!='')
+window.location=__WEBROOT__+"/search/"+_$('#txtQ').getVal().trim()+"/"};function _callSearchM(){if(_$('#txtQM').getVal().trim()!='')
+window.location=__WEBROOT__+"/search/"+_$('#txtQM').getVal().trim()+"/"};function _initGenFuncs(){st=setTimeout("_checkData()",1000);_$('#txtQ').attach("keypress",function(event){var kc=_getKeyCode(event);if(kc==13){_callSearch()}else return!0});_$('#txtQM').attach("keypress",function(event){var kc=_getKeyCode(event);if(kc==13){_callSearchM()}else return!0});_$('#btnQ').attach("click",_callSearch);_$('#btnQM').attach("click",_callSearchM)};try{_$(window).attach("load",_initGenFuncs)}
+catch(e){console.log("BytesEngine CMS: Function _initFuncs() missing.")}

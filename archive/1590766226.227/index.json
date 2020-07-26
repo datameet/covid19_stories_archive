@@ -1,8 +1,12 @@
 {
     "title": "Three workers hanged, no one had any food and no one was worried about going home | \u0924\u0940\u0928 \u0936\u094d\u0930\u092e\u093f\u0915\u094b\u0902 \u0928\u0947 \u0932\u0917\u093e\u0908 \u092b\u093e\u0902\u0938\u0940, \u0915\u093f\u0938\u0940 \u0915\u0947 \u092a\u093e\u0938 \u0916\u093e\u0928\u093e \u0928\u0939\u0940\u0902 \u0924\u094b \u0915\u094b\u0908 \u0918\u0930 \u091c\u093e\u0928\u0947 \u0915\u094b \u092a\u0930\u0947\u0936\u093e\u0928 \u0925\u093e - Dainik Bhaskar",
     "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
         "/data/sources/stdin-1590766226.txt",
-        "/data/sources/stdin-1590773363.txt"
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt",
+        "/data/sources/stdin-1590773363.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt"
     ],
     "timestamp": "1590766226.227",
     "history": {
@@ -188,7 +192,7 @@
             }
         ]
     },
-    "updated": "1590788301.92483",
+    "updated": "1595622453.400658",
     "tags": "",
     "url": "https://www.bhaskar.com/local/gujarat/news/three-workers-hanged-no-one-had-any-food-and-no-one-was-worried-about-going-home-127313551.html"
 }

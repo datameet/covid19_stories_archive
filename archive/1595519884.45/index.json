@@ -1,0 +1,192 @@
+{
+    "url": "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738",
+    "timestamp": "1595519884.45",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "Coronavirus Lockdown: Unable To Care For Family, Uttar Pradesh Man Commits Suicide In Lakhimpur Kheri, Blames Lockdown",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:38.424122",
+                "end_ts": "2020-07-24 22:13:39.599835",
+                "duration": 1
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.ndtv.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:39.602612",
+                "end_ts": "2020-07-24 22:13:39.893558",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595609019",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:39.896699",
+                "end_ts": "2020-07-24 22:13:44.394183",
+                "duration": 4
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:44.397072",
+                "end_ts": "2020-07-24 22:13:46.297045",
+                "duration": 1
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:46.299701",
+                "end_ts": "2020-07-24 22:13:48.386339",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:48.387697",
+                "end_ts": "2020-07-24 22:13:49.299109",
+                "duration": 0
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:13:49.300973",
+                "end_ts": "2020-07-24 22:13:52.556557",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.ndtv.com/india-news/coronavirus-lockdown-unable-to-provide-food-for-family-uttar-pradesh-man-kills-self-in-lakhimpur-kheri-blames-lockdown-2237738"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.45",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:13:52.558235",
+                "end_ts": "2020-07-24 22:14:11.140815",
+                "duration": 18
+            }
+        ]
+    },
+    "updated": "1595609051.141307"
+}

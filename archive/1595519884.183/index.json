@@ -1,0 +1,192 @@
+{
+    "url": "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html",
+    "timestamp": "1595519884.183",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "57-yr-old man in Nashik commits suicide over fear of contracting coronavirus",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:02.892549",
+                "end_ts": "2020-07-25 01:45:03.840827",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.uniindia.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:03.845987",
+                "end_ts": "2020-07-25 01:45:04.680151",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595621704",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:04.686322",
+                "end_ts": "2020-07-25 01:45:15.534104",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:15.538901",
+                "end_ts": "2020-07-25 01:45:18.619977",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:18.621351",
+                "end_ts": "2020-07-25 01:45:20.903933",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:45:20.906643",
+                "end_ts": "2020-07-25 01:45:22.755806",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "Failed to download media",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:45:22.757281",
+                "end_ts": "2020-07-25 01:45:24.232363",
+                "duration": 1
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/http://www.uniindia.com/57-yr-old-man-in-nashik-commits-suicide-over-fear-of-contracting-coronavirus/west/news/2050504.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.183",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-25 01:45:24.236108",
+                "end_ts": "2020-07-25 01:46:24.260714",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595621784.260965"
+}

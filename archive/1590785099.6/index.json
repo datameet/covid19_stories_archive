@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Communal Clash in Telangana\u2019s Bhainsa Town, Curfew Imposed",
     "timestamp": "1590785099.6",
     "history": {
         "title": [
@@ -39,6 +39,24 @@
                 "start_ts": "2020-05-29 20:50:45.891332",
                 "pwd": "/data/archive/1590785099.6",
                 "output": "Failed to chmod: screenshot.png does not exist (did the previous step fail?)"
+            },
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.thequint.com/news/india/bhainsa-communal-violence-telangana-police-curfew-covid-lockdown"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1590785099.6",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-25 01:52:57.737649",
+                "end_ts": "2020-07-25 01:52:58.833065",
+                "duration": 1
             }
         ],
         "favicon": [
@@ -187,7 +205,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590785461.241488",
+    "updated": "1595622178.833468",
     "tags": "",
     "url": "https://www.thequint.com/news/india/bhainsa-communal-violence-telangana-police-curfew-covid-lockdown"
 }

@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "\u092c\u093f\u091c\u0928\u094b\u0930 \u092e\u0947\u0902 \u0909\u0930\u0942\u095b \u092a\u0930 \u0928\u095e\u0930\u0924, \u0905\u092c \u0928\u093e\u092e \u092a\u0942\u091b\u0915\u0930 \u092b\u0932 \u0935\u093f\u0915\u094d\u0930\u0947\u0924\u093e \u0915\u094b \u092a\u0940\u091f\u093e, \u091a\u093e\u0930 \u0926\u093f\u0928 \u092e\u0947\u0902 \u0924\u0940\u0928 \u0918\u091f\u0928\u093e\u090f\u0902 \u2013 TwoCircles.net",
     "timestamp": "1590785099.79",
     "history": {
         "title": [
@@ -20,6 +20,34 @@
             }
         ],
         "git": [],
+        "wget": [
+            {
+                "status": "succeeded",
+                "duration": 21,
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1590787960",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
+                    "http://twocircles.net/2020apr26/436248.html"
+                ],
+                "end_ts": "2020-05-29 21:33:01.668071",
+                "start_ts": "2020-05-29 21:32:40.000664",
+                "pwd": "/data/archive/1590785099.79",
+                "output": "twocircles.net/2020apr26/436248.html"
+            }
+        ],
         "screenshot": [
             {
                 "status": "succeeded",
@@ -101,34 +129,6 @@
                 "output": "https://web.archive.org/web/20200529213310/http://twocircles.net/2020apr26/436248.html"
             }
         ],
-        "wget": [
-            {
-                "status": "succeeded",
-                "duration": 21,
-                "cmd": [
-                    "wget",
-                    "--no-verbose",
-                    "--adjust-extension",
-                    "--convert-links",
-                    "--force-directories",
-                    "--backup-converted",
-                    "--span-hosts",
-                    "--no-parent",
-                    "-e",
-                    "robots=off",
-                    "--restrict-file-names=windows",
-                    "--timeout=60",
-                    "--warc-file=warc/1590787960",
-                    "--page-requisites",
-                    "--user-agent=ArchiveBox/c79ce2b1f (+https://github.com/pirate/ArchiveBox/) wget/1.18",
-                    "http://twocircles.net/2020apr26/436248.html"
-                ],
-                "end_ts": "2020-05-29 21:33:01.668071",
-                "start_ts": "2020-05-29 21:32:40.000664",
-                "pwd": "/data/archive/1590785099.79",
-                "output": "twocircles.net/2020apr26/436248.html"
-            }
-        ],
         "dom": [
             {
                 "status": "succeeded",
@@ -187,7 +187,7 @@
     "sources": [
         "/data/sources/stdin-1590785099.txt"
     ],
-    "updated": "1590787991.766244",
+    "updated": "1595622302.760613",
     "tags": "",
     "url": "http://twocircles.net/2020apr26/436248.html"
 }

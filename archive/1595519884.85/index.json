@@ -1,0 +1,192 @@
+{
+    "url": "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html",
+    "timestamp": "1595519884.85",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "Covid-positive man found dead at home in Loni - cities - Hindustan Times",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:14:49.547866",
+                "end_ts": "2020-07-24 23:14:50.523041",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.hindustantimes.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:14:50.525308",
+                "end_ts": "2020-07-24 23:14:50.874493",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595612690",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:14:50.877138",
+                "end_ts": "2020-07-24 23:14:59.754533",
+                "duration": 8
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:14:59.761105",
+                "end_ts": "2020-07-24 23:15:03.315969",
+                "duration": 3
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:15:03.319219",
+                "end_ts": "2020-07-24 23:15:06.586002",
+                "duration": 3
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:15:06.587673",
+                "end_ts": "2020-07-24 23:15:10.576756",
+                "duration": 3
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:15:10.579002",
+                "end_ts": "2020-07-24 23:15:14.525931",
+                "duration": 3
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.hindustantimes.com/cities/covid-positive-man-found-dead-at-home-in-loni/story-tcRzmQiyKoxK8gSB5OJqMO.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.85",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:15:14.529705",
+                "end_ts": "2020-07-24 23:15:59.731716",
+                "duration": 45
+            }
+        ]
+    },
+    "updated": "1595612759.732308"
+}

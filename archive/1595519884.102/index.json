@@ -1,0 +1,192 @@
+{
+    "url": "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html",
+    "timestamp": "1595519884.102",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "Unemployed due to lockdown, 24-yr-old man commits suicide",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:44:44.509641",
+                "end_ts": "2020-07-24 23:45:00.170059",
+                "duration": 15
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.dailypioneer.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:45:00.179085",
+                "end_ts": "2020-07-24 23:45:00.555907",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595614500",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "Command 'wget' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:45:00.566983",
+                "end_ts": "2020-07-24 23:46:00.595163",
+                "duration": 60
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:46:00.599244",
+                "end_ts": "2020-07-24 23:46:14.196169",
+                "duration": 13
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:46:14.199496",
+                "end_ts": "2020-07-24 23:46:18.754606",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:46:18.756423",
+                "end_ts": "2020-07-24 23:46:24.239367",
+                "duration": 5
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 23:46:24.246025",
+                "end_ts": "2020-07-24 23:46:32.826602",
+                "duration": 8
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.dailypioneer.com/2020/state-editions/unemployed-due-to-lockdown--24-yr-old-man-commits-suicide.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.102",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 23:46:32.828466",
+                "end_ts": "2020-07-24 23:47:32.850565",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595614652.851792"
+}

@@ -1,0 +1,192 @@
+{
+    "url": "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html",
+    "timestamp": "1595519884.56",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "Three Person Died In Shramik Special Trains Samples Of All Have Taken For The Corona Testing In Kanpur - \u0936\u094d\u0930\u092e\u093f\u0915 \u0938\u094d\u092a\u0947\u0936\u0932 \u091f\u094d\u0930\u0947\u0928\u094b\u0902 \u092e\u0947\u0902 \u092f\u0941\u0935\u0924\u0940 \u0938\u0939\u093f\u0924 \u0924\u0940\u0928 \u0915\u0940 \u092e\u094c\u0924, \u0915\u094b\u0930\u094b\u0928\u093e \u0938\u0902\u0926\u093f\u0917\u094d\u0927 \u0915\u0940 \u0906\u0936\u0902\u0915\u093e \u092a\u0930 \u0938\u092d\u0940 \u0915\u0947 \u0938\u0948\u0902\u092a\u0932 \u0932\u093f\u090f \u0917\u090f",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:26.483768",
+                "end_ts": "2020-07-24 22:41:26.823887",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.livehindustan.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:26.831726",
+                "end_ts": "2020-07-24 22:41:27.431519",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595610687",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:27.434409",
+                "end_ts": "2020-07-24 22:41:38.148503",
+                "duration": 10
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:38.151213",
+                "end_ts": "2020-07-24 22:41:43.833493",
+                "duration": 5
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:43.835076",
+                "end_ts": "2020-07-24 22:41:46.656641",
+                "duration": 2
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "output.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:46.658140",
+                "end_ts": "2020-07-24 22:41:48.584401",
+                "duration": 1
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:41:48.590439",
+                "end_ts": "2020-07-24 22:41:51.425152",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.livehindustan.com/uttar-pradesh/story-three-person-died-in-shramik-special-trains-samples-of-all-have-taken-for-the-corona-testing-in-kanpur-3233893.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.56",
+                "output": "Failed to find \"content-location\" URL header in Archive.org response.",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:41:51.427029",
+                "end_ts": "2020-07-24 22:42:24.679869",
+                "duration": 33
+            }
+        ]
+    },
+    "updated": "1595610744.681443"
+}

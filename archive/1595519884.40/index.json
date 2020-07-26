@@ -1,0 +1,192 @@
+{
+    "url": "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html",
+    "timestamp": "1595519884.40",
+    "title": null,
+    "tags": "",
+    "sources": [
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600197.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595519883.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595600036.txt",
+        "/home/thej/code/covid19_stories_archivebox/sources/stdin-1595599966.txt"
+    ],
+    "history": {
+        "title": [
+            {
+                "cmd": [
+                    "curl",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html",
+                    "|",
+                    "grep",
+                    "<title>"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "Three migrants die in road accident in Chhattisgarh- The New Indian Express",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:03:30.738086",
+                "end_ts": "2020-07-24 22:03:31.642181",
+                "duration": 0
+            }
+        ],
+        "favicon": [
+            {
+                "cmd": [
+                    "curl",
+                    "--max-time",
+                    "60",
+                    "--location",
+                    "--output",
+                    "favicon.ico",
+                    "https://www.google.com/s2/favicons?domain=www.newindianexpress.com"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "favicon.ico",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:03:31.646363",
+                "end_ts": "2020-07-24 22:03:31.930124",
+                "duration": 0
+            }
+        ],
+        "wget": [
+            {
+                "cmd": [
+                    "wget",
+                    "--no-verbose",
+                    "--adjust-extension",
+                    "--convert-links",
+                    "--force-directories",
+                    "--backup-converted",
+                    "--span-hosts",
+                    "--no-parent",
+                    "-e",
+                    "robots=off",
+                    "--restrict-file-names=windows",
+                    "--timeout=60",
+                    "--warc-file=warc/1595608411",
+                    "--page-requisites",
+                    "--user-agent=ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/) wget/1.19.4",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:03:31.937178",
+                "end_ts": "2020-07-24 22:03:56.488503",
+                "duration": 24
+            }
+        ],
+        "pdf": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--print-to-pdf",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "output.pdf",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:03:56.490885",
+                "end_ts": "2020-07-24 22:04:05.173427",
+                "duration": 8
+            }
+        ],
+        "screenshot": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--screenshot",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "screenshot.png",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:04:05.175302",
+                "end_ts": "2020-07-24 22:04:09.281734",
+                "duration": 4
+            }
+        ],
+        "dom": [
+            {
+                "cmd": [
+                    "chromium-browser",
+                    "--headless",
+                    "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36",
+                    "--window-size=1440,2000",
+                    "--timeout=60000",
+                    "--user-data-dir=/home/thej/.config/chromium",
+                    "--dump-dom",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "Command 'chromium-browser' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:04:09.284829",
+                "end_ts": "2020-07-24 22:05:09.421959",
+                "duration": 60
+            }
+        ],
+        "git": [],
+        "media": [
+            {
+                "cmd": [
+                    "youtube-dl",
+                    "--write-description",
+                    "--write-info-json",
+                    "--write-annotations",
+                    "--yes-playlist",
+                    "--write-thumbnail",
+                    "--no-call-home",
+                    "--no-check-certificate",
+                    "--all-subs",
+                    "--extract-audio",
+                    "--keep-video",
+                    "--ignore-errors",
+                    "--geo-bypass",
+                    "--audio-format",
+                    "mp3",
+                    "--audio-quality",
+                    "320K",
+                    "--embed-thumbnail",
+                    "--add-metadata",
+                    "https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "media",
+                "status": "succeeded",
+                "start_ts": "2020-07-24 22:05:09.424842",
+                "end_ts": "2020-07-24 22:05:12.410707",
+                "duration": 2
+            }
+        ],
+        "archive_org": [
+            {
+                "cmd": [
+                    "curl",
+                    "--location",
+                    "--head",
+                    "--user-agent",
+                    "ArchiveBox/6c4c6862e (+https://github.com/pirate/ArchiveBox/)",
+                    "--max-time",
+                    "60",
+                    "https://web.archive.org/save/https://www.newindianexpress.com/nation/2020/may/22/three-migrants-die-in-road-accident-in-chhattisgarh-2146487.html"
+                ],
+                "pwd": "/home/thej/code/covid19_stories_archivebox/archive/1595519884.40",
+                "output": "Command 'curl' timed out after 60 seconds",
+                "status": "failed",
+                "start_ts": "2020-07-24 22:05:12.412759",
+                "end_ts": "2020-07-24 22:06:12.449627",
+                "duration": 60
+            }
+        ]
+    },
+    "updated": "1595608572.450882"
+}

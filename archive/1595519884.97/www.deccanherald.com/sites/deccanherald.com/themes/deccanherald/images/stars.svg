@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.759" height="12.331" viewBox="0 0 63.759 12.331">
+  <g id="stars" transform="translate(-115 -30.719)">
+    <g id="Page-1" transform="translate(115 31.5)">
+      <g id="Core" transform="translate(0 0.5)">
+        <g id="star" transform="translate(0 0)">
+          <path id="Shape" d="M5.269,8.047,8.525,10.01l-.861-3.7,2.874-2.49L6.748,3.491,5.269,0,3.789,3.491,0,3.817l2.874,2.49-.861,3.7Z" fill="#f7b825" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page-1-2" data-name="Page-1" transform="translate(141 31.5)">
+      <g id="Core-2" data-name="Core" transform="translate(0 0.5)">
+        <g id="star-2" data-name="star" transform="translate(0 0)">
+          <path id="Shape-2" data-name="Shape" d="M5.269,8.047,8.525,10.01l-.861-3.7,2.874-2.49L6.748,3.491,5.269,0,3.789,3.491,0,3.817l2.874,2.49-.861,3.7Z" fill="#f7b825" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page-1-3" data-name="Page-1" transform="translate(128 31.5)">
+      <g id="Core-3" data-name="Core" transform="translate(0 0.5)">
+        <g id="star-3" data-name="star" transform="translate(0 0)">
+          <path id="Shape-3" data-name="Shape" d="M5.269,8.047,8.525,10.01l-.861-3.7,2.874-2.49L6.748,3.491,5.269,0,3.789,3.491,0,3.817l2.874,2.49-.861,3.7Z" fill="#f7b825" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page-1-4" data-name="Page-1" transform="translate(154 31.5)">
+      <g id="Core-4" data-name="Core" transform="translate(0 0.5)">
+        <g id="star-4" data-name="star" transform="translate(0 0)">
+          <path id="Shape-4" data-name="Shape" d="M5.269,8.047,8.525,10.01l-.861-3.7,2.874-2.49L6.748,3.491,5.269,0,3.789,3.491,0,3.817l2.874,2.49-.861,3.7Z" fill="#f7b825" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <g id="Page-1-5" data-name="Page-1" transform="translate(167 31.5)">
+      <g id="Core-5" data-name="Core" transform="translate(0 0.5)">
+        <g id="star-5" data-name="star" transform="translate(0 0)">
+          <path id="Shape-5" data-name="Shape" d="M5.269,8.047,8.525,10.01l-.861-3.7,2.874-2.49L6.748,3.491,5.269,0,3.789,3.491,0,3.817l2.874,2.49-.861,3.7Z" fill="none" stroke="#f7b825" stroke-width="1" fill-rule="evenodd"/>
+          <path id="Subtraction_3" data-name="Subtraction 3" d="M-20289.988,817.009l0,0,.857-3.7-2.871-2.49,3.789-.326,1.48-3.488.23.541v7.643l-.23-.138-3.256,1.959Z" transform="translate(20292 -807)" fill="#f7b825"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

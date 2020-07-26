@@ -1,0 +1,25 @@
+/* Desktop on news 18 site */
+@media screen and (min-width: 767px) {
+    .board-iframe-desktop {
+        border: 0;
+        height: 365px;
+    }
+    }
+    @media screen and (max-width: 767px) {
+    
+    /* Mobile on news 18 site having only two fields - Roll no and class */
+    .board-iframe-dual-mobile {
+        height: 617px;border: 0;margin-top: 10px;
+    }
+    
+    /* Mobile on news 18 site having only three fields - Roll no, class and one other field */
+    .board-iframe-tertiary-mobile {
+        height: 643px;     border: 0;     margin-top: 10px;
+    }
+    
+    /* Mobile on news 18 site having four fields - Roll no, class and two other fields */
+    .board-iframe-quadraple-mobile {
+    height: 665px;     border: 0;     margin-top: 10px;
+    }
+    
+    }

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'custom';
+    src: url('/jw_player/fonts/jw-custom-icons.woff') format('woff'),
+         url('/jw_player/fonts/fonts/jw-custom-icons.ttf') format('truetype'),
+         url('/jw_player/fonts/fonts/jw-custom-icons.svg') format('svg'),
+         url('/jw_player/fonts/jw-custom-icons.eot') format('embedded-opentype');
+}                           
+.jwplayer .jw-icon{
+  font-family:'custom'
+}
+.jwplayer .jw-icon-home:before {
+    content: "\e900";
+}
+.jwplayer .jw-icon-forward3:before {
+    content: "\ea20";
+}
+.jwplayer .jw-icon-backward2:before {
+  
+    content: "\ea1f";
+}
+
+
+}
+
